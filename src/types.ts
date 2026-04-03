@@ -91,3 +91,52 @@ export interface BrainConfig {
     mermaid_theme: string;
   };
 }
+
+export interface WikiChunk {
+  id: string;
+  filePath: string;
+  breadcrumb: string;
+  heading: string;
+  content: string;
+  sectionHash: string;
+  vector?: number[];
+}
+
+export type LintIssueType =
+  | "broken_link"
+  | "contradiction"
+  | "stale_content"
+  | "orphan_article"
+  | "missing_coverage"
+  | "format_issue";
+
+export interface LintIssue {
+  type: LintIssueType;
+  filePath: string;
+  description: string;
+  relatedFiles?: string[];
+  severity: "warning" | "error";
+}
+
+export type HealAction =
+  | "direct_edit"
+  | "append_synthesis"
+  | "proposal"
+  | "create_article"
+  | "flag_contradiction"
+  | "skip";
+
+export interface HealResult {
+  action: HealAction;
+  filePath: string;
+  description: string;
+  success: boolean;
+}
+
+export interface LintHealStats {
+  lintIssuesFound: number;
+  healOperationsRun: number;
+  webSearchesUsed: number;
+  connectionsDiscovered: number;
+  filesModified: string[];
+}
