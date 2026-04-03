@@ -1,0 +1,22 @@
+{
+  "figure.facecolor": "#0a0a0a",
+  "figure.edgecolor": "#0a0a0a",
+  "axes.facecolor": "#0a0a0a",
+  "axes.edgecolor": "#1a1a2e",
+  "axes.labelcolor": "#f0f0f0",
+  "axes.titlecolor": "#00d1ff",
+  "axes.prop_cycle": "cycler('color', ['#00d1ff', '#00ff41', '#ef4444', '#f59e0b', '#a78bfa', '#7c8590'])",
+  "text.color": "#f0f0f0",
+  "xtick.color": "#7c8590",
+  "ytick.color": "#7c8590",
+  "grid.color": "#1a1a2e",
+  "grid.alpha": 0.3,
+  "legend.facecolor": "#0d1117",
+  "legend.edgecolor": "#1a1a2e",
+  "legend.labelcolor": "#f0f0f0",
+  "savefig.facecolor": "#0a0a0a",
+  "savefig.edgecolor": "#0a0a0a",
+  "savefig.dpi": 150,
+  "font.family": "monospace",
+  "font.size": 12
+}
