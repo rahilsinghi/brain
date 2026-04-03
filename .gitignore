@@ -1,0 +1,16 @@
+# System internals
+.brain/
+.lancedb/
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# OS files
+.DS_Store
+.obsidian/workspace.json
+
+# Python venv for matplotlib
+.venv/
