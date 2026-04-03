@@ -68,7 +68,9 @@ describe("chunkMarkdown", () => {
     const preamble = chunks.find((c) => c.heading === "Vercel AI SDK");
 
     expect(preamble).toBeDefined();
+    expect(preamble?.breadcrumb).toBe("Vercel AI SDK");
     expect(preamble?.content).toContain("Overview of the SDK");
+    expect(preamble?.content).not.toContain("# Vercel AI SDK");
   });
 
   it("handles files with no ## headings as a single chunk", () => {

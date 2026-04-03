@@ -60,14 +60,12 @@ export function chunkMarkdown(
       };
     } else if (currentSection) {
       currentSection.nodes.push(node);
-    } else {
-      if (!currentSection) {
-        currentSection = {
-          heading: h1Title || "Untitled",
-          depth: 1,
-          nodes: [node],
-        };
-      }
+    } else if (node.type !== "heading") {
+      currentSection = {
+        heading: h1Title || "Untitled",
+        depth: 1,
+        nodes: [node],
+      };
     }
   }
 
