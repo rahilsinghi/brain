@@ -2,6 +2,78 @@
 
 This is a self-improving personal knowledge base. You (Claude Code) are the brain.
 
+## Project Status
+
+**Phase 1 (Core MVP):** Complete — ingestion pipeline, file watcher, compiler, parser middleware
+**Phase 2 (Intelligence):** Complete — vector search, query/synthesis, lint & heal
+**Phase 3 (Auto-Ingestion):** Not started — MCP source integrations
+**Phase 4 (Voice & Polish):** Not started — Whisper, Marp, matplotlib
+
+**Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
+**Phase 1 plan:** `~/docs/superpowers/plans/2026-04-03-brain-phase1-core.md`
+**Phase 2 plan:** `~/docs/superpowers/plans/2026-04-03-brain-phase2-intelligence.md`
+**Remaining work:** `docs/REMAINING-WORK.md` (in this repo)
+
+## Tech Stack
+
+- Runtime: Bun + TypeScript strict
+- Package manager: pnpm
+- Testing: Vitest (53 tests across 14 files)
+- Vector DB: LanceDB (local, .lancedb/)
+- Embeddings: @xenova/transformers (nomic-embed-text, local)
+- LLM: @anthropic-ai/sdk (Claude)
+- File watching: chokidar
+- Scheduling: node-cron
+- Markdown AST: unified + remark-parse + remark-frontmatter + remark-stringify
+- Vault viewer: Obsidian (free tier)
+
+## Architecture
+
+```
+raw/ drops → chokidar watcher → parser middleware → compile queue → wiki/ articles
+                                                                       ↓
+wiki/ changes → chokidar watcher → chunker → embedder → LanceDB vectors
+                                                                       ↓
+user query → embed question → vector search → context assembly → Claude synthesis
+                                                                       ↓
+nightly cron → git snapshot → lint scanner → healer → connector → daily log
+```
+
+### Source Files (24)
+
+```
+src/
+├── config.ts               ← YAML config loader + .env
+├── frontmatter.ts          ← Read/write/update/inject YAML frontmatter
+├── types.ts                ← All shared types
+├── quarantine.ts           ← Dead letter queue (3x fail → quarantine/)
+├── snapshot.ts             ← Pre-heal git snapshots
+├── watcher.ts              ← chokidar watchers (raw/ + wiki/)
+├── index.ts                ← Daemon entry point + cron
+├── compiler/
+│   ├── compile.ts          ← Claude API single-pass compiler
+│   ├── queue.ts            ← Compile queue (pending → processing → processed)
+│   ├── token-guard.ts      ← Word count → strategy routing
+│   └── index-updater.ts    ← wiki/index.md regeneration
+├── parser/
+│   ├── router.ts           ← Route by file extension
+│   ├── passthrough.ts      ← .md/.txt direct to pending
+│   ├── html-parser.ts      ← HTML → markdown via turndown
+│   └── placeholder-parser.ts ← Phase 2+ stubs (pdf, audio, image)
+├── embedder/
+│   ├── chunker.ts          ← Markdown AST splitting at ## headings
+│   ├── embedder.ts         ← nomic-embed-text via transformers.js
+│   ├── vector-store.ts     ← LanceDB wrapper (upsert, delete, search)
+│   └── sync.ts             ← Hash-based embedding sync pipeline
+├── query/
+│   └── synthesize.ts       ← Vector search → Claude synthesis
+└── lint/
+    ├── scanner.ts          ← Broken links, orphans, format issues
+    ├── healer.ts           ← Conflict rules, contradiction flags, proposals
+    ├── connector.ts        ← Cross-references, daily summaries
+    └── runner.ts           ← 3-phase lint→heal→connect orchestrator
+```
+
 ## Vault Structure
 
 - `raw/` — Unprocessed drops. Never read from here for Q&A.
@@ -9,7 +81,9 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 - `output/` — Generated slides, plots, reports.
 - `proposals/` — AI suggestions for human-owned files. Review these.
 - `daily/` — Daily knowledge logs.
-- `templates/` — Visual themes (brutalist). Use these for all output.
+- `templates/` — Visual themes (brutalist: black/cyan/green). Use for all output.
+- `.brain/` — System config, lint reports, heal logs. Don't modify.
+- `.lancedb/` — Vector store. Don't modify directly.
 
 ## Capturing Knowledge
 
@@ -35,10 +109,12 @@ compile_progress: null
 ## Querying Knowledge
 
 When the user asks "what do I know about X?" or similar:
-1. Search `wiki/` using Grep for relevant articles
-2. Read the top matches
-3. Synthesize an answer with `[[wiki links]]` to sources
+1. Use `src/query/synthesize.ts` — embed the question, vector search LanceDB for top-K chunks
+2. Assemble context from matching wiki chunks
+3. Synthesize an answer via Claude with `[[wiki links]]` to sources
 4. Do NOT auto-save the answer. Only save if user explicitly says `/save`.
+
+**Anti-ouroboros:** Synthetic answers never auto-saved. Require explicit `/save` or novelty score > 0.85.
 
 ## Output Generation
 
@@ -50,5 +126,20 @@ When the user asks "what do I know about X?" or similar:
 
 - Never modify files in `.brain/` — that's system config
 - Never read or index `.brain/.env` — contains API keys
-- Respect the conflict resolution rules in the spec
+- **Contradictions:** NEVER auto-resolve. Flag with `> [!WARNING]` callout + write proposal to `proposals/`
+- **Human sovereignty:** Files with human edits <24h are hands-off. Use `proposals/` for suggestions.
+- **Conflict resolution tiers:**
+  1. AI files, no human edits → direct edit allowed
+  2. AI files, human edits >24h → append-only (AI Synthesis section)
+  3. Human files or human edits <24h → hands off, proposals/ only
 - When in doubt, write to `proposals/` instead of editing human files
+- Cost controls: max 20 heal operations, max 5 web searches per nightly run
+
+## Running
+
+```bash
+pnpm test          # Run all 53 tests
+pnpm start         # Start daemon (watchers + cron)
+pnpm stop          # Stop daemon
+pnpm status        # Check daemon PID
+```
