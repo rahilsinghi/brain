@@ -47,7 +47,8 @@ export class VectorStore {
   async deleteByFilePath(filePath: string): Promise<void> {
     const table = await this.getTable();
     if (!table) return;
-    await table.delete(`filePath = '${filePath}'`);
+    const escaped = filePath.replace(/'/g, "''");
+    await table.delete(`filePath = '${escaped}'`);
   }
 
   async search(queryVector: number[], topK: number): Promise<WikiChunk[]> {
