@@ -1,4 +1,4 @@
-import { readdirSync, existsSync, writeFileSync, readFileSync } from "node:fs";
+import { readdirSync, existsSync, mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { join, basename, relative } from "node:path";
 import { readFrontmatter } from "../frontmatter.js";
 
@@ -57,6 +57,7 @@ export function writeDailySummary(
   changes: string[]
 ): void {
   const dailyDir = join(vaultRoot, "daily");
+  mkdirSync(dailyDir, { recursive: true });
   const date = new Date().toISOString().split("T")[0];
   const dailyFile = join(dailyDir, `${date}.md`);
 

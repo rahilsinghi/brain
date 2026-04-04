@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { assembleContext, formatChunksForPrompt } from "../../src/query/synthesize.js";
+import { formatChunksForPrompt } from "../../src/query/synthesize.js";
 import type { WikiChunk } from "../../src/types.js";
 
-describe("assembleContext", () => {
+describe("formatChunksForPrompt", () => {
   const mockChunks: WikiChunk[] = [
     {
       id: "f1::Streaming",

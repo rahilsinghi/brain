@@ -38,6 +38,11 @@ export class VectorStore {
 
     const table = await this.getTable();
     if (table) {
+      const filePaths = [...new Set(chunks.map((c) => c.filePath))];
+      for (const fp of filePaths) {
+        const escaped = fp.replace(/'/g, "''");
+        await table.delete(`filePath = '${escaped}'`);
+      }
       await table.add(records);
     } else {
       await this.db.createTable(TABLE_NAME, records);
