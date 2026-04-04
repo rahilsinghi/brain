@@ -3,6 +3,8 @@ import { join, extname } from "node:path";
 import { injectRawFrontmatter, readFrontmatter } from "./frontmatter.js";
 import { routeAndParse } from "./parser/router.js";
 import { processQueue } from "./compiler/queue.js";
+import { syncFile, shouldReembed } from "./embedder/sync.js";
+import { VectorStore } from "./embedder/vector-store.js";
 import type { BrainConfig } from "./types.js";
 
 const IGNORED_FILES = new Set([".gitkeep", ".DS_Store"]);
@@ -78,10 +80,45 @@ export function startWatchers(
     }
   });
 
+  const lanceDbPath = join(vaultRoot, ".lancedb");
+  const store = new VectorStore(lanceDbPath);
+  let wikiWatcher: ReturnType<typeof chokidar.watch> | null = null;
+
+  store.init().then(() => {
+    const wikiDir = join(vaultRoot, config.watchers.wiki_dir);
+
+    wikiWatcher = chokidar.watch(wikiDir, {
+      ignored: /(^|[\/\\])\../,
+      persistent: true,
+      ignoreInitial: true,
+      awaitWriteFinish: {
+        stabilityThreshold: 1000,
+        pollInterval: 100,
+      },
+    });
+
+    wikiWatcher.on("change", async (filePath: string) => {
+      if (!filePath.endsWith(".md")) return;
+      try {
+        if (shouldReembed(filePath)) {
+          const count = await syncFile(filePath, vaultRoot, store);
+          console.log(`[embedder] Re-embedded ${filePath} (${count} chunks)`);
+        }
+      } catch (err) {
+        console.error(`[embedder] Error re-embedding ${filePath}:`, err);
+      }
+    });
+  }).catch((err) => {
+    console.error("[embedder] Failed to initialize vector store:", err);
+  });
+
   return {
     close: async () => {
       if (compileDebounce) clearTimeout(compileDebounce);
       await rawWatcher.close();
+      if (wikiWatcher) {
+        await wikiWatcher.close();
+      }
     },
   };
 }
