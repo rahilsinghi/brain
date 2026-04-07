@@ -5,6 +5,9 @@ import { loadConfig } from "./config.js";
 import { startWatchers } from "./watcher.js";
 import { takePreHealSnapshot } from "./snapshot.js";
 import { runLintHeal } from "./lint/runner.js";
+import { createGithubSource } from "./sources/github.js";
+import { SyncOrchestrator } from "./sources/orchestrator.js";
+import { JsonSyncStateStore } from "./sources/state.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 
@@ -42,6 +45,30 @@ cron.schedule(config.cron.lint_heal, async () => {
 });
 
 console.log(`[brain] Nightly lint & heal scheduled: ${config.cron.lint_heal}`);
+
+cron.schedule(config.cron.mcp_sources, async () => {
+  console.log("[cron] Starting GitHub sync...");
+  try {
+    const github = createGithubSource(
+      undefined,
+      config.sources?.github?.min_stars_for_readme ?? 100,
+    );
+    const store = new JsonSyncStateStore(vaultRoot);
+    const orchestrator = new SyncOrchestrator(vaultRoot, store);
+    const report = await orchestrator.run([github]);
+    const ingested = report.results.github?.itemsIngested ?? 0;
+    const errors = report.results.github?.errors ?? [];
+    if (errors.length > 0) {
+      console.error(`[cron] GitHub sync errors: ${errors.join(", ")}`);
+    } else {
+      console.log(`[cron] GitHub sync complete: ${ingested} new items`);
+    }
+  } catch (err) {
+    console.error("[cron] GitHub sync error:", err);
+  }
+});
+
+console.log(`[brain] GitHub sync scheduled: ${config.cron.mcp_sources}`);
 
 function shutdown() {
   console.log("\n[brain] Shutting down...");
