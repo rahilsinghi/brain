@@ -123,7 +123,7 @@ export function createGmailSource(deps: GmailDeps): SyncSource {
   return {
     name: "gmail",
     async poll(state: SourceSyncState): Promise<SyncResult> {
-      const searchResult = await deps.searchMessages("newer_than:1h", {
+      const searchResult = await deps.searchMessages("label:Brain OR is:starred newer_than:1h", {
         maxResults: 50,
       });
 

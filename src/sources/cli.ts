@@ -42,8 +42,10 @@ export function formatReport(report: SyncRunReport, quiet: boolean): string {
   return lines.join("\n");
 }
 
-export async function main(opts: { quiet: boolean } = { quiet: false }): Promise<void> {
-  const sources: SyncSource[] = [];
+export async function main(
+  sources: SyncSource[],
+  opts: { quiet: boolean } = { quiet: false },
+): Promise<void> {
   const report = await runSync(sources);
   const output = formatReport(report, opts.quiet);
   if (output) console.log(output);

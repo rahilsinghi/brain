@@ -192,7 +192,7 @@ async function defaultFetchRepoInfo(
   }
 }
 
-const DEFAULT_MIN_STARS = 50;
+const DEFAULT_MIN_STARS = 100;
 
 export function createGithubSource(
   deps?: Partial<GithubDeps>,
