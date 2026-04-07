@@ -53,10 +53,16 @@ export async function syncFile(
 
   const { embed } = await import("./embedder.js");
   const chunksWithVectors: WikiChunk[] = [];
-  for (const chunk of chunks) {
-    const contextText = `${chunk.breadcrumb}\n\n${chunk.content}`;
-    const vector = await embed(contextText);
-    chunksWithVectors.push({ ...chunk, vector });
+  try {
+    for (const chunk of chunks) {
+      const contextText = `${chunk.breadcrumb}\n\n${chunk.content}`;
+      const vector = await embed(contextText);
+      chunksWithVectors.push({ ...chunk, vector });
+    }
+  } catch (error) {
+    // Clean up: delete any partial chunks that may have been stored
+    await store.deleteByFilePath(relPath);
+    throw error;
   }
 
   await store.upsertChunks(chunksWithVectors);

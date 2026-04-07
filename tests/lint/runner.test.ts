@@ -64,4 +64,40 @@ describe("runLintHeal", () => {
 
     expect(stats).toBeDefined();
   });
+
+  it("populates connectionsDiscovered from discoverConnections", async () => {
+    // Create two articles that reference each other via wikilinks
+    const fileA = join(TEST_DIR, "wiki/concepts/alpha.md");
+    writeFrontmatter(fileA, {
+      title: "Alpha",
+      author: "ai",
+      created_at: "2026-04-03T00:00:00Z",
+      last_ai_edit: "2026-04-03T00:00:00Z",
+      last_human_edit: null,
+      last_embedded_hash: null,
+      sources: [],
+      tags: [],
+    }, "# Alpha\n\nSee [[Beta]] for details.\n");
+
+    const fileB = join(TEST_DIR, "wiki/concepts/beta.md");
+    writeFrontmatter(fileB, {
+      title: "Beta",
+      author: "ai",
+      created_at: "2026-04-03T00:00:00Z",
+      last_ai_edit: "2026-04-03T00:00:00Z",
+      last_human_edit: null,
+      last_embedded_hash: null,
+      sources: [],
+      tags: [],
+    }, "# Beta\n\nRelated to [[Alpha]].\n");
+
+    const stats = await runLintHeal(TEST_DIR, {
+      maxOperations: 20,
+      maxWebSearches: 0,
+      cooldownHours: 24,
+    });
+
+    // discoverConnections should have found the cross-references
+    expect(stats.connectionsDiscovered).toBeGreaterThan(0);
+  });
 });

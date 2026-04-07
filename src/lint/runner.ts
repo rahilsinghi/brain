@@ -2,7 +2,7 @@ import { writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { scanForIssues } from "./scanner.js";
 import { determineHealAction, appendContradictionWarning, writeProposal } from "./healer.js";
-import { writeDailySummary } from "./connector.js";
+import { writeDailySummary, discoverConnections } from "./connector.js";
 import { readFrontmatter } from "../frontmatter.js";
 import type { LintHealStats, LintIssue, WikiFrontmatter } from "../types.js";
 
@@ -93,7 +93,12 @@ export async function runLintHeal(
     }
   }
 
-  // Phase 3: Connect — write daily summary only when changes occurred
+  // Phase 3: Connect — discover cross-references and write daily summary
+  const { existingLinks } = discoverConnections(vaultRoot);
+  for (const links of existingLinks.values()) {
+    stats.connectionsDiscovered += links.size;
+  }
+
   if (changes.length > 0) {
     writeDailySummary(vaultRoot, changes);
   }
