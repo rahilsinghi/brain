@@ -22,6 +22,7 @@ export type Author = "ai" | "human";
 export interface RawFrontmatter {
   status: RawStatus;
   source_type: SourceType;
+  source_id: string | null;
   ingested_at: string;
   parsed_at: string | null;
   compiled_to: string | null;
@@ -89,6 +90,12 @@ export interface BrainConfig {
     marp_theme: string;
     matplotlib_rc: string;
     mermaid_theme: string;
+  };
+  sources?: {
+    github?: {
+      min_stars_for_readme: number;
+      username: string;
+    };
   };
 }
 

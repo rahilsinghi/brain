@@ -30,12 +30,13 @@ export function updateFrontmatter(filePath: string, updates: Record<string, unkn
   writeFrontmatter(filePath, merged, content);
 }
 
-export function injectRawFrontmatter(filePath: string, sourceType: SourceType): void {
+export function injectRawFrontmatter(filePath: string, sourceType: SourceType, sourceId: string | null = null): void {
   const raw = readFileSync(filePath, "utf-8");
   if (FM_REGEX.test(raw)) return;
   const fm: RawFrontmatter = {
     status: "unparsed",
     source_type: sourceType,
+    source_id: sourceId,
     ingested_at: new Date().toISOString(),
     parsed_at: null,
     compiled_to: null,
