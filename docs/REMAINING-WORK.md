@@ -43,99 +43,38 @@
 
 ---
 
-## Phase 2 Hardening (Optional, Before Phase 3)
+## Phase 2 Hardening — Complete (2026-04-06)
 
-These were flagged during code review. Not blockers, but would improve robustness:
+- Partial embed failure: try/catch in sync.ts, cleanup on failure
+- discoverConnections wired into runner, populates connectionsDiscovered
+- Healer tests: writeProposal + appendAISynthesis coverage added
+- Tests: 53 → 60
 
-### Partial embedding failure handling
-- **File:** `src/embedder/sync.ts` — `syncFile()`
-- **Issue:** If `embed()` fails on chunk N of M, frontmatter hash still gets updated. The file is marked as synced but has partial embeddings.
-- **Fix:** Only update `last_embedded_hash` after ALL chunks are successfully embedded. Wrap the embedding loop in try/catch; on failure, delete the partial chunks and don't update the hash.
-
-### Additional test coverage for healer utilities
-- **Files:** `tests/lint/healer.test.ts`
-- **Missing tests for:** `writeProposal()` (verify file creation, content structure), `appendAISynthesis()` (verify append behavior, content preservation)
-- **Estimate:** 3-4 new tests
-
-### Knowledge compounding (/save + novelty threshold)
+### Knowledge compounding (/save + novelty threshold) — Deferred to Phase 5
 - **Spec ref:** §6 Query & Synthesis, §12 Claude Code Integration
 - **Status:** `query.novelty_threshold` is in config (0.85) but unused. `synthesize.ts` always returns results with no score filtering.
 - **What's needed:** After synthesis, compare answer embedding against existing wiki chunks. If novelty score > 0.85 AND user says `/save`, write the synthesis to wiki. Otherwise, display only.
 - **Complexity:** Medium — needs cosine similarity helper + frontmatter write for new wiki article
 
-### Wire `discoverConnections` into runner Phase 3
-- **File:** `src/lint/connector.ts` has `discoverConnections()` exported but never called
-- **What's needed:** In `runner.ts` Phase 3 step, call `discoverConnections()` and increment `stats.connectionsDiscovered`
-- **Complexity:** Low
-
 ---
 
-## Phase 3: Auto-Ingestion (Next Up)
+## Phase 3: Auto-Ingestion — Complete (2026-04-06)
 
-**Goal:** Poll MCP sources on cron schedules, write new items to raw/ for the existing pipeline to process. Idempotent via sync-state.json cache.
+**Spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
+**Plan:** `~/docs/superpowers/plans/2026-04-06-brain-phase3-auto-ingestion.md`
 
-**Spec ref:** §4.2 (Sources 3-6), §4.3 (Sync State Cache), §11.1 (Cron schedules)
+10 commits, 8 new source files, 48 new tests (108 total). Three sources implemented:
+- **MarkPush:** cursor-based polling, DI for MCP push_history, unique slugs
+- **GitHub:** gh CLI, 5 event types (Watch/Fork/Push/PR/Issue), star threshold (100), auth guard
+- **Gmail:** label:Brain OR is:starred, text/plain + HTML via turndown, signature stripping, processed_ids dedup
+- **Orchestrator:** sequential source polling, dedup, crash-safe state saves, error isolation
+- **CLI:** `/brain-sync` with quiet mode, `main()` accepts sources parameter
+- **Daemon:** GitHub on hourly cron via `config.cron.mcp_sources`
 
-### New files to create
-```
-src/
-├── sources/
-│   ├── sync-state.ts       ← Read/write .brain/sync-state.json
-│   ├── markpush.ts         ← Poll MarkPush MCP push_history
-│   ├── github.ts           ← Poll GitHub starred repos, PRs, issues
-│   ├── gmail.ts            ← Poll Gmail (label:Brain OR is:starred)
-│   └── calendar.ts         ← Poll Google Calendar daily events
-```
-
-### Sync State Cache
-- **File:** `.brain/sync-state.json`
-- **Structure:** Per-source tracking of processed IDs/URLs
-- **Pattern:** Load cache → poll API → filter out processed → write new items to raw/ → append new IDs → save cache
-- **Every poll must be idempotent** — if daemon restarts mid-poll, no duplicates
-
-### Source 3: MarkPush MCP
-- **Trigger:** Hourly cron (`config.cron.mcp_sources`)
-- **MCP tools:** `mcp__markpush__push_history` → get recent pushes
-- **Flow:** Poll push_history → filter by sync-state processed_urls → for each new URL: fetch full content via WebFetch → write to `raw/articles/{slug}.md` with `source_type: markpush`
-- **Privacy:** Only processes explicitly pushed content
-
-### Source 4: GitHub MCP
-- **Trigger:** Hourly cron
-- **MCP tools:** `mcp__github__*` (need to check available tools — may need authenticate first)
-- **Flow:** Poll starred repos + recent PRs + recent issues → filter by sync-state → write to `raw/repos/{name}.md` or `raw/conversations/{slug}.md` with `source_type: github`
-- **What to capture:** README + description for repos; title + body + key comments for PRs/issues
-
-### Source 5: Gmail MCP
-- **Trigger:** Hourly cron
-- **MCP tools:** `mcp__gmail__*` (need to check available tools — may need authenticate first)
-- **Flow:** Search `label:Brain OR is:starred newer_than:1h` → filter by sync-state processed Message-IDs → extract subject, sender, body → strip signatures → `raw/emails/{subject-slug}.md`
-- **Privacy:** ONLY processes labeled/starred emails. Never bulk-ingest.
-
-### Source 6: Google Calendar MCP
-- **Trigger:** Daily cron at 10 PM (`config.cron.calendar`)
-- **MCP tools:** `mcp__claude_ai_Google_Calendar__*` (need to authenticate first)
-- **Flow:** List today's events → filter by sync-state event IDs → extract title, attendees, description → append to `daily/{date}.md` under `## Meetings`
-- **Lightweight:** Meeting metadata only, not full calendar sync
-
-### Daemon wiring
-- **Modify:** `src/index.ts` — add hourly cron for MarkPush + GitHub + Gmail, daily cron for Calendar
-- **Modify:** `src/types.ts` — add SyncState type
-- **New config fields:** Already exist in BrainConfig (`cron.mcp_sources`, `cron.calendar`)
-
-### Pre-requisites
-- Authenticate MCP servers: MarkPush, GitHub, Gmail, Google Calendar
-- Verify available MCP tool signatures (list_devices, push_history, etc.)
-- Ensure MCP servers are configured in `.mcp.json`
-
-### Estimated tasks: 8-10
-1. Sync state reader/writer
-2. MarkPush source + tests
-3. GitHub source + tests
-4. Gmail source + tests
-5. Calendar source + tests
-6. Wire all sources into daemon cron
-7. Integration test with mocked MCP
-8. End-to-end test with real MCP (manual)
+### Phase 3b: Calendar Source — Pending MCP Auth
+- Google Calendar MCP requires auth via claude.ai web interface (not CLI)
+- When auth resolved: implement `src/sources/calendar.ts` (stub exists), same SyncSource interface
+- Flow: `gcal_list_events(timeMin: last_poll)` → extract title + attendees + description → `calendar/events/{date}-{slug}.md`
 
 ---
 
@@ -183,9 +122,9 @@ src/
 | Item | File | Priority |
 |------|------|----------|
 | `embedBatch` is exported but never called | `src/embedder/embedder.ts` | Low — remove or use in sync |
-| `novelty_threshold` config unused | `src/config.ts` | Medium — implement in Phase 2 hardening |
-| `discoverConnections` built but not wired | `src/lint/connector.ts` | Low — wire in Phase 2 hardening |
-| `connectionsDiscovered` / `webSearchesUsed` always 0 | `src/lint/runner.ts` | Low — fix when wiring connector |
+| `novelty_threshold` config unused | `src/config.ts` | Phase 5 — implement knowledge compounding |
+| `webSearchesUsed` always 0 | `src/lint/runner.ts` | Low — no web search integration yet |
+| `main()` in cli.ts needs MCP wiring | `src/sources/cli.ts` | Phase 3 follow-up — needs MCP tool injection at call site |
 | Placeholder parsers for pdf/audio/image | `src/parser/placeholder-parser.ts` | Phase 4 — replace with real parsers |
 | `tsconfig.json` has `bun-types` but tests run under Vitest/Node | `tsconfig.json` | Low — `skipLibCheck: true` masks it |
 | No chunked/staged compile strategies | `src/compiler/queue.ts` | Future — only single-pass implemented |
@@ -197,13 +136,14 @@ src/
 
 ```
 cd ~/Desktop/brain
-pnpm test                    # Verify 53 tests pass
+pnpm test                    # Verify 108 tests pass
 cat docs/REMAINING-WORK.md   # This file — pick up where you left off
 cat CLAUDE.md                # Project context for Claude Code
 ```
 
-**To start Phase 3:**
-1. Read this file's Phase 3 section
-2. Check MCP server availability: run `! mcp__markpush__list_devices` etc. in Claude Code
-3. Use `superpowers:brainstorming` if design questions arise, otherwise go straight to `superpowers:writing-plans`
-4. Execute via `superpowers:subagent-driven-development`
+**Next up:** Phase 4 (Voice & Polish) or Phase 5 (Knowledge Compounding). See `docs/NEXT-PHASE.md` for assessment.
+
+**To test live sources:**
+1. GitHub: daemon handles automatically on hourly cron
+2. Gmail + MarkPush: run `/brain-sync` in Claude Code (MCP tools needed)
+3. Calendar: awaiting MCP auth (Phase 3b)

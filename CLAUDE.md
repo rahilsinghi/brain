@@ -5,20 +5,24 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 ## Project Status
 
 **Phase 1 (Core MVP):** Complete — ingestion pipeline, file watcher, compiler, parser middleware
-**Phase 2 (Intelligence):** Complete — vector search, query/synthesis, lint & heal
-**Phase 3 (Auto-Ingestion):** Not started — MCP source integrations
+**Phase 2 (Intelligence):** Complete — vector search, query/synthesis, lint & heal (hardened)
+**Phase 3 (Auto-Ingestion):** Complete — MarkPush, GitHub, Gmail sources + orchestrator + CLI
+**Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Not started — Whisper, Marp, matplotlib
+**Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
+**Phase 3 spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
 **Phase 1 plan:** `~/docs/superpowers/plans/2026-04-03-brain-phase1-core.md`
 **Phase 2 plan:** `~/docs/superpowers/plans/2026-04-03-brain-phase2-intelligence.md`
+**Phase 3 plan:** `~/docs/superpowers/plans/2026-04-06-brain-phase3-auto-ingestion.md`
 **Remaining work:** `docs/REMAINING-WORK.md` (in this repo)
 
 ## Tech Stack
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (53 tests across 14 files)
+- Testing: Vitest (108 tests across 22 files)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
@@ -30,6 +34,8 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 ## Architecture
 
 ```
+MarkPush/GitHub/Gmail → orchestrator → raw/ drops (with frontmatter)
+                                           ↓
 raw/ drops → chokidar watcher → parser middleware → compile queue → wiki/ articles
                                                                        ↓
 wiki/ changes → chokidar watcher → chunker → embedder → LanceDB vectors
@@ -39,7 +45,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (24)
+### Source Files (32)
 
 ```
 src/
@@ -67,11 +73,21 @@ src/
 │   └── sync.ts             ← Hash-based embedding sync pipeline
 ├── query/
 │   └── synthesize.ts       ← Vector search → Claude synthesis
-└── lint/
-    ├── scanner.ts          ← Broken links, orphans, format issues
-    ├── healer.ts           ← Conflict rules, contradiction flags, proposals
-    ├── connector.ts        ← Cross-references, daily summaries
-    └── runner.ts           ← 3-phase lint→heal→connect orchestrator
+├── lint/
+│   ├── scanner.ts          ← Broken links, orphans, format issues
+│   ├── healer.ts           ← Conflict rules, contradiction flags, proposals
+│   ├── connector.ts        ← Cross-references, daily summaries
+│   └── runner.ts           ← 3-phase lint→heal→connect orchestrator
+└── sources/
+    ├── types.ts            ← SyncSource, SyncState, RawDrop interfaces
+    ├── slug.ts             ← slugify + uniqueSlug (hash suffix)
+    ├── state.ts            ← JSON sync state store (atomic writes, ID pruning)
+    ├── orchestrator.ts     ← Dedup, write to raw/, manage sync-state
+    ├── markpush.ts         ← MarkPush MCP source (DI for push_history)
+    ├── github.ts           ← GitHub source (gh CLI, event parsing, star threshold)
+    ├── gmail.ts            ← Gmail MCP source (DI for search/read, turndown)
+    ├── calendar.ts         ← Stub — deferred to Phase 3b
+    └── cli.ts              ← /brain-sync entry point + report formatting
 ```
 
 ## Vault Structure
