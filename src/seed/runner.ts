@@ -327,6 +327,47 @@ export async function runSeed(
     }
   }
 
+  // Step 6b: Git commits backfill (past 60 days)
+  if (shouldRunStep("git-commits", opts.only)) {
+    log.step("sync", "Backfilling git commits (past 60 days)...");
+    try {
+      const { createGitCommitsSource } = await import(
+        "../sources/git-commits.js"
+      );
+      const { SyncOrchestrator } = await import("../sources/orchestrator.js");
+      const { JsonSyncStateStore } = await import("../sources/state.js");
+      const stateStore = new JsonSyncStateStore(vaultRoot);
+      // Set cursor to 60 days ago so the source polls all commits since then
+      const sixtyDaysAgo = new Date(
+        Date.now() - 60 * 24 * 60 * 60 * 1000,
+      ).toISOString();
+      const existingState = stateStore.load("git-commits");
+      if (!existingState.cursor) {
+        stateStore.save("git-commits", {
+          ...existingState,
+          cursor: sixtyDaysAgo,
+        });
+      }
+      const source = createGitCommitsSource(undefined, true);
+      const orchestrator = new SyncOrchestrator(vaultRoot, stateStore);
+      const report = await orchestrator.run([source]);
+      const gitCommitCount =
+        (
+          report.results["git-commits"] as
+            | { itemsIngested?: number }
+            | undefined
+        )?.itemsIngested ?? 0;
+      log.sync("git-commits", `${gitCommitCount} commits ingested`);
+      const state = stateStore.load("git-commits");
+      if (state.last_poll) log.verify("git-commits", state.last_poll);
+    } catch (err) {
+      log.warn(
+        `Git commits backfill failed: ${err instanceof Error ? err.message : String(err)}`,
+      );
+      warningCount++;
+    }
+  }
+
   // Step 7: Gmail sync (requires MCP)
   if (shouldRunStep("gmail", opts.only)) {
     log.step(

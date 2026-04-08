@@ -45,9 +45,15 @@ export class SyncOrchestrator {
             continue;
           }
 
-          this.writeDrop(source.name, drop);
-          newProcessedIds.push(drop.sourceId);
-          sourceReport.itemsIngested++;
+          try {
+            this.writeDrop(source.name, drop);
+            newProcessedIds.push(drop.sourceId);
+            sourceReport.itemsIngested++;
+          } catch (writeErr: unknown) {
+            const msg =
+              writeErr instanceof Error ? writeErr.message : String(writeErr);
+            sourceReport.errors.push(`${drop.sourceId}: ${msg}`);
+          }
         }
 
         const now = new Date().toISOString();

@@ -10,6 +10,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase A (Seed & Activate):** Complete — seed script, YAML transforms, batch compile, embedding sync
 **Phase B (API Layer):** Complete — Fastify HTTP API (ingest, synthesise, health) embedded in daemon
 **Telegram Input:** Complete — grammY bot with prefix routing, ingest + synthesise, /start /help /status
+**Git Commits Source:** Complete — polls commits across all repos, 60-day backfill (601 commits), hourly cron
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Not started — Whisper, Marp, matplotlib
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
@@ -31,7 +32,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (223 tests across 40 files)
+- Testing: Vitest (230 tests across 41 files)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
@@ -54,7 +55,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (58)
+### Source Files (59)
 
 ```
 src/
@@ -107,6 +108,7 @@ src/
     ├── markpush.ts         ← MarkPush MCP source (DI for push_history)
     ├── github.ts           ← GitHub source (gh CLI, event parsing, star threshold)
     ├── gmail.ts            ← Gmail MCP source (DI for search/read, turndown)
+    ├── git-commits.ts      ← Git commit history source (per-repo polling, backfill)
     ├── calendar.ts         ← Stub — deferred to Phase 3b
     └── cli.ts              ← /brain-sync entry point + report formatting
 ├── seed/
@@ -204,12 +206,30 @@ Send text to ingest, prefix with `?` to query. Commands: /start, /help, /status.
 
 ## Running
 
+The daemon runs as a macOS launchd service (`com.rahilsinghi.brain`). It auto-starts on login and restarts on crash.
+
 ```bash
 pnpm test              # Run all tests
-pnpm start             # Start daemon (API + watchers + cron)
+pnpm status            # Check if daemon is running (launchd or manual)
+pnpm restart           # Restart daemon via launchd
 pnpm stop              # Stop daemon
-pnpm status            # Check daemon PID
+pnpm start             # Start daemon manually (prefer launchd)
+pnpm logs              # Tail stdout log
+pnpm logs:err          # Tail stderr log
 pnpm seed              # Full seed from career-datacenter + GitHub + embed
 pnpm seed --force      # Re-compile all unstructured docs
 pnpm seed --only tracking  # Refresh tracking articles from live CSVs
 ```
+
+### launchd management
+
+```bash
+launchctl list com.rahilsinghi.brain     # Check service status
+launchctl stop com.rahilsinghi.brain     # Stop
+launchctl start com.rahilsinghi.brain    # Start
+launchctl unload ~/Library/LaunchAgents/com.rahilsinghi.brain.plist  # Disable
+launchctl load ~/Library/LaunchAgents/com.rahilsinghi.brain.plist    # Re-enable
+```
+
+Plist: `~/Library/LaunchAgents/com.rahilsinghi.brain.plist`
+Logs: `.brain/daemon.stdout.log`, `.brain/daemon.stderr.log`

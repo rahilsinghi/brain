@@ -18,7 +18,8 @@ export type SourceType =
   | "auto_research"
   | "seed_yaml"
   | "seed_csv"
-  | "api";
+  | "api"
+  | "git-commits";
 
 export type Author = "ai" | "human";
 

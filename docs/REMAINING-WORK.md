@@ -71,6 +71,15 @@
 - **CLI:** `/brain-sync` with quiet mode, `main()` accepts sources parameter
 - **Daemon:** GitHub on hourly cron via `config.cron.mcp_sources`
 
+### Git Commits Source — Complete (2026-04-08)
+- **Source:** `src/sources/git-commits.ts` — polls `/repos/{owner}/{repo}/commits` per active repo
+- **Backfill:** `pnpm seed:git-commits` — 60-day backfill, 601 commits across 15 repos
+- **Per-repo wiki articles:** Claude API summarizes commits per repo with `[[wiki links]]` and cross-references
+- **Daemon:** hourly cron alongside existing GitHub source
+- **Orchestrator fix:** per-item error handling (one bad file no longer kills entire source)
+- **Filename safety:** slug truncation to prevent ENAMETOOLONG on verbose commit messages
+- **Tests:** 7 new tests (230 total across 41 files)
+
 ### Phase 3b: Calendar Source — Pending MCP Auth
 - Google Calendar MCP requires auth via claude.ai web interface (not CLI)
 - When auth resolved: implement `src/sources/calendar.ts` (stub exists), same SyncSource interface
@@ -136,14 +145,18 @@
 
 ```
 cd ~/Desktop/brain
-pnpm test                    # Verify 108 tests pass
+pnpm test                    # Verify 223 tests pass
+pnpm status                  # Check daemon (launchd managed)
 cat docs/REMAINING-WORK.md   # This file — pick up where you left off
 cat CLAUDE.md                # Project context for Claude Code
 ```
 
+**Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
+
 **Next up:** Phase 4 (Voice & Polish) or Phase 5 (Knowledge Compounding). See `docs/NEXT-PHASE.md` for assessment.
 
 **To test live sources:**
-1. GitHub: daemon handles automatically on hourly cron
-2. Gmail + MarkPush: run `/brain-sync` in Claude Code (MCP tools needed)
-3. Calendar: awaiting MCP auth (Phase 3b)
+1. Telegram: `@rahil_brain_bot` — always on via launchd
+2. GitHub: daemon handles automatically on hourly cron
+3. Gmail + MarkPush: run `/brain-sync` in Claude Code (MCP tools needed)
+4. Calendar: awaiting MCP auth (Phase 3b)

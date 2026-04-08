@@ -6,6 +6,7 @@ import { startWatchers } from "./watcher.js";
 import { takePreHealSnapshot } from "./snapshot.js";
 import { runLintHeal } from "./lint/runner.js";
 import { createGithubSource } from "./sources/github.js";
+import { createGitCommitsSource } from "./sources/git-commits.js";
 import { SyncOrchestrator } from "./sources/orchestrator.js";
 import { JsonSyncStateStore } from "./sources/state.js";
 import { VectorStore } from "./embedder/vector-store.js";
@@ -91,25 +92,36 @@ cron.schedule(config.cron.lint_heal, async () => {
 });
 
 cron.schedule(config.cron.mcp_sources, async () => {
-  console.log("[cron] Running GitHub sync...");
+  console.log("[cron] Running GitHub + git-commits sync...");
   try {
     const github = createGithubSource(
       undefined,
       config.sources?.github?.min_stars_for_readme ?? 100,
     );
+    const gitCommits = createGitCommitsSource();
     const stateStore = new JsonSyncStateStore(vaultRoot);
     const orchestrator = new SyncOrchestrator(vaultRoot, stateStore);
-    const report = await orchestrator.run([github]);
-    const ingested =
+    const report = await orchestrator.run([github, gitCommits]);
+    const ghIngested =
       (report.results.github as { itemsIngested?: number } | undefined)
         ?.itemsIngested ?? 0;
-    console.log(`[cron] GitHub sync done: ${ingested} items ingested`);
+    const commitIngested =
+      (report.results["git-commits"] as { itemsIngested?: number } | undefined)
+        ?.itemsIngested ?? 0;
+    console.log(
+      `[cron] Sync done: ${ghIngested} GitHub items, ${commitIngested} commits ingested`,
+    );
     if (report.results.github?.errors?.length) {
       console.warn(`[cron] GitHub errors: ${report.results.github.errors}`);
     }
+    if (report.results["git-commits"]?.errors?.length) {
+      console.warn(
+        `[cron] git-commits errors: ${report.results["git-commits"].errors}`,
+      );
+    }
   } catch (err) {
     console.error(
-      `[cron] GitHub sync failed: ${err instanceof Error ? err.message : String(err)}`,
+      `[cron] Sync failed: ${err instanceof Error ? err.message : String(err)}`,
     );
   }
 });
