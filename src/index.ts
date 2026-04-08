@@ -8,74 +8,92 @@ import { runLintHeal } from "./lint/runner.js";
 import { createGithubSource } from "./sources/github.js";
 import { SyncOrchestrator } from "./sources/orchestrator.js";
 import { JsonSyncStateStore } from "./sources/state.js";
+import { VectorStore } from "./embedder/vector-store.js";
+import { synthesize } from "./query/synthesize.js";
+import { createServer, stopServer } from "./api/server.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 
-console.log(`[brain] Starting daemon for vault: ${vaultRoot}`);
+console.log("[brain] Starting daemon...");
 
 const config = loadConfig(vaultRoot);
-console.log(`[brain] Config loaded (log_level: ${config.daemon.log_level})`);
 
+// Write PID
 mkdirSync(join(vaultRoot, ".brain"), { recursive: true });
-
 writeFileSync(join(vaultRoot, ".brain", "daemon.pid"), String(process.pid));
 
+// Step 1: Init LanceDB
+console.log("[brain] Initializing LanceDB...");
+const store = new VectorStore(join(vaultRoot, ".lancedb"));
+await store.init();
+console.log("[brain] LanceDB ready.");
+
+// Step 2: Start HTTP server
+const server = createServer({
+  store,
+  vaultRoot,
+  config,
+  synthesizeFn: synthesize,
+});
+await server.listen({ port: config.api.port, host: config.api.host });
+console.log(`[brain] API server listening on http://${config.api.host}:${config.api.port}`);
+
+// Step 3: Start watchers
 const watchers = startWatchers(vaultRoot, config);
-console.log("[brain] File watchers started — watching raw/ for drops");
-console.log("[brain] Daemon ready. Drop files into raw/ to ingest.");
+console.log("[brain] Watchers started. Daemon ready.");
 
+// Step 4: Schedule crons
 cron.schedule(config.cron.lint_heal, async () => {
-  console.log("[cron] Starting nightly lint & heal...");
-
-  const snapshotTaken = takePreHealSnapshot(vaultRoot);
-  if (snapshotTaken) {
-    console.log("[cron] Pre-heal git snapshot created");
-  }
-
+  console.log("[cron] Running lint & heal...");
   try {
+    takePreHealSnapshot(vaultRoot);
     const stats = await runLintHeal(vaultRoot, {
       maxOperations: config.heal.max_operations_per_run,
       maxWebSearches: config.heal.max_web_searches_per_run,
       cooldownHours: config.heal.human_edit_cooldown_hours,
     });
-    console.log(`[cron] Lint & heal complete: ${stats.lintIssuesFound} issues, ${stats.healOperationsRun} operations`);
+    console.log(
+      `[cron] Lint done: ${stats.lintIssuesFound} issues, ${stats.healOperationsRun} healed`,
+    );
   } catch (err) {
-    console.error("[cron] Lint & heal error:", err);
+    console.error(
+      `[cron] Lint & heal failed: ${err instanceof Error ? err.message : String(err)}`,
+    );
   }
 });
 
-console.log(`[brain] Nightly lint & heal scheduled: ${config.cron.lint_heal}`);
-
 cron.schedule(config.cron.mcp_sources, async () => {
-  console.log("[cron] Starting GitHub sync...");
+  console.log("[cron] Running GitHub sync...");
   try {
     const github = createGithubSource(
       undefined,
       config.sources?.github?.min_stars_for_readme ?? 100,
     );
-    const store = new JsonSyncStateStore(vaultRoot);
-    const orchestrator = new SyncOrchestrator(vaultRoot, store);
+    const stateStore = new JsonSyncStateStore(vaultRoot);
+    const orchestrator = new SyncOrchestrator(vaultRoot, stateStore);
     const report = await orchestrator.run([github]);
-    const ingested = report.results.github?.itemsIngested ?? 0;
-    const errors = report.results.github?.errors ?? [];
-    if (errors.length > 0) {
-      console.error(`[cron] GitHub sync errors: ${errors.join(", ")}`);
-    } else {
-      console.log(`[cron] GitHub sync complete: ${ingested} new items`);
+    const ingested =
+      (report.results.github as { itemsIngested?: number } | undefined)
+        ?.itemsIngested ?? 0;
+    console.log(`[cron] GitHub sync done: ${ingested} items ingested`);
+    if (report.results.github?.errors?.length) {
+      console.warn(`[cron] GitHub errors: ${report.results.github.errors}`);
     }
   } catch (err) {
-    console.error("[cron] GitHub sync error:", err);
+    console.error(
+      `[cron] GitHub sync failed: ${err instanceof Error ? err.message : String(err)}`,
+    );
   }
 });
 
-console.log(`[brain] GitHub sync scheduled: ${config.cron.mcp_sources}`);
-
-function shutdown() {
+// Step 5: Graceful shutdown
+async function shutdown() {
   console.log("\n[brain] Shutting down...");
-  watchers.close().then(() => {
-    console.log("[brain] Watchers closed. Goodbye.");
-    process.exit(0);
-  });
+  await stopServer(server, 30_000);
+  console.log("[brain] Server drained.");
+  await watchers.close();
+  console.log("[brain] Watchers closed. Goodbye.");
+  process.exit(0);
 }
 
 process.on("SIGINT", shutdown);
