@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.435Z
 last_ai_edit: 2026-04-08T14:25:52.435Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d2e3544498475675
 sources:
   - career-datacenter/data/experience.yaml#exp_kismet_ai_data
 tags:
@@ -16,6 +16,7 @@ tags:
   - gemini-api
   - fastapi
 ---
+
 
 
 # Kismet — AI / Data Engineering Intern

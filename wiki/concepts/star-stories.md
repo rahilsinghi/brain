@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.441Z
 last_ai_edit: 2026-04-08T14:25:52.441Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bc408617075fe6d8
 sources:
   - career-datacenter/data/stories_star.yaml
 tags:
@@ -12,6 +12,7 @@ tags:
   - interview
   - star
 ---
+
 
 
 # STAR Stories

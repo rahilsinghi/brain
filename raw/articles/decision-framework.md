@@ -1,15 +1,19 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/DECISION_FRAMEWORK.md
 ingested_at: 2026-04-08T14:25:52.480Z
 parsed_at: 2026-04-08T14:25:52.480Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Decision Framework: What to Build First for Job Search Automation]]"
+processed_at: 2026-04-08T16:20:17.370Z
 retry_count: 0
-last_error: null
+last_error: Expected ',' or '}' after property value in JSON at position 6031 (line 5 column 4529)
 compile_progress: null
 ---
+
+
+
+
 
 # Decision Framework: What to Build First?
 

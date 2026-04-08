@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/prep/maison_negotiation_notes.md
 ingested_at: 2026-04-08T14:25:52.476Z
 parsed_at: 2026-04-08T14:25:52.476Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Maison — Negotiation & Logistics Notes (Rahil Offer, 2026)]]"
+processed_at: 2026-04-08T15:33:25.002Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Maison — Negotiation & Logistics Notes
 

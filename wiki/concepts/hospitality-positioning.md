@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.441Z
 last_ai_edit: 2026-04-08T14:25:52.441Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3e1e00c7e6b6061a
 sources:
   - career-datacenter/data/hospitality_positioning.yaml
 tags:
@@ -12,6 +12,7 @@ tags:
   - hospitality
   - career
 ---
+
 
 
 # Hospitality Tech Positioning

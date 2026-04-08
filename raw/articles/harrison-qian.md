@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/prep/harrison_qian_prep.md
 ingested_at: 2026-04-08T14:25:52.479Z
 parsed_at: 2026-04-08T14:25:52.479Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Harrison Qian – Builder Profile & Meeting Prep]]"
+processed_at: 2026-04-08T15:32:55.329Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Meeting Prep: Harrison Qian
 

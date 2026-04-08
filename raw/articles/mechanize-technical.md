@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/prep/mechanize_technical_prep.md
 ingested_at: 2026-04-08T14:25:52.477Z
 parsed_at: 2026-04-08T14:25:52.477Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Mechanize — RL Environment Company for Frontier AI Labs]]"
+processed_at: 2026-04-08T15:34:49.199Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Mechanize Technical Prep — Call at 3:10 PM
 

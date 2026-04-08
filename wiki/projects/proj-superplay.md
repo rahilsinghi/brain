@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.436Z
 last_ai_edit: 2026-04-08T14:25:52.436Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4ab05cc7bd702f15
 sources:
   - career-datacenter/data/projects.yaml#proj_superplay
 tags:
@@ -16,6 +16,7 @@ tags:
   - genius-api
   - flask
 ---
+
 
 
 # SuperPlay – AI-Powered Spotify Playlist Curator

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.437Z
 last_ai_edit: 2026-04-08T14:25:52.437Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 804e28f96b360749
 sources:
   - career-datacenter/data/projects.yaml#proj_laundry_management
 tags:
@@ -16,6 +16,7 @@ tags:
   - mysql
   - html
 ---
+
 
 
 # Laundry Management System using OOP in Java

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.436Z
 last_ai_edit: 2026-04-08T14:25:52.436Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8241ab75a8e78029
 sources:
   - career-datacenter/data/experience.yaml#exp_krushal
 tags:
@@ -16,6 +16,7 @@ tags:
   - api-integration
   - product-management
 ---
+
 
 
 # Krushal Open Commerce — Intern

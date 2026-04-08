@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.440Z
 last_ai_edit: 2026-04-08T14:25:52.440Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: dcb5fd8d94f2f53d
 sources:
   - career-datacenter/data/hospitality_companies_tier1.yaml
 tags:
@@ -12,6 +12,7 @@ tags:
   - channelmgr
   - hostai
 ---
+
 
 
 # hostAI

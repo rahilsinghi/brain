@@ -1,15 +1,21 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/prep/spiderrock_interview_prep.md
 ingested_at: 2026-04-08T14:25:52.477Z
 parsed_at: 2026-04-08T14:25:52.477Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[SpiderRock Interview Preparation: Junior Quantitative Developer Role]]"
+processed_at: 2026-04-08T16:30:00.839Z
 retry_count: 0
-last_error: null
+last_error: Unterminated string in JSON at position 14189 (line 5 column 11905)
 compile_progress: null
 ---
+
+
+
+
+
+
 
 # SpiderRock Interview Prep -- Junior Quantitative Developer
 

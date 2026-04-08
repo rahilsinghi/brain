@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/prep/toolhouse_brenton_andersen_prep.md
 ingested_at: 2026-04-08T14:25:52.478Z
 parsed_at: 2026-04-08T14:25:52.478Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Meeting Prep: Brenton Andersen — Toolhouse Creative Writing App]]"
+processed_at: 2026-04-08T15:39:49.439Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Meeting Prep: Brenton Andersen — Toolhouse / Creative Writing App
 

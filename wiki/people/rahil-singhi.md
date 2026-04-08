@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.433Z
 last_ai_edit: 2026-04-08T14:25:52.433Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9fcd0803a7e8b115
 sources:
   - career-datacenter/data/profile.yaml
 tags:
@@ -15,6 +15,7 @@ tags:
   - fintech
   - cloud-distributed-systems
 ---
+
 
 
 # Rahil Singhi

@@ -1,15 +1,21 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/prep/mews_rogers_leo_prep.md
 ingested_at: 2026-04-08T14:25:52.475Z
 parsed_at: 2026-04-08T14:25:52.475Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Rogers Leo — Mews Meeting Prep (March 3, 2026)]]"
+processed_at: 2026-04-08T16:28:16.599Z
 retry_count: 0
-last_error: null
+last_error: Unterminated string in JSON at position 14817 (line 5 column 12107)
 compile_progress: null
 ---
+
+
+
+
+
+
 
 # Meeting Prep: Rogers Leo — Mews
 **Meeting:** Tuesday, March 3, 2026 · 12:30 PM · 20 minutes**Your goal:** Full-time offer. Graduating NYU MS Computer Engineering May 2026.

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.437Z
 last_ai_edit: 2026-04-08T14:25:52.437Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3a97cb6b746a4fe5
 sources:
   - career-datacenter/data/projects.yaml#proj_imessage_scheduler
 tags:
@@ -16,6 +16,7 @@ tags:
   - tailwind-css-v4
   - express
 ---
+
 
 
 # iMessage Scheduler – Message Queue with macOS Gateway

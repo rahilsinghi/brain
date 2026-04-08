@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.437Z
 last_ai_edit: 2026-04-08T14:25:52.437Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2259eb9be20f83e2
 sources:
   - career-datacenter/data/projects.yaml#proj_wind_energy_forecasting
 tags:
@@ -16,6 +16,7 @@ tags:
   - data-driven-forecasting
   - renewable-energy
 ---
+
 
 
 # Wind Energy Forecasting using Regression and Neural Networks

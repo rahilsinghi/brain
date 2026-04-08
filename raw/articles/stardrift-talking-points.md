@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: career-datacenter/prep/stardrift_talking_points.md
 ingested_at: 2026-04-08T14:25:52.478Z
 parsed_at: 2026-04-08T14:25:52.478Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Stardrift Founding SWE Interview — Leila Clark Call Prep]]"
+processed_at: 2026-04-08T15:38:59.682Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Stardrift — Talking Points (TL;DR)
 

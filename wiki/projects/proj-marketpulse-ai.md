@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-08T14:25:52.437Z
 last_ai_edit: 2026-04-08T14:25:52.437Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: da020b088fcf1222
 sources:
   - career-datacenter/data/projects.yaml#proj_marketpulse_ai
 tags:
@@ -16,6 +16,7 @@ tags:
   - faiss
   - numpy
 ---
+
 
 
 # MarketPulse AI – Real-Time Financial News Q&A
