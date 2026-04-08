@@ -7,6 +7,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 1 (Core MVP):** Complete — ingestion pipeline, file watcher, compiler, parser middleware
 **Phase 2 (Intelligence):** Complete — vector search, query/synthesis, lint & heal (hardened)
 **Phase 3 (Auto-Ingestion):** Complete — MarkPush, GitHub, Gmail sources + orchestrator + CLI
+**Phase A (Seed & Activate):** Complete — seed script, YAML transforms, batch compile, embedding sync
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Not started — Whisper, Marp, matplotlib
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
@@ -16,13 +17,15 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 1 plan:** `~/docs/superpowers/plans/2026-04-03-brain-phase1-core.md`
 **Phase 2 plan:** `~/docs/superpowers/plans/2026-04-03-brain-phase2-intelligence.md`
 **Phase 3 plan:** `~/docs/superpowers/plans/2026-04-06-brain-phase3-auto-ingestion.md`
+**Seed & Activate spec:** `~/docs/superpowers/specs/2026-04-07-brain-seed-and-activate-design.md`
+**Seed & Activate plan:** `~/docs/superpowers/plans/2026-04-07-brain-seed-and-activate.md`
 **Remaining work:** `docs/REMAINING-WORK.md` (in this repo)
 
 ## Tech Stack
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (108 tests across 22 files)
+- Testing: Vitest (178 tests across 32 files)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
@@ -45,7 +48,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (32)
+### Source Files (49)
 
 ```
 src/
@@ -88,6 +91,24 @@ src/
     ├── gmail.ts            ← Gmail MCP source (DI for search/read, turndown)
     ├── calendar.ts         ← Stub — deferred to Phase 3b
     └── cli.ts              ← /brain-sync entry point + report formatting
+├── seed/
+│   ├── index.ts            ← CLI entry point (pnpm seed)
+│   ├── runner.ts           ← Step orchestrator (--force, --only routing)
+│   ├── log.ts              ← Structured per-step logging
+│   ├── yaml-loader.ts      ← YAML/CSV loader with Zod validation
+│   ├── schemas.ts          ← Zod schemas for career-datacenter files
+│   ├── wiki-helpers.ts     ← Frontmatter helpers, link resolution
+│   ├── unstructured.ts     ← Copy docs to raw/ for batch compile
+│   └── transforms/
+│       ├── profile.ts      ← profile + education + activities → wiki
+│       ├── experience.ts   ← experience + metrics → wiki (cross-ref)
+│       ├── projects.ts     ← projects + metrics → wiki
+│       ├── skills.ts       ← skills → skills-inventory.md
+│       ├── companies.ts    ← hospitality companies → wiki
+│       ├── positioning.ts  ← positioning + role families → wiki
+│       ├── stories.ts      ← STAR stories → wiki
+│       ├── answers.ts      ← easy apply answers → wiki
+│       └── tracking.ts     ← CSV tracking → wiki tables
 ```
 
 ## Vault Structure
@@ -154,8 +175,11 @@ When the user asks "what do I know about X?" or similar:
 ## Running
 
 ```bash
-pnpm test          # Run all 53 tests
-pnpm start         # Start daemon (watchers + cron)
-pnpm stop          # Stop daemon
-pnpm status        # Check daemon PID
+pnpm test              # Run all tests
+pnpm start             # Start daemon (watchers + cron)
+pnpm stop              # Stop daemon
+pnpm status            # Check daemon PID
+pnpm seed              # Full seed from career-datacenter + GitHub + embed
+pnpm seed --force      # Re-compile all unstructured docs
+pnpm seed --only tracking  # Refresh tracking articles from live CSVs
 ```
