@@ -1,12 +1,8 @@
 import type { VectorStore } from "../embedder/vector-store.js";
-import type { BrainConfig, WikiChunk } from "../types.js";
-import type { SynthesisResult } from "../query/synthesize.js";
+import type { BrainConfig } from "../types.js";
+import type { SynthesizeFn } from "../query/synthesize.js";
 
-export type SynthesizeFn = (
-  question: string,
-  store: { search: (vector: number[], topK: number) => Promise<WikiChunk[]> },
-  topK: number,
-) => Promise<SynthesisResult>;
+export type { SynthesizeFn };
 
 declare module "fastify" {
   interface FastifyInstance {
