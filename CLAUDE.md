@@ -8,6 +8,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 2 (Intelligence):** Complete — vector search, query/synthesis, lint & heal (hardened)
 **Phase 3 (Auto-Ingestion):** Complete — MarkPush, GitHub, Gmail sources + orchestrator + CLI
 **Phase A (Seed & Activate):** Complete — seed script, YAML transforms, batch compile, embedding sync
+**Phase B (API Layer):** Complete — Fastify HTTP API (ingest, synthesise, health) embedded in daemon
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Not started — Whisper, Marp, matplotlib
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
@@ -19,13 +20,15 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 3 plan:** `~/docs/superpowers/plans/2026-04-06-brain-phase3-auto-ingestion.md`
 **Seed & Activate spec:** `~/docs/superpowers/specs/2026-04-07-brain-seed-and-activate-design.md`
 **Seed & Activate plan:** `~/docs/superpowers/plans/2026-04-07-brain-seed-and-activate.md`
+**API Layer spec:** `~/docs/superpowers/specs/2026-04-08-brain-api-layer-design.md`
+**API Layer plan:** `~/docs/superpowers/plans/2026-04-08-brain-api-layer.md`
 **Remaining work:** `docs/REMAINING-WORK.md` (in this repo)
 
 ## Tech Stack
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (178 tests across 32 files)
+- Testing: Vitest (194 tests across 36 files)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
@@ -37,7 +40,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 ## Architecture
 
 ```
-MarkPush/GitHub/Gmail → orchestrator → raw/ drops (with frontmatter)
+API/MarkPush/GitHub/Gmail → orchestrator/API → raw/ drops (with frontmatter)
                                            ↓
 raw/ drops → chokidar watcher → parser middleware → compile queue → wiki/ articles
                                                                        ↓
@@ -48,7 +51,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (49)
+### Source Files (54)
 
 ```
 src/
@@ -58,7 +61,14 @@ src/
 ├── quarantine.ts           ← Dead letter queue (3x fail → quarantine/)
 ├── snapshot.ts             ← Pre-heal git snapshots
 ├── watcher.ts              ← chokidar watchers (raw/ + wiki/)
-├── index.ts                ← Daemon entry point + cron
+├── index.ts                ← Daemon entry point (API + watchers + cron)
+├── api/
+│   ├── server.ts           ← Fastify factory + graceful shutdown
+│   ├── fastify.d.ts        ← Fastify type augmentation
+│   └── routes/
+│       ├── health.ts       ← GET /health — daemon status
+│       ├── ingest.ts       ← POST /ingest — write to raw/
+│       └── synthesise.ts   ← POST /synthesise — query knowledge graph
 ├── compiler/
 │   ├── compile.ts          ← Claude API single-pass compiler
 │   ├── queue.ts            ← Compile queue (pending → processing → processed)
@@ -176,7 +186,7 @@ When the user asks "what do I know about X?" or similar:
 
 ```bash
 pnpm test              # Run all tests
-pnpm start             # Start daemon (watchers + cron)
+pnpm start             # Start daemon (API + watchers + cron)
 pnpm stop              # Stop daemon
 pnpm status            # Check daemon PID
 pnpm seed              # Full seed from career-datacenter + GitHub + embed
