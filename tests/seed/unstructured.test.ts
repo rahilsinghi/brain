@@ -41,7 +41,7 @@ describe("unstructured", () => {
     expect(existsSync(rawPath)).toBe(true);
     const content = readFileSync(rawPath, "utf-8");
     expect(content).toContain("status: pending");
-    expect(content).toContain("source_type: seed_yaml");
+    expect(content).toContain("source_type: file_drop");
   });
 
   it("returns empty for missing source files", () => {

@@ -30,7 +30,7 @@ export function getUnstructuredFiles(sourceRoot: string): UnstructuredFile[] {
   })).filter((f) => existsSync(f.sourcePath));
 }
 
-export function copyToRaw(files: UnstructuredFile[], vaultRoot: string): string[] {
+export function copyToRaw(files: UnstructuredFile[], vaultRoot: string, force: boolean = false): string[] {
   const written: string[] = [];
   const rawDir = join(vaultRoot, "raw", "articles");
   mkdirSync(rawDir, { recursive: true });
@@ -38,13 +38,17 @@ export function copyToRaw(files: UnstructuredFile[], vaultRoot: string): string[
   for (const file of files) {
     if (!existsSync(file.sourcePath)) continue;
 
-    const content = readFileSync(file.sourcePath, "utf-8");
     const targetPath = join(rawDir, `${file.targetSlug}.md`);
+
+    // Skip if already copied unless --force
+    if (existsSync(targetPath) && !force) continue;
+
+    const content = readFileSync(file.sourcePath, "utf-8");
 
     const now = new Date().toISOString();
     const frontmatter: Record<string, unknown> = {
       status: "pending",
-      source_type: "seed_yaml",
+      source_type: "file_drop",
       source_id: `career-datacenter/${file.sourcePath.split("career-datacenter/").pop() ?? basename(file.sourcePath)}`,
       ingested_at: now,
       parsed_at: now,

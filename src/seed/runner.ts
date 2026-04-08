@@ -1,5 +1,6 @@
 import { join } from "node:path";
 import { mkdirSync, existsSync } from "node:fs";
+import { parse as parseYaml } from "yaml";
 import { writeFrontmatter } from "../frontmatter.js";
 import { SeedLogger } from "./log.js";
 import { loadYaml, loadCsv } from "./yaml-loader.js";
@@ -207,10 +208,7 @@ export async function runSeed(
       log.transform("answers", "wiki/concepts/easy-apply-answers.md");
     }
 
-    if (
-      shouldRunStep("tracking", opts.only) ||
-      shouldRunStep("transforms", opts.only)
-    ) {
+    if (shouldRunStep("tracking", opts.only) || !opts.only) {
       const outreach = existsSync(
         join(trackingDir, "outreach_log.csv"),
       )
@@ -250,7 +248,6 @@ export async function runSeed(
     for (const result of allResults) {
       const fmMatch = result.content.match(/^---\n([\s\S]*?)\n---\n/);
       if (fmMatch) {
-        const { parse: parseYaml } = await import("yaml");
         const fm = parseYaml(fmMatch[1]) as Record<string, unknown>;
         const validation = validateWikiFrontmatter(fm);
         if (validation.valid) {
@@ -275,7 +272,6 @@ export async function runSeed(
       mkdirSync(join(fullPath, ".."), { recursive: true });
       const fmMatch = result.content.match(/^---\n([\s\S]*?)\n---\n/);
       if (fmMatch) {
-        const { parse: parseYaml } = await import("yaml");
         const fm = parseYaml(fmMatch[1]) as Record<string, unknown>;
         const body = result.content.slice(fmMatch[0].length);
         writeFrontmatter(fullPath, fm, body);
@@ -290,7 +286,7 @@ export async function runSeed(
   if (shouldRunStep("compile", opts.only)) {
     const unstructuredFiles = getUnstructuredFiles(sourceRoot);
     if (unstructuredFiles.length > 0) {
-      const rawPaths = copyToRaw(unstructuredFiles, vaultRoot);
+      const rawPaths = copyToRaw(unstructuredFiles, vaultRoot, opts.force);
       log.step(
         "compile",
         `${rawPaths.length} unstructured docs copied to raw/articles/ for compilation`,

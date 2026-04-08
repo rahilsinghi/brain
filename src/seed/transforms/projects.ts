@@ -6,7 +6,7 @@ function metricAlreadyInText(text: string, metric: MetricEntry): boolean {
   const valueStr = metric.value;
   return text.includes(valueStr) && (
     text.toLowerCase().includes(metric.unit.toLowerCase()) ||
-    text.includes("%") && metric.unit === "percent"
+    (text.includes("%") && metric.unit === "percent")
   );
 }
 

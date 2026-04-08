@@ -13,7 +13,7 @@ export function transformStories(stories: StoryEntry[]): TransformResult[] {
   sections.push(`---\n${fmYaml}\n---\n`);
   sections.push(`# STAR Stories\n`);
   for (const story of stories) {
-    sections.push(`---\n`);
+    sections.push(`***\n`);
     sections.push(`## ${story.title}\n`);
     sections.push(
       `**Category:** ${story.category}${story.subcategory ? ` / ${story.subcategory}` : ""}`,
