@@ -1,7 +1,5 @@
 import { randomUUID } from "node:crypto";
 import type { FastifyInstance } from "fastify";
-import type { SynthesisResult } from "../../query/synthesize.js";
-import type { WikiChunk, ApiConfig } from "../../types.js";
 
 const synthesiseSchema = {
   body: {
@@ -18,12 +16,6 @@ interface SynthesiseBody {
   query: string;
   top_k?: number | null;
 }
-
-type SynthesizeFn = (
-  question: string,
-  store: { search: (vector: number[], topK: number) => Promise<WikiChunk[]> },
-  topK: number,
-) => Promise<SynthesisResult>;
 
 function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
   return new Promise((resolve, reject) => {
@@ -49,14 +41,9 @@ export async function synthesiseRoute(app: FastifyInstance): Promise<void> {
     "/synthesise",
     { schema: synthesiseSchema },
     async (request, reply) => {
-      const store = (
-        app as unknown as {
-          store: { search: (v: number[], k: number) => Promise<WikiChunk[]> };
-        }
-      ).store;
-      const config = (app as unknown as { config: { api: ApiConfig } }).config;
-      const synthesizeFn = (app as unknown as { synthesizeFn: SynthesizeFn })
-        .synthesizeFn;
+      const store = app.store;
+      const config = app.config;
+      const synthesizeFn = app.synthesizeFn;
 
       const queryId = randomUUID();
       const startMs = Date.now();
@@ -81,7 +68,6 @@ export async function synthesiseRoute(app: FastifyInstance): Promise<void> {
             file: c.filePath,
             title: c.breadcrumb,
             chunk: c.content,
-            score: (c as Record<string, unknown>).score as number | undefined,
           })),
           model: "claude-sonnet-4-6",
           latency_ms: latencyMs,

@@ -1,16 +1,10 @@
 import Fastify, { type FastifyInstance } from "fastify";
 import type { VectorStore } from "../embedder/vector-store.js";
-import type { BrainConfig, WikiChunk } from "../types.js";
-import type { SynthesisResult } from "../query/synthesize.js";
+import type { BrainConfig } from "../types.js";
+import type { SynthesizeFn } from "./fastify.js";
 import { healthRoute } from "./routes/health.js";
 import { ingestRoute } from "./routes/ingest.js";
 import { synthesiseRoute } from "./routes/synthesise.js";
-
-type SynthesizeFn = (
-  question: string,
-  store: { search: (vector: number[], topK: number) => Promise<WikiChunk[]> },
-  topK: number,
-) => Promise<SynthesisResult>;
 
 interface ServerOptions {
   store: VectorStore;
@@ -47,9 +41,16 @@ export async function stopServer(
       resolve();
     }, timeoutMs);
 
-    server.close().then(() => {
-      clearTimeout(forceTimer);
-      resolve();
-    });
+    server.close().then(
+      () => {
+        clearTimeout(forceTimer);
+        resolve();
+      },
+      (err) => {
+        clearTimeout(forceTimer);
+        console.error("[api] close error", err);
+        resolve();
+      },
+    );
   });
 }

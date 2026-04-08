@@ -34,7 +34,7 @@ export async function ingestRoute(app: FastifyInstance): Promise<void> {
     "/ingest",
     { schema: ingestSchema },
     async (request, reply) => {
-      const vaultRoot = (app as unknown as { vaultRoot: string }).vaultRoot;
+      const vaultRoot = app.vaultRoot;
       const { content, source, title, metadata } = request.body;
 
       const slug = `${slugify(title ?? firstLine(content))}-${Date.now()}`;
@@ -46,6 +46,7 @@ export async function ingestRoute(app: FastifyInstance): Promise<void> {
 
       const now = new Date().toISOString();
       const frontmatter: Record<string, unknown> = {
+        ...(metadata ?? {}),
         status: "pending",
         source_type: "api",
         channel: source,
@@ -57,14 +58,7 @@ export async function ingestRoute(app: FastifyInstance): Promise<void> {
         retry_count: 0,
         last_error: null,
         compile_progress: null,
-        ...(metadata ?? {}),
       };
-
-      // Prevent metadata from overwriting system fields
-      frontmatter.status = "pending";
-      frontmatter.source_type = "api";
-      frontmatter.source_id = relativePath;
-      frontmatter.ingested_at = now;
 
       writeFrontmatter(fullPath, frontmatter, content);
 

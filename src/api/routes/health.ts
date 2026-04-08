@@ -2,8 +2,6 @@ import { readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import type { FastifyInstance } from "fastify";
 
-const startTime = Date.now();
-
 function countFiles(dir: string, ext: string): number {
   if (!existsSync(dir)) return 0;
   let count = 0;
@@ -33,9 +31,11 @@ function countPending(dir: string): number {
 }
 
 export async function healthRoute(app: FastifyInstance): Promise<void> {
+  const startTime = Date.now();
+
   app.get("/health", async () => {
-    const vaultRoot = (app as unknown as { vaultRoot: string }).vaultRoot;
-    const store = (app as unknown as { store: unknown }).store;
+    const vaultRoot = app.vaultRoot;
+    const store = app.store;
 
     return {
       status: "ok",

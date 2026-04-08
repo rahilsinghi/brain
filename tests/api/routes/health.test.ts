@@ -22,4 +22,18 @@ describe("GET /health", () => {
 
     await app.close();
   });
+
+  it("reports lancedb_ready false when store is null", async () => {
+    const app = Fastify();
+    app.decorate("vaultRoot", "/tmp/test-vault");
+    app.decorate("store", null);
+    app.register(healthRoute);
+    await app.ready();
+
+    const res = await app.inject({ method: "GET", url: "/health" });
+    const body = res.json();
+    expect(body.lancedb_ready).toBe(false);
+
+    await app.close();
+  });
 });
