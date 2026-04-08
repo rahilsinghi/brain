@@ -4,6 +4,12 @@ import { parse as parseYaml } from "yaml";
 import type { BrainConfig } from "./types.js";
 
 const DEFAULTS: BrainConfig = {
+  api: {
+    port: 3577,
+    host: "127.0.0.1", // localhost-only; Tailscale handles remote routing
+    synthesise_timeout_ms: 30000,
+    default_top_k: 8,
+  },
   daemon: { log_level: "info" },
   watchers: { raw_dir: "raw/", wiki_dir: "wiki/", voice_dir: "raw/voice/" },
   cron: { mcp_sources: "0 * * * *", calendar: "0 22 * * *", lint_heal: "0 3 * * *" },

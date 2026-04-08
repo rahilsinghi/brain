@@ -17,7 +17,8 @@ export type SourceType =
   | "conversation"
   | "auto_research"
   | "seed_yaml"
-  | "seed_csv";
+  | "seed_csv"
+  | "api";
 
 export type Author = "ai" | "human";
 
@@ -57,7 +58,15 @@ export interface QuarantineFrontmatter {
 
 export type CompileStrategy = "single" | "chunked" | "staged" | "manual_review";
 
+export interface ApiConfig {
+  port: number;
+  host: string;
+  synthesise_timeout_ms: number;
+  default_top_k: number;
+}
+
 export interface BrainConfig {
+  api: ApiConfig;
   daemon: { log_level: string };
   watchers: {
     raw_dir: string;
