@@ -65,8 +65,15 @@ export interface ApiConfig {
   default_top_k: number;
 }
 
+export interface TelegramConfig {
+  bot_token: string | null;
+  allowed_user_ids: number[];
+  poll_timeout_s: number;
+}
+
 export interface BrainConfig {
   api: ApiConfig;
+  telegram: TelegramConfig;
   daemon: { log_level: string };
   watchers: {
     raw_dir: string;

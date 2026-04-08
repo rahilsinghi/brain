@@ -10,6 +10,11 @@ const DEFAULTS: BrainConfig = {
     synthesise_timeout_ms: 30000,
     default_top_k: 8,
   },
+  telegram: {
+    bot_token: null,
+    allowed_user_ids: [],
+    poll_timeout_s: 30,
+  },
   daemon: { log_level: "info" },
   watchers: { raw_dir: "raw/", wiki_dir: "wiki/", voice_dir: "raw/voice/" },
   cron: { mcp_sources: "0 * * * *", calendar: "0 22 * * *", lint_heal: "0 3 * * *" },

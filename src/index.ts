@@ -11,8 +11,12 @@ import { JsonSyncStateStore } from "./sources/state.js";
 import { VectorStore } from "./embedder/vector-store.js";
 import { synthesize } from "./query/synthesize.js";
 import { createServer, stopServer } from "./api/server.js";
+import { createTelegramBot } from "./telegram/bot.js";
+import { ingestContent } from "./api/ingest-core.js";
+import { getHealthStats } from "./api/health-core.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
+const startTime = Date.now();
 
 console.log("[brain] Starting daemon...");
 
@@ -37,6 +41,30 @@ const server = createServer({
 });
 await server.listen({ port: config.api.port, host: config.api.host });
 console.log(`[brain] API server listening on http://${config.api.host}:${config.api.port}`);
+
+// Step 2.5: Start Telegram bot (conditional)
+const botToken = config.telegram.bot_token ?? process.env.TELEGRAM_BOT_TOKEN ?? null;
+let bot: ReturnType<typeof createTelegramBot> | null = null;
+
+if (botToken && config.telegram.allowed_user_ids.length > 0) {
+  bot = createTelegramBot({
+    token: botToken,
+    allowedUserIds: config.telegram.allowed_user_ids,
+    store,
+    vaultRoot,
+    config,
+    synthesizeFn: synthesize,
+    ingestFn: ingestContent,
+    getHealthStatsFn: getHealthStats,
+    startTime,
+  });
+  bot.start({
+    timeout: config.telegram.poll_timeout_s,
+    onStart: () => console.log("[brain] Telegram bot started."),
+  });
+} else {
+  console.log("[brain] Telegram bot disabled (no token or no allowed users).");
+}
 
 // Step 3: Start watchers
 const watchers = startWatchers(vaultRoot, config);
@@ -89,8 +117,11 @@ cron.schedule(config.cron.mcp_sources, async () => {
 // Step 5: Graceful shutdown
 async function shutdown() {
   console.log("\n[brain] Shutting down...");
-  await stopServer(server, 30_000);
-  console.log("[brain] Server drained.");
+  await Promise.all([
+    stopServer(server, 30_000),
+    bot ? bot.stop() : Promise.resolve(),
+  ]);
+  console.log("[brain] Server and bot stopped.");
   await watchers.close();
   console.log("[brain] Watchers closed. Goodbye.");
   process.exit(0);

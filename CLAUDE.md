@@ -9,6 +9,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 3 (Auto-Ingestion):** Complete — MarkPush, GitHub, Gmail sources + orchestrator + CLI
 **Phase A (Seed & Activate):** Complete — seed script, YAML transforms, batch compile, embedding sync
 **Phase B (API Layer):** Complete — Fastify HTTP API (ingest, synthesise, health) embedded in daemon
+**Telegram Input:** Complete — grammY bot with prefix routing, ingest + synthesise, /start /help /status
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Not started — Whisper, Marp, matplotlib
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
@@ -22,13 +23,15 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Seed & Activate plan:** `~/docs/superpowers/plans/2026-04-07-brain-seed-and-activate.md`
 **API Layer spec:** `~/docs/superpowers/specs/2026-04-08-brain-api-layer-design.md`
 **API Layer plan:** `~/docs/superpowers/plans/2026-04-08-brain-api-layer.md`
+**Telegram Input spec:** `~/docs/superpowers/specs/2026-04-08-brain-telegram-input-design.md`
+**Telegram Input plan:** `~/docs/superpowers/plans/2026-04-08-brain-telegram-input.md`
 **Remaining work:** `docs/REMAINING-WORK.md` (in this repo)
 
 ## Tech Stack
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (194 tests across 36 files)
+- Testing: Vitest (223 tests across 40 files)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
@@ -51,7 +54,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (54)
+### Source Files (58)
 
 ```
 src/
@@ -62,9 +65,14 @@ src/
 ├── snapshot.ts             ← Pre-heal git snapshots
 ├── watcher.ts              ← chokidar watchers (raw/ + wiki/)
 ├── index.ts                ← Daemon entry point (API + watchers + cron)
+├── telegram/
+│   ├── bot.ts              ← Telegram bot factory + message handlers
+│   └── truncate.ts         ← Sentence-boundary truncation for long replies
 ├── api/
 │   ├── server.ts           ← Fastify factory + graceful shutdown
 │   ├── fastify.d.ts        ← Fastify type augmentation
+│   ├── ingest-core.ts      ← Shared ingest logic (HTTP + Telegram)
+│   ├── health-core.ts      ← Shared health stats (HTTP + Telegram)
 │   └── routes/
 │       ├── health.ts       ← GET /health — daemon status
 │       ├── ingest.ts       ← POST /ingest — write to raw/
@@ -181,6 +189,18 @@ When the user asks "what do I know about X?" or similar:
   3. Human files or human edits <24h → hands off, proposals/ only
 - When in doubt, write to `proposals/` instead of editing human files
 - Cost controls: max 20 heal operations, max 5 web searches per nightly run
+
+## Telegram Bot
+
+Set `TELEGRAM_BOT_TOKEN` in `.brain/.env` and add `allowed_user_ids` to `.brain/config.yaml`:
+
+```yaml
+telegram:
+  allowed_user_ids: [123456789]
+```
+
+Bot is opt-in — disabled without both token and allowed users.
+Send text to ingest, prefix with `?` to query. Commands: /start, /help, /status.
 
 ## Running
 

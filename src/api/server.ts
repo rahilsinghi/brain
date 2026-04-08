@@ -1,7 +1,7 @@
 import Fastify, { type FastifyInstance } from "fastify";
 import type { VectorStore } from "../embedder/vector-store.js";
 import type { BrainConfig } from "../types.js";
-import type { SynthesizeFn } from "./fastify.js";
+import type { SynthesizeFn } from "../query/synthesize.js";
 import { healthRoute } from "./routes/health.js";
 import { ingestRoute } from "./routes/ingest.js";
 import { synthesiseRoute } from "./routes/synthesise.js";

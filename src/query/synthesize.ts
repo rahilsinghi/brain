@@ -20,6 +20,12 @@ export interface SynthesisResult {
   chunks: WikiChunk[];
 }
 
+export type SynthesizeFn = (
+  question: string,
+  store: { search: (vector: number[], topK: number) => Promise<WikiChunk[]> },
+  topK: number,
+) => Promise<SynthesisResult>;
+
 export async function synthesize(
   question: string,
   store: { search: (vector: number[], topK: number) => Promise<WikiChunk[]> },

@@ -1,8 +1,5 @@
-import { mkdirSync } from "node:fs";
-import { join } from "node:path";
 import type { FastifyInstance } from "fastify";
-import { slugify } from "../../sources/slug.js";
-import { writeFrontmatter } from "../../frontmatter.js";
+import { ingestContent } from "../ingest-core.js";
 
 const ingestSchema = {
   body: {
@@ -24,49 +21,17 @@ interface IngestBody {
   metadata?: Record<string, unknown> | null;
 }
 
-function firstLine(text: string): string {
-  const line = text.split("\n").find((l) => l.trim().length > 0) ?? "untitled";
-  return line.replace(/^#+\s*/, "").trim();
-}
-
 export async function ingestRoute(app: FastifyInstance): Promise<void> {
   app.post<{ Body: IngestBody }>(
     "/ingest",
     { schema: ingestSchema },
     async (request, reply) => {
-      const vaultRoot = app.vaultRoot;
-      const { content, source, title, metadata } = request.body;
-
-      const slug = `${slugify(title ?? firstLine(content))}-${Date.now()}`;
-      const relativePath = `api/articles/${slug}.md`;
-      const rawPath = `raw/${relativePath}`;
-      const fullPath = join(vaultRoot, rawPath);
-
-      mkdirSync(join(fullPath, ".."), { recursive: true });
-
-      const now = new Date().toISOString();
-      const frontmatter: Record<string, unknown> = {
-        ...(metadata ?? {}),
-        status: "pending",
-        source_type: "api",
-        channel: source,
-        source_id: relativePath,
-        ingested_at: now,
-        parsed_at: null,
-        compiled_to: null,
-        processed_at: null,
-        retry_count: 0,
-        last_error: null,
-        compile_progress: null,
-      };
-
-      writeFrontmatter(fullPath, frontmatter, content);
-
-      return reply.status(202).send({
-        source_id: relativePath,
-        raw_path: rawPath,
-        ingested_at: now,
+      const result = ingestContent({
+        ...request.body,
+        vaultRoot: app.vaultRoot,
       });
+
+      return reply.status(202).send(result);
     },
   );
 }
