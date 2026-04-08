@@ -229,9 +229,9 @@ const CompanyEntrySchema = z
     funding_stage: z.string().optional(),
     last_funding_amount: z.string().nullable().optional(),
     last_funding_date: z.string().nullable().optional(),
-    valuation: z.string().optional(),
-    lead_investor: z.string().optional(),
-    careers_url: z.string().optional(),
+    valuation: z.string().nullable().optional(),
+    lead_investor: z.string().nullable().optional(),
+    careers_url: z.string().nullable().optional(),
     tech_stack: z.array(z.string()).default([]),
     product_description: z.string(),
     kismet_angle: z.string().optional(),
@@ -280,7 +280,7 @@ export const HospitalityPositioningSchema = z
         })
       )
       .default([]),
-    categories: z.record(PositioningCategorySchema),
+    categories: z.record(z.string(), PositioningCategorySchema),
   })
   .passthrough();
 
@@ -296,14 +296,16 @@ const RoleFamilySchema = z
   .passthrough();
 
 export const RoleFamiliesSchema = z.object({
-  role_families: z.record(RoleFamilySchema),
+  role_families: z.record(z.string(), RoleFamilySchema),
 });
 
 export type RoleFamiliesFile = z.infer<typeof RoleFamiliesSchema>;
 
 // --- Easy Apply Answers ---
 export const EasyApplyAnswersSchema = z.record(
+  z.string(),
   z.record(
+    z.string(),
     z
       .object({
         answer: z.string().default(""),

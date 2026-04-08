@@ -10,9 +10,9 @@
     "status": "kill -0 $(cat .brain/daemon.pid) 2>/dev/null && echo 'running' || echo 'stopped'",
     "test": "vitest run",
     "test:watch": "vitest",
-    "seed": "bun run src/seed/index.ts",
-    "seed:tracking": "bun run src/seed/index.ts --only tracking",
-    "seed:github": "bun run src/seed/index.ts --only github"
+    "seed": "tsx src/seed/index.ts",
+    "seed:tracking": "tsx src/seed/index.ts --only tracking",
+    "seed:github": "tsx src/seed/index.ts --only github"
   },
   "keywords": [],
   "author": "",
@@ -38,6 +38,7 @@
     "@types/bun": "^1.3.11",
     "@types/node": "^25.5.2",
     "@types/turndown": "^5.0.6",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.2",
     "vitest": "^4.1.2"
   }
