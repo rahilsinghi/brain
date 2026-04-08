@@ -1,0 +1,206 @@
+import { describe, it, expect, vi } from "vitest";
+import {
+  handleTextMessage,
+  handleVoiceMessage,
+  handleStartCommand,
+  handleHelpCommand,
+  handleStatusCommand,
+  type HandlerDeps,
+} from "../../src/telegram/bot.js";
+
+function mockCtx(overrides: {
+  text?: string;
+  userId?: number;
+  isVoice?: boolean;
+}) {
+  return {
+    from: { id: overrides.userId ?? 123 },
+    message: overrides.isVoice
+      ? { voice: {} }
+      : { text: overrides.text ?? "" },
+    reply: vi.fn(),
+  };
+}
+
+function makeDeps(overrides?: Partial<HandlerDeps>): HandlerDeps {
+  return {
+    allowedUserIds: [123, 456],
+    vaultRoot: "/tmp/test-vault",
+    config: {
+      api: { default_top_k: 8 },
+    } as never,
+    synthesizeFn: vi.fn().mockResolvedValue({
+      answer: "The answer is 42.",
+      sourcePaths: [],
+      chunks: [],
+    }),
+    ingestFn: vi.fn().mockReturnValue({
+      source_id: "api/articles/test-1234.md",
+      raw_path: "raw/api/articles/test-1234.md",
+      ingested_at: "2026-04-08T00:00:00.000Z",
+    }),
+    store: { search: vi.fn() } as never,
+    startTime: Date.now() - 60000,
+    getHealthStatsFn: vi.fn().mockReturnValue({
+      status: "ok",
+      uptime_s: 60,
+      lancedb_ready: true,
+      wiki_article_count: 97,
+      raw_pending_count: 3,
+    }),
+    ...overrides,
+  };
+}
+
+describe("handleTextMessage", () => {
+  it("silently ignores messages from non-allowed users", async () => {
+    const ctx = mockCtx({ text: "hello", userId: 999 });
+    const deps = makeDeps();
+
+    await handleTextMessage(ctx as never, deps);
+
+    expect(ctx.reply).not.toHaveBeenCalled();
+    expect(deps.ingestFn).not.toHaveBeenCalled();
+    expect(deps.synthesizeFn).not.toHaveBeenCalled();
+  });
+
+  it("rejects empty messages after trim", async () => {
+    const ctx = mockCtx({ text: "   \n  " });
+    const deps = makeDeps();
+
+    await handleTextMessage(ctx as never, deps);
+
+    expect(ctx.reply).toHaveBeenCalledWith(
+      "Empty message — nothing to save.",
+    );
+    expect(deps.ingestFn).not.toHaveBeenCalled();
+  });
+
+  it("routes ?query to synthesize and replies with answer", async () => {
+    const ctx = mockCtx({ text: "?What is the meaning of life?" });
+    const deps = makeDeps();
+
+    await handleTextMessage(ctx as never, deps);
+
+    expect(deps.synthesizeFn).toHaveBeenCalledWith(
+      "What is the meaning of life?",
+      deps.store,
+      8,
+    );
+    expect(ctx.reply).toHaveBeenCalledWith("The answer is 42.");
+  });
+
+  it("ingests plain text and replies with confirmation", async () => {
+    const ctx = mockCtx({ text: "TIL: Kubernetes uses etcd for state" });
+    const deps = makeDeps();
+
+    await handleTextMessage(ctx as never, deps);
+
+    expect(deps.ingestFn).toHaveBeenCalledWith({
+      content: "TIL: Kubernetes uses etcd for state",
+      source: "telegram",
+      vaultRoot: "/tmp/test-vault",
+    });
+    expect(ctx.reply).toHaveBeenCalledWith(
+      "Saved. (api/articles/test-1234.md)",
+    );
+  });
+
+  it("replies with error message when synthesis fails", async () => {
+    const ctx = mockCtx({ text: "?broken query" });
+    const deps = makeDeps({
+      synthesizeFn: vi.fn().mockRejectedValue(new Error("API down")),
+    });
+
+    await handleTextMessage(ctx as never, deps);
+
+    expect(ctx.reply).toHaveBeenCalledWith(
+      "Synthesis failed — try again later.",
+    );
+  });
+
+  it("replies with error message when ingest fails", async () => {
+    const ctx = mockCtx({ text: "some knowledge" });
+    const deps = makeDeps({
+      ingestFn: vi.fn().mockImplementation(() => {
+        throw new Error("disk full");
+      }),
+    });
+
+    await handleTextMessage(ctx as never, deps);
+
+    expect(ctx.reply).toHaveBeenCalledWith(
+      "Failed to save — try again later.",
+    );
+  });
+
+  it("truncates long synthesis answers at sentence boundary", async () => {
+    const longAnswer = "A".repeat(2000) + ". " + "B".repeat(2000) + ". " + "C".repeat(2000) + ".";
+    const ctx = mockCtx({ text: "?long question" });
+    const deps = makeDeps({
+      synthesizeFn: vi.fn().mockResolvedValue({
+        answer: longAnswer,
+        sourcePaths: [],
+        chunks: [],
+      }),
+    });
+
+    await handleTextMessage(ctx as never, deps);
+
+    const reply = ctx.reply.mock.calls[0][0] as string;
+    expect(reply.length).toBeLessThanOrEqual(4099); // 4096 + "..."
+    expect(reply.endsWith("...")).toBe(true);
+  });
+});
+
+describe("handleVoiceMessage", () => {
+  it("replies with unsupported message", async () => {
+    const ctx = mockCtx({ isVoice: true });
+    const deps = makeDeps();
+
+    await handleVoiceMessage(ctx as never, deps);
+
+    expect(ctx.reply).toHaveBeenCalledWith(
+      "Voice notes aren't supported yet — please send text.",
+    );
+  });
+});
+
+describe("handleStartCommand", () => {
+  it("replies with welcome message", async () => {
+    const ctx = mockCtx({});
+    const deps = makeDeps();
+
+    await handleStartCommand(ctx as never, deps);
+
+    const reply = ctx.reply.mock.calls[0][0] as string;
+    expect(reply).toContain("Brain");
+    expect(reply).toContain("?");
+  });
+});
+
+describe("handleHelpCommand", () => {
+  it("replies with usage instructions", async () => {
+    const ctx = mockCtx({});
+    const deps = makeDeps();
+
+    await handleHelpCommand(ctx as never, deps);
+
+    const reply = ctx.reply.mock.calls[0][0] as string;
+    expect(reply).toContain("?");
+    expect(reply).toContain("ingest");
+  });
+});
+
+describe("handleStatusCommand", () => {
+  it("formats health stats into readable message", async () => {
+    const ctx = mockCtx({});
+    const deps = makeDeps();
+
+    await handleStatusCommand(ctx as never, deps);
+
+    const reply = ctx.reply.mock.calls[0][0] as string;
+    expect(reply).toContain("97");
+    expect(reply).toContain("ok");
+  });
+});
