@@ -15,7 +15,9 @@ export type SourceType =
   | "calendar"
   | "voice"
   | "conversation"
-  | "auto_research";
+  | "auto_research"
+  | "seed_yaml"
+  | "seed_csv";
 
 export type Author = "ai" | "human";
 
