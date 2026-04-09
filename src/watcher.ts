@@ -1,10 +1,14 @@
 import chokidar from "chokidar";
 import { join, extname } from "node:path";
+import { mkdirSync } from "node:fs";
 import { injectRawFrontmatter, readFrontmatter } from "./frontmatter.js";
 import { routeAndParse } from "./parser/router.js";
 import { processQueue } from "./compiler/queue.js";
 import { syncFile, shouldReembed } from "./embedder/sync.js";
 import { VectorStore } from "./embedder/vector-store.js";
+import { parseVoice } from "./voice/voice-parser.js";
+import { createTranscriptionProvider } from "./voice/transcribe.js";
+import { classifyCluster } from "./voice/classify.js";
 import type { BrainConfig } from "./types.js";
 
 const IGNORED_FILES = new Set([".gitkeep", ".DS_Store"]);
@@ -12,6 +16,7 @@ const BINARY_NO_FRONTMATTER = new Set([
   ".pdf", ".m4a", ".mp3", ".wav",
   ".png", ".jpg", ".jpeg", ".webp",
 ]);
+const AUDIO_EXTENSIONS = new Set([".m4a", ".mp3", ".wav", ".ogg"]);
 
 export function startWatchers(
   vaultRoot: string,
@@ -80,6 +85,43 @@ export function startWatchers(
     }
   });
 
+  // Voice watcher — separate from raw watcher
+  const voiceDir = join(vaultRoot, config.watchers.voice_dir);
+  mkdirSync(voiceDir, { recursive: true });
+
+  const transcriptionProvider = createTranscriptionProvider(
+    config.transcription.provider,
+    config.transcription.local_model,
+    config.transcription.openai_model,
+  );
+
+  const voiceWatcher = chokidar.watch(voiceDir, {
+    ignored: [/(^|[\/\\])\./, /\.processed$/, /\.md$/],
+    persistent: true,
+    ignoreInitial: true,
+    awaitWriteFinish: { stabilityThreshold: 2000, pollInterval: 200 },
+  });
+
+  voiceWatcher.on("add", async (filePath: string) => {
+    const ext = extname(filePath).toLowerCase();
+    if (!AUDIO_EXTENSIONS.has(ext)) return;
+
+    console.log(`[voice-watcher] New audio: ${filePath.split("/").pop()}`);
+    try {
+      await parseVoice(filePath, vaultRoot, transcriptionProvider, (text) =>
+        classifyCluster(text, {
+          clusters: config.voice.clusters,
+          defaultCluster: config.voice.default_cluster,
+          classifyModel: config.voice.classify_model,
+        }),
+      );
+    } catch (err) {
+      console.error(
+        `[voice-watcher] Error: ${err instanceof Error ? err.message : String(err)}`,
+      );
+    }
+  });
+
   const lanceDbPath = join(vaultRoot, ".lancedb");
   const store = new VectorStore(lanceDbPath);
   let wikiWatcher: ReturnType<typeof chokidar.watch> | null = null;
@@ -116,6 +158,7 @@ export function startWatchers(
     close: async () => {
       if (compileDebounce) clearTimeout(compileDebounce);
       await rawWatcher.close();
+      await voiceWatcher.close();
       if (wikiWatcher) {
         await wikiWatcher.close();
       }

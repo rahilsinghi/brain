@@ -15,6 +15,7 @@ import { createServer, stopServer } from "./api/server.js";
 import { createTelegramBot } from "./telegram/bot.js";
 import { ingestContent } from "./api/ingest-core.js";
 import { getHealthStats } from "./api/health-core.js";
+import { appendDailyEntry, writeDailySummary } from "./daily/log.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
@@ -84,6 +85,11 @@ cron.schedule(config.cron.lint_heal, async () => {
     console.log(
       `[cron] Lint done: ${stats.lintIssuesFound} issues, ${stats.healOperationsRun} healed`,
     );
+    appendDailyEntry(
+      vaultRoot,
+      "system",
+      `Nightly lint: ${stats.lintIssuesFound} issues, ${stats.healOperationsRun} healed`,
+    );
   } catch (err) {
     console.error(
       `[cron] Lint & heal failed: ${err instanceof Error ? err.message : String(err)}`,
@@ -111,6 +117,13 @@ cron.schedule(config.cron.mcp_sources, async () => {
     console.log(
       `[cron] Sync done: ${ghIngested} GitHub items, ${commitIngested} commits ingested`,
     );
+    if (ghIngested + commitIngested > 0) {
+      appendDailyEntry(
+        vaultRoot,
+        "system",
+        `Source sync: ${ghIngested} GitHub items, ${commitIngested} commits ingested`,
+      );
+    }
     if (report.results.github?.errors?.length) {
       console.warn(`[cron] GitHub errors: ${report.results.github.errors}`);
     }
@@ -122,6 +135,20 @@ cron.schedule(config.cron.mcp_sources, async () => {
   } catch (err) {
     console.error(
       `[cron] Sync failed: ${err instanceof Error ? err.message : String(err)}`,
+    );
+  }
+});
+
+// Daily summary at 23:55
+cron.schedule("55 23 * * *", async () => {
+  console.log("[cron] Writing daily summary...");
+  try {
+    const date = new Date().toISOString().split("T")[0];
+    await writeDailySummary(vaultRoot, date);
+    console.log(`[cron] Daily summary written for ${date}`);
+  } catch (err) {
+    console.error(
+      `[cron] Daily summary failed: ${err instanceof Error ? err.message : String(err)}`,
     );
   }
 });
