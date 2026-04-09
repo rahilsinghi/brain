@@ -1,6 +1,6 @@
 import { join } from "node:path";
 import { mkdirSync } from "node:fs";
-import { Bot } from "grammy";
+import { Bot, InputFile } from "grammy";
 import type { Context } from "grammy";
 import type { BrainConfig } from "../types.js";
 import type { SynthesizeFn } from "../query/synthesize.js";
@@ -35,6 +35,8 @@ export interface HandlerDeps {
   startTime: number;
   getHealthStatsFn: (input: HealthInput) => HealthStats;
   convertAudioFn?: ConvertAudioFn;
+  generateSlidesFn?: (topic: string) => Promise<{ mdPath: string; pdfPath: string; htmlPath: string }>;
+  generatePlotFn?: (description: string) => Promise<{ pyPath: string; pngPath: string }>;
 }
 
 export async function handleTextMessage(
@@ -152,6 +154,62 @@ export async function handleStatusCommand(
   );
 }
 
+export async function handleSlidesCommand(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+
+  const text = ctx.message?.text?.replace(/^\/slides\s*/, "").trim() ?? "";
+  if (text.length === 0) {
+    await ctx.reply("Usage: /slides <topic>");
+    return;
+  }
+
+  if (!deps.generateSlidesFn) {
+    await ctx.reply("Not configured.");
+    return;
+  }
+
+  await ctx.reply("Generating slides...");
+  try {
+    const result = await deps.generateSlidesFn(text);
+    const absolutePath = join(deps.vaultRoot, result.pdfPath);
+    await ctx.replyWithDocument(new InputFile(absolutePath));
+  } catch {
+    await ctx.reply("Generation failed — check logs.");
+  }
+}
+
+export async function handlePlotCommand(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+
+  const text = ctx.message?.text?.replace(/^\/plot\s*/, "").trim() ?? "";
+  if (text.length === 0) {
+    await ctx.reply("Usage: /plot <description>");
+    return;
+  }
+
+  if (!deps.generatePlotFn) {
+    await ctx.reply("Not configured.");
+    return;
+  }
+
+  await ctx.reply("Generating plot...");
+  try {
+    const result = await deps.generatePlotFn(text);
+    const absolutePath = join(deps.vaultRoot, result.pngPath);
+    await ctx.replyWithPhoto(new InputFile(absolutePath));
+  } catch {
+    await ctx.reply("Generation failed — check logs.");
+  }
+}
+
 export interface TelegramBotDeps {
   token: string;
   allowedUserIds: number[];
@@ -163,6 +221,8 @@ export interface TelegramBotDeps {
   getHealthStatsFn: (input: HealthInput) => HealthStats;
   startTime: number;
   convertAudioFn?: ConvertAudioFn;
+  generateSlidesFn?: (topic: string) => Promise<{ mdPath: string; pdfPath: string; htmlPath: string }>;
+  generatePlotFn?: (description: string) => Promise<{ pyPath: string; pngPath: string }>;
 }
 
 export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
@@ -178,11 +238,15 @@ export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
     startTime: botDeps.startTime,
     getHealthStatsFn: botDeps.getHealthStatsFn,
     convertAudioFn: botDeps.convertAudioFn,
+    generateSlidesFn: botDeps.generateSlidesFn,
+    generatePlotFn: botDeps.generatePlotFn,
   };
 
   bot.command("start", (ctx) => handleStartCommand(ctx, deps));
   bot.command("help", (ctx) => handleHelpCommand(ctx, deps));
   bot.command("status", (ctx) => handleStatusCommand(ctx, deps));
+  bot.command("slides", (ctx) => handleSlidesCommand(ctx, deps));
+  bot.command("plot", (ctx) => handlePlotCommand(ctx, deps));
   bot.on("message:voice", (ctx) => handleVoiceMessage(ctx, deps));
   bot.on("message:text", (ctx) => handleTextMessage(ctx, deps));
 

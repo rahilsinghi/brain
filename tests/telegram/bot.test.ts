@@ -5,6 +5,8 @@ import {
   handleStartCommand,
   handleHelpCommand,
   handleStatusCommand,
+  handleSlidesCommand,
+  handlePlotCommand,
   type HandlerDeps,
 } from "../../src/telegram/bot.js";
 
@@ -49,6 +51,15 @@ function makeDeps(overrides?: Partial<HandlerDeps>): HandlerDeps {
       raw_pending_count: 3,
     }),
     convertAudioFn: vi.fn(),
+    generateSlidesFn: vi.fn().mockResolvedValue({
+      mdPath: "output/slides/test.md",
+      pdfPath: "output/slides/test.pdf",
+      htmlPath: "output/slides/test.html",
+    }),
+    generatePlotFn: vi.fn().mockResolvedValue({
+      pyPath: "output/plots/test.py",
+      pngPath: "output/plots/test.png",
+    }),
     ...overrides,
   };
 }
@@ -227,5 +238,86 @@ describe("handleStatusCommand", () => {
     const reply = ctx.reply.mock.calls[0][0] as string;
     expect(reply).toContain("97");
     expect(reply).toContain("ok");
+  });
+});
+
+describe("handleSlidesCommand", () => {
+  it("silently ignores non-allowed users", async () => {
+    const ctx = mockCtx({ text: "/slides Brain overview", userId: 999 });
+    const deps = makeDeps();
+    await handleSlidesCommand(ctx as never, deps);
+    expect(ctx.reply).not.toHaveBeenCalled();
+  });
+
+  it("replies with error if no topic provided", async () => {
+    const ctx = mockCtx({ text: "/slides" });
+    const deps = makeDeps();
+    await handleSlidesCommand(ctx as never, deps);
+    expect(ctx.reply).toHaveBeenCalledWith("Usage: /slides <topic>");
+  });
+
+  it("sends Generating message then delivers PDF path", async () => {
+    const ctx = {
+      from: { id: 123 },
+      message: { text: "/slides Brain overview" },
+      reply: vi.fn(),
+      replyWithDocument: vi.fn(),
+    };
+    const deps = makeDeps();
+    await handleSlidesCommand(ctx as never, deps);
+    expect(ctx.reply).toHaveBeenCalledWith("Generating slides...");
+    expect(ctx.replyWithDocument).toHaveBeenCalled();
+  });
+
+  it("replies with error on generation failure", async () => {
+    const ctx = {
+      from: { id: 123 },
+      message: { text: "/slides Bad topic" },
+      reply: vi.fn(),
+      replyWithDocument: vi.fn(),
+    };
+    const deps = makeDeps({
+      generateSlidesFn: vi.fn().mockRejectedValue(new Error("marp-cli failed")),
+    });
+    await handleSlidesCommand(ctx as never, deps);
+    expect(ctx.reply).toHaveBeenCalledWith("Generating slides...");
+    expect(ctx.reply).toHaveBeenCalledWith("Generation failed — check logs.");
+  });
+});
+
+describe("handlePlotCommand", () => {
+  it("replies with error if no description provided", async () => {
+    const ctx = mockCtx({ text: "/plot" });
+    const deps = makeDeps();
+    await handlePlotCommand(ctx as never, deps);
+    expect(ctx.reply).toHaveBeenCalledWith("Usage: /plot <description>");
+  });
+
+  it("sends Generating message then delivers PNG", async () => {
+    const ctx = {
+      from: { id: 123 },
+      message: { text: "/plot brain stats" },
+      reply: vi.fn(),
+      replyWithPhoto: vi.fn(),
+    };
+    const deps = makeDeps();
+    await handlePlotCommand(ctx as never, deps);
+    expect(ctx.reply).toHaveBeenCalledWith("Generating plot...");
+    expect(ctx.replyWithPhoto).toHaveBeenCalled();
+  });
+
+  it("replies with error on generation failure", async () => {
+    const ctx = {
+      from: { id: 123 },
+      message: { text: "/plot broken" },
+      reply: vi.fn(),
+      replyWithPhoto: vi.fn(),
+    };
+    const deps = makeDeps({
+      generatePlotFn: vi.fn().mockRejectedValue(new Error("uv run failed")),
+    });
+    await handlePlotCommand(ctx as never, deps);
+    expect(ctx.reply).toHaveBeenCalledWith("Generating plot...");
+    expect(ctx.reply).toHaveBeenCalledWith("Generation failed — check logs.");
   });
 });
