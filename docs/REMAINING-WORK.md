@@ -87,42 +87,24 @@
 
 ---
 
-## Phase 4: Voice & Polish
+## Phase 4: Voice & Polish — Complete (2026-04-08)
 
-**Goal:** Voice notes, output generation, Apple Shortcuts, daily logs.
+**Spec:** `~/docs/superpowers/specs/2026-04-08-brain-phase4-voice-and-polish-design.md`
+**Plan:** `~/docs/superpowers/plans/2026-04-08-brain-phase4-voice-and-polish.md`
 
-**Spec ref:** §4.2 (Source 7), §8 (Visual System), §11.1 (voice watcher)
+6 new source files, 41 new tests (271 total across 47 files). Features:
+- **Voice transcription:** TranscriptionProvider with local whisper.cpp + OpenAI Whisper API (switchable via config)
+- **Cluster classification:** Hybrid prefix detection + Claude Haiku AI fallback. Clusters: personal, work, life, language
+- **Voice parser:** Two-step watcher handoff — voice watcher transcribes → writes markdown drop → raw watcher compiles. `.processed` sidecar guard for idempotency
+- **Daily knowledge logs:** `daily/YYYY-MM-DD.md` with cluster sections, timestamped entries, 23:55 summary cron
+- **Marp slides:** `/slides <topic>` via Telegram, wiki context → Claude → Marp CLI → PDF
+- **matplotlib plots:** `/plot <description>` via Telegram, wiki context → Claude → uv run → PNG
+- **Telegram updates:** Voice messages, /slides, /plot commands. Two-message pattern for slow operations
+- **System activity logging:** Lint/heal and source sync results auto-append to daily log
 
-### Voice Note Ingestion
-- **Trigger:** chokidar watches `raw/voice/`
-- **Parser:** Whisper API or local whisper.cpp
-- **Flow:** Audio file lands → Whisper transcribes → write transcription .md with `source_type: voice` → keep original audio as attachment
-- **Apple Shortcuts:** Automate record → transcribe → drop into vault via iCloud
-- **New file:** `src/parser/voice-parser.ts` (replaces placeholder-parser for audio)
-
-### Marp Slide Generation
-- **Package:** `@marp-team/marp-cli`
-- **Theme:** `templates/brutalist-marp.css` (already exists)
-- **Flow:** User says "make slides about X" → query wiki → assemble outline → write .md with Marp directives → render to `output/slides/`
-
-### matplotlib Plot Generation
-- **Runtime:** Python via `uv run` targeting local `.venv/`
-- **Theme:** `templates/brutalist-matplotlib.json` (already exists)
-- **Flow:** User says "plot X" → extract data from wiki → write Python script → `uv run` → save plot to `output/plots/`
-- **Isolation:** .venv/ is local to brain, no global pollution
-
-### Daily Knowledge Logs
-- **File:** `daily/{date}.md`
-- **Auto-populated by:** Calendar source (meetings), lint/heal runner (changes)
-- **User additions:** Manual notes, reflections
-- **Summary:** End-of-day auto-summary of what was ingested, compiled, healed
-
-### PDF and Image Parsing
-- **PDF:** pdf2md or similar → replace placeholder-parser for .pdf
-- **Images:** Claude Vision API → description .md, image as attachment
-- **New files:** `src/parser/pdf-parser.ts`, `src/parser/image-parser.ts`
-
-### Estimated tasks: 10-12
+### Still deferred to future phases
+- **PDF parsing:** pdf2md or similar → replace placeholder-parser for .pdf
+- **Image parsing:** Claude Vision API → description .md, image as attachment
 
 ---
 
@@ -145,7 +127,7 @@
 
 ```
 cd ~/Desktop/brain
-pnpm test                    # Verify 223 tests pass
+pnpm test                    # Verify 271 tests pass
 pnpm status                  # Check daemon (launchd managed)
 cat docs/REMAINING-WORK.md   # This file — pick up where you left off
 cat CLAUDE.md                # Project context for Claude Code
@@ -153,7 +135,7 @@ cat CLAUDE.md                # Project context for Claude Code
 
 **Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
 
-**Next up:** Phase 4 (Voice & Polish) or Phase 5 (Knowledge Compounding). See `docs/NEXT-PHASE.md` for assessment.
+**Next up:** Phase 5 (Knowledge Compounding) — novelty scoring, /save command.
 
 **To test live sources:**
 1. Telegram: `@rahil_brain_bot` — always on via launchd

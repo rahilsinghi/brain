@@ -12,7 +12,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Telegram Input:** Complete — grammY bot with prefix routing, ingest + synthesise, /start /help /status
 **Git Commits Source:** Complete — polls commits across all repos, 60-day backfill (601 commits), hourly cron
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
-**Phase 4 (Voice & Polish):** Not started — Whisper, Marp, matplotlib
+**Phase 4 (Voice & Polish):** Complete — voice transcription (whisper.cpp + OpenAI), cluster classification, daily logs, Marp slides, matplotlib plots
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
@@ -26,13 +26,15 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **API Layer plan:** `~/docs/superpowers/plans/2026-04-08-brain-api-layer.md`
 **Telegram Input spec:** `~/docs/superpowers/specs/2026-04-08-brain-telegram-input-design.md`
 **Telegram Input plan:** `~/docs/superpowers/plans/2026-04-08-brain-telegram-input.md`
+**Phase 4 spec:** `~/docs/superpowers/specs/2026-04-08-brain-phase4-voice-and-polish-design.md`
+**Phase 4 plan:** `~/docs/superpowers/plans/2026-04-08-brain-phase4-voice-and-polish.md`
 **Remaining work:** `docs/REMAINING-WORK.md` (in this repo)
 
 ## Tech Stack
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (230 tests across 41 files)
+- Testing: Vitest (271 tests across 47 files)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
@@ -55,7 +57,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (59)
+### Source Files (65)
 
 ```
 src/
@@ -100,6 +102,15 @@ src/
 │   ├── healer.ts           ← Conflict rules, contradiction flags, proposals
 │   ├── connector.ts        ← Cross-references, daily summaries
 │   └── runner.ts           ← 3-phase lint→heal→connect orchestrator
+├── voice/
+│   ├── transcribe.ts      ← TranscriptionProvider (local whisper.cpp + OpenAI)
+│   ├── classify.ts        ← Hybrid prefix/AI cluster classification
+│   └── voice-parser.ts    ← parseVoice — transcription + classify + markdown drop
+├── daily/
+│   └── log.ts             ← appendDailyEntry + writeDailySummary
+├── output/
+│   ├── slides.ts          ← Marp slide generation (wiki context → PDF)
+│   └── plots.ts           ← matplotlib plot generation (wiki context → PNG)
 └── sources/
     ├── types.ts            ← SyncSource, SyncState, RawDrop interfaces
     ├── slug.ts             ← slugify + uniqueSlug (hash suffix)
@@ -202,7 +213,8 @@ telegram:
 ```
 
 Bot is opt-in — disabled without both token and allowed users.
-Send text to ingest, prefix with `?` to query. Commands: /start, /help, /status.
+Send text to ingest, voice notes to transcribe, prefix with `?` to query.
+Commands: /start, /help, /status, /slides <topic>, /plot <description>.
 
 ## Running
 
