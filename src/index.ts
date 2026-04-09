@@ -16,6 +16,8 @@ import { createTelegramBot } from "./telegram/bot.js";
 import { ingestContent } from "./api/ingest-core.js";
 import { getHealthStats } from "./api/health-core.js";
 import { appendDailyEntry, writeDailySummary } from "./daily/log.js";
+import { generateSlides } from "./output/slides.js";
+import { generatePlot } from "./output/plots.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
@@ -44,6 +46,24 @@ const server = createServer({
 await server.listen({ port: config.api.port, host: config.api.host });
 console.log(`[brain] API server listening on http://${config.api.host}:${config.api.port}`);
 
+const slidesFn = (topic: string) =>
+  generateSlides(topic, {
+    vaultRoot,
+    synthesizeFn: synthesize,
+    store,
+    topK: config.api.default_top_k,
+    marpTheme: config.visual.marp_theme,
+  });
+
+const plotFn = (description: string) =>
+  generatePlot(description, {
+    vaultRoot,
+    synthesizeFn: synthesize,
+    store,
+    topK: config.api.default_top_k,
+    matplotlibRc: config.visual.matplotlib_rc,
+  });
+
 // Step 2.5: Start Telegram bot (conditional)
 const botToken = config.telegram.bot_token ?? process.env.TELEGRAM_BOT_TOKEN ?? null;
 let bot: ReturnType<typeof createTelegramBot> | null = null;
@@ -59,6 +79,8 @@ if (botToken && config.telegram.allowed_user_ids.length > 0) {
     ingestFn: ingestContent,
     getHealthStatsFn: getHealthStats,
     startTime,
+    generateSlidesFn: slidesFn,
+    generatePlotFn: plotFn,
   });
   bot.start({
     timeout: config.telegram.poll_timeout_s,
