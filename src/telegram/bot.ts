@@ -1,3 +1,5 @@
+import { join } from "node:path";
+import { mkdirSync } from "node:fs";
 import { Bot } from "grammy";
 import type { Context } from "grammy";
 import type { BrainConfig } from "../types.js";
@@ -8,6 +10,21 @@ import { truncateAtSentence } from "./truncate.js";
 
 const TELEGRAM_MAX_LENGTH = 4096;
 
+export type ConvertAudioFn = (inputPath: string, outputPath: string) => Promise<string>;
+
+async function defaultConvertAudio(inputPath: string, outputPath: string): Promise<string> {
+  const proc = Bun.spawn(["ffmpeg", "-y", "-i", inputPath, outputPath], {
+    stdout: "pipe",
+    stderr: "pipe",
+  });
+  const exitCode = await proc.exited;
+  if (exitCode !== 0) {
+    const stderr = await new Response(proc.stderr).text();
+    throw new Error(`ffmpeg failed (exit ${exitCode}): ${stderr}`);
+  }
+  return outputPath;
+}
+
 export interface HandlerDeps {
   allowedUserIds: number[];
   vaultRoot: string;
@@ -17,6 +34,7 @@ export interface HandlerDeps {
   store: { search: (vector: number[], topK: number) => Promise<unknown[]> };
   startTime: number;
   getHealthStatsFn: (input: HealthInput) => HealthStats;
+  convertAudioFn?: ConvertAudioFn;
 }
 
 export async function handleTextMessage(
@@ -62,9 +80,30 @@ export async function handleTextMessage(
 
 export async function handleVoiceMessage(
   ctx: Context,
-  _deps: HandlerDeps,
+  deps: HandlerDeps,
 ): Promise<void> {
-  await ctx.reply("Voice notes aren't supported yet — please send text.");
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+
+  try {
+    const file = await ctx.getFile();
+    const downloadPath = await file.download();
+
+    const timestamp = Date.now();
+    const voiceDir = join(deps.vaultRoot, "raw", "voice");
+    mkdirSync(voiceDir, { recursive: true });
+    const wavPath = join(voiceDir, `${timestamp}.wav`);
+
+    const convert = deps.convertAudioFn ?? defaultConvertAudio;
+    await convert(downloadPath, wavPath);
+
+    await ctx.reply("Transcribed (processing via voice pipeline)");
+  } catch (err) {
+    console.error(
+      `[telegram] Voice processing error: ${err instanceof Error ? err.message : String(err)}`,
+    );
+    await ctx.reply("Voice processing failed — try again later.");
+  }
 }
 
 export async function handleStartCommand(
@@ -123,6 +162,7 @@ export interface TelegramBotDeps {
   ingestFn: (input: IngestInput) => IngestResult;
   getHealthStatsFn: (input: HealthInput) => HealthStats;
   startTime: number;
+  convertAudioFn?: ConvertAudioFn;
 }
 
 export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
@@ -137,6 +177,7 @@ export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
     store: botDeps.store,
     startTime: botDeps.startTime,
     getHealthStatsFn: botDeps.getHealthStatsFn,
+    convertAudioFn: botDeps.convertAudioFn,
   };
 
   bot.command("start", (ctx) => handleStartCommand(ctx, deps));

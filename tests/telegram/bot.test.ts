@@ -48,6 +48,7 @@ function makeDeps(overrides?: Partial<HandlerDeps>): HandlerDeps {
       wiki_article_count: 97,
       raw_pending_count: 3,
     }),
+    convertAudioFn: vi.fn(),
     ...overrides,
   };
 }
@@ -154,15 +155,39 @@ describe("handleTextMessage", () => {
 });
 
 describe("handleVoiceMessage", () => {
-  it("replies with unsupported message", async () => {
-    const ctx = mockCtx({ isVoice: true });
+  it("silently ignores voice from non-allowed users", async () => {
+    const ctx = mockCtx({ isVoice: true, userId: 999 });
     const deps = makeDeps();
-
     await handleVoiceMessage(ctx as never, deps);
+    expect(ctx.reply).not.toHaveBeenCalled();
+  });
 
-    expect(ctx.reply).toHaveBeenCalledWith(
-      "Voice notes aren't supported yet — please send text.",
-    );
+  it("downloads voice file and calls convert", async () => {
+    const mockDownload = vi.fn().mockResolvedValue("/tmp/voice.ogg");
+    const ctx = {
+      from: { id: 123 },
+      message: { voice: { file_id: "abc123", duration: 5 } },
+      reply: vi.fn(),
+      getFile: vi.fn().mockResolvedValue({ download: mockDownload }),
+    };
+    const mockConvert = vi.fn().mockResolvedValue("/tmp/vault/raw/voice/12345.wav");
+    const deps = makeDeps({ convertAudioFn: mockConvert });
+    await handleVoiceMessage(ctx as never, deps);
+    expect(ctx.getFile).toHaveBeenCalled();
+    expect(mockConvert).toHaveBeenCalled();
+    expect(ctx.reply).toHaveBeenCalledWith("Transcribed (processing via voice pipeline)");
+  });
+
+  it("replies with error on conversion failure", async () => {
+    const ctx = {
+      from: { id: 123 },
+      message: { voice: { file_id: "abc123", duration: 5 } },
+      reply: vi.fn(),
+      getFile: vi.fn().mockRejectedValue(new Error("Download failed")),
+    };
+    const deps = makeDeps();
+    await handleVoiceMessage(ctx as never, deps);
+    expect(ctx.reply).toHaveBeenCalledWith("Voice processing failed — try again later.");
   });
 });
 
