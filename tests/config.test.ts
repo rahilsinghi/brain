@@ -37,4 +37,20 @@ describe("loadConfig", () => {
     expect(config.daemon.log_level).toBe("info");
     expect(config.compile.max_retries).toBe(3);
   });
+
+  it("has correct transcription defaults", () => {
+    const config = loadConfig(TEST_DIR);
+
+    expect(config.transcription.provider).toBe("local");
+    expect(config.transcription.local_model).toBe("medium");
+    expect(config.transcription.openai_model).toBe("whisper-1");
+  });
+
+  it("has correct voice defaults", () => {
+    const config = loadConfig(TEST_DIR);
+
+    expect(config.voice.clusters).toEqual(["personal", "work", "life", "language"]);
+    expect(config.voice.default_cluster).toBe("personal");
+    expect(config.voice.classify_model).toBe("claude-haiku-4-5-20251001");
+  });
 });

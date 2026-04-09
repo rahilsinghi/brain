@@ -59,6 +59,20 @@ export interface QuarantineFrontmatter {
 
 export type CompileStrategy = "single" | "chunked" | "staged" | "manual_review";
 
+export type Cluster = "personal" | "work" | "life" | "language";
+
+export interface TranscriptionConfig {
+  provider: "local" | "openai";
+  local_model: string;
+  openai_model: string;
+}
+
+export interface VoiceConfig {
+  clusters: Cluster[];
+  default_cluster: Cluster;
+  classify_model: string;
+}
+
 export interface ApiConfig {
   port: number;
   host: string;
@@ -75,6 +89,8 @@ export interface TelegramConfig {
 export interface BrainConfig {
   api: ApiConfig;
   telegram: TelegramConfig;
+  transcription: TranscriptionConfig;
+  voice: VoiceConfig;
   daemon: { log_level: string };
   watchers: {
     raw_dir: string;

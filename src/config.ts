@@ -36,6 +36,16 @@ const DEFAULTS: BrainConfig = {
     matplotlib_rc: "templates/brutalist-matplotlib.json",
     mermaid_theme: "templates/mermaid-theme.json",
   },
+  transcription: {
+    provider: "local",
+    local_model: "medium",
+    openai_model: "whisper-1",
+  },
+  voice: {
+    clusters: ["personal", "work", "life", "language"],
+    default_cluster: "personal",
+    classify_model: "claude-haiku-4-5-20251001",
+  },
 };
 
 function loadEnv(vaultRoot: string): void {
