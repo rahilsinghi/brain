@@ -34,7 +34,7 @@ export interface ClassifyResult {
 type ClaudeFn = (prompt: string, model: string) => Promise<string>;
 
 async function defaultCallClaude(prompt: string, model: string): Promise<string> {
-  const client = new Anthropic();
+  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   const response = await client.messages.create({
     model,
     max_tokens: 20,

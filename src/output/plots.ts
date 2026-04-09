@@ -31,7 +31,7 @@ export interface PlotResult {
 function defaultClaudeFn(): ClaudeFn {
   return async (prompt: string): Promise<string> => {
     const { default: Anthropic } = await import("@anthropic-ai/sdk");
-    const client = new Anthropic();
+    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
     const response = await client.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 4096,

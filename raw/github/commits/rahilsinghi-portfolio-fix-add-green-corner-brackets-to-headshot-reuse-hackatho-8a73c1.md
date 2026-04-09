@@ -1,0 +1,24 @@
+---
+status: pending
+source_type: git-commits
+source_id: git-commit:rahilsinghi/portfolio:c9bd489
+ingested_at: 2026-04-09T06:03:35.974Z
+parsed_at: 2026-04-09T06:03:35.974Z
+compiled_to: null
+processed_at: null
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+# fix: add green corner brackets to headshot, reuse hackathon images for
+
+- **Repo:** rahilsinghi/portfolio
+- **SHA:** c9bd489
+- **Date:** 2026-03-11T23:59:47Z
+- **Author:** Rahil Singhi
+- **Files changed:** 3
+- **Additions:** +21
+- **Deletions:** -11
+
+LinkedIn posts, and lower carousel breakpoint to md for earlier side layout

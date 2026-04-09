@@ -28,6 +28,7 @@ function makeDeps(overrides?: Partial<HandlerDeps>): HandlerDeps {
   return {
     allowedUserIds: [123, 456],
     vaultRoot: "/tmp/test-vault",
+    token: "test-bot-token",
     config: {
       api: { default_top_k: 8 },
     } as never,
@@ -173,18 +174,21 @@ describe("handleVoiceMessage", () => {
     expect(ctx.reply).not.toHaveBeenCalled();
   });
 
-  it("downloads voice file and calls convert", async () => {
-    const mockDownload = vi.fn().mockResolvedValue("/tmp/voice.ogg");
+  it("downloads voice file via Telegram API and calls convert", async () => {
+    const mockFetchFile = vi.fn().mockResolvedValue(new ArrayBuffer(100));
     const ctx = {
       from: { id: 123 },
       message: { voice: { file_id: "abc123", duration: 5 } },
       reply: vi.fn(),
-      getFile: vi.fn().mockResolvedValue({ download: mockDownload }),
+      getFile: vi.fn().mockResolvedValue({ file_path: "voice/file_0.oga" }),
     };
     const mockConvert = vi.fn().mockResolvedValue("/tmp/vault/raw/voice/12345.wav");
-    const deps = makeDeps({ convertAudioFn: mockConvert });
+    const deps = makeDeps({ convertAudioFn: mockConvert, fetchFileFn: mockFetchFile });
     await handleVoiceMessage(ctx as never, deps);
     expect(ctx.getFile).toHaveBeenCalled();
+    expect(mockFetchFile).toHaveBeenCalledWith(
+      "https://api.telegram.org/file/bottest-bot-token/voice/file_0.oga",
+    );
     expect(mockConvert).toHaveBeenCalled();
     expect(ctx.reply).toHaveBeenCalledWith("Transcribed (processing via voice pipeline)");
   });

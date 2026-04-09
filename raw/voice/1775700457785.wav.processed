@@ -1,0 +1,15 @@
+---
+status: failed
+source_type: file_drop
+source_id: null
+ingested_at: 2026-04-09T02:07:43.755Z
+parsed_at: null
+compiled_to: null
+processed_at: null
+retry_count: 1
+last_error: "Unsupported file type: .processed"
+compile_progress: null
+---
+
+
+

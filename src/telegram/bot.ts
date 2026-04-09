@@ -1,5 +1,6 @@
 import { join } from "node:path";
-import { mkdirSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { Bot, InputFile } from "grammy";
 import type { Context } from "grammy";
 import type { BrainConfig } from "../types.js";
@@ -25,16 +26,26 @@ async function defaultConvertAudio(inputPath: string, outputPath: string): Promi
   return outputPath;
 }
 
+export type FetchFileFn = (url: string) => Promise<ArrayBuffer>;
+
+async function defaultFetchFile(url: string): Promise<ArrayBuffer> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Telegram file download failed (${res.status})`);
+  return res.arrayBuffer();
+}
+
 export interface HandlerDeps {
   allowedUserIds: number[];
   vaultRoot: string;
   config: BrainConfig;
+  token: string;
   synthesizeFn: SynthesizeFn;
   ingestFn: (input: IngestInput) => IngestResult;
   store: { search: (vector: number[], topK: number) => Promise<unknown[]> };
   startTime: number;
   getHealthStatsFn: (input: HealthInput) => HealthStats;
   convertAudioFn?: ConvertAudioFn;
+  fetchFileFn?: FetchFileFn;
   generateSlidesFn?: (topic: string) => Promise<{ mdPath: string; pdfPath: string; htmlPath: string }>;
   generatePlotFn?: (description: string) => Promise<{ pyPath: string; pngPath: string }>;
 }
@@ -62,7 +73,8 @@ export async function handleTextMessage(
       );
       const answer = truncateAtSentence(result.answer, TELEGRAM_MAX_LENGTH);
       await ctx.reply(answer);
-    } catch {
+    } catch (err) {
+      console.error(`[telegram] Synthesis error: ${err instanceof Error ? err.message : String(err)}`);
       await ctx.reply("Synthesis failed — try again later.");
     }
     return;
@@ -89,15 +101,22 @@ export async function handleVoiceMessage(
 
   try {
     const file = await ctx.getFile();
-    const downloadPath = await file.download();
+    if (!file.file_path) throw new Error("Telegram returned no file_path");
+
+    const fetchFile = deps.fetchFileFn ?? defaultFetchFile;
+    const url = `https://api.telegram.org/file/bot${deps.token}/${file.file_path}`;
+    const data = await fetchFile(url);
 
     const timestamp = Date.now();
+    const oggPath = join(tmpdir(), `brain-voice-${timestamp}.ogg`);
+    writeFileSync(oggPath, Buffer.from(data));
+
     const voiceDir = join(deps.vaultRoot, "raw", "voice");
     mkdirSync(voiceDir, { recursive: true });
     const wavPath = join(voiceDir, `${timestamp}.wav`);
 
     const convert = deps.convertAudioFn ?? defaultConvertAudio;
-    await convert(downloadPath, wavPath);
+    await convert(oggPath, wavPath);
 
     await ctx.reply("Transcribed (processing via voice pipeline)");
   } catch (err) {
@@ -236,6 +255,7 @@ export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
     allowedUserIds: botDeps.allowedUserIds,
     vaultRoot: botDeps.vaultRoot,
     config: botDeps.config,
+    token: botDeps.token,
     synthesizeFn: botDeps.synthesizeFn,
     ingestFn: botDeps.ingestFn,
     store: botDeps.store,

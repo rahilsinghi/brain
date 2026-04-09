@@ -136,7 +136,7 @@ export async function writeDailySummary(
 
 async function defaultCallClaude(dailyContent: string): Promise<string> {
   const { default: Anthropic } = await import("@anthropic-ai/sdk");
-  const client = new Anthropic();
+  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   const message = await client.messages.create({
     model: "claude-haiku-4-5-20251001",
     max_tokens: 256,

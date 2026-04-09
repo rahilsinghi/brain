@@ -1,0 +1,27 @@
+---
+status: pending
+source_type: git-commits
+source_id: git-commit:rahilsinghi/brain:22107b8
+ingested_at: 2026-04-09T06:03:35.982Z
+parsed_at: 2026-04-09T06:03:35.982Z
+compiled_to: null
+processed_at: null
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+# refactor: move SynthesizeFn type to src/query/synthesize.ts
+
+- **Repo:** rahilsinghi/brain
+- **SHA:** 22107b8
+- **Date:** 2026-04-08T18:24:41Z
+- **Author:** Rahil Singhi
+- **Files changed:** 3
+- **Additions:** +10
+- **Deletions:** -8
+
+Domain type belongs alongside the function it describes, not in Fastify
+type augmentation. fastify.d.ts re-exports for backward compatibility.
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>

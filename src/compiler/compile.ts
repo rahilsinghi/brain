@@ -35,7 +35,7 @@ export async function compileSinglePass(
   updateFrontmatter(rawFilePath, { status: "processing" });
 
   try {
-    const client = new Anthropic();
+    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
     const response = await client.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 8192,
