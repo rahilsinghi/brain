@@ -114,9 +114,10 @@ export async function handleStartCommand(
 ): Promise<void> {
   await ctx.reply(
     "Welcome to Brain — your personal knowledge base.\n\n" +
-      "Send any text to save it as knowledge.\n" +
+      "Send text to save it as knowledge.\n" +
+      "Send a voice note to transcribe and save.\n" +
       "Start a message with ? to query your wiki.\n\n" +
-      "Example: ?What do I know about Kubernetes?",
+      "Commands: /help /status /slides /plot",
   );
 }
 
@@ -126,12 +127,15 @@ export async function handleHelpCommand(
 ): Promise<void> {
   await ctx.reply(
     "How to use Brain:\n\n" +
-      "Send text — ingest as knowledge (saved to your wiki pipeline)\n" +
-      "?your question — query your wiki and get a synthesized answer\n\n" +
+      "Send text — ingest as knowledge\n" +
+      "Send a voice note — transcribe and save\n" +
+      "?your question — query your wiki\n\n" +
       "Commands:\n" +
       "/start — Welcome message\n" +
       "/help — This message\n" +
-      "/status — Daemon health stats",
+      "/status — Daemon health stats\n" +
+      "/slides <topic> — generate presentation slides\n" +
+      "/plot <description> — generate a data visualization",
   );
 }
 
