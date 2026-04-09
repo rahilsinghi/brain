@@ -42,7 +42,7 @@ describe("loadConfig", () => {
     const config = loadConfig(TEST_DIR);
 
     expect(config.transcription.provider).toBe("local");
-    expect(config.transcription.local_model).toBe("medium");
+    expect(config.transcription.local_model).toBe("large-v3-turbo");
     expect(config.transcription.openai_model).toBe("whisper-1");
   });
 

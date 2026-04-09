@@ -38,7 +38,7 @@ const DEFAULTS: BrainConfig = {
   },
   transcription: {
     provider: "local",
-    local_model: "medium",
+    local_model: "large-v3-turbo",
     openai_model: "whisper-1",
   },
   voice: {

@@ -20,7 +20,7 @@ export interface ExecResult {
 type ExecFn = (args: string[]) => Promise<ExecResult>;
 
 async function defaultExec(args: string[]): Promise<ExecResult> {
-  const proc = Bun.spawn(["whisper-cpp", ...args], { stdout: "pipe", stderr: "pipe" });
+  const proc = Bun.spawn(["whisper-cli", ...args], { stdout: "pipe", stderr: "pipe" });
   const stdout = await new Response(proc.stdout).text();
   const stderr = await new Response(proc.stderr).text();
   const exitCode = await proc.exited;
@@ -35,17 +35,16 @@ export class LocalWhisperProvider implements TranscriptionProvider {
 
   async transcribe(audioPath: string): Promise<TranscriptionResult> {
     const result = await this.exec([
-      "--model",
+      "-m",
       this.model,
-      "--file",
+      "-f",
       audioPath,
-      "--no-timestamps",
-      "--output-txt",
+      "-nt",
     ]);
     if (result.exitCode !== 0) {
       throw new Error(`whisper-cpp failed (exit ${result.exitCode}): ${result.stderr}`);
     }
-    return { text: result.stdout };
+    return { text: result.stdout.trim() };
   }
 }
 
@@ -91,11 +90,16 @@ export function createTranscriptionProvider(
   provider: "local" | "openai",
   localModel: string,
   openaiModel: string,
+  vaultRoot?: string,
 ): TranscriptionProvider {
   if (provider === "openai") {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) throw new Error("OPENAI_API_KEY not set in .brain/.env");
     return new OpenAIWhisperProvider(openaiModel, apiKey);
   }
-  return new LocalWhisperProvider(localModel);
+  // Resolve model path: check .brain/models/ggml-{model}.bin first
+  const modelPath = vaultRoot
+    ? `${vaultRoot}/.brain/models/ggml-${localModel}.bin`
+    : `ggml-${localModel}.bin`;
+  return new LocalWhisperProvider(modelPath);
 }

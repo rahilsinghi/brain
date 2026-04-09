@@ -12,7 +12,7 @@ describe("LocalWhisperProvider", () => {
     const result = await provider.transcribe("/tmp/test.wav");
     expect(result.text).toBe("Hello this is a voice note");
     expect(mockExec).toHaveBeenCalledWith(
-      expect.arrayContaining(["--model", "medium", "--file", "/tmp/test.wav"]),
+      expect.arrayContaining(["-m", "medium", "-f", "/tmp/test.wav"]),
     );
   });
 

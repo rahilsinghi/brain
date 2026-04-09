@@ -93,6 +93,7 @@ export function startWatchers(
     config.transcription.provider,
     config.transcription.local_model,
     config.transcription.openai_model,
+    vaultRoot,
   );
 
   const voiceWatcher = chokidar.watch(voiceDir, {
