@@ -118,6 +118,20 @@ cron.schedule(config.cron.lint_heal, async () => {
       `[cron] Lint & heal failed: ${err instanceof Error ? err.message : String(err)}`,
     );
   }
+
+  // Rebuild graph cache after lint/heal
+  try {
+    const { rebuildGraphCache } = await import("./graph/cache.js");
+    const { aggregateEmbeddings } = await import("./graph/embeddings.js");
+    const allChunks = await store.listAll();
+    const embeddings = aggregateEmbeddings(allChunks);
+    const cachePath = join(vaultRoot, config.graph.cache_path);
+    await rebuildGraphCache(vaultRoot, cachePath, embeddings, config.graph.umap_seed);
+  } catch (err) {
+    console.error(
+      `[cron] Graph cache rebuild failed: ${err instanceof Error ? err.message : String(err)}`,
+    );
+  }
 });
 
 cron.schedule(config.cron.mcp_sources, async () => {
