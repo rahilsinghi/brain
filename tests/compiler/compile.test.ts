@@ -23,9 +23,11 @@ vi.mock("../../src/llm/provider.js", () => ({
 }));
 
 describe("compileSinglePass", () => {
-  beforeEach(() => {
+  beforeEach(async () => {
     mkdirSync(join(TEST_DIR, "raw/articles"), { recursive: true });
     mkdirSync(WIKI_DIR, { recursive: true });
+    const { _clearTitleCache } = await import("../../src/compiler/compile.js");
+    _clearTitleCache();
   });
 
   afterEach(() => {
@@ -67,5 +69,62 @@ describe("compileSinglePass", () => {
     expect(rawResult.data.status).toBe("processed");
     expect(rawResult.data.compiled_to).toContain("Test Concept");
     expect(rawResult.data.processed_at).toBeTruthy();
+  });
+});
+
+describe("compileSinglePass with existing articles", () => {
+  beforeEach(async () => {
+    mkdirSync(join(TEST_DIR, "raw/articles"), { recursive: true });
+    mkdirSync(WIKI_DIR, { recursive: true });
+    const { _clearTitleCache } = await import("../../src/compiler/compile.js");
+    _clearTitleCache();
+  });
+
+  afterEach(() => {
+    rmSync(TEST_DIR, { recursive: true, force: true });
+  });
+
+  it("injects existing article titles into the compile prompt", async () => {
+    const { generate } = await import("../../src/llm/provider.js");
+    const mockGenerate = vi.mocked(generate);
+
+    writeFrontmatter(
+      join(TEST_DIR, "wiki/concepts/zustand-store.md"),
+      {
+        title: "Zustand State Store",
+        author: "ai",
+        created_at: "2026-04-10T00:00:00Z",
+        last_ai_edit: "2026-04-10T00:00:00Z",
+        last_human_edit: null,
+        last_embedded_hash: null,
+        sources: [],
+        tags: ["state"],
+      },
+      "# Zustand State Store\n\nContent.",
+    );
+
+    const rawFile = join(TEST_DIR, "raw/articles/test-article.md");
+    writeFrontmatter(
+      rawFile,
+      {
+        status: "pending",
+        source_type: "file_drop",
+        ingested_at: "2026-04-10T00:00:00Z",
+        parsed_at: "2026-04-10T00:00:01Z",
+        compiled_to: null,
+        processed_at: null,
+        retry_count: 0,
+        last_error: null,
+        compile_progress: null,
+      },
+      "# Test Article\n\nSome content.",
+    );
+
+    const { compileSinglePass } = await import("../../src/compiler/compile.js");
+    await compileSinglePass(rawFile, TEST_DIR);
+
+    const callArgs = mockGenerate.mock.calls[mockGenerate.mock.calls.length - 1][0];
+    expect(callArgs.prompt).toContain("Zustand State Store");
+    expect(callArgs.prompt).toContain("existing articles");
   });
 });

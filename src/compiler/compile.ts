@@ -1,7 +1,7 @@
 import { generate } from "../llm/provider.js";
 import { readFrontmatter, writeFrontmatter, updateFrontmatter } from "../frontmatter.js";
-import { join } from "node:path";
-import { mkdirSync } from "node:fs";
+import { join, extname, basename } from "node:path";
+import { mkdirSync, readdirSync, statSync } from "node:fs";
 import type { WikiFrontmatter } from "../types.js";
 
 interface CompileResult {
@@ -27,6 +27,60 @@ function slugify(title: string): string {
     .replace(/^-|-$/g, "");
 }
 
+interface TitleCache {
+  titles: string[];
+  timestamp: number;
+}
+
+const TITLE_CACHE_TTL_MS = 5 * 60 * 1000;
+let titleCache: TitleCache | null = null;
+
+function walkWikiDir(dir: string): string[] {
+  const results: string[] = [];
+  let entries: string[];
+  try {
+    entries = readdirSync(dir);
+  } catch {
+    return results;
+  }
+  for (const entry of entries) {
+    const full = join(dir, entry);
+    const stat = statSync(full, { throwIfNoEntry: false });
+    if (!stat) continue;
+    if (stat.isDirectory()) {
+      results.push(...walkWikiDir(full));
+    } else if (extname(entry) === ".md" && basename(entry) !== "index.md") {
+      results.push(full);
+    }
+  }
+  return results;
+}
+
+function getExistingTitles(vaultRoot: string): string[] {
+  const now = Date.now();
+  if (titleCache && now - titleCache.timestamp < TITLE_CACHE_TTL_MS) {
+    return titleCache.titles;
+  }
+
+  const wikiDir = join(vaultRoot, "wiki");
+  const files = walkWikiDir(wikiDir);
+
+  const allTitles: string[] = [];
+  for (const file of files) {
+    const { data } = readFrontmatter(file);
+    const title = (data as Record<string, unknown>).title as string | undefined;
+    if (title) allTitles.push(title);
+  }
+
+  const capped = allTitles.sort((a, b) => a.localeCompare(b)).slice(0, 500);
+  titleCache = { titles: capped, timestamp: now };
+  return capped;
+}
+
+export function _clearTitleCache(): void {
+  titleCache = null;
+}
+
 export async function compileSinglePass(
   rawFilePath: string,
   vaultRoot: string,
@@ -35,6 +89,12 @@ export async function compileSinglePass(
   updateFrontmatter(rawFilePath, { status: "processing" });
 
   try {
+    const existingTitles = getExistingTitles(vaultRoot);
+    const titleListSection =
+      existingTitles.length > 0
+        ? `\n  IMPORTANT: Prefer linking to existing articles from this list:\n  ${existingTitles.join(", ")}\n  If a related topic is not in the list, still include it as a [[link]].`
+        : "";
+
     const response = await generate({
       prompt: `You are a knowledge compiler. Given the following raw content, produce a structured wiki article.
 
@@ -43,7 +103,7 @@ Return a JSON object with these fields:
 - summary: 2-3 sentence summary
 - concepts: Key concepts as a markdown bullet list
 - details: Detailed content as markdown
-- backlinks: Related topics as markdown links using [[Topic Name]] format
+- backlinks: Related topics as markdown links using [[Topic Name]] format.${titleListSection}
 - tags: Array of lowercase tags
 - category: One of "concepts", "projects", "people", or "decisions"
 
