@@ -41,6 +41,10 @@ function walkDir(dir: string): string[] {
   return results;
 }
 
+function slugify(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 function normalizeTarget(raw: string): string {
   let target = raw.trim();
   // Strip wiki/ prefix
@@ -94,16 +98,40 @@ export function scanWiki(vaultRoot: string): ScanResult {
     filenameToId.set(filename, node.id);
   }
 
-  // Resolve rawLink targets: bare filename → full node ID, drop dangling/self links
+  // Build title → node ID and slug(title) → node ID maps (first-match-wins)
+  const titleToId = new Map<string, string>();
+  const slugToId = new Map<string, string>();
+  for (const node of nodes) {
+    const titleKey = node.title.toLowerCase();
+    if (!titleToId.has(titleKey)) titleToId.set(titleKey, node.id);
+    const slugKey = slugify(node.title);
+    if (!slugToId.has(slugKey)) slugToId.set(slugKey, node.id);
+  }
+
+  // Resolve rawLink targets: path → filename → title → slug, drop dangling/self links
   const nodeIds = new Set(nodes.map((n) => n.id));
   const resolvedLinks: { source: string; target: string }[] = [];
   for (const link of rawLinks) {
     let target = link.target;
     if (!nodeIds.has(target)) {
-      // Try resolving by bare filename
-      const resolved = filenameToId.get(target);
-      if (!resolved) continue; // dangling link — drop
-      target = resolved;
+      const byFilename = filenameToId.get(target);
+      if (byFilename) {
+        target = byFilename;
+      } else {
+        const titleKey = target.replace(/\.md$/, "").toLowerCase();
+        const byTitle = titleToId.get(titleKey);
+        if (byTitle) {
+          target = byTitle;
+        } else {
+          const slugKey = slugify(target.replace(/\.md$/, ""));
+          const bySlug = slugToId.get(slugKey);
+          if (bySlug) {
+            target = bySlug;
+          } else {
+            continue; // dangling link — drop
+          }
+        }
+      }
     }
     if (target === link.source) continue; // self-link — drop
     resolvedLinks.push({ source: link.source, target });

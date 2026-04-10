@@ -226,4 +226,40 @@ describe("scanWiki", () => {
     const result = scanWiki(TEST_VAULT);
     expect(result.links).toHaveLength(0);
   });
+
+  it("resolves wikilinks by article title (case-insensitive)", () => {
+    writeArticle("concepts", "zustand-graph-state-store", "Zustand Graph State Store", [], "# Zustand\n\nA state library.");
+    writeArticle("projects", "brain-explorer", "Brain Explorer", [], '# Brain Explorer\n\nUses [[Zustand Graph State Store]].');
+    const result = scanWiki(TEST_VAULT);
+    expect(result.links).toContainEqual({ source: "projects/brain-explorer.md", target: "concepts/zustand-graph-state-store.md" });
+  });
+
+  it("resolves wikilinks case-insensitively", () => {
+    writeArticle("projects", "karen", "Karen Project", [], "# Karen\n\nA project.");
+    writeArticle("concepts", "escalation", "Escalation Ladder", [], "# Escalation\n\nUsed by [[karen project]].");
+    const result = scanWiki(TEST_VAULT);
+    expect(result.links).toContainEqual({ source: "concepts/escalation.md", target: "projects/karen.md" });
+  });
+
+  it("resolves wikilinks via slugified title fallback", () => {
+    writeArticle("concepts", "zustand-graph-state-store", "Zustand Graph State Store", [], "# Zustand\n\nA state library.");
+    writeArticle("projects", "brain-explorer", "Brain Explorer", [], "# Brain Explorer\n\nUses [[zustand-graph-state-store]].");
+    const result = scanWiki(TEST_VAULT);
+    expect(result.links).toContainEqual({ source: "projects/brain-explorer.md", target: "concepts/zustand-graph-state-store.md" });
+  });
+
+  it("uses first-match-wins for duplicate titles", () => {
+    writeArticle("concepts", "aaa-zustand", "Zustand", [], "# Zustand\n\nFirst article.");
+    writeArticle("projects", "zzz-zustand", "Zustand", [], "# Zustand\n\nSecond article.");
+    writeArticle("projects", "brain-explorer", "Brain Explorer", [], "# Brain Explorer\n\nUses [[Zustand]].");
+    const result = scanWiki(TEST_VAULT);
+    expect(result.links).toContainEqual({ source: "projects/brain-explorer.md", target: "concepts/aaa-zustand.md" });
+  });
+
+  it("prefers path-based and filename-based resolution over title", () => {
+    writeArticle("skills", "typescript", "TypeScript Language", [], "# TypeScript");
+    writeArticle("projects", "karen", "Karen", [], "# Karen\n\nUses [[skills/typescript.md]].");
+    const result = scanWiki(TEST_VAULT);
+    expect(result.links).toContainEqual({ source: "projects/karen.md", target: "skills/typescript.md" });
+  });
 });
