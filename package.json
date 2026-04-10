@@ -17,7 +17,9 @@
     "seed:tracking": "tsx src/seed/index.ts --only tracking",
     "seed:github": "tsx src/seed/index.ts --only github",
     "seed:git-commits": "bun run src/seed/index.ts --only git-commits",
-    "gmail:auth": "tsx scripts/gmail-auth.ts"
+    "gmail:auth": "tsx scripts/gmail-auth.ts",
+    "backfill-links": "bun run src/graph/backfill-links.ts",
+    "backfill-links:dry": "bun run src/graph/backfill-links.ts --dry-run"
   },
   "keywords": [],
   "author": "",
