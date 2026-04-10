@@ -1,25 +1,15 @@
 ---
-status: processed
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:8859c0e
-ingested_at: 2026-04-10T02:04:52.505Z
-parsed_at: 2026-04-10T02:04:52.505Z
-compiled_to: "[[Fix: iOS App Runs on Simulator Successfully (SHA 8859c0e)]]"
-processed_at: 2026-04-10T02:44:23.567Z
-retry_count: 0
-last_error: null
+ingested_at: 2026-04-10T09:03:48.646Z
+parsed_at: 2026-04-10T09:03:48.646Z
+compiled_to: null
+processed_at: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZupcNiuViXMKmYZ4yEvp"}
 compile_progress: null
 ---
-
-
-
-
-
-
-
-
-
-
 
 
 

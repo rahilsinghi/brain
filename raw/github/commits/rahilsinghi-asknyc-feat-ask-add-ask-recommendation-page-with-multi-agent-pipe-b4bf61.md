@@ -1,17 +1,15 @@
 ---
-status: processed
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:d7408ec
-ingested_at: 2026-04-10T02:04:52.498Z
-parsed_at: 2026-04-10T02:04:52.498Z
-compiled_to: "[[askNYC /ask Recommendation Page with Multi-Agent Pipeline]]"
-processed_at: 2026-04-10T02:06:10.275Z
+ingested_at: 2026-04-10T08:03:40.138Z
+parsed_at: 2026-04-10T08:03:40.138Z
+compiled_to: null
+processed_at: null
 retry_count: 1
-last_error: "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 8,000 output tokens per minute (org: 9bdecd1f-f807-4ccd-b7ed-13c62f0e8eaf, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://claude.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CZuGit1yXSBkGkdqmbNiN\"}"
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuk2Jo717THjWyUYKQJu"}
 compile_progress: null
 ---
-
-
 
 
 

@@ -1,23 +1,15 @@
 ---
-status: processed
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:2803118
-ingested_at: 2026-04-10T01:03:40.370Z
-parsed_at: 2026-04-10T01:03:40.370Z
-compiled_to: "[[Karen: Channel Refactor – Slack/Email CC/Calendar Added, LinkedIn/Twitter Removed]]"
-processed_at: 2026-04-10T02:13:31.828Z
-retry_count: 0
-last_error: null
+ingested_at: 2026-04-10T07:03:28.813Z
+parsed_at: 2026-04-10T07:03:28.813Z
+compiled_to: null
+processed_at: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZufS58AfxamQku153TGW"}
 compile_progress: null
 ---
-
-
-
-
-
-
-
-
 
 
 

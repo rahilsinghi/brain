@@ -1,25 +1,15 @@
 ---
-status: processed
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:6155603
-ingested_at: 2026-04-10T01:03:40.346Z
-parsed_at: 2026-04-10T01:03:40.346Z
-compiled_to: "[[EMNLP 2026 LaTeX Paper Scaffold – gaze-diffuse]]"
-processed_at: 2026-04-10T02:46:08.929Z
-retry_count: 0
-last_error: null
+ingested_at: 2026-04-10T07:03:28.775Z
+parsed_at: 2026-04-10T07:03:28.775Z
+compiled_to: null
+processed_at: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZufSDE5JYksDc5hECj7g"}
 compile_progress: null
 ---
-
-
-
-
-
-
-
-
-
-
 
 
 

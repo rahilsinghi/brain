@@ -1,25 +1,15 @@
 ---
-status: processed
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/portfolio:5344785
-ingested_at: 2026-04-10T01:03:40.351Z
-parsed_at: 2026-04-10T01:03:40.351Z
-compiled_to: "[[fix(nav): Separate Hackathons and Projects Section IDs]]"
-processed_at: 2026-04-10T02:34:54.901Z
-retry_count: 0
-last_error: null
+ingested_at: 2026-04-10T07:03:28.788Z
+parsed_at: 2026-04-10T07:03:28.788Z
+compiled_to: null
+processed_at: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZufSAiGecBFjugQGj4R7"}
 compile_progress: null
 ---
-
-
-
-
-
-
-
-
-
-
 
 
 
