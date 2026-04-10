@@ -1,5 +1,6 @@
 import { randomUUID } from "node:crypto";
 import type { FastifyInstance } from "fastify";
+import { cacheSynthesis } from "../synthesis-cache.js";
 
 const synthesiseSchema = {
   body: {
@@ -58,8 +59,10 @@ export async function synthesiseRoute(app: FastifyInstance): Promise<void> {
         const latencyMs = Date.now() - startMs;
 
         console.log(
-          `[api] synthesise query_id=${queryId} latency=${latencyMs}ms chunks=${result.chunks.length}`,
+          `[api] synthesise query_id=${queryId} latency=${latencyMs}ms chunks=${result.chunks.length} novelty=${result.novelty_score.toFixed(3)}`,
         );
+
+        cacheSynthesis(queryId, request.body.query, result);
 
         return {
           query_id: queryId,
@@ -71,6 +74,7 @@ export async function synthesiseRoute(app: FastifyInstance): Promise<void> {
           })),
           provider: result.provider,
           model: result.model,
+          novelty_score: result.novelty_score,
           latency_ms: latencyMs,
         };
       } catch (err) {

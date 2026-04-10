@@ -1,17 +1,15 @@
 ---
-status: failed
+status: pending
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:ffd88e0
-ingested_at: 2026-04-10T07:03:28.813Z
-parsed_at: 2026-04-10T07:03:28.813Z
+ingested_at: 2026-04-10T15:04:13.394Z
+parsed_at: 2026-04-10T15:04:13.394Z
 compiled_to: null
 processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZufSmeU8uZ1o1TkBHMYt"}
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
-
-
 
 # feat(services): add research, slack, calendar, fedex services + QR code in PDF
 

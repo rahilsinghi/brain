@@ -8,6 +8,7 @@ import type { SynthesizeFn } from "../query/synthesize.js";
 import type { IngestInput, IngestResult } from "../api/ingest-core.js";
 import type { HealthInput, HealthStats } from "../api/health-core.js";
 import { truncateAtSentence } from "./truncate.js";
+import { formatForTelegram } from "./format.js";
 
 const TELEGRAM_MAX_LENGTH = 4096;
 
@@ -71,7 +72,7 @@ export async function handleTextMessage(
         deps.store as never,
         deps.config.api.default_top_k,
       );
-      const answer = truncateAtSentence(result.answer, TELEGRAM_MAX_LENGTH);
+      const answer = truncateAtSentence(formatForTelegram(result.answer), TELEGRAM_MAX_LENGTH);
       await ctx.reply(answer);
     } catch (err) {
       console.error(`[telegram] Synthesis error: ${err instanceof Error ? err.message : String(err)}`);

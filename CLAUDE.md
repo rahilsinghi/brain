@@ -16,7 +16,9 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Auth Bug Fix (2026-04-09):** All 6 Anthropic SDK calls pass apiKey explicitly. loadEnv strips quotes. Root cause was empty .env value.
 **Gmail Direct API (2026-04-10):** Replaced MCP dependency with googleapis OAuth2. One-time `pnpm gmail:auth` consent flow. 41 emails ingested on first sync.
 **Gemini Provider (2026-04-10):** LLM abstraction with Anthropic + Gemini (Vertex AI). Auto-fallback on billing errors. Uses askNYC GCP project ($1000 GenAI credits). 10 repo profiles compiled to wiki.
-**Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
+**Phase 5 (Knowledge Compounding):** Complete — novelty scoring, /save endpoint, synthesis cache, anti-ouroboros
+**Brain MCP Server:** Complete — `~/.claude/mcp/brain/index.ts`, brain_query + brain_ingest tools, global `.mcp.json`
+**Telegram Formatting Fix:** Complete — wiki links stripped to bold text before sending
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
 **Phase 3 spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
@@ -37,7 +39,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (290 tests across 50 files, all passing)
+- Testing: Vitest (314 tests across 54 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude) + @google-cloud/vertexai (Gemini via Vertex AI, $1000 GCP credits)
@@ -60,7 +62,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (68)
+### Source Files (73)
 
 ```
 src/
@@ -75,16 +77,19 @@ src/
 │   └── provider.ts         ← LLM abstraction (Anthropic + Gemini Vertex AI, project rotation, auto-fallback)
 ├── telegram/
 │   ├── bot.ts              ← Telegram bot factory + message handlers
-│   └── truncate.ts         ← Sentence-boundary truncation for long replies
+│   ├── truncate.ts         ← Sentence-boundary truncation for long replies
+│   └── format.ts           ← Strip wiki link syntax for Telegram output
 ├── api/
 │   ├── server.ts           ← Fastify factory + graceful shutdown
 │   ├── fastify.d.ts        ← Fastify type augmentation
 │   ├── ingest-core.ts      ← Shared ingest logic (HTTP + Telegram)
 │   ├── health-core.ts      ← Shared health stats (HTTP + Telegram)
+│   ├── synthesis-cache.ts  ← In-memory TTL cache for synthesis results
 │   └── routes/
 │       ├── health.ts       ← GET /health — daemon status
 │       ├── ingest.ts       ← POST /ingest — write to raw/
-│       └── synthesise.ts   ← POST /synthesise — query knowledge graph
+│       ├── synthesise.ts   ← POST /synthesise — query knowledge graph
+│       └── save.ts         ← POST /save — persist synthesis to wiki (novelty gated)
 ├── compiler/
 │   ├── compile.ts          ← Claude API single-pass compiler
 │   ├── queue.ts            ← Compile queue (pending → processing → processed)
@@ -101,7 +106,8 @@ src/
 │   ├── vector-store.ts     ← LanceDB wrapper (upsert, delete, search)
 │   └── sync.ts             ← Hash-based embedding sync pipeline
 ├── query/
-│   └── synthesize.ts       ← Vector search → Claude synthesis
+│   ├── synthesize.ts       ← Vector search → Claude synthesis + novelty scoring
+│   └── novelty.ts          ← Cosine similarity + novelty score computation
 ├── lint/
 │   ├── scanner.ts          ← Broken links, orphans, format issues
 │   ├── healer.ts           ← Conflict rules, contradiction flags, proposals

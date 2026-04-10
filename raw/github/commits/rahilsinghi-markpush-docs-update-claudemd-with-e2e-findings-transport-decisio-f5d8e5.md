@@ -1,17 +1,15 @@
 ---
-status: failed
+status: pending
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:7bdc9ab
-ingested_at: 2026-04-10T08:03:40.147Z
-parsed_at: 2026-04-10T08:03:40.147Z
+ingested_at: 2026-04-10T15:04:13.434Z
+parsed_at: 2026-04-10T15:04:13.434Z
 compiled_to: null
 processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuk3AaXZfcbxruUYeDJj"}
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
-
-
 
 # docs: update CLAUDE.md with E2E findings, transport decisions, and npm publish status
 

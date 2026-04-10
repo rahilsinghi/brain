@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:eb38d51
-ingested_at: 2026-04-10T08:03:40.142Z
-parsed_at: 2026-04-10T08:03:40.142Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuk2M9z1Ua7bRW9J88wL"}
+ingested_at: 2026-04-10T15:04:13.423Z
+parsed_at: 2026-04-10T15:04:13.423Z
+compiled_to: "[[Update next-env.d.ts and tsconfig.json for Next.js 16 in askNYC]]"
+processed_at: 2026-04-10T15:06:06.945Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

@@ -2,9 +2,9 @@
 title: Master Index
 author: ai
 created_at: 2026-04-03T00:00:00Z
-last_ai_edit: 2026-04-10T03:03:06.014Z
+last_ai_edit: 2026-04-10T14:15:50.973Z
 last_human_edit: null
-last_embedded_hash: 5c3d4fcfbfb94c4e
+last_embedded_hash: 8bd58554165f4b08
 sources: []
 tags:
   - index
@@ -17,12 +17,14 @@ Auto-maintained index of all wiki articles.
 
 ## Concepts
 
+- [[concepts/maison-disambiguation|Maison (disambiguation)]]
 - [[concepts/star-stories|STAR Stories]]
 - [[concepts/mechanize-rl-environment-company-for-frontier-ai-labs|Mechanize — RL Environment Company for Frontier AI Labs]]
 - [[concepts/hospitality-positioning|Hospitality Tech Positioning]]
 - [[concepts/easy-apply-answers|Easy Apply Answers]]
 - [[concepts/skills-inventory|Skills Inventory]]
 - [[concepts/role-families|Role Families]]
+- [[concepts/the-war-on-lost-in-pages|The War on Lost in Pages]]
 - [[concepts/healer-conflict-rules-contradiction-flags-and-proposals|Healer: Conflict Rules, Contradiction Flags, and Proposals]]
 
 ## Projects
@@ -52,6 +54,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/proj-wind-energy-forecasting|Wind Energy Forecasting using Regression and Neural Networks]]
 - [[projects/travel-tech-startup-landscape-march-2026-hiring-growth-research|Travel Tech Startup Landscape (March 2026) — Hiring & Growth Research]]
 - [[projects/fix-backend-reversed-dob-longitude-bounds-session-complete-payload|fix(backend): Reversed DOB Longitude Bounds + session_complete Payload]]
+- [[projects/rahil-singhi-portfolio-website|Rahil Singhi Portfolio Website]]
 - [[projects/coro-git-activity|Coro — Git Activity]]
 - [[projects/fix-sources-address-spec-review-findings|fix(sources): address spec review findings]]
 - [[projects/pr-fix-resolve-merge-conflicts-and-critical-issues-from-pr-5-asknyc|PR Fix: Resolve Merge Conflicts and Critical Issues from PR #5 (askNYC)]]
@@ -91,6 +94,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/career-datacenter-outreach-analysis-hospitality-travel-tech-job-search|Career-Datacenter Outreach Analysis: Hospitality & Travel Tech Job Search]]
 - [[projects/markpush-demo-content-and-linkedin-post-campaign|MarkPush Demo Content and LinkedIn Post Campaign]]
 - [[projects/add-smtp-send-capability-and-update-signature-urls|Add SMTP Send Capability and Update Signature URLs]]
+- [[projects/output-formatting-fix-implemented|Output Formatting Fix Implemented]]
 - [[projects/markpush-demo-content-and-linkedin-campaign-addition|MarkPush Demo Content and LinkedIn Campaign Addition]]
 - [[projects/experience-transform-metrics-merge-and-cross-referencing|Experience Transform: Metrics Merge and Cross-Referencing]]
 - [[projects/dashboard-launch-script-scripts-start-dashboard-sh|Dashboard Launch Script (scripts/start_dashboard.sh)]]
@@ -109,19 +113,23 @@ Auto-maintained index of all wiki articles.
 - [[projects/ouroboros-loop-try-except-wrapping-blocked-paths-and-json-repair|Ouroboros Loop: Try/Except Wrapping, Blocked Paths, and JSON Repair]]
 - [[projects/linkedin-outreach-campaign-hospitality-tech-startups-mar-26-31-2026|LinkedIn Outreach Campaign — Hospitality Tech Startups (Mar 26–31, 2026)]]
 - [[projects/mechanize-recruiter-screen-preparation-william-castner-march-2026|Mechanize — Recruiter Screen Preparation (William Castner, March 2026)]]
+- [[projects/ouroboros-self-improving-agent-engine|Ouroboros: Self-Improving Agent Engine]]
 - [[projects/feat-meta-add-benchmark-task-definitions-and-benchmarkgenerator-ouroboros|feat(meta): Add Benchmark Task Definitions and BenchmarkGenerator – Ouroboros]]
 - [[projects/fix-loop-wrap-full-iteration-in-try-except-pass-blocked-paths-to-strategist|fix(loop): Wrap Full Iteration in try/except, Pass Blocked Paths to Strategist]]
 - [[projects/mechanize-rl-environment-company-for-frontier-ai-labs|Mechanize — RL Environment Company for Frontier AI Labs]]
 - [[projects/transcriptionprovider-local-whisper-cpp-and-openai-implementations|TranscriptionProvider: Local Whisper.cpp and OpenAI Implementations]]
 - [[projects/brain-repo-phase-4-telegram-test-result|Brain Repo - Phase 4 Telegram Test Result]]
+- [[projects/karen-project-multi-channel-escalation-engine|KAREN Project: Multi-Channel Escalation Engine]]
 - [[projects/unstructured-content-copier-with-frontmatter-injection|Unstructured Content Copier with Frontmatter Injection]]
 - [[projects/linkedin-scraper-cookie-based-authentication-fix|LinkedIn Scraper: Cookie-Based Authentication Fix]]
 - [[projects/feat-voice-add-cluster-type-and-transcription-voice-config|feat(voice): Add Cluster Type and Transcription/Voice Config]]
 - [[projects/ouroboros-loop-stability-fix-try-except-wrapping-and-blocked-path-propagation|Ouroboros Loop Stability Fix: Try/Except Wrapping and Blocked Path Propagation]]
 - [[projects/coro-v2-ui-overhaul-pr-13|Coro V2 UI Overhaul (PR #13)]]
 - [[projects/escalation-ladder-v2-implementation-plan-karen|Escalation Ladder v2 Implementation Plan (karen)]]
+- [[projects/career-datacenter-job-search-automation-platform|Career Datacenter: Job Search Automation Platform]]
 - [[projects/fix-move-glitch-styles-to-globals-css-and-resolve-hydration-mismatches|Fix: Move Glitch Styles to globals.css and Resolve Hydration Mismatches]]
 - [[projects/brain-git-activity|brain — Git Activity]]
+- [[projects/gazediffuse-project|GazeDiffuse Project]]
 - [[projects/frontend-fix-shared-audio-context-contrast-fixes-and-level-completion-animation|Frontend Fix: Shared Audio Context, Contrast Fixes, and Level Completion Animation]]
 - [[projects/gaze-diffuse-session-3-local-training-and-ar-baseline-results|Gaze-Diffuse Session 3: Local Training and AR Baseline Results]]
 - [[projects/proj-edgemesh|EdgeMesh – Distributed Edge Inference Mesh]]
@@ -158,6 +166,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/feat-api-server-factory-with-createserver-stopserver-and-graceful-drain|feat(api): Server Factory with createServer/stopServer and Graceful Drain]]
 - [[projects/ouroboros-real-world-score-docstring-coverage-investigation|Ouroboros: Real-World Score Docstring Coverage Investigation]]
 - [[projects/feat-wire-all-v2-features-into-main-page-and-update-prd|feat: Wire All V2 Features into Main Page and Update PRD]]
+- [[projects/claude-how-to|Claude How To]]
 - [[projects/fix-backend-resolve-websocket-crash-and-vertex-ai-connection-in-asknyc|fix(backend): Resolve WebSocket Crash and Vertex AI Connection in askNYC]]
 - [[projects/smtp-email-capability-and-signature-url-updates-in-career-datacenter|SMTP Email Capability and Signature URL Updates in Career-Datacenter]]
 - [[projects/slurm-script-updates-for-h200-h100-l40s-gpu-partitions-gaze-diffuse|SLURM Script Updates for H200/H100/L40S GPU Partitions (gaze-diffuse)]]
@@ -183,12 +192,14 @@ Auto-maintained index of all wiki articles.
 - [[projects/markpush-project-screenshots-added-to-portfolio|MarkPush Project Screenshots Added to Portfolio]]
 - [[projects/telemetrywriter-markdown-and-index-jsonl-output-feature|TelemetryWriter: Markdown and index.jsonl Output Feature]]
 - [[projects/claude-md-update-api-layer-status-and-source-file-tree-c7e91ad|CLAUDE.md Update: API Layer Status and Source File Tree (c7e91ad)]]
+- [[projects/ask-nyc-multimodal-urban-intelligence-platform|Ask NYC: Multimodal Urban Intelligence Platform]]
 - [[projects/neon-exchange-git-activity|neon-exchange — Git Activity]]
 - [[projects/karen-git-activity|karen — Git Activity]]
 - [[projects/ouroboros-docstring-coverage-score-targeting-cli-and-history-modules|Ouroboros: Docstring Coverage Score Targeting CLI and History Modules]]
 - [[projects/docs-update-claude-md-and-remaining-work-md-with-auth-fix-gmail-next-steps|docs: update CLAUDE.md and REMAINING-WORK.md with auth fix, gmail next steps]]
 - [[projects/fix-backend-reversed-dob-longitude-bounds-session-complete-payload-e55bf3f|fix(backend): Reversed DOB Longitude Bounds + session_complete Payload (e55bf3f)]]
 - [[projects/imessage-scheduler-one-command-start-script-and-readme-rewrite|iMessage Scheduler: One-Command Start Script and README Rewrite]]
+- [[projects/markpush|MarkPush]]
 - [[projects/next-js-15-frontend-karen-application-all-pages-and-live-escalation-ui|Next.js 15 Frontend: Karen Application — All Pages and Live Escalation UI]]
 - [[projects/linkedin-scraper-fix-cookie-based-authentication-and-job-parsing|LinkedIn Scraper Fix: Cookie-Based Authentication and Job Parsing]]
 - [[projects/ouroboros-git-activity|ouroboros — Git Activity]]
@@ -226,6 +237,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/fix-restore-room-id-on-websocket-reconnect-coro|Fix: Restore room_id on WebSocket Reconnect (Coro)]]
 - [[projects/fix-ios-app-runs-on-simulator-successfully-markpush-sha-8859c0e|Fix: iOS App Runs on Simulator Successfully (MarkPush SHA 8859c0e)]]
 - [[projects/parsevoice-transcription-classification-and-markdown-drop-implementation|parseVoice: Transcription, Classification, and Markdown Drop Implementation]]
+- [[projects/superpowers-ai-agent-skill-library|Superpowers: AI Agent Skill Library]]
 - [[projects/pr-fix-resolve-merge-conflicts-and-critical-issues-asknyc-sha-7d6957e|PR Fix: Resolve Merge Conflicts and Critical Issues (askNYC, SHA 7d6957e)]]
 - [[projects/personal-agent-and-mediator-agent-with-10-step-negotiation-algorithm|Personal Agent and Mediator Agent with 10-Step Negotiation Algorithm]]
 - [[projects/feat-meta-add-benchmark-task-definitions-and-benchmarkgenerator|feat(meta): Add Benchmark Task Definitions and BenchmarkGenerator]]
@@ -238,6 +250,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/karen-channel-refactor-slack-email-cc-calendar-added-linkedin-twitter-removed|Karen: Channel Refactor – Slack/Email CC/Calendar Added, LinkedIn/Twitter Removed]]
 - [[projects/fix-move-glitch-styles-to-globals-css-and-fix-hydration-mismatches|Fix: Move Glitch Styles to globals.css and Fix Hydration Mismatches]]
 - [[projects/proj-superplay|SuperPlay – AI-Powered Spotify Playlist Curator]]
+- [[projects/ouroboros-self-improving-ai-agent|Ouroboros (Self-Improving AI Agent)]]
 - [[projects/markpush-mcp-server-plan-and-system-architecture|MarkPush MCP Server Plan and System Architecture]]
 - [[projects/dotfiles-git-activity|dotfiles — Git Activity]]
 - [[projects/flock-remove-clerk-dependency-and-dynamic-agent-labels|Flock: Remove Clerk Dependency and Dynamic Agent Labels]]

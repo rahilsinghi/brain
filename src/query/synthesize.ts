@@ -1,5 +1,6 @@
 import { generate } from "../llm/provider.js";
 import type { WikiChunk } from "../types.js";
+import { noveltyScore } from "./novelty.js";
 
 export function formatChunksForPrompt(chunks: WikiChunk[]): string {
   if (chunks.length === 0) return "";
@@ -20,6 +21,7 @@ export interface SynthesisResult {
   chunks: WikiChunk[];
   provider: string;
   model: string;
+  novelty_score: number;
 }
 
 export type SynthesizeFn = (
@@ -47,6 +49,7 @@ export async function synthesize(
       chunks: [],
       provider: "none",
       model: "none",
+      novelty_score: 1.0,
     };
   }
 
@@ -57,18 +60,28 @@ export async function synthesize(
     prompt: `You are a knowledge assistant answering questions from a personal wiki.
 
 Use ONLY the following wiki excerpts to answer. If the excerpts don't contain enough information, say so.
-Include [[wiki links]] to source articles when referencing them.
+Do NOT include inline citations, source references, or source numbers in your answer. Sources are tracked separately by the system.
+Write clean prose with no markdown formatting — no bold, no headers, no bullet markers. Use plain dashes (-) for lists.
 
 Wiki excerpts:
 ${context}
 
 Question: ${question}
 
-Answer concisely and accurately, citing sources with [[wiki links]].`,
+Answer concisely and accurately in plain text.`,
     maxTokens: 4096,
   });
 
   const answer = response.text;
 
-  return { answer, sourcePaths, chunks, provider: response.provider, model: response.model };
+  // Compute novelty: embed the answer and compare against source chunk content
+  const answerVector = await embed(answer);
+  const compareChunks = chunks.slice(0, 5);
+  const chunkVectors: number[][] = [];
+  for (const c of compareChunks) {
+    chunkVectors.push(await embed(c.content));
+  }
+  const novelty = noveltyScore(answerVector, chunkVectors);
+
+  return { answer, sourcePaths, chunks, provider: response.provider, model: response.model, novelty_score: novelty };
 }

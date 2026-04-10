@@ -32,6 +32,7 @@ describe("POST /synthesise", () => {
       ],
       provider: "gemini",
       model: "gemini-2.5-flash",
+      novelty_score: 0.75,
     });
 
     const app = buildApp(mockSynthesize);
@@ -69,6 +70,7 @@ describe("POST /synthesise", () => {
       chunks: [],
       provider: "gemini",
       model: "gemini-2.5-flash",
+      novelty_score: 0.75,
     });
 
     const app = buildApp(mockSynthesize);
@@ -91,6 +93,7 @@ describe("POST /synthesise", () => {
       chunks: [],
       provider: "none",
       model: "none",
+      novelty_score: 1.0,
     });
 
     const app = buildApp(mockSynthesize);

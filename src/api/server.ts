@@ -5,6 +5,7 @@ import type { SynthesizeFn } from "../query/synthesize.js";
 import { healthRoute } from "./routes/health.js";
 import { ingestRoute } from "./routes/ingest.js";
 import { synthesiseRoute } from "./routes/synthesise.js";
+import { saveRoute } from "./routes/save.js";
 
 interface ServerOptions {
   store: VectorStore;
@@ -27,6 +28,7 @@ export function createServer(opts: ServerOptions): FastifyInstance {
   app.register(healthRoute);
   app.register(ingestRoute);
   app.register(synthesiseRoute);
+  app.register(saveRoute);
 
   return app;
 }

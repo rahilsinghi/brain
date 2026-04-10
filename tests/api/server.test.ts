@@ -19,6 +19,7 @@ describe("createServer", () => {
       answer: "test",
       sourcePaths: [],
       chunks: [],
+      novelty_score: 0.9,
     });
 
     const server = createServer({
@@ -60,7 +61,7 @@ describe("stopServer", () => {
     });
 
     const mockSynthesize = vi.fn().mockReturnValue(
-      held.then(() => ({ answer: "done", sourcePaths: [], chunks: [] })),
+      held.then(() => ({ answer: "done", sourcePaths: [], chunks: [], novelty_score: 0.9 })),
     );
 
     const server = createServer({

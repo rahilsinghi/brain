@@ -151,12 +151,35 @@
 
 ---
 
+## Phase 5: Knowledge Compounding — Complete (2026-04-10)
+
+- **Novelty scoring:** `src/query/novelty.ts` — cosine similarity + `1 - maxSim` novelty metric
+- **Synthesis cache:** `src/api/synthesis-cache.ts` — in-memory TTL cache (10min, 50 entries) keyed by query_id
+- **`/save` route:** `POST /save { query_id, force? }` — persists synthesis to `wiki/synthesis/` if novelty > 0.85 (configurable). Force flag bypasses threshold.
+- **Novelty in response:** `/synthesise` now returns `novelty_score` in every response
+- **Anti-ouroboros:** Synthesis answers only saved via explicit `/save` call, never auto-saved
+- **Tests:** 25 new tests (314 total across 54 files)
+
+## Brain MCP Server — Complete (2026-04-10)
+
+- **Server:** `~/.claude/mcp/brain/index.ts` — stdio MCP server proxying to brain HTTP API (localhost:3577)
+- **Tools:** `brain_query` (proactive wiki search) + `brain_ingest` (explicit knowledge save)
+- **Registration:** `~/.claude/.mcp.json` — available in all Claude Code sessions across all repos
+- **Proactive trigger:** Tool description encourages Claude to query brain before asking user to re-explain documented knowledge
+
+## Telegram Wiki Link Formatting — Complete (2026-04-10)
+
+- **Formatter:** `src/telegram/format.ts` — strips `[[wiki/path|display]]`, `[[path#anchor]]`, `[[path.md]]` links to bold text
+- **Wired into:** `src/telegram/bot.ts` — applied before truncation on synthesis replies
+
+---
+
 ## Known Technical Debt
 
 | Item | File | Priority |
 |------|------|----------|
 | `embedBatch` is exported but never called | `src/embedder/embedder.ts` | Low — remove or use in sync |
-| `novelty_threshold` config unused | `src/config.ts` | Phase 5 — implement knowledge compounding |
+| ~~`novelty_threshold` config unused~~ | `src/config.ts` | Done — Phase 5 implemented |
 | `webSearchesUsed` always 0 | `src/lint/runner.ts` | Low — no web search integration yet |
 | `main()` in cli.ts needs MCP wiring | `src/sources/cli.ts` | Phase 3 follow-up — Gmail done (direct API), MarkPush still needs MCP |
 | Placeholder parsers for pdf/audio/image | `src/parser/placeholder-parser.ts` | Phase 4 — replace with real parsers |
@@ -179,9 +202,10 @@ cat CLAUDE.md                # Project context for Claude Code
 **Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
 
 **Next up:**
-1. **Obsidian-as-context setup** — Use brain's wiki/ as context source for Claude sessions across all repos
-2. **Phase 5: Knowledge Compounding** — `/save` command, novelty scoring, anti-ouroboros
-3. Test Telegram bot synthesis end-to-end (send `?what is karen` to @rahil_brain_bot)
+1. Test Telegram bot synthesis formatting (send `?what is karen` to @rahil_brain_bot after daemon restart)
+2. Verify brain MCP server works in a new Claude Code session (brain_query + brain_ingest)
+3. Phase 3b: Calendar source (awaiting Google Calendar MCP auth)
+4. PDF/image parsers (placeholder stubs exist)
 
 **All sources live:**
 1. Telegram: `@rahil_brain_bot` — always on via launchd

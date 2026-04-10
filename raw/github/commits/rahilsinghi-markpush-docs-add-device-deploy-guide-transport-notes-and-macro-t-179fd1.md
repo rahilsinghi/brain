@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:37f3379
-ingested_at: 2026-04-10T08:03:40.145Z
-parsed_at: 2026-04-10T08:03:40.145Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuk2HzEmGb85CoWBW7Y7"}
+ingested_at: 2026-04-10T15:04:13.431Z
+parsed_at: 2026-04-10T15:04:13.431Z
+compiled_to: "[[Documentation Update for MarkPush: iOS Deployment, Transport, and Macro Trust]]"
+processed_at: 2026-04-10T15:04:55.573Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 
