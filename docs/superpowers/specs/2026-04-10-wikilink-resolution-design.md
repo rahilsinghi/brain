@@ -1,0 +1,232 @@
+# Wikilink Resolution & Graph Density
+
+**Date:** 2026-04-10
+**Status:** Draft
+**Repo:** brain (~/Desktop/brain)
+**Related:** brain-explorer (~/Desktop/brain-explorer)
+
+## Problem
+
+The brain-explorer graph renders 339 nodes but **0 edges**. The wiki vault contains 5,617 raw wikilink references across 1,008 articles, but none resolve to valid node IDs during graph building.
+
+**Root cause:** The compile pipeline (`src/compiler/compile.ts:46`) instructs the LLM to emit `[[Topic Name]]` format backlinks (e.g., `[[Zustand]]`, `[[Rahil Singhi]]`). The graph scanner (`src/graph/scan-wiki.ts`) resolves links against file-path-based node IDs (e.g., `concepts/zustand-graph-state-store-brain-explorer.md`). There is no title-to-path resolution in the scanner, so every title-style link is dropped as dangling.
+
+**Secondary issues discovered during audit:**
+- 26 duplicate article titles (breaks naive title-to-path lookup)
+- 19 case-variation groups (e.g., `[[Karen Project]]` vs `[[karen project]]`)
+- ~40-50% of wikilinks reference concepts with no dedicated wiki article (truly dangling)
+- Wikilinks appear in all sections (67% in `## Related`, 33% in body content)
+
+## Scope
+
+Three changes, all in the brain repo:
+
+1. **Title-based resolution in `scan-wiki.ts`** -- resolve `[[Title]]` links against frontmatter titles
+2. **Compile prompt enhancement** -- give the LLM a list of existing articles so it links to real ones
+3. **One-time backfill script** -- rewrite existing broken wikilinks where a title match exists
+
+**Out of scope:** brain-explorer frontend changes (edge rendering already works, just needs data). Force-directed layout (separate v1.2 effort). Creating stub articles for dangling references.
+
+## Design
+
+### 1. Title-based resolution in scan-wiki.ts
+
+**File:** `src/graph/scan-wiki.ts`
+
+**Current resolution chain (lines 98-110):**
+1. Exact match against node IDs (path-based) -> resolve
+2. Bare filename match via `filenameToId` map -> resolve
+3. No match -> drop as dangling
+
+**New resolution chain:**
+1. Exact match against node IDs (path-based) -> resolve
+2. Bare filename match via `filenameToId` map -> resolve
+3. **Case-insensitive title match via `titleToId` map** -> resolve
+4. **Case-insensitive slugified title match via `slugToId` map** -> resolve
+5. No match -> drop as dangling
+
+**Building the lookup maps (after node scanning, before link resolution):**
+
+```typescript
+// Existing
+const filenameToId = new Map<string, string>();  // "exp-kismet.md" -> "experience/exp-kismet.md"
+
+// New
+const titleToId = new Map<string, string>();     // "zustand graph state store" -> "concepts/zustand-..."
+const slugToId = new Map<string, string>();      // "zustand-graph-state-store" -> "concepts/zustand-..."
+```
+
+**Title map population:**
+- Key: `node.title.toLowerCase()` (case-insensitive)
+- Value: `node.id`
+- On duplicate title collision: keep the **first** entry (deterministic, matches existing dedup behavior). Log a warning to stderr so duplicates surface during development but don't break the build.
+
+**Slug map population:**
+- Key: `slugify(node.title)` where slugify is the existing function from scanner.ts (lowercase, replace non-alnum with `-`, trim dashes)
+- Value: `node.id`
+- Same collision strategy as title map
+
+**Resolution of a raw wikilink target `[[Some Topic Name]]`:**
+
+```
+normalizeTarget("Some Topic Name")
+  -> "Some Topic Name.md"  (current behavior: just appends .md)
+  -> NOT in nodeIds
+  -> NOT in filenameToId
+  -> lowercase: "some topic name.md", strip .md: "some topic name"
+  -> titleToId.get("some topic name") -> HIT: "concepts/some-topic-name-detail.md"
+  -> resolve to "concepts/some-topic-name-detail.md"
+```
+
+If title lookup misses, try slug:
+```
+  -> slugify("some topic name") = "some-topic-name"
+  -> slugToId.get("some-topic-name") -> HIT (if slug matches prefix of filename)
+```
+
+**Changes to `normalizeTarget`:** None. Keep it simple. The new resolution happens in the link resolution loop, not in normalizeTarget.
+
+**Handling `[[category/slug]]` and `[[category/slug|Display Text]]` links:**
+- The regex already strips the pipe portion (`|Display Text`)
+- `[[category/slug]]` -> `normalizeTarget` appends `.md` -> exact match against nodeIds -> works as-is
+- No changes needed for these formats
+
+**Handling absolute file paths (`[[/Users/rahilsinghi/...]]`):**
+- These appear only in frontmatter `sources:` field, not in body content
+- The regex only runs on `content` (post-frontmatter), so these are never extracted
+- No changes needed
+
+### 2. Compile prompt enhancement
+
+**File:** `src/compiler/compile.ts`
+
+**Current prompt (line 46):**
+```
+backlinks: Related topics as markdown links using [[Topic Name]] format
+```
+
+**New approach:**
+Before calling the LLM, scan the wiki directory for existing article titles. Build a condensed list and inject it into the prompt.
+
+**Implementation:**
+
+Add a helper function `getExistingTitles(vaultRoot: string): string[]` that:
+1. Walks `wiki/` directory (reuse `walkDir` pattern from scan-wiki.ts or import it)
+2. Reads frontmatter from each `.md` file
+3. Returns array of `title` strings
+4. Caches result in a module-level variable with a 5-minute TTL (compile queue processes articles sequentially, so the list stays warm within a batch)
+
+**Updated prompt:**
+```
+- backlinks: Related topics as markdown links using [[Topic Name]] format.
+  IMPORTANT: Only link to topics from this list of existing articles:
+  ${existingTitles.join(", ")}
+  If a related topic is not in the list, still include it as a [[link]] — it may become an article later.
+```
+
+**Why "still include it":** We don't want to suppress links entirely for topics that don't exist yet. The scanner will drop them as dangling, but they serve as signals for future article creation and are visible in lint reports.
+
+**Token budget:** ~1,384 titles averaging ~8 words = ~11,000 tokens. The compile prompt currently uses ~200 tokens + raw content. Adding the title list increases prompt size but stays well within the 200K context window. If the title list grows past 2,000 articles, consider truncating to the 500 most-connected articles or filtering to the same category as the raw content.
+
+**No changes to output format:** The LLM still emits `[[Title]]` format. The scanner's new title-based resolution handles mapping to node IDs.
+
+### 3. One-time backfill script
+
+**New file:** `src/graph/backfill-links.ts`
+**CLI entry:** `pnpm backfill-links` (add to package.json scripts)
+
+**What it does:**
+1. Walk all wiki articles, build `titleToId` map (same logic as scan-wiki enhancement)
+2. Also build `slugToId` map for fuzzy matching
+3. For each article, extract all `[[wikilinks]]` from the full content (not just `## Related`)
+4. For each wikilink, attempt resolution:
+   - Already a valid path (`[[category/slug]]`) -> skip (already correct)
+   - Title exact match (case-insensitive) -> rewrite to exact title from map (preserves casing of the target article's actual title)
+   - Slug match -> rewrite to the matched article's title
+   - No match -> leave as-is (truly dangling, will show in lint)
+5. Write updated content back via `writeFrontmatter` (preserves frontmatter)
+6. Print summary: resolved count, still-dangling count, files modified
+
+**Rewrite format:** `[[Matched Article Title]]` (not `[[category/slug]]`). This keeps the wiki human-readable in Obsidian and relies on the scanner's title resolution to map to node IDs.
+
+**Case normalization:** When rewriting, use the exact title from the target article's frontmatter. This fixes case variations (`[[karen project]]` -> `[[Karen Project]]` if the article's frontmatter says `title: Karen Project`).
+
+**Idempotency:** Running the script multiple times produces the same result. Already-resolved links are detected by the "already a valid path" check and the title exact match returning the same title.
+
+**Duplicate title handling:** When multiple articles share a title (26 cases), the backfill script picks the first match (alphabetical by path). This is acceptable — the duplicate titles themselves are the real problem and should be fixed separately (out of scope for this spec).
+
+**Dry run mode:** `pnpm backfill-links --dry-run` prints what would change without writing files. Essential for review before committing.
+
+**Safety:**
+- Git snapshot before running (the daemon already does this for heal operations; reuse `snapshot.ts`)
+- Only modifies content, never frontmatter fields
+- Skips `index.md` files
+
+## Edge Cases
+
+### Duplicate titles (26 cases)
+Both the scanner and backfill use first-match-wins (deterministic by insertion order during directory walk, which is alphabetical). This means one of the duplicate articles gets all inbound links. Acceptable for now — the duplicate articles should be merged or disambiguated separately.
+
+### Case variations (19 groups)
+Handled by case-insensitive lookup (`.toLowerCase()` on both sides). The backfill normalizes to the canonical title casing from frontmatter.
+
+### Wikilinks with pipe syntax (`[[target|display]]`)
+The regex already strips the display text and extracts only the target. The new resolution runs on the target portion. No issue.
+
+### Self-links
+Already handled — `scan-wiki.ts:108` drops links where `target === source`.
+
+### Bidirectional dedup
+Already handled — `scan-wiki.ts:112-122` deduplicates `A->B` and `B->A` into one edge.
+
+### Articles not in graph (no embeddings)
+`export.ts` filters nodes to only those with embeddings (315 out of 1,384). Links between articles where one or both lack embeddings are dropped at export time. The scanner resolves all links, but the graph cache only includes edges between embedded nodes. This is correct — unembedded articles can't have 3D positions.
+
+### Seed-generated `[[slug]]` links
+These already work with the existing `filenameToId` resolution (step 2 in the chain). The new title resolution (steps 3-4) only fires when steps 1-2 miss. No interference.
+
+### Absolute paths in frontmatter sources
+Not extracted by the regex (it runs on content, not frontmatter YAML). No impact.
+
+### Future article growth
+The title list in the compile prompt grows linearly. At ~1,384 articles currently, it's ~11K tokens. The 5-minute cache TTL ensures fresh data within a compile batch. If growth exceeds 2,000 articles, add category-based filtering (only inject titles from the same category + a global top-100 most-connected list).
+
+## Expected Impact
+
+**Conservative estimate:** If even 30% of the 5,617 raw wikilinks resolve (title matches for articles that exist), that's ~1,685 raw links. After dedup and filtering to the 339 embedded nodes, expect **200-500 edges** in the graph. This would dramatically change the visual density.
+
+**After backfill:** Existing articles get their broken links rewritten. Combined with the compile prompt giving the LLM real article names, new articles will produce higher-quality links from day one.
+
+## Testing
+
+### scan-wiki.ts
+- Title-based resolution: `[[Zustand Graph State Store]]` resolves to `concepts/zustand-graph-state-store-brain-explorer.md`
+- Case-insensitive: `[[zustand graph state store]]` resolves same as above
+- Slug-based fallback: `[[zustand-graph-state-store]]` resolves via slug map
+- Duplicate title: first-match-wins, no crash
+- Existing tests continue to pass (path-based and filename-based resolution unchanged)
+
+### compile.ts
+- Title list injection: mock `walkDir` to return known articles, verify prompt contains title list
+- Empty wiki: gracefully produces empty list, prompt still valid
+- Large wiki: verify title list doesn't exceed reasonable token count
+
+### backfill-links.ts
+- Dry run: no files modified, output shows planned changes
+- Rewrite: `[[Zustand]]` -> `[[Zustand Graph State Store in Brain Explorer]]` (actual title)
+- Idempotency: running twice produces same result
+- Case normalization: `[[karen project]]` -> `[[Karen Project]]`
+- Already-correct links: `[[category/slug]]` unchanged
+- Dangling links: `[[Nonexistent Topic]]` left as-is
+
+## Files Changed
+
+| File | Change |
+|------|--------|
+| `src/graph/scan-wiki.ts` | Add titleToId + slugToId maps, extend resolution chain |
+| `src/compiler/compile.ts` | Add `getExistingTitles()`, inject into prompt |
+| `src/graph/backfill-links.ts` | New file: one-time wikilink rewriter |
+| `package.json` | Add `backfill-links` script |
+| `tests/graph/scan-wiki.test.ts` | Add title resolution + case insensitivity tests |
+| `tests/compiler/compile.test.ts` | Add title list injection test |
+| `tests/graph/backfill-links.test.ts` | New file: backfill tests |
