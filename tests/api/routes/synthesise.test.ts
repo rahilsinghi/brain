@@ -30,6 +30,8 @@ describe("POST /synthesise", () => {
           sectionHash: "abc123",
         },
       ],
+      provider: "gemini",
+      model: "gemini-2.5-flash",
     });
 
     const app = buildApp(mockSynthesize);
@@ -47,7 +49,8 @@ describe("POST /synthesise", () => {
     expect(body.answer).toContain("Kismet");
     expect(body.sources).toHaveLength(1);
     expect(body.sources[0].file).toBe("wiki/experience/exp-kismet-ai-data.md");
-    expect(body.model).toBe("claude-sonnet-4-6");
+    expect(body.provider).toBe("gemini");
+    expect(body.model).toBe("gemini-2.5-flash");
     expect(typeof body.latency_ms).toBe("number");
 
     expect(mockSynthesize).toHaveBeenCalledWith(
@@ -64,6 +67,8 @@ describe("POST /synthesise", () => {
       answer: "Answer",
       sourcePaths: [],
       chunks: [],
+      provider: "gemini",
+      model: "gemini-2.5-flash",
     });
 
     const app = buildApp(mockSynthesize);
@@ -84,6 +89,8 @@ describe("POST /synthesise", () => {
       answer: "No relevant knowledge found.",
       sourcePaths: [],
       chunks: [],
+      provider: "none",
+      model: "none",
     });
 
     const app = buildApp(mockSynthesize);

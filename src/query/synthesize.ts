@@ -18,6 +18,8 @@ export interface SynthesisResult {
   answer: string;
   sourcePaths: string[];
   chunks: WikiChunk[];
+  provider: string;
+  model: string;
 }
 
 export type SynthesizeFn = (
@@ -43,6 +45,8 @@ export async function synthesize(
         "I don't have any knowledge about that topic yet. Try adding some articles to raw/ first.",
       sourcePaths: [],
       chunks: [],
+      provider: "none",
+      model: "none",
     };
   }
 
@@ -66,5 +70,5 @@ Answer concisely and accurately, citing sources with [[wiki links]].`,
 
   const answer = response.text;
 
-  return { answer, sourcePaths, chunks };
+  return { answer, sourcePaths, chunks, provider: response.provider, model: response.model };
 }

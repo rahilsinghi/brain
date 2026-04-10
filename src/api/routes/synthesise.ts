@@ -69,7 +69,8 @@ export async function synthesiseRoute(app: FastifyInstance): Promise<void> {
             title: c.breadcrumb,
             chunk: c.content,
           })),
-          model: "claude-sonnet-4-6",
+          provider: result.provider,
+          model: result.model,
           latency_ms: latencyMs,
         };
       } catch (err) {
