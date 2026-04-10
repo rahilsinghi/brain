@@ -74,4 +74,21 @@ export class VectorStore {
       sectionHash: r.sectionHash as string,
     }));
   }
+
+  async listAll(): Promise<(WikiChunk & { vector: number[] })[]> {
+    const table = await this.getTable();
+    if (!table) return [];
+
+    const results = await table.query().toArray();
+
+    return results.map((r) => ({
+      id: r.id as string,
+      filePath: r.filePath as string,
+      breadcrumb: r.breadcrumb as string,
+      heading: r.heading as string,
+      content: r.content as string,
+      sectionHash: r.sectionHash as string,
+      vector: Array.from(r.vector as Float32Array),
+    }));
+  }
 }
