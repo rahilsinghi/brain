@@ -132,6 +132,25 @@
 
 ---
 
+## Gemini Vertex AI Provider — Complete (2026-04-10)
+
+- **LLM abstraction:** `src/llm/provider.ts` — unified `generate()` function for all 6 LLM call sites
+- **Providers:** Anthropic SDK + Vertex AI (`@google-cloud/vertexai`) with auto-fallback
+- **Auto mode:** Prefers Gemini (Vertex AI, $1000 GCP GenAI credits on askNYC project) over Anthropic (credits exhausted)
+- **GCP project:** `nth-segment-491623-d2` (askNYC) via Application Default Credentials
+- **Project rotation:** Supports multiple GCP projects for quota distribution
+- **API response:** `/synthesise` now reports actual `provider` and `model` used (not hardcoded)
+- **Tests:** 289 total across 50 files
+
+## Repo Knowledge Enrichment — Complete (2026-04-10)
+
+- **10 repo profiles** scanned via parallel agents, compiled to wiki, embedded (102 chunks)
+- **Repos covered:** AskNYC, Career-Datacenter, gaze-diffuse, Karen, MarkPush, ouroboros, portfolio, superpowers, claw-code, claude-howto
+- **Wiki articles:** Dense 200-400 line profiles with architecture, tech stack, key components, current state
+- **Synthesis verified:** Queries like "What is Karen?" return rich context from new + existing wiki articles
+
+---
+
 ## Known Technical Debt
 
 | Item | File | Priority |
@@ -151,7 +170,7 @@
 
 ```
 cd ~/Desktop/brain
-pnpm test                    # Verify 281 tests pass
+pnpm test                    # Verify 289 tests pass
 pnpm status                  # Check daemon (launchd managed)
 cat docs/REMAINING-WORK.md   # This file — pick up where you left off
 cat CLAUDE.md                # Project context for Claude Code
@@ -159,10 +178,15 @@ cat CLAUDE.md                # Project context for Claude Code
 
 **Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
 
-**Next up:** Gmail backfill (historical emails beyond 7d), verify career-datacenter completeness, then Phase 5.
+**Next up:**
+1. **Obsidian-as-context setup** — Use brain's wiki/ as context source for Claude sessions across all repos
+2. **Phase 5: Knowledge Compounding** — `/save` command, novelty scoring, anti-ouroboros
+3. Test Telegram bot synthesis end-to-end (send `?what is karen` to @rahil_brain_bot)
 
-**To test live sources:**
+**All sources live:**
 1. Telegram: `@rahil_brain_bot` — always on via launchd
-2. GitHub: daemon handles automatically on hourly cron
-3. Gmail: runs automatically on hourly cron (OAuth2, no MCP needed)
+2. GitHub + git-commits: hourly cron
+3. Gmail: hourly cron (OAuth2, direct API)
 4. Calendar: awaiting MCP auth (Phase 3b)
+
+**LLM Provider:** Gemini Vertex AI (auto mode, $1000 credits on askNYC GCP project). Anthropic as fallback (credits exhausted, -$0.11).
