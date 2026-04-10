@@ -115,14 +115,15 @@
 
 ---
 
-## Gmail Backfill & Sync — Next Up
+## Gmail Direct API — Complete (2026-04-10)
 
-- **Source exists:** `src/sources/gmail.ts` — implemented with MCP DI (`searchMessages`, `readMessage`), signature stripping, HTML→markdown conversion, processed_ids dedup
-- **Current state:** 0 emails synced. Gmail not in sync-state.json. `raw/gmail/emails/` is empty.
-- **MCP dependency:** Requires Gmail MCP auth (available in Claude Code). Need `mcp__gmail__search_messages` + `mcp__gmail__read_message` wired as DI deps.
-- **Backfill needed:** Historical emails (label:Brain, is:starred, important threads) — decide filtering criteria, time range, volume
-- **Cron:** Add gmail to hourly or daily orchestrator cron alongside github/git-commits
-- **Filtering design:** Need to decide what to keep vs reject — newsletters, receipts, notifications vs real correspondence
+- **MCP replaced:** Removed MCP dependency. Gmail now uses `googleapis` npm package with OAuth2 refresh token.
+- **Auth flow:** `pnpm gmail:auth` — one-time browser consent, saves `GMAIL_REFRESH_TOKEN` to `.brain/.env`
+- **Files added:** `src/sources/gmail-auth.ts` (OAuth2 client), `scripts/gmail-auth.ts` (consent CLI)
+- **API source:** `createGmailApiSource()` in `gmail.ts` — wraps googleapis SDK into existing `GmailDeps` interface
+- **Daemon wired:** Gmail added to hourly cron alongside GitHub + git-commits
+- **First sync:** 41 emails ingested from 7-day window. Default hourly query: `category:personal newer_than:1d`
+- **Tests:** 10 new tests (281 total across 49 files)
 
 ### Career-Datacenter Seed Status
 - **Loaded via `pnpm seed`:** profile, experience, projects, skills, companies, positioning, stories, answers, tracking transforms
@@ -138,7 +139,7 @@
 | `embedBatch` is exported but never called | `src/embedder/embedder.ts` | Low — remove or use in sync |
 | `novelty_threshold` config unused | `src/config.ts` | Phase 5 — implement knowledge compounding |
 | `webSearchesUsed` always 0 | `src/lint/runner.ts` | Low — no web search integration yet |
-| `main()` in cli.ts needs MCP wiring | `src/sources/cli.ts` | Phase 3 follow-up — needs MCP tool injection at call site |
+| `main()` in cli.ts needs MCP wiring | `src/sources/cli.ts` | Phase 3 follow-up — Gmail done (direct API), MarkPush still needs MCP |
 | Placeholder parsers for pdf/audio/image | `src/parser/placeholder-parser.ts` | Phase 4 — replace with real parsers |
 | `tsconfig.json` has `bun-types` but tests run under Vitest/Node | `tsconfig.json` | Low — `skipLibCheck: true` masks it |
 | No chunked/staged compile strategies | `src/compiler/queue.ts` | Future — only single-pass implemented |
@@ -150,7 +151,7 @@
 
 ```
 cd ~/Desktop/brain
-pnpm test                    # Verify 271 tests pass
+pnpm test                    # Verify 281 tests pass
 pnpm status                  # Check daemon (launchd managed)
 cat docs/REMAINING-WORK.md   # This file — pick up where you left off
 cat CLAUDE.md                # Project context for Claude Code
@@ -158,10 +159,10 @@ cat CLAUDE.md                # Project context for Claude Code
 
 **Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
 
-**Next up:** Gmail backfill & daily sync, verify career-datacenter completeness, then Phase 5.
+**Next up:** Gmail backfill (historical emails beyond 7d), verify career-datacenter completeness, then Phase 5.
 
 **To test live sources:**
 1. Telegram: `@rahil_brain_bot` — always on via launchd
 2. GitHub: daemon handles automatically on hourly cron
-3. Gmail + MarkPush: run `/brain-sync` in Claude Code (MCP tools needed)
+3. Gmail: runs automatically on hourly cron (OAuth2, no MCP needed)
 4. Calendar: awaiting MCP auth (Phase 3b)

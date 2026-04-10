@@ -6,7 +6,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 **Phase 1 (Core MVP):** Complete — ingestion pipeline, file watcher, compiler, parser middleware
 **Phase 2 (Intelligence):** Complete — vector search, query/synthesis, lint & heal (hardened)
-**Phase 3 (Auto-Ingestion):** Complete — MarkPush, GitHub, Gmail sources + orchestrator + CLI
+**Phase 3 (Auto-Ingestion):** Complete — MarkPush, GitHub, Gmail (direct OAuth2 API) sources + orchestrator + CLI
 **Phase A (Seed & Activate):** Complete — seed script, YAML transforms, batch compile, embedding sync
 **Phase B (API Layer):** Complete — Fastify HTTP API (ingest, synthesise, health) embedded in daemon
 **Telegram Input:** Complete — grammY bot with prefix routing, ingest + synthesise, /start /help /status
@@ -14,6 +14,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Complete — voice transcription (whisper.cpp + OpenAI), cluster classification, daily logs, Marp slides, matplotlib plots
 **Auth Bug Fix (2026-04-09):** All 6 Anthropic SDK calls pass apiKey explicitly. loadEnv strips quotes. Root cause was empty .env value.
+**Gmail Direct API (2026-04-10):** Replaced MCP dependency with googleapis OAuth2. One-time `pnpm gmail:auth` consent flow. 41 emails ingested on first sync.
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
@@ -35,7 +36,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (271 tests across 47 files, all passing)
+- Testing: Vitest (281 tests across 49 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
@@ -58,7 +59,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (65)
+### Source Files (67)
 
 ```
 src/
@@ -119,7 +120,8 @@ src/
     ├── orchestrator.ts     ← Dedup, write to raw/, manage sync-state
     ├── markpush.ts         ← MarkPush MCP source (DI for push_history)
     ├── github.ts           ← GitHub source (gh CLI, event parsing, star threshold)
-    ├── gmail.ts            ← Gmail MCP source (DI for search/read, turndown)
+    ├── gmail.ts            ← Gmail source (DI + direct googleapis API, turndown)
+    ├── gmail-auth.ts       ← OAuth2 client factory (credentials + refresh token)
     ├── git-commits.ts      ← Git commit history source (per-repo polling, backfill)
     ├── calendar.ts         ← Stub — deferred to Phase 3b
     └── cli.ts              ← /brain-sync entry point + report formatting
@@ -232,6 +234,7 @@ pnpm logs:err          # Tail stderr log
 pnpm seed              # Full seed from career-datacenter + GitHub + embed
 pnpm seed --force      # Re-compile all unstructured docs
 pnpm seed --only tracking  # Refresh tracking articles from live CSVs
+pnpm gmail:auth        # One-time OAuth consent flow for Gmail API
 ```
 
 ### launchd management
