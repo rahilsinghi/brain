@@ -19,7 +19,8 @@ export type SourceType =
   | "seed_yaml"
   | "seed_csv"
   | "api"
-  | "git-commits";
+  | "git-commits"
+  | "graphify";
 
 export type Author = "ai" | "human";
 
@@ -80,6 +81,14 @@ export interface ApiConfig {
   default_top_k: number;
 }
 
+export interface GraphifyConfig {
+  repos: string[];
+  semantic: boolean;
+  cron_schedule: string;
+  max_nodes_per_repo: number;
+  output_dir: string;
+}
+
 export interface TelegramConfig {
   bot_token: string | null;
   allowed_user_ids: number[];
@@ -137,6 +146,7 @@ export interface BrainConfig {
       username: string;
     };
   };
+  graphify?: GraphifyConfig;
 }
 
 export interface WikiChunk {
