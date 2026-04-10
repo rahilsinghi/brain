@@ -164,12 +164,12 @@ export function getProvider(preference?: ProviderPreference): LLMProvider {
     return p;
   }
 
-  // "auto" — prefer anthropic, fall back to gemini
-  const anthropic = getAnthropicProvider();
-  if (anthropic) return anthropic;
-
+  // "auto" — prefer gemini (Vertex AI, $1000 credits), fall back to anthropic
   const gemini = getGeminiProvider();
   if (gemini) return gemini;
+
+  const anthropic = getAnthropicProvider();
+  if (anthropic) return anthropic;
 
   throw new Error("No LLM provider configured (set ANTHROPIC_API_KEY or GEMINI_API_KEY_1)");
 }
@@ -203,7 +203,7 @@ export async function generate(
       primary.name === "anthropic" ? getGeminiProvider() : getAnthropicProvider();
     if (!fallback) throw err;
 
-    console.warn(`[llm] ${primary.name} failed (${msg.slice(0, 80)}), falling back to ${fallback.name}`);
+    console.warn(`[llm] ${primary.name} failed (${msg.slice(0, 80)}), trying ${fallback.name}`);
     return await fallback.generate(request);
   }
 }

@@ -61,10 +61,10 @@ describe("LLM Provider", () => {
     expect(provider.name).toBe("gemini");
   });
 
-  it("auto mode prefers anthropic when available", () => {
+  it("auto mode prefers gemini (Vertex AI) when available", () => {
     process.env.ANTHROPIC_API_KEY = "test-key";
     const provider = getProvider("auto");
-    expect(provider.name).toBe("anthropic");
+    expect(provider.name).toBe("gemini");
   });
 
   it("auto mode falls back to gemini when no anthropic key", () => {
