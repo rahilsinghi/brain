@@ -1,4 +1,4 @@
-import Anthropic from "@anthropic-ai/sdk";
+import { generate } from "../llm/provider.js";
 import type { Cluster } from "../types.js";
 
 export interface PrefixResult {
@@ -33,15 +33,9 @@ export interface ClassifyResult {
 
 type ClaudeFn = (prompt: string, model: string) => Promise<string>;
 
-async function defaultCallClaude(prompt: string, model: string): Promise<string> {
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-  const response = await client.messages.create({
-    model,
-    max_tokens: 20,
-    messages: [{ role: "user", content: prompt }],
-  });
-  const block = response.content[0];
-  return block.type === "text" ? block.text.trim().toLowerCase() : "";
+async function defaultCallClaude(prompt: string, _model: string): Promise<string> {
+  const response = await generate({ prompt, maxTokens: 20 });
+  return response.text.trim().toLowerCase();
 }
 
 export interface ClassifyOptions {

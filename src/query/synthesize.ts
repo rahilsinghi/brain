@@ -1,4 +1,4 @@
-import Anthropic from "@anthropic-ai/sdk";
+import { generate } from "../llm/provider.js";
 import type { WikiChunk } from "../types.js";
 
 export function formatChunksForPrompt(chunks: WikiChunk[]): string {
@@ -49,14 +49,8 @@ export async function synthesize(
   const context = formatChunksForPrompt(chunks);
   const sourcePaths = [...new Set(chunks.map((c) => c.filePath))];
 
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-  const response = await client.messages.create({
-    model: "claude-sonnet-4-6",
-    max_tokens: 4096,
-    messages: [
-      {
-        role: "user",
-        content: `You are a knowledge assistant answering questions from a personal wiki.
+  const response = await generate({
+    prompt: `You are a knowledge assistant answering questions from a personal wiki.
 
 Use ONLY the following wiki excerpts to answer. If the excerpts don't contain enough information, say so.
 Include [[wiki links]] to source articles when referencing them.
@@ -67,12 +61,10 @@ ${context}
 Question: ${question}
 
 Answer concisely and accurately, citing sources with [[wiki links]].`,
-      },
-    ],
+    maxTokens: 4096,
   });
 
-  const answer =
-    response.content[0].type === "text" ? response.content[0].text : "";
+  const answer = response.text;
 
   return { answer, sourcePaths, chunks };
 }

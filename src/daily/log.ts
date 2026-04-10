@@ -135,19 +135,10 @@ export async function writeDailySummary(
 }
 
 async function defaultCallClaude(dailyContent: string): Promise<string> {
-  const { default: Anthropic } = await import("@anthropic-ai/sdk");
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-  const message = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 256,
-    messages: [
-      {
-        role: "user",
-        content: `Summarize this daily log in 2-3 sentences. Be concise and highlight key themes.\n\n${dailyContent}`,
-      },
-    ],
+  const { generate } = await import("../llm/provider.js");
+  const response = await generate({
+    prompt: `Summarize this daily log in 2-3 sentences. Be concise and highlight key themes.\n\n${dailyContent}`,
+    maxTokens: 256,
   });
-  const block = message.content[0];
-  if (block.type !== "text") return "";
-  return block.text.trim();
+  return response.text.trim();
 }

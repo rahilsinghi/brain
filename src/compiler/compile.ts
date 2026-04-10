@@ -1,4 +1,4 @@
-import Anthropic from "@anthropic-ai/sdk";
+import { generate } from "../llm/provider.js";
 import { readFrontmatter, writeFrontmatter, updateFrontmatter } from "../frontmatter.js";
 import { join } from "node:path";
 import { mkdirSync } from "node:fs";
@@ -35,14 +35,8 @@ export async function compileSinglePass(
   updateFrontmatter(rawFilePath, { status: "processing" });
 
   try {
-    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-    const response = await client.messages.create({
-      model: "claude-sonnet-4-6",
-      max_tokens: 8192,
-      messages: [
-        {
-          role: "user",
-          content: `You are a knowledge compiler. Given the following raw content, produce a structured wiki article.
+    const response = await generate({
+      prompt: `You are a knowledge compiler. Given the following raw content, produce a structured wiki article.
 
 Return a JSON object with these fields:
 - title: A clear, concise title for the wiki article
@@ -57,11 +51,13 @@ Raw content:
 ${content}
 
 Return ONLY valid JSON, no markdown code fences.`,
-        },
-      ],
+      maxTokens: 8192,
+      json: true,
     });
 
-    const text = response.content[0].type === "text" ? response.content[0].text : "";
+    let text = response.text;
+    // Strip markdown code fences if present (Gemini sometimes adds them)
+    text = text.replace(/^```json\s*\n?/, "").replace(/\n?```\s*$/, "");
     const parsed: LLMCompileOutput = JSON.parse(text);
 
     const slug = slugify(parsed.title);

@@ -6,30 +6,21 @@ import { join } from "node:path";
 const TEST_DIR = join(import.meta.dirname, "__fixtures__/compile-test");
 const WIKI_DIR = join(TEST_DIR, "wiki/concepts");
 
-vi.mock("@anthropic-ai/sdk", () => {
-  return {
-    default: class MockAnthropic {
-      messages = {
-        create: vi.fn().mockResolvedValue({
-          content: [
-            {
-              type: "text",
-              text: JSON.stringify({
-                title: "Test Concept",
-                summary: "A summary of the test concept.",
-                concepts: "- Concept A\n- Concept B",
-                details: "Detailed explanation here.",
-                backlinks: "- [[Related Topic]]",
-                tags: ["test", "concept"],
-                category: "concepts",
-              }),
-            },
-          ],
-        }),
-      };
-    },
-  };
-});
+vi.mock("../../src/llm/provider.js", () => ({
+  generate: vi.fn().mockResolvedValue({
+    text: JSON.stringify({
+      title: "Test Concept",
+      summary: "A summary of the test concept.",
+      concepts: "- Concept A\n- Concept B",
+      details: "Detailed explanation here.",
+      backlinks: "- [[Related Topic]]",
+      tags: ["test", "concept"],
+      category: "concepts",
+    }),
+    provider: "anthropic",
+    model: "claude-sonnet-4-6",
+  }),
+}));
 
 describe("compileSinglePass", () => {
   beforeEach(() => {
