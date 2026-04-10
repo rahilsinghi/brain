@@ -2,12 +2,12 @@
 status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/ouroboros:53dc0fb
-ingested_at: 2026-04-10T07:03:28.804Z
-parsed_at: 2026-04-10T07:03:28.804Z
+ingested_at: 2026-04-10T12:03:43.576Z
+parsed_at: 2026-04-10T12:03:43.576Z
 compiled_to: null
 processed_at: null
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZufScXJ7jkPN1WUWx1sY"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv4Lmdjnabj8jrg4ERaq"}
 compile_progress: null
 ---
 

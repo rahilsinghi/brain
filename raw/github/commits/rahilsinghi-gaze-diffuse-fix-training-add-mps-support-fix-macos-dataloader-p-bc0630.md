@@ -2,12 +2,12 @@
 status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:43d9fed
-ingested_at: 2026-04-10T07:03:28.773Z
-parsed_at: 2026-04-10T07:03:28.773Z
+ingested_at: 2026-04-10T12:03:43.547Z
+parsed_at: 2026-04-10T12:03:43.547Z
 compiled_to: null
 processed_at: null
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZufSUnDBdYA459yFVeK6"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv4LY98Sh6Ry21dLAjxB"}
 compile_progress: null
 ---
 
