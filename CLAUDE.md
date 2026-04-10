@@ -15,6 +15,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 4 (Voice & Polish):** Complete — voice transcription (whisper.cpp + OpenAI), cluster classification, daily logs, Marp slides, matplotlib plots
 **Auth Bug Fix (2026-04-09):** All 6 Anthropic SDK calls pass apiKey explicitly. loadEnv strips quotes. Root cause was empty .env value.
 **Gmail Direct API (2026-04-10):** Replaced MCP dependency with googleapis OAuth2. One-time `pnpm gmail:auth` consent flow. 41 emails ingested on first sync.
+**Gemini Provider (2026-04-10):** LLM abstraction with Anthropic + Gemini dual-key rotation. Auto-fallback on billing/quota errors. 10 repo profiles ingested.
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
@@ -36,10 +37,10 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (281 tests across 49 files, all passing)
+- Testing: Vitest (290 tests across 50 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
-- LLM: @anthropic-ai/sdk (Claude)
+- LLM: @anthropic-ai/sdk (Claude) + @google/generative-ai (Gemini, dual-key rotation)
 - File watching: chokidar
 - Scheduling: node-cron
 - Markdown AST: unified + remark-parse + remark-frontmatter + remark-stringify
@@ -59,7 +60,7 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (67)
+### Source Files (68)
 
 ```
 src/
@@ -70,6 +71,8 @@ src/
 ├── snapshot.ts             ← Pre-heal git snapshots
 ├── watcher.ts              ← chokidar watchers (raw/ + wiki/)
 ├── index.ts                ← Daemon entry point (API + watchers + cron)
+├── llm/
+│   └── provider.ts         ← LLM abstraction (Anthropic + Gemini, key rotation, auto-fallback)
 ├── telegram/
 │   ├── bot.ts              ← Telegram bot factory + message handlers
 │   └── truncate.ts         ← Sentence-boundary truncation for long replies
