@@ -102,9 +102,32 @@
 - **Telegram updates:** Voice messages, /slides, /plot commands. Two-message pattern for slow operations
 - **System activity logging:** Lint/heal and source sync results auto-append to daily log
 
+### Auth Bug Fix (2026-04-09)
+
+- **Root cause:** `ANTHROPIC_API_KEY=` in `.brain/.env` had empty value (wiped during duplicate cleanup)
+- **Fix:** Restored key value + all 6 `new Anthropic()` calls now pass `apiKey: process.env.ANTHROPIC_API_KEY` explicitly + `loadEnv` strips surrounding quotes
+- **Files changed:** `src/config.ts`, `src/query/synthesize.ts`, `src/voice/classify.ts`, `src/compiler/compile.ts`, `src/daily/log.ts`, `src/output/plots.ts`, `src/output/slides.ts`, `src/telegram/bot.ts`, `tests/telegram/bot.test.ts`
+- **Status:** All features working — synthesis, compile, classify, voice pipeline confirmed end-to-end
+
 ### Still deferred to future phases
 - **PDF parsing:** pdf2md or similar → replace placeholder-parser for .pdf
 - **Image parsing:** Claude Vision API → description .md, image as attachment
+
+---
+
+## Gmail Backfill & Sync — Next Up
+
+- **Source exists:** `src/sources/gmail.ts` — implemented with MCP DI (`searchMessages`, `readMessage`), signature stripping, HTML→markdown conversion, processed_ids dedup
+- **Current state:** 0 emails synced. Gmail not in sync-state.json. `raw/gmail/emails/` is empty.
+- **MCP dependency:** Requires Gmail MCP auth (available in Claude Code). Need `mcp__gmail__search_messages` + `mcp__gmail__read_message` wired as DI deps.
+- **Backfill needed:** Historical emails (label:Brain, is:starred, important threads) — decide filtering criteria, time range, volume
+- **Cron:** Add gmail to hourly or daily orchestrator cron alongside github/git-commits
+- **Filtering design:** Need to decide what to keep vs reject — newsletters, receipts, notifications vs real correspondence
+
+### Career-Datacenter Seed Status
+- **Loaded via `pnpm seed`:** profile, experience, projects, skills, companies, positioning, stories, answers, tracking transforms
+- **Wiki counts:** 63 companies, 34 projects, 5 people, 5 concepts, 4 experience, 4 decisions, 2 tracking
+- **Local data:** Some career-datacenter files may have been updated locally since last seed run — worth re-checking
 
 ---
 
@@ -135,7 +158,7 @@ cat CLAUDE.md                # Project context for Claude Code
 
 **Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
 
-**Next up:** Phase 5 (Knowledge Compounding) — novelty scoring, /save command.
+**Next up:** Gmail backfill & daily sync, verify career-datacenter completeness, then Phase 5.
 
 **To test live sources:**
 1. Telegram: `@rahil_brain_bot` — always on via launchd

@@ -13,6 +13,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Git Commits Source:** Complete — polls commits across all repos, 60-day backfill (601 commits), hourly cron
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Complete — voice transcription (whisper.cpp + OpenAI), cluster classification, daily logs, Marp slides, matplotlib plots
+**Auth Bug Fix (2026-04-09):** All 6 Anthropic SDK calls pass apiKey explicitly. loadEnv strips quotes. Root cause was empty .env value.
 **Phase 5 (Knowledge Compounding):** Not started — novelty scoring, /save command
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
@@ -34,7 +35,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (271 tests across 47 files)
+- Testing: Vitest (271 tests across 47 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude)
