@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T12:53:51.220Z
 last_ai_edit: 2026-04-10T12:53:51.220Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ad19f09af8718a44
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/karen-project-profile.md]]"
 tags:
@@ -29,6 +29,7 @@ tags:
   - api-integration
   - mischiefclaw
 ---
+
 
 # KAREN Project: Multi-Channel Escalation Engine
 

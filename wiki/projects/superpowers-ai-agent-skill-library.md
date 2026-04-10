@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T12:51:49.230Z
 last_ai_edit: 2026-04-10T12:51:49.230Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a3db5551b572dfdc
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/superpowers-project-profile.md]]"
 tags:
@@ -30,6 +30,7 @@ tags:
   - best practices
   - anti-patterns
 ---
+
 
 # Superpowers: AI Agent Skill Library
 

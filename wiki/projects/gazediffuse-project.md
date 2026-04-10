@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T12:50:56.399Z
 last_ai_edit: 2026-04-10T12:50:56.399Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: fa66be0b8902cc9f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/gaze-diffuse-project-profile.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - project profile
   - computational psycholinguistics
 ---
+
 
 # GazeDiffuse Project
 

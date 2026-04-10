@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T12:48:14.852Z
 last_ai_edit: 2026-04-10T12:48:14.852Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f9fc6040bf0114e2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/asknyc-project-profile.md]]"
 tags:
@@ -28,6 +28,7 @@ tags:
   - google-cloud
   - react
 ---
+
 
 # Ask NYC: Multimodal Urban Intelligence Platform
 

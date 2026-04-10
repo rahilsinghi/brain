@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T12:49:04.574Z
 last_ai_edit: 2026-04-10T12:49:04.574Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1f77052e6e674560
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/career-datacenter-project-profile.md]]"
 tags:
@@ -29,6 +29,7 @@ tags:
   - rahil singhi
   - full-stack
 ---
+
 
 # Career Datacenter: Job Search Automation Platform
 

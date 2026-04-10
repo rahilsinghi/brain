@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T12:52:12.132Z
 last_ai_edit: 2026-04-10T12:52:12.132Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e0d09c930557b3c8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/portfolio-project-profile.md]]"
 tags:
@@ -34,6 +34,7 @@ tags:
   - hackathons
   - resume
 ---
+
 
 # Rahil Singhi Portfolio Website
 

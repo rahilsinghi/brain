@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T12:51:13.598Z
 last_ai_edit: 2026-04-10T12:51:13.598Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e13e9a973a1f3d4e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/claude-howto-project-profile.md]]"
 tags:
@@ -27,6 +27,7 @@ tags:
   - reference
   - open-source
 ---
+
 
 # Claude How To
 
