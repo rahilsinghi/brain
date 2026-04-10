@@ -1,15 +1,23 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:9a0d81a
-ingested_at: 2026-04-09T03:18:47.674Z
-parsed_at: 2026-04-09T03:18:47.674Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-10T01:03:40.348Z
+parsed_at: 2026-04-10T01:03:40.348Z
+compiled_to: "[[Fix: Correct GECO Data Parser for Real Corpus Format]]"
+processed_at: 2026-04-10T02:09:19.443Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
 
 # fix: correct GECO data parser for real corpus format
 

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/portfolio:10fc431
-ingested_at: 2026-04-09T06:03:35.965Z
-parsed_at: 2026-04-09T06:03:35.965Z
+ingested_at: 2026-04-10T04:04:34.773Z
+parsed_at: 2026-04-10T04:04:34.773Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuRoKqtxBgCKj6WFwwz4"}
 compile_progress: null
 ---
+
+
 
 # refactor(components): convert all inline colors to theme-aware tokens
 

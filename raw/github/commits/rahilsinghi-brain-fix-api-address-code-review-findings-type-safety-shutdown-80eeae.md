@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:8be18ba
-ingested_at: 2026-04-09T06:03:35.983Z
-parsed_at: 2026-04-09T06:03:35.983Z
+ingested_at: 2026-04-10T06:04:07.617Z
+parsed_at: 2026-04-10T06:04:07.617Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuavWhW8VWMNYRsZn7ag"}
 compile_progress: null
 ---
+
+
 
 # fix(api): address code review findings — type safety, shutdown, response shape
 

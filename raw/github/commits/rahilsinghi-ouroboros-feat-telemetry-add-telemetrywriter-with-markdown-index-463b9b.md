@@ -1,15 +1,25 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/ouroboros:c67352e
-ingested_at: 2026-04-09T00:04:28.494Z
-parsed_at: 2026-04-09T00:04:28.494Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+ingested_at: 2026-04-10T01:03:40.355Z
+parsed_at: 2026-04-10T01:03:40.355Z
+compiled_to: "[[feat(telemetry): Add TelemetryWriter with Markdown + index.jsonl Output]]"
+processed_at: 2026-04-10T02:28:36.175Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 

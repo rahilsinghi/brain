@@ -1,15 +1,25 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:310abac
-ingested_at: 2026-04-09T01:03:46.895Z
-parsed_at: 2026-04-09T01:03:46.895Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+ingested_at: 2026-04-10T01:03:40.366Z
+parsed_at: 2026-04-10T01:03:40.366Z
+compiled_to: "[[Fix: Derive Current Level from SSE Events in Frontend (karen)]]"
+processed_at: 2026-04-10T02:42:15.047Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,201 +1,237 @@
 ---
 title: Stardrift (YC S24) — Founding Software Engineer Interview Prep
 author: ai
-created_at: 2026-04-08T15:38:39.995Z
-last_ai_edit: 2026-04-08T15:38:39.995Z
+created_at: 2026-04-10T01:54:47.055Z
+last_ai_edit: 2026-04-10T01:54:47.055Z
 last_human_edit: null
-last_embedded_hash: b008ef07ba616456
+last_embedded_hash: 912e662d8527265f
 sources:
-  - "[[/Users/rahilsinghi/Desktop/brain/raw/articles/stardrift-leila-clark.md]]"
+  - "[[/Users/rahilsinghi/Desktop/brain/raw/career/prep/stardrift_leila_clark_prep.md]]"
 tags:
   - interview-prep
-  - stardrift
-  - yc-s24
-  - founding-engineer
+  - job-search
   - ai-travel
+  - llm-agents
+  - yc-s24
+  - startup
+  - founding-engineer
   - amadeus
   - duffel
-  - llm-pipelines
   - fastapi
   - modal
   - redis
   - sse-streaming
-  - leila-clark
-  - job-search
   - travel-tech
-  - startups
+  - leila-clark
+  - stardrift
+  - kismet
+  - technical-screen
 ---
 
 
 # Stardrift (YC S24) — Founding Software Engineer Interview Prep
 
-Stardrift is a Y Combinator S24 AI travel agent startup founded by Leila Clark that replaces multi-tab flight and hotel search with a single conversational interface. The Founding Software Engineer role ($125K–$175K, 1–3% equity) is a 25-minute phone screen with Leila Clark on April 3, 2026, with the goal of advancing to a technical screen. Key candidate strengths include Amadeus GDS integration, LLM tool-calling pipelines, and async Python/Redis experience built at Kismet.
+Stardrift is a YC S24 AI travel agent startup founded by Leila Clark, offering a chat-based trip planner that integrates live flight, hotel, and train pricing with preference learning. The Founding Software Engineer role ($125K–$175K + 1–3% equity) involves building LLM agent pipelines, travel API integrations (Amadeus, Duffel), and real-time streaming infrastructure. This document covers company research, founder background, technical stack analysis, and a structured 25-minute conversation strategy for a phone screen on April 3, 2026.
 
 ## Key Concepts
 
-- **AI Travel Agent**: Chat-based trip planner fetching live flight, hotel, and train prices with calendar integration and preference learning
-- **Resumable LLM Streaming**: Architecture using Modal workers + Redis streams + SSE to relay long-running agent responses to the frontend without blocking the FastAPI server
-- **Booking Engine Fragmentation**: The challenge of normalizing heterogeneous data schemas across multiple travel APIs (Amadeus, Duffel, etc.)
-- **MCP Tool-Calling Pattern**: AI agent tools (searchHotels, getHotelRates, bookHotelOffer) called via JSON-RPC over SSE, mirroring Stardrift's multi-tool-call agent sessions
-- **Viral Acquisition Channel**: The Starlink Flight Checker tool targets frequent flyers who care about wifi quality — the exact Stardrift core user
-- **Founding Engineer Role**: Employee #4, true founding team position with direct collaboration with CEO, full-stack but backend-first scope
-- **Pivot History**: Originally Moonglow (serverless Jupyter notebooks, YC S24), pivoted to AI travel after batch; co-founder Trevor Chow departed post-pivot
+- **AI Travel Agent**: Conversational interface replacing multi-tab flight/hotel/train search with a unified, preference-aware planner
+- **Resumable LLM Streaming**: Architecture using Modal workers + Redis streams + SSE to support long-running, multi-tool-call agent tasks without blocking the FastAPI server
+- **Travel API Fragmentation**: Challenge of normalizing heterogeneous data from Amadeus, Duffel, and other booking engines into a consistent schema
+- **Viral Acquisition Tool**: Starlink Flight Checker (stardrift.ai/starlink) attracts frequent flyers — Stardrift's exact target demographic — via Hacker News and organic search
+- **Founding Engineer Role**: Employee #4 at a 3-person team; true co-founder-level ownership, in-person SF, 5 days/week
+- **Preference Learning**: Stardrift remembers airline preferences, seat preferences, travel times, and trusted hotel brands across sessions
+- **YC S24 Pivot**: Originally Moonglow (serverless Jupyter notebooks), pivoted to Stardrift after the batch; co-founder Trevor Chow departed during or after the pivot
 
 ## Details
 
 ## Company Overview
 
-Stardrift is an AI travel agent for frequent flyers, live at stardrift.ai. It replaces the multi-tab search workflow (Google Flights + hotel sites + rail) with a single conversational interface that builds complete itineraries: flights, hotels, activities, and ground transport. The product is free with no waitlist.
+Stardrift (stardrift.ai) is a free, live AI travel agent for frequent flyers. It replaces the multi-tab search workflow (Google Flights + hotel sites + rail booking) with a single conversational interface. Users describe where they want to go, and Stardrift builds a complete itinerary including flights, hotels, activities, and ground transport — learning preferences over time.
 
 ### Product Lines
-- **AI Travel Agent (Core)**: Chat interface with live price fetching, calendar integration, preference learning across airlines, seats, and hotel brands. Launched Product Hunt Dec 4, 2025 (#9 on launch day, 135 upvotes).
-- **Starlink Flight Checker**: Tool at stardrift.ai/starlink. Enter flight number + date, receive Starlink wifi likelihood based on aircraft type and tail number. Hit Hacker News front page. Covers United, Qatar Airways, Air France, Alaska, British Airways, and others.
-- **SEO / Blog Content**: Technical posts including "Is resumable LLM streaming hard?" and comparison content targeting AI travel planning keywords.
 
-### Competitive Positioning
-| Competitor | Stardrift's Edge |
-|---|---|
-| Google Flights | Plans the whole trip, not just one leg |
-| Hopper | Multi-modal (flights+hotels+trains), not just price timing |
-| KAYAK AI | Deeper preference learning over time |
-| Mindtrip | Live booking, not just itinerary inspiration |
+**1. AI Travel Agent (Core)**
+Chat interface with live price fetching, calendar integration, and multi-modal itinerary building (flights + hotels + trains + rideshare). Launched on Product Hunt December 4, 2025 (ranked #9, 135 upvotes).
+
+**2. Starlink Flight Checker**
+Tool at stardrift.ai/starlink answering "Will my flight have Starlink wifi?" Uses aircraft type and tail number data. Hit Hacker News front page. Strategic acquisition channel targeting frequent flyers who care about inflight connectivity.
+
+**3. Blog / SEO Content**
+Technical posts including "Is resumable LLM streaming hard?" (architecture deep dive) and comparison content like "Best AI Tools to Search Flights and Hotels Together."
 
 ---
 
-## Tech Stack
+## Technical Architecture
 
 | Layer | Technology |
 |---|---|
 | Frontend | Next.js, React (Vercel) |
 | Backend | Python, FastAPI (Modal) |
-| LLM Streaming | Vercel AI SDK, SSE |
-| Compute | Modal (serverless containers) |
+| LLM Streaming | Vercel AI SDK protocol, SSE |
+| Compute/Orchestration | Modal (serverless containers) |
 | Database | PostgreSQL |
-| Real-time Relay | Redis streams |
+| Real-time relay | Redis streams |
 | Travel APIs | Amadeus, Duffel |
 | Aspirational | Rust |
 
-### Architecture Flow
-1. Next.js frontend sends request to FastAPI backend
-2. Backend calls `modal.spawn` to launch a worker container
-3. Worker runs LLM agent with multiple tool calls and live API queries
-4. Worker writes response chunks to Redis streams in real time
-5. Backend subscribes to Redis stream and relays chunks via SSE
-6. Frontend renders incrementally using Vercel AI SDK protocol
+### Request Flow
+1. Next.js frontend on Vercel sends request
+2. FastAPI backend receives it
+3. `modal.spawn` kicks off a worker in its own container
+4. Worker runs LLM agent (multiple tool calls, live API queries)
+5. Worker dumps response chunks to Redis streams in real time
+6. Backend subscribes to Redis stream, relays chunks to frontend as SSE
+7. Frontend renders incrementally via Vercel AI SDK protocol
 
-This separation means long-running tasks do not block the API server, and streams are resumable because state lives in Redis, not in-memory.
+This design isolates long-running agent tasks from the FastAPI server and enables resumable streaming because state is persisted in Redis, not in-memory.
+
+---
+
+## Founder: Leila Clark
+
+- **Education:** Princeton BSE Computer Science, Class of 2018, highest honors (~top 5%)
+- **Jane Street (2018–2021):** Software Engineer in OCaml. Quantitative trading systems, market data infrastructure. Signals: correctness-oriented, type-driven thinking, clean abstractions.
+- **FTX (2021–2022):** Called developer Adam Yedidia to report that Alameda Research was using FTX customer deposits to repay Alameda loans. Yedidia quit and cooperated with prosecutors. Leila left FTX when things went wrong — demonstrates principled decision-making under pressure.
+- **YC S24:** Co-founded Moonglow (serverless Jupyter) with Trevor Chow; pivoted to Stardrift. Trevor Chow departed. Leila is now sole founder.
+- **What she values (from job post):** Scrappy, intense, low-ego, comfortable with weekly pivots, ships fast, iterates on customer feedback. 300+ flight hours; she is the target user.
 
 ---
 
 ## Team
 
-### Leila Clark (Founder/CEO)
-- **Education**: Princeton BSE Computer Science, Class of 2018, highest honors (top ~5% of class)
-- **Jane Street (~2018–2021)**: Software Engineer. Primary language OCaml. Work on trading systems, market data infrastructure, risk models. Signals correctness-oriented, type-safe engineering thinking.
-- **FTX (~2021–2022)**: Software Developer. Played a pivotal role in the FTX collapse narrative — called fellow developer Adam Yedidia to flag that Alameda Research was using FTX customer deposits to pay loans. Yedidia subsequently quit and cooperated with prosecutors at the SBF trial. Signals moral clarity and principled action under pressure.
-- **YC S24**: Co-founded Moonglow (serverless Jupyter notebooks) with Trevor Chow. Pivoted to Stardrift. Trevor Chow departed post-pivot.
-- **Values (from job post)**: Scrappy, low-ego, fast execution, comfort with weekly pivots, customer-facing iteration.
-- **Bonus signals**: 300+ flight hours; literary interests (NK Jemisin, Miyazaki); active on Twitter/X at @leilavclark.
+| Person | Role | Background |
+|---|---|---|
+| Leila Clark | Founder/CEO | Princeton CS, Jane Street, FTX |
+| Felipe Mautner | Founding Engineer | CMU CS+ML, ex-Cognita (radiology foundation models, acquired for $80M) |
+| Claire Guo | Design Engineer | Likely owns Next.js frontend; codes and designs |
 
-### Felipe Mautner (Founding Engineer)
-- CMU BS Computer Science (ML concentration) + Mathematics minor
-- Previously helped Cognita Imaging create a Radiology Foundation Model; Cognita acquired by Radiology Partners/Mosaic for ~$80M in Nov 2025
-- Likely owns backend/ML: LLM agent architecture, tool-calling pipeline, Amadeus/Duffel integrations, Modal worker infrastructure
-
-### Claire Guo (Design Engineer)
-- Limited confirmed public information
-- Title suggests she codes (not just designs); likely owns Next.js frontend and chat UI
+The candidate would be employee #4.
 
 ---
 
-## The Role
+## Role Details
 
-| Detail | Value |
-|---|---|
-| Title | Founding Software Engineer |
-| Salary | $125,000–$175,000 |
-| Equity | 1.00%–3.00% |
-| Location | SF, Mission office, 5 days/week in-person |
-| Visa Sponsorship | Yes |
+- **Salary:** $125,000 – $175,000
+- **Equity:** 1.00% – 3.00%
+- **Location:** San Francisco, Mission office, in-person 5 days/week
+- **Visa sponsorship:** Yes
+
+### Core Responsibilities
+- Optimizing LLM performance and building evals
+- Integrating Amadeus and Duffel APIs
+- Building and maintaining the agent tool-calling pipeline
+- Taking customer feedback and shipping fixes/features directly with the founder
 
 ### Interview Process
-1. **Phone Screen (20 min)** — Founder conversation (THIS CALL)
-2. **Technical Screen (30–60 min)** — Problem-solving assessment
-3. **In-person Work Trial (1–3 days)** — Paid; travel covered
+1. Phone screen (20 min) — founder conversation
+2. Technical screen (30–60 min) — problem-solving assessment
+3. In-person work trial (1–3 days, paid, travel covered)
 
 ---
 
-## Candidate Fit Map
+## Candidate Fit Analysis
 
 | Requirement | Signal | Strength |
 |---|---|---|
-| Backend engineering | Python, asyncio, FastAPI-adjacent, NestJS | Strong |
+| Backend engineering | Python, asyncio, NestJS, FastAPI-adjacent | Strong |
 | Full-stack | Next.js, React, TypeScript | Strong |
-| LLM apps shipped | Playwright + GPT-4o/Gemini pipeline, MCP tools | Very Strong |
+| LLM apps shipped | GPT-4o/Gemini tool-calling pipeline, MCP tools | Very Strong |
 | Travel API integration | Amadeus GDS, 7–8 booking engines, OHIP | Very Strong |
 | AI/ML literacy | MS Computer Engineering, time-series ML | Moderate |
 | Fast execution | Startup internship velocity at Kismet | Strong |
-| Top school | NYU (not on their stated list) | Moderate |
-| Flight hours | Not established | Weak |
+| Top school pedigree | NYU (solid; not on their Berkeley/CMU/MIT/Waterloo list) | Moderate |
+| Flight hours | Not a strength | Weak |
+
+**Key differentiator:** Amadeus GDS integration with PMS-first/fallback logic and multi-booking-engine adapter experience is a direct and rare overlap with Stardrift's core infrastructure.
 
 ---
 
-## Call Strategy
+## Technical Talking Points (Kismet → Stardrift Mapping)
 
-### 90-Second Opening Pitch
-"I'm finishing my MS in Computer Engineering at NYU, graduating May 2026. Before that I spent two internships at Kismet, a hospitality tech startup. My core work was building the infrastructure that lets AI agents interact with hotel systems. Specifically: MCP tools for hotel search, rates, and booking using NestJS and JSON-RPC over SSE. A Playwright + LLM pipeline using GPT-4o and Gemini tool-calling for hotel data extraction, hitting >95% field coverage. And PMS adapters with asyncio parallelization, Redis caching, and Amadeus GDS integration with fallback logic. When I saw the Stardrift role, the Amadeus and Duffel API integration piece jumped out immediately."
+**Travel API Integration**
+Built Amadeus GDS rate integration with PMS-first/Amadeus-fallback logic. Normalized responses from 7–8 booking engines (iHotelier, SynXis, Allora, AZDS) into a unified schema using async adapters. Relevant because Stardrift faces the same heterogeneous data problem across Amadeus and Duffel.
 
-### Key Technical Talk Tracks
-- **Amadeus/Duffel**: "I built Amadeus GDS rate integration at Kismet with PMS-first/Amadeus-fallback logic. The hard part was deciding when to trust PMS data vs GDS data."
-- **LLM Tool-Calling**: "The MCP tools I built follow the same pattern: agent calls searchHotels, getHotelRates, bookHotelOffer. With GPT-4o we hit >95% field coverage but edge cases required careful validation layers."
-- **Streaming**: "I read your blog post on resumable streaming. The Modal + Redis stream pattern makes sense. At Kismet we used SSE for MCP responses — same reliability challenge when connections drop mid-stream."
-- **Async Python**: "I used asyncio to parallelize calls across 7–8 booking engines. You can't do it sequentially. Redis caching cut response times significantly."
+**LLM Agent Pipeline**
+Built MCP tools (searchHotels, getHotelRates, bookHotelOffer) called via JSON-RPC over SSE. Built Playwright + GPT-4o/Gemini tool-calling pipeline achieving >95% field coverage across hotel booking engine pages.
 
-### 25-Minute Time Map
-| Time | Activity |
-|---|---|
-| 0:00–1:00 | Pleasantries (brief) |
-| 1:00–3:00 | 90-second pitch, end with Amadeus/Duffel overlap |
-| 3:00–5:00 | Answer follow-ups on Kismet work |
-| 5:00–10:00 | Listen to Leila talk about Stardrift |
-| 10:00–15:00 | Technical discussion, reference blog post |
-| 15:00–20:00 | Ask 2–3 Tier 1 questions |
-| 20:00–24:00 | Organic back-and-forth |
-| 24:00–25:00 | Close: "I'd love to move forward. What does the next step look like?" |
+**Streaming Architecture**
+Built JSON-RPC over SSE for MCP tool responses. Used Redis caching in PMS adapter pipeline. Can speak to the resumable streaming blog post with genuine architectural familiarity.
+
+**Async Python**
+Used asyncio to parallelize PMS adapter calls across 7–8 booking engines per search. Redis caching reduced repeated API calls.
+
+---
+
+## Conversation Strategy (25 Minutes)
+
+| Time | Segment | Goal |
+|---|---|---|
+| 0:00–1:00 | Pleasantries | Short. She's busy. |
+| 1:00–3:00 | Your intro | 90-second pitch ending with "Amadeus/Duffel piece jumped out" |
+| 3:00–5:00 | Follow-up on experience | Depth on Kismet. Use specific numbers. |
+| 5:00–10:00 | She talks about Stardrift | Active listening. Ask clarifying questions. |
+| 10:00–15:00 | Technical discussion | Reference the resumable streaming blog post. Show homework. |
+| 15:00–20:00 | Your questions | Ask 2–3 Tier 1 questions (see below) |
+| 20:00–24:00 | Back and forth | Let conversation flow naturally |
+| 24:00–25:00 | Close | "I'd love to move forward. What does the next step look like?" |
 
 ### Tier 1 Questions to Ask
-1. "What does the product look like in 6 months — deeper on corporate travel or expanding to leisure?"
+1. "What does the product look like in 6 months — going deeper on corporate travel or expanding to leisure?"
 2. "How do you think about LLM cost structure when a single trip plan requires dozens of tool calls?"
 3. "What's been the hardest technical problem you've had to solve so far?"
 
-### What NOT to Do
-- Do not bring up the Moonglow pivot or FTX unless Leila raises them
-- Do not claim familiarity with Duffel specifically — say "I haven't used Duffel but the abstraction patterns are familiar from 7–8 booking engines"
-- Do not lead with NYU — lead with what you built
-- Do not ask about funding, runway, or salary/equity on this call
-- Do not ask about the tech stack — demonstrate you already know it
+### Do Not Ask
+- About the Moonglow pivot (unless she raises it)
+- About FTX
+- About funding or runway
+- About the tech stack (you already know it — demonstrate that)
 
 ---
 
-## Ideas to Pitch if Asked "What Would You Build?"
-1. **Loyalty Program Integration**: Pull in MileagePlus, Bonvoy etc. and factor points/status into recommendations. Most frequent flyers optimize around this.
-2. **Multi-City / Complex Itinerary Optimizer**: Optimize across legs for hub lounge access or desirable layover cities — differentiator vs Google Flights.
-3. **Trip Cost Attribution for Corporate**: Expense categorization and auto-generated expense reports per trip, leveraging the itinerary the agent already knows. Also a monetization angle.
+## Ideas to Propose if Asked "What Would You Build?"
+
+1. **Loyalty Program Integration** — Pull in MileagePlus, Bonvoy, etc. to factor points/status into recommendations. Technical challenge: proprietary loyalty APIs may require screen scraping or partner agreements.
+2. **Multi-City Itinerary Optimizer** — Optimize across legs for lounge access, hub connections, or desired layover cities. Differentiates from Google Flights on complex routing.
+3. **Corporate Trip Cost Attribution** — Auto-generate expense reports from the itinerary. Monetization angle for the corporate travel segment.
+
+---
+
+## Competitor Landscape
+
+| Competitor | Positioning | Stardrift's Edge |
+|---|---|---|
+| Google Flights | Cheapest fare, known dates | Stardrift plans whole trip, not one leg |
+| Hopper | Price prediction, deal alerts | Multi-modal (flights+hotels+trains), not just price timing |
+| KAYAK AI | Meta-search with chat layer | Preference learning, deeper personalization |
+| Kiwi.com | Budget multi-city, self-transfer | Quality/preference focus, not cheapest |
+| Mindtrip | AI itinerary inspiration | Live booking, not just inspiration |
+
+---
+
+## Funding and Business Context
+
+- **YC S24** standard deal (~$500K for 7%)
+- YC partner: Gustaf Alstromer (ex-Airbnb, started their growth team in 2012)
+- No publicly disclosed additional funding
+- Product is currently free; pre-revenue
+- Pivot from Moonglow (serverless Jupyter) signals Leila's willingness to make hard calls based on market signal
 
 ## Related
 
 - [[Y Combinator S24]]
-- [[Amadeus GDS Integration]]
+- [[Amadeus GDS API]]
 - [[Duffel API]]
-- [[LLM Tool-Calling Pipelines]]
-- [[Server-Sent Events (SSE)]]
 - [[Modal (Serverless Compute)]]
+- [[Vercel AI SDK]]
+- [[Server-Sent Events (SSE)]]
 - [[Redis Streams]]
 - [[FastAPI]]
-- [[Vercel AI SDK]]
-- [[Kismet (Hospitality Tech)]]
+- [[LLM Tool-Calling Pipelines]]
 - [[Model Context Protocol (MCP)]]
+- [[Kismet (Hospitality Tech)]]
 - [[Jane Street]]
 - [[FTX Collapse]]
 - [[Founding Engineer Roles]]
 - [[AI Travel Agents]]
+- [[Starlink Inflight Wifi]]

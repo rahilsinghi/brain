@@ -1,0 +1,39 @@
+---
+status: quarantined
+source_type: git-commits
+source_id: git-commit:rahilsinghi/Career-Datacenter:1486639
+ingested_at: 2026-04-09T21:03:21.207Z
+parsed_at: 2026-04-09T21:03:21.207Z
+compiled_to: null
+processed_at: null
+retry_count: 2
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuM4fkZPUz1Cpz353YhV"}
+compile_progress: null
+quarantined_at: 2026-04-10T03:02:39.468Z
+---
+
+
+
+
+
+
+# docs: add CLAUDE.md agent instructions and hospitality outreach playbook
+
+- **Repo:** rahilsinghi/Career-Datacenter
+- **SHA:** 1486639
+- **Date:** 2026-03-23T20:56:07Z
+- **Author:** Rahil Singhi
+- **Files changed:** 2
+- **Additions:** +646
+- **Deletions:** -0
+
+CLAUDE.md gives any agent full context to operate the outreach system:
+directory structure, Rahil's technical story, category positioning,
+writing style rules, email/LinkedIn templates, follow-up rules, meeting
+prep format, tracking conventions, and common task walkthroughs.
+
+HOSPITALITY_OUTREACH_PLAYBOOK.md is the complete methodology: company
+research process, contact identification, positioning strategy, email
+structure, LinkedIn messaging, follow-up workflow, and status tracking.
+
+Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Flock:b76e9c0
-ingested_at: 2026-04-09T04:03:38.417Z
-parsed_at: 2026-04-09T04:03:38.417Z
+ingested_at: 2026-04-10T03:04:49.732Z
+parsed_at: 2026-04-10T03:04:49.732Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuMFV4vJNtvuUcbePyPu"}
 compile_progress: null
 ---
+
+
 
 # fix: mediator passes exact userId strings to tools, not display names
 

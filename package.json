@@ -16,7 +16,8 @@
     "seed": "tsx src/seed/index.ts",
     "seed:tracking": "tsx src/seed/index.ts --only tracking",
     "seed:github": "tsx src/seed/index.ts --only github",
-    "seed:git-commits": "bun run src/seed/index.ts --only git-commits"
+    "seed:git-commits": "bun run src/seed/index.ts --only git-commits",
+    "gmail:auth": "tsx scripts/gmail-auth.ts"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "chokidar": "^5.0.0",
     "csv-parse": "^6.2.1",
     "fastify": "^5.8.4",
+    "googleapis": "^171.4.0",
     "grammy": "^1.42.0",
     "node-cron": "^4.2.1",
     "remark-frontmatter": "^5.0.0",

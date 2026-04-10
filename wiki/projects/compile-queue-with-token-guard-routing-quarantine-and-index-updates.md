@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-09T02:06:38.453Z
 last_ai_edit: 2026-04-09T02:06:38.453Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 41f38639cd0fb1bf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-compile-queue-with-token-guard-routing-quarantine-and-664a6a.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - ai-assisted
   - claude
 ---
+
 
 # Compile Queue with Token Guard Routing, Quarantine, and Index Updates
 

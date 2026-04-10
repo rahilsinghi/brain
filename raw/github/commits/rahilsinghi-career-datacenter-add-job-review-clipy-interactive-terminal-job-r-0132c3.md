@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Career-Datacenter:71bc9fc
-ingested_at: 2026-04-09T04:03:38.388Z
-parsed_at: 2026-04-09T04:03:38.388Z
+ingested_at: 2026-04-10T03:04:49.715Z
+parsed_at: 2026-04-10T03:04:49.715Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuMF7NhCixiA7pc6Rz4D"}
 compile_progress: null
 ---
+
+
 
 # Add job_review_cli.py - interactive terminal job review tool
 

@@ -2,14 +2,20 @@
 status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:eb38d51
-ingested_at: 2026-04-09T01:03:46.916Z
-parsed_at: 2026-04-09T01:03:46.916Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-10T02:04:52.501Z
+parsed_at: 2026-04-10T02:04:52.501Z
+compiled_to: "[[chore: update next-env.d.ts and tsconfig.json for Next.js 16]]"
+processed_at: 2026-04-10T02:16:47.478Z
 retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+last_error: "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 8,000 output tokens per minute (org: 9bdecd1f-f807-4ccd-b7ed-13c62f0e8eaf, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://claude.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CZuHaqeVSvbbqk6jrG7sr\"}"
 compile_progress: null
 ---
+
+
+
+
+
+
 
 
 

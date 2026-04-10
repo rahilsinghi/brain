@@ -1,15 +1,25 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:e55bf3f
-ingested_at: 2026-04-09T01:03:46.914Z
-parsed_at: 2026-04-09T01:03:46.914Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+ingested_at: 2026-04-10T02:04:52.499Z
+parsed_at: 2026-04-10T02:04:52.499Z
+compiled_to: "[[fix(backend): Reversed DOB Longitude Bounds + session_complete Payload (e55bf3f)]]"
+processed_at: 2026-04-10T02:55:15.378Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 

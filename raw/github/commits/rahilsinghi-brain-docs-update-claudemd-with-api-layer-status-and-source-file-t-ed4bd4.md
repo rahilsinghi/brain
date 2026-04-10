@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:c7e91ad
-ingested_at: 2026-04-09T06:03:35.982Z
-parsed_at: 2026-04-09T06:03:35.982Z
+ingested_at: 2026-04-10T06:04:07.616Z
+parsed_at: 2026-04-10T06:04:07.616Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuaud3iJ2Q8Q3zGVjgni"}
 compile_progress: null
 ---
+
+
 
 # docs: update CLAUDE.md with API layer status and source file tree
 

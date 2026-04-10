@@ -1,15 +1,25 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:bcf41ac
-ingested_at: 2026-04-09T01:03:46.910Z
-parsed_at: 2026-04-09T01:03:46.910Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+ingested_at: 2026-04-10T02:04:52.492Z
+parsed_at: 2026-04-10T02:04:52.492Z
+compiled_to: "[[Karen Project: Build Progress, Next Steps, and Design Specs]]"
+processed_at: 2026-04-10T02:36:20.857Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 

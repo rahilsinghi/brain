@@ -1,15 +1,25 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:044955f
-ingested_at: 2026-04-09T01:03:46.898Z
-parsed_at: 2026-04-09T01:03:46.898Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+ingested_at: 2026-04-10T01:03:40.367Z
+parsed_at: 2026-04-10T01:03:40.367Z
+compiled_to: "[[fix(frontend): Shared Audio Context, Contrast Fixes, Level Completion Animation]]"
+processed_at: 2026-04-10T02:43:40.218Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 

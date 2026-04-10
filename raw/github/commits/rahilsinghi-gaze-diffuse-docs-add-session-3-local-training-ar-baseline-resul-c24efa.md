@@ -1,15 +1,27 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:bb922df
-ingested_at: 2026-04-09T03:18:47.669Z
-parsed_at: 2026-04-09T03:18:47.669Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-10T01:03:40.342Z
+parsed_at: 2026-04-10T01:03:40.342Z
+compiled_to: "[[Gaze-Diffuse Session 3: Local Training and AR Baseline Results]]"
+processed_at: 2026-04-10T02:53:35.363Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 # docs: add Session 3 — local training, AR baseline results
 

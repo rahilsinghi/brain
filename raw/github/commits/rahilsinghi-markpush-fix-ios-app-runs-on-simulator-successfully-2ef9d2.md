@@ -1,15 +1,27 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:8859c0e
-ingested_at: 2026-04-09T03:18:47.772Z
-parsed_at: 2026-04-09T03:18:47.772Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-10T02:04:52.505Z
+parsed_at: 2026-04-10T02:04:52.505Z
+compiled_to: "[[Fix: iOS App Runs on Simulator Successfully (SHA 8859c0e)]]"
+processed_at: 2026-04-10T02:44:23.567Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 # fix: iOS app runs on simulator successfully
 

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Career-Datacenter:3d92d98
-ingested_at: 2026-04-09T03:18:47.778Z
-parsed_at: 2026-04-09T03:18:47.778Z
+ingested_at: 2026-04-10T03:04:49.547Z
+parsed_at: 2026-04-10T03:04:49.547Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuMEmz8goaZo9EAVbDFU"}
 compile_progress: null
 ---
+
+
 
 # Config: Add Apollo session storage and ignore Chrome user data
 

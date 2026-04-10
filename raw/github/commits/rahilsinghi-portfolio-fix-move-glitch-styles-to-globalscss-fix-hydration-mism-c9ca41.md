@@ -1,15 +1,29 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/portfolio:92ca7f6
-ingested_at: 2026-04-09T05:03:49.960Z
-parsed_at: 2026-04-09T05:03:49.960Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-10T01:03:40.351Z
+parsed_at: 2026-04-10T01:03:40.351Z
+compiled_to: "[[Fix: Move Glitch Styles to globals.css and Resolve Hydration Mismatches]]"
+processed_at: 2026-04-10T02:56:50.744Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # fix: move glitch styles to globals.css, fix hydration mismatches
 

@@ -1,15 +1,23 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/ouroboros:4e20edd
-ingested_at: 2026-04-09T00:04:28.493Z
-parsed_at: 2026-04-09T00:04:28.493Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+ingested_at: 2026-04-10T01:03:40.353Z
+parsed_at: 2026-04-10T01:03:40.353Z
+compiled_to: "[[MetaAgent State Machine with Bloat Gate and Failure Analysis]]"
+processed_at: 2026-04-10T02:21:30.359Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
 
 
 

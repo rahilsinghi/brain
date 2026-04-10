@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/portfolio:12207f1
-ingested_at: 2026-04-09T06:03:35.961Z
-parsed_at: 2026-04-09T06:03:35.961Z
+ingested_at: 2026-04-10T03:04:49.534Z
+parsed_at: 2026-04-10T03:04:49.534Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuMF9jL6myPy2hFsszwz"}
 compile_progress: null
 ---
+
+
 
 # feat(background): add pretext text background with CRT scan line sync
 

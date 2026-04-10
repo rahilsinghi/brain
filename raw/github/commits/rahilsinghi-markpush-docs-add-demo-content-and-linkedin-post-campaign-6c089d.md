@@ -1,15 +1,27 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:d1cc96c
-ingested_at: 2026-04-09T03:18:47.716Z
-parsed_at: 2026-04-09T03:18:47.716Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-10T02:04:52.503Z
+parsed_at: 2026-04-10T02:04:52.503Z
+compiled_to: "[[MarkPush Demo Content and LinkedIn Post Campaign]]"
+processed_at: 2026-04-10T02:29:12.250Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 # docs: add demo content and LinkedIn post campaign
 

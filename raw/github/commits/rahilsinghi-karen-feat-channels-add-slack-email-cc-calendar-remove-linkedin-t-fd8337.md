@@ -1,15 +1,23 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:2803118
-ingested_at: 2026-04-09T01:03:46.908Z
-parsed_at: 2026-04-09T01:03:46.908Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+ingested_at: 2026-04-10T01:03:40.370Z
+parsed_at: 2026-04-10T01:03:40.370Z
+compiled_to: "[[Karen: Channel Refactor – Slack/Email CC/Calendar Added, LinkedIn/Twitter Removed]]"
+processed_at: 2026-04-10T02:13:31.828Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
 
 
 

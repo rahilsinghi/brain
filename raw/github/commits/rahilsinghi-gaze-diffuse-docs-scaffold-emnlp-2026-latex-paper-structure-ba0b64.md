@@ -1,15 +1,27 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:6155603
-ingested_at: 2026-04-09T03:18:47.672Z
-parsed_at: 2026-04-09T03:18:47.672Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-10T01:03:40.346Z
+parsed_at: 2026-04-10T01:03:40.346Z
+compiled_to: "[[EMNLP 2026 LaTeX Paper Scaffold – gaze-diffuse]]"
+processed_at: 2026-04-10T02:46:08.929Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 # docs: scaffold EMNLP 2026 LaTeX paper structure
 
