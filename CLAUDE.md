@@ -64,6 +64,9 @@ nightly cron → git snapshot → lint scanner → healer → connector → dail
 
 **Brain Explorer Spec:** `docs/specs/2026-04-10-brain-explorer-design.md`
 **Brain Explorer Daemon Plan (complete):** `docs/plans/2026-04-10-brain-explorer-daemon.md`
+**Brain Explorer Frontend Plan (v1 complete):** `docs/plans/2026-04-10-brain-explorer-frontend.md`
+**Brain Explorer v1 deployed:** brain.rahilsinghi.com — visual revamp needed (v1.1)
+**Brain Explorer Repo:** `~/Desktop/brain-explorer` (github.com/rahilsinghi/brain-explorer)
 
 ### Source Files (79)
 
@@ -255,6 +258,8 @@ pnpm seed              # Full seed from career-datacenter + GitHub + embed
 pnpm seed --force      # Re-compile all unstructured docs
 pnpm seed --only tracking  # Refresh tracking articles from live CSVs
 pnpm gmail:auth        # One-time OAuth consent flow for Gmail API
+pnpm backfill-links     # One-time: rewrite broken [[Title]] wikilinks
+pnpm backfill-links:dry # Dry run: show what would change
 ```
 
 ### launchd management
