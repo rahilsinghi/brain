@@ -11,11 +11,13 @@ export function aggregateEmbeddings(
   for (const chunk of chunks) {
     if (!chunk.vector || chunk.vector.length === 0) continue;
 
-    const existing = groups.get(chunk.filePath);
+    // Normalize: strip wiki/ prefix so keys match scan-wiki node IDs
+    const key = chunk.filePath.replace(/^wiki\//, "");
+    const existing = groups.get(key);
     if (existing) {
       existing.push(chunk.vector);
     } else {
-      groups.set(chunk.filePath, [chunk.vector]);
+      groups.set(key, [chunk.vector]);
     }
   }
 
