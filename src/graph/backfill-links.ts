@@ -114,12 +114,11 @@ export function backfillLinks(vaultRoot: string, options: BackfillOptions): Back
       },
     );
 
-    if (fileChanged && !options.dryRun) {
-      writeFrontmatter(file, data as unknown as Record<string, unknown>, newContent);
+    if (fileChanged) {
       result.filesModified++;
-    } else if (fileChanged) {
-      // dry run: count as would-be modified (matches spec expectation)
-      // Note: dry run returns resolved count but filesModified stays 0
+      if (!options.dryRun) {
+        writeFrontmatter(file, data as unknown as Record<string, unknown>, newContent);
+      }
     }
   }
 

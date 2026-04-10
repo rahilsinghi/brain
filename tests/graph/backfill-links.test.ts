@@ -47,12 +47,21 @@ describe("backfillLinks", () => {
     expect(result.filesModified).toBe(1);
   });
 
-  it("leaves already-correct path-style links unchanged", () => {
+  it("leaves path-style links with pipe syntax unchanged", () => {
     writeArticle("skills", "typescript", "TypeScript", [], "# TypeScript");
     writeArticle("projects", "karen", "Karen", [], "# Karen\n\nUses [[skills/typescript.md|TypeScript]].");
     const result = backfillLinks(TEST_VAULT, { dryRun: false });
     const { content } = readFrontmatter(join(TEST_VAULT, "wiki/projects/karen.md"));
     expect(content).toContain("[[skills/typescript.md|TypeScript]]");
+    expect(result.filesModified).toBe(0);
+  });
+
+  it("leaves plain path-style links unchanged", () => {
+    writeArticle("skills", "typescript", "TypeScript", [], "# TypeScript");
+    writeArticle("projects", "karen", "Karen", [], "# Karen\n\nUses [[skills/typescript]].");
+    const result = backfillLinks(TEST_VAULT, { dryRun: false });
+    const { content } = readFrontmatter(join(TEST_VAULT, "wiki/projects/karen.md"));
+    expect(content).toContain("[[skills/typescript]]");
     expect(result.filesModified).toBe(0);
   });
 
@@ -65,11 +74,12 @@ describe("backfillLinks", () => {
     expect(result.filesModified).toBe(0);
   });
 
-  it("dry run does not modify files", () => {
+  it("dry run reports changes but does not modify files", () => {
     writeArticle("concepts", "zustand-store", "Zustand Store", [], "# Zustand\n\nA store.");
     writeArticle("projects", "explorer", "Explorer", [], "# Explorer\n\nUses [[zustand store]].");
     const result = backfillLinks(TEST_VAULT, { dryRun: true });
     expect(result.resolved).toBe(1);
+    expect(result.filesModified).toBe(1);
     const { content } = readFrontmatter(join(TEST_VAULT, "wiki/projects/explorer.md"));
     expect(content).toContain("[[zustand store]]");
   });
