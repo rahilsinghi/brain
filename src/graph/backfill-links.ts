@@ -1,6 +1,7 @@
 import { readdirSync, statSync } from "node:fs";
 import { join, relative, extname, basename } from "node:path";
 import { readFrontmatter, writeFrontmatter } from "../frontmatter.js";
+import { slugify } from "../sources/slug.js";
 import type { WikiFrontmatter } from "../types.js";
 
 export interface BackfillOptions {
@@ -16,13 +17,6 @@ export interface BackfillResult {
 
 const WIKILINK_RE = /\[\[([^\]|]+)(\|[^\]]+)?\]\]/g;
 const SKIP_DIRS = new Set(["code-architecture"]);
-
-function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
 
 function walkDir(dir: string): string[] {
   const results: string[] = [];
@@ -50,14 +44,14 @@ export function backfillLinks(vaultRoot: string, options: BackfillOptions): Back
   const wikiDir = join(vaultRoot, "wiki");
   const files = walkDir(wikiDir);
 
-  // Build title → canonical title map (case-insensitive)
-  const titleMap = new Map<string, string>();
-  const slugMap = new Map<string, string>();
-  const nodeIds = new Set<string>();
+  // Build lookup maps for resolution
+  const titleMap = new Map<string, string>(); // lowercase title → canonical title
+  const slugMap = new Map<string, string>();  // slug → canonical title
+  const filenameSet = new Set<string>();      // bare filenames (without .md)
 
   for (const file of files) {
     const id = relative(wikiDir, file);
-    nodeIds.add(id);
+    filenameSet.add(basename(file, ".md"));
     const { data } = readFrontmatter<WikiFrontmatter>(file);
     const title = data.title ?? basename(file, ".md");
     const titleKey = title.toLowerCase();
@@ -82,10 +76,8 @@ export function backfillLinks(vaultRoot: string, options: BackfillOptions): Back
         if (trimmed.startsWith("/")) return fullMatch;
 
         // Check if bare filename resolves to an existing node path
-        const withMd = trimmed.endsWith(".md") ? trimmed : trimmed + ".md";
-        for (const nodeId of nodeIds) {
-          if (nodeId.endsWith("/" + withMd)) return fullMatch;
-        }
+        const bareName = trimmed.endsWith(".md") ? trimmed.slice(0, -3) : trimmed;
+        if (filenameSet.has(bareName)) return fullMatch;
 
         // Title resolution (case-insensitive)
         const titleKey = trimmed.toLowerCase();
@@ -123,4 +115,22 @@ export function backfillLinks(vaultRoot: string, options: BackfillOptions): Back
   }
 
   return result;
+}
+
+// CLI entry point
+const isMain = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/.*\//, ""));
+if (isMain) {
+  const dryRun = process.argv.includes("--dry-run");
+  const vaultRoot = join(import.meta.dirname, "../..");
+
+  console.log(dryRun ? "=== DRY RUN ===" : "=== BACKFILL ===");
+  const result = backfillLinks(vaultRoot, { dryRun });
+
+  for (const change of result.changes) {
+    console.log(`  ${change.file}: [[${change.from}]] → [[${change.to}]]`);
+  }
+
+  console.log(`\nResolved: ${result.resolved}`);
+  console.log(`Dangling: ${result.dangling}`);
+  console.log(`Files modified: ${result.filesModified}`);
 }

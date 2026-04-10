@@ -1,6 +1,7 @@
 import { readdirSync, statSync } from "node:fs";
 import { join, relative, extname, basename } from "node:path";
 import { readFrontmatter } from "../frontmatter.js";
+import { slugify } from "../sources/slug.js";
 import type { WikiFrontmatter } from "../types.js";
 
 export interface ScanNode {
@@ -39,10 +40,6 @@ function walkDir(dir: string): string[] {
     }
   }
   return results;
-}
-
-function slugify(text: string): string {
-  return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
 function normalizeTarget(raw: string): string {
