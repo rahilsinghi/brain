@@ -86,11 +86,34 @@ export function scanWiki(vaultRoot: string): ScanResult {
     }
   }
 
+  // Build filename → full node ID map for bare-name link resolution
+  // e.g. "exp-kismet-tracking.md" → "experience/exp-kismet-tracking.md"
+  const filenameToId = new Map<string, string>();
+  for (const node of nodes) {
+    const filename = node.id.split("/").pop()!;
+    filenameToId.set(filename, node.id);
+  }
+
+  // Resolve rawLink targets: bare filename → full node ID, drop dangling/self links
+  const nodeIds = new Set(nodes.map((n) => n.id));
+  const resolvedLinks: { source: string; target: string }[] = [];
+  for (const link of rawLinks) {
+    let target = link.target;
+    if (!nodeIds.has(target)) {
+      // Try resolving by bare filename
+      const resolved = filenameToId.get(target);
+      if (!resolved) continue; // dangling link — drop
+      target = resolved;
+    }
+    if (target === link.source) continue; // self-link — drop
+    resolvedLinks.push({ source: link.source, target });
+  }
+
   // Deduplicate bidirectional edges: keep the first seen direction
   const seen = new Set<string>();
   const links: { source: string; target: string }[] = [];
 
-  for (const link of rawLinks) {
+  for (const link of resolvedLinks) {
     const key = [link.source, link.target].sort().join("|||");
     if (!seen.has(key)) {
       seen.add(key);

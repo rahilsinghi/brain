@@ -190,4 +190,40 @@ describe("scanWiki", () => {
       target: "skills/typescript.md",
     });
   });
+
+  it("resolves bare wikilink targets to full node IDs via filename lookup", () => {
+    writeArticle(
+      "projects",
+      "proj-karen",
+      "Project Karen",
+      [],
+      "# Project Karen\n\nSee [[exp-kismet-tracking]].",
+    );
+    writeArticle(
+      "experience",
+      "exp-kismet-tracking",
+      "Kismet Tracking",
+      [],
+      "# Kismet Tracking\n\nAn experience.",
+    );
+
+    const result = scanWiki(TEST_VAULT);
+    expect(result.links).toContainEqual({
+      source: "projects/proj-karen.md",
+      target: "experience/exp-kismet-tracking.md",
+    });
+  });
+
+  it("drops dangling links that match no known node", () => {
+    writeArticle(
+      "projects",
+      "proj-karen",
+      "Project Karen",
+      [],
+      "# Project Karen\n\nSee [[nonexistent-article]].",
+    );
+
+    const result = scanWiki(TEST_VAULT);
+    expect(result.links).toHaveLength(0);
+  });
 });
