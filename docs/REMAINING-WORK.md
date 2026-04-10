@@ -172,6 +172,28 @@
 - **Formatter:** `src/telegram/format.ts` — strips `[[wiki/path|display]]`, `[[path#anchor]]`, `[[path.md]]` links to bold text
 - **Wired into:** `src/telegram/bot.ts` — applied before truncation on synthesis replies
 
+## Brain Explorer — Daemon Pipeline Complete (2026-04-10)
+
+- **Graph scanner:** `src/graph/scan-wiki.ts` — walks wiki/, extracts frontmatter + `[[wiki links]]`
+- **Embedding aggregation:** `src/graph/embeddings.ts` — averages LanceDB chunk vectors per article (strips `wiki/` prefix)
+- **UMAP export:** `src/graph/export.ts` — 768→3 dim reduction with deterministic seed via `umap-js`
+- **Cache orchestrator:** `src/graph/cache.ts` — ties scan + embeddings + UMAP + file write
+- **Push:** `src/graph/push.ts` — writes `graph.json` to explorer repo, git commit+push
+- **API routes:** `GET /graph-export` (serves cache), `POST /graph-push` (rebuild + push)
+- **VectorStore.listAll()** — bulk embedding retrieval for graph pipeline
+- **Nightly cron** — rebuilds graph cache after lint/heal cycle
+- **Result:** 315 nodes with 3D UMAP positions at `wiki/.graph-cache.json`
+- **Tests:** 23 new tests (346 total across 61 files)
+
+### Brain Explorer Frontend — Not Started
+
+- **Spec:** `docs/specs/2026-04-10-brain-explorer-design.md`
+- **Daemon plan (complete):** `docs/plans/2026-04-10-brain-explorer-daemon.md`
+- **Frontend plan:** Not yet written
+- **Stack:** Next.js 15 + r3f + drei + postprocessing + d3-force-3d + cmdk
+- **Visual:** Nebula/deep space, instanced nodes, bloom, camera arc fly-in
+- **Deploy:** brain.rahilsinghi.com via Vercel (separate repo)
+
 ---
 
 ## Known Technical Debt
@@ -193,7 +215,7 @@
 
 ```
 cd ~/Desktop/brain
-pnpm test                    # Verify 289 tests pass
+pnpm test                    # Verify 346 tests pass
 pnpm status                  # Check daemon (launchd managed)
 cat docs/REMAINING-WORK.md   # This file — pick up where you left off
 cat CLAUDE.md                # Project context for Claude Code
@@ -202,10 +224,10 @@ cat CLAUDE.md                # Project context for Claude Code
 **Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
 
 **Next up:**
-1. Test Telegram bot synthesis formatting (send `?what is karen` to @rahil_brain_bot after daemon restart)
-2. Verify brain MCP server works in a new Claude Code session (brain_query + brain_ingest)
-3. Phase 3b: Calendar source (awaiting Google Calendar MCP auth)
-4. PDF/image parsers (placeholder stubs exist)
+1. **Brain Explorer frontend** — Write implementation plan, scaffold Next.js app, deploy to brain.rahilsinghi.com
+2. Test Telegram synthesis formatting (send `?what is maison` after prompt change)
+3. Verify brain MCP server in a new session (brain_query + brain_ingest)
+4. Phase 3b: Calendar source (awaiting Google Calendar MCP auth)
 
 **All sources live:**
 1. Telegram: `@rahil_brain_bot` — always on via launchd

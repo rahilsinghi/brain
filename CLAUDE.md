@@ -39,7 +39,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (314 tests across 54 files, all passing)
+- Testing: Vitest (346 tests across 61 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude) + @google-cloud/vertexai (Gemini via Vertex AI, $1000 GCP credits)
@@ -62,7 +62,10 @@ user query → embed question → vector search → context assembly → Claude 
 nightly cron → git snapshot → lint scanner → healer → connector → daily log
 ```
 
-### Source Files (73)
+**Brain Explorer Spec:** `docs/specs/2026-04-10-brain-explorer-design.md`
+**Brain Explorer Daemon Plan (complete):** `docs/plans/2026-04-10-brain-explorer-daemon.md`
+
+### Source Files (79)
 
 ```
 src/
@@ -89,7 +92,9 @@ src/
 │       ├── health.ts       ← GET /health — daemon status
 │       ├── ingest.ts       ← POST /ingest — write to raw/
 │       ├── synthesise.ts   ← POST /synthesise — query knowledge graph
-│       └── save.ts         ← POST /save — persist synthesis to wiki (novelty gated)
+│       ├── save.ts         ← POST /save — persist synthesis to wiki (novelty gated)
+│       ├── graph-export.ts ← GET /graph-export — serve cached graph JSON
+│       └── graph-push.ts   ← POST /graph-push — rebuild cache + push to explorer repo
 ├── compiler/
 │   ├── compile.ts          ← Claude API single-pass compiler
 │   ├── queue.ts            ← Compile queue (pending → processing → processed)
@@ -105,6 +110,12 @@ src/
 │   ├── embedder.ts         ← nomic-embed-text via transformers.js
 │   ├── vector-store.ts     ← LanceDB wrapper (upsert, delete, search)
 │   └── sync.ts             ← Hash-based embedding sync pipeline
+├── graph/
+│   ├── scan-wiki.ts        ← Walk wiki/, extract frontmatter + [[links]]
+│   ├── embeddings.ts       ← Average LanceDB chunk vectors per article
+│   ├── export.ts           ← UMAP 768→3 with deterministic seed
+│   ├── cache.ts            ← Orchestrator: scan → embed → UMAP → write cache
+│   └── push.ts             ← Write graph.json to explorer repo + git push
 ├── query/
 │   ├── synthesize.ts       ← Vector search → Claude synthesis + novelty scoring
 │   └── novelty.ts          ← Cosine similarity + novelty score computation
