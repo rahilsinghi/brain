@@ -1,15 +1,21 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: null
 ingested_at: 2026-04-10T12:30:00Z
 parsed_at: 2026-04-10T12:30:00Z
-compiled_to: null
-processed_at: null
-retry_count: 0
-last_error: null
+compiled_to: "[[KAREN Project: Multi-Channel Escalation Engine]]"
+processed_at: 2026-04-10T12:53:51.220Z
+retry_count: 2
+last_error: "JSON Parse error: Expected '}'"
 compile_progress: null
 ---
+
+
+
+
+
+
 
 # KAREN — Project Profile
 

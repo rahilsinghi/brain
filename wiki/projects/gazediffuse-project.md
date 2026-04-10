@@ -1,19 +1,37 @@
 ---
-status: processed
-source_type: file_drop
-source_id: null
-ingested_at: 2026-04-10T12:30:00Z
-parsed_at: 2026-04-10T12:30:00Z
-compiled_to: "[[GazeDiffuse Project]]"
-processed_at: 2026-04-10T12:50:56.399Z
-retry_count: 1
-last_error: "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-compile_progress: null
+title: GazeDiffuse Project
+author: ai
+created_at: 2026-04-10T12:50:56.399Z
+last_ai_edit: 2026-04-10T12:50:56.399Z
+last_human_edit: null
+last_embedded_hash: null
+sources:
+  - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/gaze-diffuse-project-profile.md]]"
+tags:
+  - gazediffuse
+  - nlp
+  - text generation
+  - masked diffusion language models
+  - mdlm
+  - eye-tracking
+  - gaze guidance
+  - readability control
+  - deep learning
+  - pytorch
+  - hpc
+  - project profile
+  - computational psycholinguistics
 ---
 
+# GazeDiffuse Project
 
+GazeDiffuse is a novel approach for controllable text generation in masked diffusion language models (MDLMs) using eye-tracking gaze signals. It leverages diffusion's parallel denoising capability to guide all token positions simultaneously, producing more globally coherent readability changes compared to sequential autoregressive methods. The project combines gaze psycholinguistics, MDLMs, and score-based guidance, targeting EMNLP and NeurIPS 2026 submissions.
 
+## Key Concepts
 
+Controllable Text Generation,Masked Diffusion Language Models (MDLM),Eye-tracking Gaze Signals,Gaze Psycholinguistics,Score-based Guidance,Parallel Denoising,Readability Control,Flesch-Kincaid Grade Level (FKGL),Automated Readability Index (ARI),Self-Perplexity,MAUVE (metric),BERT-base-uncased,GPT-2,GECO Corpus,PyTorch,PyTorch Lightning,HuggingFace Transformers (library),Hydra (config management),SLURM (workload manager),Weights & Biases (W&B),pytest (testing framework),Confidence-based Token Reveal (strategy)
+
+## Details
 
 # GazeDiffuse: Project Profile
 
@@ -31,8 +49,6 @@ compile_progress: null
 - **2/5 experiments completed**: Gaze predictor trained (r=0.24), AR baseline results show weak signal
 - **Critical blocker**: No HPC project account on Torch cluster — all GPU experiments (1, 4, 5) blocked
 - **Timeline**: Target EMNLP 2026 (ARR May/June) and NeurIPS 2026 (stretch, May 15)
-
----
 
 ## 2. Tech Stack
 
@@ -65,13 +81,11 @@ compile_progress: null
 - Pre-commit hooks (not configured)
 - Python 3.9+ requirement
 
----
-
 ## 3. Architecture
 
 ### Core Algorithm (GazeDiffuse)
 
-```
+```python
 Input: prompt_ids, generation_length, λ (guidance strength)
 
 Initialize: x = [prompt tokens] + [MASK] * gen_length
@@ -120,11 +134,11 @@ Output: Predicted mean fixation duration (ms, normalized)
 ### Data Flow
 
 ```
-Raw GECO (.xlsx) 
+Raw GECO (.xlsx)
   → Extract [5-token left | target | 5-token right] windows
   → 473K training examples
   → Subject-level 5-fold CV (leave-participant-out)
-  
+
 50 Shared Prompts (diverse, 10-20 tokens)
   → Tokenize, encode
   → Feed to MDLM/GPT-2/LLaDA
@@ -136,8 +150,6 @@ Generated Samples
   → Compute MAUVE (vs. unguided baseline)
   → Save to JSONL (prompt, generation, lam, steps)
 ```
-
----
 
 ## 4. Directory Structure
 
@@ -248,8 +260,6 @@ gaze-diffuse/
 └── .gitignore                        # Excludes checkpoints, .venv, .coverage
 ```
 
----
-
 ## 5. Key Components
 
 ### 1. **gaze_guidance.py** (Core Contribution)
@@ -281,7 +291,7 @@ gaze-diffuse/
 - **ARI**: Automated Readability Index (secondary confirmation)
 - **Self-PPL**: Perplexity under frozen base LM (fluency/coherence)
 - **FK Sentence Variance**: **KEY metric** — variance of FKGL across sentences (tests global coherence claim)
-- **MAUVE**: Distributional similarity to unguided baseline (fluency preservation)
+- **MAUVE**: Distributional divergence from baseline (fluency preservation)
 
 ### 5. **models/mdlm_wrapper.py** (Model abstraction)
 - **MDLMWrapper**: Loads MDLM from checkpoint, provides clean API:
@@ -295,8 +305,6 @@ gaze-diffuse/
 - **Key Extraction**: [5-token left | target | 5-token right] windows + fixation duration labels
 - **Subject-level CV**: 5-fold splits (leave-participant-out), prevents data leakage
 - **Normalization**: Log-transform & z-score fixation durations for training
-
----
 
 ## 6. Data & Models
 
@@ -336,8 +344,6 @@ gaze-diffuse/
 | 3. AR baseline (GPT-2) | **COMPLETE** | Weak predictor → **opposite-expected results** (lam=-1 makes text harder, not easier) |
 | 4. **GazeDiffuse on MDLM** | Not started (blocked) | **Main contribution** — test parallel guidance hypothesis |
 | 5. GazeDiffuse on LLaDA 8B | Not started (blocked) | Scalability demonstration |
-
----
 
 ## 7. Development Setup
 
@@ -399,8 +405,6 @@ pytest tests/ --cov=src          # Coverage report
 - **Integration** (may need GPU): end-to-end sampling pipelines
 - **Slow** (full model loading): actual MDLM/LLaDA inference tests
 
----
-
 ## 8. Current State (April 2026)
 
 ### What's Working
@@ -424,20 +428,20 @@ pytest tests/ --cov=src          # Coverage report
 
 ### Critical Issues
 
-1. **HPC Account Blocker** (CRITICAL):
-   - No project account on Torch cluster (`rs9174@login.torch.hpc.nyu.edu` exists but no compute access)
-   - Blocks all 3 GPU experiments (~22 hours total runtime needed)
-   - Prof. Zhang's group must submit account request to HPC team
+1.  **HPC Account Blocker** (CRITICAL):
+    -   No project account on Torch cluster (`rs9174@login.torch.hpc.nyu.edu` exists but no compute access)
+    -   Blocks all 3 GPU experiments (~22 hours total runtime needed)
+    -   Prof. Zhang's group must submit account request to HPC team
 
-2. **Gaze Predictor Signal Weak**:
-   - Spearman r=0.241 vs. Sauberli et al. r~0.3–0.4
-   - Causes AR baseline to produce opposite-expected results (actually useful negative result for paper)
-   - Hypothesis: Need different preprocessing, context window, or accept current performance
+2.  **Gaze Predictor Signal Weak**:
+    -   Spearman r=0.241 vs. Sauberli et al. r~0.3–0.4
+    -   Causes AR baseline to produce opposite-expected results (actually useful negative result for paper)
+    -   Hypothesis: Need different preprocessing, context window, or accept current performance
 
-3. **Extended Training Hang**:
-   - Second gaze predictor run (10 epochs) got stuck on MPS after 12+ hours
-   - PyTorch MPS memory leak — no `torch.mps.empty_cache()` between epochs
-   - Best checkpoint intact (v2), but validates r=0.241 is convergence point
+3.  **Extended Training Hang**:
+    -   Second gaze predictor run (10 epochs) got stuck on MPS after 12+ hours
+    -   PyTorch MPS memory leak — no `torch.mps.empty_cache()` between epochs
+    -   Best checkpoint intact (v2), but validates r=0.241 is convergence point
 
 ### Timeline & Milestones
 
@@ -448,8 +452,11 @@ pytest tests/ --cov=src          # Coverage report
 | May 2026 | Paper writing + ARR submission | Rahil | Awaiting results |
 | May 15 | NeurIPS stretch submission | Rahil | Depends on May timeline |
 
----
-
 ## Summary
 
 **GazeDiffuse** is a research-quality codebase implementing gaze-guided generation in masked diffusion models. All five experiments are fully architected; local work (Exp 2, 3) confirms the gaze signal is weak but reveals important insights about AR vs. parallel guidance. **The single blocker is HPC account access** — without it, the main contribution (Exp 4–5) cannot be validated. Once account is granted, ~22 GPU-hours will produce the full results table needed for EMNLP/NeurIPS submission by May.
+
+
+## Related
+
+[[MDLM (Sahoo et al.)]],[[LLaDA 8B (Nie et al.)]],[[Sauberli et al. (EACL 2026)]],[[PyTorch]],[[HuggingFace Transformers]],[[GECO corpus]],[[HPC]],[[EMNLP 2026]],[[NeurIPS 2026]]

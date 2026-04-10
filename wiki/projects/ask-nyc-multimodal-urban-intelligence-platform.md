@@ -1,25 +1,45 @@
 ---
-status: processed
-source_type: file_drop
-source_id: null
-ingested_at: 2026-04-10T12:30:00Z
-parsed_at: 2026-04-10T12:30:00Z
-compiled_to: "[[Ask NYC: Multimodal Urban Intelligence Platform]]"
-processed_at: 2026-04-10T12:48:14.852Z
-retry_count: 2
-last_error: "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-compile_progress: null
+title: "Ask NYC: Multimodal Urban Intelligence Platform"
+author: ai
+created_at: 2026-04-10T12:48:14.852Z
+last_ai_edit: 2026-04-10T12:48:14.852Z
+last_human_edit: null
+last_embedded_hash: null
+sources:
+  - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/asknyc-project-profile.md]]"
+tags:
+  - asknyc
+  - hackathon
+  - ai
+  - multimodal
+  - voice-first
+  - urban-intelligence
+  - nyc-open-data
+  - gemini
+  - fastapi
+  - nextjs
+  - python
+  - typescript
+  - cloud-run
+  - websocket
+  - sse
+  - mapbox
+  - ci-cd
+  - google-cloud
+  - react
 ---
 
+# Ask NYC: Multimodal Urban Intelligence Platform
 
+Ask NYC is a multimodal, voice-first platform developed for the NYC Build With AI Hackathon, converting NYC's public datasets into real-time, conversational answers. It offers a live voice and camera dashboard for instant location context and an AI-driven recommendation engine for complex queries about the city. The MVP is fully implemented with end-to-end architecture and deployed on Google Cloud Run.
 
+## Key Concepts
 
+Multimodal AI,Voice-first interfaces,Urban Intelligence,NYC Open Data (Socrata API),Generative AI (Gemini 2.5 Flash),Agent Development Kit (ADK),FastAPI,Next.js 15,WebSocket Communication,Server-Sent Events (SSE),Glass-morphism UI,CI/CD (Continuous Integration/Continuous Deployment),Google Cloud Run,Multi-agent orchestration,Geocoding,Mapbox GL JS,Real-time data processing
 
+## Details
 
-
-# Ask NYC — Comprehensive Project Profile
-
-## 1. Project Summary
+## Project Summary
 
 **Ask NYC** is a multimodal voice-first urban intelligence platform that transforms NYC's public datasets into real-time, conversational answers. Built for the NYC Build With AI Hackathon (March 27-28, 2026), it powers two distinct UX patterns: (1) a **live voice + camera dashboard** where users point their phone at any NYC location and receive instant context about what they're looking at, and (2) an **AI-driven recommendation engine** that synthesizes data from 7 civic sources to answer complex queries like "best pizza near Washington Square Park" or "safest neighborhood for renting in Brooklyn near transit."
 
@@ -27,9 +47,7 @@ compile_progress: null
 
 **Who It's For:** NYC residents, tourists, and urban planners seeking structured intelligence about specific neighborhoods, buildings, and locations — powered by authoritative government data rather than opinion or training knowledge.
 
----
-
-## 2. Tech Stack
+## Tech Stack
 
 | Layer | Technology | Version/Details |
 |-------|-----------|-----------------|
@@ -46,9 +64,7 @@ compile_progress: null
 | **Deployment** | Google Cloud Run + Cloud Build + Artifact Registry | Auto-deploy on push to `main`, containerized backend + frontend |
 | **Testing** | Playwright 1.58 | End-to-end testing (e2e suite not yet populated) |
 
----
-
-## 3. Architecture
+## Architecture
 
 ### System Overview
 
@@ -97,9 +113,7 @@ User types query on `/ask` → **SSE Stream POST /api/recommend** → Step 1: Ge
 - **Heartbeat:** 25-second pongs keep WebSocket alive through proxies; no-op on idle.
 - **Demo Fallback:** `/ask` page has hardcoded agent sequences + recommendation cards. If backend is unreachable, clicking a demo prompt plays full animation sequence client-side.
 
----
-
-## 4. Directory Structure
+## Directory Structure
 
 ```
 AskNYC/
@@ -193,37 +207,33 @@ AskNYC/
     └── [Team collaboration docs]
 ```
 
----
+## Key Components
 
-## 5. Key Components
+### GeminiService (`backend/services/gemini_service.py`)
+Orchestrates Gemini Live ADK sessions for voice mode. It acts as a root coordinator agent, delegates to specialist sub-agents, handles tool calls to Socrata, summarizes results, and streams audio output and data cards back to the dashboard. Implements a 20ms relay loop for low-latency audio streaming. Status: Code complete, untested with real API key.
 
-### 5.1 **GeminiService** (`backend/services/gemini_service.py`)
-Orchestrates Gemini Live ADK sessions for voice mode. Root coordinator agent listens to real-time audio/video from phone, identifies location from camera frame, selects appropriate topic (food_safety, housing, safety, construction, transit, general), and delegates to specialist sub-agents. Uses `LiveRequestQueue` to relay PCM 16kHz audio + JPEG frames to Gemini Live. Handles tool calls to Socrata queries, summarizes results (≤200 tokens), and streams audio output + data cards back to dashboard. Implements 20ms relay loop for low-latency audio streaming. **Status:** Code complete, untested with real API key.
+### RecommendService (`backend/services/recommend_service.py`)
+Multi-agent orchestration for the `/ask` page. Parses user queries, geocodes locations, then launches parallel Socrata agents based on intent. It streams results as SSE events and performs a final synthesis step to score and rank recommendation cards with reasoning. Status: Complete, tested locally with demo fallback.
 
-### 5.2 **RecommendService** (`backend/services/recommend_service.py`)
-Multi-agent orchestration for the `/ask` page. Parses user query with Gemini (location + intent extraction), geocodes location (Google Maps), then launches 5-7 parallel Socrata agents based on intent (food → Restaurant Inspections, 311, NYPD, Subway; housing → HPD Violations, Evictions, 311, NYPD, Subway, etc.). All results streamed as SSE events (agent status updates, plan details, recommendations). Final synthesis step scores each result by multiple criteria (hygiene, complaints, safety, transit) and returns ranked cards with reasoning bullets and data-backed badges. **Status:** Complete, tested locally with demo fallback.
+### SocrataService (`backend/services/socrata_service.py`)
+Wrapper around NYC Socrata API, providing 7 functions to query various datasets (Restaurant Inspections, 311 Service Requests, DOB Permit Issuance, HPD Violations, NYPD Complaint Data, Evictions, Subway Entrances). Queries are async, geofiltered, and return summarized data for LLM consumption. Status: All functions complete and tested.
 
-### 5.3 **SocrataService** (`backend/services/socrata_service.py`)
-Wrapper around NYC Socrata API (data.cityofnewyork.us). 7 functions: `query_restaurant_inspections` (grade, violations), `query_311_complaints` (noise, heat, water, rodent), `query_dob_permits` (active construction), `query_hpd_violations` (severity A/B/C), `query_nypd_incidents` (crimes by type), `query_evictions` (displacement), `query_subway_entrances` (transit access). All queries are async, geofiltered by lat/lng + radius (default 500m), return dict summarized for LLM consumption. No auth required for <1000 row queries. **Status:** All functions complete and tested.
+### Dashboard WebSocket Handler (`backend/routers/ws.py`)
+Manages WebSocket connections for both `/ws/dashboard` (main screen) and `/ws/remote` (phone). The dashboard initiates a session and provides a QR code for phone pairing. The remote sends video frames and audio, which the backend relays to Gemini Live. Socrata query results are pushed back as data cards and audio chunks. Includes heartbeat functionality. Status: Implemented, untested with Gemini Live API.
 
-### 5.4 **Dashboard WebSocket Handler** (`backend/routers/ws.py`)
-Two endpoints: `/ws/dashboard` (main screen) and `/ws/remote` (phone). Dashboard creates new GeminiSession, generates session_id (8 chars), and returns QR code URL for pairing. Remote connects with session_id, sends video frames (1fps JPEG 768x768) + audio (PCM 16kHz). Backend relays frames/audio to Gemini Live via LiveRequestQueue. On tool calls, Socrata queries run; results pushed back to dashboard as data_cards + audio chunks. Heartbeat (25s pongs) prevents proxy timeouts. **Status:** Implemented, untested with Gemini Live API.
+### Recommendation API (`backend/routers/recommend.py`)
+An SSE endpoint (`POST /api/recommend`) that launches `RecommendService.run_pipeline()` in the background and streams real-time progress events to the frontend. Status: Complete, tested.
 
-### 5.5 **Recommendation API** (`backend/routers/recommend.py`)
-SSE endpoint: POST /api/recommend with JSON body `{query: string}`. Launches `RecommendService.run_pipeline()` in background, yields SSE events from asyncio.Queue (plan, agent_update, agent_complete, recommendation, synthesis_complete). Frontend SSE client receives events and updates UI in real time. **Status:** Complete, tested.
+### Dashboard Component (`frontend/app/dashboard/page.tsx`)
+The primary user interface featuring a 3D Mapbox map, camera feed preview, an intelligence brief panel (transcript, data cards, tools), and a sidebar. It uses `useDashboardWs()` for real-time data and supports deep linking and demo fallbacks. Status: Complete, tested.
 
-### 5.6 **Dashboard Component** (`frontend/app/dashboard/page.tsx`)
-Hero page. Integrates MiniMap (Mapbox 3D, hero element, animated markers), CameraFeed (phone camera preview), IntelligenceBrief (right panel: transcript, data cards, tool badges), Sidebar (navigation). Uses `useDashboardWs()` hook to receive real-time data. Handles URL params (`?location=empire-state-building`, `?demo=restaurant`) for deep linking + demo scenarios. Demo fallback injects hardcoded cards + animations if backend unreachable. **Status:** Complete, tested.
+### Ask Page Component (`frontend/app/ask/page.tsx`)
+UI for the recommendation engine, including query input, a progress timeline, agent status grids, and ranked recommendation cards. It uses `useRecommend()` for SSE communication and features demo sequences for offline use. Status: Complete, tested.
 
-### 5.7 **Ask Page Component** (`frontend/app/ask/page.tsx`)
-Recommendation engine UI. QueryInput (text field + 4 demo buttons), ProgressTimeline (pipeline stages), AgentGrid (agent cards showing status), RecommendationCard (scored results with badges + reasoning). Uses `useRecommend()` hook (SSE client, demo fallback). On idle: shows hero heading "Ask NYC Anything" + feature pills (7 Datasets, Real-Time, <10s). On running: shows progress timeline + agent cards working in parallel. On complete: shows ranked recommendation cards. Demo sequences have hardcoded timing + animations for offline use. **Status:** Complete, tested.
+### useWebSocket Hook (`frontend/hooks/useWebSocket.ts`)
+Manages WebSocket connections, parses messages, maintains state, handles audio playback via Web Audio API, and provides auto-reconnect. A remote variant captures camera and microphone streams for the phone. Status: Complete, untested with real WebSocket stream.
 
-### 5.8 **useWebSocket Hook** (`frontend/hooks/useWebSocket.ts`)
-Manages WebSocket connection to `/ws/dashboard`, parses incoming WsMessages, maintains state (agentState, cards, pins, transcript, etc.). Handles audio playback via Web Audio API (sequential scheduling, 24kHz decoding). Implements auto-reconnect on disconnect. Includes `sendQuery(image, text)` to submit queries. Remote variant (`useRemoteWs`) handles camera + mic stream capture for phone. **Status:** Complete, untested with real WebSocket stream.
-
----
-
-## 6. APIs & Integrations
+## APIs & Integrations
 
 ### External Services
 
@@ -252,25 +262,23 @@ Standard query: `$where=within_circle(the_geom, lat, lng, radius_meters)` with `
 ### WebSocket Message Protocol
 
 **Dashboard → Backend:**
-- `{type: "dashboard_query", image: string, text: string}` — Submit image + text query
+- `{"type": "dashboard_query", "image": "string", "text": "string"}` — Submit image + text query
 
 **Remote → Backend:**
-- `{type: "video_frame", data: string}` — JPEG 768x768 base64
-- `{type: "audio_frame", data: string}` — PCM 16kHz mono base64
-- `{type: "user_start_speaking" / "user_stop_speaking"}` — Voice activity events
+- `{"type": "video_frame", "data": "string"}` — JPEG 768x768 base64
+- `{"type": "audio_frame", "data": "string"}` — PCM 16kHz mono base64
+- `{"type": "user_start_speaking" / "user_stop_speaking"}` — Voice activity events
 
 **Backend → Dashboard:**
-- `{type: "audio_chunk", data: string}` — PCM 24kHz base64
-- `{type: "data_card", card: DataCard}` — Structured insight (category, title, detail, source)
-- `{type: "map_event", event: "pin"|"zoom"|"circle", lat, lng, source}` — Map visualization
-- `{type: "transcript", text, speaker, partial}` — Live speech recognition
-- `{type: "tool_call", tool, status, result_count}` — Data query progress
-- `{type: "agent_state", state}` — Agent lifecycle (idle, listening, processing, speaking)
-- `{type: "session_complete", session: SessionSummary}` — Session archival
+- `{"type": "audio_chunk", "data": "string"}` — PCM 24kHz base64
+- `{"type": "data_card", "card": "DataCard"}` — Structured insight (category, title, detail, source)
+- `{"type": "map_event", "event": "pin"|"zoom"|"circle", "lat": "number", "lng": "number", "source": "string"}` — Map visualization
+- `{"type": "transcript", "text": "string", "speaker": "string", "partial": "boolean"}` — Live speech recognition
+- `{"type": "tool_call", "tool": "string", "status": "string", "result_count": "number"}` — Data query progress
+- `{"type": "agent_state", "state": "string"}` — Agent lifecycle (idle, listening, processing, speaking)
+- `{"type": "session_complete", "session": "SessionSummary"}` — Session archival
 
----
-
-## 7. Development Setup
+## Development Setup
 
 ### Prerequisites
 - Python 3.12+
@@ -332,9 +340,7 @@ Access: [localhost:3000](http://localhost:3000)
 ### Testing /ask Page Offline
 No backend required. Click any demo prompt; hardcoded SSE sequences animate client-side with timed agent progress + recommendation cards. Backend unreachable gracefully falls back to demo.
 
----
-
-## 8. Current State
+## Current State
 
 ### ✅ Complete & Working
 - **Architecture:** Full end-to-end pipeline (voice → Gemini Live → Socrata → Dashboard)
@@ -368,9 +374,7 @@ No backend required. Click any demo prompt; hardcoded SSE sequences animate clie
 - E2E tests: Framework configured (Playwright), test suite not written
 - Manual testing: Demo scenarios on splash page well-verified; live Gemini pipeline awaits API key
 
----
-
-## 9. Deployment & Monitoring
+## Deployment & Monitoring
 
 **Production Environment:** Google Cloud Run (us-central1), auto-scaling
 
@@ -390,9 +394,7 @@ No backend required. Click any demo prompt; hardcoded SSE sequences animate clie
 
 **Monitoring:** Health check via `/docs` endpoint; no custom metrics dashboard yet
 
----
-
-## 10. Design System
+## Design System
 
 **Theme:** Dark cinematic command-center aesthetic. All dark mode, no light mode.
 
@@ -413,9 +415,7 @@ No backend required. Click any demo prompt; hardcoded SSE sequences animate clie
 4. Animate with purpose: Entrance animations on data arrival, waveforms respond to agent state
 5. Monospace precision: DM Mono for technical aesthetic
 
----
-
-## 11. Quick References
+## Quick References
 
 **Environment Variables Checklist:**
 ```
@@ -455,6 +455,8 @@ git push origin main
 gcloud run logs read asknyc-backend --limit 100
 ```
 
----
-
 **Last Updated:** March 28, 2026 | **Built by:** Rahil Singhi, Bharath Gera, Chinmay Shringi, Sariya Rizwan
+
+## Related
+
+[[NYC Build With AI Hackathon]],[[Google Gemini]],[[FastAPI]],[[Next.js]],[[Google Cloud Run]],[[NYC Open Data]],[[WebSocket]],[[Server-Sent Events]],[[Google Maps Platform]],[[Mapbox]],[[Agent Development Kit]]

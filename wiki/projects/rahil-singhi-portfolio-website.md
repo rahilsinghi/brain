@@ -1,21 +1,51 @@
 ---
-status: processed
-source_type: file_drop
-source_id: null
-ingested_at: 2026-04-10T12:30:00Z
-parsed_at: 2026-04-10T12:30:00Z
-compiled_to: "[[Rahil Singhi Portfolio Website]]"
-processed_at: 2026-04-10T12:52:12.132Z
-retry_count: 1
-last_error: "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing."
-compile_progress: null
+title: Rahil Singhi Portfolio Website
+author: ai
+created_at: 2026-04-10T12:52:12.132Z
+last_ai_edit: 2026-04-10T12:52:12.132Z
+last_human_edit: null
+last_embedded_hash: null
+sources:
+  - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/portfolio-project-profile.md]]"
+tags:
+  - portfolio
+  - next.js
+  - typescript
+  - tailwindcss
+  - d3.js
+  - ai
+  - ml
+  - rag
+  - vercel
+  - full-stack
+  - frontend
+  - web development
+  - interactive
+  - animations
+  - personal project
+  - swe
+  - ml engineering
+  - knowledge graph
+  - github api
+  - pnpm
+  - server components
+  - client components
+  - production-ready
+  - hackathons
+  - resume
 ---
 
+# Rahil Singhi Portfolio Website
 
+Rahil Singhi's personal portfolio website, built with Next.js 15, TypeScript, and a robust tech stack, targets full-time SWE and ML engineering roles. It features an interactive knowledge graph visualization, an AI-powered RAG terminal chat, and various dynamic visual effects. Deployed on Vercel, the site showcases production-ready systems and ongoing content enrichment.
 
+## Key Concepts
 
+Next.js 15 (App Router),TypeScript,Tailwind CSS,Framer Motion,D3.js (Canvas-rendered force simulations),Gemini Embedding API,Retrieval-Augmented Generation (RAG),Server Components (Next.js),Client Components (Next.js),Vercel Deployment,Knowledge Graph Visualization,AI-powered Terminal Chat,GitHub API Integration,pnpm Monorepo,CSS Custom Properties (Theming),Semantic Search (Cosine Similarity),Core Web Vitals Optimization,SEO (robots.txt, sitemap.xml, OG Images),Interactive Animations (Parallax, Glitch, Tilt, Magnetic Effects),Keyboard Shortcuts (Accessibility),Data-Driven Content Management (`/src/content`),Production Systems Development
 
-# Rahil Singhi — Portfolio Website: Project Profile
+## Details
+
+# Rahil Singhi Portfolio Website
 
 ## Project Summary
 
@@ -229,6 +259,9 @@ pnpm run lint
 - Pretext submodule (text layout benchmarks) is reference data, not core portfolio feature
 - LinkedIn feed may require occasional token refresh
 
----
+## Latest Changes (2026-04-08):
+Light/dark theme fully operational, light mode contrast optimized (darker greys, inverted ticker cards), skill graph expanded with Karen, Flock, Ask NYC, MarkPush nodes, ProjectsTicker replaces old FeaturedProjects, 6-project hackathon section live, glitch styling moved to globals.css, hydration mismatches resolved.
 
-**Latest Changes (2026-04-08):** Light/dark theme fully operational, light mode contrast optimized (darker greys, inverted ticker cards), skill graph expanded with Karen, Flock, Ask NYC, MarkPush nodes, ProjectsTicker replaces old FeaturedProjects, 6-project hackathon section live, glitch styling moved to globals.css, hydration mismatches resolved.
+## Related
+
+[[Next.js]],[[TypeScript]],[[Tailwind CSS]],[[Framer Motion]],[[D3.js]],[[Gemini Embedding API]],[[Vercel]],[[GitHub API]],[[RAG]],[[Cloudflare Registrar]],[[Node.js]],[[React]],[[ESLint]],[[pnpm]],[[PostCSS]],[[Google Fonts]],[[Formspree]],[[Kismet (Project)]],[[Krushal (Project)]],[[Karen (Hackathon Project)]],[[Flock (Hackathon Project)]],[[EdgeMesh (Hackathon Project)]],[[Coro (Hackathon Project)]],[[MarketPulse (Hackathon Project)]],[[Ask NYC (Hackathon Project)]],[[Python]],[[Go]],[[PyTorch]],[[HuggingFace]],[[GPT-4o]],[[FastAPI]],[[NestJS]],[[PostgreSQL]],[[BigQuery]],[[Redis]],[[Docker]],[[Google Cloud Platform]],[[NYU]]

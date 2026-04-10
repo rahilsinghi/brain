@@ -1,15 +1,19 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: null
 ingested_at: 2026-04-10T12:30:00Z
 parsed_at: 2026-04-10T12:30:00Z
-compiled_to: null
-processed_at: null
-retry_count: 0
-last_error: null
+compiled_to: "[[Superpowers: AI Agent Skill Library]]"
+processed_at: 2026-04-10T12:51:49.230Z
+retry_count: 1
+last_error: "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
 compile_progress: null
 ---
+
+
+
+
 
 # Superpowers Project Profile
 

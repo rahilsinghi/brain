@@ -1,19 +1,41 @@
 ---
-status: processed
-source_type: file_drop
-source_id: null
-ingested_at: 2026-04-10T12:30:00Z
-parsed_at: 2026-04-10T12:30:00Z
-compiled_to: "[[MarkPush]]"
-processed_at: 2026-04-10T12:48:42.466Z
-retry_count: 1
-last_error: "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing."
-compile_progress: null
+title: MarkPush
+author: ai
+created_at: 2026-04-10T12:48:42.466Z
+last_ai_edit: 2026-04-10T12:48:42.466Z
+last_human_edit: null
+last_embedded_hash: null
+sources:
+  - "[[/Users/rahilsinghi/Desktop/brain/raw/repo-profiles/markpush-project-profile.md]]"
+tags:
+  - open-source
+  - markdown
+  - ios
+  - cli
+  - go
+  - swiftui
+  - typescript
+  - nodejs
+  - supabase
+  - encryption
+  - realtime
+  - personal-tool
+  - tca
+  - swiftdata
+  - mcp
+  - ai-workflow
+  - project
 ---
 
+# MarkPush
 
+MarkPush is an open-source personal tool that enables pushing markdown documents from a terminal directly to a native iOS app over encrypted WiFi or a cloud relay. It integrates a Go CLI, a SwiftUI iOS app, and a TypeScript Model Context Protocol (MCP) server, facilitating seamless AI-to-phone workflows.
 
+## Key Concepts
 
+- **Open-source personal tool**: Designed for individual use with public source code.,- **Markdown document pushing**: Core functionality to transfer markdown content.,- **Cross-platform access**: Available via Go CLI, iOS native app, and TypeScript MCP server.,- **Encrypted transport**: Uses AES-256-GCM and PBKDF2 for end-to-end encryption over WiFi (Raw TCP, mDNS) or Cloud (Supabase Realtime WebSockets).,- **AI-to-phone workflows**: Integration with AI agents (e.g., Claude Code) via the MCP server.,- **QR code pairing**: Secure device pairing mechanism using QR codes to exchange shared secrets.,- **Supabase integration**: Utilized for authentication (OTP), cloud relay, and Row Level Security (RLS).,- **TCA (The Composable Architecture)**: Architectural pattern used in the iOS app for state management and modularity.,- **SwiftData**: Apple's framework for local persistence and iCloud sync in the iOS app.
+
+## Details
 
 # MarkPush — Project Profile
 
@@ -327,7 +349,7 @@ claude mcp add --scope user markpush -- node /path/to/mcp/dist/index.js
 ```bash
 cd cli
 go run . --help          # Run directly
-go install .             # Install binary
+go install .
 go test ./... -race      # Tests
 ```
 
@@ -435,3 +457,7 @@ user_id = "<supabase-user-uuid>"  # CRITICAL for cloud pushes
 4. **Export**: PDF, HTML export from Library
 5. **Sharing**: Share documents via deep link (ephemeral)
 6. **CLI Enhancements**: `markpush sync` for bidirectional docs, `markpush search`
+
+## Related
+
+[[Go (programming language)]],[[SwiftUI]],[[Node.js]],[[TypeScript]],[[Supabase]],[[The Composable Architecture]],[[SwiftData]],[[AES-256-GCM]],[[PBKDF2]],[[mDNS (Bonjour)]],[[WebSocket]],[[CLI (Command Line Interface)]],[[End-to-End Encryption]],[[Markdown]],[[AI Agents]],[[Open Source Software]]

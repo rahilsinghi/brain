@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { VertexAI } from "@google-cloud/vertexai";
 
 export interface LLMRequest {
   prompt: string;
@@ -52,34 +52,35 @@ function createAnthropicProvider(): LLMProvider | null {
   };
 }
 
-// --- Gemini provider with key rotation ---
+// --- Gemini provider via Vertex AI (uses GCP billing credits) ---
 
-interface GeminiKey {
-  key: string;
+interface GeminiProject {
+  projectId: string;
   failCount: number;
   lastFailure: number;
 }
 
 function createGeminiProvider(): LLMProvider | null {
-  const keys: GeminiKey[] = [];
+  const projects: GeminiProject[] = [];
 
-  const key1 = process.env.GEMINI_API_KEY_1;
-  const key2 = process.env.GEMINI_API_KEY_2;
+  // Project IDs with GCP billing credits
+  const p1 = process.env.GEMINI_GCP_PROJECT_1 ?? "nth-segment-491623-d2"; // askNYC ($1000 GenAI credits)
+  const p2 = process.env.GEMINI_GCP_PROJECT_2; // optional second project
 
-  if (key1) keys.push({ key: key1, failCount: 0, lastFailure: 0 });
-  if (key2) keys.push({ key: key2, failCount: 0, lastFailure: 0 });
+  projects.push({ projectId: p1, failCount: 0, lastFailure: 0 });
+  if (p2) projects.push({ projectId: p2, failCount: 0, lastFailure: 0 });
 
-  if (keys.length === 0) return null;
+  const location = process.env.GEMINI_GCP_LOCATION ?? "us-central1";
 
-  /** Pick the key with fewest recent failures. Reset fail count after 5 min cooldown. */
-  function pickKey(): GeminiKey {
+  /** Pick the project with fewest recent failures. */
+  function pickProject(): GeminiProject {
     const now = Date.now();
     const COOLDOWN_MS = 5 * 60 * 1000;
-    for (const k of keys) {
-      if (now - k.lastFailure > COOLDOWN_MS) k.failCount = 0;
+    for (const p of projects) {
+      if (now - p.lastFailure > COOLDOWN_MS) p.failCount = 0;
     }
-    keys.sort((a, b) => a.failCount - b.failCount);
-    return keys[0];
+    projects.sort((a, b) => a.failCount - b.failCount);
+    return projects[0];
   }
 
   return {
@@ -88,15 +89,15 @@ function createGeminiProvider(): LLMProvider | null {
       const model = req.model ?? "gemini-2.5-flash";
       let lastError: Error | null = null;
 
-      // Try each available key
-      for (let attempt = 0; attempt < keys.length; attempt++) {
-        const keyInfo = pickKey();
+      for (let attempt = 0; attempt < projects.length; attempt++) {
+        const proj = pickProject();
         try {
-          const genAI = new GoogleGenerativeAI(keyInfo.key);
-          const genModel = genAI.getGenerativeModel({ model });
+          const vertex = new VertexAI({ project: proj.projectId, location });
+          const genModel = vertex.getGenerativeModel({ model });
 
           const result = await genModel.generateContent(req.prompt);
-          const text = result.response.text();
+          const candidate = result.response.candidates?.[0];
+          const text = candidate?.content?.parts?.[0]?.text ?? "";
 
           return {
             text,
@@ -107,10 +108,9 @@ function createGeminiProvider(): LLMProvider | null {
           };
         } catch (err) {
           lastError = err instanceof Error ? err : new Error(String(err));
-          keyInfo.failCount++;
-          keyInfo.lastFailure = Date.now();
+          proj.failCount++;
+          proj.lastFailure = Date.now();
 
-          // If it's not a quota/rate error, don't bother trying next key
           const msg = lastError.message.toLowerCase();
           if (!msg.includes("quota") && !msg.includes("429") && !msg.includes("resource_exhausted")) {
             throw lastError;
@@ -118,7 +118,7 @@ function createGeminiProvider(): LLMProvider | null {
         }
       }
 
-      throw lastError ?? new Error("All Gemini keys exhausted");
+      throw lastError ?? new Error("All Gemini projects exhausted");
     },
   };
 }

@@ -1,15 +1,19 @@
 ---
-status: pending
+status: processed
 source_type: file_drop
 source_id: null
 ingested_at: 2026-04-10T12:30:00Z
 parsed_at: 2026-04-10T12:30:00Z
-compiled_to: null
-processed_at: null
-retry_count: 0
-last_error: null
+compiled_to: "[[Ouroboros: Self-Improving Agent Engine]]"
+processed_at: 2026-04-10T12:50:02.598Z
+retry_count: 1
+last_error: "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing."
 compile_progress: null
 ---
+
+
+
+
 
 # Ouroboros Project Profile
 
