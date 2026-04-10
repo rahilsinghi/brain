@@ -36,6 +36,11 @@ const DEFAULTS: BrainConfig = {
     matplotlib_rc: "templates/brutalist-matplotlib.json",
     mermaid_theme: "templates/mermaid-theme.json",
   },
+  graph: {
+    explorer_repo_path: "",
+    umap_seed: 42,
+    cache_path: "wiki/.graph-cache.json",
+  },
   transcription: {
     provider: "local",
     local_model: "large-v3-turbo",

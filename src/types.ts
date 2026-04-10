@@ -126,6 +126,11 @@ export interface BrainConfig {
     matplotlib_rc: string;
     mermaid_theme: string;
   };
+  graph: {
+    explorer_repo_path: string;
+    umap_seed: number;
+    cache_path: string;
+  };
   sources?: {
     github?: {
       min_stars_for_readme: number;
@@ -181,4 +186,29 @@ export interface LintHealStats {
   webSearchesUsed: number;
   connectionsDiscovered: number;
   filesModified: string[];
+}
+
+export interface GraphNode {
+  id: string;
+  title: string;
+  tags: string[];
+  category: string;
+  source_type: string;
+  created_at: string;
+  connection_count: number;
+  x: number;
+  y: number;
+  z: number;
+}
+
+export interface GraphLink {
+  source: string;
+  target: string;
+}
+
+export interface GraphCache {
+  generated_at: string;
+  node_count: number;
+  nodes: GraphNode[];
+  links: GraphLink[];
 }
