@@ -8,6 +8,7 @@ import { runLintHeal } from "./lint/runner.js";
 import { createGithubSource } from "./sources/github.js";
 import { createGitCommitsSource } from "./sources/git-commits.js";
 import { createGmailApiSource } from "./sources/gmail.js";
+import { createGraphifySource } from "./sources/graphify.js";
 import { SyncOrchestrator } from "./sources/orchestrator.js";
 import { JsonSyncStateStore } from "./sources/state.js";
 import { VectorStore } from "./embedder/vector-store.js";
@@ -135,7 +136,7 @@ cron.schedule(config.cron.lint_heal, async () => {
 });
 
 cron.schedule(config.cron.mcp_sources, async () => {
-  console.log("[cron] Running GitHub + git-commits + gmail sync...");
+  console.log("[cron] Running GitHub + git-commits + gmail + graphify sync...");
   try {
     const github = createGithubSource(
       undefined,
@@ -147,6 +148,11 @@ cron.schedule(config.cron.mcp_sources, async () => {
 
     const gmail = createGmailApiSource(vaultRoot);
     if (gmail) sources.push(gmail);
+
+    if (config.graphify?.repos?.length) {
+      const graphifySource = createGraphifySource(vaultRoot, config.graphify);
+      sources.push(graphifySource);
+    }
 
     const stateStore = new JsonSyncStateStore(vaultRoot);
     const orchestrator = new SyncOrchestrator(vaultRoot, stateStore);
@@ -160,14 +166,17 @@ cron.schedule(config.cron.mcp_sources, async () => {
     const gmailIngested =
       (report.results.gmail as { itemsIngested?: number } | undefined)
         ?.itemsIngested ?? 0;
+    const graphifyIngested =
+      (report.results.graphify as { itemsIngested?: number } | undefined)
+        ?.itemsIngested ?? 0;
     console.log(
-      `[cron] Sync done: ${ghIngested} GitHub items, ${commitIngested} commits, ${gmailIngested} emails ingested`,
+      `[cron] Sync done: ${ghIngested} GitHub items, ${commitIngested} commits, ${gmailIngested} emails, ${graphifyIngested} graphify drops ingested`,
     );
-    if (ghIngested + commitIngested + gmailIngested > 0) {
+    if (ghIngested + commitIngested + gmailIngested + graphifyIngested > 0) {
       appendDailyEntry(
         vaultRoot,
         "system",
-        `Source sync: ${ghIngested} GitHub items, ${commitIngested} commits, ${gmailIngested} emails ingested`,
+        `Source sync: ${ghIngested} GitHub items, ${commitIngested} commits, ${gmailIngested} emails, ${graphifyIngested} graphify drops ingested`,
       );
     }
     if (report.results.github?.errors?.length) {
@@ -180,6 +189,9 @@ cron.schedule(config.cron.mcp_sources, async () => {
     }
     if (report.results.gmail?.errors?.length) {
       console.warn(`[cron] Gmail errors: ${report.results.gmail.errors}`);
+    }
+    if (report.results.graphify?.errors?.length) {
+      console.warn(`[cron] Graphify errors: ${report.results.graphify.errors}`);
     }
   } catch (err) {
     console.error(
