@@ -1,0 +1,76 @@
+api:
+  port: 3577
+  host: "127.0.0.1"    # localhost-only; Tailscale handles remote routing
+  synthesise_timeout_ms: 30000
+  default_top_k: 8
+
+daemon:
+  log_level: info
+
+watchers:
+  raw_dir: raw/
+  wiki_dir: wiki/
+  voice_dir: raw/voice/
+
+cron:
+  mcp_sources: "0 * * * *"
+  calendar: "0 22 * * *"
+  lint_heal: "0 3 * * *"
+
+compile:
+  max_single_pass_words: 5000
+  max_chunked_words: 20000
+  max_staged_words: 100000
+  max_retries: 3
+
+heal:
+  max_operations_per_run: 20
+  max_web_searches_per_run: 5
+  human_edit_cooldown_hours: 24
+
+query:
+  default_top_k: 8
+  novelty_threshold: 0.85
+
+graph:
+  explorer_repo_path: ~/Desktop/brain-explorer
+  umap_seed: 42
+  cache_path: wiki/.graph-cache.json
+
+graphify:
+  repos:
+    - ~/Desktop/karen
+    - ~/Desktop/brain
+    - ~/Desktop/portfolio
+    - ~/Desktop/ouroboros
+  semantic: false
+  cron_schedule: "0 * * * *"
+  max_nodes_per_repo: 2000
+  output_dir: "raw/graphify"
+
+embeddings:
+  model: nomic-embed-text
+  provider: xenova
+
+telegram:
+  allowed_user_ids: [8198937151]
+  poll_timeout_s: 30
+
+visual:
+  marp_theme: templates/brutalist-marp.css
+  matplotlib_rc: templates/brutalist-matplotlib.json
+  mermaid_theme: templates/mermaid-theme.json
+
+transcription:
+  provider: "local"
+  local_model: "large-v3-turbo"
+  openai_model: "whisper-1"
+
+voice:
+  clusters:
+    - personal
+    - work
+    - life
+    - language
+  default_cluster: personal
+  classify_model: "claude-haiku-4-5-20251001"
