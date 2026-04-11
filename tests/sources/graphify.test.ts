@@ -17,7 +17,7 @@ function makeConfig(overrides: Partial<GraphifyConfig> = {}): GraphifyConfig {
     semantic: false,
     cron_schedule: "0 * * * *",
     max_nodes_per_repo: 100,
-    output_dir: "/tmp/graphify-output",
+    output_dir: "raw/graphify",
     ...overrides,
   };
 }
@@ -48,40 +48,32 @@ describe("createGraphifySource", () => {
   });
 
   it("returns empty drops when repo paths don't exist", async () => {
-    const execSpy = vi
-      .spyOn(cp, "execFileSync")
-      .mockImplementation(() => Buffer.from(""));
+    vi.spyOn(cp, "execFileSync").mockImplementation(() => Buffer.from(""));
 
     const config = makeConfig({
       repos: ["/nonexistent/path/myrepo"],
-      output_dir: tmpDir,
     });
-    const source = createGraphifySource("/vault", config);
+    const source = createGraphifySource(tmpDir, config);
     const result = await source.poll(makeState());
 
     expect(result.newItems).toHaveLength(0);
   });
 
   it("collects architecture report as a RawDrop", async () => {
-    // Create a fake repo dir and output files
+    // Create a fake repo dir and output files under vaultRoot/raw/graphify/
     const repoDir = fs.mkdtempSync(path.join(os.tmpdir(), "repo-myrepo-"));
     const repoName = path.basename(repoDir);
-    const repoOutputDir = path.join(tmpDir, repoName);
+    const repoOutputDir = path.join(tmpDir, "raw/graphify", repoName);
     fs.mkdirSync(repoOutputDir, { recursive: true });
 
     const archContent = "# Architecture\n\nThis repo does stuff.";
     const archFile = path.join(repoOutputDir, `${repoName}-architecture.md`);
     fs.writeFileSync(archFile, archContent, "utf8");
 
-    const execSpy = vi
-      .spyOn(cp, "execFileSync")
-      .mockImplementation(() => Buffer.from(""));
+    vi.spyOn(cp, "execFileSync").mockImplementation(() => Buffer.from(""));
 
-    const config = makeConfig({
-      repos: [repoDir],
-      output_dir: tmpDir,
-    });
-    const source = createGraphifySource("/vault", config);
+    const config = makeConfig({ repos: [repoDir] });
+    const source = createGraphifySource(tmpDir, config);
     const result = await source.poll(makeState());
 
     const archDrop = result.newItems.find((d) =>
@@ -98,10 +90,10 @@ describe("createGraphifySource", () => {
   });
 
   it("collects file-summary drops from summaries directory", async () => {
-    // Create a fake repo dir and file-summaries output
+    // Create a fake repo dir and file-summaries output under vaultRoot/raw/graphify/
     const repoDir = fs.mkdtempSync(path.join(os.tmpdir(), "repo-myrepo2-"));
     const repoName = path.basename(repoDir);
-    const repoOutputDir = path.join(tmpDir, repoName);
+    const repoOutputDir = path.join(tmpDir, "raw/graphify", repoName);
     const summariesDir = path.join(repoOutputDir, "file-summaries");
     fs.mkdirSync(summariesDir, { recursive: true });
 
@@ -111,11 +103,8 @@ describe("createGraphifySource", () => {
 
     vi.spyOn(cp, "execFileSync").mockImplementation(() => Buffer.from(""));
 
-    const config = makeConfig({
-      repos: [repoDir],
-      output_dir: tmpDir,
-    });
-    const source = createGraphifySource("/vault", config);
+    const config = makeConfig({ repos: [repoDir] });
+    const source = createGraphifySource(tmpDir, config);
     const result = await source.poll(makeState());
 
     const summaryDrop = result.newItems.find((d) =>
@@ -138,11 +127,8 @@ describe("createGraphifySource", () => {
       throw new Error("CLI execution failed");
     });
 
-    const config = makeConfig({
-      repos: [repoDir],
-      output_dir: tmpDir,
-    });
-    const source = createGraphifySource("/vault", config);
+    const config = makeConfig({ repos: [repoDir] });
+    const source = createGraphifySource(tmpDir, config);
     const result = await source.poll(makeState());
 
     expect(result.newItems).toHaveLength(0);

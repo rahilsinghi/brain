@@ -28,7 +28,7 @@ export function createGraphifySource(
 
       const pythonPath = join(vaultRoot, "scripts/graphify/.venv/bin/python");
       const graphifyCliPath = join(vaultRoot, "scripts/graphify/graphify_cli.py");
-      const outputDir = config.output_dir;
+      const outputDir = join(vaultRoot, config.output_dir);
 
       const args = [graphifyCliPath, "--repos", ...validRepos, "--output-dir", outputDir, "--incremental"];
 
@@ -41,9 +41,12 @@ export function createGraphifySource(
       }
 
       try {
-        execFileSync(pythonPath, args, { timeout: 300_000 });
+        execFileSync(pythonPath, args, {
+          timeout: 300_000,
+          stdio: ["pipe", "pipe", "pipe"],
+        });
       } catch (err) {
-        console.error("[graphify] CLI execution failed:", err);
+        console.error(`[graphify] CLI failed: ${err instanceof Error ? err.message : String(err)}`);
         return { newItems: [], processedIds: [] };
       }
 
@@ -77,6 +80,7 @@ export function createGraphifySource(
           if (existsSync(summariesDir)) {
             const files = readdirSync(summariesDir);
             for (const file of files) {
+              if (!file.endsWith(".md")) continue;
               const content = readFileSync(join(summariesDir, file), "utf8");
               const slug = basename(file, ".md");
               const sourceId = `graphify:${repoName}:${slug}`;
@@ -89,7 +93,7 @@ export function createGraphifySource(
             }
           }
         } catch (err) {
-          console.error(`[graphify] Failed to collect output for repo at ${repoPath}:`, err);
+          console.error(`[graphify] Failed to collect output for ${basename(repoPath)}: ${err instanceof Error ? err.message : String(err)}`);
         }
       }
 
