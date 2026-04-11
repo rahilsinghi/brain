@@ -5,6 +5,5 @@ export default defineConfig({
     globals: true,
     root: ".",
     include: ["tests/**/*.test.ts"],
-    setupFiles: ["tests/setup-child-process-mock.ts"],
   },
 });

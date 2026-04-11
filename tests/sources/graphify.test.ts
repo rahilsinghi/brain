@@ -1,8 +1,14 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import * as cp from "child_process";
 import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
+
+vi.mock("child_process", async () => {
+  const actual = await vi.importActual<typeof import("child_process")>("child_process");
+  return { ...actual };
+});
+
+import * as cp from "child_process";
 import { createGraphifySource } from "../../src/sources/graphify.js";
 import type { SourceSyncState } from "../../src/sources/types.js";
 import type { GraphifyConfig } from "../../src/types.js";
