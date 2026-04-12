@@ -80,6 +80,23 @@ export async function generateGraphCache(
     z: positions[i][2],
   }));
 
+  // 7. God-node detection: flag nodes with connection_count > mean + 2*sigma
+  if (nodes.length > 0) {
+    const counts = nodes.map((n) => n.connection_count);
+    const mean = counts.reduce((a, b) => a + b, 0) / counts.length;
+    const variance =
+      counts.reduce((a, b) => a + (b - mean) ** 2, 0) / counts.length;
+    const std = Math.sqrt(variance);
+    const threshold = mean + 2 * std;
+
+    for (const node of nodes) {
+      if (node.connection_count > threshold) {
+        node.is_god_node = true;
+        node.z = -200;
+      }
+    }
+  }
+
   return {
     generated_at: new Date().toISOString(),
     node_count: nodeCount,
