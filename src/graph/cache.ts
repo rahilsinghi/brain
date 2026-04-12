@@ -2,12 +2,15 @@ import { writeFileSync, readFileSync, existsSync } from "node:fs";
 import type { GraphCache } from "../types.js";
 import { scanWiki } from "./scan-wiki.js";
 import { generateGraphCache } from "./export.js";
+import { loadGraphifyGraphs } from "./load-graphify.js";
+import { generateCrossLayerEdges } from "./cross-layer.js";
 
 export async function rebuildGraphCache(
   vaultRoot: string,
   cachePath: string,
   embeddings: Map<string, number[]>,
   seed: number,
+  graphifyOutputDir?: string,
 ): Promise<GraphCache> {
   const scan = scanWiki(vaultRoot);
   const cache = await generateGraphCache(scan, embeddings, seed);
@@ -24,8 +27,19 @@ export async function rebuildGraphCache(
     link.confidence_score = link.confidence_score ?? 1.0;
   }
 
+  // Merge code layer if provided
+  if (graphifyOutputDir) {
+    const codeScan = loadGraphifyGraphs(graphifyOutputDir);
+    const crossLinks = generateCrossLayerEdges(cache.nodes, codeScan);
+    cache.nodes.push(...codeScan.nodes);
+    cache.links.push(...codeScan.links, ...crossLinks);
+    cache.node_count = cache.nodes.length;
+  }
+
   writeFileSync(cachePath, JSON.stringify(cache), "utf8");
-  console.log(`[graph] Cache written: ${cache.node_count} nodes → ${cachePath}`);
+  console.log(
+    `[graph] Cache written: ${cache.node_count} nodes → ${cachePath}`,
+  );
   return cache;
 }
 
