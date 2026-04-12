@@ -19,6 +19,9 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase 5 (Knowledge Compounding):** Complete — novelty scoring, /save endpoint, synthesis cache, anti-ouroboros
 **Brain MCP Server:** Complete — `~/.claude/mcp/brain/index.ts`, brain_query + brain_ingest tools, global `.mcp.json`
 **Telegram Formatting Fix:** Complete — wiki links stripped to bold text before sending
+**Graphify Phase 1 (Fork + CLI):** Complete — forked to github.com/rahilsinghi/graphify, CLI entry point, persistent venv at scripts/graphify/.venv
+**Graphify Phase 2 (Brain Source):** Complete — `src/sources/graphify.ts` SyncSource, GraphifyConfig type, hourly cron wiring, 140 drops from brain repo
+**Graphify Phase 3 (Graph Merge):** Complete — URI node IDs (`wiki://`, `code://`), `loadGraphifyGraphs`, cross-layer edges (20-cap by centrality), god-node detection (mean+2σ, z=-200), unified two-layer GraphCache merge in `rebuildGraphCache`
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
 **Phase 3 spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
@@ -39,7 +42,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (346 tests across 61 files, all passing)
+- Testing: Vitest (386 tests across 65 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude) + @google-cloud/vertexai (Gemini via Vertex AI, $1000 GCP credits)
@@ -68,7 +71,7 @@ nightly cron → git snapshot → lint scanner → healer → connector → dail
 **Brain Explorer v1 deployed:** brain.rahilsinghi.com — visual revamp needed (v1.1)
 **Brain Explorer Repo:** `~/Desktop/brain-explorer` (github.com/rahilsinghi/brain-explorer)
 
-### Source Files (79)
+### Source Files (82)
 
 ```
 src/
@@ -116,8 +119,10 @@ src/
 ├── graph/
 │   ├── scan-wiki.ts        ← Walk wiki/, extract frontmatter + [[links]]
 │   ├── embeddings.ts       ← Average LanceDB chunk vectors per article
-│   ├── export.ts           ← UMAP 768→3 with deterministic seed
-│   ├── cache.ts            ← Orchestrator: scan → embed → UMAP → write cache
+│   ├── export.ts           ← UMAP 768→3 with deterministic seed + god-node detection
+│   ├��─ cache.ts            ← Orchestrator: scan → embed → UMAP → wiki:// prefix → merge code layer → write cache
+│   ├── load-graphify.ts    ← Parse NetworkX JSON into Brain nodes/links with code:// prefix
+│   ├── cross-layer.ts      ← Wiki↔code cross-layer edges (20-cap by centrality)
 │   └── push.ts             ← Write graph.json to explorer repo + git push
 ├── query/
 │   ├── synthesize.ts       ← Vector search → Claude synthesis + novelty scoring
@@ -146,6 +151,7 @@ src/
     ├── gmail.ts            ← Gmail source (DI + direct googleapis API, turndown)
     ├── gmail-auth.ts       ← OAuth2 client factory (credentials + refresh token)
     ├── git-commits.ts      ← Git commit history source (per-repo polling, backfill)
+    ├── graphify.ts         ← Graphify AST analysis source (shells out to Python CLI)
     ├── calendar.ts         ← Stub — deferred to Phase 3b
     └── cli.ts              ← /brain-sync entry point + report formatting
 ├── seed/
