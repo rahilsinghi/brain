@@ -59,6 +59,54 @@ describe("graph cache", () => {
     expect(fromDisk!.node_count).toBe(2);
   });
 
+  it("applies wiki:// prefix to all node IDs and link endpoints", async () => {
+    writeArticle("a", "Project A", "# Project A\n\nLinks to [[Project B]].");
+    writeArticle("b", "Project B", "# Project B\n\nContent B.");
+
+    const mockEmbeddings = new Map<string, number[]>([
+      ["projects/a.md", Array(10).fill(0.1)],
+      ["projects/b.md", Array(10).fill(0.2)],
+    ]);
+
+    const cachePath = join(TEST_VAULT, "wiki", ".graph-cache.json");
+    const cache = await rebuildGraphCache(
+      TEST_VAULT,
+      cachePath,
+      mockEmbeddings,
+      42,
+    );
+
+    for (const node of cache.nodes) {
+      expect(node.id).toMatch(/^wiki:\/\//);
+    }
+    for (const link of cache.links) {
+      expect(link.source).toMatch(/^wiki:\/\//);
+      expect(link.target).toMatch(/^wiki:\/\//);
+    }
+  });
+
+  it("sets layer: 'wiki' on all wiki nodes", async () => {
+    writeArticle("a", "Project A", "# Project A\n\nContent A.");
+    writeArticle("b", "Project B", "# Project B\n\nContent B.");
+
+    const mockEmbeddings = new Map<string, number[]>([
+      ["projects/a.md", Array(10).fill(0.1)],
+      ["projects/b.md", Array(10).fill(0.2)],
+    ]);
+
+    const cachePath = join(TEST_VAULT, "wiki", ".graph-cache.json");
+    const cache = await rebuildGraphCache(
+      TEST_VAULT,
+      cachePath,
+      mockEmbeddings,
+      42,
+    );
+
+    for (const node of cache.nodes) {
+      expect(node.layer).toBe("wiki");
+    }
+  });
+
   it("readGraphCache returns null for missing file", () => {
     expect(readGraphCache(join(TEST_VAULT, "nonexistent.json"))).toBeNull();
   });
