@@ -22,6 +22,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Graphify Phase 1 (Fork + CLI):** Complete — forked to github.com/rahilsinghi/graphify, CLI entry point, persistent venv at scripts/graphify/.venv
 **Graphify Phase 2 (Brain Source):** Complete — `src/sources/graphify.ts` SyncSource, GraphifyConfig type, hourly cron wiring, 140 drops from brain repo
 **Graphify Phase 3 (Graph Merge):** Complete — URI node IDs (`wiki://`, `code://`), `loadGraphifyGraphs`, cross-layer edges (20-cap by centrality), god-node detection (mean+2σ, z=-200), unified two-layer GraphCache merge in `rebuildGraphCache`
+**Graphify Phase 4 (Embeddings + Query):** Complete — WikiChunk.confidential field, SynthesisMode ("local"/"remote"), confidentiality filter in synthesize(), Telegram passes "remote", HTTP API accepts mode param, MCP passes "local", file-summary pipeline validated
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
 **Phase 3 spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
@@ -42,7 +43,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (386 tests across 65 files, all passing)
+- Testing: Vitest (398 tests across 67 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude) + @google-cloud/vertexai (Gemini via Vertex AI, $1000 GCP credits)
