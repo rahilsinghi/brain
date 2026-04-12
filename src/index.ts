@@ -127,7 +127,10 @@ cron.schedule(config.cron.lint_heal, async () => {
     const allChunks = await store.listAll();
     const embeddings = aggregateEmbeddings(allChunks);
     const cachePath = join(vaultRoot, config.graph.cache_path);
-    await rebuildGraphCache(vaultRoot, cachePath, embeddings, config.graph.umap_seed);
+    const graphifyDir = config.graphify?.repos?.length
+      ? join(vaultRoot, config.graphify.output_dir ?? "raw/graphify")
+      : undefined;
+    await rebuildGraphCache(vaultRoot, cachePath, embeddings, config.graph.umap_seed, graphifyDir);
   } catch (err) {
     console.error(
       `[cron] Graph cache rebuild failed: ${err instanceof Error ? err.message : String(err)}`,

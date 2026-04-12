@@ -19,11 +19,15 @@ export async function graphPushRoute(app: FastifyInstance): Promise<void> {
       const embeddings = aggregateEmbeddings(allChunks);
 
       const cachePath = join(app.vaultRoot, app.config.graph.cache_path);
+      const graphifyDir = app.config.graphify?.repos?.length
+        ? join(app.vaultRoot, app.config.graphify.output_dir ?? "raw/graphify")
+        : undefined;
       const cache = await rebuildGraphCache(
         app.vaultRoot,
         cachePath,
         embeddings,
         app.config.graph.umap_seed,
+        graphifyDir,
       );
 
       const result = await pushGraphToRepo(cache, repoPath);
