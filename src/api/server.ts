@@ -8,6 +8,7 @@ import { synthesiseRoute } from "./routes/synthesise.js";
 import { saveRoute } from "./routes/save.js";
 import { graphExportRoute } from "./routes/graph-export.js";
 import { graphPushRoute } from "./routes/graph-push.js";
+import { graphifyRoute } from "./routes/graphify.js";
 
 interface ServerOptions {
   store: VectorStore;
@@ -33,6 +34,7 @@ export function createServer(opts: ServerOptions): FastifyInstance {
   app.register(saveRoute);
   app.register(graphExportRoute);
   app.register(graphPushRoute);
+  app.register(graphifyRoute);
 
   return app;
 }
