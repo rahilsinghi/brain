@@ -86,6 +86,7 @@ export async function compileSinglePass(
   vaultRoot: string,
 ): Promise<CompileResult> {
   const { data: rawFm, content } = readFrontmatter(rawFilePath);
+  const sourceType = (rawFm as Record<string, unknown>).source_type as string | undefined;
   updateFrontmatter(rawFilePath, { status: "processing" });
 
   try {
@@ -95,8 +96,36 @@ export async function compileSinglePass(
         ? `\n  IMPORTANT: Prefer linking to existing articles from this list:\n  ${existingTitles.join(", ")}\n  If a related topic is not in the list, still include it as a [[link]].`
         : "";
 
-    const response = await generate({
-      prompt: `You are a knowledge compiler. Given the following raw content, produce a structured wiki article.
+    let prompt: string;
+    if (sourceType === "graphify-community") {
+      const rawFmTyped = rawFm as Record<string, unknown>;
+      const repo = (rawFmTyped.repo as string | undefined) ?? "unknown-repo";
+      const communityId = (rawFmTyped.community_id as string | undefined) ?? "unknown";
+      prompt = `You are a knowledge compiler analysing a code community (cluster) detected by static analysis.
+
+The community was found in the repository: ${repo}
+Its raw cluster identifier is: ${communityId}
+
+Given the following analysis content, produce a structured wiki article about this code community.
+
+IMPORTANT TITLE RULE: Do NOT use generic names like "Community N" or "Cluster N". Invent a meaningful semantic title that captures the purpose or theme of this cluster (e.g. "Auth Token Lifecycle", "Data Pipeline Orchestration", "Payment Gateway Integration").
+
+Return a JSON object with these fields:
+- title: A meaningful semantic title describing this code community's purpose (NOT "Community N")
+- aliases: Array containing the original cluster identifier (e.g. ["Community ${communityId}"])
+- summary: 2-3 sentence summary of what this code community does and why it exists
+- concepts: Key concepts as a markdown bullet list
+- details: Detailed content as markdown, including notable files and their roles. Reference external dependencies using [[wikilinks]].${titleListSection}
+- backlinks: Related topics as markdown links using [[Topic Name]] format, including [[${repo}]] and any key dependency modules
+- tags: Array of lowercase tags (include "code-community", "${repo}", "graphify")
+- category: Always "projects"
+
+Raw analysis content:
+${content}
+
+Return ONLY valid JSON, no markdown code fences.`;
+    } else {
+      prompt = `You are a knowledge compiler. Given the following raw content, produce a structured wiki article.
 
 Return a JSON object with these fields:
 - title: A clear, concise title for the wiki article
@@ -110,7 +139,11 @@ Return a JSON object with these fields:
 Raw content:
 ${content}
 
-Return ONLY valid JSON, no markdown code fences.`,
+Return ONLY valid JSON, no markdown code fences.`;
+    }
+
+    const response = await generate({
+      prompt,
       maxTokens: 8192,
       json: true,
     });
@@ -119,6 +152,7 @@ Return ONLY valid JSON, no markdown code fences.`,
     // Strip markdown code fences if present (Gemini sometimes adds them)
     text = text.replace(/^```json\s*\n?/, "").replace(/\n?```\s*$/, "");
     const parsed: LLMCompileOutput = JSON.parse(text);
+    const aliases = (parsed as Record<string, unknown>).aliases as string[] | undefined;
 
     const slug = slugify(parsed.title);
     const wikiDir = join(vaultRoot, "wiki", parsed.category);
@@ -136,6 +170,9 @@ Return ONLY valid JSON, no markdown code fences.`,
       sources: [`[[${rawFilePath}]]`],
       tags: parsed.tags,
     };
+    if (aliases && aliases.length > 0) {
+      (wikiFm as Record<string, unknown>).aliases = aliases;
+    }
 
     const wikiContent = `# ${parsed.title}\n\n${parsed.summary}\n\n## Key Concepts\n\n${parsed.concepts}\n\n## Details\n\n${parsed.details}\n\n## Related\n\n${parsed.backlinks}\n`;
 
