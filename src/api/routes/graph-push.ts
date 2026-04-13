@@ -1,4 +1,5 @@
 import { join } from "node:path";
+import { homedir } from "node:os";
 import type { FastifyInstance } from "fastify";
 import { rebuildGraphCache } from "../../graph/cache.js";
 import { pushGraphToRepo } from "../../graph/push.js";
@@ -6,7 +7,10 @@ import { aggregateEmbeddings } from "../../graph/embeddings.js";
 
 export async function graphPushRoute(app: FastifyInstance): Promise<void> {
   app.post("/graph-push", async (_request, reply) => {
-    const repoPath = app.config.graph.explorer_repo_path;
+    const repoPath = app.config.graph.explorer_repo_path.replace(
+      /^~/,
+      homedir(),
+    );
     if (!repoPath) {
       return reply.status(400).send({
         error: "not_configured",
