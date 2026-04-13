@@ -143,4 +143,34 @@ describe("generateCrossLayerEdges", () => {
 
     expect(edges).toEqual([]);
   });
+
+  it("matches wiki nodes with repo name as filename prefix", () => {
+    const wikiNodes = [
+      makeWikiNode("wiki://projects/karen-git-activity.md"),
+      makeWikiNode(
+        "wiki://projects/karen-project-multi-channel-escalation-engine.md",
+      ),
+    ];
+    const codeScan = {
+      nodes: [
+        makeCodeNode("code://karen/src/auth/service.ts", "karen", 12),
+        makeCodeNode("code://karen/src/index.ts", "karen", 8),
+      ],
+      links: [],
+    };
+
+    const edges = generateCrossLayerEdges(wikiNodes, codeScan);
+
+    expect(edges.length).toBe(4); // 2 wiki nodes × 2 code nodes each
+    expect(
+      edges.filter((e) => e.source === "wiki://projects/karen-git-activity.md"),
+    ).toHaveLength(2);
+    expect(
+      edges.filter(
+        (e) =>
+          e.source ===
+          "wiki://projects/karen-project-multi-channel-escalation-engine.md",
+      ),
+    ).toHaveLength(2);
+  });
 });

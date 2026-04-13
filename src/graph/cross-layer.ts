@@ -1,18 +1,32 @@
 import type { GraphNode, GraphLink } from "../types.js";
 
-function extractRepoName(wikiId: string): string | null {
-  // wiki://projects/brain.md → "brain"
-  const projectsMatch = wikiId.match(/^wiki:\/\/projects\/(.+)\.md$/);
-  if (projectsMatch) {
-    return projectsMatch[1];
-  }
-
-  // wiki://code-architecture/brain-architecture.md → "brain"
-  const archMatch = wikiId.match(
-    /^wiki:\/\/code-architecture\/(.+)-architecture\.md$/,
+/**
+ * Match a wiki node ID to a code repo name by checking if the
+ * filename segment starts with or contains a known repo name.
+ *
+ * Examples that match "karen":
+ *   wiki://projects/karen-git-activity.md
+ *   wiki://projects/karen-project-multi-channel-escalation-engine.md
+ *   wiki://code-architecture/karen-architecture.md
+ *
+ * Only matches in projects/ and code-architecture/ paths.
+ */
+function matchRepoName(
+  wikiId: string,
+  knownRepos: Set<string>,
+): string | null {
+  const pathMatch = wikiId.match(
+    /^wiki:\/\/(?:projects|code-architecture)\/(.+)\.md$/,
   );
-  if (archMatch) {
-    return archMatch[1];
+  if (!pathMatch) return null;
+
+  const filename = pathMatch[1];
+
+  // Check if filename starts with a known repo name (followed by - or end)
+  for (const repo of knownRepos) {
+    if (filename === repo || filename.startsWith(`${repo}-`)) {
+      return repo;
+    }
   }
 
   return null;
@@ -32,10 +46,11 @@ export function generateCrossLayerEdges(
     codeNodesByRepo.set(node.repo, existing);
   }
 
+  const knownRepos = new Set(codeNodesByRepo.keys());
   const edges: GraphLink[] = [];
 
   for (const wikiNode of wikiNodes) {
-    const repoName = extractRepoName(wikiNode.id);
+    const repoName = matchRepoName(wikiNode.id, knownRepos);
     if (repoName === null) continue;
 
     const matchingNodes = codeNodesByRepo.get(repoName);
