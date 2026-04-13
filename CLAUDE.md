@@ -23,7 +23,8 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Graphify Phase 2 (Brain Source):** Complete — `src/sources/graphify.ts` SyncSource, GraphifyConfig type, hourly cron wiring, 140 drops from brain repo
 **Graphify Phase 3 (Graph Merge):** Complete — URI node IDs (`wiki://`, `code://`), `loadGraphifyGraphs`, cross-layer edges (20-cap by centrality), god-node detection (mean+2σ, z=-200), unified two-layer GraphCache merge in `rebuildGraphCache`
 **Graphify Phase 4 (Embeddings + Query):** Complete — WikiChunk.confidential field, SynthesisMode ("local"/"remote"), confidentiality filter in synthesize(), Telegram passes "remote", HTTP API accepts mode param, MCP passes "local", file-summary pipeline validated
-**Graphify Phase 5 (Explorer Fusion):** Complete (frontend) — two-layer visualization in brain-explorer: layer toggle (wiki/code/all), glass cubes for code nodes, cross-layer white arcs, god-node outward offset, drill-in UX, code tooltip, URL deep-linking. **Remaining:** daemon `rebuildGraphCache` needs to set `layer: "wiki"/"code"` on nodes for real data to flow through (currently using test fixture)
+**Graphify Phase 5 (Explorer Fusion):** Complete — two-layer visualization with real data. Daemon sets `layer: "wiki"/"code"` on all nodes. Karen repo graphified (840 nodes, 66 communities). 820 cross-layer edges. 1921 total nodes (696 wiki + 1225 code). Bloom tuned for large graphs. Node click/focus interaction fixed (bounding sphere, nodeId passthrough, onPointerMissed race guard, deep-link one-shot). Sliding glass LayerToggle.
+**Post-Phase 5 Stabilization (2026-04-12):** Fixed tilde expansion bug in graph-push route (wrote to literal `~/` dir). Fixed cross-layer edge matching (repo name prefix instead of exact filename). Fixed InstancedMesh raycasting (computeBoundingSphere after matrix update). Fixed useDrag nodeId mapping (pass resolved ID from InstancedNodes, bypass stale reverse map). Fixed onPointerMissed/clearFocus race (timestamp guard). Fixed deep-link readFocusParam re-focus loop (run once on mount).
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
 **Phase 3 spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
@@ -44,7 +45,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 
 - Runtime: Bun + TypeScript strict
 - Package manager: pnpm
-- Testing: Vitest (398 tests across 67 files, all passing)
+- Testing: Vitest (387 tests across 65 files, all passing)
 - Vector DB: LanceDB (local, .lancedb/)
 - Embeddings: @xenova/transformers (nomic-embed-text, local)
 - LLM: @anthropic-ai/sdk (Claude) + @google-cloud/vertexai (Gemini via Vertex AI, $1000 GCP credits)
