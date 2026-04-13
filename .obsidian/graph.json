@@ -1,8 +1,8 @@
 {
   "collapse-filter": false,
-  "search": "-path:raw  ",
-  "showTags": false,
-  "showAttachments": false,
+  "search": "path:wiki tag:#portfolio",
+  "showTags": true,
+  "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": false,
   "collapse-color-groups": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.10754737777206695,
+  "scale": 0.3751183588455583,
   "close": true
 }

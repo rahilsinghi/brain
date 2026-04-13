@@ -162,15 +162,16 @@ cron.schedule(config.cron.lint_heal, async () => {
 });
 
 cron.schedule(config.cron.mcp_sources, async () => {
-  console.log("[cron] Running GitHub + git-commits + gmail + graphify sync...");
+  console.log("[cron] Running GitHub + gmail + graphify sync...");
   try {
     const github = createGithubSource(
       undefined,
       config.sources?.github?.min_stars_for_readme ?? 100,
     );
-    const gitCommits = createGitCommitsSource();
+    // git-commits source disabled — graphify provides better repo understanding
+    // const gitCommits = createGitCommitsSource();
 
-    const sources = [github, gitCommits];
+    const sources = [github];
 
     const gmail = createGmailApiSource(vaultRoot);
     if (gmail) sources.push(gmail);

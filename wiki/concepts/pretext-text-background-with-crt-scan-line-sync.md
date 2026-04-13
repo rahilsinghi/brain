@@ -1,44 +1,47 @@
 ---
 title: Pretext Text Background with CRT Scan Line Sync
 author: ai
-created_at: 2026-04-11T00:35:19.384Z
-last_ai_edit: 2026-04-11T00:35:19.384Z
+created_at: 2026-04-13T18:36:32.484Z
+last_ai_edit: 2026-04-13T18:36:32.484Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ba1cc89363aa2df5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-background-add-pretext-text-background-with-crt-sca-2a7145.md]]"
 tags:
-  - background
   - pretext
+  - background
   - crt
   - animation
   - portfolio
-  - ui
   - frontend
+  - ui
   - css
+  - dom
   - javascript
-  - commit
 ---
+
 
 # Pretext Text Background with CRT Scan Line Sync
 
-This feature implements a full-viewport, translucent text background layer for the `rahilsinghi/portfolio` website, powered by the `@chenglou/pretext` library. It creates a continuous text flow that dynamically wraps around a synchronized CRT scan line effect by reading real-time DOM positions. The implementation is optimized for 60fps performance, theme-aware, and responsive across various screen sizes.
+This article describes the implementation of a full-viewport translucent text background layer in the portfolio project, utilizing the `@chenglou/pretext` library. The background features a CRT scan line sync effect, where continuous text dynamically wraps based on its real-time DOM position.
 
 ## Key Concepts
 
-Pretext Text Background,CRT Scan Line Synchronization,DOM Position Reading (getBoundingClientRect),Performance Optimization (DOM pooling, 60fps),Theme-Aware Design,Responsive Web Design,CSS Animation Integration
+[[@chenglou/pretext]] library,CRT (Cathode Ray Tube) scan line effect,DOM positioning with `getBoundingClientRect()`,Full-viewport background layer,CSS animations for synchronization,Theme-aware styling,Responsive design
 
 ## Details
 
-The 'Pretext Text Background with CRT Scan Line Sync' feature introduces an immersive visual element to the `rahilsinghi/portfolio` website. This background operates as a fixed layer at `z-index: -1`, ensuring it remains beneath primary content while being fully visible across the viewport.
+A new feature has been added to the `rahilsinghi/portfolio` repository: a full-viewport translucent text background layer. This background leverages the `@chenglou/pretext` library to render continuous text that visually 'flows' and wraps in sync with a CRT scan line animation. The text's wrapping behavior is dynamically calculated each frame by reading its actual DOM position using `getBoundingClientRect()`, ensuring precise alignment with the visual effect.
 
 Key implementation details include:
 
-*   **`PretextBackground` Component**: Utilizes `@chenglou/pretext` for rendering, incorporating a DOM pool to maintain a smooth 60 frames per second (fps) performance.
-*   **CRT Scan Line Synchronization**: The continuous text flow wraps dynamically, adjusting its layout based on the actual DOM position measured each frame using `getBoundingClientRect()`. This is crucial for its synchronization with a CSS-driven `crt-sweep` animation, eliminating the need for an independent JavaScript clock for this effect.
-*   **Theme Awareness**: The background's opacity is dynamically adjusted based on the site's theme, with a translucency of `0.035` for dark themes and `0.05` for light themes, ensuring readability and aesthetic consistency.
-*   **Responsiveness**: Font sizing for the pretext text is made responsive to accommodate different screen sizes, providing a consistent experience on mobile and desktop devices.
+*   **`PretextBackground` Component**: This component functions as a fixed layer positioned at `z-1` in the DOM, utilizing a DOM pool to maintain smooth animation at 60 frames per second (fps).
+*   **Synchronization**: The text background's animation is directly synced to a CSS `crt-sweep` animation, eliminating the need for an independent JavaScript clock and ensuring visual consistency.
+*   **Theme Awareness**: The opacity of the background text is adjusted based on the active theme, with a value of `0.035` for dark themes and `0.05` for light themes, ensuring readability and aesthetic integration.
+*   **Responsiveness**: The font sizing for the background text is responsive, adapting to different screen sizes, including mobile devices, to maintain visual integrity across various viewports.
+
+This enhancement was co-authored by Claude Opus 4.6.
 
 ## Related
 
-[[Add Pretext Submodule and @chenglou/pretext Dependency]],[[Boot Screen and Easter Egg Improvements (rahilsinghi/portfolio, a286207)]],[[rahilsinghi/portfolio]]
+[[Portfolio]],[[Add Pretext Submodule and @chenglou/pretext Dependency to Portfolio]],[[Add Pretext Submodule and @chenglou/pretext Dependency]],[[Adding Pretext Submodule and Dependency to Portfolio]]
