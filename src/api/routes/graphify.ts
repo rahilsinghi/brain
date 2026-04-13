@@ -33,7 +33,10 @@ async function runGraphifyBackground(
   const venvPython = join(vaultRoot, "scripts/graphify/.venv/bin/python");
   const cliScript = join(vaultRoot, "scripts/graphify/graphify_cli.py");
 
-  const args = [cliScript, "--repos", repoPath, "--output-dir", outputDir];
+  // Python CLI creates a {repoName}/ subdirectory inside --output-dir
+  // Pass parent dir so files land at outputDir/{repoName}/
+  const parentDir = join(outputDir, "..");
+  const args = [cliScript, "--repos", repoPath, "--output-dir", parentDir];
   if (!force) args.push("--incremental");
 
   const proc = Bun.spawn([venvPython, ...args], {
@@ -47,6 +50,7 @@ async function runGraphifyBackground(
     throw new Error(`graphify CLI exited ${exitCode}: ${stderr}`);
   }
 
+  // CLI outputs to parentDir/{repoName}/ — which is outputDir
   const graphJsonPath = join(outputDir, `${repoName}-graph.json`);
   const archMdPath = join(outputDir, `${repoName}-architecture.md`);
 
