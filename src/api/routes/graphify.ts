@@ -28,9 +28,10 @@ async function runGraphifyBackground(
   repoName: string,
   outputDir: string,
   force: boolean,
+  vaultRoot: string,
 ): Promise<void> {
-  const venvPython = "scripts/graphify/.venv/bin/python";
-  const cliScript = "scripts/graphify/graphify_cli.py";
+  const venvPython = join(vaultRoot, "scripts/graphify/.venv/bin/python");
+  const cliScript = join(vaultRoot, "scripts/graphify/graphify_cli.py");
 
   const args = [cliScript, "--repos", repoPath, "--output-dir", outputDir];
   if (!force) args.push("--incremental");
@@ -111,7 +112,7 @@ export async function graphifyRoute(app: FastifyInstance): Promise<void> {
       const deepLink = `https://brain.rahilsinghi.com/?focus=project:${repoName}&depth=${depth}`;
 
       setImmediate(() => {
-        runGraphifyBackground(repo_path, repoName, outputDir, force).catch(
+        runGraphifyBackground(repo_path, repoName, outputDir, force, app.vaultRoot).catch(
           (err: unknown) => {
             const msg = err instanceof Error ? err.message : String(err);
             console.error(`[api] graphify background failed for ${repoName}: ${msg}`);
