@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/portfolio:8c9269f
-ingested_at: 2026-04-10T11:03:33.643Z
-parsed_at: 2026-04-10T11:03:33.643Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3GVe6ANujJAN4cwLWZ"}
+ingested_at: 2026-04-13T16:05:10.284Z
+parsed_at: 2026-04-13T16:05:10.284Z
+compiled_to: "[[Magnetic Hover Effect Component for Buttons (Portfolio)]]"
+processed_at: 2026-04-13T16:07:54.951Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

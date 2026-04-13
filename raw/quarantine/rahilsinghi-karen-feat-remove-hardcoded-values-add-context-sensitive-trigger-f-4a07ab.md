@@ -2,14 +2,14 @@
 status: quarantined
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:c842652
-ingested_at: 2026-04-10T01:03:40.368Z
-parsed_at: 2026-04-10T01:03:40.368Z
+ingested_at: 2026-04-13T16:05:10.297Z
+parsed_at: 2026-04-13T16:05:10.297Z
 compiled_to: null
 processed_at: null
 retry_count: 2
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuM4R4GE5e5CRRQLyMtv"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24pJ46wWHiSFXvkbzDy"}
 compile_progress: null
-quarantined_at: 2026-04-10T03:02:36.085Z
+quarantined_at: 2026-04-13T16:13:44.865Z
 ---
 
 

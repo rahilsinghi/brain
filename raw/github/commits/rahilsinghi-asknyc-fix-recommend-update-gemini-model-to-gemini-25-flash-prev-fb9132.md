@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:6b36429
-ingested_at: 2026-04-10T15:04:13.407Z
-parsed_at: 2026-04-10T15:04:13.407Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.815Z
+parsed_at: 2026-04-13T17:05:37.815Z
+compiled_to: "[[Update Gemini Model to gemini-2.5-flash in askNYC]]"
+processed_at: 2026-04-13T17:42:34.478Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix(recommend): update Gemini model to gemini-2.5-flash (preview model removed)
 

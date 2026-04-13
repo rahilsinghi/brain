@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:cfd4de5
-ingested_at: 2026-04-10T15:04:13.372Z
-parsed_at: 2026-04-10T15:04:13.372Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.746Z
+parsed_at: 2026-04-13T17:05:37.746Z
+compiled_to: "[[CLAUDE.md Update: Gemini Provider, Test Count, and Source Files]]"
+processed_at: 2026-04-13T17:18:52.085Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: update CLAUDE.md with Gemini provider, test count, source files
 

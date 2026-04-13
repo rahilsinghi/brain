@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/dotfiles:6d18ee0
-ingested_at: 2026-04-10T15:04:13.406Z
-parsed_at: 2026-04-10T15:04:13.406Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.814Z
+parsed_at: 2026-04-13T17:05:37.814Z
+compiled_to: "[[Add Dotfiles Sync Section to CLAUDE.md]]"
+processed_at: 2026-04-13T17:47:13.202Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: add dotfiles sync section to CLAUDE.md
 

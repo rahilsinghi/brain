@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:fa7c5b9
-ingested_at: 2026-04-10T15:04:13.415Z
-parsed_at: 2026-04-10T15:04:13.415Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.820Z
+parsed_at: 2026-04-13T17:05:37.820Z
+compiled_to: "[[askNYC Backend: Error Handling and Logging for Silent Failures]]"
+processed_at: 2026-04-13T17:40:39.707Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix(backend): add error handling and logging to silent failure paths
 

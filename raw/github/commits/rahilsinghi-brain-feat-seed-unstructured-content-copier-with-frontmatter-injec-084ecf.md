@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:27812ea
-ingested_at: 2026-04-10T11:03:33.632Z
-parsed_at: 2026-04-10T11:03:33.632Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3GUiXWP8dGu5GcFFxd"}
+ingested_at: 2026-04-13T18:05:31.375Z
+parsed_at: 2026-04-13T18:05:31.375Z
+compiled_to: "[[Unstructured Content Copier with Frontmatter Injection]]"
+processed_at: 2026-04-13T18:10:56.476Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

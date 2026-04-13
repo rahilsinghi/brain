@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:01aae64
-ingested_at: 2026-04-10T15:04:13.429Z
-parsed_at: 2026-04-10T15:04:13.429Z
+ingested_at: 2026-04-13T17:05:37.827Z
+parsed_at: 2026-04-13T17:05:37.827Z
 compiled_to: "[[Backend Fix: WebSocket Stability and Vertex AI Integration (01aae64)]]"
-processed_at: 2026-04-10T15:05:28.730Z
+processed_at: 2026-04-13T17:07:34.642Z
 retry_count: 0
 last_error: null
 compile_progress: null

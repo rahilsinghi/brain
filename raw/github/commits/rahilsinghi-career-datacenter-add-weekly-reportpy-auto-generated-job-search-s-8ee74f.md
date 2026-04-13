@@ -1,17 +1,15 @@
 ---
-status: failed
+status: pending
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Career-Datacenter:01c72dc
-ingested_at: 2026-04-10T09:03:48.660Z
-parsed_at: 2026-04-10T09:03:48.660Z
+ingested_at: 2026-04-13T18:05:31.405Z
+parsed_at: 2026-04-13T18:05:31.405Z
 compiled_to: null
 processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZupchTHeie6i2MC57JDw"}
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
-
-
 
 # Add weekly_report.py - auto-generated job search summary report
 

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:4922735
-ingested_at: 2026-04-10T15:04:13.421Z
-parsed_at: 2026-04-10T15:04:13.421Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.822Z
+parsed_at: 2026-04-13T17:05:37.822Z
+compiled_to: "[[MapCanvas Mapbox Token Guard (askNYC)]]"
+processed_at: 2026-04-13T17:26:03.523Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: guard MapCanvas against missing Mapbox token
 

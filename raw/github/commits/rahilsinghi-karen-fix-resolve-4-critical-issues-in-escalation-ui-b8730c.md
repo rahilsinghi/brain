@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:4baf291
-ingested_at: 2026-04-10T15:04:13.401Z
-parsed_at: 2026-04-10T15:04:13.401Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.811Z
+parsed_at: 2026-04-13T17:05:37.811Z
+compiled_to: "[[Fix: Resolve 4 Critical Issues in Escalation UI]]"
+processed_at: 2026-04-13T17:23:16.262Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: resolve 4 critical issues in escalation UI
 

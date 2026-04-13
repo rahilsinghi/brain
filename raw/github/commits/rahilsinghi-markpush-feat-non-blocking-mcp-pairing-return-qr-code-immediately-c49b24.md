@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:44437b9
-ingested_at: 2026-04-10T15:04:13.431Z
-parsed_at: 2026-04-10T15:04:13.431Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.830Z
+parsed_at: 2026-04-13T17:05:37.830Z
+compiled_to: "[[Non-Blocking MCP Pairing with Immediate QR Code Return in MarkPush]]"
+processed_at: 2026-04-13T17:44:22.708Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat: non-blocking MCP pairing — return QR code immediately
 

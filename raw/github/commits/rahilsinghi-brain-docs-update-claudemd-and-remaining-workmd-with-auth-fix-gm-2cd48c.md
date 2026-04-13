@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:4c3beb6
-ingested_at: 2026-04-10T15:04:13.374Z
-parsed_at: 2026-04-10T15:04:13.374Z
-compiled_to: "[[Documentation Updates: Claude Auth Fix and Gmail Integration Next Steps]]"
-processed_at: 2026-04-10T15:06:22.511Z
+ingested_at: 2026-04-13T17:05:37.748Z
+parsed_at: 2026-04-13T17:05:37.748Z
+compiled_to: "[[Docs: Update CLAUDE.md and REMAINING-WORK.md for Auth Fix and Gmail Next Steps]]"
+processed_at: 2026-04-13T17:09:05.256Z
 retry_count: 0
 last_error: null
 compile_progress: null

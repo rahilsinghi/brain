@@ -1,110 +1,86 @@
 ---
-title: "Career Datacenter: Job Tracker and Scraper Orchestrator (Phase 2.2 - Part 3)"
+title: "Career-Datacenter: Job Tracker and Scraper Orchestrator (Phase 2.2 - Part 3)"
 author: ai
-created_at: 2026-04-10T02:45:14.149Z
-last_ai_edit: 2026-04-10T02:45:14.149Z
+created_at: 2026-04-13T15:29:06.450Z
+last_ai_edit: 2026-04-13T15:29:06.450Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4300aafea298ee90
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-job-tracker-and-scraper-orchestrator-phase-2-910e2d.md]]"
 tags:
   - career-datacenter
-  - job-scraping
-  - orchestration
-  - csv-database
-  - job-tracker
-  - fit-scoring
+  - job search
   - automation
+  - job scraper
+  - job tracker
+  - orchestrator
   - python
-  - phase-2
-  - rahil-singhi
+  - cli
+  - phase 2.2
+  - data management
+  - deduplication
 ---
 
-# Career Datacenter: Job Tracker and Scraper Orchestrator (Phase 2.2 - Part 3)
 
-Phase 2.2 Part 3 of the Career Datacenter project introduces a job tracking system and scraper orchestrator to manage the full pipeline from job discovery to application generation. The job tracker persists scraped jobs to a CSV database with deduplication, status tracking, and fit-score querying. The orchestrator serves as the main entry point, coordinating all scrapers, filters, and scorers while automatically flagging high-fit jobs for application generation.
+# Career-Datacenter: Job Tracker and Scraper Orchestrator (Phase 2.2 - Part 3)
+
+This article details the completion of the job scraping system within the Career-Datacenter project, focusing on the `job_tracker.py` and `run_job_scraper.py` modules. It outlines the functionalities for saving, deduplicating, tracking, and reporting on scraped jobs, as well as orchestrating the scraping process across multiple job boards. The system also supports filtering, scoring, and flagging high-fit jobs for automated application generation.
 
 ## Key Concepts
 
-- **Job Tracker (`job_tracker.py`)**: Saves and manages scraped jobs in a CSV database with 20 fields per job, supporting deduplication by job ID, status lifecycle tracking, and summary report generation
-- **Scraper Orchestrator (`run_job_scraper.py`)**: Main entry point that sequences scraping, filtering, scoring, saving, and application generation into a cohesive workflow
-- **Status Lifecycle**: Jobs are tracked through states including `new`, `applied`, `interview`, and others, enabling pipeline visibility
-- **Fit Score Threshold**: A score of ≥8.0 is used to identify high-fit jobs, which are automatically flagged for application generation
-- **JobFilter Integration**: MUST-HAVE and DEALBREAKER filters are applied to scraped jobs before scoring
-- **FitScorer Integration**: Existing fit scoring logic is reused to rank jobs after filtering
-- **Dry-Run Mode**: A `--dry-run` flag enables safe testing of the scraping pipeline without side effects
-- **Board Selection**: The `--boards` argument allows targeting specific job boards (Indeed, YC, Wellfound) individually or all at once
+Job Tracker (`job_tracker.py`),Scraper Orchestrator (`run_job_scraper.py`),Job Deduplication,Job Status Tracking (new, applied, interview),Job Fit Scoring,Automated Job Application Generation,CSV Database,CLI Flags
 
 ## Details
 
-## Overview
+This phase marks the completion of the job scraping system for the [[Career-Datacenter]] project, integrating robust job tracking and orchestration capabilities.
 
-This commit (SHA: `8913d71`) adds two new modules to the Career Datacenter project, completing the job scraping system with persistence, orchestration, and automated application triggering.
+### 1. Job Tracker (`job_tracker.py`)
+This module is responsible for managing scraped job data, providing persistence and advanced querying:
 
-## Job Tracker (`job_tracker.py`)
+-   **Saves Scraped Jobs**: Stores job data into a CSV database.
+-   **Deduplication**: Prevents duplicate entries using a unique `job_id`.
+-   **Status Tracking**: Allows jobs to be marked with statuses such as 'new', 'applied', 'interview', etc.
+-   **Querying**: Jobs can be queried by their current status or by a calculated fit score.
+-   **Updates**: Facilitates updating job statuses and adding notes.
+-   **Summary Reports**: Generates overview reports based on tracked data.
 
-The job tracker provides a lightweight CSV-based database for managing scraped job listings.
+**Features:**
+-   **CSV Format**: Utilizes CSV for easy viewing and manual editing.
+-   **Detailed Tracking**: Tracks 20 distinct fields for each job entry.
+-   **High-Fit Queries**: Supports querying for jobs with a fit score of 8.0 or higher.
+-   **Statistics**: Provides statistics categorized by status, source, and fit score.
 
-### Key Features
-- **Persistence**: Saves all scraped jobs to `tracking/scraped_jobs.csv`
-- **Deduplication**: Prevents duplicate entries using `job_id` as a unique key
-- **20 Fields per Job**: Captures comprehensive metadata per listing
-- **Status Tracking**: Supports lifecycle states — `new`, `applied`, `interview`, and more
-- **Querying**: Retrieve jobs by status or fit score threshold
-- **Updates**: Allows updating job status and adding notes
-- **Reporting**: Generates summary statistics by status, source, and fit score
-- **High-Fit Queries**: Built-in support for querying jobs with fit score ≥8.0
+### 2. Scraper Orchestrator (`run_job_scraper.py`)
+This module serves as the central control for the job scraping workflow:
 
-### Test Mode
-```bash
-python job_tracker.py
-```
+-   **Main Entry Point**: Initiates the entire job scraping process.
+-   **Runs Configured Scrapers**: Executes all defined job scrapers (e.g., Indeed, YC, Wellfound).
+-   **Job Filtering**: Employs a [[JobFilter]] to process scraped jobs.
+-   **Job Scoring**: Uses an existing [[FitScorer]] to assign a fit score to each job.
+-   **Persistence**: Saves the processed job data to the [[JobTracker]].
+-   **Automated Applications**: Automatically flags and prepares applications for jobs with a fit score of 8.0 or higher.
 
-## Scraper Orchestrator (`run_job_scraper.py`)
+**Workflow:**
+1.  **Scrape**: Gathers job listings from all configured job boards.
+2.  **Filter**: Applies `MUST-HAVE` and `DEALBREAKER` filters to the scraped jobs.
+3.  **Score**: Calculates a fit score for each remaining job using the `fit_scorer`.
+4.  **Save**: Persists the filtered and scored jobs to `tracking/scraped_jobs.csv`.
+5.  **Flag**: Identifies high-fit jobs (≥8.0) for subsequent application generation.
+6.  **Report**: Generates a summary report of the scraping run.
 
-The orchestrator is the top-level entry point for the job scraping pipeline.
+**Usage:**
+-   `python run_job_scraper.py` # Runs all configured job boards.
+-   `python run_job_scraper.py --boards indeed` # Runs only the Indeed scraper.
+-   `python run_job_scraper.py --dry-run` # Executes in test mode without persisting data.
 
-### Workflow
-1. Scrape jobs from all configured boards (Indeed, YC, Wellfound)
-2. Apply MUST-HAVE and DEALBREAKER filters via `JobFilter`
-3. Score remaining jobs using `FitScorer`
-4. Save results to `tracking/scraped_jobs.csv` via `JobTracker`
-5. Flag jobs with fit score ≥8.0 for auto application generation
-6. Generate and output a summary report
+### Testing
+Both modules include standalone testing capabilities:
+-   `python job_tracker.py` # Initiates the job tracking test suite.
+-   `python run_job_scraper.py --dry-run` # Runs the scraper orchestrator in test mode.
 
-### Usage
-```bash
-# Scrape all boards
-python run_job_scraper.py
-
-# Scrape a specific board
-python run_job_scraper.py --boards indeed
-
-# Test without saving
-python run_job_scraper.py --dry-run
-```
-
-## File Changes
-
-| File | Additions | Deletions |
-|---|---|---|
-| `job_tracker.py` | +725 (combined) | 0 |
-| `run_job_scraper.py` | +725 (combined) | 0 |
-
-**Total:** +725 additions, 0 deletions across 2 files
-
-## Next Steps
-- Add a scheduler for daily automated scraping runs
+### Next Steps
+The immediate next step is to [[Add Scheduler for Daily Automation]] to enable daily, automated execution of the job scraping and tracking system.
 
 ## Related
 
-- [[Career Datacenter]]
-- [[Job Scraper Pipeline]]
-- [[FitScorer]]
-- [[JobFilter]]
-- [[Application Generator]]
-- [[Indeed Scraper]]
-- [[YC Job Board Scraper]]
-- [[Wellfound Scraper]]
-- [[CSV Job Database]]
-- [[Job Application Tracker]]
+[[Career-Datacenter]],[[Add Job Scraper Foundation (Phase 2.2 - Part 1)]],[[Add JobDeduplicator - Persistent Job ID Tracking]],[[Add JobTracker Unit Tests]],[[Add Job Search Configuration Templates to Career-Datacenter]],[[FitScorer]],[[batch_process_overnight.py` Enhancements: Job Description Parsing and CLI Flags]],[[JobFilter]],[[Add Scheduler for Daily Automation]]

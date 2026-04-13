@@ -1,126 +1,57 @@
 ---
 title: iOS Auth Flow with Supabase Magic Link Login (MarkPush)
 author: ai
-created_at: 2026-04-10T02:56:07.121Z
-last_ai_edit: 2026-04-10T02:56:07.121Z
+created_at: 2026-04-12T17:18:36.521Z
+last_ai_edit: 2026-04-12T17:18:36.521Z
 last_human_edit: null
-last_embedded_hash: b54713bdae7c27c4
+last_embedded_hash: cb90e08c87314dd4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-feat-ios-auth-flow-with-supabase-magic-link-login-cd7669.md]]"
 tags:
   - ios
-  - swift
-  - supabase
   - authentication
-  - magic-link
-  - otp
+  - supabase
+  - magiclink
   - tca
-  - composable-architecture
-  - deep-links
-  - swiftui
+  - deeplinking
   - markpush
-  - passwordless
-  - session-management
+  - swiftui
 ---
 
 
 # iOS Auth Flow with Supabase Magic Link Login (MarkPush)
 
-This commit implements a full authentication flow for the MarkPush iOS app using Supabase magic link (OTP) login. It introduces a TCA-based AuthFeature with a 4-step state machine, an AuthClient dependency wrapping Supabase Auth, and supporting UI screens for landing and magic link confirmation. Auth gating is applied at the app root, toggling between an authenticated TabView and unauthenticated AuthView.
+This feature introduces an iOS authentication flow for the MarkPush application using Supabase magic links. It involves a robust state machine, email validation, deep link handling, and session management, integrated seamlessly with the app's core features.
 
 ## Key Concepts
 
-- **Magic Link Authentication**: Passwordless login via a one-time-use email link (OTP), handled through Supabase Auth
-- **TCA (The Composable Architecture)**: State management pattern used to model AuthFeature as a finite state machine with side effects
-- **AuthClient Dependency**: A TCA dependency wrapper around Supabase Auth, exposing `signInWithOTP`, `handleDeepLink`, `restoreSession`, and `signOut`
-- **4-Step Auth State Machine**: States progress through `checking → landing → magicLinkSent → authenticated`
-- **Deep Link Handling**: Custom URL scheme `markpush://auth/callback` used to receive magic link callbacks from the mail client
-- **Auth Gating**: Root `AppFeature` conditionally renders `AuthView` or `TabView` based on authentication state
-- **Session Restore**: On app launch, the auth state checks for an existing Supabase session before showing the landing screen
-- **Design System**: Uses custom tokens (`mpBackground`, `mpAccent`) and typography (`Fraunces`, `Inter`) for consistent UI
+[[Supabase]],[[Magic Link Authentication]],[[The Composable Architecture (TCA)]],[[Deep Linking]],[[State Machines]],[[iOS Development]]
 
 ## Details
 
-## Overview
+This implementation details the integration of a user authentication flow into the MarkPush iOS application, leveraging Supabase for backend services and a magic link login mechanism. The architecture is built around several key components:
 
-Commit `d43897a` in the `rahilsinghi/MarkPush` repository (authored 2026-03-17 by Rahil Singhi) adds a complete iOS authentication flow powered by Supabase magic link login. The change spans 12 files with +620 additions and -40 deletions.
+*   **AuthClient**: This component acts as a wrapper around the Supabase authentication client. It is implemented as a The Composable Architecture (TCA) dependency, providing functionalities such as `signInWithOTP`, `handleDeepLink`, `restoreSession`, and `signOut`. It securely retrieves Supabase credentials (URL and anonymous key) from `Info.plist`.
 
----
+*   **AuthFeature**: This feature module manages the entire authentication state as a 4-step state machine:
+    1.  `checking`: Initial state, often verifying an existing session.
+    2.  `landing`: User input for email.
+    3.  `magicLinkSent`: After an OTP is sent, awaiting user action.
+    4.  `authenticated`: User is successfully logged in.
+    Key actions handled include email validation, sending OTPs, processing deep link callbacks, session restoration, resend mechanisms, and comprehensive error handling.
 
-## Components
+*   **AuthView**: This is the user interface for the authentication process, designed with the application's branding. It includes:
+    *   A landing screen featuring the application logo, an email input field, and a "Continue with Email" call-to-action (CTA).
+    *   A magic link confirmation screen, prompting the user to "Open Mail" and offering options to resend the link or use a different email. It utilizes the app's design system, including `mpBackground`, `mpAccent`, and custom fonts like Fraunces and Inter.
 
-### AuthClient
-- A TCA dependency that wraps Supabase Auth SDK calls
-- Exposes four async operations: `signInWithOTP`, `handleDeepLink`, `restoreSession`, `signOut`
-- Reads `SupabaseURL` and `SupabaseAnonKey` from `Info.plist` for configuration
+*   **AppFeature**: The root feature of the application, responsible for authentication gating. It conditionally presents the `AuthView` when the user is unauthenticated and switches to the `TabView` once authenticated. It also forwards incoming deep links to the `AuthFeature` for processing and resets the authentication state upon user sign-out.
 
-### AuthFeature
-- Implements a 4-step state machine:
-  1. **checking** — Attempts to restore an existing session on launch
-  2. **landing** — Displays the email input screen for unauthenticated users
-  3. **magicLinkSent** — Shown after OTP is dispatched; prompts user to check email
-  4. **authenticated** — Session confirmed; app transitions to main TabView
-- Handles: email validation, OTP send, deep link callback parsing, session restore, resend logic, and error states
+*   **MarkPushApp**: The main application entry point, which includes an `.onOpenURL` handler specifically configured to intercept `markpush://auth/callback` deep links.
 
-### AuthView
-- **Landing Screen**: Displays app logo, email text input, and a "Continue with Email" CTA button
-- **Magic Link Confirmation Screen**: Provides "Open Mail", "Resend", and "Use Other Email" actions
-- Styled using the MarkPush design system (`mpBackground`, `mpAccent`, `Fraunces`, `Inter` fonts)
+*   **Info.plist**: Configured to register the `markpush://` URL scheme and store the necessary Supabase project credentials (URL and anonymous key).
 
-### AppFeature
-- Acts as the root feature; gates access based on auth state
-- Renders `AuthView` when unauthenticated, `TabView` when authenticated
-- Forwards deep link URLs to `AuthFeature` for processing
-- Resets auth state upon sign out
-
-### MarkPushApp
-- Registers `.onOpenURL` handler to intercept `markpush://auth/callback` deep links and route them through the TCA store
-
-### Info.plist
-- Declares the `markpush://` custom URL scheme
-- Stores Supabase project credentials (`SupabaseURL`, `SupabaseAnonKey`)
-
-### SettingsFeature / SettingsView
-- Adds an **Account** section displaying the authenticated user's email
-- Includes a **Sign Out** button with a loading/in-progress state
-
----
-
-## Data Flow
-
-```
-App Launch
-  └─ AppFeature dispatches restoreSession
-       ├─ Session found → authenticated state → TabView
-       └─ No session → landing state → AuthView
-
-Email Submitted
-  └─ signInWithOTP called → magicLinkSent state
-
-User taps magic link in Mail
-  └─ markpush://auth/callback deep link fired
-       └─ MarkPushApp.onOpenURL → AppFeature → AuthFeature.handleDeepLink
-            └─ Session confirmed → authenticated state
-```
-
----
-
-## Configuration
-
-| Key | Source |
-|---|---|
-| `SupabaseURL` | `Info.plist` |
-| `SupabaseAnonKey` | `Info.plist` |
-| URL Scheme | `markpush://` (registered in `Info.plist`) |
+*   **SettingsFeature/View**: Provides an account management section within the application settings. It displays the user's email address and includes a "Sign Out" button with a visible loading state during the sign-out process.
 
 ## Related
 
-- [[Supabase Authentication]]
-- [[The Composable Architecture (TCA)]]
-- [[Magic Link / Passwordless Login]]
-- [[Deep Link Handling in iOS]]
-- [[MarkPush iOS App]]
-- [[Session Management]]
-- [[SwiftUI Design Systems]]
-- [[One-Time Password (OTP)]]
-- [[AppFeature Root Architecture]]
+[[MarkPush]],[[Add .coverage and htmlcov to Gitignore]],[[API: Embedded HTTP Server with Graceful Shutdown]],[[Chore: Set Turbopack Root for Consistent Monorepo Compilation]],[[CLAUDE.md Update: E2E Findings, Transport Decisions, and npm Publish Status in MarkPush]],[[Client and Feed Cleanup (MarkPush, 9ae0944)]],[[Commit e4c9e16: MarkPush Project Screenshots]],[[Commit: Add MarkPush Project Screenshots]],[[SwiftUI]]

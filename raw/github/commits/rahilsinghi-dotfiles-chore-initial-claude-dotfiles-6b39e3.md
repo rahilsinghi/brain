@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/dotfiles:39654f7
-ingested_at: 2026-04-10T15:04:13.406Z
-parsed_at: 2026-04-10T15:04:13.406Z
-compiled_to: "[[Initial Claude Dotfiles Setup]]"
-processed_at: 2026-04-10T15:04:37.447Z
+ingested_at: 2026-04-13T17:05:37.815Z
+parsed_at: 2026-04-13T17:05:37.815Z
+compiled_to: "[[Initial CLAUDE Dotfiles Synchronization (Commit 39654f7)]]"
+processed_at: 2026-04-13T17:06:09.911Z
 retry_count: 0
 last_error: null
 compile_progress: null

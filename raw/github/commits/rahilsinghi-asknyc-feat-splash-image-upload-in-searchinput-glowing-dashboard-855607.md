@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:da6b8e7
-ingested_at: 2026-04-10T15:04:13.419Z
-parsed_at: 2026-04-10T15:04:13.419Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.821Z
+parsed_at: 2026-04-13T17:05:37.821Z
+compiled_to: "[[askNYC: Image Upload, Thumbnail Preview, and Glowing Dashboard Button on Splash Page]]"
+processed_at: 2026-04-13T17:14:11.786Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(splash): image upload in SearchInput + glowing dashboard launch button
 

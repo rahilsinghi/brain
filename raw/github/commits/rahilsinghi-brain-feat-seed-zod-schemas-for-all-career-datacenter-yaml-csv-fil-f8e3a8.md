@@ -2,12 +2,12 @@
 status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:f720e83
-ingested_at: 2026-04-10T11:03:33.633Z
-parsed_at: 2026-04-10T11:03:33.633Z
+ingested_at: 2026-04-13T16:05:10.266Z
+parsed_at: 2026-04-13T16:05:10.266Z
 compiled_to: null
 processed_at: null
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3GrRjrZLCFCAgLKCmu"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24VZdCfoQme95RnW1zc"}
 compile_progress: null
 ---
 

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:d62666f
-ingested_at: 2026-04-10T15:04:13.373Z
-parsed_at: 2026-04-10T15:04:13.373Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.747Z
+parsed_at: 2026-04-13T17:05:37.747Z
+compiled_to: "[[Gemini LLM Provider with Dual-Key Rotation and Auto-Fallback in Brain Project]]"
+processed_at: 2026-04-13T17:26:29.512Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(llm): add Gemini provider with dual-key rotation and auto-fallback
 

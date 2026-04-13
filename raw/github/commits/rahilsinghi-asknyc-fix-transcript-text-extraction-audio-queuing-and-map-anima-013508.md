@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:fe2a48a
-ingested_at: 2026-04-10T15:04:13.414Z
-parsed_at: 2026-04-10T15:04:13.414Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.820Z
+parsed_at: 2026-04-13T17:05:37.820Z
+compiled_to: "[[Transcript Text Extraction, Audio Queuing, and Map Animation Fixes in askNYC]]"
+processed_at: 2026-04-13T17:39:38.881Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: transcript text extraction, audio queuing, and map animations
 

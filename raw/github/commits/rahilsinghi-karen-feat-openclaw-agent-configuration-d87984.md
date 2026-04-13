@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:b9a1797
-ingested_at: 2026-04-10T15:04:13.404Z
-parsed_at: 2026-04-10T15:04:13.404Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.814Z
+parsed_at: 2026-04-13T17:05:37.814Z
+compiled_to: "[[OpenClaw Agent Configuration for Karen Project]]"
+processed_at: 2026-04-13T17:37:07.932Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat: OpenClaw agent configuration
 

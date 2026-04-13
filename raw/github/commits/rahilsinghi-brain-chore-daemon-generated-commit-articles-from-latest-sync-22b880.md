@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:1e99288
-ingested_at: 2026-04-10T15:04:13.366Z
-parsed_at: 2026-04-10T15:04:13.366Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.743Z
+parsed_at: 2026-04-13T17:05:37.743Z
+compiled_to: "[[Daemon-Generated Commit Articles Sync (Brain Project)]]"
+processed_at: 2026-04-13T17:25:04.416Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # chore: daemon-generated commit articles from latest sync
 

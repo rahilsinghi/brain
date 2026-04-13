@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:a73aab7
-ingested_at: 2026-04-10T12:03:43.546Z
-parsed_at: 2026-04-10T12:03:43.546Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv4M2ctg8UR2u2gWdber"}
+ingested_at: 2026-04-13T17:05:37.779Z
+parsed_at: 2026-04-13T17:05:37.779Z
+compiled_to: "[[Define Shared Types for Brain Project Frontmatter, Configuration, and Compile Strategy]]"
+processed_at: 2026-04-13T17:36:37.768Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

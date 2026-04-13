@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:b5dc599
-ingested_at: 2026-04-10T15:04:13.395Z
-parsed_at: 2026-04-10T15:04:13.395Z
-compiled_to: "[[Escalation Ladder v2 Implementation Plan]]"
-processed_at: 2026-04-10T15:05:49.129Z
+ingested_at: 2026-04-13T17:05:37.809Z
+parsed_at: 2026-04-13T17:05:37.809Z
+compiled_to: "[[Escalation Ladder V2 Implementation Plan]]"
+processed_at: 2026-04-13T17:08:16.123Z
 retry_count: 0
 last_error: null
 compile_progress: null

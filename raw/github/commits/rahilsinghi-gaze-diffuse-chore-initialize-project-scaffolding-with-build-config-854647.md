@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:f95d8fa
-ingested_at: 2026-04-10T15:04:13.384Z
-parsed_at: 2026-04-10T15:04:13.384Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.801Z
+parsed_at: 2026-04-13T17:05:37.801Z
+compiled_to: "[[Project Scaffolding and AI Context Initialization for Gaze-Diffuse]]"
+processed_at: 2026-04-13T17:14:41.367Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # chore: initialize project scaffolding with build config and AI context
 

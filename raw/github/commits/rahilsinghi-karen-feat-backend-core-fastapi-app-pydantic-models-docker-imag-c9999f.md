@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:112eba0
-ingested_at: 2026-04-10T15:04:13.404Z
-parsed_at: 2026-04-10T15:04:13.404Z
-compiled_to: "[[Backend Core Implementation: FastAPI, Pydantic, and Docker]]"
-processed_at: 2026-04-10T15:06:33.061Z
+ingested_at: 2026-04-13T17:05:37.813Z
+parsed_at: 2026-04-13T17:05:37.813Z
+compiled_to: "[[Karen Project: Initial Backend Core with FastAPI, Pydantic, and Docker]]"
+processed_at: 2026-04-13T17:09:33.075Z
 retry_count: 0
 last_error: null
 compile_progress: null

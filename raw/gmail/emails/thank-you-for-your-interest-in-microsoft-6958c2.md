@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: gmail
 source_id: 19d77d0f5d284c78
 ingested_at: 2026-04-10T15:04:14.101Z
 parsed_at: 2026-04-10T15:04:14.101Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Microsoft Job Application Rejection (Software Engineer - AI)]]"
+processed_at: 2026-04-10T15:24:43.712Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Thank you for your interest in Microsoft
 

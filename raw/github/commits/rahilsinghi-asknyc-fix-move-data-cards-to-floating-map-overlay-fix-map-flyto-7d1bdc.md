@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:202fec2
-ingested_at: 2026-04-10T15:04:13.413Z
-parsed_at: 2026-04-10T15:04:13.413Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.819Z
+parsed_at: 2026-04-13T17:05:37.819Z
+compiled_to: "[[askNYC: Floating Data Cards & Map FlyTo Fix (Commit 202fec2)]]"
+processed_at: 2026-04-13T17:22:06.546Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: move data cards to floating map overlay + fix map flyTo
 

@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:d25ebf1
-ingested_at: 2026-04-10T11:03:33.641Z
-parsed_at: 2026-04-10T11:03:33.641Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3HgppRVYCqh815uqbB"}
+ingested_at: 2026-04-13T17:05:37.766Z
+parsed_at: 2026-04-13T17:05:37.766Z
+compiled_to: "[[Installation of LanceDB, Transformers.js, and Apache Arrow for Brain Project Phase 2]]"
+processed_at: 2026-04-13T17:34:02.598Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

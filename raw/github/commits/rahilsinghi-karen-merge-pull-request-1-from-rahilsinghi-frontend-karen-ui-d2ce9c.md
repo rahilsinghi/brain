@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:33ad07a
-ingested_at: 2026-04-10T15:04:13.400Z
-parsed_at: 2026-04-10T15:04:13.400Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.810Z
+parsed_at: 2026-04-13T17:05:37.810Z
+compiled_to: "[[Authentic Command Center and Escalation Fortress UI Implementation (Karen Project)]]"
+processed_at: 2026-04-13T17:23:25.774Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Merge pull request #1 from rahilsinghi/frontend/karen/ui
 

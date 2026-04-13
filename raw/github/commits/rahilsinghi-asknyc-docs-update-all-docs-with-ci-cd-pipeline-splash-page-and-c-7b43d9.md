@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:c41ac69
-ingested_at: 2026-04-10T15:04:13.421Z
-parsed_at: 2026-04-10T15:04:13.421Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.823Z
+parsed_at: 2026-04-13T17:05:37.823Z
+compiled_to: "[[askNYC Documentation Update: CI/CD, Splash Page, and Project Progress]]"
+processed_at: 2026-04-13T17:45:07.916Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: update all docs with CI/CD pipeline, splash page, and current progress
 

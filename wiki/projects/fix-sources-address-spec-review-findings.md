@@ -1,65 +1,42 @@
 ---
 title: "fix(sources): address spec review findings"
 author: ai
-created_at: 2026-04-10T02:20:48.525Z
-last_ai_edit: 2026-04-10T02:20:48.525Z
+created_at: 2026-04-13T15:14:26.954Z
+last_ai_edit: 2026-04-13T15:14:26.954Z
 last_human_edit: null
-last_embedded_hash: e29c5de20a21100d
+last_embedded_hash: 9070c536e6b40683
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-sources-address-spec-review-findings-ecb8d2.md]]"
 tags:
-  - bugfix
+  - fix
   - sources
+  - spec review
   - gmail
   - github
   - cli
-  - spec-compliance
   - brain
-  - rahilsinghi
+  - development
+  - bugfix
 ---
 
 
 # fix(sources): address spec review findings
 
-A bug-fix commit in the rahilsinghi/brain repository addressing three spec compliance issues found during review. Changes correct the Gmail search query filter, GitHub's default minimum stars threshold, and the CLI's main() function parameter handling. The fix was co-authored with Claude Opus 4.6.
+This commit addresses findings from a specification review, implementing crucial fixes across various data sources within the Brain project. It corrects the Gmail search query, updates the default minimum stars for GitHub repositories, and refactors the CLI's `main()` function to accept sources as a parameter.
 
 ## Key Concepts
 
-- **Spec Compliance**: Aligning implementation behavior to match documented specifications
-- **Gmail Label Filter**: Adding `label:Brain OR is:starred` to ensure correct email source filtering
-- **GitHub DEFAULT_MIN_STARS**: Correcting the minimum star threshold from 50 to 100 per spec
-- **CLI Parameter Handling**: Refactoring `main()` to accept sources as a parameter rather than using an empty no-op array
-- **Source Integrations**: Gmail and GitHub as data sources in the brain system
+Specification Review,Data Sources,Gmail Integration,GitHub Integration,Command Line Interface (CLI),Query Parameters,Default Values
 
 ## Details
 
-## Overview
+This commit, `6abc2aa`, from the `rahilsinghi/brain` repository, implemented fixes based on a specification review. Authored by Rahil Singhi, with co-authorship from Claude Opus 4.6, the changes involved three files with a net addition of 6 lines and 4 deletions.
 
-Commit `6abc2aa` (2026-04-07) applies targeted fixes to three source integrations in the `rahilsinghi/brain` repository following a spec review. The changes affect 3 files with 6 additions and 4 deletions.
-
-## Changes
-
-### Gmail: Search Query Fix
-- **Problem:** The Gmail source was missing the `label:Brain` filter in its search query.
-- **Fix:** Updated the query to `label:Brain OR is:starred`, ensuring only relevant labeled or starred emails are retrieved.
-
-### GitHub: DEFAULT_MIN_STARS Correction
-- **Problem:** The default minimum stars threshold was set to `50`, which did not match the specification.
-- **Fix:** Changed `DEFAULT_MIN_STARS` from `50` to `100` to align with the spec requirement.
-
-### CLI: main() Parameter Refactor
-- **Problem:** The `main()` function was using an empty no-op array for sources instead of accepting sources as a parameter.
-- **Fix:** Refactored `main()` to accept sources as an explicit parameter, improving configurability and correctness.
-
-## Authorship
-- **Author:** Rahil Singhi
-- **Co-Author:** Claude Opus 4.6 (`noreply@anthropic.com`)
+Specific adjustments include:
+*   **Gmail Source**: The search query was updated to correctly include the `label:Brain OR is:starred` filter, which was previously missing, ensuring more accurate email retrieval.
+*   **GitHub Source**: The `DEFAULT_MIN_STARS` value was adjusted from `50` to `100` to align with the project's specification.
+*   **CLI**: The `main()` function in the command-line interface was modified to accept `sources` as a parameter, replacing an empty no-op array and improving functionality.
 
 ## Related
 
-- [[Brain Repository]]
-- [[Gmail Source Integration]]
-- [[GitHub Source Integration]]
-- [[CLI Design]]
-- [[Spec Review Process]]
-- [[Source Filtering]]
+[[brain — Git Activity]],[[Claude Opus 4.6]],[[Brain Project]],[[CLI]],[[Gmail]],[[GitHub]],[[Spec Review]],[[Sources]]

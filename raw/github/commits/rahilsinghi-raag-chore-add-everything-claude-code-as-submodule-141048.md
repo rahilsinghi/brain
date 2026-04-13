@@ -1,15 +1,17 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/raag:ae074b3
-ingested_at: 2026-04-10T10:04:00.845Z
-parsed_at: 2026-04-10T10:04:00.845Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T16:05:10.312Z
+parsed_at: 2026-04-13T16:05:10.312Z
+compiled_to: "[[Add `everything-claude-code` as Git Submodule to `raag`]]"
+processed_at: 2026-04-13T16:11:13.219Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3HyB5JtXPEsZpPA8zD"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24d6R4c9aVqWe3Hz1SK"}
 compile_progress: null
 ---
+
+
 
 
 

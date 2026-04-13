@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:b07cd80
-ingested_at: 2026-04-10T12:03:43.550Z
-parsed_at: 2026-04-10T12:03:43.550Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv4L1G1UFgB7SMivWjcF"}
+ingested_at: 2026-04-13T17:05:37.796Z
+parsed_at: 2026-04-13T17:05:37.796Z
+compiled_to: "[[Strengthening AR Baseline Tests in Gaze-Diffuse]]"
+processed_at: 2026-04-13T17:07:55.103Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

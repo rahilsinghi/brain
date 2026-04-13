@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:49d45cc
-ingested_at: 2026-04-10T15:04:13.423Z
-parsed_at: 2026-04-10T15:04:13.423Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.824Z
+parsed_at: 2026-04-13T17:05:37.824Z
+compiled_to: "[[askNYC Frontend Build Fixes Post Merge (2026-03-28)]]"
+processed_at: 2026-04-13T17:49:15.692Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: resolve build issues from frontend/new merge
 

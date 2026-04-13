@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:b56fbf4
-ingested_at: 2026-04-10T15:04:13.411Z
-parsed_at: 2026-04-10T15:04:13.411Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.818Z
+parsed_at: 2026-04-13T17:05:37.818Z
+compiled_to: "[[askNYC: Wire Real Session Data and Fix Navigation (Insights & Archive)]]"
+processed_at: 2026-04-13T17:48:04.077Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix(insights+archive): wire real session data + fix navigation
 

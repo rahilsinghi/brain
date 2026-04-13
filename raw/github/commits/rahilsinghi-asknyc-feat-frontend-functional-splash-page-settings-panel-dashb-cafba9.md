@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:1d92c56
-ingested_at: 2026-04-10T15:04:13.421Z
-parsed_at: 2026-04-10T15:04:13.421Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.823Z
+parsed_at: 2026-04-13T17:05:37.823Z
+compiled_to: "[[askNYC: Functional Splash Page, Dashboard Query Params, and Settings Panel]]"
+processed_at: 2026-04-13T17:34:58.306Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(frontend): functional splash page, settings panel, dashboard query params
 

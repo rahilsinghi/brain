@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:2de6e78
-ingested_at: 2026-04-10T15:04:13.395Z
-parsed_at: 2026-04-10T15:04:13.395Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.809Z
+parsed_at: 2026-04-13T17:05:37.809Z
+compiled_to: "[[Karen Project: V2 Channel Types, SSE Events, Research Cache, and Legal Letter Template Additions]]"
+processed_at: 2026-04-13T17:39:54.897Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(schemas): add v2 channel types, SSE events, research cache, legal letter template
 

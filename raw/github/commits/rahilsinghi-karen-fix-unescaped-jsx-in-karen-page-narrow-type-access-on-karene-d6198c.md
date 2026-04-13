@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:edfae65
-ingested_at: 2026-04-10T15:04:13.401Z
-parsed_at: 2026-04-10T15:04:13.401Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.811Z
+parsed_at: 2026-04-13T17:05:37.811Z
+compiled_to: "[[Fix: Unescaped JSX and Narrowed Type Access in Karen Project]]"
+processed_at: 2026-04-13T17:24:56.634Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: unescaped JSX in karen page, narrow type access on KarenEvent.level
 

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:e46df7f
-ingested_at: 2026-04-10T15:04:13.413Z
-parsed_at: 2026-04-10T15:04:13.413Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.819Z
+parsed_at: 2026-04-13T17:05:37.819Z
+compiled_to: "[[askNYC: Collapsible Sidebar and Repositioned Floating Cards]]"
+processed_at: 2026-04-13T17:44:00.311Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix(dashboard): collapsible sidebar + reposition floating cards
 

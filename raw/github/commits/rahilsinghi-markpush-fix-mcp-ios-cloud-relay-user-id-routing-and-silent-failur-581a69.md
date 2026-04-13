@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:c899cdb
-ingested_at: 2026-04-10T15:04:13.431Z
-parsed_at: 2026-04-10T15:04:13.431Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.829Z
+parsed_at: 2026-04-13T17:05:37.829Z
+compiled_to: "[[Fix: Cloud Relay User ID Routing and Silent Failure Logging in MarkPush (MCP, iOS)]]"
+processed_at: 2026-04-13T17:17:52.443Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix(mcp,ios): cloud relay user_id routing and silent failure logging
 

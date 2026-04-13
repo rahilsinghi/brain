@@ -1,17 +1,15 @@
 ---
-status: failed
+status: pending
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:04d0e8a
-ingested_at: 2026-04-10T11:03:33.625Z
-parsed_at: 2026-04-10T11:03:33.625Z
+ingested_at: 2026-04-13T18:05:31.371Z
+parsed_at: 2026-04-13T18:05:31.371Z
 compiled_to: null
 processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3HXbgutJJYrH5CgLBi"}
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
-
-
 
 # feat(telegram): add TelegramConfig type and config defaults
 

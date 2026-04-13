@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:600aa70
-ingested_at: 2026-04-10T15:04:13.381Z
-parsed_at: 2026-04-10T15:04:13.381Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.752Z
+parsed_at: 2026-04-13T17:05:37.752Z
+compiled_to: "[[Marp Slide Generation with Error Handling and Cleanup]]"
+processed_at: 2026-04-13T17:41:42.274Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(output): add Marp slide generation with error handling and cleanup
 

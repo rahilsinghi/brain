@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:79445dd
-ingested_at: 2026-04-10T15:04:13.408Z
-parsed_at: 2026-04-10T15:04:13.408Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.816Z
+parsed_at: 2026-04-13T17:05:37.816Z
+compiled_to: "[[askNYC: Mobile UI Enhancements & Pipeline Fixes (79445dd)]]"
+processed_at: 2026-04-13T17:36:31.169Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Merge pull request #8 from rahilsinghi/bharath/bug_fix
 

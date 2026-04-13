@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/portfolio:841eb33
-ingested_at: 2026-04-10T15:04:13.390Z
-parsed_at: 2026-04-10T15:04:13.390Z
-compiled_to: "[[Rahil Singhi Portfolio: Commit 841eb33 (Open Matter Addition)]]"
-processed_at: 2026-04-10T15:04:23.648Z
+ingested_at: 2026-04-13T18:05:31.393Z
+parsed_at: 2026-04-13T18:05:31.393Z
+compiled_to: "[[Karen Project: Add Open Matter for Rahil Singhi]]"
+processed_at: 2026-04-13T18:05:50.363Z
 retry_count: 0
 last_error: null
 compile_progress: null

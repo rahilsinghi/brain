@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:5e9c92f
-ingested_at: 2026-04-10T15:04:13.384Z
-parsed_at: 2026-04-10T15:04:13.384Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.757Z
+parsed_at: 2026-04-13T17:05:37.757Z
+compiled_to: "[[Cluster Type and Voice Configuration in Brain Project]]"
+processed_at: 2026-04-13T17:11:21.991Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(voice): add Cluster type and transcription/voice config
 

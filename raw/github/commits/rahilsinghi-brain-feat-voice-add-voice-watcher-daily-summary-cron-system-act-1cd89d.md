@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:9437491
-ingested_at: 2026-04-10T15:04:13.381Z
-parsed_at: 2026-04-10T15:04:13.381Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.754Z
+parsed_at: 2026-04-13T17:05:37.754Z
+compiled_to: "[[Voice Watcher, Daily Summary Cron, and System Activity Logging (Brain Project)]]"
+processed_at: 2026-04-13T17:43:54.189Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(voice): add voice watcher, daily summary cron, system activity logging
 

@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/imessage-scheduler:b571b2c
-ingested_at: 2026-04-10T11:03:33.644Z
-parsed_at: 2026-04-10T11:03:33.644Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3JJrFU7gxTYMGejFG7"}
+ingested_at: 2026-04-13T17:05:37.841Z
+parsed_at: 2026-04-13T17:05:37.841Z
+compiled_to: "[[Fix: Add *.db-shm to .gitignore (iMessage Scheduler)]]"
+processed_at: 2026-04-13T17:44:44.829Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:37f3379
-ingested_at: 2026-04-10T15:04:13.431Z
-parsed_at: 2026-04-10T15:04:13.431Z
-compiled_to: "[[Documentation Update for MarkPush: iOS Deployment, Transport, and Macro Trust]]"
-processed_at: 2026-04-10T15:04:55.573Z
+ingested_at: 2026-04-13T17:05:37.829Z
+parsed_at: 2026-04-13T17:05:37.829Z
+compiled_to: "[[MarkPush: Device Deployment Guide, Transport Notes, and Macro Trust Fix Documentation]]"
+processed_at: 2026-04-13T17:06:29.947Z
 retry_count: 0
 last_error: null
 compile_progress: null

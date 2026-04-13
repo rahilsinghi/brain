@@ -1,85 +1,43 @@
 ---
 title: Discography Seeding and Smart Download Scripts (raag)
 author: ai
-created_at: 2026-04-10T02:08:37.499Z
-last_ai_edit: 2026-04-10T02:08:37.499Z
+created_at: 2026-04-13T15:06:23.330Z
+last_ai_edit: 2026-04-13T15:06:23.330Z
 last_human_edit: null
-last_embedded_hash: 97cbf2af12f77cb9
+last_embedded_hash: 54975519abf6af9f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-add-discography-seeding-and-smart-download-scripts-628943.md]]"
 tags:
-  - raag
   - discography
-  - seeding
-  - youtube
-  - download
-  - fuzzy-matching
-  - seedhe-maut
-  - music
-  - python
+  - music management
   - automation
+  - python
+  - youtube
   - database
+  - file organization
+  - audio
+  - raag
 ---
 
 
 # Discography Seeding and Smart Download Scripts (raag)
 
-This commit introduces a suite of scripts to the raag project that automate the population, downloading, and organization of music metadata. The `seed_discography.py` script pre-populates a database with the full Seedhe Maut discography (9 albums, 135 songs), while `smart_download.py` and `reorganize_audio.py` leverage that metadata for accurate YouTube downloads and file organization respectively.
+This commit introduces new Python scripts for the [[raag]] project, automating the management of music discographies. It enables pre-populating a database with artist metadata, intelligently downloading tracks from YouTube, and organizing existing audio files using fuzzy matching.
 
 ## Key Concepts
 
-- **Discography Seeding:** Pre-populating a database with structured music metadata (albums, tracks) to serve as a source of truth for downstream operations
-- **Smart Downloading:** Using database metadata to perform targeted, per-track YouTube searches rather than relying on manual or fuzzy queries
-- **Fuzzy File Matching:** Algorithmically matching existing audio files to database entries using approximate string matching to enable correct file reorganization
-- **Database-Driven Automation:** Using a local DB as the coordination layer between metadata, downloading, and file management scripts
+Discography Seeding,Smart Downloading,Audio File Organization,Database Pre-population,YouTube Integration,Fuzzy Matching,Music Metadata Management
 
 ## Details
 
-## Overview
+This feature, committed to the [[raag]] repository under SHA `486d124`, significantly enhances the project's ability to manage music content. It comprises three main Python scripts:
 
-Commit `486d124` to the `rahilsinghi/raag` repository adds 924 lines across 4 new files, establishing a data-driven pipeline for managing a local music library centered on the Seedhe Maut discography.
+*   `seed_discography.py`: This script is responsible for pre-populating the project's database with comprehensive discography metadata. An initial run successfully added the full [[Seedhe Maut]] discography, including 9 albums and 135 individual songs, ensuring a rich dataset for subsequent operations.
+*   `smart_download.py`: Utilizing the metadata stored in the database, this script intelligently searches YouTube for each track and facilitates accurate downloads. This automates the process of acquiring high-quality audio content based on verified discography information.
+*   `reorganize_audio.py`: For users with existing local audio files, this script provides a crucial utility. It employs fuzzy-matching techniques to identify and link existing files to their corresponding entries in the database, then correctly moves and organizes them according to the structured metadata.
 
-## Scripts Added
-
-### `seed_discography.py`
-Pre-populates the application database with the complete Seedhe Maut discography:
-- **9 albums** with associated metadata
-- **135 songs** with per-track details
-- Serves as the canonical data source for all other scripts in the pipeline
-
-### `smart_download.py`
-- Reads track metadata from the database
-- Performs per-track YouTube searches to find accurate matches
-- Downloads audio in an organized, metadata-aware manner
-- Avoids the inaccuracies of bulk or playlist-based downloads
-
-### `reorganize_audio.py`
-- Scans existing audio files on disk
-- Uses fuzzy matching to associate files with their corresponding database entries
-- Moves and renames files to match the expected library structure
-
-## Commit Details
-
-| Field | Value |
-|---|---|
-| Repository | rahilsinghi/raag |
-| SHA | 486d124 |
-| Date | 2026-03-04 |
-| Author | Rahil Singhi |
-| Co-Author | Claude Opus 4.6 |
-| Files Changed | 4 |
-| Additions | +924 |
-| Deletions | 0 |
-
-## Notes
-This commit was co-authored with Claude Opus 4.6, indicating AI-assisted development.
+This functionality streamlines music library management, from data acquisition to local file organization.
 
 ## Related
 
-- [[raag Project]]
-- [[Seedhe Maut Discography]]
-- [[YouTube Audio Downloading]]
-- [[Fuzzy String Matching]]
-- [[Database Seeding Patterns]]
-- [[Music Library Management]]
-- [[AI-Assisted Development]]
+[[raag]],[[Seedhe Maut]],[[Claude Opus 4.6]]

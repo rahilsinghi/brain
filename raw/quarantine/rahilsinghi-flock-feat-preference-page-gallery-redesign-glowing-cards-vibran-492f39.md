@@ -2,14 +2,14 @@
 status: quarantined
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Flock:0c432a6
-ingested_at: 2026-04-09T22:03:19.497Z
-parsed_at: 2026-04-09T22:03:19.497Z
+ingested_at: 2026-04-13T16:05:10.298Z
+parsed_at: 2026-04-13T16:05:10.298Z
 compiled_to: null
 processed_at: null
 retry_count: 2
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuM6PKeLGvWPZajxseAj"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24pFRbe9Y9E3XwbWVsz"}
 compile_progress: null
-quarantined_at: 2026-04-10T03:03:02.825Z
+quarantined_at: 2026-04-13T16:13:44.279Z
 ---
 
 

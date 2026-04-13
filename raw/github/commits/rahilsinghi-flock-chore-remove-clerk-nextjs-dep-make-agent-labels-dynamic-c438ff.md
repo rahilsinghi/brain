@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Flock:5d9ae01
-ingested_at: 2026-04-10T10:04:00.839Z
-parsed_at: 2026-04-10T10:04:00.839Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3GFGtpDcpgQ6da9JNk"}
+ingested_at: 2026-04-13T16:05:10.307Z
+parsed_at: 2026-04-13T16:05:10.307Z
+compiled_to: "[[Flock: Remove @clerk/nextjs Dependency and Implement Dynamic Agent Labels]]"
+processed_at: 2026-04-13T16:06:02.719Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

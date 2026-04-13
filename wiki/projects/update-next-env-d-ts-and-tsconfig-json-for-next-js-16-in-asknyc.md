@@ -1,34 +1,34 @@
 ---
-title: Update next-env.d.ts and tsconfig.json for Next.js 16 in askNYC
+title: Update `next-env.d.ts` and `tsconfig.json` for Next.js 16 in askNYC
 author: ai
-created_at: 2026-04-10T15:06:06.945Z
-last_ai_edit: 2026-04-10T15:06:06.945Z
+created_at: 2026-04-12T17:09:35.870Z
+last_ai_edit: 2026-04-12T17:09:35.870Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0c550e2b44928bbc
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-chore-update-next-envdts-and-tsconfigjson-for-nextjs-16-b413c7.md]]"
 tags:
   - next.js
-  - typescript
   - configuration
-  - git
-  - chore
+  - typescript
   - asknyc
-  - project update
+  - commit
+  - chore
 ---
 
-# Update next-env.d.ts and tsconfig.json for Next.js 16 in askNYC
 
-This article documents a `chore` commit in the `rahilsinghi/askNYC` repository. The commit focuses on updating the `next-env.d.ts` and `tsconfig.json` configuration files, specifically to align with requirements or best practices for Next.js 16.
+# Update `next-env.d.ts` and `tsconfig.json` for Next.js 16 in askNYC
+
+This commit (`eb38d51`) details the update of configuration files, `next-env.d.ts` and `tsconfig.json`, within the `rahilsinghi/askNYC` repository. These modifications ensure compatibility and optimal functionality with the [[Next.js 16]] framework.
 
 ## Key Concepts
 
-* Next.js,* TypeScript,* next-env.d.ts,* tsconfig.json,* Git Chore Commit
+`next-env.d.ts`,`tsconfig.json`,Next.js 16,Configuration Update,Type Definitions
 
 ## Details
 
-This specific commit, identified by SHA `eb38d51`, was authored by [[Rahil Singhi]] on `2026-03-28T03:50:09Z`. It is categorized as a `chore` commit, indicating maintenance or routine updates. The primary objective was to modify two crucial configuration files: `next-env.d.ts` and `tsconfig.json`. These updates were performed within the `rahilsinghi/askNYC` repository and are specifically tied to ensuring compatibility or optimal configuration with [[Next.js 16]]. The changes involved 4 additions and 2 deletions across the two files.
+The commit `eb38d51`, authored by Rahil Singhi on March 28, 2026, involved essential updates to the `next-env.d.ts` and `tsconfig.json` files in the `rahilsinghi/askNYC` project. These changes were implemented to align the project's development environment with [[Next.js 16]], ensuring proper type definitions and compiler options. The update consisted of 4 additions and 2 deletions across the two files, reflecting adjustments required for the newer framework version.
 
 ## Related
 
-[[Next.js]],[[TypeScript]],[[Git Commit Types]],[[Rahil Singhi]],[[askNYC]]
+[[askNYC]],[[Chore: Update Next.js Configuration for Version 16 in askNYC]]

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:5d1faeb
-ingested_at: 2026-04-10T15:04:13.430Z
-parsed_at: 2026-04-10T15:04:13.430Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.828Z
+parsed_at: 2026-04-13T17:05:37.828Z
+compiled_to: "[[ADK Multi-Agent Backend for askNYC with NYC Open Data]]"
+processed_at: 2026-04-13T17:34:08.914Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(backend): ADK multi-agent backend with 7 NYC Open Data tools
 

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:8d8a273
-ingested_at: 2026-04-10T15:04:13.409Z
-parsed_at: 2026-04-10T15:04:13.409Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.816Z
+parsed_at: 2026-04-13T17:05:37.816Z
+compiled_to: "[[Add /sessions Endpoint to Root Level in askNYC API]]"
+processed_at: 2026-04-13T17:35:26.337Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: add /sessions endpoint at root level (was only under /ws prefix)
 

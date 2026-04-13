@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:761c5b3
-ingested_at: 2026-04-10T15:04:13.421Z
-parsed_at: 2026-04-10T15:04:13.421Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.823Z
+parsed_at: 2026-04-13T17:05:37.823Z
+compiled_to: "[[Automated Cloud Build Deployment for askNYC]]"
+processed_at: 2026-04-13T17:43:31.420Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # chore: add Cloud Build auto-deploy on push to main
 

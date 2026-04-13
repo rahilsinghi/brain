@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:d7408ec
-ingested_at: 2026-04-10T15:04:13.412Z
-parsed_at: 2026-04-10T15:04:13.412Z
-compiled_to: "[[/ask Recommendation Page]]"
-processed_at: 2026-04-10T15:05:20.734Z
+ingested_at: 2026-04-13T17:05:37.819Z
+parsed_at: 2026-04-13T17:05:37.819Z
+compiled_to: "[[AskNYC Recommendation Page with Multi-Agent Pipeline]]"
+processed_at: 2026-04-13T17:07:01.596Z
 retry_count: 0
 last_error: null
 compile_progress: null

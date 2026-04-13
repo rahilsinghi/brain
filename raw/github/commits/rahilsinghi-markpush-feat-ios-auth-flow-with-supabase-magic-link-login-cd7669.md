@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:d43897a
-ingested_at: 2026-04-10T09:03:48.641Z
-parsed_at: 2026-04-10T09:03:48.641Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZupcPxKxn2yNNy7WK5AW"}
+ingested_at: 2026-04-13T17:05:37.833Z
+parsed_at: 2026-04-13T17:05:37.833Z
+compiled_to: "[[iOS Authentication Flow with Supabase Magic Link Login]]"
+processed_at: 2026-04-13T17:12:27.104Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

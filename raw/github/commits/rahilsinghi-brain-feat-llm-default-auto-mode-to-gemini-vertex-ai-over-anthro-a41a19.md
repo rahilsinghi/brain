@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:5a58407
-ingested_at: 2026-04-10T15:04:13.365Z
-parsed_at: 2026-04-10T15:04:13.365Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.743Z
+parsed_at: 2026-04-13T17:05:37.743Z
+compiled_to: "[[LLM Defaulting to Gemini (Vertex AI) Over Anthropic Due to Credit Exhaustion]]"
+processed_at: 2026-04-13T17:42:54.878Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(llm): default auto mode to Gemini (Vertex AI) over Anthropic
 

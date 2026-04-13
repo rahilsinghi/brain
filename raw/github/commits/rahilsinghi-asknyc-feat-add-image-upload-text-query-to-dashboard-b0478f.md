@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:676e784
-ingested_at: 2026-04-10T15:04:13.427Z
-parsed_at: 2026-04-10T15:04:13.427Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.827Z
+parsed_at: 2026-04-13T17:05:37.827Z
+compiled_to: "[[Image Upload and Text Query to askNYC Dashboard]]"
+processed_at: 2026-04-13T17:45:45.986Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat: add image upload + text query to dashboard
 

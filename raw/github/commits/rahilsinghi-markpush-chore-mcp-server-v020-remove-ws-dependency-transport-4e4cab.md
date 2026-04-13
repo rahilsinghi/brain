@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:4b7ba3e
-ingested_at: 2026-04-10T15:04:13.433Z
-parsed_at: 2026-04-10T15:04:13.433Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.832Z
+parsed_at: 2026-04-13T17:05:37.832Z
+compiled_to: "[[MCP Server v0.2.0: WebSocket Removal and Transport Cleanup in MarkPush]]"
+processed_at: 2026-04-13T17:45:26.530Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # chore: MCP server v0.2.0 — remove ws dependency, transport cleanup
 

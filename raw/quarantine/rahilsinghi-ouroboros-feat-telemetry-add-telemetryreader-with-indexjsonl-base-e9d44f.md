@@ -2,14 +2,14 @@
 status: quarantined
 source_type: git-commits
 source_id: git-commit:rahilsinghi/ouroboros:3cc66b8
-ingested_at: 2026-04-10T01:03:40.355Z
-parsed_at: 2026-04-10T01:03:40.355Z
+ingested_at: 2026-04-13T16:05:10.288Z
+parsed_at: 2026-04-13T16:05:10.288Z
 compiled_to: null
 processed_at: null
 retry_count: 2
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuM68bcr93p7JeMsUL7B"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24n9gmAXrDuFizVJC8S"}
 compile_progress: null
-quarantined_at: 2026-04-10T03:02:59.329Z
+quarantined_at: 2026-04-13T16:13:15.804Z
 ---
 
 

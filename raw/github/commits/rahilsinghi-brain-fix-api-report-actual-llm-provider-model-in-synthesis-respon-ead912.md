@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:731f95f
-ingested_at: 2026-04-10T15:04:13.364Z
-parsed_at: 2026-04-10T15:04:13.364Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.742Z
+parsed_at: 2026-04-13T17:05:37.742Z
+compiled_to: "[[API Fix: Dynamic LLM Provider/Model Reporting in Synthesis Response]]"
+processed_at: 2026-04-13T17:46:19.002Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix(api): report actual LLM provider/model in synthesis response
 

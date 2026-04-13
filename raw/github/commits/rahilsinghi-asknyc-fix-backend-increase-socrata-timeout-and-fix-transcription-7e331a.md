@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:b6dff7b
-ingested_at: 2026-04-10T15:04:13.416Z
-parsed_at: 2026-04-10T15:04:13.416Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.821Z
+parsed_at: 2026-04-13T17:05:37.821Z
+compiled_to: "[[Backend Fix: Socrata Timeout and Transcription Object Handling in askNYC]]"
+processed_at: 2026-04-13T17:16:58.177Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix(backend): increase Socrata timeout and fix Transcription object subscript error
 

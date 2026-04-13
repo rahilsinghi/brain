@@ -215,7 +215,7 @@
 
 ```
 cd ~/Desktop/brain
-pnpm test                    # Verify 346 tests pass
+pnpm test                    # Verify 369 tests pass
 pnpm status                  # Check daemon (launchd managed)
 cat docs/REMAINING-WORK.md   # This file — pick up where you left off
 cat CLAUDE.md                # Project context for Claude Code
@@ -224,15 +224,32 @@ cat CLAUDE.md                # Project context for Claude Code
 **Daemon:** Runs as macOS launchd service (`com.rahilsinghi.brain`). Auto-starts on login, restarts on crash. See CLAUDE.md for management commands.
 
 **Next up:**
-1. **Brain Explorer frontend** — Write implementation plan, scaffold Next.js app, deploy to brain.rahilsinghi.com
-2. Test Telegram synthesis formatting (send `?what is maison` after prompt change)
-3. Verify brain MCP server in a new session (brain_query + brain_ingest)
+1. **Graphify Phase 3** — Graph cache merge (URI node IDs, cross-layer edges, god-node detection). Plan: `docs/plans/2026-04-10-graphify-phase3-graph-merge.md`
+2. **Graphify Phase 4** — Embeddings + confidentiality filter. Plan: `docs/plans/2026-04-10-graphify-phase4-embeddings-query.md`
+3. **Graphify Phase 5** — Explorer frontend integration (layer toggle, drill-in, code cubes). Plan: `docs/plans/2026-04-10-graphify-phase5-explorer.md`
 4. Phase 3b: Calendar source (awaiting Google Calendar MCP auth)
+
+**Graphify Phase 1 COMPLETE (2026-04-10):**
+- Fork: github.com/rahilsinghi/graphify (branch v4)
+- CLI: `graphify_cli.py` — detect → extract → build → cluster → analyze → report → export
+- Venv: `scripts/graphify/.venv` (Python 3.13, persistent)
+- Validated on Karen: 840 nodes, 1384 edges, 64 communities, 117 file summaries, 5.4s
+- Spec: `docs/specs/2026-04-10-brain-graphify-fusion-design.md`
+
+**Graphify Phase 2 COMPLETE (2026-04-10):**
+- Source: `src/sources/graphify.ts` — SyncSource shelling out to Python CLI
+- Types: `GraphifyConfig` interface + `"graphify"` SourceType in `src/types.ts`
+- Cron: Wired into hourly `mcp_sources` cron in `src/index.ts`
+- Config: `.brain/config.yaml` graphify section (4 repos, AST-only)
+- Integration: 140 drops from brain repo (1 architecture report 25KB + 139 file summaries)
+- Tests: 6 new (369 total across 63 files)
+- Branch: `feat/graphify-phase2-brain-source` (pushed)
 
 **All sources live:**
 1. Telegram: `@rahil_brain_bot` — always on via launchd
 2. GitHub + git-commits: hourly cron
 3. Gmail: hourly cron (OAuth2, direct API)
-4. Calendar: awaiting MCP auth (Phase 3b)
+4. Graphify: hourly cron (AST-only, 4 repos)
+5. Calendar: awaiting MCP auth (Phase 3b)
 
 **LLM Provider:** Gemini Vertex AI (auto mode, $1000 credits on askNYC GCP project). Anthropic as fallback (credits exhausted, -$0.11).

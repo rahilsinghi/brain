@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:dca3fb5
-ingested_at: 2026-04-10T15:04:13.398Z
-parsed_at: 2026-04-10T15:04:13.398Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.810Z
+parsed_at: 2026-04-13T17:05:37.810Z
+compiled_to: "[[Karen Project: Escalation Ladder V2 Design and Documentation Update]]"
+processed_at: 2026-04-13T17:45:35.419Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: escalation ladder v2 design spec and updated project docs
 

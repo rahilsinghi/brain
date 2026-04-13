@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/raag:df63e54
-ingested_at: 2026-04-10T10:04:00.849Z
-parsed_at: 2026-04-10T10:04:00.849Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3Jdo2nnkQy9gb5AQaq"}
+ingested_at: 2026-04-13T17:05:37.835Z
+parsed_at: 2026-04-13T17:05:37.835Z
+compiled_to: "[[Interactive 3D Universe Map in Raag]]"
+processed_at: 2026-04-13T17:49:35.547Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

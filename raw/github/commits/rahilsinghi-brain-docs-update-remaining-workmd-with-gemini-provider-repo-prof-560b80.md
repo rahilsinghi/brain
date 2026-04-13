@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:6a8ee53
-ingested_at: 2026-04-10T15:04:13.354Z
-parsed_at: 2026-04-10T15:04:13.354Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.738Z
+parsed_at: 2026-04-13T17:05:37.738Z
+compiled_to: "[[REMAINING-WORK.md Update: Gemini Provider, Repository Profiles, and Priorities]]"
+processed_at: 2026-04-13T17:41:14.113Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: update REMAINING-WORK.md with Gemini provider, repo profiles, next priorities
 

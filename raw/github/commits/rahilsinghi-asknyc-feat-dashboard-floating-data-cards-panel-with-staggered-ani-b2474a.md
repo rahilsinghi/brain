@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:31d720a
-ingested_at: 2026-04-10T15:04:13.408Z
-parsed_at: 2026-04-10T15:04:13.408Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.816Z
+parsed_at: 2026-04-13T17:05:37.816Z
+compiled_to: "[[Floating Data Cards Panel with Staggered Animations in askNYC Dashboard]]"
+processed_at: 2026-04-13T17:42:46.888Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(dashboard): floating data cards panel with staggered animations
 

@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:15caf15
-ingested_at: 2026-04-10T15:04:13.420Z
-parsed_at: 2026-04-10T15:04:13.420Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.822Z
+parsed_at: 2026-04-13T17:05:37.822Z
+compiled_to: "[[Fix: Handle Sessions API Response Format on askNYC Splash Page]]"
+processed_at: 2026-04-13T17:38:58.636Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: handle sessions API response format on splash page
 

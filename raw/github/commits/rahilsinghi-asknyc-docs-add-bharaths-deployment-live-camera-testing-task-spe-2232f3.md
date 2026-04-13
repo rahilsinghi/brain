@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:6b3b318
-ingested_at: 2026-04-10T15:04:13.424Z
-parsed_at: 2026-04-10T15:04:13.424Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.825Z
+parsed_at: 2026-04-13T17:05:37.825Z
+compiled_to: "[[Bharath's askNYC Deployment & Live Camera Testing Task Specification]]"
+processed_at: 2026-04-13T17:49:24.163Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: add Bharath's deployment + live camera testing task spec
 

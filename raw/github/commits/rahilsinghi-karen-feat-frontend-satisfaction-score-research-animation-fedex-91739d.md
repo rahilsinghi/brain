@@ -2,12 +2,12 @@
 status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:a2ec3f8
-ingested_at: 2026-04-10T12:03:43.581Z
-parsed_at: 2026-04-10T12:03:43.581Z
+ingested_at: 2026-04-13T17:05:37.806Z
+parsed_at: 2026-04-13T17:05:37.806Z
 compiled_to: null
 processed_at: null
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv4Ln6GeFTXsK7dhZbra"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca2A7CYXQWWNooPuEQ9Kj"}
 compile_progress: null
 ---
 

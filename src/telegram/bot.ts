@@ -88,7 +88,8 @@ export async function handleTextMessage(
       vaultRoot: deps.vaultRoot,
     });
     await ctx.reply(`Saved. (${result.source_id})`);
-  } catch {
+  } catch (err) {
+    console.error(`[telegram] Ingest error: ${err instanceof Error ? err.stack : String(err)}`);
     await ctx.reply("Failed to save — try again later.");
   }
 }

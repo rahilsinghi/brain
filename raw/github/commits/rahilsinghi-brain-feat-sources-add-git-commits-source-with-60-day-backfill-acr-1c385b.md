@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:bfa63b9
-ingested_at: 2026-04-10T15:04:13.384Z
-parsed_at: 2026-04-10T15:04:13.384Z
-compiled_to: "[[Git Commits Data Source Integration]]"
-processed_at: 2026-04-10T15:05:08.934Z
+ingested_at: 2026-04-13T17:05:37.758Z
+parsed_at: 2026-04-13T17:05:37.758Z
+compiled_to: "[[Git Commits Source and 60-Day Backfill for Brain Project]]"
+processed_at: 2026-04-13T17:06:51.933Z
 retry_count: 0
 last_error: null
 compile_progress: null

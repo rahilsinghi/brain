@@ -25,7 +25,10 @@ function firstLine(text: string): string {
 export function ingestContent(input: IngestInput): IngestResult {
   const { content, source, title, metadata, vaultRoot } = input;
 
-  const slug = `${slugify(title ?? firstLine(content))}-${Date.now()}`;
+  const rawTitle = title ?? firstLine(content);
+  // Truncate to ~60 chars before slugifying to avoid ENAMETOOLONG on long messages
+  const truncated = rawTitle.length > 60 ? rawTitle.slice(0, 60) : rawTitle;
+  const slug = `${slugify(truncated)}-${Date.now()}`;
   const relativePath = `api/articles/${slug}.md`;
   const rawPath = `raw/${relativePath}`;
   const fullPath = join(vaultRoot, rawPath);

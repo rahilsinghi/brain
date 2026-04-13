@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:2856d95
-ingested_at: 2026-04-10T15:04:13.419Z
-parsed_at: 2026-04-10T15:04:13.419Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.821Z
+parsed_at: 2026-04-13T17:05:37.821Z
+compiled_to: "[[Image Upload and Thumbnail Preview in SearchInput (askNYC)]]"
+processed_at: 2026-04-13T17:38:06.107Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(dashboard): add image upload button + thumbnail to SearchInput
 

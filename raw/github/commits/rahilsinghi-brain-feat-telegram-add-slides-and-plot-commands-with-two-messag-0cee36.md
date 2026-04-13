@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:5707175
-ingested_at: 2026-04-10T15:04:13.380Z
-parsed_at: 2026-04-10T15:04:13.380Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.751Z
+parsed_at: 2026-04-13T17:05:37.751Z
+compiled_to: "[[Telegram: New /slides and /plot Commands with Two-Message Pattern]]"
+processed_at: 2026-04-13T17:23:36.351Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(telegram): add /slides and /plot commands with two-message pattern
 

@@ -2,14 +2,14 @@
 status: quarantined
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:7b36d65
-ingested_at: 2026-04-10T01:03:40.343Z
-parsed_at: 2026-04-10T01:03:40.343Z
+ingested_at: 2026-04-12T23:04:19.854Z
+parsed_at: 2026-04-12T23:04:19.854Z
 compiled_to: null
 processed_at: null
 retry_count: 2
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuM5h9B99nmanpFSKsbX"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24ieSHabTfuhRQ8CJ8u"}
 compile_progress: null
-quarantined_at: 2026-04-10T03:02:53.384Z
+quarantined_at: 2026-04-13T16:12:28.265Z
 ---
 
 

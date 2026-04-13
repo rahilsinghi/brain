@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:162f957
-ingested_at: 2026-04-10T15:04:13.403Z
-parsed_at: 2026-04-10T15:04:13.403Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.812Z
+parsed_at: 2026-04-13T17:05:37.812Z
+compiled_to: "[[Audio Integration: ElevenLabs TTS, Quips, and Background Music in Karen Project]]"
+processed_at: 2026-04-13T17:25:42.514Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat: audio integration — ElevenLabs TTS, quips, and background music
 

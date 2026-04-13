@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Career-Datacenter:1c8f44c
-ingested_at: 2026-04-10T09:03:48.663Z
-parsed_at: 2026-04-10T09:03:48.663Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZupcMXimdRLGQFXq4uCa"}
+ingested_at: 2026-04-13T18:05:31.407Z
+parsed_at: 2026-04-13T18:05:31.407Z
+compiled_to: "[[LinkedIn Scraper Fix: Cookie-Based Authentication and Job Parsing]]"
+processed_at: 2026-04-13T18:10:50.191Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

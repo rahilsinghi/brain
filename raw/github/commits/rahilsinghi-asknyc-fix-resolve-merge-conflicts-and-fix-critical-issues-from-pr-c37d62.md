@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:7d6957e
-ingested_at: 2026-04-10T15:04:13.420Z
-parsed_at: 2026-04-10T15:04:13.420Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.822Z
+parsed_at: 2026-04-13T17:05:37.822Z
+compiled_to: "[[askNYC: Merge Conflict Resolution and Critical Frontend Fixes (PR #5)]]"
+processed_at: 2026-04-13T17:11:30.534Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: resolve merge conflicts and fix critical issues from PR #5
 

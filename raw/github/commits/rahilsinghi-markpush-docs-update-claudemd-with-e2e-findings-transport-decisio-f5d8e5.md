@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:7bdc9ab
-ingested_at: 2026-04-10T15:04:13.434Z
-parsed_at: 2026-04-10T15:04:13.434Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.832Z
+parsed_at: 2026-04-13T17:05:37.832Z
+compiled_to: "[[CLAUDE.md Update: E2E Findings, Transport Decisions, and npm Publish Status in MarkPush]]"
+processed_at: 2026-04-13T17:40:03.660Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: update CLAUDE.md with E2E findings, transport decisions, and npm publish status
 

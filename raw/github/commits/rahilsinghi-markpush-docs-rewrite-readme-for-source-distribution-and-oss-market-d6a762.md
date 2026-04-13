@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:6393f6b
-ingested_at: 2026-04-10T15:04:13.432Z
-parsed_at: 2026-04-10T15:04:13.432Z
-compiled_to: "[[MarkPush: README and Documentation Overhaul (Commit 6393f6b)]]"
-processed_at: 2026-04-10T15:05:59.776Z
+ingested_at: 2026-04-13T17:05:37.831Z
+parsed_at: 2026-04-13T17:05:37.831Z
+compiled_to: "[[MarkPush README Rewrite for Source Distribution and OSS Marketing]]"
+processed_at: 2026-04-13T17:08:27.844Z
 retry_count: 0
 last_error: null
 compile_progress: null

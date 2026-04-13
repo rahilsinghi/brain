@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:02c6049
-ingested_at: 2026-04-10T15:04:13.425Z
-parsed_at: 2026-04-10T15:04:13.425Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.825Z
+parsed_at: 2026-04-13T17:05:37.825Z
+compiled_to: "[[Model Update to Gemini-2.5-Flash-Native-Audio-Latest in askNYC]]"
+processed_at: 2026-04-13T17:47:26.297Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # fix: merge model update to gemini-2.5-flash-native-audio-latest (#2)
 

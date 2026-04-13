@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/gaze-diffuse:3ee52cb
-ingested_at: 2026-04-10T12:03:43.552Z
-parsed_at: 2026-04-10T12:03:43.552Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv4LrYuhZGM92k4bgd4c"}
+ingested_at: 2026-04-13T17:05:37.799Z
+parsed_at: 2026-04-13T17:05:37.799Z
+compiled_to: "[[Unit Test Implementation in Gaze-Diffuse (38 New Tests)]]"
+processed_at: 2026-04-13T17:27:40.037Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

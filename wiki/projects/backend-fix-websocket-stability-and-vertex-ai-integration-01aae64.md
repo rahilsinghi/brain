@@ -1,46 +1,42 @@
 ---
 title: "Backend Fix: WebSocket Stability and Vertex AI Integration (01aae64)"
 author: ai
-created_at: 2026-04-10T15:05:28.730Z
-last_ai_edit: 2026-04-10T15:05:28.730Z
+created_at: 2026-04-13T17:07:34.642Z
+last_ai_edit: 2026-04-13T17:07:34.642Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 001b16a07ca7e943
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-backend-resolve-websocket-crash-and-vertex-ai-connectio-ed1456.md]]"
 tags:
   - backend
+  - fix
   - websocket
   - vertexai
-  - fix
-  - gemini
   - adk
+  - gemini
+  - api
   - session
-  - crash
-  - api-key
-  - rahilsinghi
+  - asknyc
+  - bugfix
 ---
+
 
 # Backend Fix: WebSocket Stability and Vertex AI Integration (01aae64)
 
-This commit addresses critical backend issues in the `askNYC` project, resolving WebSocket crashes and improving integration with Google Cloud's Vertex AI. Key changes include fixing a missing request parameter, aliasing API keys for ADK compatibility, enhancing session management, and updating the AI model to `gemini-live-2.5-flash-native-audio`.
+This commit resolves a critical WebSocket crash and enhances Vertex AI integration within the `askNYC` backend. Key fixes include correcting missing Request parameters for the WebSocket dashboard, aliasing Google API keys for ADK compatibility, and ensuring ADK sessions are pre-created to prevent 'session not found' errors. Additionally, the default model is updated to `gemini-live-2.5-flash-native-audio` and the `SessionState` schema gains an `ended_at` field.
 
 ## Key Concepts
 
-WebSocket communication,Vertex AI integration,ADK (Application Development Kit),API Key management,Session management,Backend development,Gemini API
+WebSocket,Vertex AI Integration,ADK Compatibility,Session Management,API Key Aliasing,Gemini Model Update,Backend Stability
 
 ## Details
 
-This commit, identified by SHA `01aae64`, implements several critical fixes and improvements for the backend of the `rahilsinghi/askNYC` project. Authored by Rahil Singhi on 2026-03-28, it involved changes across 4 files, with 11 additions and 5 deletions.
-
-### Key Improvements and Fixes:
-
-*   **WebSocket Stability:** Resolved an issue in `dashboard_ws()` where a `Request` parameter was missing, ensuring more stable WebSocket communication by utilizing a module-level session service.
-*   **Vertex AI Compatibility:** Enhanced compatibility with ADK by aliasing `GOOGLE_GEMINI_API_KEY` to `GOOGLE_API_KEY`.
-*   **Session Management:** Improved session tracking and error prevention:
-    *   Added an `ended_at` field to the `SessionState` schema for better lifecycle management.
-    *   Ensured an ADK session is pre-created before calling `run_live()`, which prevents "session not found" errors.
-*   **AI Model Upgrade:** Switched the primary AI model to `gemini-live-2.5-flash-native-audio`, leveraging its capabilities available on Vertex AI.
+- Fix `dashboard_ws()` missing Request parameter, utilizing a module-level session service instead.
+- Alias `GOOGLE_GEMINI_API_KEY` to `GOOGLE_API_KEY` to ensure compatibility with the ADK system.
+- Add an `ended_at` field to the `SessionState` schema for improved session tracking.
+- Pre-create the ADK session before calling `run_live()` to prevent 'session not found' errors during execution.
+- Switch the default language model to `gemini-live-2.5-flash-native-audio`, which is available on Vertex AI.
 
 ## Related
 
-[[askNYC Project]],[[WebSocket]],[[Vertex AI]],[[ADK]],[[Gemini API]],[[Backend Development]],[[Session Management]],[[Error Handling]]
+[[askNYC]],[[askNYC Backend: WebSocket and Vertex AI Connection Fixes]],[[ADK Multi-Agent Backend for AskNYC (NYC Open Data)]],[[askNYC: Model Update to Gemini-2.5-Flash-Native-Audio-Latest]],[[Backend Fix: Socrata Timeout and Transcription Object Handling (askNYC)]],[[API Fix: Dynamic LLM Provider/Model Reporting in Synthesis Response (Brain Project)]],[[askNYC: Update to Gemini-Live-2.5-Flash-Native-Audio Model and Vertex AI Env Vars]],[[Session Management]]

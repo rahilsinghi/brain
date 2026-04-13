@@ -2,12 +2,12 @@
 status: failed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Flock:e98074d
-ingested_at: 2026-04-10T10:04:00.839Z
-parsed_at: 2026-04-10T10:04:00.839Z
+ingested_at: 2026-04-13T16:05:10.307Z
+parsed_at: 2026-04-13T16:05:10.307Z
 compiled_to: null
 processed_at: null
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3GXv1SbESuyvnj7SPU"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24NdvUD8HJhK6puwQS1"}
 compile_progress: null
 ---
 

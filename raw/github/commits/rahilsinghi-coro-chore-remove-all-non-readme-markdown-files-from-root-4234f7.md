@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Coro:7cece79
-ingested_at: 2026-04-10T11:03:33.645Z
-parsed_at: 2026-04-10T11:03:33.645Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3JetWiVBtQktxzgxxy"}
+ingested_at: 2026-04-13T17:05:37.843Z
+parsed_at: 2026-04-13T17:05:37.843Z
+compiled_to: "[[Coro: Removal of Non-README Markdown Files from Root]]"
+processed_at: 2026-04-13T17:49:52.360Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

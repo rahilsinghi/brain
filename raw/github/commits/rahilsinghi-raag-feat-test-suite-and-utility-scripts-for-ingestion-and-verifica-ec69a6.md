@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/raag:5263118
-ingested_at: 2026-04-10T10:04:00.853Z
-parsed_at: 2026-04-10T10:04:00.853Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3GK6ppso6DYWYrYh7J"}
+ingested_at: 2026-04-13T17:05:37.838Z
+parsed_at: 2026-04-13T17:05:37.838Z
+compiled_to: "[[Raag Repository: Ingestion & Verification Test Suite and Utility Scripts]]"
+processed_at: 2026-04-13T17:08:46.382Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

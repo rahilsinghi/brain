@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Coro:0cee827
-ingested_at: 2026-04-10T11:03:33.648Z
-parsed_at: 2026-04-10T11:03:33.648Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3HPgC9pcoqLaYjUnrx"}
+ingested_at: 2026-04-13T17:05:37.847Z
+parsed_at: 2026-04-13T17:05:37.847Z
+compiled_to: "[[Gemini Arbitration Improvements and Energy Controller Wiring in Coro]]"
+processed_at: 2026-04-13T17:24:05.331Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

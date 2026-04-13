@@ -2,10 +2,10 @@
 status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:2803118
-ingested_at: 2026-04-10T15:04:13.393Z
-parsed_at: 2026-04-10T15:04:13.393Z
-compiled_to: "[[Karen: Channel Feature Update 2803118]]"
-processed_at: 2026-04-10T15:05:40.216Z
+ingested_at: 2026-04-13T17:05:37.808Z
+parsed_at: 2026-04-13T17:05:37.808Z
+compiled_to: "[[Karen Project: Communication Channel Enhancements and Voice Machine Detection]]"
+processed_at: 2026-04-13T17:07:49.430Z
 retry_count: 0
 last_error: null
 compile_progress: null

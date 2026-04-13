@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/raag:0fc6438
-ingested_at: 2026-04-10T10:04:00.853Z
-parsed_at: 2026-04-10T10:04:00.853Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3Gko9vQ4npyXav5793"}
+ingested_at: 2026-04-13T17:05:37.838Z
+parsed_at: 2026-04-13T17:05:37.838Z
+compiled_to: "[[Polished Chat UI with Markdown Rendering and Rich Result Cards in raag]]"
+processed_at: 2026-04-13T17:15:39.524Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

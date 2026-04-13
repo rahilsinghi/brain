@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:53831bf
-ingested_at: 2026-04-10T11:03:33.633Z
-parsed_at: 2026-04-10T11:03:33.633Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3GGu83t7BLFnE4Kr9o"}
+ingested_at: 2026-04-13T18:05:31.376Z
+parsed_at: 2026-04-13T18:05:31.376Z
+compiled_to: "[[Wiki Frontmatter Helpers and `[[ref:id]]` Link Resolution]]"
+processed_at: 2026-04-13T18:07:52.547Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

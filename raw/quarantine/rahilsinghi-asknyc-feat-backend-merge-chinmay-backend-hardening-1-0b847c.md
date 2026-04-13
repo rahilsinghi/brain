@@ -2,14 +2,14 @@
 status: quarantined
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:ad6b409
-ingested_at: 2026-04-10T02:04:52.501Z
-parsed_at: 2026-04-10T02:04:52.501Z
+ingested_at: 2026-04-12T23:04:19.872Z
+parsed_at: 2026-04-12T23:04:19.872Z
 compiled_to: null
 processed_at: null
 retry_count: 2
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuM5c4L6jrkXB6VpwTrB"}
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca24h1aiSB3Wx97Ky4fea"}
 compile_progress: null
-quarantined_at: 2026-04-10T03:02:52.188Z
+quarantined_at: 2026-04-13T16:12:06.080Z
 ---
 
 

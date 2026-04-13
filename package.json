@@ -19,7 +19,8 @@
     "seed:git-commits": "bun run src/seed/index.ts --only git-commits",
     "gmail:auth": "tsx scripts/gmail-auth.ts",
     "backfill-links": "bun run src/graph/backfill-links.ts",
-    "backfill-links:dry": "bun run src/graph/backfill-links.ts --dry-run"
+    "backfill-links:dry": "bun run src/graph/backfill-links.ts --dry-run",
+    "graphify": "bun run src/cli/graphify.ts"
   },
   "keywords": [],
   "author": "",

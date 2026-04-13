@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/ouroboros:46804fa
-ingested_at: 2026-04-10T12:03:43.576Z
-parsed_at: 2026-04-10T12:03:43.576Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv4L1jXq4ErsM58mZd6c"}
+ingested_at: 2026-04-13T16:05:10.290Z
+parsed_at: 2026-04-13T16:05:10.290Z
+compiled_to: "[[Ouroboros: Scoreboard Fixes and Implementer Hardening (46804fa)]]"
+processed_at: 2026-04-13T16:06:49.008Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

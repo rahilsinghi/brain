@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:c3e6207
-ingested_at: 2026-04-10T15:04:13.413Z
-parsed_at: 2026-04-10T15:04:13.413Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.819Z
+parsed_at: 2026-04-13T17:05:37.819Z
+compiled_to: "[[Collapsible QR Code Bridge Section in askNYC Dashboard]]"
+processed_at: 2026-04-13T17:27:58.464Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(dashboard): collapsible QR code bridge section
 

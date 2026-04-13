@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:962cf8a
-ingested_at: 2026-04-10T15:04:13.431Z
-parsed_at: 2026-04-10T15:04:13.431Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.829Z
+parsed_at: 2026-04-13T17:05:37.829Z
+compiled_to: "[[MarkPush Cloud Push Debugging Guide and User ID Requirements]]"
+processed_at: 2026-04-13T17:35:41.343Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # docs: add cloud push debugging guide and user_id requirements to CLAUDE.md
 

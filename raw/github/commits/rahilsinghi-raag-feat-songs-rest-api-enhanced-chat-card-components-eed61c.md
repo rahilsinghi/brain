@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/raag:074ef34
-ingested_at: 2026-04-10T10:04:00.849Z
-parsed_at: 2026-04-10T10:04:00.849Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3JKQFBjA8f4N8vCNiM"}
+ingested_at: 2026-04-13T17:05:37.836Z
+parsed_at: 2026-04-13T17:05:37.836Z
+compiled_to: "[[Songs REST API and Enhanced Chat Card Components in raag]]"
+processed_at: 2026-04-13T17:44:53.921Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

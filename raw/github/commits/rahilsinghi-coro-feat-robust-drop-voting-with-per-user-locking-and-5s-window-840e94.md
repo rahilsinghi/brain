@@ -1,13 +1,13 @@
 ---
-status: failed
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/Coro:f93906a
-ingested_at: 2026-04-10T11:03:33.646Z
-parsed_at: 2026-04-10T11:03:33.646Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3J2zmGnP9TapeRvVWo"}
+ingested_at: 2026-04-13T17:05:37.844Z
+parsed_at: 2026-04-13T17:05:37.844Z
+compiled_to: "[[Robust Drop Voting with Per-User Locking and 5s Window in Coro]]"
+processed_at: 2026-04-13T17:39:20.140Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
 

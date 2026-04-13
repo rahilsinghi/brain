@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/askNYC:0b0b110
-ingested_at: 2026-04-10T15:04:13.412Z
-parsed_at: 2026-04-10T15:04:13.412Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.818Z
+parsed_at: 2026-04-13T17:05:37.818Z
+compiled_to: "[[Gitignore Update for TypeScript Build Artifacts in askNYC]]"
+processed_at: 2026-04-13T17:35:46.968Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # chore: gitignore next-env.d.ts and tsbuildinfo
 

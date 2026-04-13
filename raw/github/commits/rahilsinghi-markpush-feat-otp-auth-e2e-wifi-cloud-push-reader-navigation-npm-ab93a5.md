@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/MarkPush:afbc80a
-ingested_at: 2026-04-10T15:04:13.434Z
-parsed_at: 2026-04-10T15:04:13.434Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.832Z
+parsed_at: 2026-04-13T17:05:37.832Z
+compiled_to: "[[MarkPush Feature Update: Authentication, Transport, and iOS Enhancements]]"
+processed_at: 2026-04-13T17:27:53.757Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat: OTP auth, E2E WiFi+cloud push, reader navigation, npm publish
 

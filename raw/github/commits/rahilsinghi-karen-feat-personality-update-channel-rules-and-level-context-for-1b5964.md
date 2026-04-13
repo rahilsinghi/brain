@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/karen:5dddb2e
-ingested_at: 2026-04-10T15:04:13.394Z
-parsed_at: 2026-04-10T15:04:13.394Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.809Z
+parsed_at: 2026-04-13T17:05:37.809Z
+compiled_to: "[[Karen Project: V2 Ladder Personality Updates - Channel Rules and Level Contexts]]"
+processed_at: 2026-04-13T17:23:51.610Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(personality): update channel rules and level context for v2 ladder
 

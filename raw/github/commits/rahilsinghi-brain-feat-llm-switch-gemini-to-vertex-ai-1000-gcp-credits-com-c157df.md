@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: git-commits
 source_id: git-commit:rahilsinghi/brain:fdaaeb9
-ingested_at: 2026-04-10T15:04:13.368Z
-parsed_at: 2026-04-10T15:04:13.368Z
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T17:05:37.746Z
+parsed_at: 2026-04-13T17:05:37.746Z
+compiled_to: "[[Gemini Integration with Vertex AI and Automated Project Profile Generation]]"
+processed_at: 2026-04-13T17:12:06.136Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # feat(llm): switch Gemini to Vertex AI ($1000 GCP credits), compile all 10 repo profiles
 
