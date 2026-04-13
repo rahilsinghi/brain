@@ -10,7 +10,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Phase A (Seed & Activate):** Complete — seed script, YAML transforms, batch compile, embedding sync
 **Phase B (API Layer):** Complete — Fastify HTTP API (ingest, synthesise, health) embedded in daemon
 **Telegram Input:** Complete — grammY bot with prefix routing, ingest + synthesise, /start /help /status
-**Git Commits Source:** Complete — polls commits across all repos, 60-day backfill (601 commits), hourly cron
+**Git Commits Source:** Disabled (2026-04-13) — generated 2,581 low-value per-commit articles (96% of project wiki). Replaced by graphify community-level analysis
 **Phase 3b (Calendar):** Not started — awaiting Google Calendar MCP auth
 **Phase 4 (Voice & Polish):** Complete — voice transcription (whisper.cpp + OpenAI), cluster classification, daily logs, Marp slides, matplotlib plots
 **Auth Bug Fix (2026-04-09):** All 6 Anthropic SDK calls pass apiKey explicitly. loadEnv strips quotes. Root cause was empty .env value.
@@ -26,6 +26,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Graphify Phase 5 (Explorer Fusion):** Complete — two-layer visualization with real data. Daemon sets `layer: "wiki"/"code"` on all nodes. Karen repo graphified (840 nodes, 66 communities). 820 cross-layer edges. 1921 total nodes (696 wiki + 1225 code). Bloom tuned for large graphs. Node click/focus interaction fixed (bounding sphere, nodeId passthrough, onPointerMissed race guard, deep-link one-shot). Sliding glass LayerToggle.
 **Post-Phase 5 Stabilization (2026-04-12):** Fixed tilde expansion bug in graph-push route (wrote to literal `~/` dir). Fixed cross-layer edge matching (repo name prefix instead of exact filename). Fixed InstancedMesh raycasting (computeBoundingSphere after matrix update). Fixed useDrag nodeId mapping (pass resolved ID from InstancedNodes, bypass stale reverse map). Fixed onPointerMissed/clearFocus race (timestamp guard). Fixed deep-link readFocusParam re-focus loop (run once on mount).
 **Daemon Resilience (2026-04-13):** Telegram bot isolated into subprocess (`src/telegram/worker.ts`) — Bun native fetch errors from grammY polling are uncatchable, so subprocess crash doesn't kill main daemon. Auto-restart with exponential backoff. Fixed launchd plist: `WorkingDirectory=/tmp` (macOS blocks launchd from `~/Desktop/` without FDA), absolute script path, logs to `/tmp/`. Bun binary requires Full Disk Access in System Settings. GCP billing re-linked askNYC project to correct billing account ($1000 GenAI credits). New Gemini API key (askNYC service account) added as `GEMINI_API_KEY_2`. Anthropic API key exhausted (expected — Gemini is primary via Vertex AI).
+**Graphify On-Demand (2026-04-13):** `POST /graphify` API route, `brain graphify .` CLI, `brain_graphify` MCP tool, `/graphify` slash command. One command maps any repo: AST extraction → community-level raw drops → Gemini compilation → wiki articles → LanceDB embeddings → sentinel-triggered graph rebuild → push to brain-explorer. N-degree neighborhood filter in explorer (`?focus=project:X&depth=N`). Removed 2,581 commit-noise articles. Workflow guide: `docs/GRAPHIFY-WORKFLOW.md`. 2,857 graph nodes (1,190 wiki + 1,667 code).
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
 **Phase 3 spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
@@ -75,7 +76,7 @@ nightly cron → git snapshot → lint scanner → healer → connector → dail
 **Brain Explorer v1 deployed:** brain.rahilsinghi.com — visual revamp needed (v1.1)
 **Brain Explorer Repo:** `~/Desktop/brain-explorer` (github.com/rahilsinghi/brain-explorer)
 
-### Source Files (82)
+### Source Files (86)
 
 ```
 src/
@@ -104,7 +105,8 @@ src/
 │       ├── synthesise.ts   ← POST /synthesise — query knowledge graph
 │       ├── save.ts         ← POST /save — persist synthesis to wiki (novelty gated)
 │       ├── graph-export.ts ← GET /graph-export — serve cached graph JSON
-│       └── graph-push.ts   ← POST /graph-push — rebuild cache + push to explorer repo
+│       ├── graph-push.ts   ← POST /graph-push — rebuild cache + push to explorer repo
+│       └── graphify.ts     ← POST /graphify — on-demand repo analysis + community drops
 ├── compiler/
 │   ├── compile.ts          ← Claude API single-pass compiler
 │   ├── queue.ts            ← Compile queue (pending → processing → processed)
@@ -126,6 +128,7 @@ src/
 │   ├── export.ts           ← UMAP 768→3 with deterministic seed + god-node detection
 │   ├��─ cache.ts            ← Orchestrator: scan → embed → UMAP → wiki:// prefix → merge code layer → write cache
 │   ├── load-graphify.ts    ← Parse NetworkX JSON into Brain nodes/links with code:// prefix
+│   ├── community-drops.ts  ← Parse graph JSON → community-level raw drops + sentinel
 │   ├── cross-layer.ts      ← Wiki↔code cross-layer edges (20-cap by centrality)
 │   └── push.ts             ← Write graph.json to explorer repo + git push
 ├── query/
@@ -154,10 +157,12 @@ src/
     ├── github.ts           ← GitHub source (gh CLI, event parsing, star threshold)
     ├── gmail.ts            ← Gmail source (DI + direct googleapis API, turndown)
     ├── gmail-auth.ts       ← OAuth2 client factory (credentials + refresh token)
-    ├── git-commits.ts      ← Git commit history source (per-repo polling, backfill)
+    ├── git-commits.ts      ← Git commit history source (DISABLED — replaced by graphify)
     ├── graphify.ts         ← Graphify AST analysis source (shells out to Python CLI)
     ├── calendar.ts         ← Stub — deferred to Phase 3b
     └── cli.ts              ← /brain-sync entry point + report formatting
+├── cli/
+│   └── graphify.ts         ← brain graphify CLI — thin shell to daemon /graphify
 ├── seed/
 │   ├── index.ts            ← CLI entry point (pnpm seed)
 │   ├── runner.ts           ← Step orchestrator (--force, --only routing)
@@ -268,6 +273,7 @@ pnpm seed              # Full seed from career-datacenter + GitHub + embed
 pnpm seed --force      # Re-compile all unstructured docs
 pnpm seed --only tracking  # Refresh tracking articles from live CSVs
 pnpm gmail:auth        # One-time OAuth consent flow for Gmail API
+pnpm graphify <path>    # Map any repo into brain (or: brain graphify .)
 pnpm backfill-links     # One-time: rewrite broken [[Title]] wikilinks
 pnpm backfill-links:dry # Dry run: show what would change
 ```
