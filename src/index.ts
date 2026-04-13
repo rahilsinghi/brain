@@ -14,7 +14,7 @@ import { JsonSyncStateStore } from "./sources/state.js";
 import { VectorStore } from "./embedder/vector-store.js";
 import { synthesize } from "./query/synthesize.js";
 import { createServer, stopServer } from "./api/server.js";
-import { createTelegramBot } from "./telegram/bot.js";
+// Telegram bot runs as isolated subprocess (src/telegram/worker.ts)
 import { ingestContent } from "./api/ingest-core.js";
 import { getHealthStats } from "./api/health-core.js";
 import { appendDailyEntry, writeDailySummary } from "./daily/log.js";
@@ -23,6 +23,22 @@ import { generatePlot } from "./output/plots.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
+
+// Prevent transient network errors (Telegram polling, etc.) from crashing the daemon
+process.on("unhandledRejection", (err) => {
+  const msg = err instanceof Error ? err.message : String(err);
+  console.error(`[brain] Unhandled rejection (swallowed): ${msg}`);
+});
+process.on("uncaughtException", (err) => {
+  const msg = err.message ?? String(err);
+  // Let truly fatal errors (OOM, etc.) still crash
+  if (msg.includes("ConnectionRefused") || msg.includes("getUpdates") || msg.includes("Network request")) {
+    console.error(`[brain] Caught network exception (swallowed): ${msg}`);
+  } else {
+    console.error(`[brain] Uncaught exception (fatal): ${msg}`);
+    process.exit(1);
+  }
+});
 
 console.log("[brain] Starting daemon...");
 
@@ -66,28 +82,35 @@ const plotFn = (description: string) =>
     matplotlibRc: config.visual.matplotlib_rc,
   });
 
-// Step 2.5: Start Telegram bot (conditional)
+// Step 2.5: Start Telegram bot as isolated subprocess
 const botToken = config.telegram.bot_token ?? process.env.TELEGRAM_BOT_TOKEN ?? null;
-let bot: ReturnType<typeof createTelegramBot> | null = null;
+let telegramProc: ReturnType<typeof Bun.spawn> | null = null;
+
+function spawnTelegramBot(attempt = 0) {
+  const delay = Math.min(5000 * 2 ** attempt, 120_000);
+  const workerPath = join(import.meta.dirname, "telegram", "worker.ts");
+
+  telegramProc = Bun.spawn(["bun", "run", workerPath], {
+    cwd: vaultRoot,
+    stdout: "inherit",
+    stderr: "inherit",
+    env: { ...process.env },
+  });
+
+  telegramProc.exited.then((code) => {
+    if (code !== 0) {
+      console.error(`[brain] Telegram worker exited (code ${code}), restarting in ${delay / 1000}s...`);
+      setTimeout(() => spawnTelegramBot(Math.min(attempt + 1, 5)), delay);
+    } else {
+      console.log("[brain] Telegram worker exited cleanly.");
+    }
+  });
+
+  console.log(`[brain] Telegram worker spawned (pid=${telegramProc.pid}).`);
+}
 
 if (botToken && config.telegram.allowed_user_ids.length > 0) {
-  bot = createTelegramBot({
-    token: botToken,
-    allowedUserIds: config.telegram.allowed_user_ids,
-    store,
-    vaultRoot,
-    config,
-    synthesizeFn: synthesize,
-    ingestFn: ingestContent,
-    getHealthStatsFn: getHealthStats,
-    startTime,
-    generateSlidesFn: slidesFn,
-    generatePlotFn: plotFn,
-  });
-  bot.start({
-    timeout: config.telegram.poll_timeout_s,
-    onStart: () => console.log("[brain] Telegram bot started."),
-  });
+  spawnTelegramBot();
 } else {
   console.log("[brain] Telegram bot disabled (no token or no allowed users).");
 }
@@ -220,10 +243,8 @@ cron.schedule("55 23 * * *", async () => {
 // Step 5: Graceful shutdown
 async function shutdown() {
   console.log("\n[brain] Shutting down...");
-  await Promise.all([
-    stopServer(server, 30_000),
-    bot ? bot.stop() : Promise.resolve(),
-  ]);
+  if (telegramProc) telegramProc.kill();
+  await stopServer(server, 30_000);
   console.log("[brain] Server and bot stopped.");
   await watchers.close();
   console.log("[brain] Watchers closed. Goodbye.");

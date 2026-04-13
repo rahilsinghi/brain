@@ -25,6 +25,7 @@ This is a self-improving personal knowledge base. You (Claude Code) are the brai
 **Graphify Phase 4 (Embeddings + Query):** Complete — WikiChunk.confidential field, SynthesisMode ("local"/"remote"), confidentiality filter in synthesize(), Telegram passes "remote", HTTP API accepts mode param, MCP passes "local", file-summary pipeline validated
 **Graphify Phase 5 (Explorer Fusion):** Complete — two-layer visualization with real data. Daemon sets `layer: "wiki"/"code"` on all nodes. Karen repo graphified (840 nodes, 66 communities). 820 cross-layer edges. 1921 total nodes (696 wiki + 1225 code). Bloom tuned for large graphs. Node click/focus interaction fixed (bounding sphere, nodeId passthrough, onPointerMissed race guard, deep-link one-shot). Sliding glass LayerToggle.
 **Post-Phase 5 Stabilization (2026-04-12):** Fixed tilde expansion bug in graph-push route (wrote to literal `~/` dir). Fixed cross-layer edge matching (repo name prefix instead of exact filename). Fixed InstancedMesh raycasting (computeBoundingSphere after matrix update). Fixed useDrag nodeId mapping (pass resolved ID from InstancedNodes, bypass stale reverse map). Fixed onPointerMissed/clearFocus race (timestamp guard). Fixed deep-link readFocusParam re-focus loop (run once on mount).
+**Daemon Resilience (2026-04-13):** Telegram bot isolated into subprocess (`src/telegram/worker.ts`) — Bun native fetch errors from grammY polling are uncatchable, so subprocess crash doesn't kill main daemon. Auto-restart with exponential backoff. Fixed launchd plist: `WorkingDirectory=/tmp` (macOS blocks launchd from `~/Desktop/` without FDA), absolute script path, logs to `/tmp/`. Bun binary requires Full Disk Access in System Settings. GCP billing re-linked askNYC project to correct billing account ($1000 GenAI credits). New Gemini API key (askNYC service account) added as `GEMINI_API_KEY_2`. Anthropic API key exhausted (expected — Gemini is primary via Vertex AI).
 
 **Spec:** `~/docs/superpowers/specs/2026-04-03-claude-native-brain-design.md`
 **Phase 3 spec:** `~/docs/superpowers/specs/2026-04-06-brain-phase3-auto-ingestion-design.md`
@@ -274,12 +275,20 @@ pnpm backfill-links:dry # Dry run: show what would change
 ### launchd management
 
 ```bash
-launchctl list com.rahilsinghi.brain     # Check service status
-launchctl stop com.rahilsinghi.brain     # Stop
-launchctl start com.rahilsinghi.brain    # Start
-launchctl unload ~/Library/LaunchAgents/com.rahilsinghi.brain.plist  # Disable
-launchctl load ~/Library/LaunchAgents/com.rahilsinghi.brain.plist    # Re-enable
+launchctl list com.rahilsinghi.brain-daemon     # Check service status
+launchctl stop com.rahilsinghi.brain-daemon     # Stop
+launchctl start com.rahilsinghi.brain-daemon    # Start
+launchctl unload ~/Library/LaunchAgents/com.rahilsinghi.brain-daemon.plist  # Disable
+launchctl load ~/Library/LaunchAgents/com.rahilsinghi.brain-daemon.plist    # Re-enable
+launchctl kickstart -kp gui/$(id -u)/com.rahilsinghi.brain-daemon  # Force restart
 ```
 
-Plist: `~/Library/LaunchAgents/com.rahilsinghi.brain.plist`
-Logs: `.brain/daemon.stdout.log`, `.brain/daemon.stderr.log`
+Plist: `~/Library/LaunchAgents/com.rahilsinghi.brain-daemon.plist`
+Logs: `/tmp/brain-daemon.stdout.log`, `/tmp/brain-daemon.stderr.log`
+
+**IMPORTANT: launchd + ~/Desktop/ FDA issue**
+- macOS blocks launchd-spawned processes from accessing `~/Desktop/` without Full Disk Access
+- The plist uses `WorkingDirectory=/tmp` and absolute script path to avoid this
+- Bun binary (`~/.bun/bin/bun`) MUST be in System Settings > Privacy > Full Disk Access
+- If daemon won't start, check `cat /tmp/brain-daemon.stderr.log` for "Operation not permitted"
+- Telegram bot runs as isolated subprocess — its crashes won't kill the main daemon
