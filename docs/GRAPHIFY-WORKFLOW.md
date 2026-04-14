@@ -179,16 +179,81 @@ There's no existing tool that measures "tokens saved by brain_query vs reading f
 
 To track this precisely, you could add a simple counter to the brain MCP server that logs each query with a rough "files it replaced" estimate. But `/cost` before and after a session gives you the actual numbers.
 
+## One-Command Repo Setup: `brain-connect`
+
+Instead of doing each step manually, use the setup script:
+
+```bash
+brain-connect ~/Desktop/maison
+```
+
+This single command:
+1. Installs a post-commit git hook (auto-graphify on every commit)
+2. Adds brain context section to the repo's CLAUDE.md
+3. Triggers initial graphify extraction
+4. Prints the deep link URL
+
+Output:
+```
+✓ Brain connected to maison
+  - Post-commit hook: installed
+  - CLAUDE.md: brain context added
+  - Graphify: extraction started
+  - Deep link: https://brain.rahilsinghi.com/?focus=project:maison&depth=2
+```
+
+After ~10 min, wiki articles appear in Obsidian and the explorer deep link works.
+
+### Day 1 at a new company workflow:
+
+```bash
+# 1. Clone their repo
+git clone git@github.com:maison/app.git ~/Desktop/maison
+
+# 2. Connect to brain (one command)
+brain-connect ~/Desktop/maison
+
+# 3. Open Claude Code in the repo
+cd ~/Desktop/maison && claude
+
+# 4. Claude automatically has brain context via CLAUDE.md
+# Every commit auto-syncs to brain
+# brain_query gives you full context about the codebase
+```
+
+## Three Visualization Layers
+
+| Layer | Tool | What it shows | When to use |
+|-------|------|--------------|-------------|
+| **Per-repo graph** | `graphify-out/graph.html` | Interactive vis.js graph of one repo's AST | "Show me the code architecture" |
+| **Wiki articles** | Obsidian | Compiled knowledge with `[[wikilinks]]` | "What does this module do?" |
+| **Cross-project graph** | brain-explorer (web) | 3D graph with neighborhood filtering | "How does this relate to my other work?" |
+
+### Per-repo interactive graph (graph.html)
+
+After graphifying a repo, open the generated HTML:
+```bash
+open ~/Desktop/brain/raw/graphify/maison/graphify-out/graph.html
+```
+
+Features:
+- Click any node to see its connections and source file
+- Search for classes/functions by name
+- Filter by community (click legend dots)
+- Zoom/pan with mouse
+- Edges styled by confidence (solid = extracted, dashed = inferred)
+
 ## Complete New Repo Checklist
 
 ```
-□ Run: brain graphify ~/Desktop/my-new-repo
+□ Run: brain-connect ~/Desktop/my-new-repo    (does everything below automatically)
+  ├── □ Post-commit hook installed
+  ├── □ CLAUDE.md brain context added
+  └── □ Initial graphify triggered
 □ Wait ~10 min for compilation
 □ Verify: open brain.rahilsinghi.com/?focus=project:my-new-repo&depth=2
 □ Verify: check wiki/projects/ in Obsidian for new articles
-□ (Optional) Add to .brain/config.yaml for hourly auto-sync
-□ (Optional) Add brain context section to repo's CLAUDE.md
-□ (Optional) Add post-commit git hook for auto-graphify
+□ Verify: open raw/graphify/my-new-repo/graphify-out/graph.html for interactive graph
 ```
 
 ## Architecture Reference
