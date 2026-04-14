@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: graphify-architecture
 repo: portfolio
-ingested_at: "2026-04-13T18:25:04.297Z"
-parsed_at: "2026-04-13T18:25:04.297Z"
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T18:25:04.297Z
+parsed_at: 2026-04-13T18:25:04.297Z
+compiled_to: "[[Portfolio Project Graph Report (2026-04-13)]]"
+processed_at: 2026-04-13T19:02:01.851Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Graph Report - /Users/rahilsinghi/Desktop/portfolio  (2026-04-13)
 

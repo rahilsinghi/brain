@@ -1,16 +1,18 @@
 ---
-status: pending
+status: processed
 source_type: graphify-community
 repo: portfolio
 community_id: 31
-ingested_at: "2026-04-13T18:25:04.298Z"
-parsed_at: "2026-04-13T18:25:04.298Z"
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T18:25:04.298Z
+parsed_at: 2026-04-13T18:25:04.298Z
+compiled_to: "[[Pretext Text Wrapping and Layout Verification]]"
+processed_at: 2026-04-13T19:04:12.430Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # portfolio — Community 31
 

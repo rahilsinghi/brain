@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: gmail
 source_id: 19d87e7d52af941a
 ingested_at: 2026-04-13T18:05:32.430Z
 parsed_at: 2026-04-13T18:05:32.430Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Rahil Singhi's Onboarding and Employment with Maison]]"
+processed_at: 2026-04-13T19:08:09.386Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Re: AI Recruitement
 

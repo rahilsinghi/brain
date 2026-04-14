@@ -1,0 +1,345 @@
+---
+status: processed
+source_type: graphify-community
+repo: career-datacenter
+community_id: 5
+ingested_at: 2026-04-13T22:29:48.744Z
+parsed_at: 2026-04-13T22:29:48.744Z
+compiled_to: "[[Job Search Automation CLI and Pipeline Management]]"
+processed_at: 2026-04-13T22:33:38.885Z
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+
+
+# career-datacenter — Community 5
+
+## Files in this cluster
+
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 79 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 11 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 10 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 9 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 8 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 8 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 8 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 8 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/easy_apply_workflow.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_review_cli.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 1 connection
+
+## Internal relationships
+
+- `test_pipeline_integration` → `job_tracker` (imports_from)
+- `test_pipeline_integration` → `test_pipeline_integration_make_job` (contains)
+- `test_pipeline_integration` → `test_pipeline_integration_testcsvoutputformat` (contains)
+- `test_pipeline_integration` → `test_pipeline_integration_testmultirundeduplication` (contains)
+- `test_pipeline_integration` → `test_pipeline_integration_teststatuslifecycle` (contains)
+- `test_pipeline_integration` → `test_pipeline_integration_testskillsgapanalysis` (contains)
+- `test_pipeline_integration` → `test_pipeline_integration_testsalaryintelligence` (contains)
+- `test_pipeline_integration_make_job` → `test_pipeline_integration_testcsvoutputformat_test_csv_has_required_columns` (calls)
+- `test_pipeline_integration_make_job` → `test_pipeline_integration_testcsvoutputformat_test_csv_values_match_job` (calls)
+- `test_pipeline_integration_make_job` → `test_pipeline_integration_testcsvoutputformat_test_csv_salary_fields` (calls)
+- `test_pipeline_integration_make_job` → `test_pipeline_integration_testmultirundeduplication_test_second_run_adds_no_duplicates` (calls)
+- `test_pipeline_integration_make_job` → `test_pipeline_integration_teststatuslifecycle_test_full_status_progression` (calls)
+- `test_pipeline_integration_make_job` → `test_pipeline_integration_teststatuslifecycle_test_applied_status_records_timestamp` (calls)
+- `test_pipeline_integration_testcsvoutputformat` → `test_pipeline_integration_testcsvoutputformat_test_csv_has_required_columns` (method)
+- `test_pipeline_integration_testcsvoutputformat` → `test_pipeline_integration_testcsvoutputformat_test_csv_values_match_job` (method)
+- `test_pipeline_integration_testcsvoutputformat` → `test_pipeline_integration_testcsvoutputformat_test_csv_salary_fields` (method)
+- `test_pipeline_integration_testcsvoutputformat` → `job_tracker_jobtracker` (uses)
+- `test_pipeline_integration_testmultirundeduplication` → `test_pipeline_integration_testmultirundeduplication_test_second_run_adds_no_duplicates` (method)
+- `test_pipeline_integration_testmultirundeduplication` → `test_pipeline_integration_testmultirundeduplication_test_dedup_survives_process_restart` (method)
+- `test_pipeline_integration_testmultirundeduplication` → `job_tracker_jobtracker` (uses)
+- `test_pipeline_integration_teststatuslifecycle` → `test_pipeline_integration_teststatuslifecycle_test_full_status_progression` (method)
+- `test_pipeline_integration_teststatuslifecycle` → `test_pipeline_integration_teststatuslifecycle_test_applied_status_records_timestamp` (method)
+- `test_pipeline_integration_teststatuslifecycle` → `job_tracker_jobtracker` (uses)
+- `test_pipeline_integration_testskillsgapanalysis` → `test_pipeline_integration_testskillsgapanalysis_test_extract_skills_finds_python` (method)
+- `test_pipeline_integration_testskillsgapanalysis` → `test_pipeline_integration_testskillsgapanalysis_test_extract_skills_finds_kubernetes` (method)
+- `test_pipeline_integration_testskillsgapanalysis` → `test_pipeline_integration_testskillsgapanalysis_test_analyze_returns_expected_structure` (method)
+- `test_pipeline_integration_testskillsgapanalysis` → `test_pipeline_integration_testskillsgapanalysis_test_covered_skills_not_in_gaps` (method)
+- `test_pipeline_integration_testskillsgapanalysis` → `job_tracker_jobtracker` (uses)
+- `test_pipeline_integration_testsalaryintelligence` → `test_pipeline_integration_testsalaryintelligence_test_percentile_calculation` (method)
+- `test_pipeline_integration_testsalaryintelligence` → `test_pipeline_integration_testsalaryintelligence_test_analyze_returns_overall_stats` (method)
+- `test_pipeline_integration_testsalaryintelligence` → `job_tracker_jobtracker` (uses)
+- `job_tracker` → `job_tracker_jobtracker` (contains)
+- `job_tracker` → `job_tracker_main` (contains)
+- `job_tracker` → `easy_apply_workflow` (imports_from)
+- `job_tracker` → `job_review_cli` (imports_from)
+- `job_tracker` → `test_scraper_system` (imports_from)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_init` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_create_csv` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_load_existing_ids` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_save_jobs` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_append_jobs` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_write_all_jobs` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_get_headers` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_get_jobs_by_status` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_get_high_fit_jobs` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_update_job_status` (method)
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_generate_summary_report` (method)
+- `job_tracker_jobtracker` → `job_tracker_main` (calls)
+- `job_tracker_jobtracker` → `easy_apply_workflow_easyapplyqueue` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_60` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_64` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_98` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_109` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_141` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_183` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_215` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_252` (uses)
+- `job_tracker_jobtracker` → `easy_apply_workflow_rationale_297` (uses)
+- `job_tracker_jobtracker` → `job_review_cli_rationale_43` (uses)
+- `job_tracker_jobtracker` → `job_review_cli_rationale_53` (uses)
+- `job_tracker_jobtracker` → `job_review_cli_rationale_80` (uses)
+- `job_tracker_jobtracker` → `job_review_cli_rationale_109` (uses)
+- `job_tracker_jobtracker` → `job_review_cli_rationale_207` (uses)
+- `job_tracker_jobtracker_init` → `job_tracker_jobtracker_create_csv` (calls)
+- `job_tracker_jobtracker_init` → `job_tracker_jobtracker_load_existing_ids` (calls)
+- `job_tracker_jobtracker_save_jobs` → `job_tracker_jobtracker_write_all_jobs` (calls)
+- `job_tracker_jobtracker_save_jobs` → `job_tracker_jobtracker_append_jobs` (calls)
+- `job_tracker_jobtracker_save_jobs` → `job_tracker_main` (calls)
+- `job_tracker_jobtracker_append_jobs` → `job_tracker_jobtracker_get_headers` (calls)
+- `job_tracker_jobtracker_write_all_jobs` → `job_tracker_jobtracker_get_headers` (calls)
+- `job_tracker_jobtracker_write_all_jobs` → `job_tracker_jobtracker_update_job_status` (calls)
+- `job_tracker_jobtracker_get_high_fit_jobs` → `job_tracker_main` (calls)
+- `job_tracker_jobtracker_generate_summary_report` → `job_tracker_main` (calls)
+- `easy_apply_workflow` → `easy_apply_workflow_easyapplyqueue` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_load` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_get_url_for_job` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_get_output_paths` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_mark_applied_in_csv` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_handle_result` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_run_single` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_run_queue` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_show_queue` (contains)
+- `easy_apply_workflow` → `easy_apply_workflow_main` (contains)
+- `easy_apply_workflow_easyapplyqueue` → `easy_apply_workflow_rationale_60` (rationale_for)
+- `easy_apply_workflow_load` → `easy_apply_workflow_run_queue` (calls)
+- `easy_apply_workflow_load` → `easy_apply_workflow_show_queue` (calls)
+- `easy_apply_workflow_get_url_for_job` → `easy_apply_workflow_run_single` (calls)
+- `easy_apply_workflow_get_output_paths` → `easy_apply_workflow_run_single` (calls)
+- `easy_apply_workflow_mark_applied_in_csv` → `easy_apply_workflow_handle_result` (calls)
+- `easy_apply_workflow_mark_applied_in_csv` → `easy_apply_workflow_rationale_141` (rationale_for)
+- `easy_apply_workflow_handle_result` → `easy_apply_workflow_run_single` (calls)
+- `easy_apply_workflow_handle_result` → `easy_apply_workflow_rationale_183` (rationale_for)
+- `easy_apply_workflow_run_single` → `easy_apply_workflow_run_queue` (calls)
+- `easy_apply_workflow_run_single` → `easy_apply_workflow_main` (calls)
+- `easy_apply_workflow_run_single` → `easy_apply_workflow_rationale_215` (rationale_for)
+- `easy_apply_workflow_run_queue` → `easy_apply_workflow_main` (calls)
+- `easy_apply_workflow_run_queue` → `easy_apply_workflow_rationale_252` (rationale_for)
+- `easy_apply_workflow_show_queue` → `easy_apply_workflow_main` (calls)
+- `easy_apply_workflow_show_queue` → `easy_apply_workflow_rationale_297` (rationale_for)
+- `job_review_cli` → `job_review_cli_load_reviewed` (contains)
+- `job_review_cli` → `job_review_cli_save_reviewed` (contains)
+- `job_review_cli` → `job_review_cli_format_salary` (contains)
+- `job_review_cli` → `job_review_cli_score_color` (contains)
+- `job_review_cli` → `job_review_cli_is_easy_apply` (contains)
+- `job_review_cli` → `job_review_cli_print_job_card` (contains)
+- `job_review_cli` → `job_review_cli_prompt_decision` (contains)
+- `job_review_cli` → `job_review_cli_review_jobs` (contains)
+- `job_review_cli` → `job_review_cli_list_approved` (contains)
+- `job_review_cli` → `job_review_cli_main` (contains)
+- `job_review_cli_load_reviewed` → `job_review_cli_review_jobs` (calls)
+- `job_review_cli_load_reviewed` → `job_review_cli_list_approved` (calls)
+- `job_review_cli_load_reviewed` → `job_review_cli_rationale_43` (rationale_for)
+- `job_review_cli_save_reviewed` → `job_review_cli_review_jobs` (calls)
+- `job_review_cli_save_reviewed` → `job_review_cli_rationale_53` (rationale_for)
+- `job_review_cli_format_salary` → `job_review_cli_print_job_card` (calls)
+- `job_review_cli_score_color` → `job_review_cli_print_job_card` (calls)
+- `job_review_cli_is_easy_apply` → `job_review_cli_print_job_card` (calls)
+- `job_review_cli_is_easy_apply` → `job_review_cli_review_jobs` (calls)
+- `job_review_cli_is_easy_apply` → `job_review_cli_rationale_80` (rationale_for)
+- `job_review_cli_print_job_card` → `job_review_cli_review_jobs` (calls)
+- `job_review_cli_prompt_decision` → `job_review_cli_review_jobs` (calls)
+- `job_review_cli_prompt_decision` → `job_review_cli_rationale_109` (rationale_for)
+- `job_review_cli_review_jobs` → `job_review_cli_main` (calls)
+- `job_review_cli_list_approved` → `job_review_cli_main` (calls)
+- `job_review_cli_list_approved` → `job_review_cli_rationale_207` (rationale_for)
+- `test_scraper_system` → `test_scraper_system_create_test_jobs` (contains)
+- `test_scraper_system` → `test_scraper_system_test_filtering` (contains)
+- `test_scraper_system` → `test_scraper_system_test_scoring` (contains)
+- `test_scraper_system` → `test_scraper_system_test_tracking` (contains)
+- `test_scraper_system` → `test_scraper_system_main` (contains)
+- `test_scraper_system_create_test_jobs` → `test_scraper_system_main` (calls)
+- `test_scraper_system_test_filtering` → `test_scraper_system_main` (calls)
+- `test_scraper_system_test_scoring` → `test_scraper_system_main` (calls)
+- `test_scraper_system_test_tracking` → `test_scraper_system_main` (calls)
+
+## External dependencies
+
+- `test_pipeline_integration` → `job_deduplicator` (imports_from) [community 3]
+- `test_pipeline_integration` → `job_scraper_models` (imports_from) [community 0]
+- `test_pipeline_integration` → `test_pipeline_integration_rationale_1` (rationale_for) [community 0]
+- `test_pipeline_integration_testcsvoutputformat` → `job_deduplicator_jobdeduplicator` (uses) [community 3]
+- `test_pipeline_integration_testcsvoutputformat` → `job_scraper_models_job` (uses) [community 0]
+- `test_pipeline_integration_testcsvoutputformat` → `job_scraper_models_jobsource` (uses) [community 0]
+- `test_pipeline_integration_testcsvoutputformat` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `test_pipeline_integration_testmultirundeduplication` → `job_deduplicator_jobdeduplicator` (uses) [community 3]
+- `test_pipeline_integration_testmultirundeduplication` → `job_scraper_models_job` (uses) [community 0]
+- `test_pipeline_integration_testmultirundeduplication` → `job_scraper_models_jobsource` (uses) [community 0]
+- `test_pipeline_integration_testmultirundeduplication` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `test_pipeline_integration_teststatuslifecycle` → `job_deduplicator_jobdeduplicator` (uses) [community 3]
+- `test_pipeline_integration_teststatuslifecycle` → `job_scraper_models_job` (uses) [community 0]
+- `test_pipeline_integration_teststatuslifecycle` → `job_scraper_models_jobsource` (uses) [community 0]
+- `test_pipeline_integration_teststatuslifecycle` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `test_pipeline_integration_testskillsgapanalysis` → `test_pipeline_integration_rationale_166` (rationale_for) [community 0]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_deduplicator_jobdeduplicator` (uses) [community 3]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_scraper_models_job` (uses) [community 0]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_scraper_models_jobsource` (uses) [community 0]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `test_pipeline_integration_testsalaryintelligence` → `job_deduplicator_jobdeduplicator` (uses) [community 3]
+- `test_pipeline_integration_testsalaryintelligence` → `job_scraper_models_job` (uses) [community 0]
+- `test_pipeline_integration_testsalaryintelligence` → `job_scraper_models_jobsource` (uses) [community 0]
+- `test_pipeline_integration_testsalaryintelligence` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `test_pipeline_integration_rationale_1` → `job_tracker_jobtracker` (uses) [community 0]
+- `test_pipeline_integration_rationale_166` → `job_tracker_jobtracker` (uses) [community 0]
+- `test_job_tracker` → `job_tracker` (imports_from) [community 11]
+- `test_job_tracker_testsavejobs` → `job_tracker_jobtracker` (uses) [community 11]
+- `test_job_tracker_testloadjobs` → `job_tracker_jobtracker` (uses) [community 11]
+- `test_job_tracker_testupdatestatus` → `job_tracker_jobtracker` (uses) [community 11]
+- `test_job_tracker_testsummaryreport` → `job_tracker_jobtracker` (uses) [community 11]
+- `test_job_tracker_rationale_1` → `job_tracker_jobtracker` (uses) [community 0]
+- `batch_process_overnight` → `job_tracker` (imports_from) [community 3]
+- `batch_process_overnight_overnightbatchprocessor` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `job_tracker_jobtracker` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `job_tracker_jobtracker` (uses) [community 3]
+- `job_tracker` → `job_scraper_models` (imports_from) [community 0]
+- `job_tracker` → `job_tracker_rationale_1` (rationale_for) [community 0]
+- `job_tracker` → `apply_workflow` (imports_from) [community 10]
+- `job_tracker` → `resume_variants` (imports_from) [community 2]
+- `job_tracker` → `application_runner` (imports_from) [community 2]
+- `job_tracker` → `run_job_scraper` (imports_from) [community 0]
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_load_all_jobs` (method) [community 0]
+- `job_tracker_jobtracker` → `job_tracker_rationale_19` (rationale_for) [community 0]
+- `job_tracker_jobtracker` → `job_scraper_models_job` (uses) [community 0]
+- `job_tracker_jobtracker` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `job_tracker_jobtracker` → `job_scraper_models_jobsource` (uses) [community 0]
+- `job_tracker_jobtracker` → `apply_workflow_rationale_57` (uses) [community 10]
+- `job_tracker_jobtracker` → `apply_workflow_rationale_70` (uses) [community 10]
+- `job_tracker_jobtracker` → `apply_workflow_rationale_101` (uses) [community 10]
+- `job_tracker_jobtracker` → `apply_workflow_rationale_160` (uses) [community 10]
+- `job_tracker_jobtracker` → `apply_workflow_rationale_181` (uses) [community 10]
+- `job_tracker_jobtracker` → `apply_workflow_rationale_187` (uses) [community 10]
+- `job_tracker_jobtracker` → `resume_variants_rationale_86` (uses) [community 2]
+- `job_tracker_jobtracker` → `resume_variants_rationale_159` (uses) [community 2]
+- `job_tracker_jobtracker` → `application_runner_applicationbatchrunner` (uses) [community 10]
+- `job_tracker_jobtracker` → `application_runner_rationale_49` (uses) [community 2]
+- `job_tracker_jobtracker` → `application_runner_rationale_72` (uses) [community 2]
+- `job_tracker_jobtracker` → `application_runner_rationale_91` (uses) [community 2]
+- `job_tracker_jobtracker` → `application_runner_rationale_100` (uses) [community 2]
+- `job_tracker_jobtracker` → `application_runner_rationale_108` (uses) [community 2]
+- `job_tracker_jobtracker` → `application_runner_rationale_137` (uses) [community 2]
+- `job_tracker_jobtracker` → `application_runner_rationale_197` (uses) [community 2]
+- `job_tracker_jobtracker` → `run_job_scraper_jobscraperorchestrator` (uses) [community 0]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_48` (uses) [community 0]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_55` (uses) [community 0]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_89` (uses) [community 0]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_187` (uses) [community 0]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_263` (uses) [community 0]
+- `job_tracker_jobtracker` → `test_scraper_system_rationale_23` (uses) [community 0]
+- `job_tracker_jobtracker` → `test_scraper_system_rationale_258` (uses) [community 0]
+- `job_tracker_jobtracker_init` → `job_tracker_rationale_22` (rationale_for) [community 0]
+- `job_tracker_jobtracker_create_csv` → `job_tracker_rationale_42` (rationale_for) [community 0]
+- `job_tracker_jobtracker_load_existing_ids` → `job_tracker_rationale_74` (rationale_for) [community 0]
+- `job_tracker_jobtracker_save_jobs` → `job_tracker_rationale_92` (rationale_for) [community 0]
+- `job_tracker_jobtracker_append_jobs` → `job_tracker_rationale_151` (rationale_for) [community 0]
+- `job_tracker_jobtracker_write_all_jobs` → `job_tracker_rationale_180` (rationale_for) [community 0]
+- `job_tracker_jobtracker_get_jobs_by_status` → `job_tracker_rationale_202` (rationale_for) [community 0]
+- `job_tracker_jobtracker_get_high_fit_jobs` → `job_tracker_rationale_207` (rationale_for) [community 0]
+- `job_tracker_jobtracker_update_job_status` → `job_tracker_rationale_222` (rationale_for) [community 0]
+- `job_tracker_jobtracker_generate_summary_report` → `job_tracker_rationale_243` (rationale_for) [community 0]
+- `easy_apply_workflow` → `job_scraper_models` (imports_from) [community 0]
+- `easy_apply_workflow_easyapplyqueue` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_60` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_64` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_98` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_109` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_141` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_183` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_215` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_252` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `easy_apply_workflow_rationale_297` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `job_scraper_models` → `job_review_cli` (imports_from) [community 0]
+- `job_scraper_models` → `test_scraper_system` (imports_from) [community 0]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_43` (uses) [community 0]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_53` (uses) [community 0]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_80` (uses) [community 0]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_109` (uses) [community 0]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_207` (uses) [community 0]
+- `job_filter` → `test_scraper_system` (imports_from) [community 0]
+- `test_scraper_system_create_test_jobs` → `test_scraper_system_rationale_23` (rationale_for) [community 0]
+- `test_scraper_system_test_scoring` → `test_scraper_system_rationale_258` (rationale_for) [community 0]

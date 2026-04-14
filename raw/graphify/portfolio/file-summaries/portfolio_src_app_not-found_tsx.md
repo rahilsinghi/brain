@@ -2,7 +2,7 @@
 title: "not-found.tsx"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/app/not-found.tsx"
 repo: "portfolio"
-community: 48
+community: 46
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/app/not-found.tsx`
-**Community:** 48
+**Community:** 46
 
 ## Imports
 - (none)

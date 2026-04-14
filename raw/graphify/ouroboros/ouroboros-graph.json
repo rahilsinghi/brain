@@ -49,7 +49,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/__init__.py",
       "source_location": "L1",
       "id": "init",
-      "community": 23
+      "community": 24
     },
     {
       "label": "Ouroboros: Self-improving agent engine for claw-code.",
@@ -57,7 +57,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/__init__.py",
       "source_location": "L1",
       "id": "init_rationale_1",
-      "community": 23
+      "community": 24
     },
     {
       "label": "types.py",
@@ -65,7 +65,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/types.py",
       "source_location": "L1",
       "id": "types",
-      "community": 4
+      "community": 1
     },
     {
       "label": "IterationOutcome",
@@ -73,7 +73,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L10",
       "id": "types_iterationoutcome",
-      "community": 3
+      "community": 1
     },
     {
       "label": "str",
@@ -81,7 +81,7 @@
       "source_file": "",
       "source_location": "",
       "id": "str",
-      "community": 3
+      "community": 0
     },
     {
       "label": "Enum",
@@ -89,7 +89,7 @@
       "source_file": "",
       "source_location": "",
       "id": "enum",
-      "community": 0
+      "community": 1
     },
     {
       "label": "DimensionScore",
@@ -97,7 +97,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L22",
       "id": "types_dimensionscore",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".__post_init__()",
@@ -105,7 +105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L28",
       "id": "types_dimensionscore_post_init",
-      "community": 1
+      "community": 2
     },
     {
       "label": "ScoreboardSnapshot",
@@ -113,7 +113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L36",
       "id": "types_scoreboardsnapshot",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".get()",
@@ -121,7 +121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L43",
       "id": "types_scoreboardsnapshot_get",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".to_json()",
@@ -129,7 +129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L50",
       "id": "types_scoreboardsnapshot_to_json",
-      "community": 5
+      "community": 1
     },
     {
       "label": "TraceEvent",
@@ -137,7 +137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L65",
       "id": "types_traceevent",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".to_jsonl_line()",
@@ -145,7 +145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L72",
       "id": "types_traceevent_to_jsonl_line",
-      "community": 6
+      "community": 4
     },
     {
       "label": "ObservationReport",
@@ -153,7 +153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L84",
       "id": "types_observationreport",
-      "community": 4
+      "community": 1
     },
     {
       "label": "FileChange",
@@ -161,7 +161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L94",
       "id": "types_filechange",
-      "community": 4
+      "community": 1
     },
     {
       "label": "ChangePlan",
@@ -169,7 +169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L103",
       "id": "types_changeplan",
-      "community": 4
+      "community": 1
     },
     {
       "label": "LedgerEntry",
@@ -177,7 +177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L113",
       "id": "types_ledgerentry",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Telemetry record dataclass for iteration archive.",
@@ -185,7 +185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/types.py",
       "source_location": "L1",
       "id": "types_rationale_1",
-      "community": 4
+      "community": 1
     },
     {
       "label": "Outcome of a single improvement iteration attempt.",
@@ -193,7 +193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L11",
       "id": "types_rationale_11",
-      "community": 3
+      "community": 1
     },
     {
       "label": "A scored dimension with name and normalized value between 0.0 and 1.0.",
@@ -201,7 +201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L23",
       "id": "types_rationale_23",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Validate that value is between 0.0 and 1.0.",
@@ -209,7 +209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L29",
       "id": "types_rationale_29",
-      "community": 1
+      "community": 2
     },
     {
       "label": "A snapshot of all dimension scores at a specific iteration.",
@@ -217,7 +217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L37",
       "id": "types_rationale_37",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Return the DimensionScore for the named dimension, or None if not found.",
@@ -225,7 +225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L44",
       "id": "types_rationale_44",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Serialize this snapshot to a JSON-compatible dict.",
@@ -233,7 +233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L51",
       "id": "types_rationale_51",
-      "community": 5
+      "community": 1
     },
     {
       "label": "A single recorded event from an agent run for trace analysis.",
@@ -241,7 +241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L66",
       "id": "types_rationale_66",
-      "community": 6
+      "community": 4
     },
     {
       "label": "Return the markdown body (cognitive traces, diff, traceback).",
@@ -249,7 +249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/types.py",
       "source_location": "L73",
       "id": "types_rationale_73",
-      "community": 6
+      "community": 4
     },
     {
       "label": "Report produced by the Observer agent identifying the weakest dimension.",
@@ -257,7 +257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L85",
       "id": "types_rationale_85",
-      "community": 4
+      "community": 1
     },
     {
       "label": "A single file modification specified in a change plan.",
@@ -265,7 +265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L95",
       "id": "types_rationale_95",
-      "community": 4
+      "community": 1
     },
     {
       "label": "A complete plan produced by the Strategist agent with hypothesis and file change",
@@ -273,7 +273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L104",
       "id": "types_rationale_104",
-      "community": 4
+      "community": 1
     },
     {
       "label": "A permanent record of a single improvement iteration attempt and its outcome.",
@@ -281,7 +281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/types.py",
       "source_location": "L114",
       "id": "types_rationale_114",
-      "community": 5
+      "community": 1
     },
     {
       "label": "cli.py",
@@ -289,7 +289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L1",
       "id": "cli",
-      "community": 3
+      "community": 6
     },
     {
       "label": "build_parser()",
@@ -297,7 +297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L11",
       "id": "cli_build_parser",
-      "community": 3
+      "community": 6
     },
     {
       "label": "main()",
@@ -305,7 +305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L70",
       "id": "cli_main",
-      "community": 3
+      "community": 6
     },
     {
       "label": "_cmd_run()",
@@ -313,7 +313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L95",
       "id": "cli_cmd_run",
-      "community": 3
+      "community": 6
     },
     {
       "label": "_cmd_scoreboard()",
@@ -321,7 +321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L129",
       "id": "cli_cmd_scoreboard",
-      "community": 3
+      "community": 6
     },
     {
       "label": "_cmd_ledger()",
@@ -329,7 +329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L153",
       "id": "cli_cmd_ledger",
-      "community": 3
+      "community": 6
     },
     {
       "label": "_cmd_meta()",
@@ -337,7 +337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L191",
       "id": "cli_cmd_meta",
-      "community": 3
+      "community": 6
     },
     {
       "label": "_cmd_benchmark()",
@@ -345,7 +345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L238",
       "id": "cli_cmd_benchmark",
-      "community": 3
+      "community": 6
     },
     {
       "label": "_cmd_config()",
@@ -353,7 +353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L244",
       "id": "cli_cmd_config",
-      "community": 3
+      "community": 6
     },
     {
       "label": "_cmd_dashboard()",
@@ -361,7 +361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L256",
       "id": "cli_cmd_dashboard",
-      "community": 3
+      "community": 6
     },
     {
       "label": "CLI entry point for Ouroboros.",
@@ -369,7 +369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L1",
       "id": "cli_rationale_1",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Build and return the argument parser for the ouroboros CLI.",
@@ -377,7 +377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L12",
       "id": "cli_rationale_12",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Parse arguments and dispatch to the appropriate subcommand handler.",
@@ -385,7 +385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L71",
       "id": "cli_rationale_71",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Execute the main improvement loop with optional overrides.",
@@ -393,7 +393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L96",
       "id": "cli_rationale_96",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Display the current scoreboard or its history over time.",
@@ -401,7 +401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L130",
       "id": "cli_rationale_130",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Display ledger entries with optional filtering by iteration or outcome.",
@@ -409,7 +409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L154",
       "id": "cli_rationale_154",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Run the meta-learning loop or display prompt version status.",
@@ -417,7 +417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L192",
       "id": "cli_rationale_192",
-      "community": 3
+      "community": 1
     },
     {
       "label": "Run the specified benchmark suite and display results.",
@@ -425,7 +425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L239",
       "id": "cli_rationale_239",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Show current configuration or update a configuration value.",
@@ -433,7 +433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L245",
       "id": "cli_rationale_245",
-      "community": 3
+      "community": 1
     },
     {
       "label": "Launch the terminal or web dashboard for viewing system status.",
@@ -441,7 +441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py",
       "source_location": "L257",
       "id": "cli_rationale_257",
-      "community": 3
+      "community": 6
     },
     {
       "label": "loop.py",
@@ -465,7 +465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L41",
       "id": "loop_improvementloop",
-      "community": 3
+      "community": 0
     },
     {
       "label": ".__init__()",
@@ -473,7 +473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L42",
       "id": "loop_improvementloop_init",
-      "community": 3
+      "community": 0
     },
     {
       "label": ".run()",
@@ -481,7 +481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L76",
       "id": "loop_improvementloop_run",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._run_iteration()",
@@ -489,7 +489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L125",
       "id": "loop_improvementloop_run_iteration",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._run_scoreboard()",
@@ -497,7 +497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L267",
       "id": "loop_improvementloop_run_scoreboard",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._get_previously_passing()",
@@ -505,7 +505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L278",
       "id": "loop_improvementloop_get_previously_passing",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._read_target_files()",
@@ -513,7 +513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L291",
       "id": "loop_improvementloop_read_target_files",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._summarize_ledger()",
@@ -521,7 +521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L316",
       "id": "loop_improvementloop_summarize_ledger",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._eval_score()",
@@ -529,7 +529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L324",
       "id": "loop_improvementloop_eval_score",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._describe_improvement()",
@@ -537,7 +537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L333",
       "id": "loop_improvementloop_describe_improvement",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._read_agent_tokens()",
@@ -545,7 +545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L342",
       "id": "loop_improvementloop_read_agent_tokens",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._write_telemetry()",
@@ -553,7 +553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L356",
       "id": "loop_improvementloop_write_telemetry",
-      "community": 3
+      "community": 0
     },
     {
       "label": "._log_iteration()",
@@ -561,7 +561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/loop.py",
       "source_location": "L400",
       "id": "loop_improvementloop_log_iteration",
-      "community": 3
+      "community": 0
     },
     {
       "label": "Core improvement loop \u2014 OBSERVE \u2192 HYPOTHESIZE \u2192 IMPLEMENT \u2192 EVALUATE.",
@@ -641,7 +641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/__main__.py",
       "source_location": "L1",
       "id": "main",
-      "community": 22
+      "community": 25
     },
     {
       "label": "Entry point for python -m ouroboros.",
@@ -649,7 +649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/__main__.py",
       "source_location": "L1",
       "id": "main_rationale_1",
-      "community": 22
+      "community": 25
     },
     {
       "label": "store.py",
@@ -657,7 +657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/store.py",
       "source_location": "L1",
       "id": "store",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TraceStore",
@@ -705,7 +705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/store.py",
       "source_location": "L1",
       "id": "store_rationale_1",
-      "community": 6
+      "community": 4
     },
     {
       "label": "analyzer.py",
@@ -713,7 +713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/analyzer.py",
       "source_location": "L1",
       "id": "analyzer",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TraceSummary",
@@ -721,7 +721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/analyzer.py",
       "source_location": "L11",
       "id": "analyzer_tracesummary",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TraceAnalyzer",
@@ -729,7 +729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/analyzer.py",
       "source_location": "L18",
       "id": "analyzer_traceanalyzer",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".summarize()",
@@ -737,7 +737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/analyzer.py",
       "source_location": "L19",
       "id": "analyzer_traceanalyzer_summarize",
-      "community": 6
+      "community": 4
     },
     {
       "label": "Trace analysis \u2014 pattern detection across runs.",
@@ -745,7 +745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/analyzer.py",
       "source_location": "L1",
       "id": "analyzer_rationale_1",
-      "community": 6
+      "community": 4
     },
     {
       "label": "Produce aggregate statistics from trace events.",
@@ -753,7 +753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/analyzer.py",
       "source_location": "L20",
       "id": "analyzer_rationale_20",
-      "community": 6
+      "community": 4
     },
     {
       "label": "collector.py",
@@ -761,7 +761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/collector.py",
       "source_location": "L1",
       "id": "collector",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TraceCollector",
@@ -769,7 +769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/collector.py",
       "source_location": "L11",
       "id": "collector_tracecollector",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".__init__()",
@@ -777,7 +777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/collector.py",
       "source_location": "L12",
       "id": "collector_tracecollector_init",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".collect_run()",
@@ -785,7 +785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/collector.py",
       "source_location": "L15",
       "id": "collector_tracecollector_collect_run",
-      "community": 6
+      "community": 4
     },
     {
       "label": "Collect trace events from claw-code CLI runs.",
@@ -793,7 +793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/traces/collector.py",
       "source_location": "L1",
       "id": "collector_rationale_1",
-      "community": 6
+      "community": 4
     },
     {
       "label": "prompt_store.py",
@@ -801,7 +801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L1",
       "id": "prompt_store",
-      "community": 0
+      "community": 3
     },
     {
       "label": "PromptStore",
@@ -809,7 +809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L11",
       "id": "prompt_store_promptstore",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".__init__()",
@@ -817,7 +817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L14",
       "id": "prompt_store_promptstore_init",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".initialize()",
@@ -825,7 +825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L18",
       "id": "prompt_store_promptstore_initialize",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".load()",
@@ -833,7 +833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L41",
       "id": "prompt_store_promptstore_load",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".current_version()",
@@ -841,7 +841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L48",
       "id": "prompt_store_promptstore_current_version",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".write_version()",
@@ -849,7 +849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L60",
       "id": "prompt_store_promptstore_write_version",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".promote()",
@@ -857,7 +857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L85",
       "id": "prompt_store_promptstore_promote",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".token_count()",
@@ -865,7 +865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L114",
       "id": "prompt_store_promptstore_token_count",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Versioned prompt storage with atomic symlink swaps.",
@@ -873,7 +873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L1",
       "id": "prompt_store_rationale_1",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Manage versioned prompt files for each agent.",
@@ -881,7 +881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L12",
       "id": "prompt_store_rationale_12",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Write v1.md and current.md for each agent from defaults (first run).",
@@ -889,7 +889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L19",
       "id": "prompt_store_rationale_19",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Load the current prompt for an agent. Falls back to hardcoded default.",
@@ -897,7 +897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L42",
       "id": "prompt_store_rationale_42",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Return the highest version number for an agent.",
@@ -905,7 +905,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L49",
       "id": "prompt_store_rationale_49",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Write a new prompt version file. Returns the version number.",
@@ -913,7 +913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L66",
       "id": "prompt_store_rationale_66",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Promote a version to current via atomic file swap.",
@@ -921,7 +921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L92",
       "id": "prompt_store_rationale_92",
-      "community": 0
+      "community": 3
     },
     {
       "label": "Count tokens (words) in a prompt version.",
@@ -929,7 +929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/prompt_store.py",
       "source_location": "L115",
       "id": "prompt_store_rationale_115",
-      "community": 0
+      "community": 3
     },
     {
       "label": "benchmark_gen.py",
@@ -937,7 +937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L1",
       "id": "benchmark_gen",
-      "community": 2
+      "community": 5
     },
     {
       "label": "BenchmarkTask",
@@ -945,7 +945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L12",
       "id": "benchmark_gen_benchmarktask",
-      "community": 2
+      "community": 5
     },
     {
       "label": "load_benchmark_tasks()",
@@ -953,7 +953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L25",
       "id": "benchmark_gen_load_benchmark_tasks",
-      "community": 2
+      "community": 5
     },
     {
       "label": "BenchmarkGenerator",
@@ -961,7 +961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L47",
       "id": "benchmark_gen_benchmarkgenerator",
-      "community": 2
+      "community": 3
     },
     {
       "label": ".__init__()",
@@ -969,7 +969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L50",
       "id": "benchmark_gen_benchmarkgenerator_init",
-      "community": 2
+      "community": 3
     },
     {
       "label": ".generate_rotating()",
@@ -977,7 +977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L53",
       "id": "benchmark_gen_benchmarkgenerator_generate_rotating",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Benchmark task definitions and rotating task generation.",
@@ -985,7 +985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L1",
       "id": "benchmark_gen_rationale_1",
-      "community": 2
+      "community": 5
     },
     {
       "label": "A single benchmark task for tournament evaluation.",
@@ -993,7 +993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L13",
       "id": "benchmark_gen_rationale_13",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Load benchmark tasks from YAML files in a directory.",
@@ -1001,7 +1001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L26",
       "id": "benchmark_gen_rationale_26",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Generate rotating benchmark tasks from the current codebase.",
@@ -1009,7 +1009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L48",
       "id": "benchmark_gen_rationale_48",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Find undocumented public functions and generate add-docstring tasks.",
@@ -1017,7 +1017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/benchmark_gen.py",
       "source_location": "L54",
       "id": "benchmark_gen_rationale_54",
-      "community": 2
+      "community": 3
     },
     {
       "label": "agent.py",
@@ -1025,7 +1025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L1",
       "id": "agent",
-      "community": 2
+      "community": 3
     },
     {
       "label": "MetaResult",
@@ -1033,7 +1033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L15",
       "id": "agent_metaresult",
-      "community": 2
+      "community": 3
     },
     {
       "label": "_check_bloat()",
@@ -1041,7 +1041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L30",
       "id": "agent_check_bloat",
-      "community": 2
+      "community": 3
     },
     {
       "label": "MetaAgent",
@@ -1065,7 +1065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L89",
       "id": "agent_metaagent_run",
-      "community": 2
+      "community": 3
     },
     {
       "label": "._select_worst_agent()",
@@ -1073,7 +1073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L175",
       "id": "agent_metaagent_select_worst_agent",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Meta-Agent \u2014 outer loop that evolves agent prompts.",
@@ -1081,7 +1081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L1",
       "id": "agent_rationale_1",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Result of a meta-agent cycle.",
@@ -1089,7 +1089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L16",
       "id": "agent_rationale_16",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Check if mutation exceeds the bloat limit.",
@@ -1097,7 +1097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L31",
       "id": "agent_rationale_31",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Outer loop that evolves agent prompts based on telemetry.",
@@ -1113,7 +1113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L90",
       "id": "agent_rationale_90",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Select the agent that causes the most failures based on telemetry.",
@@ -1121,7 +1121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/agent.py",
       "source_location": "L176",
       "id": "agent_rationale_176",
-      "community": 2
+      "community": 3
     },
     {
       "label": "tournament.py",
@@ -1129,7 +1129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L1",
       "id": "tournament",
-      "community": 2
+      "community": 5
     },
     {
       "label": "score_task_result()",
@@ -1137,7 +1137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L13",
       "id": "tournament_score_task_result",
-      "community": 2
+      "community": 5
     },
     {
       "label": "_check_ruff_clean()",
@@ -1145,7 +1145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L35",
       "id": "tournament_check_ruff_clean",
-      "community": 2
+      "community": 5
     },
     {
       "label": "_check_has_docstring()",
@@ -1153,7 +1153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L54",
       "id": "tournament_check_has_docstring",
-      "community": 2
+      "community": 5
     },
     {
       "label": "_check_low_complexity()",
@@ -1161,7 +1161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L65",
       "id": "tournament_check_low_complexity",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Tournament",
@@ -1169,7 +1169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L83",
       "id": "tournament_tournament",
-      "community": 2
+      "community": 3
     },
     {
       "label": ".__init__()",
@@ -1177,7 +1177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L86",
       "id": "tournament_tournament_init",
-      "community": 2
+      "community": 3
     },
     {
       "label": ".run()",
@@ -1185,7 +1185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L90",
       "id": "tournament_tournament_run",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Tournament runner \u2014 evaluate prompts against benchmark tasks.",
@@ -1193,7 +1193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L1",
       "id": "tournament_rationale_1",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Score a single task result using AST-based deterministic checks.      Returns 1.",
@@ -1201,7 +1201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L14",
       "id": "tournament_rationale_14",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Check if code has zero ruff violations.",
@@ -1209,7 +1209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L36",
       "id": "tournament_rationale_36",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Check if the target function has a docstring using AST.",
@@ -1217,7 +1217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L55",
       "id": "tournament_rationale_55",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Check if target function has low complexity by counting branches.",
@@ -1225,7 +1225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L66",
       "id": "tournament_rationale_66",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Run benchmark tasks against a prompt and compute aggregate score.",
@@ -1233,7 +1233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L84",
       "id": "tournament_rationale_84",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Run all tasks and return mean score.          agent_callable: a function(task_de",
@@ -1241,7 +1241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/meta/tournament.py",
       "source_location": "L91",
       "id": "tournament_rationale_91",
-      "community": 2
+      "community": 5
     },
     {
       "label": "observer.py",
@@ -1249,7 +1249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/observer.py",
       "source_location": "L1",
       "id": "observer",
-      "community": 6
+      "community": 4
     },
     {
       "label": "ObserverAgent",
@@ -1273,7 +1273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/observer.py",
       "source_location": "L34",
       "id": "observer_observeragent_observe",
-      "community": 0
+      "community": 4
     },
     {
       "label": "._build_prompt()",
@@ -1281,7 +1281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/observer.py",
       "source_location": "L54",
       "id": "observer_observeragent_build_prompt",
-      "community": 0
+      "community": 4
     },
     {
       "label": "Observer agent \u2014 reads traces and scoreboard to identify weaknesses.",
@@ -1289,7 +1289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/observer.py",
       "source_location": "L1",
       "id": "observer_rationale_1",
-      "community": 6
+      "community": 4
     },
     {
       "label": "Analyze scoreboard and traces, return an ObservationReport.",
@@ -1297,7 +1297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/observer.py",
       "source_location": "L40",
       "id": "observer_rationale_40",
-      "community": 0
+      "community": 4
     },
     {
       "label": "implementer.py",
@@ -1305,7 +1305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L1",
       "id": "implementer",
-      "community": 0
+      "community": 19
     },
     {
       "label": "ImplementResult",
@@ -1313,7 +1313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L33",
       "id": "implementer_implementresult",
-      "community": 0
+      "community": 19
     },
     {
       "label": "ImplementerAgent",
@@ -1337,7 +1337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L45",
       "id": "implementer_implementeragent_implement",
-      "community": 0
+      "community": 19
     },
     {
       "label": "_validate_files()",
@@ -1345,7 +1345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L114",
       "id": "implementer_validate_files",
-      "community": 0
+      "community": 19
     },
     {
       "label": "._build_prompt()",
@@ -1353,7 +1353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L124",
       "id": "implementer_implementeragent_build_prompt",
-      "community": 0
+      "community": 19
     },
     {
       "label": "Implementer agent \u2014 writes code changes in a sandboxed worktree.",
@@ -1361,7 +1361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L1",
       "id": "implementer_rationale_1",
-      "community": 0
+      "community": 19
     },
     {
       "label": "Write code changes to the worktree based on the plan.",
@@ -1369,7 +1369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L46",
       "id": "implementer_rationale_46",
-      "community": 0
+      "community": 19
     },
     {
       "label": "Validate Python files for syntax errors. Returns error message or empty string.",
@@ -1377,7 +1377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/implementer.py",
       "source_location": "L115",
       "id": "implementer_rationale_115",
-      "community": 0
+      "community": 3
     },
     {
       "label": "strategist.py",
@@ -1385,7 +1385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/strategist.py",
       "source_location": "L1",
       "id": "strategist",
-      "community": 4
+      "community": 1
     },
     {
       "label": "StrategistAgent",
@@ -1425,7 +1425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/strategist.py",
       "source_location": "L1",
       "id": "strategist_rationale_1",
-      "community": 4
+      "community": 1
     },
     {
       "label": "Propose a change plan based on the observation.",
@@ -1433,7 +1433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/strategist.py",
       "source_location": "L51",
       "id": "strategist_rationale_51",
-      "community": 4
+      "community": 1
     },
     {
       "label": "evaluator.py",
@@ -1473,7 +1473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/evaluator.py",
       "source_location": "L24",
       "id": "evaluator_evaluatoragent_decide",
-      "community": 1
+      "community": 0
     },
     {
       "label": "Evaluator agent \u2014 runs scoreboard and makes merge/rollback decisions.",
@@ -1481,7 +1481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/evaluator.py",
       "source_location": "L1",
       "id": "evaluator_rationale_1",
-      "community": 1
+      "community": 0
     },
     {
       "label": "Compare before/after scoreboard snapshots and decide merge or rollback.",
@@ -1489,7 +1489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/evaluator.py",
       "source_location": "L29",
       "id": "evaluator_rationale_29",
-      "community": 1
+      "community": 0
     },
     {
       "label": "base.py",
@@ -1505,7 +1505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L13",
       "id": "base_agentresponse",
-      "community": 7
+      "community": 3
     },
     {
       "label": "BaseAgent",
@@ -1513,7 +1513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L19",
       "id": "base_baseagent",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".__init__()",
@@ -1521,7 +1521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L20",
       "id": "base_baseagent_init",
-      "community": 0
+      "community": 3
     },
     {
       "label": ".call()",
@@ -1529,7 +1529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L28",
       "id": "base_baseagent_call",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".call_with_json_retry()",
@@ -1537,7 +1537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L47",
       "id": "base_baseagent_call_with_json_retry",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".parse_json()",
@@ -1545,7 +1545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L69",
       "id": "base_baseagent_parse_json",
-      "community": 7
+      "community": 3
     },
     {
       "label": "tokens_to_usd()",
@@ -1601,7 +1601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L29",
       "id": "base_rationale_29",
-      "community": 7
+      "community": 3
     },
     {
       "label": "Call LLM and parse JSON response, retrying once on failure.",
@@ -1609,7 +1609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L50",
       "id": "base_rationale_50",
-      "community": 7
+      "community": 3
     },
     {
       "label": "Parse JSON from LLM response, handling markdown fences and truncation.",
@@ -1617,7 +1617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py",
       "source_location": "L70",
       "id": "base_rationale_70",
-      "community": 7
+      "community": 3
     },
     {
       "label": "Calculate USD cost from token counts and model name.",
@@ -1649,7 +1649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L1",
       "id": "efficiency",
-      "community": 1
+      "community": 2
     },
     {
       "label": "EfficiencyScorer",
@@ -1657,7 +1657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L7",
       "id": "efficiency_efficiencyscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".__init__()",
@@ -1665,7 +1665,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L13",
       "id": "efficiency_efficiencyscorer_init",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".score()",
@@ -1673,7 +1673,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L21",
       "id": "efficiency_efficiencyscorer_score",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Efficiency benchmark dimension \u2014 token usage compared to baseline.",
@@ -1681,7 +1681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L1",
       "id": "efficiency_rationale_1",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Measure efficiency as the ratio of baseline tokens to current tokens.      The s",
@@ -1689,7 +1689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L8",
       "id": "efficiency_rationale_8",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Initialize the scorer.          Args:             baseline_tokens: Reference tok",
@@ -1697,7 +1697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L14",
       "id": "efficiency_rationale_14",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Score = baseline / current, capped at 1.0. Lower tokens = higher score.",
@@ -1705,7 +1705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py",
       "source_location": "L22",
       "id": "efficiency_rationale_22",
-      "community": 1
+      "community": 2
     },
     {
       "label": "runner.py",
@@ -1713,7 +1713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L1",
       "id": "runner",
-      "community": 1
+      "community": 2
     },
     {
       "label": "MergeGate",
@@ -1721,7 +1721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L18",
       "id": "runner_mergegate",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".can_merge()",
@@ -1729,7 +1729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L22",
       "id": "runner_mergegate_can_merge",
-      "community": 1
+      "community": 2
     },
     {
       "label": "can_merge()",
@@ -1737,7 +1737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L59",
       "id": "runner_can_merge",
-      "community": 1
+      "community": 2
     },
     {
       "label": "run_scoreboard()",
@@ -1745,7 +1745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L70",
       "id": "runner_run_scoreboard",
-      "community": 1
+      "community": 2
     },
     {
       "label": "_run_tests()",
@@ -1753,7 +1753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L130",
       "id": "runner_run_tests",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Check if the after snapshot passes the merge gate relative to before.",
@@ -1761,7 +1761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L23",
       "id": "runner_rationale_23",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Convenience function for merge gate check.",
@@ -1769,7 +1769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L65",
       "id": "runner_rationale_65",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Run all 6 scoreboard dimensions against a target path.      Args:         target",
@@ -1777,7 +1777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L77",
       "id": "runner_rationale_77",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Run tests and parse results. Returns (test_results, approximate_token_count).",
@@ -1785,7 +1785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/runner.py",
       "source_location": "L131",
       "id": "runner_rationale_131",
-      "community": 1
+      "community": 2
     },
     {
       "label": "regression.py",
@@ -1793,7 +1793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py",
       "source_location": "L1",
       "id": "regression",
-      "community": 1
+      "community": 2
     },
     {
       "label": "RegressionScorer",
@@ -1801,7 +1801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py",
       "source_location": "L7",
       "id": "regression_regressionscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".score()",
@@ -1809,7 +1809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py",
       "source_location": "L14",
       "id": "regression_regressionscorer_score",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Regression benchmark dimension \u2014 previously-passing tasks still pass.",
@@ -1817,7 +1817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py",
       "source_location": "L1",
       "id": "regression_rationale_1",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Scores regression as the fraction of previously-passing tasks that still pass.",
@@ -1825,7 +1825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py",
       "source_location": "L8",
       "id": "regression_rationale_8",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Score = fraction of previously-passing tasks still passing.          Parameters",
@@ -1833,7 +1833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py",
       "source_location": "L15",
       "id": "regression_rationale_15",
-      "community": 1
+      "community": 2
     },
     {
       "label": "correctness.py",
@@ -1841,7 +1841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/correctness.py",
       "source_location": "L1",
       "id": "correctness",
-      "community": 1
+      "community": 2
     },
     {
       "label": "CorrectnessScorer",
@@ -1849,7 +1849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/correctness.py",
       "source_location": "L7",
       "id": "correctness_correctnessscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".score()",
@@ -1857,7 +1857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/correctness.py",
       "source_location": "L13",
       "id": "correctness_correctnessscorer_score",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Correctness benchmark dimension \u2014 task pass/fail rate.",
@@ -1865,7 +1865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/correctness.py",
       "source_location": "L1",
       "id": "correctness_rationale_1",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Scores correctness as the fraction of tasks that pass.      A pass/fail dict wit",
@@ -1873,7 +1873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/correctness.py",
       "source_location": "L8",
       "id": "correctness_rationale_8",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Score based on pass/fail results. Empty results = 0.0.",
@@ -1881,7 +1881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/correctness.py",
       "source_location": "L14",
       "id": "correctness_rationale_14",
-      "community": 1
+      "community": 2
     },
     {
       "label": "tool_selection.py",
@@ -1889,7 +1889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/tool_selection.py",
       "source_location": "L1",
       "id": "tool_selection",
-      "community": 12
+      "community": 11
     },
     {
       "label": "RoutingChallenge",
@@ -1897,7 +1897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/tool_selection.py",
       "source_location": "L12",
       "id": "tool_selection_routingchallenge",
-      "community": 12
+      "community": 11
     },
     {
       "label": "ToolSelectionScorer",
@@ -1905,7 +1905,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/tool_selection.py",
       "source_location": "L19",
       "id": "tool_selection_toolselectionscorer",
-      "community": 12
+      "community": 11
     },
     {
       "label": ".__init__()",
@@ -1913,7 +1913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/tool_selection.py",
       "source_location": "L20",
       "id": "tool_selection_toolselectionscorer_init",
-      "community": 12
+      "community": 11
     },
     {
       "label": ".score()",
@@ -1921,7 +1921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/tool_selection.py",
       "source_location": "L23",
       "id": "tool_selection_toolselectionscorer_score",
-      "community": 12
+      "community": 11
     },
     {
       "label": "._load()",
@@ -1929,7 +1929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/tool_selection.py",
       "source_location": "L29",
       "id": "tool_selection_toolselectionscorer_load",
-      "community": 12
+      "community": 11
     },
     {
       "label": "Tool selection accuracy benchmark dimension.",
@@ -1937,7 +1937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/tool_selection.py",
       "source_location": "L1",
       "id": "tool_selection_rationale_1",
-      "community": 12
+      "community": 11
     },
     {
       "label": "code_quality.py",
@@ -1945,7 +1945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L1",
       "id": "code_quality",
-      "community": 1
+      "community": 2
     },
     {
       "label": "_tool_path()",
@@ -1953,7 +1953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L14",
       "id": "code_quality_tool_path",
-      "community": 1
+      "community": 2
     },
     {
       "label": "CodeQualityScorer",
@@ -1961,7 +1961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L19",
       "id": "code_quality_codequalityscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".__init__()",
@@ -1969,7 +1969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L20",
       "id": "code_quality_codequalityscorer_init",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".score()",
@@ -1977,7 +1977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L23",
       "id": "code_quality_codequalityscorer_score",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".details()",
@@ -1985,7 +1985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L35",
       "id": "code_quality_codequalityscorer_details",
-      "community": 1
+      "community": 2
     },
     {
       "label": "._ruff_score()",
@@ -1993,7 +1993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L69",
       "id": "code_quality_codequalityscorer_ruff_score",
-      "community": 1
+      "community": 2
     },
     {
       "label": "._complexity_score()",
@@ -2001,7 +2001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L88",
       "id": "code_quality_codequalityscorer_complexity_score",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Resolve tool binary, preferring venv over system PATH.",
@@ -2009,7 +2009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L15",
       "id": "code_quality_rationale_15",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Run static analysis and compute a composite quality score.",
@@ -2017,7 +2017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L24",
       "id": "code_quality_rationale_24",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Return human-readable ruff violations and complexity info.",
@@ -2025,7 +2025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L36",
       "id": "code_quality_rationale_36",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Score based on lint violations. 0 violations = 1.0.",
@@ -2033,7 +2033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L70",
       "id": "code_quality_rationale_70",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Score based on cyclomatic complexity. Average CC < 5 = 1.0.",
@@ -2041,7 +2041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/code_quality.py",
       "source_location": "L89",
       "id": "code_quality_rationale_89",
-      "community": 1
+      "community": 2
     },
     {
       "label": "real_world.py",
@@ -2049,7 +2049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/real_world.py",
       "source_location": "L1",
       "id": "real_world",
-      "community": 1
+      "community": 2
     },
     {
       "label": "RealWorldScorer",
@@ -2057,7 +2057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/real_world.py",
       "source_location": "L10",
       "id": "real_world_realworldscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".__init__()",
@@ -2065,7 +2065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/real_world.py",
       "source_location": "L13",
       "id": "real_world_realworldscorer_init",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".score()",
@@ -2073,7 +2073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/real_world.py",
       "source_location": "L16",
       "id": "real_world_realworldscorer_score",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Real-world benchmark dimension \u2014 docstring coverage as code quality proxy.",
@@ -2081,7 +2081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/real_world.py",
       "source_location": "L1",
       "id": "real_world_rationale_1",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Score based on docstring coverage of public functions/classes/methods.",
@@ -2089,7 +2089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/real_world.py",
       "source_location": "L11",
       "id": "real_world_rationale_11",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Score = fraction of public callables that have docstrings.",
@@ -2097,7 +2097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/real_world.py",
       "source_location": "L17",
       "id": "real_world_rationale_17",
-      "community": 1
+      "community": 2
     },
     {
       "label": "invariants.py",
@@ -2105,7 +2105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py",
       "source_location": "L1",
       "id": "invariants",
-      "community": 11
+      "community": 10
     },
     {
       "label": "InvariantResult",
@@ -2113,7 +2113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py",
       "source_location": "L9",
       "id": "invariants_invariantresult",
-      "community": 11
+      "community": 10
     },
     {
       "label": "SafetyInvariants",
@@ -2137,7 +2137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py",
       "source_location": "L28",
       "id": "invariants_safetyinvariants_check",
-      "community": 11
+      "community": 10
     },
     {
       "label": "Pre-merge safety invariants \u2014 kill switch before the merge gate.",
@@ -2145,7 +2145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py",
       "source_location": "L1",
       "id": "invariants_rationale_1",
-      "community": 11
+      "community": 10
     },
     {
       "label": "Result of safety invariant check.",
@@ -2153,7 +2153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py",
       "source_location": "L10",
       "id": "invariants_rationale_10",
-      "community": 11
+      "community": 10
     },
     {
       "label": "Check safety invariants before the merge gate runs.",
@@ -2169,7 +2169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py",
       "source_location": "L36",
       "id": "invariants_rationale_36",
-      "community": 11
+      "community": 10
     },
     {
       "label": "rollback.py",
@@ -2177,7 +2177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/rollback.py",
       "source_location": "L1",
       "id": "rollback",
-      "community": 10
+      "community": 7
     },
     {
       "label": "safe_rollback()",
@@ -2185,7 +2185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/rollback.py",
       "source_location": "L11",
       "id": "rollback_safe_rollback",
-      "community": 10
+      "community": 7
     },
     {
       "label": "Safe rollback \u2014 clean up worktree and branch, never crash.",
@@ -2193,7 +2193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/rollback.py",
       "source_location": "L1",
       "id": "rollback_rationale_1",
-      "community": 10
+      "community": 7
     },
     {
       "label": "Attempt to remove a worktree and its branch. Never raises.",
@@ -2201,7 +2201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/rollback.py",
       "source_location": "L12",
       "id": "rollback_rationale_12",
-      "community": 10
+      "community": 7
     },
     {
       "label": "worktree.py",
@@ -2209,7 +2209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L1",
       "id": "worktree",
-      "community": 10
+      "community": 7
     },
     {
       "label": "WorktreeInfo",
@@ -2217,7 +2217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L10",
       "id": "worktree_worktreeinfo",
-      "community": 10
+      "community": 7
     },
     {
       "label": "WorktreeManager",
@@ -2225,7 +2225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L16",
       "id": "worktree_worktreemanager",
-      "community": 0
+      "community": 7
     },
     {
       "label": ".__init__()",
@@ -2233,7 +2233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L17",
       "id": "worktree_worktreemanager_init",
-      "community": 0
+      "community": 7
     },
     {
       "label": ".create()",
@@ -2241,7 +2241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L21",
       "id": "worktree_worktreemanager_create",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".merge()",
@@ -2249,7 +2249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L32",
       "id": "worktree_worktreemanager_merge",
-      "community": 0
+      "community": 7
     },
     {
       "label": ".rollback()",
@@ -2257,7 +2257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L40",
       "id": "worktree_worktreemanager_rollback",
-      "community": 0
+      "community": 7
     },
     {
       "label": ".get_diff()",
@@ -2265,7 +2265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L43",
       "id": "worktree_worktreemanager_get_diff",
-      "community": 0
+      "community": 7
     },
     {
       "label": "._cleanup()",
@@ -2273,7 +2273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L52",
       "id": "worktree_worktreemanager_cleanup",
-      "community": 0
+      "community": 7
     },
     {
       "label": "._get_main_branch()",
@@ -2281,7 +2281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L63",
       "id": "worktree_worktreemanager_get_main_branch",
-      "community": 0
+      "community": 7
     },
     {
       "label": "Git worktree management for isolated improvement attempts.",
@@ -2289,7 +2289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/worktree.py",
       "source_location": "L1",
       "id": "worktree_rationale_1",
-      "community": 10
+      "community": 7
     },
     {
       "label": "executor.py",
@@ -2297,7 +2297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/executor.py",
       "source_location": "L1",
       "id": "executor",
-      "community": 0
+      "community": 12
     },
     {
       "label": "CommandBlocked",
@@ -2305,7 +2305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/executor.py",
       "source_location": "L12",
       "id": "executor_commandblocked",
-      "community": 0
+      "community": 12
     },
     {
       "label": "Exception",
@@ -2313,7 +2313,7 @@
       "source_file": "",
       "source_location": "",
       "id": "exception",
-      "community": 0
+      "community": 12
     },
     {
       "label": "ExecutionResult",
@@ -2321,7 +2321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/executor.py",
       "source_location": "L17",
       "id": "executor_executionresult",
-      "community": 0
+      "community": 12
     },
     {
       "label": "SandboxExecutor",
@@ -2345,7 +2345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/executor.py",
       "source_location": "L31",
       "id": "executor_sandboxexecutor_run",
-      "community": 0
+      "community": 12
     },
     {
       "label": ".is_path_blocked()",
@@ -2361,7 +2361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/executor.py",
       "source_location": "L69",
       "id": "executor_sandboxexecutor_is_allowed",
-      "community": 0
+      "community": 12
     },
     {
       "label": "Sandboxed command execution with allowlist enforcement.",
@@ -2369,7 +2369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/sandbox/executor.py",
       "source_location": "L1",
       "id": "executor_rationale_1",
-      "community": 0
+      "community": 12
     },
     {
       "label": "ledger.py",
@@ -2377,7 +2377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L1",
       "id": "ledger",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Ledger",
@@ -2385,7 +2385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L17",
       "id": "ledger_ledger",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".__init__()",
@@ -2393,7 +2393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L20",
       "id": "ledger_ledger_init",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".append()",
@@ -2401,7 +2401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L25",
       "id": "ledger_ledger_append",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".read_all()",
@@ -2409,7 +2409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L31",
       "id": "ledger_ledger_read_all",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".read_by_outcome()",
@@ -2417,7 +2417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L43",
       "id": "ledger_ledger_read_by_outcome",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".latest_iteration()",
@@ -2425,7 +2425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L47",
       "id": "ledger_ledger_latest_iteration",
-      "community": 5
+      "community": 1
     },
     {
       "label": "._serialize()",
@@ -2433,7 +2433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L54",
       "id": "ledger_ledger_serialize",
-      "community": 5
+      "community": 1
     },
     {
       "label": "._serialize_snapshot()",
@@ -2441,7 +2441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L69",
       "id": "ledger_ledger_serialize_snapshot",
-      "community": 5
+      "community": 1
     },
     {
       "label": "._deserialize()",
@@ -2449,7 +2449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L77",
       "id": "ledger_ledger_deserialize",
-      "community": 5
+      "community": 1
     },
     {
       "label": "._deserialize_snapshot()",
@@ -2457,7 +2457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L92",
       "id": "ledger_ledger_deserialize_snapshot",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Persistent append-only record of every improvement iteration.",
@@ -2465,7 +2465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L18",
       "id": "ledger_rationale_18",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Initialize the ledger with a base directory for storage.",
@@ -2473,7 +2473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L21",
       "id": "ledger_rationale_21",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Append an iteration record to the ledger.",
@@ -2481,7 +2481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L26",
       "id": "ledger_rationale_26",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Read all ledger entries.",
@@ -2489,7 +2489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L32",
       "id": "ledger_rationale_32",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Filter entries by outcome.",
@@ -2497,7 +2497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L44",
       "id": "ledger_rationale_44",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Get the highest iteration number, or 0 if empty.",
@@ -2513,7 +2513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L55",
       "id": "ledger_rationale_55",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Serialize a ScoreboardSnapshot to a dict.",
@@ -2521,7 +2521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L70",
       "id": "ledger_rationale_70",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Deserialize a dict to a LedgerEntry.",
@@ -2529,7 +2529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L78",
       "id": "ledger_rationale_78",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Deserialize a dict to a ScoreboardSnapshot.",
@@ -2537,7 +2537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/ledger.py",
       "source_location": "L93",
       "id": "ledger_rationale_93",
-      "community": 5
+      "community": 1
     },
     {
       "label": "dashboard.py",
@@ -2545,7 +2545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/dashboard.py",
       "source_location": "L1",
       "id": "dashboard",
-      "community": 5
+      "community": 1
     },
     {
       "label": "render_scoreboard_ascii()",
@@ -2553,7 +2553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/dashboard.py",
       "source_location": "L8",
       "id": "dashboard_render_scoreboard_ascii",
-      "community": 5
+      "community": 1
     },
     {
       "label": "render_ledger_summary()",
@@ -2561,7 +2561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/dashboard.py",
       "source_location": "L21",
       "id": "dashboard_render_ledger_summary",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Terminal dashboard for scoreboard and ledger visualization.",
@@ -2569,7 +2569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/dashboard.py",
       "source_location": "L1",
       "id": "dashboard_rationale_1",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Render a scoreboard snapshot as an ASCII bar chart.",
@@ -2577,7 +2577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/dashboard.py",
       "source_location": "L9",
       "id": "dashboard_rationale_9",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Render a compact summary of ledger entries.",
@@ -2585,7 +2585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/history/dashboard.py",
       "source_location": "L22",
       "id": "dashboard_rationale_22",
-      "community": 5
+      "community": 1
     },
     {
       "label": "AgentTokens",
@@ -2617,7 +2617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/types.py",
       "source_location": "L72",
       "id": "types_telemetryrecord_to_markdown_body",
-      "community": 6
+      "community": 4
     },
     {
       "label": "Per-agent token usage and cost.",
@@ -2649,7 +2649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L1",
       "id": "reader",
-      "community": 3
+      "community": 6
     },
     {
       "label": "TelemetryReader",
@@ -2657,7 +2657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L8",
       "id": "reader_telemetryreader",
-      "community": 3
+      "community": 6
     },
     {
       "label": ".__init__()",
@@ -2665,7 +2665,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L11",
       "id": "reader_telemetryreader_init",
-      "community": 3
+      "community": 6
     },
     {
       "label": "._load_index()",
@@ -2673,7 +2673,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L14",
       "id": "reader_telemetryreader_load_index",
-      "community": 3
+      "community": 6
     },
     {
       "label": ".get_failures()",
@@ -2681,7 +2681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L26",
       "id": "reader_telemetryreader_get_failures",
-      "community": 3
+      "community": 6
     },
     {
       "label": ".get_by_prompt_version()",
@@ -2689,7 +2689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L43",
       "id": "reader_telemetryreader_get_by_prompt_version",
-      "community": 3
+      "community": 6
     },
     {
       "label": ".get_summary()",
@@ -2697,7 +2697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L49",
       "id": "reader_telemetryreader_get_summary",
-      "community": 3
+      "community": 6
     },
     {
       "label": ".read_full_record()",
@@ -2705,7 +2705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L71",
       "id": "reader_telemetryreader_read_full_record",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Telemetry reader \u2014 query interface over the archive index.",
@@ -2713,7 +2713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L1",
       "id": "reader_rationale_1",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Read and query telemetry records from the archive.",
@@ -2721,7 +2721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L9",
       "id": "reader_rationale_9",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Load all entries from index.jsonl.",
@@ -2729,7 +2729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L15",
       "id": "reader_rationale_15",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Return lowest-scoring iterations, sorted by eval_score ascending.",
@@ -2737,7 +2737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L31",
       "id": "reader_rationale_31",
-      "community": 3
+      "community": 6
     },
     {
       "label": "All iterations that used a specific prompt version for the given agent.",
@@ -2745,7 +2745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L44",
       "id": "reader_rationale_44",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Win rate and counts per implementer prompt version.",
@@ -2753,7 +2753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L50",
       "id": "reader_rationale_50",
-      "community": 3
+      "community": 6
     },
     {
       "label": "Read the full markdown body of a specific record.",
@@ -2761,7 +2761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py",
       "source_location": "L72",
       "id": "reader_rationale_72",
-      "community": 3
+      "community": 6
     },
     {
       "label": "writer.py",
@@ -3017,7 +3017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L1",
       "id": "test_scoreboard_code_quality",
-      "community": 1
+      "community": 2
     },
     {
       "label": "clean_python_dir()",
@@ -3025,7 +3025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L11",
       "id": "test_scoreboard_code_quality_clean_python_dir",
-      "community": 1
+      "community": 2
     },
     {
       "label": "messy_python_dir()",
@@ -3033,7 +3033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L20",
       "id": "test_scoreboard_code_quality_messy_python_dir",
-      "community": 1
+      "community": 2
     },
     {
       "label": "TestCodeQualityScorer",
@@ -3041,7 +3041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L36",
       "id": "test_scoreboard_code_quality_testcodequalityscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_clean_code_scores_high()",
@@ -3049,7 +3049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L37",
       "id": "test_scoreboard_code_quality_testcodequalityscorer_test_clean_code_scores_high",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_messy_code_scores_lower()",
@@ -3057,7 +3057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L43",
       "id": "test_scoreboard_code_quality_testcodequalityscorer_test_messy_code_scores_lower",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_empty_dir_scores_perfect()",
@@ -3065,7 +3065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L48",
       "id": "test_scoreboard_code_quality_testcodequalityscorer_test_empty_dir_scores_perfect",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_complexity_score_uses_all_functions()",
@@ -3073,7 +3073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L53",
       "id": "test_scoreboard_code_quality_testcodequalityscorer_test_complexity_score_uses_all_functions",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Create a directory with clean Python code.",
@@ -3081,7 +3081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L12",
       "id": "test_scoreboard_code_quality_rationale_12",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Create a directory with messy Python code.",
@@ -3089,7 +3089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L21",
       "id": "test_scoreboard_code_quality_rationale_21",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Verify complexity averaging includes all functions, not just C+ grade.",
@@ -3097,7 +3097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_code_quality.py",
       "source_location": "L54",
       "id": "test_scoreboard_code_quality_rationale_54",
-      "community": 1
+      "community": 2
     },
     {
       "label": "test_scoreboard_runner_full.py",
@@ -3201,7 +3201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L1",
       "id": "test_scoreboard_tool_selection",
-      "community": 12
+      "community": 11
     },
     {
       "label": "challenges_path()",
@@ -3209,7 +3209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L8",
       "id": "test_scoreboard_tool_selection_challenges_path",
-      "community": 12
+      "community": 11
     },
     {
       "label": "TestToolSelectionScorer",
@@ -3217,7 +3217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L19",
       "id": "test_scoreboard_tool_selection_testtoolselectionscorer",
-      "community": 12
+      "community": 11
     },
     {
       "label": ".test_load_challenges()",
@@ -3225,7 +3225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L20",
       "id": "test_scoreboard_tool_selection_testtoolselectionscorer_test_load_challenges",
-      "community": 12
+      "community": 11
     },
     {
       "label": ".test_score_perfect()",
@@ -3233,7 +3233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L24",
       "id": "test_scoreboard_tool_selection_testtoolselectionscorer_test_score_perfect",
-      "community": 12
+      "community": 11
     },
     {
       "label": ".test_score_partial()",
@@ -3241,7 +3241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L31",
       "id": "test_scoreboard_tool_selection_testtoolselectionscorer_test_score_partial",
-      "community": 12
+      "community": 11
     },
     {
       "label": ".test_score_zero()",
@@ -3249,7 +3249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L37",
       "id": "test_scoreboard_tool_selection_testtoolselectionscorer_test_score_zero",
-      "community": 12
+      "community": 11
     },
     {
       "label": ".test_missing_prompt_counted_as_failure()",
@@ -3257,7 +3257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_tool_selection.py",
       "source_location": "L43",
       "id": "test_scoreboard_tool_selection_testtoolselectionscorer_test_missing_prompt_counted_as_failure",
-      "community": 12
+      "community": 11
     },
     {
       "label": "test_invariants.py",
@@ -3265,7 +3265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L1",
       "id": "test_invariants",
-      "community": 11
+      "community": 10
     },
     {
       "label": "TestSafetyInvariants",
@@ -3273,7 +3273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L9",
       "id": "test_invariants_testsafetyinvariants",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".setup_method()",
@@ -3281,7 +3281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L10",
       "id": "test_invariants_testsafetyinvariants_setup_method",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_passes_when_all_clean()",
@@ -3289,7 +3289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L15",
       "id": "test_invariants_testsafetyinvariants_test_passes_when_all_clean",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_fails_when_test_count_decreases()",
@@ -3297,7 +3297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L26",
       "id": "test_invariants_testsafetyinvariants_test_fails_when_test_count_decreases",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_fails_when_ruff_violations_increase()",
@@ -3305,7 +3305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L37",
       "id": "test_invariants_testsafetyinvariants_test_fails_when_ruff_violations_increase",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_fails_when_conftest_written()",
@@ -3313,7 +3313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L48",
       "id": "test_invariants_testsafetyinvariants_test_fails_when_conftest_written",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_fails_when_root_config_created()",
@@ -3321,7 +3321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L59",
       "id": "test_invariants_testsafetyinvariants_test_fails_when_root_config_created",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_allows_ouroboros_yaml()",
@@ -3329,7 +3329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L70",
       "id": "test_invariants_testsafetyinvariants_test_allows_ouroboros_yaml",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_fails_when_root_toml_created()",
@@ -3337,7 +3337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L80",
       "id": "test_invariants_testsafetyinvariants_test_fails_when_root_toml_created",
-      "community": 11
+      "community": 10
     },
     {
       "label": ".test_test_file_in_nested_dir_ok()",
@@ -3345,7 +3345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L90",
       "id": "test_invariants_testsafetyinvariants_test_test_file_in_nested_dir_ok",
-      "community": 11
+      "community": 10
     },
     {
       "label": "Tests for pre-merge safety invariants.",
@@ -3353,7 +3353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_invariants.py",
       "source_location": "L1",
       "id": "test_invariants_rationale_1",
-      "community": 11
+      "community": 10
     },
     {
       "label": "test_tournament.py",
@@ -3361,7 +3361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L1",
       "id": "test_tournament",
-      "community": 2
+      "community": 5
     },
     {
       "label": "TestScoreTaskResult",
@@ -3369,7 +3369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L13",
       "id": "test_tournament_testscoretaskresult",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_ruff_clean_scores_1()",
@@ -3377,7 +3377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L14",
       "id": "test_tournament_testscoretaskresult_test_ruff_clean_scores_1",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_ruff_violation_scores_0()",
@@ -3385,7 +3385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L19",
       "id": "test_tournament_testscoretaskresult_test_ruff_violation_scores_0",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_has_docstring_scores_1()",
@@ -3393,7 +3393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L24",
       "id": "test_tournament_testscoretaskresult_test_has_docstring_scores_1",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_missing_docstring_scores_0()",
@@ -3401,7 +3401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L29",
       "id": "test_tournament_testscoretaskresult_test_missing_docstring_scores_0",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_syntax_error_scores_0()",
@@ -3409,7 +3409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L34",
       "id": "test_tournament_testscoretaskresult_test_syntax_error_scores_0",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_low_complexity_simple_function()",
@@ -3417,7 +3417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L39",
       "id": "test_tournament_testscoretaskresult_test_low_complexity_simple_function",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Tests for Tournament benchmark runner.",
@@ -3425,7 +3425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py",
       "source_location": "L1",
       "id": "test_tournament_rationale_1",
-      "community": 2
+      "community": 5
     },
     {
       "label": "test_sandbox_rollback.py",
@@ -3433,7 +3433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_rollback.py",
       "source_location": "L1",
       "id": "test_sandbox_rollback",
-      "community": 10
+      "community": 7
     },
     {
       "label": "git_repo()",
@@ -3441,7 +3441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_rollback.py",
       "source_location": "L11",
       "id": "test_sandbox_rollback_git_repo",
-      "community": 10
+      "community": 7
     },
     {
       "label": "TestSafeRollback",
@@ -3449,7 +3449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_rollback.py",
       "source_location": "L21",
       "id": "test_sandbox_rollback_testsaferollback",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".test_rollback_cleans_worktree()",
@@ -3457,7 +3457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_rollback.py",
       "source_location": "L22",
       "id": "test_sandbox_rollback_testsaferollback_test_rollback_cleans_worktree",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".test_rollback_nonexistent_is_safe()",
@@ -3465,7 +3465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_rollback.py",
       "source_location": "L33",
       "id": "test_sandbox_rollback_testsaferollback_test_rollback_nonexistent_is_safe",
-      "community": 10
+      "community": 7
     },
     {
       "label": "test_dashboard.py",
@@ -3473,7 +3473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_dashboard.py",
       "source_location": "L1",
       "id": "test_dashboard",
-      "community": 5
+      "community": 1
     },
     {
       "label": "TestDashboard",
@@ -3481,7 +3481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_dashboard.py",
       "source_location": "L12",
       "id": "test_dashboard_testdashboard",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".test_render_scoreboard()",
@@ -3489,7 +3489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_dashboard.py",
       "source_location": "L13",
       "id": "test_dashboard_testdashboard_test_render_scoreboard",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".test_render_empty_scoreboard()",
@@ -3497,7 +3497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_dashboard.py",
       "source_location": "L27",
       "id": "test_dashboard_testdashboard_test_render_empty_scoreboard",
-      "community": 5
+      "community": 1
     },
     {
       "label": ".test_render_ledger_summary()",
@@ -3505,7 +3505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_dashboard.py",
       "source_location": "L32",
       "id": "test_dashboard_testdashboard_test_render_ledger_summary",
-      "community": 5
+      "community": 1
     },
     {
       "label": "test_scoreboard_dimensions.py",
@@ -3513,7 +3513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L1",
       "id": "test_scoreboard_dimensions",
-      "community": 1
+      "community": 2
     },
     {
       "label": "TestCorrectnessScorer",
@@ -3521,7 +3521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L9",
       "id": "test_scoreboard_dimensions_testcorrectnessscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_all_pass()",
@@ -3529,7 +3529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L10",
       "id": "test_scoreboard_dimensions_testcorrectnessscorer_test_all_pass",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_partial_pass()",
@@ -3537,7 +3537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L17",
       "id": "test_scoreboard_dimensions_testcorrectnessscorer_test_partial_pass",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_empty_results()",
@@ -3545,7 +3545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L23",
       "id": "test_scoreboard_dimensions_testcorrectnessscorer_test_empty_results",
-      "community": 1
+      "community": 2
     },
     {
       "label": "TestEfficiencyScorer",
@@ -3553,7 +3553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L29",
       "id": "test_scoreboard_dimensions_testefficiencyscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_better_than_baseline()",
@@ -3561,7 +3561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L30",
       "id": "test_scoreboard_dimensions_testefficiencyscorer_test_better_than_baseline",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_worse_than_baseline()",
@@ -3569,7 +3569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L36",
       "id": "test_scoreboard_dimensions_testefficiencyscorer_test_worse_than_baseline",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_same_as_baseline()",
@@ -3577,7 +3577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L41",
       "id": "test_scoreboard_dimensions_testefficiencyscorer_test_same_as_baseline",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_zero_current()",
@@ -3585,7 +3585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L46",
       "id": "test_scoreboard_dimensions_testefficiencyscorer_test_zero_current",
-      "community": 1
+      "community": 2
     },
     {
       "label": "TestRegressionScorer",
@@ -3593,7 +3593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L52",
       "id": "test_scoreboard_dimensions_testregressionscorer",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_no_regressions()",
@@ -3601,7 +3601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L53",
       "id": "test_scoreboard_dimensions_testregressionscorer_test_no_regressions",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_one_regression()",
@@ -3609,7 +3609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L61",
       "id": "test_scoreboard_dimensions_testregressionscorer_test_one_regression",
-      "community": 1
+      "community": 2
     },
     {
       "label": ".test_empty_history()",
@@ -3617,7 +3617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_scoreboard_dimensions.py",
       "source_location": "L68",
       "id": "test_scoreboard_dimensions_testregressionscorer_test_empty_history",
-      "community": 1
+      "community": 2
     },
     {
       "label": "test_implementer_validation.py",
@@ -3625,7 +3625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L1",
       "id": "test_implementer_validation",
-      "community": 4
+      "community": 0
     },
     {
       "label": "TestPreCommitValidation",
@@ -3633,7 +3633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L11",
       "id": "test_implementer_validation_testprecommitvalidation",
-      "community": 4
+      "community": 0
     },
     {
       "label": ".setup_method()",
@@ -3641,7 +3641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L12",
       "id": "test_implementer_validation_testprecommitvalidation_setup_method",
-      "community": 4
+      "community": 0
     },
     {
       "label": ".test_rejects_syntax_error()",
@@ -3649,7 +3649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L17",
       "id": "test_implementer_validation_testprecommitvalidation_test_rejects_syntax_error",
-      "community": 4
+      "community": 0
     },
     {
       "label": ".test_accepts_valid_python()",
@@ -3657,7 +3657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L39",
       "id": "test_implementer_validation_testprecommitvalidation_test_accepts_valid_python",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Tests for implementer pre-commit validation.",
@@ -3665,7 +3665,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L1",
       "id": "test_implementer_validation_rationale_1",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Files with syntax errors should not be committed.",
@@ -3673,7 +3673,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L18",
       "id": "test_implementer_validation_rationale_18",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Valid Python files should pass validation.",
@@ -3681,7 +3681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_implementer_validation.py",
       "source_location": "L40",
       "id": "test_implementer_validation_rationale_40",
-      "community": 4
+      "community": 0
     },
     {
       "label": "test_traces.py",
@@ -3689,7 +3689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L1",
       "id": "test_traces",
-      "community": 6
+      "community": 4
     },
     {
       "label": "trace_dir()",
@@ -3697,7 +3697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L9",
       "id": "test_traces_trace_dir",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TestTraceStore",
@@ -3705,7 +3705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L12",
       "id": "test_traces_testtracestore",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".test_write_and_read_events()",
@@ -3713,7 +3713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L13",
       "id": "test_traces_testtracestore_test_write_and_read_events",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".test_list_runs()",
@@ -3721,7 +3721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L26",
       "id": "test_traces_testtracestore_test_list_runs",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".test_read_nonexistent_run()",
@@ -3729,7 +3729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L34",
       "id": "test_traces_testtracestore_test_read_nonexistent_run",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TestTraceCollector",
@@ -3737,7 +3737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L39",
       "id": "test_traces_testtracecollector",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".test_collect_from_cli_output()",
@@ -3745,7 +3745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_traces.py",
       "source_location": "L40",
       "id": "test_traces_testtracecollector_test_collect_from_cli_output",
-      "community": 6
+      "community": 4
     },
     {
       "label": "test_telemetry_types.py",
@@ -3961,7 +3961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L1",
       "id": "test_benchmark_gen",
-      "community": 2
+      "community": 5
     },
     {
       "label": "TestLoadBenchmarkTasks",
@@ -3969,7 +3969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L13",
       "id": "test_benchmark_gen_testloadbenchmarktasks",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_loads_core_tasks()",
@@ -3977,7 +3977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L14",
       "id": "test_benchmark_gen_testloadbenchmarktasks_test_loads_core_tasks",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_empty_dir()",
@@ -3985,7 +3985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L30",
       "id": "test_benchmark_gen_testloadbenchmarktasks_test_empty_dir",
-      "community": 2
+      "community": 5
     },
     {
       "label": "TestBenchmarkGenerator",
@@ -3993,7 +3993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L35",
       "id": "test_benchmark_gen_testbenchmarkgenerator",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_generates_rotating_tasks()",
@@ -4001,7 +4001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L36",
       "id": "test_benchmark_gen_testbenchmarkgenerator_test_generates_rotating_tasks",
-      "community": 2
+      "community": 5
     },
     {
       "label": "TestBenchmarkScoring",
@@ -4009,7 +4009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L50",
       "id": "test_benchmark_gen_testbenchmarkscoring",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_ruff_clean_check()",
@@ -4017,7 +4017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L51",
       "id": "test_benchmark_gen_testbenchmarkscoring_test_ruff_clean_check",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_has_docstring_check()",
@@ -4025,7 +4025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L56",
       "id": "test_benchmark_gen_testbenchmarkscoring_test_has_docstring_check",
-      "community": 2
+      "community": 5
     },
     {
       "label": ".test_missing_docstring_detected()",
@@ -4033,7 +4033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L62",
       "id": "test_benchmark_gen_testbenchmarkscoring_test_missing_docstring_detected",
-      "community": 2
+      "community": 5
     },
     {
       "label": "Tests for benchmark task loading and rotating task generation.",
@@ -4041,7 +4041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_benchmark_gen.py",
       "source_location": "L1",
       "id": "test_benchmark_gen_rationale_1",
-      "community": 2
+      "community": 5
     },
     {
       "label": "test_loop.py",
@@ -4049,7 +4049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop.py",
       "source_location": "L1",
       "id": "test_loop",
-      "community": 4
+      "community": 1
     },
     {
       "label": "git_repo()",
@@ -4057,7 +4057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop.py",
       "source_location": "L20",
       "id": "test_loop_git_repo",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestImprovementLoop",
@@ -4065,7 +4065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop.py",
       "source_location": "L32",
       "id": "test_loop_testimprovementloop",
-      "community": 4
+      "community": 1
     },
     {
       "label": "test_single_iteration_merged()",
@@ -4073,7 +4073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop.py",
       "source_location": "L36",
       "id": "test_loop_test_single_iteration_merged",
-      "community": 4
+      "community": 1
     },
     {
       "label": "test_base_agent.py",
@@ -4081,7 +4081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L1",
       "id": "test_base_agent",
-      "community": 7
+      "community": 3
     },
     {
       "label": "TestParseJson",
@@ -4089,7 +4089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L10",
       "id": "test_base_agent_testparsejson",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".setup_method()",
@@ -4097,7 +4097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L11",
       "id": "test_base_agent_testparsejson_setup_method",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".test_parses_clean_json()",
@@ -4105,7 +4105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L14",
       "id": "test_base_agent_testparsejson_test_parses_clean_json",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".test_parses_fenced_json()",
@@ -4113,7 +4113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L18",
       "id": "test_base_agent_testparsejson_test_parses_fenced_json",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".test_repairs_truncated_brackets()",
@@ -4121,7 +4121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L22",
       "id": "test_base_agent_testparsejson_test_repairs_truncated_brackets",
-      "community": 7
+      "community": 3
     },
     {
       "label": "TestCallWithJsonRetry",
@@ -4129,7 +4129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L27",
       "id": "test_base_agent_testcallwithjsonretry",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".setup_method()",
@@ -4137,7 +4137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L28",
       "id": "test_base_agent_testcallwithjsonretry_setup_method",
-      "community": 7
+      "community": 3
     },
     {
       "label": "test_succeeds_on_first_try()",
@@ -4145,7 +4145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L32",
       "id": "test_base_agent_test_succeeds_on_first_try",
-      "community": 7
+      "community": 3
     },
     {
       "label": "test_retries_on_bad_json()",
@@ -4153,7 +4153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L43",
       "id": "test_base_agent_test_retries_on_bad_json",
-      "community": 7
+      "community": 3
     },
     {
       "label": "test_raises_after_two_failures()",
@@ -4161,7 +4161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L55",
       "id": "test_base_agent_test_raises_after_two_failures",
-      "community": 7
+      "community": 3
     },
     {
       "label": "TestTokenAccumulation",
@@ -4169,7 +4169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L66",
       "id": "test_base_agent_testtokenaccumulation",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".test_call_accumulates_tokens()",
@@ -4177,7 +4177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L67",
       "id": "test_base_agent_testtokenaccumulation_test_call_accumulates_tokens",
-      "community": 7
+      "community": 3
     },
     {
       "label": "Tests for BaseAgent JSON parsing and retry logic.",
@@ -4185,7 +4185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_base_agent.py",
       "source_location": "L1",
       "id": "test_base_agent_rationale_1",
-      "community": 7
+      "community": 3
     },
     {
       "label": "test_trace_analyzer.py",
@@ -4193,7 +4193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_trace_analyzer.py",
       "source_location": "L1",
       "id": "test_trace_analyzer",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TestTraceAnalyzer",
@@ -4201,7 +4201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_trace_analyzer.py",
       "source_location": "L7",
       "id": "test_trace_analyzer_testtraceanalyzer",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".test_identify_routing_failures()",
@@ -4209,7 +4209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_trace_analyzer.py",
       "source_location": "L8",
       "id": "test_trace_analyzer_testtraceanalyzer_test_identify_routing_failures",
-      "community": 6
+      "community": 4
     },
     {
       "label": ".test_empty_traces()",
@@ -4217,7 +4217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_trace_analyzer.py",
       "source_location": "L20",
       "id": "test_trace_analyzer_testtraceanalyzer_test_empty_traces",
-      "community": 6
+      "community": 4
     },
     {
       "label": "test_agents_evaluator.py",
@@ -4225,7 +4225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_evaluator.py",
       "source_location": "L1",
       "id": "test_agents_evaluator",
-      "community": 19
+      "community": 21
     },
     {
       "label": "TestEvaluatorAgent",
@@ -4233,7 +4233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_evaluator.py",
       "source_location": "L11",
       "id": "test_agents_evaluator_testevaluatoragent",
-      "community": 19
+      "community": 21
     },
     {
       "label": "._snap()",
@@ -4241,7 +4241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_evaluator.py",
       "source_location": "L12",
       "id": "test_agents_evaluator_testevaluatoragent_snap",
-      "community": 19
+      "community": 21
     },
     {
       "label": ".test_merge_when_improved()",
@@ -4249,7 +4249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_evaluator.py",
       "source_location": "L16",
       "id": "test_agents_evaluator_testevaluatoragent_test_merge_when_improved",
-      "community": 19
+      "community": 21
     },
     {
       "label": ".test_rollback_when_regressed()",
@@ -4257,7 +4257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_evaluator.py",
       "source_location": "L23",
       "id": "test_agents_evaluator_testevaluatoragent_test_rollback_when_regressed",
-      "community": 19
+      "community": 21
     },
     {
       "label": ".test_rollback_when_no_improvement()",
@@ -4265,7 +4265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_evaluator.py",
       "source_location": "L30",
       "id": "test_agents_evaluator_testevaluatoragent_test_rollback_when_no_improvement",
-      "community": 19
+      "community": 21
     },
     {
       "label": "test_agents_implementer.py",
@@ -4273,7 +4273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_implementer.py",
       "source_location": "L1",
       "id": "test_agents_implementer",
-      "community": 4
+      "community": 23
     },
     {
       "label": "git_repo()",
@@ -4281,7 +4281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_implementer.py",
       "source_location": "L14",
       "id": "test_agents_implementer_git_repo",
-      "community": 4
+      "community": 23
     },
     {
       "label": "TestImplementerAgent",
@@ -4289,7 +4289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_implementer.py",
       "source_location": "L26",
       "id": "test_agents_implementer_testimplementeragent",
-      "community": 4
+      "community": 23
     },
     {
       "label": "test_implement_writes_to_worktree()",
@@ -4297,7 +4297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_implementer.py",
       "source_location": "L28",
       "id": "test_agents_implementer_test_implement_writes_to_worktree",
-      "community": 4
+      "community": 23
     },
     {
       "label": "test_blocked_path_rejected()",
@@ -4305,7 +4305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_implementer.py",
       "source_location": "L49",
       "id": "test_agents_implementer_test_blocked_path_rejected",
-      "community": 4
+      "community": 23
     },
     {
       "label": "test_sandbox_executor.py",
@@ -4313,7 +4313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_executor.py",
       "source_location": "L1",
       "id": "test_sandbox_executor",
-      "community": 18
+      "community": 12
     },
     {
       "label": "executor()",
@@ -4321,7 +4321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_executor.py",
       "source_location": "L6",
       "id": "test_sandbox_executor_executor",
-      "community": 18
+      "community": 12
     },
     {
       "label": "TestSandboxExecutor",
@@ -4329,7 +4329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_executor.py",
       "source_location": "L9",
       "id": "test_sandbox_executor_testsandboxexecutor",
-      "community": 18
+      "community": 12
     },
     {
       "label": ".test_allowed_command_runs()",
@@ -4337,7 +4337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_executor.py",
       "source_location": "L10",
       "id": "test_sandbox_executor_testsandboxexecutor_test_allowed_command_runs",
-      "community": 18
+      "community": 12
     },
     {
       "label": ".test_blocked_command_raises()",
@@ -4345,7 +4345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_executor.py",
       "source_location": "L14",
       "id": "test_sandbox_executor_testsandboxexecutor_test_blocked_command_raises",
-      "community": 18
+      "community": 12
     },
     {
       "label": ".test_partial_match_allowed()",
@@ -4353,7 +4353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_executor.py",
       "source_location": "L18",
       "id": "test_sandbox_executor_testsandboxexecutor_test_partial_match_allowed",
-      "community": 18
+      "community": 12
     },
     {
       "label": ".test_blocked_path_check()",
@@ -4361,7 +4361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_executor.py",
       "source_location": "L22",
       "id": "test_sandbox_executor_testsandboxexecutor_test_blocked_path_check",
-      "community": 18
+      "community": 12
     },
     {
       "label": "test_config.py",
@@ -4369,7 +4369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L1",
       "id": "test_config",
-      "community": 16
+      "community": 18
     },
     {
       "label": "TestDefaultConfig",
@@ -4377,7 +4377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L9",
       "id": "test_config_testdefaultconfig",
-      "community": 16
+      "community": 18
     },
     {
       "label": ".test_has_all_required_fields()",
@@ -4385,7 +4385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L10",
       "id": "test_config_testdefaultconfig_test_has_all_required_fields",
-      "community": 16
+      "community": 18
     },
     {
       "label": ".test_allowed_commands()",
@@ -4393,7 +4393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L30",
       "id": "test_config_testdefaultconfig_test_allowed_commands",
-      "community": 16
+      "community": 18
     },
     {
       "label": ".test_blocked_paths()",
@@ -4401,7 +4401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L37",
       "id": "test_config_testdefaultconfig_test_blocked_paths",
-      "community": 16
+      "community": 18
     },
     {
       "label": "TestLoadConfig",
@@ -4409,7 +4409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L45",
       "id": "test_config_testloadconfig",
-      "community": 16
+      "community": 18
     },
     {
       "label": ".test_loads_from_yaml_file()",
@@ -4417,7 +4417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L46",
       "id": "test_config_testloadconfig_test_loads_from_yaml_file",
-      "community": 16
+      "community": 18
     },
     {
       "label": ".test_missing_file_returns_default()",
@@ -4425,7 +4425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L72",
       "id": "test_config_testloadconfig_test_missing_file_returns_default",
-      "community": 16
+      "community": 18
     },
     {
       "label": ".test_cli_overrides()",
@@ -4433,7 +4433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_config.py",
       "source_location": "L76",
       "id": "test_config_testloadconfig_test_cli_overrides",
-      "community": 16
+      "community": 18
     },
     {
       "label": "test_agents_strategist.py",
@@ -4441,7 +4441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_strategist.py",
       "source_location": "L1",
       "id": "test_agents_strategist",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestStrategistAgent",
@@ -4449,7 +4449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_strategist.py",
       "source_location": "L10",
       "id": "test_agents_strategist_teststrategistagent",
-      "community": 4
+      "community": 1
     },
     {
       "label": "._make_report()",
@@ -4457,7 +4457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_strategist.py",
       "source_location": "L11",
       "id": "test_agents_strategist_teststrategistagent_make_report",
-      "community": 4
+      "community": 1
     },
     {
       "label": "test_strategize_returns_plan()",
@@ -4465,7 +4465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_strategist.py",
       "source_location": "L20",
       "id": "test_agents_strategist_test_strategize_returns_plan",
-      "community": 4
+      "community": 1
     },
     {
       "label": "test_integration.py",
@@ -4473,7 +4473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_integration.py",
       "source_location": "L1",
       "id": "test_integration",
-      "community": 4
+      "community": 1
     },
     {
       "label": "integration_repo()",
@@ -4481,7 +4481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_integration.py",
       "source_location": "L23",
       "id": "test_integration_integration_repo",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestIntegration",
@@ -4489,7 +4489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_integration.py",
       "source_location": "L45",
       "id": "test_integration_testintegration",
-      "community": 4
+      "community": 1
     },
     {
       "label": "test_full_iteration_merged()",
@@ -4497,7 +4497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_integration.py",
       "source_location": "L47",
       "id": "test_integration_test_full_iteration_merged",
-      "community": 4
+      "community": 1
     },
     {
       "label": "End-to-end integration test \u2014 runs a single iteration with mocked LLM calls.",
@@ -4505,7 +4505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_integration.py",
       "source_location": "L1",
       "id": "test_integration_rationale_1",
-      "community": 4
+      "community": 1
     },
     {
       "label": "Create a minimal repo with claw-code-like structure.",
@@ -4513,7 +4513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_integration.py",
       "source_location": "L24",
       "id": "test_integration_rationale_24",
-      "community": 4
+      "community": 1
     },
     {
       "label": "test_telemetry_reader.py",
@@ -4521,7 +4521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L1",
       "id": "test_telemetry_reader",
-      "community": 15
+      "community": 14
     },
     {
       "label": "_make_record()",
@@ -4529,7 +4529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L14",
       "id": "test_telemetry_reader_make_record",
-      "community": 15
+      "community": 14
     },
     {
       "label": "populated_archive()",
@@ -4537,7 +4537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L47",
       "id": "test_telemetry_reader_populated_archive",
-      "community": 15
+      "community": 14
     },
     {
       "label": "TestTelemetryReader",
@@ -4545,7 +4545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L57",
       "id": "test_telemetry_reader_testtelemetryreader",
-      "community": 15
+      "community": 14
     },
     {
       "label": ".test_get_failures_returns_lowest_scoring()",
@@ -4553,7 +4553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L58",
       "id": "test_telemetry_reader_testtelemetryreader_test_get_failures_returns_lowest_scoring",
-      "community": 15
+      "community": 14
     },
     {
       "label": ".test_get_failures_filters_by_prompt_version()",
@@ -4561,7 +4561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L64",
       "id": "test_telemetry_reader_testtelemetryreader_test_get_failures_filters_by_prompt_version",
-      "community": 15
+      "community": 14
     },
     {
       "label": ".test_get_by_prompt_version()",
@@ -4569,7 +4569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L70",
       "id": "test_telemetry_reader_testtelemetryreader_test_get_by_prompt_version",
-      "community": 15
+      "community": 14
     },
     {
       "label": ".test_get_summary()",
@@ -4577,7 +4577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L77",
       "id": "test_telemetry_reader_testtelemetryreader_test_get_summary",
-      "community": 15
+      "community": 14
     },
     {
       "label": ".test_empty_archive()",
@@ -4585,7 +4585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L86",
       "id": "test_telemetry_reader_testtelemetryreader_test_empty_archive",
-      "community": 15
+      "community": 14
     },
     {
       "label": ".test_read_full_record()",
@@ -4593,7 +4593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_reader.py",
       "source_location": "L91",
       "id": "test_telemetry_reader_testtelemetryreader_test_read_full_record",
-      "community": 15
+      "community": 14
     },
     {
       "label": "Tests for TelemetryReader.",
@@ -4609,7 +4609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop_helpers.py",
       "source_location": "L1",
       "id": "test_loop_helpers",
-      "community": 3
+      "community": 0
     },
     {
       "label": "TestReadTargetFiles",
@@ -4617,7 +4617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop_helpers.py",
       "source_location": "L8",
       "id": "test_loop_helpers_testreadtargetfiles",
-      "community": 3
+      "community": 0
     },
     {
       "label": ".test_excludes_blocked_paths()",
@@ -4625,7 +4625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop_helpers.py",
       "source_location": "L9",
       "id": "test_loop_helpers_testreadtargetfiles_test_excludes_blocked_paths",
-      "community": 3
+      "community": 0
     },
     {
       "label": "Tests for loop helper methods.",
@@ -4633,7 +4633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop_helpers.py",
       "source_location": "L1",
       "id": "test_loop_helpers_rationale_1",
-      "community": 3
+      "community": 0
     },
     {
       "label": "Files matching blocked_paths should not appear in source context.",
@@ -4641,7 +4641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_loop_helpers.py",
       "source_location": "L10",
       "id": "test_loop_helpers_rationale_10",
-      "community": 3
+      "community": 0
     },
     {
       "label": "test_cli.py",
@@ -4697,7 +4697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py",
       "source_location": "L1",
       "id": "test_telemetry_writer",
-      "community": 21
+      "community": 22
     },
     {
       "label": "_make_record()",
@@ -4705,7 +4705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py",
       "source_location": "L13",
       "id": "test_telemetry_writer_make_record",
-      "community": 21
+      "community": 22
     },
     {
       "label": "TestTelemetryWriter",
@@ -4713,7 +4713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py",
       "source_location": "L39",
       "id": "test_telemetry_writer_testtelemetrywriter",
-      "community": 21
+      "community": 22
     },
     {
       "label": ".test_writes_markdown_file()",
@@ -4721,7 +4721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py",
       "source_location": "L40",
       "id": "test_telemetry_writer_testtelemetrywriter_test_writes_markdown_file",
-      "community": 21
+      "community": 22
     },
     {
       "label": ".test_appends_to_index_jsonl()",
@@ -4729,7 +4729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py",
       "source_location": "L50",
       "id": "test_telemetry_writer_testtelemetrywriter_test_appends_to_index_jsonl",
-      "community": 21
+      "community": 22
     },
     {
       "label": ".test_frontmatter_is_valid_yaml()",
@@ -4737,7 +4737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py",
       "source_location": "L68",
       "id": "test_telemetry_writer_testtelemetrywriter_test_frontmatter_is_valid_yaml",
-      "community": 21
+      "community": 22
     },
     {
       "label": "Tests for TelemetryWriter.",
@@ -4753,7 +4753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L1",
       "id": "test_ledger",
-      "community": 5
+      "community": 16
     },
     {
       "label": "ledger_dir()",
@@ -4761,7 +4761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L17",
       "id": "test_ledger_ledger_dir",
-      "community": 5
+      "community": 16
     },
     {
       "label": "TestLedger",
@@ -4769,7 +4769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L21",
       "id": "test_ledger_testledger",
-      "community": 5
+      "community": 16
     },
     {
       "label": "._entry()",
@@ -4777,7 +4777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L22",
       "id": "test_ledger_testledger_entry",
-      "community": 5
+      "community": 16
     },
     {
       "label": ".test_append_and_read()",
@@ -4785,7 +4785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L40",
       "id": "test_ledger_testledger_test_append_and_read",
-      "community": 5
+      "community": 16
     },
     {
       "label": ".test_multiple_entries()",
@@ -4793,7 +4793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L48",
       "id": "test_ledger_testledger_test_multiple_entries",
-      "community": 5
+      "community": 16
     },
     {
       "label": ".test_filter_merged()",
@@ -4801,7 +4801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L56",
       "id": "test_ledger_testledger_test_filter_merged",
-      "community": 5
+      "community": 16
     },
     {
       "label": ".test_get_latest_iteration()",
@@ -4809,7 +4809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L64",
       "id": "test_ledger_testledger_test_get_latest_iteration",
-      "community": 5
+      "community": 16
     },
     {
       "label": ".test_empty_ledger()",
@@ -4817,7 +4817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_ledger.py",
       "source_location": "L71",
       "id": "test_ledger_testledger_test_empty_ledger",
-      "community": 5
+      "community": 16
     },
     {
       "label": "test_agents_observer.py",
@@ -4825,7 +4825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_observer.py",
       "source_location": "L1",
       "id": "test_agents_observer",
-      "community": 6
+      "community": 4
     },
     {
       "label": "TestObserverAgent",
@@ -4833,7 +4833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_observer.py",
       "source_location": "L10",
       "id": "test_agents_observer_testobserveragent",
-      "community": 6
+      "community": 4
     },
     {
       "label": "._make_snapshot()",
@@ -4841,7 +4841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_observer.py",
       "source_location": "L11",
       "id": "test_agents_observer_testobserveragent_make_snapshot",
-      "community": 6
+      "community": 4
     },
     {
       "label": "._make_traces()",
@@ -4849,7 +4849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_observer.py",
       "source_location": "L15",
       "id": "test_agents_observer_testobserveragent_make_traces",
-      "community": 6
+      "community": 4
     },
     {
       "label": "test_observe_returns_report()",
@@ -4857,7 +4857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_observer.py",
       "source_location": "L28",
       "id": "test_agents_observer_test_observe_returns_report",
-      "community": 6
+      "community": 4
     },
     {
       "label": "test_sandbox_worktree.py",
@@ -4865,7 +4865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L1",
       "id": "test_sandbox_worktree",
-      "community": 10
+      "community": 7
     },
     {
       "label": "git_repo()",
@@ -4873,7 +4873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L8",
       "id": "test_sandbox_worktree_git_repo",
-      "community": 10
+      "community": 7
     },
     {
       "label": "TestWorktreeManager",
@@ -4881,7 +4881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L18",
       "id": "test_sandbox_worktree_testworktreemanager",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".test_create_worktree()",
@@ -4889,7 +4889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L19",
       "id": "test_sandbox_worktree_testworktreemanager_test_create_worktree",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".test_create_multiple_worktrees()",
@@ -4897,7 +4897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L26",
       "id": "test_sandbox_worktree_testworktreemanager_test_create_multiple_worktrees",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".test_merge_worktree()",
@@ -4905,7 +4905,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L33",
       "id": "test_sandbox_worktree_testworktreemanager_test_merge_worktree",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".test_rollback_worktree()",
@@ -4913,7 +4913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L43",
       "id": "test_sandbox_worktree_testworktreemanager_test_rollback_worktree",
-      "community": 10
+      "community": 7
     },
     {
       "label": ".test_get_diff()",
@@ -4921,7 +4921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_worktree.py",
       "source_location": "L51",
       "id": "test_sandbox_worktree_testworktreemanager_test_get_diff",
-      "community": 10
+      "community": 7
     },
     {
       "label": "test_types.py",
@@ -4929,7 +4929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L1",
       "id": "test_types",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestDimensionScore",
@@ -4937,7 +4937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L18",
       "id": "test_types_testdimensionscore",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_clamps_to_zero_one()",
@@ -4945,7 +4945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L19",
       "id": "test_types_testdimensionscore_test_clamps_to_zero_one",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_normal_value_unchanged()",
@@ -4953,7 +4953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L23",
       "id": "test_types_testdimensionscore_test_normal_value_unchanged",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestScoreboardSnapshot",
@@ -4961,7 +4961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L27",
       "id": "test_types_testscoreboardsnapshot",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_from_dimensions()",
@@ -4969,7 +4969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L28",
       "id": "test_types_testscoreboardsnapshot_test_from_dimensions",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_to_json_roundtrip()",
@@ -4977,7 +4977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L38",
       "id": "test_types_testscoreboardsnapshot_test_to_json_roundtrip",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestObservationReport",
@@ -4985,7 +4985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L46",
       "id": "test_types_testobservationreport",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_creation()",
@@ -4993,7 +4993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L47",
       "id": "test_types_testobservationreport_test_creation",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestChangePlan",
@@ -5001,7 +5001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L58",
       "id": "test_types_testchangeplan",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_creation()",
@@ -5009,7 +5009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L59",
       "id": "test_types_testchangeplan_test_creation",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestLedgerEntry",
@@ -5017,7 +5017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L72",
       "id": "test_types_testledgerentry",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_creation()",
@@ -5025,7 +5025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L73",
       "id": "test_types_testledgerentry_test_creation",
-      "community": 4
+      "community": 1
     },
     {
       "label": "TestTraceEvent",
@@ -5033,7 +5033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L95",
       "id": "test_types_testtraceevent",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_creation()",
@@ -5041,7 +5041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L96",
       "id": "test_types_testtraceevent_test_creation",
-      "community": 4
+      "community": 1
     },
     {
       "label": ".test_to_jsonl_line()",
@@ -5049,7 +5049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_types.py",
       "source_location": "L104",
       "id": "test_types_testtraceevent_test_to_jsonl_line",
-      "community": 4
+      "community": 1
     },
     {
       "label": "test_agents_base.py",
@@ -5057,7 +5057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_base.py",
       "source_location": "L1",
       "id": "test_agents_base",
-      "community": 7
+      "community": 3
     },
     {
       "label": "TestBaseAgent",
@@ -5065,7 +5065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_base.py",
       "source_location": "L8",
       "id": "test_agents_base_testbaseagent",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".test_creation()",
@@ -5073,7 +5073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_base.py",
       "source_location": "L9",
       "id": "test_agents_base_testbaseagent_test_creation",
-      "community": 7
+      "community": 3
     },
     {
       "label": "test_call_llm()",
@@ -5081,7 +5081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_base.py",
       "source_location": "L16",
       "id": "test_agents_base_test_call_llm",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".test_parse_json_response()",
@@ -5089,7 +5089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_base.py",
       "source_location": "L41",
       "id": "test_agents_base_testbaseagent_test_parse_json_response",
-      "community": 7
+      "community": 3
     },
     {
       "label": ".test_parse_json_with_markdown_fences()",
@@ -5097,7 +5097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_base.py",
       "source_location": "L48",
       "id": "test_agents_base_testbaseagent_test_parse_json_with_markdown_fences",
-      "community": 7
+      "community": 3
     },
     {
       "label": "test_prompt_store.py",
@@ -5105,7 +5105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L1",
       "id": "test_prompt_store",
-      "community": 14
+      "community": 15
     },
     {
       "label": "TestPromptStore",
@@ -5113,7 +5113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L11",
       "id": "test_prompt_store_testpromptstore",
-      "community": 14
+      "community": 15
     },
     {
       "label": ".test_initialize_from_defaults()",
@@ -5121,7 +5121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L12",
       "id": "test_prompt_store_testpromptstore_test_initialize_from_defaults",
-      "community": 14
+      "community": 15
     },
     {
       "label": ".test_load_returns_current()",
@@ -5129,7 +5129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L22",
       "id": "test_prompt_store_testpromptstore_test_load_returns_current",
-      "community": 14
+      "community": 15
     },
     {
       "label": ".test_load_fallback_when_no_files()",
@@ -5137,7 +5137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L28",
       "id": "test_prompt_store_testpromptstore_test_load_fallback_when_no_files",
-      "community": 14
+      "community": 15
     },
     {
       "label": ".test_write_new_version()",
@@ -5145,7 +5145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L33",
       "id": "test_prompt_store_testpromptstore_test_write_new_version",
-      "community": 14
+      "community": 15
     },
     {
       "label": ".test_promote_updates_current()",
@@ -5153,7 +5153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L49",
       "id": "test_prompt_store_testpromptstore_test_promote_updates_current",
-      "community": 14
+      "community": 15
     },
     {
       "label": ".test_current_version()",
@@ -5161,7 +5161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L58",
       "id": "test_prompt_store_testpromptstore_test_current_version",
-      "community": 14
+      "community": 15
     },
     {
       "label": ".test_token_count()",
@@ -5169,7 +5169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L64",
       "id": "test_prompt_store_testpromptstore_test_token_count",
-      "community": 14
+      "community": 15
     },
     {
       "label": "Tests for PromptStore \u2014 versioned prompt files with atomic swap.",
@@ -5177,7 +5177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_prompt_store.py",
       "source_location": "L1",
       "id": "test_prompt_store_rationale_1",
-      "community": 14
+      "community": 15
     },
     {
       "label": "test_meta_agent.py",
@@ -5185,7 +5185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_meta_agent.py",
       "source_location": "L1",
       "id": "test_meta_agent",
-      "community": 2
+      "community": 3
     },
     {
       "label": "TestMetaAgent",
@@ -5193,7 +5193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_meta_agent.py",
       "source_location": "L12",
       "id": "test_meta_agent_testmetaagent",
-      "community": 2
+      "community": 3
     },
     {
       "label": ".test_insufficient_data_returns_early()",
@@ -5201,7 +5201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_meta_agent.py",
       "source_location": "L13",
       "id": "test_meta_agent_testmetaagent_test_insufficient_data_returns_early",
-      "community": 2
+      "community": 3
     },
     {
       "label": ".test_bloat_gate_rejects_long_mutation()",
@@ -5209,7 +5209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_meta_agent.py",
       "source_location": "L26",
       "id": "test_meta_agent_testmetaagent_test_bloat_gate_rejects_long_mutation",
-      "community": 2
+      "community": 3
     },
     {
       "label": ".test_bloat_gate_accepts_reasonable_mutation()",
@@ -5217,7 +5217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_meta_agent.py",
       "source_location": "L31",
       "id": "test_meta_agent_testmetaagent_test_bloat_gate_accepts_reasonable_mutation",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Tests for MetaAgent state machine.",
@@ -5225,7 +5225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_meta_agent.py",
       "source_location": "L1",
       "id": "test_meta_agent_rationale_1",
-      "community": 2
+      "community": 3
     }
   ],
   "links": [

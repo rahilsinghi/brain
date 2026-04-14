@@ -2,7 +2,7 @@
 title: "router.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/parser/router.ts"
 repo: "brain"
-community: 70
+community: 92
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/parser/router.ts`
-**Community:** 70
+**Community:** 92
 
 ## Imports
 - (none)

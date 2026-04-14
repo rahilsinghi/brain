@@ -1,0 +1,380 @@
+---
+status: processed
+source_type: graphify-community
+repo: career-datacenter
+community_id: 4
+ingested_at: 2026-04-13T22:29:48.748Z
+parsed_at: 2026-04-13T22:29:48.748Z
+compiled_to: "[[Knowledge-Based Resume Generation and Validation]]"
+processed_at: 2026-04-13T22:34:37.646Z
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+
+
+# career-datacenter — Community 4
+
+## Files in this cluster
+
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 71 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 62 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 32 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 15 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 10 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 9 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 9 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 8 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_validator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+
+## Internal relationships
+
+- `resume_generator_resumedata` → `resume_generator_resumegenerator_generate` (calls)
+- `resume_generator_resumedata` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_generator_resumedata` → `resume_validator_validationissue` (uses)
+- `resume_generator_resumedata` → `resume_validator_validationresult` (uses)
+- `resume_generator_resumedata` → `resume_validator_resumevalidator` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_1` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_28` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_38` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_57` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_71` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_86` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_90` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_94` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_102` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_148` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_151` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_170` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_191` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_227` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_305` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_387` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_412` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_449` (uses)
+- `resume_generator_resumedata` → `resume_validator_rationale_488` (uses)
+- `resume_generator_resumegenerator` → `resume_generator_resumegenerator_init` (method)
+- `resume_generator_resumegenerator` → `resume_generator_resumegenerator_load_prompt_config` (method)
+- `resume_generator_resumegenerator` → `resume_generator_resumegenerator_generate` (method)
+- `resume_generator_resumegenerator` → `resume_generator_resumegenerator_render_latex` (method)
+- `resume_generator_resumegenerator` → `resume_generator_resumegenerator_smart_latex_escape` (method)
+- `resume_generator_resumegenerator` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_validationissue` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_validationresult` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_resumevalidator` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_1` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_28` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_38` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_57` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_71` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_86` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_90` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_94` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_102` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_148` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_151` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_170` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_191` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_227` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_305` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_387` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_412` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_449` (uses)
+- `resume_generator_resumegenerator` → `resume_validator_rationale_488` (uses)
+- `resume_generator_resumegenerator_init` → `resume_generator_resumegenerator_load_prompt_config` (calls)
+- `resume_generator_resumegenerator_render_latex` → `resume_generator_resumegenerator_smart_latex_escape` (calls)
+- `resume_validator` → `resume_validator_validationissue` (contains)
+- `resume_validator` → `resume_validator_validationresult` (contains)
+- `resume_validator` → `resume_validator_resumevalidator` (contains)
+- `resume_validator` → `resume_validator_main` (contains)
+- `resume_validator` → `resume_validator_rationale_1` (rationale_for)
+- `resume_validator_validationissue` → `resume_validator_validationissue_str` (method)
+- `resume_validator_validationissue` → `resume_validator_validationresult_add_issue` (calls)
+- `resume_validator_validationissue` → `resume_validator_rationale_28` (rationale_for)
+- `resume_validator_validationissue` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_validationissue_str` → `resume_validator_rationale_38` (rationale_for)
+- `resume_validator_validationresult` → `resume_validator_validationresult_add_issue` (method)
+- `resume_validator_validationresult` → `resume_validator_validationresult_has_errors` (method)
+- `resume_validator_validationresult` → `resume_validator_validationresult_has_warnings` (method)
+- `resume_validator_validationresult` → `resume_validator_validationresult_get_critical_issues` (method)
+- `resume_validator_validationresult` → `resume_validator_validationresult_get_warnings` (method)
+- `resume_validator_validationresult` → `resume_validator_validationresult_format_report` (method)
+- `resume_validator_validationresult` → `resume_validator_resumevalidator_validate` (calls)
+- `resume_validator_validationresult` → `resume_validator_rationale_57` (rationale_for)
+- `resume_validator_validationresult` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_validationresult_add_issue` → `resume_validator_resumevalidator_validate_header` (calls)
+- `resume_validator_validationresult_add_issue` → `resume_validator_resumevalidator_validate_education` (calls)
+- `resume_validator_validationresult_add_issue` → `resume_validator_resumevalidator_validate_experience` (calls)
+- `resume_validator_validationresult_add_issue` → `resume_validator_resumevalidator_validate_projects` (calls)
+- `resume_validator_validationresult_add_issue` → `resume_validator_resumevalidator_validate_skills` (calls)
+- `resume_validator_validationresult_add_issue` → `resume_validator_resumevalidator_validate_date_range` (calls)
+- `resume_validator_validationresult_add_issue` → `resume_validator_rationale_71` (rationale_for)
+- `resume_validator_validationresult_has_errors` → `resume_validator_main` (calls)
+- `resume_validator_validationresult_has_errors` → `resume_validator_rationale_86` (rationale_for)
+- `resume_validator_validationresult_has_warnings` → `resume_validator_rationale_90` (rationale_for)
+- `resume_validator_validationresult_get_critical_issues` → `resume_validator_validationresult_format_report` (calls)
+- `resume_validator_validationresult_get_critical_issues` → `resume_validator_rationale_94` (rationale_for)
+- `resume_validator_validationresult_get_warnings` → `resume_validator_validationresult_format_report` (calls)
+- `resume_validator_validationresult_format_report` → `resume_validator_main` (calls)
+- `resume_validator_validationresult_format_report` → `resume_validator_rationale_102` (rationale_for)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_init` (method)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_validate` (method)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_validate_header` (method)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_validate_education` (method)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_validate_experience` (method)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_validate_projects` (method)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_validate_skills` (method)
+- `resume_validator_resumevalidator` → `resume_validator_resumevalidator_validate_date_range` (method)
+- `resume_validator_resumevalidator` → `resume_validator_main` (calls)
+- `resume_validator_resumevalidator` → `resume_validator_rationale_148` (rationale_for)
+- `resume_validator_resumevalidator` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_resumevalidator_init` → `resume_validator_rationale_151` (rationale_for)
+- `resume_validator_resumevalidator_validate` → `resume_validator_resumevalidator_validate_header` (calls)
+- `resume_validator_resumevalidator_validate` → `resume_validator_resumevalidator_validate_education` (calls)
+- `resume_validator_resumevalidator_validate` → `resume_validator_resumevalidator_validate_experience` (calls)
+- `resume_validator_resumevalidator_validate` → `resume_validator_resumevalidator_validate_projects` (calls)
+- `resume_validator_resumevalidator_validate` → `resume_validator_resumevalidator_validate_skills` (calls)
+- `resume_validator_resumevalidator_validate` → `resume_validator_main` (calls)
+- `resume_validator_resumevalidator_validate` → `resume_validator_rationale_170` (rationale_for)
+- `resume_validator_resumevalidator_validate_header` → `resume_validator_rationale_191` (rationale_for)
+- `resume_validator_resumevalidator_validate_education` → `resume_validator_resumevalidator_validate_date_range` (calls)
+- `resume_validator_resumevalidator_validate_education` → `resume_validator_rationale_227` (rationale_for)
+- `resume_validator_resumevalidator_validate_experience` → `resume_validator_resumevalidator_validate_date_range` (calls)
+- `resume_validator_resumevalidator_validate_experience` → `resume_validator_rationale_305` (rationale_for)
+- `resume_validator_resumevalidator_validate_projects` → `resume_validator_rationale_387` (rationale_for)
+- `resume_validator_resumevalidator_validate_skills` → `resume_validator_rationale_412` (rationale_for)
+- `resume_validator_resumevalidator_validate_date_range` → `resume_validator_rationale_449` (rationale_for)
+- `resume_validator_main` → `resume_validator_rationale_488` (rationale_for)
+- `resume_validator_rationale_1` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_28` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_38` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_57` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_71` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_86` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_90` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_94` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_102` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_148` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_151` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_170` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_191` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_227` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_305` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_387` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_412` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_449` → `knowledge_base_loader_knowledgebase` (uses)
+- `resume_validator_rationale_488` → `knowledge_base_loader_knowledgebase` (uses)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_init` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_yaml` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_profile` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_education` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_experiences` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_projects` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_skills` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_metrics` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_star_stories` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_bullet_bank` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_load_voice_profile` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_get_experience_by_id` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_get_project_by_id` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_filter_stories_by_tags` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_filter_stories_by_role` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_build_full_context` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_knowledgebase_build_context_yaml_string` (method)
+- `knowledge_base_loader_knowledgebase` → `knowledge_base_loader_rationale_23` (rationale_for)
+- `knowledge_base_loader_knowledgebase_init` → `knowledge_base_loader_rationale_26` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_profile` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_education` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_experiences` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_projects` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_skills` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_metrics` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_star_stories` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_knowledgebase_load_voice_profile` (calls)
+- `knowledge_base_loader_knowledgebase_load_yaml` → `knowledge_base_loader_rationale_38` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_profile` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_profile` → `knowledge_base_loader_rationale_50` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_education` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_education` → `knowledge_base_loader_rationale_54` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_experiences` → `knowledge_base_loader_knowledgebase_get_experience_by_id` (calls)
+- `knowledge_base_loader_knowledgebase_load_experiences` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_experiences` → `knowledge_base_loader_rationale_59` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_projects` → `knowledge_base_loader_knowledgebase_get_project_by_id` (calls)
+- `knowledge_base_loader_knowledgebase_load_projects` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_projects` → `knowledge_base_loader_rationale_64` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_skills` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_skills` → `knowledge_base_loader_rationale_69` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_metrics` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_metrics` → `knowledge_base_loader_rationale_74` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_star_stories` → `knowledge_base_loader_knowledgebase_filter_stories_by_tags` (calls)
+- `knowledge_base_loader_knowledgebase_load_star_stories` → `knowledge_base_loader_knowledgebase_filter_stories_by_role` (calls)
+- `knowledge_base_loader_knowledgebase_load_star_stories` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_star_stories` → `knowledge_base_loader_rationale_79` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_bullet_bank` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_bullet_bank` → `knowledge_base_loader_rationale_88` (rationale_for)
+- `knowledge_base_loader_knowledgebase_load_voice_profile` → `knowledge_base_loader_knowledgebase_build_full_context` (calls)
+- `knowledge_base_loader_knowledgebase_load_voice_profile` → `knowledge_base_loader_rationale_102` (rationale_for)
+- `knowledge_base_loader_knowledgebase_get_experience_by_id` → `knowledge_base_loader_rationale_111` (rationale_for)
+- `knowledge_base_loader_knowledgebase_get_project_by_id` → `knowledge_base_loader_rationale_119` (rationale_for)
+- `knowledge_base_loader_knowledgebase_filter_stories_by_tags` → `knowledge_base_loader_rationale_127` (rationale_for)
+- `knowledge_base_loader_knowledgebase_filter_stories_by_role` → `knowledge_base_loader_rationale_147` (rationale_for)
+- `knowledge_base_loader_knowledgebase_build_full_context` → `knowledge_base_loader_knowledgebase_build_context_yaml_string` (calls)
+- `knowledge_base_loader_knowledgebase_build_full_context` → `knowledge_base_loader_rationale_171` (rationale_for)
+- `knowledge_base_loader_knowledgebase_build_context_yaml_string` → `knowledge_base_loader_rationale_190` (rationale_for)
+
+## External dependencies
+
+- `batch_process_overnight_overnightbatchprocessor` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `resume_generator_resumegenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `resume_generator_resumegenerator` (uses) [community 3]
+- `fit_scorer_fitanalysis` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_fitanalysis` → `resume_generator_resumedata` (uses) [community 2]
+- `fit_scorer_fitanalysis` → `resume_generator_resumegenerator` (uses) [community 2]
+- `basemodel` → `resume_generator_resumedata` (inherits) [community 2]
+- `fit_scorer_fitscorer` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_fitscorer` → `resume_generator_resumedata` (uses) [community 2]
+- `fit_scorer_fitscorer` → `resume_generator_resumegenerator` (uses) [community 2]
+- `fit_scorer_rationale_1` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_rationale_31` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_rationale_43` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_rationale_51` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_rationale_68` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_rationale_77` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_rationale_135` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `fit_scorer_rationale_145` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_coverlettergenerator` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_1` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_45` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_54` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_74` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_83` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_94` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_163` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `cover_letter_generator_rationale_189` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator` → `resume_generator_resumedata` (contains) [community 2]
+- `resume_generator` → `resume_generator_resumegenerator` (contains) [community 2]
+- `resume_generator` → `resume_validator` (imports_from) [community 2]
+- `resume_generator_resumedata` → `resume_generator_rationale_54` (rationale_for) [community 2]
+- `resume_generator_resumedata` → `llm_client_llmclient` (uses) [community 2]
+- `resume_generator_resumedata` → `jd_parser_parsedjobdescription` (uses) [community 2]
+- `resume_generator_resumedata` → `jd_parser_jdparser` (uses) [community 2]
+- `resume_generator_resumegenerator` → `resume_generator_rationale_65` (rationale_for) [community 2]
+- `resume_generator_resumegenerator` → `llm_client_llmclient` (uses) [community 2]
+- `resume_generator_resumegenerator` → `jd_parser_parsedjobdescription` (uses) [community 2]
+- `resume_generator_resumegenerator` → `jd_parser_jdparser` (uses) [community 2]
+- `resume_generator_resumegenerator` → `resume_variants_rationale_86` (uses) [community 2]
+- `resume_generator_resumegenerator` → `resume_variants_rationale_159` (uses) [community 2]
+- `resume_generator_resumegenerator` → `application_runner_applicationbatchrunner` (uses) [community 10]
+- `resume_generator_resumegenerator` → `application_runner_rationale_49` (uses) [community 2]
+- `resume_generator_resumegenerator` → `application_runner_rationale_72` (uses) [community 2]
+- `resume_generator_resumegenerator` → `application_runner_rationale_91` (uses) [community 2]
+- `resume_generator_resumegenerator` → `application_runner_rationale_100` (uses) [community 2]
+- `resume_generator_resumegenerator` → `application_runner_rationale_108` (uses) [community 2]
+- `resume_generator_resumegenerator` → `application_runner_rationale_137` (uses) [community 2]
+- `resume_generator_resumegenerator` → `application_runner_rationale_197` (uses) [community 2]
+- `resume_generator_resumegenerator` → `generate_application_rationale_50` (uses) [community 2]
+- `resume_generator_resumegenerator` → `run_job_scraper_jobscraperorchestrator` (uses) [community 0]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_48` (uses) [community 0]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_55` (uses) [community 0]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_89` (uses) [community 0]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_187` (uses) [community 0]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_263` (uses) [community 0]
+- `resume_generator_resumegenerator_init` → `resume_generator_rationale_73` (rationale_for) [community 2]
+- `resume_generator_resumegenerator_load_prompt_config` → `resume_generator_rationale_104` (rationale_for) [community 2]
+- `resume_generator_resumegenerator_generate` → `resume_generator_rationale_115` (rationale_for) [community 2]
+- `resume_generator_resumegenerator_render_latex` → `resume_generator_rationale_203` (rationale_for) [community 2]
+- `resume_generator_resumegenerator_smart_latex_escape` → `resume_generator_rationale_233` (rationale_for) [community 2]
+- `resume_generator_rationale_1` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_27` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_54` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_65` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_73` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_104` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_115` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_203` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `resume_generator_rationale_233` → `knowledge_base_loader_knowledgebase` (uses) [community 2]
+- `generate_application` → `resume_validator` (imports_from) [community 2]
+- `generate_application_rationale_50` → `resume_validator_resumevalidator` (uses) [community 2]
+- `resume_validator` → `knowledge_base_loader` (imports_from) [community 2]
+- `knowledge_base_loader` → `knowledge_base_loader_knowledgebase` (contains) [community 2]

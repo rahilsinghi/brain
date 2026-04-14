@@ -9,7 +9,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/vitest.config.ts",
       "source_location": "L1",
       "id": "vitest_config",
-      "community": 17
+      "community": 16
     },
     {
       "label": "frontmatter.test.ts",
@@ -137,7 +137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/llm/provider.test.ts",
       "source_location": "L1",
       "id": "provider_test",
-      "community": 47
+      "community": 53
     },
     {
       "label": "constructor()",
@@ -145,7 +145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/llm/provider.test.ts",
       "source_location": "L13",
       "id": "provider_test_constructor",
-      "community": 47
+      "community": 53
     },
     {
       "label": "getGenerativeModel()",
@@ -153,7 +153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/llm/provider.test.ts",
       "source_location": "L21",
       "id": "provider_test_getgenerativemodel",
-      "community": 47
+      "community": 53
     },
     {
       "label": "community-drops.test.ts",
@@ -169,7 +169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/scan-wiki.test.ts",
       "source_location": "L1",
       "id": "scan_wiki_test",
-      "community": 78
+      "community": 77
     },
     {
       "label": "writeArticle()",
@@ -177,7 +177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/scan-wiki.test.ts",
       "source_location": "L9",
       "id": "scan_wiki_test_writearticle",
-      "community": 78
+      "community": 77
     },
     {
       "label": "push.test.ts",
@@ -201,7 +201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/cache.test.ts",
       "source_location": "L1",
       "id": "cache_test",
-      "community": 92
+      "community": 75
     },
     {
       "label": "writeArticle()",
@@ -209,7 +209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/cache.test.ts",
       "source_location": "L9",
       "id": "cache_test_writearticle",
-      "community": 92
+      "community": 75
     },
     {
       "label": "load-graphify.test.ts",
@@ -217,7 +217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/load-graphify.test.ts",
       "source_location": "L1",
       "id": "load_graphify_test",
-      "community": 76
+      "community": 68
     },
     {
       "label": "writeRepoGraph()",
@@ -225,7 +225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/load-graphify.test.ts",
       "source_location": "L8",
       "id": "load_graphify_test_writerepograph",
-      "community": 76
+      "community": 68
     },
     {
       "label": "backfill-links.test.ts",
@@ -233,7 +233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/backfill-links.test.ts",
       "source_location": "L1",
       "id": "backfill_links_test",
-      "community": 68
+      "community": 64
     },
     {
       "label": "writeArticle()",
@@ -241,7 +241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/backfill-links.test.ts",
       "source_location": "L9",
       "id": "backfill_links_test_writearticle",
-      "community": 68
+      "community": 64
     },
     {
       "label": "export.test.ts",
@@ -249,7 +249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/export.test.ts",
       "source_location": "L1",
       "id": "export_test",
-      "community": 83
+      "community": 87
     },
     {
       "label": "makeEmbed()",
@@ -257,7 +257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/export.test.ts",
       "source_location": "L161",
       "id": "export_test_makeembed",
-      "community": 83
+      "community": 87
     },
     {
       "label": "cross-layer.test.ts",
@@ -265,7 +265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/cross-layer.test.ts",
       "source_location": "L1",
       "id": "cross_layer_test",
-      "community": 37
+      "community": 51
     },
     {
       "label": "makeWikiNode()",
@@ -273,7 +273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/cross-layer.test.ts",
       "source_location": "L5",
       "id": "cross_layer_test_makewikinode",
-      "community": 37
+      "community": 51
     },
     {
       "label": "makeCodeNode()",
@@ -281,7 +281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/graph/cross-layer.test.ts",
       "source_location": "L19",
       "id": "cross_layer_test_makecodenode",
-      "community": 37
+      "community": 51
     },
     {
       "label": "plots.test.ts",
@@ -337,7 +337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/voice/voice-parser.test.ts",
       "source_location": "L1",
       "id": "voice_parser_test",
-      "community": 39
+      "community": 48
     },
     {
       "label": "mockProvider()",
@@ -345,7 +345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/voice/voice-parser.test.ts",
       "source_location": "L17",
       "id": "voice_parser_test_mockprovider",
-      "community": 39
+      "community": 48
     },
     {
       "label": "mockClassify()",
@@ -353,7 +353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/voice/voice-parser.test.ts",
       "source_location": "L23",
       "id": "voice_parser_test_mockclassify",
-      "community": 39
+      "community": 48
     },
     {
       "label": "classify.test.ts",
@@ -377,7 +377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/telegram/bot.test.ts",
       "source_location": "L1",
       "id": "bot_test",
-      "community": 58
+      "community": 52
     },
     {
       "label": "mockCtx()",
@@ -385,7 +385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/telegram/bot.test.ts",
       "source_location": "L13",
       "id": "bot_test_mockctx",
-      "community": 58
+      "community": 52
     },
     {
       "label": "makeDeps()",
@@ -393,7 +393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/telegram/bot.test.ts",
       "source_location": "L27",
       "id": "bot_test_makedeps",
-      "community": 58
+      "community": 52
     },
     {
       "label": "format.test.ts",
@@ -414,10 +414,10 @@
     {
       "label": "graphify.test.ts",
       "file_type": "code",
-      "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/graphify.test.ts",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/graphify.test.ts",
       "source_location": "L1",
       "id": "graphify_test",
-      "community": 49
+      "community": 25
     },
     {
       "label": "makeState()",
@@ -425,7 +425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/graphify.test.ts",
       "source_location": "L16",
       "id": "graphify_test_makestate",
-      "community": 49
+      "community": 25
     },
     {
       "label": "makeConfig()",
@@ -433,7 +433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/graphify.test.ts",
       "source_location": "L20",
       "id": "graphify_test_makeconfig",
-      "community": 49
+      "community": 25
     },
     {
       "label": "gmail-auth.test.ts",
@@ -441,7 +441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail-auth.test.ts",
       "source_location": "L1",
       "id": "gmail_auth_test",
-      "community": 45
+      "community": 61
     },
     {
       "label": "MockOAuth2",
@@ -449,7 +449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail-auth.test.ts",
       "source_location": "L7",
       "id": "gmail_auth_test_mockoauth2",
-      "community": 45
+      "community": 61
     },
     {
       "label": ".constructor()",
@@ -457,7 +457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail-auth.test.ts",
       "source_location": "L9",
       "id": "gmail_auth_test_mockoauth2_constructor",
-      "community": 45
+      "community": 61
     },
     {
       "label": "github.test.ts",
@@ -465,7 +465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/github.test.ts",
       "source_location": "L1",
       "id": "github_test",
-      "community": 71
+      "community": 97
     },
     {
       "label": "makeEvent()",
@@ -473,7 +473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/github.test.ts",
       "source_location": "L19",
       "id": "github_test_makeevent",
-      "community": 71
+      "community": 97
     },
     {
       "label": "slug.test.ts",
@@ -489,7 +489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail-api.test.ts",
       "source_location": "L1",
       "id": "gmail_api_test",
-      "community": 84
+      "community": 70
     },
     {
       "label": "b64url()",
@@ -497,7 +497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail-api.test.ts",
       "source_location": "L12",
       "id": "gmail_api_test_b64url",
-      "community": 84
+      "community": 70
     },
     {
       "label": "gmail.test.ts",
@@ -505,7 +505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail.test.ts",
       "source_location": "L1",
       "id": "gmail_test",
-      "community": 19
+      "community": 20
     },
     {
       "label": "b64url()",
@@ -513,7 +513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail.test.ts",
       "source_location": "L6",
       "id": "gmail_test_b64url",
-      "community": 19
+      "community": 20
     },
     {
       "label": "makePlainMessage()",
@@ -521,7 +521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail.test.ts",
       "source_location": "L16",
       "id": "gmail_test_makeplainmessage",
-      "community": 19
+      "community": 20
     },
     {
       "label": "makeMultipartMessage()",
@@ -529,7 +529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail.test.ts",
       "source_location": "L33",
       "id": "gmail_test_makemultipartmessage",
-      "community": 19
+      "community": 20
     },
     {
       "label": "makeDeps()",
@@ -537,7 +537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/gmail.test.ts",
       "source_location": "L111",
       "id": "gmail_test_makedeps",
-      "community": 19
+      "community": 20
     },
     {
       "label": "state.test.ts",
@@ -561,7 +561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/orchestrator.test.ts",
       "source_location": "L1",
       "id": "orchestrator_test",
-      "community": 46
+      "community": 58
     },
     {
       "label": "mockSource()",
@@ -569,7 +569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/orchestrator.test.ts",
       "source_location": "L11",
       "id": "orchestrator_test_mocksource",
-      "community": 46
+      "community": 58
     },
     {
       "label": "failingSource()",
@@ -577,7 +577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/orchestrator.test.ts",
       "source_location": "L25",
       "id": "orchestrator_test_failingsource",
-      "community": 46
+      "community": 58
     },
     {
       "label": "markpush.test.ts",
@@ -601,7 +601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/git-commits.test.ts",
       "source_location": "L1",
       "id": "git_commits_test",
-      "community": 82
+      "community": 89
     },
     {
       "label": "makeDeps()",
@@ -609,7 +609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/sources/git-commits.test.ts",
       "source_location": "L69",
       "id": "git_commits_test_makedeps",
-      "community": 82
+      "community": 89
     },
     {
       "label": "synthesis-cache.test.ts",
@@ -617,7 +617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/synthesis-cache.test.ts",
       "source_location": "L1",
       "id": "synthesis_cache_test",
-      "community": 86
+      "community": 74
     },
     {
       "label": "makeSynthesis()",
@@ -625,7 +625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/synthesis-cache.test.ts",
       "source_location": "L8",
       "id": "synthesis_cache_test_makesynthesis",
-      "community": 86
+      "community": 74
     },
     {
       "label": "health-core.test.ts",
@@ -657,7 +657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/ingest.test.ts",
       "source_location": "L1",
       "id": "ingest_test",
-      "community": 75
+      "community": 80
     },
     {
       "label": "buildApp()",
@@ -665,7 +665,15 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/ingest.test.ts",
       "source_location": "L9",
       "id": "ingest_test_buildapp",
-      "community": 75
+      "community": 80
+    },
+    {
+      "label": "buildApp()",
+      "file_type": "code",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/graphify.test.ts",
+      "source_location": "L10",
+      "id": "graphify_test_buildapp",
+      "community": 25
     },
     {
       "label": "graph-export.test.ts",
@@ -673,7 +681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/graph-export.test.ts",
       "source_location": "L1",
       "id": "graph_export_test",
-      "community": 80
+      "community": 66
     },
     {
       "label": "buildApp()",
@@ -681,7 +689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/graph-export.test.ts",
       "source_location": "L42",
       "id": "graph_export_test_buildapp",
-      "community": 80
+      "community": 66
     },
     {
       "label": "graph-push.test.ts",
@@ -689,7 +697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/graph-push.test.ts",
       "source_location": "L1",
       "id": "graph_push_test",
-      "community": 79
+      "community": 71
     },
     {
       "label": "buildApp()",
@@ -697,7 +705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/graph-push.test.ts",
       "source_location": "L5",
       "id": "graph_push_test_buildapp",
-      "community": 79
+      "community": 71
     },
     {
       "label": "save.test.ts",
@@ -705,7 +713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/save.test.ts",
       "source_location": "L1",
       "id": "save_test",
-      "community": 41
+      "community": 37
     },
     {
       "label": "makeSynthesis()",
@@ -713,7 +721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/save.test.ts",
       "source_location": "L11",
       "id": "save_test_makesynthesis",
-      "community": 41
+      "community": 37
     },
     {
       "label": "buildApp()",
@@ -721,7 +729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/save.test.ts",
       "source_location": "L23",
       "id": "save_test_buildapp",
-      "community": 41
+      "community": 37
     },
     {
       "label": "synthesise.test.ts",
@@ -729,7 +737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/synthesise.test.ts",
       "source_location": "L1",
       "id": "synthesise_test",
-      "community": 74
+      "community": 96
     },
     {
       "label": "buildApp()",
@@ -737,7 +745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/synthesise.test.ts",
       "source_location": "L5",
       "id": "synthesise_test_buildapp",
-      "community": 74
+      "community": 96
     },
     {
       "label": "health.test.ts",
@@ -785,7 +793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail-auth.ts",
       "source_location": "L1",
       "id": "gmail_auth",
-      "community": 64
+      "community": 65
     },
     {
       "label": "compile-pending.ts",
@@ -793,7 +801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/compile-pending.ts",
       "source_location": "L1",
       "id": "compile_pending",
-      "community": 89
+      "community": 95
     },
     {
       "label": "main()",
@@ -801,7 +809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/compile-pending.ts",
       "source_location": "L3",
       "id": "compile_pending_main",
-      "community": 89
+      "community": 95
     },
     {
       "label": "graphify_cli.py",
@@ -809,7 +817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py",
       "source_location": "L1",
       "id": "graphify_cli",
-      "community": 12
+      "community": 10
     },
     {
       "label": "_file_hub_nodes()",
@@ -817,7 +825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py",
       "source_location": "L27",
       "id": "graphify_cli_file_hub_nodes",
-      "community": 12
+      "community": 10
     },
     {
       "label": "_edge_relation()",
@@ -825,7 +833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py",
       "source_location": "L38",
       "id": "graphify_cli_edge_relation",
-      "community": 12
+      "community": 10
     },
     {
       "label": "main()",
@@ -833,7 +841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py",
       "source_location": "L46",
       "id": "graphify_cli_main",
-      "community": 12
+      "community": 10
     },
     {
       "label": "Yield (node_id, data) for file-level hub nodes (label == source filename).",
@@ -841,7 +849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py",
       "source_location": "L28",
       "id": "graphify_cli_rationale_28",
-      "community": 12
+      "community": 10
     },
     {
       "label": "Get edge relation safely, handling missing edges.",
@@ -849,7 +857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py",
       "source_location": "L39",
       "id": "graphify_cli_rationale_39",
-      "community": 12
+      "community": 10
     },
     {
       "label": "snapshot.ts",
@@ -857,7 +865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/snapshot.ts",
       "source_location": "L1",
       "id": "snapshot",
-      "community": 67
+      "community": 86
     },
     {
       "label": "takePreHealSnapshot()",
@@ -865,7 +873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/snapshot.ts",
       "source_location": "L3",
       "id": "snapshot_takeprehealsnapshot",
-      "community": 67
+      "community": 86
     },
     {
       "label": "watcher.ts",
@@ -873,7 +881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/watcher.ts",
       "source_location": "L1",
       "id": "watcher",
-      "community": 97
+      "community": 84
     },
     {
       "label": "startWatchers()",
@@ -881,7 +889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/watcher.ts",
       "source_location": "L21",
       "id": "watcher_startwatchers",
-      "community": 97
+      "community": 84
     },
     {
       "label": "quarantine.ts",
@@ -889,7 +897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/quarantine.ts",
       "source_location": "L1",
       "id": "quarantine",
-      "community": 43
+      "community": 44
     },
     {
       "label": "shouldQuarantine()",
@@ -897,7 +905,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/quarantine.ts",
       "source_location": "L5",
       "id": "quarantine_shouldquarantine",
-      "community": 43
+      "community": 44
     },
     {
       "label": "quarantineFile()",
@@ -905,7 +913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/quarantine.ts",
       "source_location": "L9",
       "id": "quarantine_quarantinefile",
-      "community": 43
+      "community": 44
     },
     {
       "label": "types.ts",
@@ -921,7 +929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/index.ts",
       "source_location": "L1",
       "id": "index",
-      "community": 13
+      "community": 11
     },
     {
       "label": "slidesFn()",
@@ -929,7 +937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/index.ts",
       "source_location": "L67",
       "id": "index_slidesfn",
-      "community": 13
+      "community": 11
     },
     {
       "label": "plotFn()",
@@ -937,7 +945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/index.ts",
       "source_location": "L76",
       "id": "index_plotfn",
-      "community": 13
+      "community": 11
     },
     {
       "label": "spawnTelegramBot()",
@@ -945,15 +953,15 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/index.ts",
       "source_location": "L89",
       "id": "index_spawntelegrambot",
-      "community": 13
+      "community": 11
     },
     {
       "label": "shutdown()",
       "file_type": "code",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/index.ts",
-      "source_location": "L244",
+      "source_location": "L245",
       "id": "index_shutdown",
-      "community": 13
+      "community": 11
     },
     {
       "label": "config.ts",
@@ -961,7 +969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/config.ts",
       "source_location": "L1",
       "id": "config",
-      "community": 17
+      "community": 16
     },
     {
       "label": "loadEnv()",
@@ -969,7 +977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/config.ts",
       "source_location": "L56",
       "id": "config_loadenv",
-      "community": 17
+      "community": 16
     },
     {
       "label": "deepMerge()",
@@ -977,7 +985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/config.ts",
       "source_location": "L76",
       "id": "config_deepmerge",
-      "community": 17
+      "community": 16
     },
     {
       "label": "loadConfig()",
@@ -985,7 +993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/config.ts",
       "source_location": "L100",
       "id": "config_loadconfig",
-      "community": 17
+      "community": 16
     },
     {
       "label": "frontmatter.ts",
@@ -993,7 +1001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/frontmatter.ts",
       "source_location": "L1",
       "id": "frontmatter",
-      "community": 16
+      "community": 18
     },
     {
       "label": "readFrontmatter()",
@@ -1001,7 +1009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/frontmatter.ts",
       "source_location": "L12",
       "id": "frontmatter_readfrontmatter",
-      "community": 16
+      "community": 18
     },
     {
       "label": "writeFrontmatter()",
@@ -1009,7 +1017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/frontmatter.ts",
       "source_location": "L21",
       "id": "frontmatter_writefrontmatter",
-      "community": 16
+      "community": 18
     },
     {
       "label": "updateFrontmatter()",
@@ -1017,7 +1025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/frontmatter.ts",
       "source_location": "L27",
       "id": "frontmatter_updatefrontmatter",
-      "community": 16
+      "community": 18
     },
     {
       "label": "injectRawFrontmatter()",
@@ -1025,7 +1033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/frontmatter.ts",
       "source_location": "L33",
       "id": "frontmatter_injectrawfrontmatter",
-      "community": 16
+      "community": 18
     },
     {
       "label": "healer.ts",
@@ -1033,7 +1041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/healer.ts",
       "source_location": "L1",
       "id": "healer",
-      "community": 20
+      "community": 19
     },
     {
       "label": "determineHealAction()",
@@ -1041,7 +1049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/healer.ts",
       "source_location": "L12",
       "id": "healer_determinehealaction",
-      "community": 20
+      "community": 19
     },
     {
       "label": "appendContradictionWarning()",
@@ -1049,7 +1057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/healer.ts",
       "source_location": "L45",
       "id": "healer_appendcontradictionwarning",
-      "community": 20
+      "community": 19
     },
     {
       "label": "writeProposal()",
@@ -1057,7 +1065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/healer.ts",
       "source_location": "L58",
       "id": "healer_writeproposal",
-      "community": 20
+      "community": 19
     },
     {
       "label": "appendAISynthesis()",
@@ -1065,7 +1073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/healer.ts",
       "source_location": "L91",
       "id": "healer_appendaisynthesis",
-      "community": 20
+      "community": 19
     },
     {
       "label": "connector.ts",
@@ -1073,7 +1081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/connector.ts",
       "source_location": "L1",
       "id": "connector",
-      "community": 26
+      "community": 28
     },
     {
       "label": "collectWikiFiles()",
@@ -1081,7 +1089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/connector.ts",
       "source_location": "L7",
       "id": "connector_collectwikifiles",
-      "community": 26
+      "community": 28
     },
     {
       "label": "discoverConnections()",
@@ -1089,7 +1097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/connector.ts",
       "source_location": "L27",
       "id": "connector_discoverconnections",
-      "community": 26
+      "community": 28
     },
     {
       "label": "writeDailySummary()",
@@ -1097,7 +1105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/connector.ts",
       "source_location": "L55",
       "id": "connector_writedailysummary",
-      "community": 26
+      "community": 28
     },
     {
       "label": "scanner.ts",
@@ -1105,7 +1113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/scanner.ts",
       "source_location": "L1",
       "id": "scanner",
-      "community": 29
+      "community": 26
     },
     {
       "label": "collectWikiFiles()",
@@ -1113,7 +1121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/scanner.ts",
       "source_location": "L17",
       "id": "scanner_collectwikifiles",
-      "community": 29
+      "community": 26
     },
     {
       "label": "slugify()",
@@ -1121,7 +1129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/scanner.ts",
       "source_location": "L32",
       "id": "scanner_slugify",
-      "community": 29
+      "community": 26
     },
     {
       "label": "scanForIssues()",
@@ -1129,7 +1137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/scanner.ts",
       "source_location": "L39",
       "id": "scanner_scanforissues",
-      "community": 29
+      "community": 26
     },
     {
       "label": "runner.ts",
@@ -1137,7 +1145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/runner.ts",
       "source_location": "L1",
       "id": "runner",
-      "community": 10
+      "community": 12
     },
     {
       "label": "runLintHeal()",
@@ -1145,7 +1153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/runner.ts",
       "source_location": "L15",
       "id": "runner_runlintheal",
-      "community": 10
+      "community": 12
     },
     {
       "label": "generateLintReport()",
@@ -1153,7 +1161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/lint/runner.ts",
       "source_location": "L117",
       "id": "runner_generatelintreport",
-      "community": 10
+      "community": 12
     },
     {
       "label": "yaml-loader.ts",
@@ -1161,7 +1169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/yaml-loader.ts",
       "source_location": "L1",
       "id": "yaml_loader",
-      "community": 6
+      "community": 5
     },
     {
       "label": "loadYaml()",
@@ -1169,7 +1177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/yaml-loader.ts",
       "source_location": "L6",
       "id": "yaml_loader_loadyaml",
-      "community": 6
+      "community": 5
     },
     {
       "label": "loadCsv()",
@@ -1177,7 +1185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/yaml-loader.ts",
       "source_location": "L21",
       "id": "yaml_loader_loadcsv",
-      "community": 6
+      "community": 5
     },
     {
       "label": "wiki-helpers.ts",
@@ -1185,7 +1193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/wiki-helpers.ts",
       "source_location": "L1",
       "id": "wiki_helpers",
-      "community": 21
+      "community": 23
     },
     {
       "label": "slugFromId()",
@@ -1193,7 +1201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/wiki-helpers.ts",
       "source_location": "L14",
       "id": "wiki_helpers_slugfromid",
-      "community": 21
+      "community": 23
     },
     {
       "label": "makeWikiFrontmatter()",
@@ -1201,7 +1209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/wiki-helpers.ts",
       "source_location": "L18",
       "id": "wiki_helpers_makewikifrontmatter",
-      "community": 21
+      "community": 23
     },
     {
       "label": "validateWikiFrontmatter()",
@@ -1209,7 +1217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/wiki-helpers.ts",
       "source_location": "L36",
       "id": "wiki_helpers_validatewikifrontmatter",
-      "community": 21
+      "community": 23
     },
     {
       "label": "resolveLinks()",
@@ -1217,7 +1225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/wiki-helpers.ts",
       "source_location": "L51",
       "id": "wiki_helpers_resolvelinks",
-      "community": 21
+      "community": 23
     },
     {
       "label": "schemas.ts",
@@ -1233,7 +1241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/unstructured.ts",
       "source_location": "L1",
       "id": "unstructured",
-      "community": 32
+      "community": 54
     },
     {
       "label": "getUnstructuredFiles()",
@@ -1241,7 +1249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/unstructured.ts",
       "source_location": "L26",
       "id": "unstructured_getunstructuredfiles",
-      "community": 32
+      "community": 54
     },
     {
       "label": "copyToRaw()",
@@ -1249,7 +1257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/unstructured.ts",
       "source_location": "L33",
       "id": "unstructured_copytoraw",
-      "community": 32
+      "community": 54
     },
     {
       "label": "log.ts",
@@ -1361,7 +1369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/index.ts",
       "source_location": "L8",
       "id": "index_main",
-      "community": 13
+      "community": 11
     },
     {
       "label": "parseArgs()",
@@ -1369,7 +1377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/runner.ts",
       "source_location": "L45",
       "id": "runner_parseargs",
-      "community": 10
+      "community": 12
     },
     {
       "label": "shouldRunStep()",
@@ -1377,7 +1385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/runner.ts",
       "source_location": "L54",
       "id": "runner_shouldrunstep",
-      "community": 10
+      "community": 12
     },
     {
       "label": "runSeed()",
@@ -1385,7 +1393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/runner.ts",
       "source_location": "L60",
       "id": "runner_runseed",
-      "community": 10
+      "community": 12
     },
     {
       "label": "tracking.ts",
@@ -1393,7 +1401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/tracking.ts",
       "source_location": "L1",
       "id": "tracking",
-      "community": 88
+      "community": 81
     },
     {
       "label": "transformTracking()",
@@ -1401,7 +1409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/tracking.ts",
       "source_location": "L5",
       "id": "tracking_transformtracking",
-      "community": 88
+      "community": 81
     },
     {
       "label": "projects.ts",
@@ -1409,7 +1417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/projects.ts",
       "source_location": "L1",
       "id": "projects",
-      "community": 36
+      "community": 50
     },
     {
       "label": "metricAlreadyInText()",
@@ -1417,7 +1425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/projects.ts",
       "source_location": "L5",
       "id": "projects_metricalreadyintext",
-      "community": 36
+      "community": 50
     },
     {
       "label": "transformProjects()",
@@ -1425,7 +1433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/projects.ts",
       "source_location": "L13",
       "id": "projects_transformprojects",
-      "community": 36
+      "community": 50
     },
     {
       "label": "companies.ts",
@@ -1433,7 +1441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/companies.ts",
       "source_location": "L1",
       "id": "companies",
-      "community": 53
+      "community": 60
     },
     {
       "label": "slugify()",
@@ -1441,7 +1449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/companies.ts",
       "source_location": "L5",
       "id": "companies_slugify",
-      "community": 53
+      "community": 60
     },
     {
       "label": "transformCompanies()",
@@ -1449,7 +1457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/companies.ts",
       "source_location": "L12",
       "id": "companies_transformcompanies",
-      "community": 53
+      "community": 60
     },
     {
       "label": "answers.ts",
@@ -1457,7 +1465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/answers.ts",
       "source_location": "L1",
       "id": "answers",
-      "community": 69
+      "community": 79
     },
     {
       "label": "transformAnswers()",
@@ -1465,7 +1473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/answers.ts",
       "source_location": "L5",
       "id": "answers_transformanswers",
-      "community": 69
+      "community": 79
     },
     {
       "label": "stories.ts",
@@ -1473,7 +1481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/stories.ts",
       "source_location": "L1",
       "id": "stories",
-      "community": 73
+      "community": 93
     },
     {
       "label": "transformStories()",
@@ -1481,7 +1489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/stories.ts",
       "source_location": "L5",
       "id": "stories_transformstories",
-      "community": 73
+      "community": 93
     },
     {
       "label": "experience.ts",
@@ -1489,7 +1497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/experience.ts",
       "source_location": "L1",
       "id": "experience",
-      "community": 40
+      "community": 42
     },
     {
       "label": "metricAlreadyInText()",
@@ -1497,7 +1505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/experience.ts",
       "source_location": "L5",
       "id": "experience_metricalreadyintext",
-      "community": 40
+      "community": 42
     },
     {
       "label": "transformExperience()",
@@ -1505,7 +1513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/experience.ts",
       "source_location": "L14",
       "id": "experience_transformexperience",
-      "community": 40
+      "community": 42
     },
     {
       "label": "profile.ts",
@@ -1513,7 +1521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/profile.ts",
       "source_location": "L1",
       "id": "profile",
-      "community": 50
+      "community": 41
     },
     {
       "label": "slugify()",
@@ -1521,7 +1529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/profile.ts",
       "source_location": "L5",
       "id": "profile_slugify",
-      "community": 50
+      "community": 41
     },
     {
       "label": "transformProfile()",
@@ -1529,7 +1537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/profile.ts",
       "source_location": "L9",
       "id": "profile_transformprofile",
-      "community": 50
+      "community": 41
     },
     {
       "label": "skills.ts",
@@ -1537,7 +1545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/skills.ts",
       "source_location": "L1",
       "id": "skills",
-      "community": 65
+      "community": 90
     },
     {
       "label": "transformSkills()",
@@ -1545,7 +1553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/skills.ts",
       "source_location": "L5",
       "id": "skills_transformskills",
-      "community": 65
+      "community": 90
     },
     {
       "label": "positioning.ts",
@@ -1553,7 +1561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/positioning.ts",
       "source_location": "L1",
       "id": "positioning",
-      "community": 94
+      "community": 91
     },
     {
       "label": "transformPositioning()",
@@ -1561,7 +1569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/positioning.ts",
       "source_location": "L5",
       "id": "positioning_transformpositioning",
-      "community": 94
+      "community": 91
     },
     {
       "label": "provider.ts",
@@ -1633,7 +1641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/push.ts",
       "source_location": "L1",
       "id": "push",
-      "community": 61
+      "community": 57
     },
     {
       "label": "defaultExec()",
@@ -1641,7 +1649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/push.ts",
       "source_location": "L7",
       "id": "push_defaultexec",
-      "community": 61
+      "community": 57
     },
     {
       "label": "pushGraphToRepo()",
@@ -1649,7 +1657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/push.ts",
       "source_location": "L23",
       "id": "push_pushgraphtorepo",
-      "community": 61
+      "community": 57
     },
     {
       "label": "cross-layer.ts",
@@ -1681,7 +1689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/embeddings.ts",
       "source_location": "L1",
       "id": "embeddings",
-      "community": 90
+      "community": 82
     },
     {
       "label": "aggregateEmbeddings()",
@@ -1689,7 +1697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/embeddings.ts",
       "source_location": "L6",
       "id": "embeddings_aggregateembeddings",
-      "community": 90
+      "community": 82
     },
     {
       "label": "backfill-links.ts",
@@ -1697,7 +1705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/backfill-links.ts",
       "source_location": "L1",
       "id": "backfill_links",
-      "community": 54
+      "community": 46
     },
     {
       "label": "walkDir()",
@@ -1705,7 +1713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/backfill-links.ts",
       "source_location": "L21",
       "id": "backfill_links_walkdir",
-      "community": 54
+      "community": 46
     },
     {
       "label": "backfillLinks()",
@@ -1713,7 +1721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/backfill-links.ts",
       "source_location": "L43",
       "id": "backfill_links_backfilllinks",
-      "community": 54
+      "community": 46
     },
     {
       "label": "export.ts",
@@ -1721,7 +1729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/export.ts",
       "source_location": "L1",
       "id": "export",
-      "community": 33
+      "community": 59
     },
     {
       "label": "seedRandom()",
@@ -1729,7 +1737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/export.ts",
       "source_location": "L19",
       "id": "export_seedrandom",
-      "community": 33
+      "community": 59
     },
     {
       "label": "generateGraphCache()",
@@ -1737,7 +1745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/export.ts",
       "source_location": "L27",
       "id": "export_generategraphcache",
-      "community": 33
+      "community": 59
     },
     {
       "label": "cache.ts",
@@ -1745,7 +1753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/cache.ts",
       "source_location": "L1",
       "id": "cache",
-      "community": 51
+      "community": 56
     },
     {
       "label": "rebuildGraphCache()",
@@ -1753,7 +1761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/cache.ts",
       "source_location": "L8",
       "id": "cache_rebuildgraphcache",
-      "community": 51
+      "community": 56
     },
     {
       "label": "readGraphCache()",
@@ -1761,7 +1769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/cache.ts",
       "source_location": "L46",
       "id": "cache_readgraphcache",
-      "community": 51
+      "community": 56
     },
     {
       "label": "community-drops.ts",
@@ -1769,7 +1777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts",
       "source_location": "L1",
       "id": "community_drops",
-      "community": 8
+      "community": 9
     },
     {
       "label": "connectionCounts()",
@@ -1777,7 +1785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts",
       "source_location": "L35",
       "id": "community_drops_connectioncounts",
-      "community": 8
+      "community": 9
     },
     {
       "label": "communityOf()",
@@ -1785,7 +1793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts",
       "source_location": "L50",
       "id": "community_drops_communityof",
-      "community": 8
+      "community": 9
     },
     {
       "label": "slugify()",
@@ -1793,7 +1801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts",
       "source_location": "L55",
       "id": "community_drops_slugify",
-      "community": 8
+      "community": 9
     },
     {
       "label": "groupNodesByCommunity()",
@@ -1801,7 +1809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts",
       "source_location": "L67",
       "id": "community_drops_groupnodesbycommunity",
-      "community": 8
+      "community": 9
     },
     {
       "label": "generateCommunityDrop()",
@@ -1809,7 +1817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts",
       "source_location": "L86",
       "id": "community_drops_generatecommunitydrop",
-      "community": 8
+      "community": 9
     },
     {
       "label": "generateAllDrops()",
@@ -1817,7 +1825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts",
       "source_location": "L179",
       "id": "community_drops_generatealldrops",
-      "community": 8
+      "community": 9
     },
     {
       "label": "load-graphify.ts",
@@ -1825,7 +1833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/load-graphify.ts",
       "source_location": "L1",
       "id": "load_graphify",
-      "community": 52
+      "community": 34
     },
     {
       "label": "stripFrontmatter()",
@@ -1833,7 +1841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/load-graphify.ts",
       "source_location": "L27",
       "id": "load_graphify_stripfrontmatter",
-      "community": 52
+      "community": 34
     },
     {
       "label": "loadGraphifyGraphs()",
@@ -1841,7 +1849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/load-graphify.ts",
       "source_location": "L34",
       "id": "load_graphify_loadgraphifygraphs",
-      "community": 52
+      "community": 34
     },
     {
       "label": "scan-wiki.ts",
@@ -1849,7 +1857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/scan-wiki.ts",
       "source_location": "L1",
       "id": "scan_wiki",
-      "community": 22
+      "community": 31
     },
     {
       "label": "walkDir()",
@@ -1857,7 +1865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/scan-wiki.ts",
       "source_location": "L24",
       "id": "scan_wiki_walkdir",
-      "community": 22
+      "community": 31
     },
     {
       "label": "normalizeTarget()",
@@ -1865,7 +1873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/scan-wiki.ts",
       "source_location": "L45",
       "id": "scan_wiki_normalizetarget",
-      "community": 22
+      "community": 31
     },
     {
       "label": "scanWiki()",
@@ -1873,7 +1881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/graph/scan-wiki.ts",
       "source_location": "L58",
       "id": "scan_wiki_scanwiki",
-      "community": 22
+      "community": 31
     },
     {
       "label": "slides.ts",
@@ -1913,7 +1921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/output/plots.ts",
       "source_location": "L1",
       "id": "plots",
-      "community": 23
+      "community": 33
     },
     {
       "label": "defaultClaudeFn()",
@@ -1921,7 +1929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/output/plots.ts",
       "source_location": "L31",
       "id": "plots_defaultclaudefn",
-      "community": 23
+      "community": 33
     },
     {
       "label": "defaultExecFn()",
@@ -1929,7 +1937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/output/plots.ts",
       "source_location": "L39",
       "id": "plots_defaultexecfn",
-      "community": 23
+      "community": 33
     },
     {
       "label": "generatePlot()",
@@ -1937,7 +1945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/output/plots.ts",
       "source_location": "L52",
       "id": "plots_generateplot",
-      "community": 23
+      "community": 33
     },
     {
       "label": "embedder.ts",
@@ -1945,7 +1953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/embedder.ts",
       "source_location": "L1",
       "id": "embedder",
-      "community": 31
+      "community": 29
     },
     {
       "label": "getExtractor()",
@@ -1953,7 +1961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/embedder.ts",
       "source_location": "L5",
       "id": "embedder_getextractor",
-      "community": 31
+      "community": 29
     },
     {
       "label": "embed()",
@@ -1961,7 +1969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/embedder.ts",
       "source_location": "L14",
       "id": "embedder_embed",
-      "community": 31
+      "community": 29
     },
     {
       "label": "embedBatch()",
@@ -1969,7 +1977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/embedder.ts",
       "source_location": "L20",
       "id": "embedder_embedbatch",
-      "community": 31
+      "community": 29
     },
     {
       "label": "vector-store.ts",
@@ -1977,7 +1985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L1",
       "id": "vector_store",
-      "community": 5
+      "community": 4
     },
     {
       "label": "VectorStore",
@@ -1985,7 +1993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L6",
       "id": "vector_store_vectorstore",
-      "community": 5
+      "community": 4
     },
     {
       "label": ".constructor()",
@@ -1993,7 +2001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L10",
       "id": "vector_store_vectorstore_constructor",
-      "community": 5
+      "community": 4
     },
     {
       "label": ".init()",
@@ -2001,7 +2009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L14",
       "id": "vector_store_vectorstore_init",
-      "community": 5
+      "community": 4
     },
     {
       "label": ".getTable()",
@@ -2009,7 +2017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L18",
       "id": "vector_store_vectorstore_gettable",
-      "community": 5
+      "community": 4
     },
     {
       "label": ".upsertChunks()",
@@ -2017,7 +2025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L25",
       "id": "vector_store_vectorstore_upsertchunks",
-      "community": 5
+      "community": 4
     },
     {
       "label": ".deleteByFilePath()",
@@ -2025,7 +2033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L52",
       "id": "vector_store_vectorstore_deletebyfilepath",
-      "community": 5
+      "community": 4
     },
     {
       "label": ".search()",
@@ -2033,7 +2041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L59",
       "id": "vector_store_vectorstore_search",
-      "community": 5
+      "community": 4
     },
     {
       "label": ".listAll()",
@@ -2041,7 +2049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/vector-store.ts",
       "source_location": "L78",
       "id": "vector_store_vectorstore_listall",
-      "community": 5
+      "community": 4
     },
     {
       "label": "chunker.ts",
@@ -2049,7 +2057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/chunker.ts",
       "source_location": "L1",
       "id": "chunker",
-      "community": 15
+      "community": 17
     },
     {
       "label": "extractText()",
@@ -2057,7 +2065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/chunker.ts",
       "source_location": "L16",
       "id": "chunker_extracttext",
-      "community": 15
+      "community": 17
     },
     {
       "label": "nodeToMarkdown()",
@@ -2065,7 +2073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/chunker.ts",
       "source_location": "L22",
       "id": "chunker_nodetomarkdown",
-      "community": 15
+      "community": 17
     },
     {
       "label": "hashContent()",
@@ -2073,7 +2081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/chunker.ts",
       "source_location": "L27",
       "id": "chunker_hashcontent",
-      "community": 15
+      "community": 17
     },
     {
       "label": "chunkMarkdown()",
@@ -2081,7 +2089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/chunker.ts",
       "source_location": "L31",
       "id": "chunker_chunkmarkdown",
-      "community": 15
+      "community": 17
     },
     {
       "label": "sync.ts",
@@ -2089,7 +2097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts",
       "source_location": "L1",
       "id": "sync",
-      "community": 6
+      "community": 5
     },
     {
       "label": "computeContentHash()",
@@ -2097,7 +2105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts",
       "source_location": "L9",
       "id": "sync_computecontenthash",
-      "community": 6
+      "community": 5
     },
     {
       "label": "shouldReembed()",
@@ -2105,7 +2113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts",
       "source_location": "L13",
       "id": "sync_shouldreembed",
-      "community": 6
+      "community": 5
     },
     {
       "label": "collectWikiFiles()",
@@ -2113,7 +2121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts",
       "source_location": "L25",
       "id": "sync_collectwikifiles",
-      "community": 6
+      "community": 5
     },
     {
       "label": "syncFile()",
@@ -2121,7 +2129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts",
       "source_location": "L41",
       "id": "sync_syncfile",
-      "community": 6
+      "community": 5
     },
     {
       "label": "syncAll()",
@@ -2129,7 +2137,23 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts",
       "source_location": "L76",
       "id": "sync_syncall",
-      "community": 6
+      "community": 5
+    },
+    {
+      "label": "graphify.ts",
+      "file_type": "code",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
+      "source_location": "L1",
+      "id": "graphify",
+      "community": 21
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/cli/graphify.ts",
+      "source_location": "L7",
+      "id": "graphify_main",
+      "community": 21
     },
     {
       "label": "passthrough.ts",
@@ -2137,7 +2161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/passthrough.ts",
       "source_location": "L1",
       "id": "passthrough",
-      "community": 62
+      "community": 85
     },
     {
       "label": "parsePassthrough()",
@@ -2145,7 +2169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/passthrough.ts",
       "source_location": "L3",
       "id": "passthrough_parsepassthrough",
-      "community": 62
+      "community": 85
     },
     {
       "label": "router.ts",
@@ -2153,7 +2177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/router.ts",
       "source_location": "L1",
       "id": "router",
-      "community": 70
+      "community": 92
     },
     {
       "label": "routeAndParse()",
@@ -2161,7 +2185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/router.ts",
       "source_location": "L10",
       "id": "router_routeandparse",
-      "community": 70
+      "community": 92
     },
     {
       "label": "placeholder-parser.ts",
@@ -2169,7 +2193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/placeholder-parser.ts",
       "source_location": "L1",
       "id": "placeholder_parser",
-      "community": 60
+      "community": 39
     },
     {
       "label": "isPhase2Format()",
@@ -2177,7 +2201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/placeholder-parser.ts",
       "source_location": "L5",
       "id": "placeholder_parser_isphase2format",
-      "community": 60
+      "community": 39
     },
     {
       "label": "parsePlaceholder()",
@@ -2185,7 +2209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/placeholder-parser.ts",
       "source_location": "L9",
       "id": "placeholder_parser_parseplaceholder",
-      "community": 60
+      "community": 39
     },
     {
       "label": "html-parser.ts",
@@ -2193,7 +2217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/html-parser.ts",
       "source_location": "L1",
       "id": "html_parser",
-      "community": 66
+      "community": 72
     },
     {
       "label": "parseHtml()",
@@ -2201,7 +2225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/html-parser.ts",
       "source_location": "L9",
       "id": "html_parser_parsehtml",
-      "community": 66
+      "community": 72
     },
     {
       "label": "todayDate()",
@@ -2265,7 +2289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L1",
       "id": "transcribe",
-      "community": 4
+      "community": 6
     },
     {
       "label": "defaultExec()",
@@ -2273,7 +2297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L22",
       "id": "transcribe_defaultexec",
-      "community": 4
+      "community": 6
     },
     {
       "label": "LocalWhisperProvider",
@@ -2281,7 +2305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L30",
       "id": "transcribe_localwhisperprovider",
-      "community": 4
+      "community": 6
     },
     {
       "label": ".constructor()",
@@ -2289,7 +2313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L31",
       "id": "transcribe_localwhisperprovider_constructor",
-      "community": 4
+      "community": 6
     },
     {
       "label": ".transcribe()",
@@ -2297,7 +2321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L36",
       "id": "transcribe_localwhisperprovider_transcribe",
-      "community": 4
+      "community": 6
     },
     {
       "label": "OpenAIWhisperProvider",
@@ -2305,7 +2329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L54",
       "id": "transcribe_openaiwhisperprovider",
-      "community": 4
+      "community": 6
     },
     {
       "label": ".constructor()",
@@ -2313,7 +2337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L55",
       "id": "transcribe_openaiwhisperprovider_constructor",
-      "community": 4
+      "community": 6
     },
     {
       "label": ".transcribe()",
@@ -2321,7 +2345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L62",
       "id": "transcribe_openaiwhisperprovider_transcribe",
-      "community": 4
+      "community": 6
     },
     {
       "label": "createTranscriptionProvider()",
@@ -2329,7 +2353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts",
       "source_location": "L89",
       "id": "transcribe_createtranscriptionprovider",
-      "community": 4
+      "community": 6
     },
     {
       "label": "classify.ts",
@@ -2337,7 +2361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/classify.ts",
       "source_location": "L1",
       "id": "classify",
-      "community": 28
+      "community": 24
     },
     {
       "label": "detectPrefix()",
@@ -2345,7 +2369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/classify.ts",
       "source_location": "L17",
       "id": "classify_detectprefix",
-      "community": 28
+      "community": 24
     },
     {
       "label": "defaultCallClaude()",
@@ -2353,7 +2377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/classify.ts",
       "source_location": "L36",
       "id": "classify_defaultcallclaude",
-      "community": 28
+      "community": 24
     },
     {
       "label": "classifyCluster()",
@@ -2361,7 +2385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/classify.ts",
       "source_location": "L48",
       "id": "classify_classifycluster",
-      "community": 28
+      "community": 24
     },
     {
       "label": "voice-parser.ts",
@@ -2369,7 +2393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/voice-parser.ts",
       "source_location": "L1",
       "id": "voice_parser",
-      "community": 72
+      "community": 88
     },
     {
       "label": "parseVoice()",
@@ -2377,7 +2401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/voice/voice-parser.ts",
       "source_location": "L10",
       "id": "voice_parser_parsevoice",
-      "community": 72
+      "community": 88
     },
     {
       "label": "bot.ts",
@@ -2473,7 +2497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/telegram/format.ts",
       "source_location": "L1",
       "id": "format",
-      "community": 96
+      "community": 94
     },
     {
       "label": "formatForTelegram()",
@@ -2481,7 +2505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/telegram/format.ts",
       "source_location": "L7",
       "id": "format_formatfortelegram",
-      "community": 96
+      "community": 94
     },
     {
       "label": "truncate.ts",
@@ -2489,7 +2513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/telegram/truncate.ts",
       "source_location": "L1",
       "id": "truncate",
-      "community": 77
+      "community": 62
     },
     {
       "label": "truncateAtSentence()",
@@ -2497,7 +2521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/telegram/truncate.ts",
       "source_location": "L1",
       "id": "truncate_truncateatsentence",
-      "community": 77
+      "community": 62
     },
     {
       "label": "worker.ts",
@@ -2505,7 +2529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/telegram/worker.ts",
       "source_location": "L1",
       "id": "worker",
-      "community": 44
+      "community": 43
     },
     {
       "label": "slidesFn()",
@@ -2513,7 +2537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/telegram/worker.ts",
       "source_location": "L44",
       "id": "worker_slidesfn",
-      "community": 44
+      "community": 43
     },
     {
       "label": "plotFn()",
@@ -2521,7 +2545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/telegram/worker.ts",
       "source_location": "L53",
       "id": "worker_plotfn",
-      "community": 44
+      "community": 43
     },
     {
       "label": "state.ts",
@@ -2529,7 +2553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/state.ts",
       "source_location": "L1",
       "id": "state",
-      "community": 14
+      "community": 13
     },
     {
       "label": "JsonSyncStateStore",
@@ -2537,7 +2561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/state.ts",
       "source_location": "L11",
       "id": "state_jsonsyncstatestore",
-      "community": 14
+      "community": 13
     },
     {
       "label": ".constructor()",
@@ -2545,7 +2569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/state.ts",
       "source_location": "L15",
       "id": "state_jsonsyncstatestore_constructor",
-      "community": 14
+      "community": 13
     },
     {
       "label": ".load()",
@@ -2553,7 +2577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/state.ts",
       "source_location": "L20",
       "id": "state_jsonsyncstatestore_load",
-      "community": 14
+      "community": 13
     },
     {
       "label": ".save()",
@@ -2561,7 +2585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/state.ts",
       "source_location": "L25",
       "id": "state_jsonsyncstatestore_save",
-      "community": 14
+      "community": 13
     },
     {
       "label": ".readAll()",
@@ -2569,7 +2593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/state.ts",
       "source_location": "L36",
       "id": "state_jsonsyncstatestore_readall",
-      "community": 14
+      "community": 13
     },
     {
       "label": "slug.ts",
@@ -2577,7 +2601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/slug.ts",
       "source_location": "L1",
       "id": "slug",
-      "community": 59
+      "community": 49
     },
     {
       "label": "slugify()",
@@ -2585,7 +2609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/slug.ts",
       "source_location": "L3",
       "id": "slug_slugify",
-      "community": 59
+      "community": 49
     },
     {
       "label": "uniqueSlug()",
@@ -2593,7 +2617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/slug.ts",
       "source_location": "L13",
       "id": "slug_uniqueslug",
-      "community": 59
+      "community": 49
     },
     {
       "label": "github.ts",
@@ -2601,7 +2625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/github.ts",
       "source_location": "L1",
       "id": "github",
-      "community": 9
+      "community": 8
     },
     {
       "label": "repoSlug()",
@@ -2609,7 +2633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/github.ts",
       "source_location": "L32",
       "id": "github_reposlug",
-      "community": 9
+      "community": 8
     },
     {
       "label": "eventTypeKey()",
@@ -2617,7 +2641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/github.ts",
       "source_location": "L36",
       "id": "github_eventtypekey",
-      "community": 9
+      "community": 8
     },
     {
       "label": "parseEvents()",
@@ -2625,7 +2649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/github.ts",
       "source_location": "L44",
       "id": "github_parseevents",
-      "community": 9
+      "community": 8
     },
     {
       "label": "defaultExecGh()",
@@ -2633,7 +2657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/github.ts",
       "source_location": "L151",
       "id": "github_defaultexecgh",
-      "community": 9
+      "community": 8
     },
     {
       "label": "defaultFetchRepoInfo()",
@@ -2641,7 +2665,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/github.ts",
       "source_location": "L156",
       "id": "github_defaultfetchrepoinfo",
-      "community": 9
+      "community": 8
     },
     {
       "label": "createGithubSource()",
@@ -2649,7 +2673,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/github.ts",
       "source_location": "L197",
       "id": "github_creategithubsource",
-      "community": 9
+      "community": 8
     },
     {
       "label": "git-commits.ts",
@@ -2657,7 +2681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L1",
       "id": "git_commits",
-      "community": 3
+      "community": 2
     },
     {
       "label": "defaultExecGh()",
@@ -2665,7 +2689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L29",
       "id": "git_commits_defaultexecgh",
-      "community": 3
+      "community": 2
     },
     {
       "label": "defaultGetUsername()",
@@ -2673,7 +2697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L34",
       "id": "git_commits_defaultgetusername",
-      "community": 3
+      "community": 2
     },
     {
       "label": "defaultListRepos()",
@@ -2681,7 +2705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L41",
       "id": "git_commits_defaultlistrepos",
-      "community": 3
+      "community": 2
     },
     {
       "label": "fetchCommitsForRepo()",
@@ -2689,7 +2713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L61",
       "id": "git_commits_fetchcommitsforrepo",
-      "community": 3
+      "community": 2
     },
     {
       "label": "commitToRawDrop()",
@@ -2697,7 +2721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L141",
       "id": "git_commits_committorawdrop",
-      "community": 3
+      "community": 2
     },
     {
       "label": "parseCommits()",
@@ -2705,7 +2729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L172",
       "id": "git_commits_parsecommits",
-      "community": 3
+      "community": 2
     },
     {
       "label": "createGitCommitsSource()",
@@ -2713,7 +2737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L207",
       "id": "git_commits_creategitcommitssource",
-      "community": 3
+      "community": 2
     },
     {
       "label": "backfillCommits()",
@@ -2721,7 +2745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts",
       "source_location": "L231",
       "id": "git_commits_backfillcommits",
-      "community": 3
+      "community": 2
     },
     {
       "label": "createGmailClient()",
@@ -2729,7 +2753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail-auth.ts",
       "source_location": "L32",
       "id": "gmail_auth_creategmailclient",
-      "community": 64
+      "community": 65
     },
     {
       "label": "orchestrator.ts",
@@ -2737,7 +2761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/orchestrator.ts",
       "source_location": "L1",
       "id": "orchestrator",
-      "community": 18
+      "community": 22
     },
     {
       "label": "SyncOrchestrator",
@@ -2745,7 +2769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/orchestrator.ts",
       "source_location": "L12",
       "id": "orchestrator_syncorchestrator",
-      "community": 18
+      "community": 22
     },
     {
       "label": ".constructor()",
@@ -2753,7 +2777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/orchestrator.ts",
       "source_location": "L16",
       "id": "orchestrator_syncorchestrator_constructor",
-      "community": 18
+      "community": 22
     },
     {
       "label": ".run()",
@@ -2761,7 +2785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/orchestrator.ts",
       "source_location": "L21",
       "id": "orchestrator_syncorchestrator_run",
-      "community": 18
+      "community": 22
     },
     {
       "label": ".writeDrop()",
@@ -2769,7 +2793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/orchestrator.ts",
       "source_location": "L74",
       "id": "orchestrator_syncorchestrator_writedrop",
-      "community": 18
+      "community": 22
     },
     {
       "label": "cli.ts",
@@ -2777,7 +2801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/cli.ts",
       "source_location": "L1",
       "id": "cli",
-      "community": 24
+      "community": 32
     },
     {
       "label": "runSync()",
@@ -2785,7 +2809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/cli.ts",
       "source_location": "L12",
       "id": "cli_runsync",
-      "community": 24
+      "community": 32
     },
     {
       "label": "formatReport()",
@@ -2793,7 +2817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/cli.ts",
       "source_location": "L22",
       "id": "cli_formatreport",
-      "community": 24
+      "community": 32
     },
     {
       "label": "main()",
@@ -2801,7 +2825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/cli.ts",
       "source_location": "L45",
       "id": "cli_main",
-      "community": 24
+      "community": 32
     },
     {
       "label": "gmail.ts",
@@ -2809,7 +2833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L1",
       "id": "gmail",
-      "community": 2
+      "community": 3
     },
     {
       "label": "decodeBase64url()",
@@ -2817,7 +2841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L46",
       "id": "gmail_decodebase64url",
-      "community": 2
+      "community": 3
     },
     {
       "label": "stripSignature()",
@@ -2825,7 +2849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L58",
       "id": "gmail_stripsignature",
-      "community": 2
+      "community": 3
     },
     {
       "label": "findPart()",
@@ -2833,7 +2857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L65",
       "id": "gmail_findpart",
-      "community": 2
+      "community": 3
     },
     {
       "label": "extractBody()",
@@ -2841,7 +2865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L83",
       "id": "gmail_extractbody",
-      "community": 2
+      "community": 3
     },
     {
       "label": "getHeader()",
@@ -2849,7 +2873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L104",
       "id": "gmail_getheader",
-      "community": 2
+      "community": 3
     },
     {
       "label": "isRejectedSender()",
@@ -2857,7 +2881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L138",
       "id": "gmail_isrejectedsender",
-      "community": 2
+      "community": 3
     },
     {
       "label": "createGmailSource()",
@@ -2865,7 +2889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L155",
       "id": "gmail_creategmailsource",
-      "community": 2
+      "community": 3
     },
     {
       "label": "createGmailApiSource()",
@@ -2873,7 +2897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/gmail.ts",
       "source_location": "L209",
       "id": "gmail_creategmailapisource",
-      "community": 2
+      "community": 3
     },
     {
       "label": "calendar.ts",
@@ -2884,20 +2908,12 @@
       "community": 141
     },
     {
-      "label": "graphify.ts",
-      "file_type": "code",
-      "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
-      "source_location": "L1",
-      "id": "graphify",
-      "community": 30
-    },
-    {
       "label": "createGraphifySource()",
       "file_type": "code",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/graphify.ts",
       "source_location": "L8",
       "id": "graphify_creategraphifysource",
-      "community": 30
+      "community": 21
     },
     {
       "label": "markpush.ts",
@@ -2905,7 +2921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/markpush.ts",
       "source_location": "L1",
       "id": "markpush",
-      "community": 81
+      "community": 73
     },
     {
       "label": "createMarkpushSource()",
@@ -2913,7 +2929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/markpush.ts",
       "source_location": "L15",
       "id": "markpush_createmarkpushsource",
-      "community": 81
+      "community": 73
     },
     {
       "label": "synthesis-cache.ts",
@@ -2921,7 +2937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/synthesis-cache.ts",
       "source_location": "L1",
       "id": "synthesis_cache",
-      "community": 35
+      "community": 36
     },
     {
       "label": "cacheSynthesis()",
@@ -2929,7 +2945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/synthesis-cache.ts",
       "source_location": "L14",
       "id": "synthesis_cache_cachesynthesis",
-      "community": 35
+      "community": 36
     },
     {
       "label": "getCachedSynthesis()",
@@ -2937,7 +2953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/synthesis-cache.ts",
       "source_location": "L32",
       "id": "synthesis_cache_getcachedsynthesis",
-      "community": 35
+      "community": 36
     },
     {
       "label": "health-core.ts",
@@ -2945,7 +2961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/health-core.ts",
       "source_location": "L1",
       "id": "health_core",
-      "community": 25
+      "community": 30
     },
     {
       "label": "countFiles()",
@@ -2953,7 +2969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/health-core.ts",
       "source_location": "L18",
       "id": "health_core_countfiles",
-      "community": 25
+      "community": 30
     },
     {
       "label": "countPending()",
@@ -2961,7 +2977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/health-core.ts",
       "source_location": "L31",
       "id": "health_core_countpending",
-      "community": 25
+      "community": 30
     },
     {
       "label": "getHealthStats()",
@@ -2969,7 +2985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/health-core.ts",
       "source_location": "L46",
       "id": "health_core_gethealthstats",
-      "community": 25
+      "community": 30
     },
     {
       "label": "fastify.d.ts",
@@ -2985,7 +3001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/ingest-core.ts",
       "source_location": "L1",
       "id": "ingest_core",
-      "community": 55
+      "community": 40
     },
     {
       "label": "firstLine()",
@@ -2993,7 +3009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/ingest-core.ts",
       "source_location": "L20",
       "id": "ingest_core_firstline",
-      "community": 55
+      "community": 40
     },
     {
       "label": "ingestContent()",
@@ -3001,7 +3017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/ingest-core.ts",
       "source_location": "L25",
       "id": "ingest_core_ingestcontent",
-      "community": 55
+      "community": 40
     },
     {
       "label": "server.ts",
@@ -3009,7 +3025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/server.ts",
       "source_location": "L1",
       "id": "server",
-      "community": 57
+      "community": 35
     },
     {
       "label": "createServer()",
@@ -3017,7 +3033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/server.ts",
       "source_location": "L20",
       "id": "server_createserver",
-      "community": 57
+      "community": 35
     },
     {
       "label": "stopServer()",
@@ -3025,7 +3041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/server.ts",
       "source_location": "L42",
       "id": "server_stopserver",
-      "community": 57
+      "community": 35
     },
     {
       "label": "graph-export.ts",
@@ -3033,7 +3049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graph-export.ts",
       "source_location": "L1",
       "id": "graph_export",
-      "community": 93
+      "community": 83
     },
     {
       "label": "graphExportRoute()",
@@ -3041,7 +3057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graph-export.ts",
       "source_location": "L5",
       "id": "graph_export_graphexportroute",
-      "community": 93
+      "community": 83
     },
     {
       "label": "runGraphifyBackground()",
@@ -3049,15 +3065,15 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
       "source_location": "L26",
       "id": "graphify_rungraphifybackground",
-      "community": 30
+      "community": 21
     },
     {
       "label": "graphifyRoute()",
       "file_type": "code",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
-      "source_location": "L82",
+      "source_location": "L87",
       "id": "graphify_graphifyroute",
-      "community": 30
+      "community": 21
     },
     {
       "label": "graph-push.ts",
@@ -3065,7 +3081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graph-push.ts",
       "source_location": "L1",
       "id": "graph_push",
-      "community": 95
+      "community": 76
     },
     {
       "label": "graphPushRoute()",
@@ -3073,7 +3089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graph-push.ts",
       "source_location": "L8",
       "id": "graph_push_graphpushroute",
-      "community": 95
+      "community": 76
     },
     {
       "label": "synthesise.ts",
@@ -3081,7 +3097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/synthesise.ts",
       "source_location": "L1",
       "id": "synthesise",
-      "community": 34
+      "community": 47
     },
     {
       "label": "withTimeout()",
@@ -3089,7 +3105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/synthesise.ts",
       "source_location": "L21",
       "id": "synthesise_withtimeout",
-      "community": 34
+      "community": 47
     },
     {
       "label": "synthesiseRoute()",
@@ -3097,7 +3113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/synthesise.ts",
       "source_location": "L40",
       "id": "synthesise_synthesiseroute",
-      "community": 34
+      "community": 47
     },
     {
       "label": "health.ts",
@@ -3105,7 +3121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/health.ts",
       "source_location": "L1",
       "id": "health",
-      "community": 87
+      "community": 78
     },
     {
       "label": "healthRoute()",
@@ -3113,7 +3129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/health.ts",
       "source_location": "L4",
       "id": "health_healthroute",
-      "community": 87
+      "community": 78
     },
     {
       "label": "ingest.ts",
@@ -3121,7 +3137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/ingest.ts",
       "source_location": "L1",
       "id": "ingest",
-      "community": 85
+      "community": 67
     },
     {
       "label": "ingestRoute()",
@@ -3129,7 +3145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/ingest.ts",
       "source_location": "L24",
       "id": "ingest_ingestroute",
-      "community": 85
+      "community": 67
     },
     {
       "label": "save.ts",
@@ -3153,7 +3169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/query/novelty.ts",
       "source_location": "L1",
       "id": "novelty",
-      "community": 42
+      "community": 45
     },
     {
       "label": "cosineSimilarity()",
@@ -3161,7 +3177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/query/novelty.ts",
       "source_location": "L1",
       "id": "novelty_cosinesimilarity",
-      "community": 42
+      "community": 45
     },
     {
       "label": "noveltyScore()",
@@ -3169,7 +3185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/query/novelty.ts",
       "source_location": "L15",
       "id": "novelty_noveltyscore",
-      "community": 42
+      "community": 45
     },
     {
       "label": "synthesize.ts",
@@ -3177,7 +3193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/query/synthesize.ts",
       "source_location": "L1",
       "id": "synthesize",
-      "community": 48
+      "community": 55
     },
     {
       "label": "formatChunksForPrompt()",
@@ -3185,7 +3201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/query/synthesize.ts",
       "source_location": "L5",
       "id": "synthesize_formatchunksforprompt",
-      "community": 48
+      "community": 55
     },
     {
       "label": "synthesize()",
@@ -3193,7 +3209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/query/synthesize.ts",
       "source_location": "L33",
       "id": "synthesize_synthesize",
-      "community": 48
+      "community": 55
     },
     {
       "label": "compile.ts",
@@ -3201,7 +3217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
       "source_location": "L1",
       "id": "compile",
-      "community": 11
+      "community": 14
     },
     {
       "label": "slugify()",
@@ -3209,7 +3225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
       "source_location": "L23",
       "id": "compile_slugify",
-      "community": 11
+      "community": 14
     },
     {
       "label": "walkWikiDir()",
@@ -3217,7 +3233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
       "source_location": "L38",
       "id": "compile_walkwikidir",
-      "community": 11
+      "community": 14
     },
     {
       "label": "getExistingTitles()",
@@ -3225,7 +3241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
       "source_location": "L59",
       "id": "compile_getexistingtitles",
-      "community": 11
+      "community": 14
     },
     {
       "label": "_clearTitleCache()",
@@ -3233,7 +3249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
       "source_location": "L80",
       "id": "compile_cleartitlecache",
-      "community": 11
+      "community": 14
     },
     {
       "label": "compileSinglePass()",
@@ -3241,7 +3257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
       "source_location": "L84",
       "id": "compile_compilesinglepass",
-      "community": 11
+      "community": 14
     },
     {
       "label": "index-updater.ts",
@@ -3249,7 +3265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/index-updater.ts",
       "source_location": "L1",
       "id": "index_updater",
-      "community": 91
+      "community": 69
     },
     {
       "label": "updateIndex()",
@@ -3257,7 +3273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/index-updater.ts",
       "source_location": "L7",
       "id": "index_updater_updateindex",
-      "community": 91
+      "community": 69
     },
     {
       "label": "queue.ts",
@@ -3265,23 +3281,39 @@
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
       "source_location": "L1",
       "id": "queue",
-      "community": 56
+      "community": 15
+    },
+    {
+      "label": "checkSentinelCompletion()",
+      "file_type": "code",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
+      "source_location": "L28",
+      "id": "queue_checksentinelcompletion",
+      "community": 15
+    },
+    {
+      "label": "triggerGraphRebuild()",
+      "file_type": "code",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
+      "source_location": "L52",
+      "id": "queue_triggergraphrebuild",
+      "community": 15
     },
     {
       "label": "collectRawFiles()",
       "file_type": "code",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
-      "source_location": "L22",
+      "source_location": "L72",
       "id": "queue_collectrawfiles",
-      "community": 56
+      "community": 15
     },
     {
       "label": "processQueue()",
       "file_type": "code",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
-      "source_location": "L37",
+      "source_location": "L87",
       "id": "queue_processqueue",
-      "community": 56
+      "community": 15
     }
   ],
   "links": [
@@ -3475,6 +3507,18 @@
       "_tgt": "graphify_test_makeconfig",
       "source": "graphify_test",
       "target": "graphify_test_makeconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/tests/api/routes/graphify.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "graphify_test",
+      "_tgt": "graphify_test_buildapp",
+      "source": "graphify_test",
+      "target": "graphify_test_buildapp",
       "confidence_score": 1.0
     },
     {
@@ -3913,7 +3957,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/index.ts",
-      "source_location": "L244",
+      "source_location": "L245",
       "weight": 1.0,
       "_src": "index",
       "_tgt": "index_shutdown",
@@ -5904,6 +5948,54 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/cli/graphify.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "graphify",
+      "_tgt": "graphify_main",
+      "source": "graphify",
+      "target": "graphify_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/graphify.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "graphify",
+      "_tgt": "graphify_creategraphifysource",
+      "source": "graphify",
+      "target": "graphify_creategraphifysource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_src": "graphify",
+      "_tgt": "graphify_rungraphifybackground",
+      "source": "graphify",
+      "target": "graphify_rungraphifybackground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_src": "graphify",
+      "_tgt": "graphify_graphifyroute",
+      "source": "graphify",
+      "target": "graphify_graphifyroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/parser/passthrough.ts",
       "source_location": "L3",
       "weight": 1.0,
@@ -6960,42 +7052,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/graphify.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_src": "graphify",
-      "_tgt": "graphify_creategraphifysource",
-      "source": "graphify",
-      "target": "graphify_creategraphifysource",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
-      "source_location": "L26",
-      "weight": 1.0,
-      "_src": "graphify",
-      "_tgt": "graphify_rungraphifybackground",
-      "source": "graphify",
-      "target": "graphify_rungraphifybackground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/Users/rahilsinghi/Desktop/brain/src/api/routes/graphify.ts",
-      "source_location": "L82",
-      "weight": 1.0,
-      "_src": "graphify",
-      "_tgt": "graphify_graphifyroute",
-      "source": "graphify",
-      "target": "graphify_graphifyroute",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/sources/markpush.ts",
       "source_location": "L15",
       "weight": 1.0,
@@ -7369,7 +7425,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
-      "source_location": "L123",
+      "source_location": "L157",
       "weight": 1.0,
       "_src": "compile_compilesinglepass",
       "_tgt": "compile_slugify",
@@ -7393,7 +7449,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts",
-      "source_location": "L92",
+      "source_location": "L93",
       "weight": 1.0,
       "_src": "compile_compilesinglepass",
       "_tgt": "compile_getexistingtitles",
@@ -7417,7 +7473,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
-      "source_location": "L22",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_src": "queue",
+      "_tgt": "queue_checksentinelcompletion",
+      "source": "queue",
+      "target": "queue_checksentinelcompletion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "queue",
+      "_tgt": "queue_triggergraphrebuild",
+      "source": "queue",
+      "target": "queue_triggergraphrebuild",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
+      "source_location": "L72",
       "weight": 1.0,
       "_src": "queue",
       "_tgt": "queue_collectrawfiles",
@@ -7429,7 +7509,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
-      "source_location": "L37",
+      "source_location": "L87",
       "weight": 1.0,
       "_src": "queue",
       "_tgt": "queue_processqueue",
@@ -7441,7 +7521,31 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
-      "source_location": "L40",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_src": "queue_processqueue",
+      "_tgt": "queue_checksentinelcompletion",
+      "source": "queue_checksentinelcompletion",
+      "target": "queue_processqueue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_src": "queue_processqueue",
+      "_tgt": "queue_triggergraphrebuild",
+      "source": "queue_triggergraphrebuild",
+      "target": "queue_processqueue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts",
+      "source_location": "L90",
       "weight": 1.0,
       "_src": "queue_processqueue",
       "_tgt": "queue_collectrawfiles",

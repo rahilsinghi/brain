@@ -1,15 +1,17 @@
 ---
-status: pending
+status: processed
 source_type: gmail
 source_id: 19d87e304cca9c80
 ingested_at: 2026-04-13T18:05:32.431Z
 parsed_at: 2026-04-13T18:05:32.431Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Meeting Update: Fredrik Sjoberg and Rahil Singhi (April 2026)]]"
+processed_at: 2026-04-13T19:08:19.387Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # Updated invitation: Fredrik x Rahil @ Tue Apr 14, 2026 2pm - 3pm (GMT-4) (rahilsinghi300@gmail.com)
 

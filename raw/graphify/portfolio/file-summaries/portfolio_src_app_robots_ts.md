@@ -2,7 +2,7 @@
 title: "robots.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/app/robots.ts"
 repo: "portfolio"
-community: 50
+community: 48
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/app/robots.ts`
-**Community:** 50
+**Community:** 48
 
 ## Imports
 - (none)

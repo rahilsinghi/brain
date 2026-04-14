@@ -25,7 +25,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts",
       "source_location": "L1",
       "id": "navigation_state",
-      "community": 35
+      "community": 36
     },
     {
       "label": "getHashParams()",
@@ -33,7 +33,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts",
       "source_location": "L8",
       "id": "navigation_state_gethashparams",
-      "community": 35
+      "community": 36
     },
     {
       "label": "buildNavigationPhaseHash()",
@@ -41,7 +41,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts",
       "source_location": "L14",
       "id": "navigation_state_buildnavigationphasehash",
-      "community": 35
+      "community": 36
     },
     {
       "label": "buildNavigationReportHash()",
@@ -49,7 +49,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts",
       "source_location": "L23",
       "id": "navigation_state_buildnavigationreporthash",
-      "community": 35
+      "community": 36
     },
     {
       "label": "readNavigationReportText()",
@@ -57,7 +57,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts",
       "source_location": "L29",
       "id": "navigation_state_readnavigationreporttext",
-      "community": 35
+      "community": 36
     },
     {
       "label": "readNavigationPhaseState()",
@@ -65,7 +65,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts",
       "source_location": "L33",
       "id": "navigation_state_readnavigationphasestate",
-      "community": 35
+      "community": 36
     },
     {
       "label": "browser-automation.ts",
@@ -257,7 +257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/benchmark-check.ts",
       "source_location": "L1",
       "id": "benchmark_check",
-      "community": 37
+      "community": 41
     },
     {
       "label": "parseStringFlag()",
@@ -265,7 +265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/benchmark-check.ts",
       "source_location": "L44",
       "id": "benchmark_check_parsestringflag",
-      "community": 37
+      "community": 41
     },
     {
       "label": "parseNumberFlag()",
@@ -273,7 +273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/benchmark-check.ts",
       "source_location": "L50",
       "id": "benchmark_check_parsenumberflag",
-      "community": 37
+      "community": 41
     },
     {
       "label": "parseBrowser()",
@@ -281,7 +281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/benchmark-check.ts",
       "source_location": "L60",
       "id": "benchmark_check_parsebrowser",
-      "community": 37
+      "community": 41
     },
     {
       "label": "printReport()",
@@ -289,7 +289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/benchmark-check.ts",
       "source_location": "L68",
       "id": "benchmark_check_printreport",
-      "community": 37
+      "community": 41
     },
     {
       "label": "package-smoke-test.ts",
@@ -361,7 +361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-status.ts",
       "source_location": "L1",
       "id": "corpus_status",
-      "community": 33
+      "community": 32
     },
     {
       "label": "parseStringFlag()",
@@ -369,7 +369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-status.ts",
       "source_location": "L220",
       "id": "corpus_status_parsestringflag",
-      "community": 33
+      "community": 32
     },
     {
       "label": "loadJson()",
@@ -377,7 +377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-status.ts",
       "source_location": "L226",
       "id": "corpus_status_loadjson",
-      "community": 33
+      "community": 32
     },
     {
       "label": "indexRepresentativeRows()",
@@ -385,7 +385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-status.ts",
       "source_location": "L230",
       "id": "corpus_status_indexrepresentativerows",
-      "community": 33
+      "community": 32
     },
     {
       "label": "indexSweepSummaries()",
@@ -393,7 +393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-status.ts",
       "source_location": "L247",
       "id": "corpus_status_indexsweepsummaries",
-      "community": 33
+      "community": 32
     },
     {
       "label": "summarizeAnchors()",
@@ -401,7 +401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-status.ts",
       "source_location": "L251",
       "id": "corpus_status_summarizeanchors",
-      "community": 33
+      "community": 32
     },
     {
       "label": "summarizeAccuracy()",
@@ -409,7 +409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-status.ts",
       "source_location": "L263",
       "id": "corpus_status_summarizeaccuracy",
-      "community": 33
+      "community": 32
     },
     {
       "label": "corpus-representative.ts",
@@ -417,7 +417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-representative.ts",
       "source_location": "L1",
       "id": "corpus_representative",
-      "community": 39
+      "community": 42
     },
     {
       "label": "parseStringFlag()",
@@ -425,7 +425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-representative.ts",
       "source_location": "L98",
       "id": "corpus_representative_parsestringflag",
-      "community": 39
+      "community": 42
     },
     {
       "label": "parseNumberFlag()",
@@ -433,7 +433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-representative.ts",
       "source_location": "L104",
       "id": "corpus_representative_parsenumberflag",
-      "community": 39
+      "community": 42
     },
     {
       "label": "parseBrowsers()",
@@ -441,7 +441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-representative.ts",
       "source_location": "L114",
       "id": "corpus_representative_parsebrowsers",
-      "community": 39
+      "community": 42
     },
     {
       "label": "toRepresentativeRow()",
@@ -449,7 +449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-representative.ts",
       "source_location": "L120",
       "id": "corpus_representative_torepresentativerow",
-      "community": 39
+      "community": 42
     },
     {
       "label": "corpus-sweep.ts",
@@ -457,7 +457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L1",
       "id": "corpus_sweep",
-      "community": 17
+      "community": 15
     },
     {
       "label": "parseStringFlag()",
@@ -465,7 +465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L81",
       "id": "corpus_sweep_parsestringflag",
-      "community": 17
+      "community": 15
     },
     {
       "label": "parseNumberFlag()",
@@ -473,7 +473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L87",
       "id": "corpus_sweep_parsenumberflag",
-      "community": 17
+      "community": 15
     },
     {
       "label": "parseOptionalNumberFlag()",
@@ -481,7 +481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L97",
       "id": "corpus_sweep_parseoptionalnumberflag",
-      "community": 17
+      "community": 15
     },
     {
       "label": "hasFlag()",
@@ -489,7 +489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L107",
       "id": "corpus_sweep_hasflag",
-      "community": 17
+      "community": 15
     },
     {
       "label": "parseBrowser()",
@@ -497,7 +497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L111",
       "id": "corpus_sweep_parsebrowser",
-      "community": 17
+      "community": 15
     },
     {
       "label": "loadSources()",
@@ -505,7 +505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L119",
       "id": "corpus_sweep_loadsources",
-      "community": 17
+      "community": 15
     },
     {
       "label": "parseOptions()",
@@ -513,7 +513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L123",
       "id": "corpus_sweep_parseoptions",
-      "community": 17
+      "community": 15
     },
     {
       "label": "appendOverrideParams()",
@@ -521,7 +521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L155",
       "id": "corpus_sweep_appendoverrideparams",
-      "community": 17
+      "community": 15
     },
     {
       "label": "getSweepWidths()",
@@ -529,7 +529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L166",
       "id": "corpus_sweep_getsweepwidths",
-      "community": 17
+      "community": 15
     },
     {
       "label": "bucketMismatches()",
@@ -537,7 +537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L193",
       "id": "corpus_sweep_bucketmismatches",
-      "community": 17
+      "community": 15
     },
     {
       "label": "printSummary()",
@@ -545,7 +545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L212",
       "id": "corpus_sweep_printsummary",
-      "community": 17
+      "community": 15
     },
     {
       "label": "getSweepRows()",
@@ -553,7 +553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-sweep.ts",
       "source_location": "L219",
       "id": "corpus_sweep_getsweeprows",
-      "community": 17
+      "community": 15
     },
     {
       "label": "corpus-taxonomy.ts",
@@ -561,7 +561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L1",
       "id": "corpus_taxonomy",
-      "community": 26
+      "community": 27
     },
     {
       "label": "parseStringFlag()",
@@ -569,7 +569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L59",
       "id": "corpus_taxonomy_parsestringflag",
-      "community": 26
+      "community": 27
     },
     {
       "label": "parseNumberFlag()",
@@ -577,7 +577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L65",
       "id": "corpus_taxonomy_parsenumberflag",
-      "community": 26
+      "community": 27
     },
     {
       "label": "parseOptionalNumberFlag()",
@@ -585,7 +585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L73",
       "id": "corpus_taxonomy_parseoptionalnumberflag",
-      "community": 26
+      "community": 27
     },
     {
       "label": "parseBrowser()",
@@ -593,7 +593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L81",
       "id": "corpus_taxonomy_parsebrowser",
-      "community": 26
+      "community": 27
     },
     {
       "label": "loadSources()",
@@ -601,7 +601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L89",
       "id": "corpus_taxonomy_loadsources",
-      "community": 26
+      "community": 27
     },
     {
       "label": "getTargetWidths()",
@@ -609,7 +609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L93",
       "id": "corpus_taxonomy_gettargetwidths",
-      "community": 26
+      "community": 27
     },
     {
       "label": "appendOverrideParams()",
@@ -617,7 +617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L118",
       "id": "corpus_taxonomy_appendoverrideparams",
-      "community": 26
+      "community": 27
     },
     {
       "label": "classifyTaxonomy()",
@@ -625,7 +625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L127",
       "id": "corpus_taxonomy_classifytaxonomy",
-      "community": 26
+      "community": 27
     },
     {
       "label": "printEntries()",
@@ -633,7 +633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L149",
       "id": "corpus_taxonomy_printentries",
-      "community": 26
+      "community": 27
     },
     {
       "label": "gatsby-check.ts",
@@ -641,7 +641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-check.ts",
       "source_location": "L1",
       "id": "gatsby_check",
-      "community": 44
+      "community": 43
     },
     {
       "label": "formatWidth()",
@@ -649,7 +649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-check.ts",
       "source_location": "L102",
       "id": "gatsby_check_formatwidth",
-      "community": 44
+      "community": 43
     },
     {
       "label": "formatSegmentMarkers()",
@@ -657,7 +657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-check.ts",
       "source_location": "L107",
       "id": "gatsby_check_formatsegmentmarkers",
-      "community": 44
+      "community": 43
     },
     {
       "label": "printReport()",
@@ -665,7 +665,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-check.ts",
       "source_location": "L118",
       "id": "gatsby_check_printreport",
-      "community": 44
+      "community": 43
     },
     {
       "label": "accuracy-check.ts",
@@ -673,7 +673,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L1",
       "id": "accuracy_check",
-      "community": 29
+      "community": 28
     },
     {
       "label": "parseStringFlag()",
@@ -681,7 +681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L77",
       "id": "accuracy_check_parsestringflag",
-      "community": 29
+      "community": 28
     },
     {
       "label": "sleep()",
@@ -689,7 +689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L83",
       "id": "accuracy_check_sleep",
-      "community": 29
+      "community": 28
     },
     {
       "label": "canReachServer()",
@@ -697,7 +697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L87",
       "id": "accuracy_check_canreachserver",
-      "community": 29
+      "community": 28
     },
     {
       "label": "waitForServer()",
@@ -705,7 +705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L96",
       "id": "accuracy_check_waitforserver",
-      "community": 29
+      "community": 28
     },
     {
       "label": "startProxyServer()",
@@ -713,7 +713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L104",
       "id": "accuracy_check_startproxyserver",
-      "community": 29
+      "community": 28
     },
     {
       "label": "loadBrowserReport()",
@@ -721,7 +721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L132",
       "id": "accuracy_check_loadbrowserreport",
-      "community": 29
+      "community": 28
     },
     {
       "label": "formatDiff()",
@@ -729,7 +729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L141",
       "id": "accuracy_check_formatdiff",
-      "community": 29
+      "community": 28
     },
     {
       "label": "printReport()",
@@ -737,7 +737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/accuracy-check.ts",
       "source_location": "L145",
       "id": "accuracy_check_printreport",
-      "community": 29
+      "community": 28
     },
     {
       "label": "status-dashboard.ts",
@@ -745,7 +745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/status-dashboard.ts",
       "source_location": "L1",
       "id": "status_dashboard",
-      "community": 40
+      "community": 38
     },
     {
       "label": "parseStringFlag()",
@@ -753,7 +753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/status-dashboard.ts",
       "source_location": "L39",
       "id": "status_dashboard_parsestringflag",
-      "community": 40
+      "community": 38
     },
     {
       "label": "loadJson()",
@@ -761,7 +761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/status-dashboard.ts",
       "source_location": "L45",
       "id": "status_dashboard_loadjson",
-      "community": 40
+      "community": 38
     },
     {
       "label": "summarizeAccuracy()",
@@ -769,7 +769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/status-dashboard.ts",
       "source_location": "L49",
       "id": "status_dashboard_summarizeaccuracy",
-      "community": 40
+      "community": 38
     },
     {
       "label": "indexResults()",
@@ -777,7 +777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/status-dashboard.ts",
       "source_location": "L57",
       "id": "status_dashboard_indexresults",
-      "community": 40
+      "community": 38
     },
     {
       "label": "pre-wrap-check.ts",
@@ -849,7 +849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/build-demo-site.ts",
       "source_location": "L1",
       "id": "build_demo_site",
-      "community": 41
+      "community": 40
     },
     {
       "label": "resolveBuiltHtmlPath()",
@@ -857,7 +857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/build-demo-site.ts",
       "source_location": "L50",
       "id": "build_demo_site_resolvebuilthtmlpath",
-      "community": 41
+      "community": 40
     },
     {
       "label": "moveBuiltHtml()",
@@ -865,7 +865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/build-demo-site.ts",
       "source_location": "L62",
       "id": "build_demo_site_movebuilthtml",
-      "community": 41
+      "community": 40
     },
     {
       "label": "rebaseRelativeAssetUrls()",
@@ -873,7 +873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/build-demo-site.ts",
       "source_location": "L74",
       "id": "build_demo_site_rebaserelativeasseturls",
-      "community": 41
+      "community": 40
     },
     {
       "label": "rewriteDemoLinksForStaticRoot()",
@@ -881,7 +881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/build-demo-site.ts",
       "source_location": "L86",
       "id": "build_demo_site_rewritedemolinksforstaticroot",
-      "community": 41
+      "community": 40
     },
     {
       "label": "corpus-font-matrix.ts",
@@ -889,7 +889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L1",
       "id": "corpus_font_matrix",
-      "community": 25
+      "community": 24
     },
     {
       "label": "parseStringFlag()",
@@ -897,7 +897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L307",
       "id": "corpus_font_matrix_parsestringflag",
-      "community": 25
+      "community": 24
     },
     {
       "label": "parseNumberFlag()",
@@ -905,7 +905,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L313",
       "id": "corpus_font_matrix_parsenumberflag",
-      "community": 25
+      "community": 24
     },
     {
       "label": "parseOptionalNumberFlag()",
@@ -913,7 +913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L323",
       "id": "corpus_font_matrix_parseoptionalnumberflag",
-      "community": 25
+      "community": 24
     },
     {
       "label": "parseBrowser()",
@@ -921,7 +921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L333",
       "id": "corpus_font_matrix_parsebrowser",
-      "community": 25
+      "community": 24
     },
     {
       "label": "loadSources()",
@@ -929,7 +929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L341",
       "id": "corpus_font_matrix_loadsources",
-      "community": 25
+      "community": 24
     },
     {
       "label": "parseOptions()",
@@ -937,7 +937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L345",
       "id": "corpus_font_matrix_parseoptions",
-      "community": 25
+      "community": 24
     },
     {
       "label": "getSweepWidths()",
@@ -945,7 +945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L371",
       "id": "corpus_font_matrix_getsweepwidths",
-      "community": 25
+      "community": 24
     },
     {
       "label": "bucketMismatches()",
@@ -953,7 +953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L393",
       "id": "corpus_font_matrix_bucketmismatches",
-      "community": 25
+      "community": 24
     },
     {
       "label": "printSummary()",
@@ -961,7 +961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L410",
       "id": "corpus_font_matrix_printsummary",
-      "community": 25
+      "community": 24
     },
     {
       "label": "report-server.ts",
@@ -969,7 +969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/report-server.ts",
       "source_location": "L1",
       "id": "report_server",
-      "community": 49
+      "community": 52
     },
     {
       "label": "startPostedReportServer()",
@@ -977,7 +977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/report-server.ts",
       "source_location": "L4",
       "id": "report_server_startpostedreportserver",
-      "community": 49
+      "community": 52
     },
     {
       "label": "gatsby-sweep.ts",
@@ -985,7 +985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L1",
       "id": "gatsby_sweep",
-      "community": 18
+      "community": 19
     },
     {
       "label": "parseNumberFlag()",
@@ -993,7 +993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L83",
       "id": "gatsby_sweep_parsenumberflag",
-      "community": 18
+      "community": 19
     },
     {
       "label": "parseStringFlag()",
@@ -1001,7 +1001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L94",
       "id": "gatsby_sweep_parsestringflag",
-      "community": 18
+      "community": 19
     },
     {
       "label": "hasFlag()",
@@ -1009,7 +1009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L100",
       "id": "gatsby_sweep_hasflag",
-      "community": 18
+      "community": 19
     },
     {
       "label": "parseBrowser()",
@@ -1017,7 +1017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L104",
       "id": "gatsby_sweep_parsebrowser",
-      "community": 18
+      "community": 19
     },
     {
       "label": "parseOptions()",
@@ -1025,7 +1025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L112",
       "id": "gatsby_sweep_parseoptions",
-      "community": 18
+      "community": 19
     },
     {
       "label": "getTargetWidths()",
@@ -1033,7 +1033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L137",
       "id": "gatsby_sweep_gettargetwidths",
-      "community": 18
+      "community": 19
     },
     {
       "label": "formatSignedInt()",
@@ -1041,7 +1041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L160",
       "id": "gatsby_sweep_formatsignedint",
-      "community": 18
+      "community": 19
     },
     {
       "label": "formatRanges()",
@@ -1049,7 +1049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L164",
       "id": "gatsby_sweep_formatranges",
-      "community": 18
+      "community": 19
     },
     {
       "label": "printSummary()",
@@ -1057,7 +1057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L186",
       "id": "gatsby_sweep_printsummary",
-      "community": 18
+      "community": 19
     },
     {
       "label": "maybeWriteSummary()",
@@ -1065,7 +1065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L225",
       "id": "gatsby_sweep_maybewritesummary",
-      "community": 18
+      "community": 19
     },
     {
       "label": "runDetailedDiagnose()",
@@ -1073,7 +1073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L231",
       "id": "gatsby_sweep_rundetaileddiagnose",
-      "community": 18
+      "community": 19
     },
     {
       "label": "probe-check.ts",
@@ -1129,7 +1129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L1",
       "id": "corpus_check",
-      "community": 24
+      "community": 23
     },
     {
       "label": "parseStringFlag()",
@@ -1137,7 +1137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L118",
       "id": "corpus_check_parsestringflag",
-      "community": 24
+      "community": 23
     },
     {
       "label": "parseNumberFlag()",
@@ -1145,7 +1145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L124",
       "id": "corpus_check_parsenumberflag",
-      "community": 24
+      "community": 23
     },
     {
       "label": "parseBrowser()",
@@ -1153,7 +1153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L134",
       "id": "corpus_check_parsebrowser",
-      "community": 24
+      "community": 23
     },
     {
       "label": "parseOptionalNumberFlag()",
@@ -1161,7 +1161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L142",
       "id": "corpus_check_parseoptionalnumberflag",
-      "community": 24
+      "community": 23
     },
     {
       "label": "hasFlag()",
@@ -1169,7 +1169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L152",
       "id": "corpus_check_hasflag",
-      "community": 24
+      "community": 23
     },
     {
       "label": "loadSources()",
@@ -1177,7 +1177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L156",
       "id": "corpus_check_loadsources",
-      "community": 24
+      "community": 23
     },
     {
       "label": "getTargetWidths()",
@@ -1185,7 +1185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L160",
       "id": "corpus_check_gettargetwidths",
-      "community": 24
+      "community": 23
     },
     {
       "label": "appendOverrideParams()",
@@ -1193,7 +1193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L174",
       "id": "corpus_check_appendoverrideparams",
-      "community": 24
+      "community": 23
     },
     {
       "label": "printReport()",
@@ -1201,7 +1201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts",
       "source_location": "L194",
       "id": "corpus_check_printreport",
-      "community": 24
+      "community": 23
     },
     {
       "label": "corpus.ts",
@@ -1209,7 +1209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L1",
       "id": "corpus",
-      "community": 2
+      "community": 1
     },
     {
       "label": "parseWidthList()",
@@ -1217,7 +1217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L262",
       "id": "corpus_parsewidthlist",
-      "community": 2
+      "community": 1
     },
     {
       "label": "withRequestId()",
@@ -1225,7 +1225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L277",
       "id": "corpus_withrequestid",
-      "community": 2
+      "community": 1
     },
     {
       "label": "toNavigationReport()",
@@ -1233,7 +1233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L281",
       "id": "corpus_tonavigationreport",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getEnvironmentFingerprint()",
@@ -1241,7 +1241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L287",
       "id": "corpus_getenvironmentfingerprint",
-      "community": 2
+      "community": 1
     },
     {
       "label": "buildFont()",
@@ -1249,7 +1249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L309",
       "id": "corpus_buildfont",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getLineHeight()",
@@ -1257,7 +1257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L318",
       "id": "corpus_getlineheight",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getDirection()",
@@ -1265,7 +1265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L325",
       "id": "corpus_getdirection",
-      "community": 2
+      "community": 1
     },
     {
       "label": "estimateBrowserLineCount()",
@@ -1273,7 +1273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L329",
       "id": "corpus_estimatebrowserlinecount",
-      "community": 2
+      "community": 1
     },
     {
       "label": "pushDiagnosticLine()",
@@ -1281,7 +1281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L334",
       "id": "corpus_pushdiagnosticline",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getBrowserLinesFromSpans()",
@@ -1289,7 +1289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L359",
       "id": "corpus_getbrowserlinesfromspans",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getBrowserLinesFromRange()",
@@ -1297,7 +1297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L407",
       "id": "corpus_getbrowserlinesfromrange",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getCursorOffset()",
@@ -1305,7 +1305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L450",
       "id": "corpus_getcursoroffset",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getOurLines()",
@@ -1313,7 +1313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L469",
       "id": "corpus_getourlines",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getLineSegments()",
@@ -1321,7 +1321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L496",
       "id": "corpus_getlinesegments",
-      "community": 2
+      "community": 1
     },
     {
       "label": "measurePairAdjustedWidth()",
@@ -1329,7 +1329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L522",
       "id": "corpus_measurepairadjustedwidth",
-      "community": 2
+      "community": 1
     },
     {
       "label": "classifyBreakMismatch()",
@@ -1337,7 +1337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L539",
       "id": "corpus_classifybreakmismatch",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getFirstBreakMismatch()",
@@ -1345,7 +1345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L565",
       "id": "corpus_getfirstbreakmismatch",
-      "community": 2
+      "community": 1
     },
     {
       "label": "setReport()",
@@ -1353,7 +1353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L610",
       "id": "corpus_setreport",
-      "community": 2
+      "community": 1
     },
     {
       "label": "setError()",
@@ -1361,7 +1361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L630",
       "id": "corpus_seterror",
-      "community": 2
+      "community": 1
     },
     {
       "label": "updateTitle()",
@@ -1369,7 +1369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L635",
       "id": "corpus_updatetitle",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getRequestedSlice()",
@@ -1377,7 +1377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L641",
       "id": "corpus_getrequestedslice",
-      "community": 2
+      "community": 1
     },
     {
       "label": "configureControls()",
@@ -1385,7 +1385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L655",
       "id": "corpus_configurecontrols",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getInitialWidth()",
@@ -1393,7 +1393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L660",
       "id": "corpus_getinitialwidth",
-      "community": 2
+      "community": 1
     },
     {
       "label": "getRequestedSweepWidths()",
@@ -1401,7 +1401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L668",
       "id": "corpus_getrequestedsweepwidths",
-      "community": 2
+      "community": 1
     },
     {
       "label": "buildReadyReport()",
@@ -1409,7 +1409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L676",
       "id": "corpus_buildreadyreport",
-      "community": 2
+      "community": 1
     },
     {
       "label": "addDiagnostics()",
@@ -1417,7 +1417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L706",
       "id": "corpus_adddiagnostics",
-      "community": 2
+      "community": 1
     },
     {
       "label": "updateStats()",
@@ -1425,7 +1425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L830",
       "id": "corpus_updatestats",
-      "community": 2
+      "community": 1
     },
     {
       "label": "measureWidth()",
@@ -1433,7 +1433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L842",
       "id": "corpus_measurewidth",
-      "community": 2
+      "community": 1
     },
     {
       "label": "toSweepRow()",
@@ -1441,7 +1441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L905",
       "id": "corpus_tosweeprow",
-      "community": 2
+      "community": 1
     },
     {
       "label": "runSweep()",
@@ -1449,7 +1449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L944",
       "id": "corpus_runsweep",
-      "community": 2
+      "community": 1
     },
     {
       "label": "setWidth()",
@@ -1457,7 +1457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L982",
       "id": "corpus_setwidth",
-      "community": 2
+      "community": 1
     },
     {
       "label": "populateSelect()",
@@ -1465,7 +1465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L986",
       "id": "corpus_populateselect",
-      "community": 2
+      "community": 1
     },
     {
       "label": "loadSources()",
@@ -1473,7 +1473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L997",
       "id": "corpus_loadsources",
-      "community": 2
+      "community": 1
     },
     {
       "label": "loadText()",
@@ -1481,7 +1481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L1001",
       "id": "corpus_loadtext",
-      "community": 2
+      "community": 1
     },
     {
       "label": "loadCorpus()",
@@ -1489,7 +1489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L1040",
       "id": "corpus_loadcorpus",
-      "community": 2
+      "community": 1
     },
     {
       "label": "navigateToCorpus()",
@@ -1497,7 +1497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L1096",
       "id": "corpus_navigatetocorpus",
-      "community": 2
+      "community": 1
     },
     {
       "label": "init()",
@@ -1505,7 +1505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/corpus.ts",
       "source_location": "L1119",
       "id": "corpus_init",
-      "community": 2
+      "community": 1
     },
     {
       "label": "accuracy.ts",
@@ -1513,7 +1513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L1",
       "id": "accuracy",
-      "community": 28
+      "community": 29
     },
     {
       "label": "withRequestId()",
@@ -1521,7 +1521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L95",
       "id": "accuracy_withrequestid",
-      "community": 28
+      "community": 29
     },
     {
       "label": "getEnvironmentFingerprint()",
@@ -1529,7 +1529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L99",
       "id": "accuracy_getenvironmentfingerprint",
-      "community": 28
+      "community": 29
     },
     {
       "label": "publishReport()",
@@ -1537,7 +1537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L121",
       "id": "accuracy_publishreport",
-      "community": 28
+      "community": 29
     },
     {
       "label": "toNavigationReport()",
@@ -1545,7 +1545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L142",
       "id": "accuracy_tonavigationreport",
-      "community": 28
+      "community": 29
     },
     {
       "label": "getBrowserLines()",
@@ -1553,7 +1553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L159",
       "id": "accuracy_getbrowserlines",
-      "community": 28
+      "community": 29
     },
     {
       "label": "runSweep()",
@@ -1561,7 +1561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L192",
       "id": "accuracy_runsweep",
-      "community": 28
+      "community": 29
     },
     {
       "label": "render()",
@@ -1569,7 +1569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L281",
       "id": "accuracy_render",
-      "community": 28
+      "community": 29
     },
     {
       "label": "escapeHtml()",
@@ -1577,7 +1577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts",
       "source_location": "L368",
       "id": "accuracy_escapehtml",
-      "community": 28
+      "community": 29
     },
     {
       "label": "report-utils.ts",
@@ -1585,7 +1585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/report-utils.ts",
       "source_location": "L1",
       "id": "report_utils",
-      "community": 38
+      "community": 37
     },
     {
       "label": "replaceNavigationHash()",
@@ -1593,7 +1593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/report-utils.ts",
       "source_location": "L7",
       "id": "report_utils_replacenavigationhash",
-      "community": 38
+      "community": 37
     },
     {
       "label": "clearNavigationReport()",
@@ -1601,7 +1601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/report-utils.ts",
       "source_location": "L11",
       "id": "report_utils_clearnavigationreport",
-      "community": 38
+      "community": 37
     },
     {
       "label": "publishNavigationPhase()",
@@ -1609,7 +1609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/report-utils.ts",
       "source_location": "L15",
       "id": "report_utils_publishnavigationphase",
-      "community": 38
+      "community": 37
     },
     {
       "label": "publishNavigationReport()",
@@ -1617,7 +1617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/report-utils.ts",
       "source_location": "L19",
       "id": "report_utils_publishnavigationreport",
-      "community": 38
+      "community": 37
     },
     {
       "label": "probe.ts",
@@ -1625,7 +1625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L1",
       "id": "probe",
-      "community": 13
+      "community": 14
     },
     {
       "label": "withRequestId()",
@@ -1633,7 +1633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L124",
       "id": "probe_withrequestid",
-      "community": 13
+      "community": 14
     },
     {
       "label": "publishReport()",
@@ -1641,7 +1641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L128",
       "id": "probe_publishreport",
-      "community": 13
+      "community": 14
     },
     {
       "label": "setError()",
@@ -1649,7 +1649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L133",
       "id": "probe_seterror",
-      "community": 13
+      "community": 14
     },
     {
       "label": "getBrowserLinesFromSpans()",
@@ -1657,7 +1657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L138",
       "id": "probe_getbrowserlinesfromspans",
-      "community": 13
+      "community": 14
     },
     {
       "label": "getBrowserLines()",
@@ -1665,7 +1665,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L195",
       "id": "probe_getbrowserlines",
-      "community": 13
+      "community": 14
     },
     {
       "label": "getBrowserLinesFromRange()",
@@ -1673,7 +1673,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L206",
       "id": "probe_getbrowserlinesfromrange",
-      "community": 13
+      "community": 14
     },
     {
       "label": "measurePreparedSlice()",
@@ -1681,7 +1681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L257",
       "id": "probe_measurepreparedslice",
-      "community": 13
+      "community": 14
     },
     {
       "label": "getPublicLines()",
@@ -1689,7 +1689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L296",
       "id": "probe_getpubliclines",
-      "community": 13
+      "community": 14
     },
     {
       "label": "summarizeLines()",
@@ -1697,7 +1697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L326",
       "id": "probe_summarizelines",
-      "community": 13
+      "community": 14
     },
     {
       "label": "computeOffsetFromCursor()",
@@ -1705,7 +1705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L336",
       "id": "probe_computeoffsetfromcursor",
-      "community": 13
+      "community": 14
     },
     {
       "label": "classifyBreakMismatch()",
@@ -1713,7 +1713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L350",
       "id": "probe_classifybreakmismatch",
-      "community": 13
+      "community": 14
     },
     {
       "label": "getFirstBreakMismatch()",
@@ -1721,7 +1721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L372",
       "id": "probe_getfirstbreakmismatch",
-      "community": 13
+      "community": 14
     },
     {
       "label": "init()",
@@ -1729,7 +1729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/probe.ts",
       "source_location": "L414",
       "id": "probe_init",
-      "community": 13
+      "community": 14
     },
     {
       "label": "gatsby.ts",
@@ -1921,7 +1921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts",
       "source_location": "L1",
       "id": "diagnostic_utils",
-      "community": 36
+      "community": 35
     },
     {
       "label": "getDiagnosticUnits()",
@@ -1929,7 +1929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts",
       "source_location": "L11",
       "id": "diagnostic_utils_getdiagnosticunits",
-      "community": 36
+      "community": 35
     },
     {
       "label": "getLineContent()",
@@ -1937,7 +1937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts",
       "source_location": "L33",
       "id": "diagnostic_utils_getlinecontent",
-      "community": 36
+      "community": 35
     },
     {
       "label": "formatBreakContext()",
@@ -1945,7 +1945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts",
       "source_location": "L41",
       "id": "diagnostic_utils_formatbreakcontext",
-      "community": 36
+      "community": 35
     },
     {
       "label": "measureCanvasTextWidth()",
@@ -1953,7 +1953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts",
       "source_location": "L47",
       "id": "diagnostic_utils_measurecanvastextwidth",
-      "community": 36
+      "community": 35
     },
     {
       "label": "measureDomTextWidth()",
@@ -1961,7 +1961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts",
       "source_location": "L56",
       "id": "diagnostic_utils_measuredomtextwidth",
-      "community": 36
+      "community": 35
     },
     {
       "label": "benchmark.ts",
@@ -1969,7 +1969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L1",
       "id": "benchmark",
-      "community": 22
+      "community": 21
     },
     {
       "label": "median()",
@@ -1977,7 +1977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L209",
       "id": "benchmark_median",
-      "community": 22
+      "community": 21
     },
     {
       "label": "bench()",
@@ -1985,7 +1985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L215",
       "id": "benchmark_bench",
-      "community": 22
+      "community": 21
     },
     {
       "label": "nextFrame()",
@@ -1993,7 +1993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L238",
       "id": "benchmark_nextframe",
-      "community": 22
+      "community": 21
     },
     {
       "label": "withRequestId()",
@@ -2001,7 +2001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L242",
       "id": "benchmark_withrequestid",
-      "community": 22
+      "community": 21
     },
     {
       "label": "publishNavigationReport()",
@@ -2009,7 +2009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L246",
       "id": "benchmark_publishnavigationreport",
-      "community": 22
+      "community": 21
     },
     {
       "label": "setReport()",
@@ -2017,7 +2017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L251",
       "id": "benchmark_setreport",
-      "community": 22
+      "community": 21
     },
     {
       "label": "buildCorpusBenchmarks()",
@@ -2025,7 +2025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L256",
       "id": "benchmark_buildcorpusbenchmarks",
-      "community": 22
+      "community": 21
     },
     {
       "label": "buildRichBenchmarks()",
@@ -2033,7 +2033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L312",
       "id": "benchmark_buildrichbenchmarks",
-      "community": 22
+      "community": 21
     },
     {
       "label": "renderBenchmarkTable()",
@@ -2041,7 +2041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L378",
       "id": "benchmark_renderbenchmarktable",
-      "community": 22
+      "community": 21
     },
     {
       "label": "run()",
@@ -2049,7 +2049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/benchmark.ts",
       "source_location": "L400",
       "id": "benchmark_run",
-      "community": 22
+      "community": 21
     },
     {
       "label": "dynamic-layout.ts",
@@ -2313,7 +2313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L1",
       "id": "rich_note",
-      "community": 19
+      "community": 18
     },
     {
       "label": "getRequiredDiv()",
@@ -2321,7 +2321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L161",
       "id": "rich_note_getrequireddiv",
-      "community": 19
+      "community": 18
     },
     {
       "label": "getRequiredInput()",
@@ -2329,7 +2329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L167",
       "id": "rich_note_getrequiredinput",
-      "community": 19
+      "community": 18
     },
     {
       "label": "getRequiredSpan()",
@@ -2337,7 +2337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L173",
       "id": "rich_note_getrequiredspan",
-      "community": 19
+      "community": 18
     },
     {
       "label": "scheduleRender()",
@@ -2345,7 +2345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L179",
       "id": "rich_note_schedulerender",
-      "community": 19
+      "community": 18
     },
     {
       "label": "measureSingleLineWidth()",
@@ -2353,7 +2353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L187",
       "id": "rich_note_measuresinglelinewidth",
-      "community": 19
+      "community": 18
     },
     {
       "label": "measureCollapsedSpaceWidth()",
@@ -2361,7 +2361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L195",
       "id": "rich_note_measurecollapsedspacewidth",
-      "community": 19
+      "community": 18
     },
     {
       "label": "prepareInlineItems()",
@@ -2369,7 +2369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L206",
       "id": "rich_note_prepareinlineitems",
-      "community": 19
+      "community": 18
     },
     {
       "label": "cursorsMatch()",
@@ -2377,7 +2377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L258",
       "id": "rich_note_cursorsmatch",
-      "community": 19
+      "community": 18
     },
     {
       "label": "layoutInlineItems()",
@@ -2385,7 +2385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L262",
       "id": "rich_note_layoutinlineitems",
-      "community": 19
+      "community": 18
     },
     {
       "label": "renderBody()",
@@ -2393,7 +2393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L365",
       "id": "rich_note_renderbody",
-      "community": 19
+      "community": 18
     },
     {
       "label": "render()",
@@ -2401,7 +2401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts",
       "source_location": "L390",
       "id": "rich_note_render",
-      "community": 19
+      "community": 18
     },
     {
       "label": "bubbles-shared.ts",
@@ -2409,7 +2409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts",
       "source_location": "L1",
       "id": "bubbles_shared",
-      "community": 32
+      "community": 33
     },
     {
       "label": "prepareBubbleTexts()",
@@ -2417,7 +2417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts",
       "source_location": "L36",
       "id": "bubbles_shared_preparebubbletexts",
-      "community": 32
+      "community": 33
     },
     {
       "label": "getMaxChatWidth()",
@@ -2425,7 +2425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts",
       "source_location": "L42",
       "id": "bubbles_shared_getmaxchatwidth",
-      "community": 32
+      "community": 33
     },
     {
       "label": "collectWrapMetrics()",
@@ -2433,7 +2433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts",
       "source_location": "L49",
       "id": "bubbles_shared_collectwrapmetrics",
-      "community": 32
+      "community": 33
     },
     {
       "label": "findTightWrapMetrics()",
@@ -2441,7 +2441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts",
       "source_location": "L61",
       "id": "bubbles_shared_findtightwrapmetrics",
-      "community": 32
+      "community": 33
     },
     {
       "label": "computeBubbleRender()",
@@ -2449,7 +2449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts",
       "source_location": "L79",
       "id": "bubbles_shared_computebubblerender",
-      "community": 32
+      "community": 33
     },
     {
       "label": "formatPixelCount()",
@@ -2457,7 +2457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts",
       "source_location": "L105",
       "id": "bubbles_shared_formatpixelcount",
-      "community": 32
+      "community": 33
     },
     {
       "label": "accordion.ts",
@@ -2465,7 +2465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L1",
       "id": "accordion",
-      "community": 21
+      "community": 22
     },
     {
       "label": "getRequiredElement()",
@@ -2473,7 +2473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L81",
       "id": "accordion_getrequiredelement",
-      "community": 21
+      "community": 22
     },
     {
       "label": "getRequiredChild()",
@@ -2481,7 +2481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L87",
       "id": "accordion_getrequiredchild",
-      "community": 21
+      "community": 22
     },
     {
       "label": "getAccordionItemNodes()",
@@ -2489,7 +2489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L97",
       "id": "accordion_getaccordionitemnodes",
-      "community": 21
+      "community": 22
     },
     {
       "label": "initializeStaticContent()",
@@ -2497,7 +2497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L113",
       "id": "accordion_initializestaticcontent",
-      "community": 21
+      "community": 22
     },
     {
       "label": "parsePx()",
@@ -2505,7 +2505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L125",
       "id": "accordion_parsepx",
-      "community": 21
+      "community": 22
     },
     {
       "label": "getFontFromStyles()",
@@ -2513,7 +2513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L130",
       "id": "accordion_getfontfromstyles",
-      "community": 21
+      "community": 22
     },
     {
       "label": "refreshPrepared()",
@@ -2521,7 +2521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L136",
       "id": "accordion_refreshprepared",
-      "community": 21
+      "community": 22
     },
     {
       "label": "scheduleRender()",
@@ -2529,7 +2529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L142",
       "id": "accordion_schedulerender",
-      "community": 21
+      "community": 22
     },
     {
       "label": "boot()",
@@ -2537,7 +2537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L151",
       "id": "accordion_boot",
-      "community": 21
+      "community": 22
     },
     {
       "label": "render()",
@@ -2545,7 +2545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/accordion.ts",
       "source_location": "L184",
       "id": "accordion_render",
-      "community": 21
+      "community": 22
     },
     {
       "label": "svg.d.ts",
@@ -2561,7 +2561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/wrap-geometry.ts",
       "source_location": "L1",
       "id": "wrap_geometry",
-      "community": 15
+      "community": 16
     },
     {
       "label": "getWrapHull()",
@@ -2569,7 +2569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L28",
       "id": "wrap_geometry_getwraphull",
-      "community": 15
+      "community": 16
     },
     {
       "label": "transformWrapPoints()",
@@ -2577,7 +2577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L37",
       "id": "wrap_geometry_transformwrappoints",
-      "community": 15
+      "community": 16
     },
     {
       "label": "isPointInPolygon()",
@@ -2585,7 +2585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L60",
       "id": "wrap_geometry_ispointinpolygon",
-      "community": 15
+      "community": 16
     },
     {
       "label": "getPolygonIntervalForBand()",
@@ -2593,7 +2593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L73",
       "id": "wrap_geometry_getpolygonintervalforband",
-      "community": 15
+      "community": 16
     },
     {
       "label": "getRectIntervalsForBand()",
@@ -2601,7 +2601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L102",
       "id": "wrap_geometry_getrectintervalsforband",
-      "community": 15
+      "community": 16
     },
     {
       "label": "carveTextLineSlots()",
@@ -2609,7 +2609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/wrap-geometry.ts",
       "source_location": "L51",
       "id": "wrap_geometry_carvetextlineslots",
-      "community": 15
+      "community": 16
     },
     {
       "label": "makeWrapHull()",
@@ -2617,7 +2617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L157",
       "id": "wrap_geometry_makewraphull",
-      "community": 15
+      "community": 16
     },
     {
       "label": "getPolygonXsAtY()",
@@ -2625,7 +2625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L285",
       "id": "wrap_geometry_getpolygonxsaty",
-      "community": 15
+      "community": 16
     },
     {
       "label": "cross()",
@@ -2633,7 +2633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L302",
       "id": "wrap_geometry_cross",
-      "community": 15
+      "community": 16
     },
     {
       "label": "makeConvexHull()",
@@ -2641,7 +2641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L306",
       "id": "wrap_geometry_makeconvexhull",
-      "community": 15
+      "community": 16
     },
     {
       "label": "justification-comparison.data.ts",
@@ -2657,7 +2657,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L1",
       "id": "bubbles",
-      "community": 23
+      "community": 26
     },
     {
       "label": "getRequiredDiv()",
@@ -2665,7 +2665,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L49",
       "id": "bubbles_getrequireddiv",
-      "community": 23
+      "community": 26
     },
     {
       "label": "getRequiredInput()",
@@ -2673,7 +2673,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L55",
       "id": "bubbles_getrequiredinput",
-      "community": 23
+      "community": 26
     },
     {
       "label": "getRequiredSpan()",
@@ -2681,7 +2681,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L61",
       "id": "bubbles_getrequiredspan",
-      "community": 23
+      "community": 26
     },
     {
       "label": "getInitialChatWidth()",
@@ -2689,7 +2689,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L67",
       "id": "bubbles_getinitialchatwidth",
-      "community": 23
+      "community": 26
     },
     {
       "label": "getChatMessageNodes()",
@@ -2697,7 +2697,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L74",
       "id": "bubbles_getchatmessagenodes",
-      "community": 23
+      "community": 26
     },
     {
       "label": "readNodeText()",
@@ -2705,7 +2705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L78",
       "id": "bubbles_readnodetext",
-      "community": 23
+      "community": 26
     },
     {
       "label": "scheduleRender()",
@@ -2713,7 +2713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L82",
       "id": "bubbles_schedulerender",
-      "community": 23
+      "community": 26
     },
     {
       "label": "render()",
@@ -2721,7 +2721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L90",
       "id": "bubbles_render",
-      "community": 23
+      "community": 26
     },
     {
       "label": "updateBubbles()",
@@ -2729,7 +2729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles.ts",
       "source_location": "L106",
       "id": "bubbles_updatebubbles",
-      "community": 23
+      "community": 26
     },
     {
       "label": "justification-comparison.ui.ts",
@@ -2737,7 +2737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L1",
       "id": "justification_comparison_ui",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createDomCache()",
@@ -2745,7 +2745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L43",
       "id": "justification_comparison_ui_createdomcache",
-      "community": 11
+      "community": 10
     },
     {
       "label": "renderFrame()",
@@ -2753,7 +2753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L74",
       "id": "justification_comparison_ui_renderframe",
-      "community": 11
+      "community": 10
     },
     {
       "label": "syncCssRiverOverlay()",
@@ -2761,7 +2761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L90",
       "id": "justification_comparison_ui_synccssriveroverlay",
-      "community": 11
+      "community": 10
     },
     {
       "label": "getHtmlElement()",
@@ -2769,7 +2769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L152",
       "id": "justification_comparison_ui_gethtmlelement",
-      "community": 11
+      "community": 10
     },
     {
       "label": "getInputElement()",
@@ -2777,7 +2777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L158",
       "id": "justification_comparison_ui_getinputelement",
-      "community": 11
+      "community": 10
     },
     {
       "label": "getCanvasElement()",
@@ -2785,7 +2785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L164",
       "id": "justification_comparison_ui_getcanvaselement",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createCanvasSurface()",
@@ -2793,7 +2793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L170",
       "id": "justification_comparison_ui_createcanvassurface",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createCssParagraphs()",
@@ -2801,7 +2801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L177",
       "id": "justification_comparison_ui_createcssparagraphs",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createMetricPanel()",
@@ -2809,7 +2809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L191",
       "id": "justification_comparison_ui_createmetricpanel",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createMetricRow()",
@@ -2817,7 +2817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L212",
       "id": "justification_comparison_ui_createmetricrow",
-      "community": 11
+      "community": 10
     },
     {
       "label": "applyControls()",
@@ -2825,7 +2825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L226",
       "id": "justification_comparison_ui_applycontrols",
-      "community": 11
+      "community": 10
     },
     {
       "label": "applyColumnWidths()",
@@ -2833,7 +2833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L232",
       "id": "justification_comparison_ui_applycolumnwidths",
-      "community": 11
+      "community": 10
     },
     {
       "label": "updateMetricPanel()",
@@ -2841,7 +2841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L240",
       "id": "justification_comparison_ui_updatemetricpanel",
-      "community": 11
+      "community": 10
     },
     {
       "label": "qualityClass()",
@@ -2849,7 +2849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L254",
       "id": "justification_comparison_ui_qualityclass",
-      "community": 11
+      "community": 10
     },
     {
       "label": "paintCanvasColumn()",
@@ -2857,7 +2857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L260",
       "id": "justification_comparison_ui_paintcanvascolumn",
-      "community": 11
+      "community": 10
     },
     {
       "label": "setupCanvas()",
@@ -2865,7 +2865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L290",
       "id": "justification_comparison_ui_setupcanvas",
-      "community": 11
+      "community": 10
     },
     {
       "label": "paintLine()",
@@ -2873,7 +2873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L299",
       "id": "justification_comparison_ui_paintline",
-      "community": 11
+      "community": 10
     },
     {
       "label": "ensureRiverMarkCount()",
@@ -2881,7 +2881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L343",
       "id": "justification_comparison_ui_ensurerivermarkcount",
-      "community": 11
+      "community": 10
     },
     {
       "label": "hideUnusedRiverMarks()",
@@ -2889,7 +2889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L358",
       "id": "justification_comparison_ui_hideunusedrivermarks",
-      "community": 11
+      "community": 10
     },
     {
       "label": "toRgba()",
@@ -2897,7 +2897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L364",
       "id": "justification_comparison_ui_torgba",
-      "community": 11
+      "community": 10
     },
     {
       "label": "dynamic-layout-text.ts",
@@ -2913,7 +2913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L1",
       "id": "editorial_engine",
-      "community": 10
+      "community": 11
     },
     {
       "label": "getRequiredDiv()",
@@ -2921,7 +2921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L143",
       "id": "editorial_engine_getrequireddiv",
-      "community": 10
+      "community": 11
     },
     {
       "label": "carveTextLineSlots()",
@@ -2929,7 +2929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L149",
       "id": "editorial_engine_carvetextlineslots",
-      "community": 10
+      "community": 11
     },
     {
       "label": "circleIntervalForBand()",
@@ -2937,7 +2937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L168",
       "id": "editorial_engine_circleintervalforband",
-      "community": 10
+      "community": 11
     },
     {
       "label": "createOrbEl()",
@@ -2945,7 +2945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L261",
       "id": "editorial_engine_createorbel",
-      "community": 10
+      "community": 11
     },
     {
       "label": "syncPool()",
@@ -2953,7 +2953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L338",
       "id": "editorial_engine_syncpool",
-      "community": 10
+      "community": 11
     },
     {
       "label": "fitHeadline()",
@@ -2961,7 +2961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L355",
       "id": "editorial_engine_fitheadline",
-      "community": 10
+      "community": 11
     },
     {
       "label": "layoutColumn()",
@@ -2969,7 +2969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L402",
       "id": "editorial_engine_layoutcolumn",
-      "community": 10
+      "community": 11
     },
     {
       "label": "hitTestOrbs()",
@@ -2977,7 +2977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L483",
       "id": "editorial_engine_hittestorbs",
-      "community": 10
+      "community": 11
     },
     {
       "label": "pointerSampleFromEvent()",
@@ -2985,7 +2985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L494",
       "id": "editorial_engine_pointersamplefromevent",
-      "community": 10
+      "community": 11
     },
     {
       "label": "isSelectableTextTarget()",
@@ -2993,7 +2993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L498",
       "id": "editorial_engine_isselectabletexttarget",
-      "community": 10
+      "community": 11
     },
     {
       "label": "hasActiveTextSelection()",
@@ -3001,7 +3001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L502",
       "id": "editorial_engine_hasactivetextselection",
-      "community": 10
+      "community": 11
     },
     {
       "label": "clearQueuedPointerEvents()",
@@ -3009,7 +3009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L507",
       "id": "editorial_engine_clearqueuedpointerevents",
-      "community": 10
+      "community": 11
     },
     {
       "label": "positionedLinesEqual()",
@@ -3017,7 +3017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L513",
       "id": "editorial_engine_positionedlinesequal",
-      "community": 10
+      "community": 11
     },
     {
       "label": "textProjectionEqual()",
@@ -3025,7 +3025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L530",
       "id": "editorial_engine_textprojectionequal",
-      "community": 10
+      "community": 11
     },
     {
       "label": "projectTextProjection()",
@@ -3033,7 +3033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L545",
       "id": "editorial_engine_projecttextprojection",
-      "community": 10
+      "community": 11
     },
     {
       "label": "enterTextSelectionMode()",
@@ -3041,7 +3041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L592",
       "id": "editorial_engine_entertextselectionmode",
-      "community": 10
+      "community": 11
     },
     {
       "label": "syncSelectionState()",
@@ -3049,7 +3049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L601",
       "id": "editorial_engine_syncselectionstate",
-      "community": 10
+      "community": 11
     },
     {
       "label": "isTextSelectionInteractionActive()",
@@ -3057,7 +3057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L610",
       "id": "editorial_engine_istextselectioninteractionactive",
-      "community": 10
+      "community": 11
     },
     {
       "label": "scheduleRender()",
@@ -3065,7 +3065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L615",
       "id": "editorial_engine_schedulerender",
-      "community": 10
+      "community": 11
     },
     {
       "label": "render()",
@@ -3073,7 +3073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L675",
       "id": "editorial_engine_render",
-      "community": 10
+      "community": 11
     },
     {
       "label": "justification-comparison.ts",
@@ -3081,7 +3081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L1",
       "id": "justification_comparison",
-      "community": 45
+      "community": 44
     },
     {
       "label": "scheduleRender()",
@@ -3089,7 +3089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L45",
       "id": "justification_comparison_schedulerender",
-      "community": 45
+      "community": 44
     },
     {
       "label": "render()",
@@ -3097,7 +3097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L53",
       "id": "justification_comparison_render",
-      "community": 45
+      "community": 44
     },
     {
       "label": "scheduleCssOverlaySync()",
@@ -3105,7 +3105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L71",
       "id": "justification_comparison_schedulecssoverlaysync",
-      "community": 45
+      "community": 44
     },
     {
       "label": "justification-comparison.model.ts",
@@ -3385,7 +3385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/masonry/index.ts",
       "source_location": "L1",
       "id": "index",
-      "community": 42
+      "community": 39
     },
     {
       "label": "computeLayout()",
@@ -3393,7 +3393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/masonry/index.ts",
       "source_location": "L55",
       "id": "index_computelayout",
-      "community": 42
+      "community": 39
     },
     {
       "label": "getOrCreateCardNode()",
@@ -3401,7 +3401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/masonry/index.ts",
       "source_location": "L101",
       "id": "index_getorcreatecardnode",
-      "community": 42
+      "community": 39
     },
     {
       "label": "scheduleRender()",
@@ -3409,7 +3409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/masonry/index.ts",
       "source_location": "L118",
       "id": "index_schedulerender",
-      "community": 42
+      "community": 39
     },
     {
       "label": "render()",
@@ -3417,7 +3417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/masonry/index.ts",
       "source_location": "L126",
       "id": "index_render",
-      "community": 42
+      "community": 39
     },
     {
       "label": "bidi.ts",
@@ -3425,7 +3425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/bidi.ts",
       "source_location": "L1",
       "id": "bidi",
-      "community": 43
+      "community": 45
     },
     {
       "label": "classifyChar()",
@@ -3433,7 +3433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/bidi.ts",
       "source_location": "L57",
       "id": "bidi_classifychar",
-      "community": 43
+      "community": 45
     },
     {
       "label": "computeBidiLevels()",
@@ -3441,7 +3441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/bidi.ts",
       "source_location": "L65",
       "id": "bidi_computebidilevels",
-      "community": 43
+      "community": 45
     },
     {
       "label": "computeSegmentLevels()",
@@ -3449,7 +3449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/bidi.ts",
       "source_location": "L164",
       "id": "bidi_computesegmentlevels",
-      "community": 43
+      "community": 45
     },
     {
       "label": "text-modules.d.ts",
@@ -3465,7 +3465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L1",
       "id": "line_break",
-      "community": 14
+      "community": 13
     },
     {
       "label": "canBreakAfter()",
@@ -3473,7 +3473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L34",
       "id": "line_break_canbreakafter",
-      "community": 14
+      "community": 13
     },
     {
       "label": "isSimpleCollapsibleSpace()",
@@ -3481,7 +3481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L44",
       "id": "line_break_issimplecollapsiblespace",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getTabAdvance()",
@@ -3489,7 +3489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L48",
       "id": "line_break_gettabadvance",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getBreakableAdvance()",
@@ -3497,7 +3497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L56",
       "id": "line_break_getbreakableadvance",
-      "community": 14
+      "community": 13
     },
     {
       "label": "fitSoftHyphenBreak()",
@@ -3505,7 +3505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L68",
       "id": "line_break_fitsofthyphenbreak",
-      "community": 14
+      "community": 13
     },
     {
       "label": "findChunkIndexForStart()",
@@ -3513,7 +3513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L94",
       "id": "line_break_findchunkindexforstart",
-      "community": 14
+      "community": 13
     },
     {
       "label": "normalizeLineStart()",
@@ -3521,7 +3521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L102",
       "id": "line_break_normalizelinestart",
-      "community": 14
+      "community": 13
     },
     {
       "label": "countPreparedLines()",
@@ -3529,7 +3529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L133",
       "id": "line_break_countpreparedlines",
-      "community": 14
+      "community": 13
     },
     {
       "label": "countPreparedLinesSimple()",
@@ -3537,7 +3537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L140",
       "id": "line_break_countpreparedlinessimple",
-      "community": 14
+      "community": 13
     },
     {
       "label": "walkPreparedLinesSimple()",
@@ -3545,7 +3545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L204",
       "id": "line_break_walkpreparedlinessimple",
-      "community": 14
+      "community": 13
     },
     {
       "label": "walkPreparedLines()",
@@ -3553,7 +3553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L368",
       "id": "line_break_walkpreparedlines",
-      "community": 14
+      "community": 13
     },
     {
       "label": "layoutNextLineRange()",
@@ -3561,7 +3561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L657",
       "id": "line_break_layoutnextlinerange",
-      "community": 14
+      "community": 13
     },
     {
       "label": "layoutNextLineRangeSimple()",
@@ -3569,7 +3569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/line-break.ts",
       "source_location": "L915",
       "id": "line_break_layoutnextlinerangesimple",
-      "community": 14
+      "community": 13
     },
     {
       "label": "test-data.ts",
@@ -3921,7 +3921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L1",
       "id": "layout_test",
-      "community": 27
+      "community": 25
     },
     {
       "label": "parseFontSize()",
@@ -3929,7 +3929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L28",
       "id": "layout_test_parsefontsize",
-      "community": 27
+      "community": 25
     },
     {
       "label": "isWideCharacter()",
@@ -3937,7 +3937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L33",
       "id": "layout_test_iswidecharacter",
-      "community": 27
+      "community": 25
     },
     {
       "label": "measureWidth()",
@@ -3945,7 +3945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L54",
       "id": "layout_test_measurewidth",
-      "community": 27
+      "community": 25
     },
     {
       "label": "nextTabAdvance()",
@@ -3953,7 +3953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L77",
       "id": "layout_test_nexttabadvance",
-      "community": 27
+      "community": 25
     },
     {
       "label": "TestCanvasRenderingContext2D",
@@ -3961,7 +3961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L83",
       "id": "layout_test_testcanvasrenderingcontext2d",
-      "community": 27
+      "community": 25
     },
     {
       "label": ".measureText()",
@@ -3969,7 +3969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L86",
       "id": "layout_test_testcanvasrenderingcontext2d_measuretext",
-      "community": 27
+      "community": 25
     },
     {
       "label": "TestOffscreenCanvas",
@@ -3977,7 +3977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L91",
       "id": "layout_test_testoffscreencanvas",
-      "community": 27
+      "community": 25
     },
     {
       "label": ".constructor()",
@@ -3985,7 +3985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L92",
       "id": "layout_test_testoffscreencanvas_constructor",
-      "community": 27
+      "community": 25
     },
     {
       "label": ".getContext()",
@@ -3993,7 +3993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/pretext/src/layout.test.ts",
       "source_location": "L94",
       "id": "layout_test_testoffscreencanvas_getcontext",
-      "community": 27
+      "community": 25
     },
     {
       "label": "analysis.ts",
@@ -4289,7 +4289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/robots.ts",
       "source_location": "L1",
       "id": "robots",
-      "community": 50
+      "community": 48
     },
     {
       "label": "robots()",
@@ -4297,7 +4297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/robots.ts",
       "source_location": "L3",
       "id": "robots_robots",
-      "community": 50
+      "community": 48
     },
     {
       "label": "sitemap.ts",
@@ -4305,7 +4305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/sitemap.ts",
       "source_location": "L1",
       "id": "sitemap",
-      "community": 47
+      "community": 50
     },
     {
       "label": "sitemap()",
@@ -4313,7 +4313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/sitemap.ts",
       "source_location": "L3",
       "id": "sitemap_sitemap",
-      "community": 47
+      "community": 50
     },
     {
       "label": "RootLayout()",
@@ -4345,7 +4345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/not-found.tsx",
       "source_location": "L1",
       "id": "not_found",
-      "community": 48
+      "community": 46
     },
     {
       "label": "NotFound()",
@@ -4353,7 +4353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/not-found.tsx",
       "source_location": "L19",
       "id": "not_found_notfound",
-      "community": 48
+      "community": 46
     },
     {
       "label": "route.tsx",
@@ -4361,7 +4361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/api/og/route.tsx",
       "source_location": "L1",
       "id": "route",
-      "community": 16
+      "community": 17
     },
     {
       "label": "checkRateLimit()",
@@ -4369,7 +4369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/api/chat/route.ts",
       "source_location": "L9",
       "id": "route_checkratelimit",
-      "community": 16
+      "community": 17
     },
     {
       "label": "POST()",
@@ -4377,7 +4377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/api/chat/route.ts",
       "source_location": "L26",
       "id": "route_post",
-      "community": 16
+      "community": 17
     },
     {
       "label": "GET()",
@@ -4385,7 +4385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/app/api/og/route.tsx",
       "source_location": "L5",
       "id": "route_get",
-      "community": 16
+      "community": 17
     },
     {
       "label": "meta.ts",
@@ -4449,7 +4449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/content/terminal.ts",
       "source_location": "L1",
       "id": "terminal",
-      "community": 16
+      "community": 17
     },
     {
       "label": "skills.ts",
@@ -4457,7 +4457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/content/skills.ts",
       "source_location": "L1",
       "id": "skills",
-      "community": 1
+      "community": 2
     },
     {
       "label": "CodeTypingBg.tsx",
@@ -4465,7 +4465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/CodeTypingBg.tsx",
       "source_location": "L1",
       "id": "codetypingbg",
-      "community": 1
+      "community": 2
     },
     {
       "label": "CodeTypingBg()",
@@ -4473,7 +4473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/CodeTypingBg.tsx",
       "source_location": "L58",
       "id": "codetypingbg_codetypingbg",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Hero.tsx",
@@ -4481,7 +4481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/Hero.tsx",
       "source_location": "L1",
       "id": "hero",
-      "community": 1
+      "community": 2
     },
     {
       "label": "getTimeGreeting()",
@@ -4489,7 +4489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/Hero.tsx",
       "source_location": "L12",
       "id": "hero_gettimegreeting",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Hero()",
@@ -4497,7 +4497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/Hero.tsx",
       "source_location": "L21",
       "id": "hero_hero",
-      "community": 1
+      "community": 2
     },
     {
       "label": "Nav.tsx",
@@ -4529,7 +4529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/MagneticButton.tsx",
       "source_location": "L1",
       "id": "magneticbutton",
-      "community": 52
+      "community": 49
     },
     {
       "label": "MagneticButton()",
@@ -4537,7 +4537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/MagneticButton.tsx",
       "source_location": "L11",
       "id": "magneticbutton_magneticbutton",
-      "community": 52
+      "community": 49
     },
     {
       "label": "SectionDots.tsx",
@@ -4609,7 +4609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/CursorGlow.tsx",
       "source_location": "L1",
       "id": "cursorglow",
-      "community": 46
+      "community": 47
     },
     {
       "label": "CursorGlow()",
@@ -4617,7 +4617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/CursorGlow.tsx",
       "source_location": "L5",
       "id": "cursorglow_cursorglow",
-      "community": 46
+      "community": 47
     },
     {
       "label": "PretextBackground.tsx",
@@ -4625,7 +4625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/PretextBackground.tsx",
       "source_location": "L1",
       "id": "pretextbackground",
-      "community": 1
+      "community": 2
     },
     {
       "label": "PretextBackground()",
@@ -4633,7 +4633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/PretextBackground.tsx",
       "source_location": "L50",
       "id": "pretextbackground_pretextbackground",
-      "community": 1
+      "community": 2
     },
     {
       "label": "TerminalChat.tsx",
@@ -4641,7 +4641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/TerminalChat.tsx",
       "source_location": "L1",
       "id": "terminalchat",
-      "community": 16
+      "community": 17
     },
     {
       "label": "HackathonProjects.tsx",
@@ -4745,7 +4745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/ThemeChooser.tsx",
       "source_location": "L1",
       "id": "themechooser",
-      "community": 1
+      "community": 2
     },
     {
       "label": "HeroParallax.tsx",
@@ -4753,7 +4753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/HeroParallax.tsx",
       "source_location": "L1",
       "id": "heroparallax",
-      "community": 1
+      "community": 2
     },
     {
       "label": "handleScroll()",
@@ -4761,7 +4761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/HeroParallax.tsx",
       "source_location": "L22",
       "id": "heroparallax_handlescroll",
-      "community": 1
+      "community": 2
     },
     {
       "label": "ScrollReveal.tsx",
@@ -4833,7 +4833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/ThemeProvider.tsx",
       "source_location": "L1",
       "id": "themeprovider",
-      "community": 1
+      "community": 2
     },
     {
       "label": "useTheme()",
@@ -4841,7 +4841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/ThemeProvider.tsx",
       "source_location": "L24",
       "id": "themeprovider_usetheme",
-      "community": 1
+      "community": 2
     },
     {
       "label": "BinaryDissolve.tsx",
@@ -4849,7 +4849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/BinaryDissolve.tsx",
       "source_location": "L1",
       "id": "binarydissolve",
-      "community": 1
+      "community": 2
     },
     {
       "label": "BinaryDissolve()",
@@ -4857,7 +4857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/BinaryDissolve.tsx",
       "source_location": "L18",
       "id": "binarydissolve_binarydissolve",
-      "community": 1
+      "community": 2
     },
     {
       "label": "ScrollVelocityText.tsx",
@@ -5081,7 +5081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/KnowledgeGraph.tsx",
       "source_location": "L1",
       "id": "knowledgegraph",
-      "community": 1
+      "community": 2
     },
     {
       "label": "BackgroundGrid.tsx",
@@ -5089,7 +5089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/BackgroundGrid.tsx",
       "source_location": "L1",
       "id": "backgroundgrid",
-      "community": 1
+      "community": 2
     },
     {
       "label": "CharacterRain()",
@@ -5097,7 +5097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/BackgroundGrid.tsx",
       "source_location": "L8",
       "id": "backgroundgrid_characterrain",
-      "community": 1
+      "community": 2
     },
     {
       "label": "BackgroundGrid()",
@@ -5105,7 +5105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/BackgroundGrid.tsx",
       "source_location": "L79",
       "id": "backgroundgrid_backgroundgrid",
-      "community": 1
+      "community": 2
     },
     {
       "label": "ProjectsTicker.tsx",
@@ -5137,7 +5137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/ParticleField.tsx",
       "source_location": "L1",
       "id": "particlefield",
-      "community": 1
+      "community": 2
     },
     {
       "label": "ParticleField()",
@@ -5145,7 +5145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/ParticleField.tsx",
       "source_location": "L16",
       "id": "particlefield_particlefield",
-      "community": 1
+      "community": 2
     },
     {
       "label": "CursorCodeTrail.tsx",
@@ -5153,7 +5153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/CursorCodeTrail.tsx",
       "source_location": "L1",
       "id": "cursorcodetrail",
-      "community": 1
+      "community": 2
     },
     {
       "label": "CursorCodeTrail()",
@@ -5161,7 +5161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/CursorCodeTrail.tsx",
       "source_location": "L23",
       "id": "cursorcodetrail_cursorcodetrail",
-      "community": 1
+      "community": 2
     },
     {
       "label": "ReactiveAurora.tsx",
@@ -5169,7 +5169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/ReactiveAurora.tsx",
       "source_location": "L1",
       "id": "reactiveaurora",
-      "community": 1
+      "community": 2
     },
     {
       "label": "ReactiveAurora()",
@@ -5177,7 +5177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/ReactiveAurora.tsx",
       "source_location": "L11",
       "id": "reactiveaurora_reactiveaurora",
-      "community": 1
+      "community": 2
     },
     {
       "label": "GlitchText.tsx",
@@ -5185,7 +5185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/GlitchText.tsx",
       "source_location": "L1",
       "id": "glitchtext",
-      "community": 1
+      "community": 2
     },
     {
       "label": "GlitchText()",
@@ -5193,7 +5193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/GlitchText.tsx",
       "source_location": "L9",
       "id": "glitchtext_glitchtext",
-      "community": 1
+      "community": 2
     },
     {
       "label": "StatusTicker.tsx",
@@ -5201,7 +5201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/StatusTicker.tsx",
       "source_location": "L1",
       "id": "statusticker",
-      "community": 1
+      "community": 2
     },
     {
       "label": "StatusTicker()",
@@ -5209,7 +5209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/StatusTicker.tsx",
       "source_location": "L12",
       "id": "statusticker_statusticker",
-      "community": 1
+      "community": 2
     },
     {
       "label": "MagneticText.tsx",
@@ -5217,7 +5217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/MagneticText.tsx",
       "source_location": "L1",
       "id": "magnetictext",
-      "community": 1
+      "community": 2
     },
     {
       "label": "MagneticText()",
@@ -5225,7 +5225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/MagneticText.tsx",
       "source_location": "L9",
       "id": "magnetictext_magnetictext",
-      "community": 1
+      "community": 2
     },
     {
       "label": "TypewriterText.tsx",
@@ -5233,7 +5233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/TypewriterText.tsx",
       "source_location": "L1",
       "id": "typewritertext",
-      "community": 1
+      "community": 2
     },
     {
       "label": "TypewriterText()",
@@ -5241,7 +5241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/components/hero/TypewriterText.tsx",
       "source_location": "L8",
       "id": "typewritertext_typewritertext",
-      "community": 1
+      "community": 2
     },
     {
       "label": "useScrollVelocity.ts",
@@ -5289,7 +5289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/embeddings.ts",
       "source_location": "L1",
       "id": "embeddings",
-      "community": 16
+      "community": 17
     },
     {
       "label": "embedText()",
@@ -5297,7 +5297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/embeddings.ts",
       "source_location": "L11",
       "id": "embeddings_embedtext",
-      "community": 16
+      "community": 17
     },
     {
       "label": "embedTexts()",
@@ -5305,7 +5305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/embeddings.ts",
       "source_location": "L36",
       "id": "embeddings_embedtexts",
-      "community": 16
+      "community": 17
     },
     {
       "label": "cosineSimilarity()",
@@ -5313,7 +5313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/embeddings.ts",
       "source_location": "L68",
       "id": "embeddings_cosinesimilarity",
-      "community": 16
+      "community": 17
     },
     {
       "label": "getContentEmbeddings()",
@@ -5321,7 +5321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/embeddings.ts",
       "source_location": "L80",
       "id": "embeddings_getcontentembeddings",
-      "community": 16
+      "community": 17
     },
     {
       "label": "semanticSearch()",
@@ -5329,7 +5329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/embeddings.ts",
       "source_location": "L95",
       "id": "embeddings_semanticsearch",
-      "community": 16
+      "community": 17
     },
     {
       "label": "generateAnswer()",
@@ -5337,7 +5337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/embeddings.ts",
       "source_location": "L125",
       "id": "embeddings_generateanswer",
-      "community": 16
+      "community": 17
     },
     {
       "label": "circleIntervalForBand()",
@@ -5345,7 +5345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/wrap-geometry.ts",
       "source_location": "L29",
       "id": "wrap_geometry_circleintervalforband",
-      "community": 15
+      "community": 16
     },
     {
       "label": "hitTestCircles()",
@@ -5353,7 +5353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/wrap-geometry.ts",
       "source_location": "L75",
       "id": "wrap_geometry_hittestcircles",
-      "community": 15
+      "community": 16
     },
     {
       "label": "theme-colors.ts",
@@ -5361,7 +5361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/theme-colors.ts",
       "source_location": "L1",
       "id": "theme_colors",
-      "community": 1
+      "community": 2
     },
     {
       "label": "getThemeColors()",
@@ -5369,7 +5369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/theme-colors.ts",
       "source_location": "L42",
       "id": "theme_colors_getthemecolors",
-      "community": 1
+      "community": 2
     },
     {
       "label": "getAccentRGB()",
@@ -5377,7 +5377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/theme-colors.ts",
       "source_location": "L47",
       "id": "theme_colors_getaccentrgb",
-      "community": 1
+      "community": 2
     },
     {
       "label": "getFgRGB()",
@@ -5385,7 +5385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/theme-colors.ts",
       "source_location": "L52",
       "id": "theme_colors_getfgrgb",
-      "community": 1
+      "community": 2
     },
     {
       "label": "getBgRGB()",
@@ -5393,7 +5393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/portfolio/src/lib/theme-colors.ts",
       "source_location": "L57",
       "id": "theme_colors_getbgrgb",
-      "community": 1
+      "community": 2
     }
   ],
   "links": [

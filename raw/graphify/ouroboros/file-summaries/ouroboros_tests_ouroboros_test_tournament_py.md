@@ -2,7 +2,7 @@
 title: "test_tournament.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py"
 repo: "ouroboros"
-community: 2
+community: 5
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_tournament.py`
-**Community:** 2
+**Community:** 5
 
 ## Imports
 - (none)

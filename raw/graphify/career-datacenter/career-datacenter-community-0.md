@@ -1,0 +1,1052 @@
+---
+status: pending
+source_type: graphify-community
+repo: career-datacenter
+community_id: 0
+ingested_at: "2026-04-13T22:29:48.746Z"
+parsed_at: "2026-04-13T22:29:48.746Z"
+compiled_to: null
+processed_at: null
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+# career-datacenter — Community 0
+
+## Files in this cluster
+
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 127 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 124 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 116 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 62 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 39 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 34 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 27 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 24 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 24 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 23 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 23 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 22 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 20 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 11 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 11 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_pipeline_integration.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/test_scraper_system.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_job_tracker.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 4 connections
+- `` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 4 connections
+- `` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_filter.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_tracker.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 3 connections
+- `` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/run_job_scraper.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_indeed.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_wellfound.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_ycombinator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_base.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_scraper_models.py` — 1 connection
+
+## Internal relationships
+
+- `test_pipeline_integration_rationale_1` → `job_scraper_models_job` (uses)
+- `test_pipeline_integration_rationale_1` → `job_scraper_models_jobsource` (uses)
+- `test_pipeline_integration_rationale_1` → `job_scraper_models_jobstatus` (uses)
+- `test_pipeline_integration_rationale_166` → `job_scraper_models_job` (uses)
+- `test_pipeline_integration_rationale_166` → `job_scraper_models_jobsource` (uses)
+- `test_pipeline_integration_rationale_166` → `job_scraper_models_jobstatus` (uses)
+- `test_job_tracker_rationale_1` → `job_scraper_models_job` (uses)
+- `test_job_tracker_rationale_1` → `job_scraper_models_jobsource` (uses)
+- `test_job_tracker_rationale_1` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_jobtracker_load_all_jobs` → `job_tracker_rationale_164` (rationale_for)
+- `job_tracker_jobtracker_load_all_jobs` → `job_tracker_rationale_168` (rationale_for)
+- `job_tracker_rationale_1` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_1` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_1` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_19` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_19` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_19` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_22` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_22` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_22` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_42` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_42` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_42` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_74` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_74` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_74` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_92` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_92` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_92` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_151` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_151` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_151` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_164` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_164` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_164` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_168` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_168` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_168` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_180` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_180` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_180` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_202` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_202` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_202` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_207` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_207` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_207` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_222` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_222` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_222` → `job_scraper_models_jobsource` (uses)
+- `job_tracker_rationale_243` → `job_scraper_models_job` (uses)
+- `job_tracker_rationale_243` → `job_scraper_models_jobstatus` (uses)
+- `job_tracker_rationale_243` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator` → `job_scraper_base` (imports_from)
+- `scraper_ycombinator` → `job_scraper_models` (imports_from)
+- `scraper_ycombinator` → `scraper_ycombinator_ycombinatorscraper` (contains)
+- `scraper_ycombinator` → `scraper_ycombinator_main` (contains)
+- `scraper_ycombinator` → `scraper_ycombinator_rationale_1` (rationale_for)
+- `scraper_ycombinator` → `run_job_scraper` (imports_from)
+- `scraper_ycombinator_ycombinatorscraper` → `jobscraperbase` (inherits)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_ycombinatorscraper_init` (method)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_ycombinatorscraper_scrape_jobs` (method)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_ycombinatorscraper_parse_job_listing` (method)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_ycombinatorscraper_get_job_details` (method)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_ycombinatorscraper_extract_job_id` (method)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_ycombinatorscraper_parse_salary` (method)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_main` (calls)
+- `scraper_ycombinator_ycombinatorscraper` → `scraper_ycombinator_rationale_22` (rationale_for)
+- `scraper_ycombinator_ycombinatorscraper` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `run_job_scraper_jobscraperorchestrator` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `run_job_scraper_rationale_48` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `run_job_scraper_rationale_55` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `run_job_scraper_rationale_89` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `run_job_scraper_rationale_187` (uses)
+- `scraper_ycombinator_ycombinatorscraper` → `run_job_scraper_rationale_263` (uses)
+- `jobscraperbase` → `scraper_indeed_indeedscraper` (inherits)
+- `jobscraperbase` → `scraper_wellfound_wellfoundscraper` (inherits)
+- `scraper_ycombinator_ycombinatorscraper_init` → `scraper_ycombinator_rationale_28` (rationale_for)
+- `scraper_ycombinator_ycombinatorscraper_scrape_jobs` → `scraper_ycombinator_ycombinatorscraper_parse_job_listing` (calls)
+- `scraper_ycombinator_ycombinatorscraper_scrape_jobs` → `scraper_ycombinator_main` (calls)
+- `scraper_ycombinator_ycombinatorscraper_scrape_jobs` → `scraper_ycombinator_rationale_37` (rationale_for)
+- `scraper_ycombinator_ycombinatorscraper_parse_job_listing` → `scraper_ycombinator_ycombinatorscraper_extract_job_id` (calls)
+- `scraper_ycombinator_ycombinatorscraper_parse_job_listing` → `scraper_ycombinator_rationale_103` (rationale_for)
+- `scraper_ycombinator_ycombinatorscraper_get_job_details` → `scraper_ycombinator_ycombinatorscraper_parse_salary` (calls)
+- `scraper_ycombinator_ycombinatorscraper_get_job_details` → `scraper_ycombinator_main` (calls)
+- `scraper_ycombinator_ycombinatorscraper_get_job_details` → `scraper_ycombinator_rationale_168` (rationale_for)
+- `scraper_ycombinator_ycombinatorscraper_extract_job_id` → `scraper_ycombinator_rationale_239` (rationale_for)
+- `scraper_ycombinator_ycombinatorscraper_parse_salary` → `scraper_ycombinator_rationale_248` (rationale_for)
+- `scraper_ycombinator_rationale_1` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_1` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_1` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_1` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_rationale_22` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_22` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_22` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_22` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_rationale_28` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_28` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_28` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_28` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_rationale_37` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_37` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_37` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_37` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_rationale_103` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_103` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_103` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_103` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_rationale_168` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_168` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_168` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_168` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_rationale_239` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_239` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_239` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_239` → `job_scraper_models_jobstatus` (uses)
+- `scraper_ycombinator_rationale_248` → `job_scraper_base_jobscraperbase` (uses)
+- `scraper_ycombinator_rationale_248` → `job_scraper_models_job` (uses)
+- `scraper_ycombinator_rationale_248` → `job_scraper_models_jobsource` (uses)
+- `scraper_ycombinator_rationale_248` → `job_scraper_models_jobstatus` (uses)
+- `job_scraper_models` → `enum` (imports_from)
+- `job_scraper_models` → `job_scraper_models_jobsource` (contains)
+- `job_scraper_models` → `job_scraper_models_jobstatus` (contains)
+- `job_scraper_models` → `job_scraper_models_job` (contains)
+- `job_scraper_models` → `job_scraper_models_filterresult` (contains)
+- `job_scraper_models` → `job_scraper_models_scraperesult` (contains)
+- `job_scraper_models` → `job_scraper_models_scraperconfig` (contains)
+- `job_scraper_models` → `job_scraper_models_from_yaml` (contains)
+- `job_scraper_models` → `job_scraper_models_rationale_1` (rationale_for)
+- `job_scraper_models` → `job_filter` (imports_from)
+- `job_scraper_models` → `job_scraper_base` (imports_from)
+- `job_scraper_models` → `run_job_scraper` (imports_from)
+- `job_scraper_models` → `scraper_indeed` (imports_from)
+- `job_scraper_models` → `scraper_wellfound` (imports_from)
+- `job_scraper_models_jobsource` → `enum` (inherits)
+- `job_scraper_models_jobsource` → `job_scraper_models_rationale_14` (rationale_for)
+- `job_scraper_models_jobsource` → `job_filter_jobfilter` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_1` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_17` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_20` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_30` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_35` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_77` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_90` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_98` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_107` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_129` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_153` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_182` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_207` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_231` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_246` (uses)
+- `job_scraper_models_jobsource` → `job_filter_rationale_270` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_jobscraperbase` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_1` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_30` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_54` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_80` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_85` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_89` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_109` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_192` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_202` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_219` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_233` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_275` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_279` (uses)
+- `job_scraper_models_jobsource` → `job_scraper_base_rationale_283` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_1` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_31` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_34` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_81` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_200` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_264` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_348` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_369` (uses)
+- `job_scraper_models_jobsource` → `scraper_linkedin_rationale_413` (uses)
+- `job_scraper_models_jobsource` → `run_job_scraper_jobscraperorchestrator` (uses)
+- `job_scraper_models_jobsource` → `run_job_scraper_rationale_48` (uses)
+- `job_scraper_models_jobsource` → `run_job_scraper_rationale_55` (uses)
+- `job_scraper_models_jobsource` → `run_job_scraper_rationale_89` (uses)
+- `job_scraper_models_jobsource` → `run_job_scraper_rationale_187` (uses)
+- `job_scraper_models_jobsource` → `run_job_scraper_rationale_263` (uses)
+- `job_scraper_models_jobsource` → `test_scraper_system_rationale_23` (uses)
+- `job_scraper_models_jobsource` → `test_scraper_system_rationale_258` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_indeedscraper` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_1` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_22` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_27` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_36` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_133` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_210` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_271` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_280` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_313` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_335` (uses)
+- `job_scraper_models_jobsource` → `scraper_indeed_rationale_364` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_wellfoundscraper` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_1` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_24` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_30` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_39` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_111` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_142` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_201` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_254` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_307` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_330` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_338` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_354` (uses)
+- `job_scraper_models_jobsource` → `scraper_wellfound_rationale_371` (uses)
+- `enum` → `job_scraper_models_jobstatus` (inherits)
+- `job_scraper_models_jobstatus` → `job_filter_jobfilter` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_1` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_17` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_20` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_30` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_35` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_77` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_90` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_98` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_107` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_129` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_153` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_182` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_207` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_231` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_246` (uses)
+- `job_scraper_models_jobstatus` → `job_filter_rationale_270` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_1` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_31` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_34` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_81` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_200` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_264` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_348` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_369` (uses)
+- `job_scraper_models_jobstatus` → `scraper_linkedin_rationale_413` (uses)
+- `job_scraper_models_jobstatus` → `run_job_scraper_jobscraperorchestrator` (uses)
+- `job_scraper_models_jobstatus` → `run_job_scraper_rationale_48` (uses)
+- `job_scraper_models_jobstatus` → `run_job_scraper_rationale_55` (uses)
+- `job_scraper_models_jobstatus` → `run_job_scraper_rationale_89` (uses)
+- `job_scraper_models_jobstatus` → `run_job_scraper_rationale_187` (uses)
+- `job_scraper_models_jobstatus` → `run_job_scraper_rationale_263` (uses)
+- `job_scraper_models_jobstatus` → `test_scraper_system_rationale_23` (uses)
+- `job_scraper_models_jobstatus` → `test_scraper_system_rationale_258` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_indeedscraper` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_1` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_22` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_27` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_36` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_133` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_210` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_271` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_280` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_313` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_335` (uses)
+- `job_scraper_models_jobstatus` → `scraper_indeed_rationale_364` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_wellfoundscraper` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_1` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_24` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_30` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_39` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_111` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_142` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_201` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_254` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_307` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_330` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_338` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_354` (uses)
+- `job_scraper_models_jobstatus` → `scraper_wellfound_rationale_371` (uses)
+- `job_scraper_models_job` → `job_scraper_models_job_to_dict` (method)
+- `job_scraper_models_job` → `job_scraper_models_job_get_full_description` (method)
+- `job_scraper_models_job` → `job_scraper_models_rationale_38` (rationale_for)
+- `job_scraper_models_job` → `job_filter_jobfilter` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_1` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_17` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_20` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_30` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_35` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_77` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_90` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_98` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_107` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_129` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_153` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_182` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_207` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_231` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_246` (uses)
+- `job_scraper_models_job` → `job_filter_rationale_270` (uses)
+- `job_scraper_models_job` → `job_scraper_base_jobscraperbase` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_1` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_30` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_54` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_80` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_85` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_89` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_109` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_192` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_202` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_219` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_233` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_275` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_279` (uses)
+- `job_scraper_models_job` → `job_scraper_base_rationale_283` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_1` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_31` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_34` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_81` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_200` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_264` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_348` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_369` (uses)
+- `job_scraper_models_job` → `scraper_linkedin_rationale_413` (uses)
+- `job_scraper_models_job` → `run_job_scraper_jobscraperorchestrator` (uses)
+- `job_scraper_models_job` → `run_job_scraper_rationale_48` (uses)
+- `job_scraper_models_job` → `run_job_scraper_rationale_55` (uses)
+- `job_scraper_models_job` → `run_job_scraper_rationale_89` (uses)
+- `job_scraper_models_job` → `run_job_scraper_rationale_187` (uses)
+- `job_scraper_models_job` → `run_job_scraper_rationale_263` (uses)
+- `job_scraper_models_job` → `test_scraper_system_rationale_23` (uses)
+- `job_scraper_models_job` → `test_scraper_system_rationale_258` (uses)
+- `job_scraper_models_job` → `scraper_indeed_indeedscraper` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_1` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_22` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_27` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_36` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_133` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_210` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_271` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_280` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_313` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_335` (uses)
+- `job_scraper_models_job` → `scraper_indeed_rationale_364` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_wellfoundscraper` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_1` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_24` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_30` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_39` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_111` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_142` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_201` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_254` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_307` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_330` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_338` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_354` (uses)
+- `job_scraper_models_job` → `scraper_wellfound_rationale_371` (uses)
+- `job_scraper_models_job_to_dict` → `job_scraper_models_rationale_100` (rationale_for)
+- `job_scraper_models_job_get_full_description` → `job_scraper_models_rationale_126` (rationale_for)
+- `job_scraper_models_filterresult` → `job_scraper_models_rationale_139` (rationale_for)
+- `job_scraper_models_filterresult` → `job_filter_jobfilter` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_1` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_17` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_20` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_30` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_35` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_77` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_90` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_98` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_107` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_129` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_153` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_182` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_207` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_231` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_246` (uses)
+- `job_scraper_models_filterresult` → `job_filter_rationale_270` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_models_scraperesult_complete` (method)
+- `job_scraper_models_scraperesult` → `job_scraper_models_scraperesult_add_error` (method)
+- `job_scraper_models_scraperesult` → `job_scraper_models_scraperesult_add_warning` (method)
+- `job_scraper_models_scraperesult` → `job_scraper_models_scraperesult_get_summary` (method)
+- `job_scraper_models_scraperesult` → `job_scraper_models_rationale_171` (rationale_for)
+- `job_scraper_models_scraperesult` → `job_scraper_base_jobscraperbase` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_1` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_30` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_54` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_80` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_85` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_89` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_109` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_192` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_202` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_219` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_233` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_275` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_279` (uses)
+- `job_scraper_models_scraperesult` → `job_scraper_base_rationale_283` (uses)
+- `job_scraper_models_scraperesult` → `run_job_scraper_jobscraperorchestrator` (uses)
+- `job_scraper_models_scraperesult` → `run_job_scraper_rationale_48` (uses)
+- `job_scraper_models_scraperesult` → `run_job_scraper_rationale_55` (uses)
+- `job_scraper_models_scraperesult` → `run_job_scraper_rationale_89` (uses)
+- `job_scraper_models_scraperesult` → `run_job_scraper_rationale_187` (uses)
+- `job_scraper_models_scraperesult` → `run_job_scraper_rationale_263` (uses)
+- `job_scraper_models_scraperesult_complete` → `job_scraper_models_rationale_187` (rationale_for)
+- `job_scraper_models_scraperesult_add_error` → `job_scraper_models_rationale_192` (rationale_for)
+- `job_scraper_models_scraperesult_add_warning` → `job_scraper_models_rationale_196` (rationale_for)
+- `job_scraper_models_scraperesult_get_summary` → `job_scraper_models_rationale_200` (rationale_for)
+- `job_scraper_models_scraperconfig` → `job_scraper_models_rationale_225` (rationale_for)
+- `job_scraper_models_scraperconfig` → `job_filter_jobfilter` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_1` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_17` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_20` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_30` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_35` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_77` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_90` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_98` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_107` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_129` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_153` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_182` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_207` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_231` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_246` (uses)
+- `job_scraper_models_scraperconfig` → `job_filter_rationale_270` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_jobscraperbase` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_1` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_30` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_54` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_80` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_85` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_89` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_109` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_192` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_202` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_219` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_233` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_275` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_279` (uses)
+- `job_scraper_models_scraperconfig` → `job_scraper_base_rationale_283` (uses)
+- `job_filter` → `job_filter_jobfilter` (contains)
+- `job_filter` → `job_filter_main` (contains)
+- `job_filter` → `job_filter_rationale_1` (rationale_for)
+- `job_filter` → `run_job_scraper` (imports_from)
+- `job_filter_jobfilter` → `job_filter_jobfilter_init` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_load_config` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_filter_job` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_get_searchable_text` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_check_hard_dealbreakers` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_check_soft_dealbreakers` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_check_must_have_keywords` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_check_bonus_keywords` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_check_salary` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_check_visa` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_check_location` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_keyword_match` (method)
+- `job_filter_jobfilter` → `job_filter_jobfilter_get_filter_summary` (method)
+- `job_filter_jobfilter` → `job_filter_main` (calls)
+- `job_filter_jobfilter` → `job_filter_rationale_17` (rationale_for)
+- `job_filter_jobfilter` → `run_job_scraper_jobscraperorchestrator` (uses)
+- `job_filter_jobfilter` → `run_job_scraper_rationale_48` (uses)
+- `job_filter_jobfilter` → `run_job_scraper_rationale_55` (uses)
+- `job_filter_jobfilter` → `run_job_scraper_rationale_89` (uses)
+- `job_filter_jobfilter` → `run_job_scraper_rationale_187` (uses)
+- `job_filter_jobfilter` → `run_job_scraper_rationale_263` (uses)
+- `job_filter_jobfilter` → `test_scraper_system_rationale_23` (uses)
+- `job_filter_jobfilter` → `test_scraper_system_rationale_258` (uses)
+- `job_filter_jobfilter_init` → `job_filter_jobfilter_load_config` (calls)
+- `job_filter_jobfilter_init` → `job_filter_rationale_20` (rationale_for)
+- `job_filter_jobfilter_load_config` → `job_filter_rationale_30` (rationale_for)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_get_searchable_text` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_check_hard_dealbreakers` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_check_must_have_keywords` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_check_soft_dealbreakers` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_check_salary` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_check_visa` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_check_location` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_jobfilter_check_bonus_keywords` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_main` (calls)
+- `job_filter_jobfilter_filter_job` → `job_filter_rationale_35` (rationale_for)
+- `job_filter_jobfilter_get_searchable_text` → `job_filter_rationale_77` (rationale_for)
+- `job_filter_jobfilter_check_hard_dealbreakers` → `job_filter_jobfilter_keyword_match` (calls)
+- `job_filter_jobfilter_check_hard_dealbreakers` → `job_filter_rationale_90` (rationale_for)
+- `job_filter_jobfilter_check_soft_dealbreakers` → `job_filter_jobfilter_keyword_match` (calls)
+- `job_filter_jobfilter_check_soft_dealbreakers` → `job_filter_rationale_98` (rationale_for)
+- `job_filter_jobfilter_check_must_have_keywords` → `job_filter_jobfilter_keyword_match` (calls)
+- `job_filter_jobfilter_check_must_have_keywords` → `job_filter_rationale_107` (rationale_for)
+- `job_filter_jobfilter_check_bonus_keywords` → `job_filter_jobfilter_keyword_match` (calls)
+- `job_filter_jobfilter_check_bonus_keywords` → `job_filter_rationale_129` (rationale_for)
+- `job_filter_jobfilter_check_salary` → `job_filter_rationale_153` (rationale_for)
+- `job_filter_jobfilter_check_visa` → `job_filter_jobfilter_keyword_match` (calls)
+- `job_filter_jobfilter_check_visa` → `job_filter_rationale_182` (rationale_for)
+- `job_filter_jobfilter_check_location` → `job_filter_rationale_207` (rationale_for)
+- `job_filter_jobfilter_keyword_match` → `job_filter_rationale_231` (rationale_for)
+- `job_filter_jobfilter_get_filter_summary` → `job_filter_main` (calls)
+- `job_filter_jobfilter_get_filter_summary` → `job_filter_rationale_246` (rationale_for)
+- `job_filter_main` → `job_filter_rationale_270` (rationale_for)
+- `job_scraper_base` → `abc` (imports_from)
+- `job_scraper_base` → `job_scraper_base_jobscraperbase` (contains)
+- `job_scraper_base` → `job_scraper_base_scrape_jobs` (contains)
+- `job_scraper_base` → `job_scraper_base_get_job_details` (contains)
+- `job_scraper_base` → `job_scraper_base_main` (contains)
+- `job_scraper_base` → `job_scraper_base_rationale_1` (rationale_for)
+- `job_scraper_base` → `scraper_indeed` (imports_from)
+- `job_scraper_base` → `scraper_wellfound` (imports_from)
+- `job_scraper_base_jobscraperbase` → `abc` (inherits)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_init` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_load_config` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_get_user_agent` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_wait_for_rate_limit` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_make_request` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_parse_html` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_scrape_all` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_close` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_enter` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_jobscraperbase_exit` (method)
+- `job_scraper_base_jobscraperbase` → `job_scraper_base_rationale_30` (rationale_for)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_1` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_31` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_34` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_81` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_200` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_264` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_348` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_369` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_rationale_413` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_indeedscraper` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_1` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_22` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_27` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_36` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_133` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_210` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_271` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_280` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_313` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_335` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_indeed_rationale_364` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_wellfoundscraper` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_1` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_24` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_30` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_39` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_111` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_142` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_201` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_254` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_307` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_330` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_338` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_354` (uses)
+- `job_scraper_base_jobscraperbase` → `scraper_wellfound_rationale_371` (uses)
+- `job_scraper_base_jobscraperbase_init` → `job_scraper_base_jobscraperbase_load_config` (calls)
+- `job_scraper_base_jobscraperbase_init` → `job_scraper_base_rationale_54` (rationale_for)
+- `job_scraper_base_jobscraperbase_load_config` → `job_scraper_base_rationale_80` (rationale_for)
+- `job_scraper_base_jobscraperbase_get_user_agent` → `job_scraper_base_jobscraperbase_make_request` (calls)
+- `job_scraper_base_jobscraperbase_get_user_agent` → `job_scraper_base_rationale_85` (rationale_for)
+- `job_scraper_base_jobscraperbase_wait_for_rate_limit` → `job_scraper_base_jobscraperbase_make_request` (calls)
+- `job_scraper_base_jobscraperbase_wait_for_rate_limit` → `job_scraper_base_rationale_89` (rationale_for)
+- `job_scraper_base_jobscraperbase_make_request` → `job_scraper_base_rationale_109` (rationale_for)
+- `job_scraper_base_jobscraperbase_parse_html` → `job_scraper_base_rationale_192` (rationale_for)
+- `job_scraper_base_scrape_jobs` → `job_scraper_base_jobscraperbase_scrape_all` (calls)
+- `job_scraper_base_jobscraperbase_scrape_all` → `job_scraper_base_rationale_233` (rationale_for)
+- `job_scraper_base_jobscraperbase_close` → `job_scraper_base_jobscraperbase_exit` (calls)
+- `job_scraper_base_jobscraperbase_close` → `job_scraper_base_rationale_275` (rationale_for)
+- `job_scraper_base_jobscraperbase_enter` → `job_scraper_base_rationale_279` (rationale_for)
+- `job_scraper_base_jobscraperbase_exit` → `job_scraper_base_rationale_283` (rationale_for)
+- `run_job_scraper` → `scraper_indeed` (imports_from)
+- `run_job_scraper` → `scraper_wellfound` (imports_from)
+- `run_job_scraper` → `run_job_scraper_jobscraperorchestrator` (contains)
+- `run_job_scraper` → `run_job_scraper_main` (contains)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_jobscraperorchestrator_init` (method)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_jobscraperorchestrator_run` (method)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_jobscraperorchestrator_filter_jobs` (method)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_jobscraperorchestrator_score_jobs` (method)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_jobscraperorchestrator_generate_applications` (method)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_jobscraperorchestrator_print_summary` (method)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_main` (calls)
+- `run_job_scraper_jobscraperorchestrator` → `run_job_scraper_rationale_48` (rationale_for)
+- `run_job_scraper_jobscraperorchestrator` → `scraper_indeed_indeedscraper` (uses)
+- `run_job_scraper_jobscraperorchestrator` → `scraper_wellfound_wellfoundscraper` (uses)
+- `run_job_scraper_jobscraperorchestrator_init` → `run_job_scraper_rationale_55` (rationale_for)
+- `run_job_scraper_jobscraperorchestrator_run` → `run_job_scraper_jobscraperorchestrator_filter_jobs` (calls)
+- `run_job_scraper_jobscraperorchestrator_run` → `run_job_scraper_jobscraperorchestrator_score_jobs` (calls)
+- `run_job_scraper_jobscraperorchestrator_run` → `run_job_scraper_jobscraperorchestrator_generate_applications` (calls)
+- `run_job_scraper_jobscraperorchestrator_run` → `run_job_scraper_jobscraperorchestrator_print_summary` (calls)
+- `run_job_scraper_jobscraperorchestrator_run` → `run_job_scraper_main` (calls)
+- `run_job_scraper_jobscraperorchestrator_run` → `run_job_scraper_rationale_89` (rationale_for)
+- `run_job_scraper_jobscraperorchestrator_filter_jobs` → `run_job_scraper_rationale_187` (rationale_for)
+- `run_job_scraper_jobscraperorchestrator_generate_applications` → `run_job_scraper_rationale_263` (rationale_for)
+- `run_job_scraper_rationale_48` → `scraper_indeed_indeedscraper` (uses)
+- `run_job_scraper_rationale_48` → `scraper_wellfound_wellfoundscraper` (uses)
+- `run_job_scraper_rationale_55` → `scraper_indeed_indeedscraper` (uses)
+- `run_job_scraper_rationale_55` → `scraper_wellfound_wellfoundscraper` (uses)
+- `run_job_scraper_rationale_89` → `scraper_indeed_indeedscraper` (uses)
+- `run_job_scraper_rationale_89` → `scraper_wellfound_wellfoundscraper` (uses)
+- `run_job_scraper_rationale_187` → `scraper_indeed_indeedscraper` (uses)
+- `run_job_scraper_rationale_187` → `scraper_wellfound_wellfoundscraper` (uses)
+- `run_job_scraper_rationale_263` → `scraper_indeed_indeedscraper` (uses)
+- `run_job_scraper_rationale_263` → `scraper_wellfound_wellfoundscraper` (uses)
+- `scraper_indeed` → `scraper_indeed_indeedscraper` (contains)
+- `scraper_indeed` → `scraper_indeed_main` (contains)
+- `scraper_indeed` → `scraper_indeed_rationale_1` (rationale_for)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_init` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_scrape_jobs` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_parse_job_card` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_get_job_details` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_extract_job_id` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_parse_salary_range` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_parse_salary_value` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_parse_relative_date` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_indeedscraper_is_captcha_page` (method)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_main` (calls)
+- `scraper_indeed_indeedscraper` → `scraper_indeed_rationale_22` (rationale_for)
+- `scraper_indeed_indeedscraper_init` → `scraper_indeed_rationale_27` (rationale_for)
+- `scraper_indeed_indeedscraper_scrape_jobs` → `scraper_indeed_indeedscraper_is_captcha_page` (calls)
+- `scraper_indeed_indeedscraper_scrape_jobs` → `scraper_indeed_indeedscraper_parse_job_card` (calls)
+- `scraper_indeed_indeedscraper_scrape_jobs` → `scraper_indeed_main` (calls)
+- `scraper_indeed_indeedscraper_scrape_jobs` → `scraper_indeed_rationale_36` (rationale_for)
+- `scraper_indeed_indeedscraper_parse_job_card` → `scraper_indeed_indeedscraper_extract_job_id` (calls)
+- `scraper_indeed_indeedscraper_parse_job_card` → `scraper_indeed_indeedscraper_parse_salary_range` (calls)
+- `scraper_indeed_indeedscraper_parse_job_card` → `scraper_indeed_rationale_133` (rationale_for)
+- `scraper_indeed_indeedscraper_get_job_details` → `scraper_indeed_indeedscraper_parse_salary_range` (calls)
+- `scraper_indeed_indeedscraper_get_job_details` → `scraper_indeed_indeedscraper_parse_relative_date` (calls)
+- `scraper_indeed_indeedscraper_get_job_details` → `scraper_indeed_main` (calls)
+- `scraper_indeed_indeedscraper_get_job_details` → `scraper_indeed_rationale_210` (rationale_for)
+- `scraper_indeed_indeedscraper_extract_job_id` → `scraper_indeed_rationale_271` (rationale_for)
+- `scraper_indeed_indeedscraper_parse_salary_range` → `scraper_indeed_indeedscraper_parse_salary_value` (calls)
+- `scraper_indeed_indeedscraper_parse_salary_range` → `scraper_indeed_rationale_280` (rationale_for)
+- `scraper_indeed_indeedscraper_parse_salary_value` → `scraper_indeed_rationale_313` (rationale_for)
+- `scraper_indeed_indeedscraper_parse_relative_date` → `scraper_indeed_rationale_335` (rationale_for)
+- `scraper_indeed_indeedscraper_is_captcha_page` → `scraper_indeed_rationale_364` (rationale_for)
+- `scraper_wellfound` → `scraper_wellfound_wellfoundscraper` (contains)
+- `scraper_wellfound` → `scraper_wellfound_main` (contains)
+- `scraper_wellfound` → `scraper_wellfound_rationale_1` (rationale_for)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_init` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_scrape_jobs` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_parse_html_listings` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_parse_job_card` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_parse_job_json` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_get_job_details` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_title_to_slug` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_extract_job_id` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_parse_salary_range` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_wellfoundscraper_extract_equity` (method)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_main` (calls)
+- `scraper_wellfound_wellfoundscraper` → `scraper_wellfound_rationale_24` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_init` → `scraper_wellfound_rationale_30` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_scrape_jobs` → `scraper_wellfound_wellfoundscraper_title_to_slug` (calls)
+- `scraper_wellfound_wellfoundscraper_scrape_jobs` → `scraper_wellfound_wellfoundscraper_parse_job_json` (calls)
+- `scraper_wellfound_wellfoundscraper_scrape_jobs` → `scraper_wellfound_wellfoundscraper_parse_html_listings` (calls)
+- `scraper_wellfound_wellfoundscraper_scrape_jobs` → `scraper_wellfound_main` (calls)
+- `scraper_wellfound_wellfoundscraper_scrape_jobs` → `scraper_wellfound_rationale_39` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_parse_html_listings` → `scraper_wellfound_wellfoundscraper_parse_job_card` (calls)
+- `scraper_wellfound_wellfoundscraper_parse_html_listings` → `scraper_wellfound_rationale_111` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_parse_job_card` → `scraper_wellfound_wellfoundscraper_extract_job_id` (calls)
+- `scraper_wellfound_wellfoundscraper_parse_job_card` → `scraper_wellfound_wellfoundscraper_parse_salary_range` (calls)
+- `scraper_wellfound_wellfoundscraper_parse_job_card` → `scraper_wellfound_wellfoundscraper_extract_equity` (calls)
+- `scraper_wellfound_wellfoundscraper_parse_job_card` → `scraper_wellfound_rationale_142` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_parse_job_json` → `scraper_wellfound_rationale_201` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_get_job_details` → `scraper_wellfound_rationale_254` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_title_to_slug` → `scraper_wellfound_rationale_307` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_extract_job_id` → `scraper_wellfound_rationale_330` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_parse_salary_range` → `scraper_wellfound_rationale_338` (rationale_for)
+- `scraper_wellfound_wellfoundscraper_extract_equity` → `scraper_wellfound_rationale_354` (rationale_for)
+- `scraper_wellfound_main` → `scraper_wellfound_rationale_371` (rationale_for)
+
+## External dependencies
+
+- `test_pipeline_integration` → `job_scraper_models` (imports_from) [community 5]
+- `test_pipeline_integration` → `test_pipeline_integration_rationale_1` (rationale_for) [community 5]
+- `test_pipeline_integration_testcsvoutputformat` → `job_scraper_models_job` (uses) [community 5]
+- `test_pipeline_integration_testcsvoutputformat` → `job_scraper_models_jobsource` (uses) [community 5]
+- `test_pipeline_integration_testcsvoutputformat` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `test_pipeline_integration_testmultirundeduplication` → `job_scraper_models_job` (uses) [community 5]
+- `test_pipeline_integration_testmultirundeduplication` → `job_scraper_models_jobsource` (uses) [community 5]
+- `test_pipeline_integration_testmultirundeduplication` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `test_pipeline_integration_teststatuslifecycle` → `job_scraper_models_job` (uses) [community 5]
+- `test_pipeline_integration_teststatuslifecycle` → `job_scraper_models_jobsource` (uses) [community 5]
+- `test_pipeline_integration_teststatuslifecycle` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `test_pipeline_integration_testskillsgapanalysis` → `test_pipeline_integration_rationale_166` (rationale_for) [community 5]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_scraper_models_job` (uses) [community 5]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_scraper_models_jobsource` (uses) [community 5]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `test_pipeline_integration_testsalaryintelligence` → `job_scraper_models_job` (uses) [community 5]
+- `test_pipeline_integration_testsalaryintelligence` → `job_scraper_models_jobsource` (uses) [community 5]
+- `test_pipeline_integration_testsalaryintelligence` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `test_pipeline_integration_rationale_1` → `job_tracker_jobtracker` (uses) [community 5]
+- `test_pipeline_integration_rationale_1` → `job_deduplicator_jobdeduplicator` (uses) [community 3]
+- `test_pipeline_integration_rationale_166` → `job_tracker_jobtracker` (uses) [community 5]
+- `test_pipeline_integration_rationale_166` → `job_deduplicator_jobdeduplicator` (uses) [community 3]
+- `test_job_tracker` → `job_scraper_models` (imports_from) [community 11]
+- `test_job_tracker` → `test_job_tracker_rationale_1` (rationale_for) [community 11]
+- `test_job_tracker_testsavejobs` → `job_scraper_models_job` (uses) [community 11]
+- `test_job_tracker_testsavejobs` → `job_scraper_models_jobsource` (uses) [community 11]
+- `test_job_tracker_testsavejobs` → `job_scraper_models_jobstatus` (uses) [community 11]
+- `test_job_tracker_testloadjobs` → `job_scraper_models_job` (uses) [community 11]
+- `test_job_tracker_testloadjobs` → `job_scraper_models_jobsource` (uses) [community 11]
+- `test_job_tracker_testloadjobs` → `job_scraper_models_jobstatus` (uses) [community 11]
+- `test_job_tracker_testupdatestatus` → `job_scraper_models_job` (uses) [community 11]
+- `test_job_tracker_testupdatestatus` → `job_scraper_models_jobsource` (uses) [community 11]
+- `test_job_tracker_testupdatestatus` → `job_scraper_models_jobstatus` (uses) [community 11]
+- `test_job_tracker_testsummaryreport` → `job_scraper_models_job` (uses) [community 11]
+- `test_job_tracker_testsummaryreport` → `job_scraper_models_jobsource` (uses) [community 11]
+- `test_job_tracker_testsummaryreport` → `job_scraper_models_jobstatus` (uses) [community 11]
+- `test_job_tracker_rationale_1` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight` → `job_filter` (imports_from) [community 3]
+- `batch_process_overnight` → `job_scraper_models` (imports_from) [community 3]
+- `batch_process_overnight_overnightbatchprocessor` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_overnightbatchprocessor` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_overnightbatchprocessor` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `job_filter_jobfilter` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `job_scraper_models_job` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `job_scraper_models_jobstatus` (uses) [community 3]
+- `fit_scorer` → `run_job_scraper` (imports_from) [community 2]
+- `fit_scorer_fitscorer` → `run_job_scraper_jobscraperorchestrator` (uses) [community 2]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_48` (uses) [community 2]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_55` (uses) [community 2]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_89` (uses) [community 2]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_187` (uses) [community 2]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_263` (uses) [community 2]
+- `cover_letter_generator` → `run_job_scraper` (imports_from) [community 2]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_jobscraperorchestrator` (uses) [community 2]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_48` (uses) [community 2]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_55` (uses) [community 2]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_89` (uses) [community 2]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_187` (uses) [community 2]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_263` (uses) [community 2]
+- `job_tracker` → `job_scraper_models` (imports_from) [community 5]
+- `job_tracker` → `job_tracker_rationale_1` (rationale_for) [community 5]
+- `job_tracker` → `run_job_scraper` (imports_from) [community 5]
+- `job_tracker_jobtracker` → `job_tracker_jobtracker_load_all_jobs` (method) [community 5]
+- `job_tracker_jobtracker` → `job_tracker_rationale_19` (rationale_for) [community 5]
+- `job_tracker_jobtracker` → `job_scraper_models_job` (uses) [community 5]
+- `job_tracker_jobtracker` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `job_tracker_jobtracker` → `job_scraper_models_jobsource` (uses) [community 5]
+- `job_tracker_jobtracker` → `run_job_scraper_jobscraperorchestrator` (uses) [community 5]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_48` (uses) [community 5]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_55` (uses) [community 5]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_89` (uses) [community 5]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_187` (uses) [community 5]
+- `job_tracker_jobtracker` → `run_job_scraper_rationale_263` (uses) [community 5]
+- `job_tracker_jobtracker` → `test_scraper_system_rationale_23` (uses) [community 5]
+- `job_tracker_jobtracker` → `test_scraper_system_rationale_258` (uses) [community 5]
+- `job_tracker_jobtracker_init` → `job_tracker_rationale_22` (rationale_for) [community 5]
+- `job_tracker_jobtracker_create_csv` → `job_tracker_rationale_42` (rationale_for) [community 5]
+- `job_tracker_jobtracker_load_existing_ids` → `job_tracker_rationale_74` (rationale_for) [community 5]
+- `job_tracker_jobtracker_save_jobs` → `job_tracker_rationale_92` (rationale_for) [community 5]
+- `job_tracker_jobtracker_append_jobs` → `job_tracker_rationale_151` (rationale_for) [community 5]
+- `job_tracker_jobtracker_write_all_jobs` → `job_tracker_rationale_180` (rationale_for) [community 5]
+- `job_tracker_jobtracker_get_jobs_by_status` → `job_tracker_rationale_202` (rationale_for) [community 5]
+- `job_tracker_jobtracker_get_high_fit_jobs` → `job_tracker_rationale_207` (rationale_for) [community 5]
+- `job_tracker_jobtracker_update_job_status` → `job_tracker_rationale_222` (rationale_for) [community 5]
+- `job_tracker_jobtracker_generate_summary_report` → `job_tracker_rationale_243` (rationale_for) [community 5]
+- `resume_generator` → `run_job_scraper` (imports_from) [community 2]
+- `resume_generator_resumegenerator` → `run_job_scraper_jobscraperorchestrator` (uses) [community 4]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_48` (uses) [community 4]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_55` (uses) [community 4]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_89` (uses) [community 4]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_187` (uses) [community 4]
+- `resume_generator_resumegenerator` → `run_job_scraper_rationale_263` (uses) [community 4]
+- `jobscraperbase` → `scraper_linkedin_linkedinscraper` (inherits) [community 3]
+- `easy_apply_workflow` → `job_scraper_models` (imports_from) [community 5]
+- `easy_apply_workflow_easyapplyqueue` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_60` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_64` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_98` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_109` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_141` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_183` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_215` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_252` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `easy_apply_workflow_rationale_297` → `job_scraper_models_jobstatus` (uses) [community 5]
+- `job_scraper_models` → `scraper_linkedin` (imports_from) [community 3]
+- `job_scraper_models` → `job_review_cli` (imports_from) [community 5]
+- `job_scraper_models` → `rescore_jobs` (imports_from) [community 2]
+- `job_scraper_models` → `test_scraper_system` (imports_from) [community 5]
+- `job_scraper_models_jobsource` → `scraper_linkedin_linkedinscraper` (uses) [community 3]
+- `job_scraper_models_jobsource` → `rescore_jobs_rationale_1` (uses) [community 2]
+- `job_scraper_models_jobstatus` → `scraper_linkedin_linkedinscraper` (uses) [community 3]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_43` (uses) [community 5]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_53` (uses) [community 5]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_80` (uses) [community 5]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_109` (uses) [community 5]
+- `job_scraper_models_jobstatus` → `job_review_cli_rationale_207` (uses) [community 5]
+- `job_scraper_models_job` → `scraper_linkedin_linkedinscraper` (uses) [community 3]
+- `job_scraper_models_job` → `rescore_jobs_rationale_1` (uses) [community 2]
+- `job_scraper_models_filterresult` → `job_scraper_models_filterresult_add_reason` (method) [community 19]
+- `job_scraper_models_filterresult` → `job_scraper_models_filterresult_add_dealbreaker` (method) [community 19]
+- `job_scraper_models_filterresult` → `job_scraper_models_filterresult_add_missing_required` (method) [community 19]
+- `job_scraper_models_filterresult` → `job_scraper_models_filterresult_adjust_score` (method) [community 19]
+- `job_filter` → `test_scraper_system` (imports_from) [community 5]
+- `job_scraper_base` → `scraper_linkedin` (imports_from) [community 3]
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_linkedinscraper` (uses) [community 3]
+- `scraper_linkedin` → `scraper_linkedin_rationale_1` (rationale_for) [community 3]
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_rationale_31` (rationale_for) [community 3]
+- `scraper_linkedin_linkedinscraper_init` → `scraper_linkedin_rationale_34` (rationale_for) [community 3]
+- `scraper_linkedin_linkedinscraper_scrape_jobs` → `scraper_linkedin_rationale_81` (rationale_for) [community 3]
+- `scraper_linkedin_linkedinscraper_parse_job_data` → `scraper_linkedin_rationale_200` (rationale_for) [community 3]
+- `scraper_linkedin_linkedinscraper_get_job_details` → `scraper_linkedin_rationale_264` (rationale_for) [community 3]
+- `scraper_linkedin_linkedinscraper_format_company_size` → `scraper_linkedin_rationale_348` (rationale_for) [community 3]
+- `scraper_linkedin_linkedinscraper_search_recent_jobs_all_titles` → `scraper_linkedin_rationale_369` (rationale_for) [community 3]
+- `scraper_linkedin_main` → `scraper_linkedin_rationale_413` (rationale_for) [community 3]
+- `jd_parser` → `run_job_scraper` (imports_from) [community 2]
+- `jd_parser_jdparser` → `run_job_scraper_jobscraperorchestrator` (uses) [community 2]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_48` (uses) [community 2]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_55` (uses) [community 2]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_89` (uses) [community 2]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_187` (uses) [community 2]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_263` (uses) [community 2]
+- `test_scraper_system_create_test_jobs` → `test_scraper_system_rationale_23` (rationale_for) [community 5]
+- `test_scraper_system_test_scoring` → `test_scraper_system_rationale_258` (rationale_for) [community 5]

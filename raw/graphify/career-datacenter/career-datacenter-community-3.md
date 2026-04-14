@@ -1,0 +1,379 @@
+---
+status: processed
+source_type: graphify-community
+repo: career-datacenter
+community_id: 3
+ingested_at: 2026-04-13T22:29:48.747Z
+parsed_at: 2026-04-13T22:29:48.747Z
+compiled_to: "[[Automated Job Search Daily Pipeline]]"
+processed_at: 2026-04-13T22:31:43.541Z
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+
+
+# career-datacenter — Community 3
+
+## Files in this cluster
+
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 32 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 25 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 25 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 19 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 13 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 12 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/batch_process_overnight.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/scraper_linkedin.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/email_digest.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/job_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/tests/test_deduplicator.py` — 1 connection
+
+## Internal relationships
+
+- `test_deduplicator` → `job_deduplicator` (imports_from)
+- `test_deduplicator` → `test_deduplicator_dedup` (contains)
+- `test_deduplicator` → `test_deduplicator_testisseenandmarkseen` (contains)
+- `test_deduplicator` → `test_deduplicator_testfilternew` (contains)
+- `test_deduplicator` → `test_deduplicator_testpersistence` (contains)
+- `test_deduplicator` → `test_deduplicator_testexpiry` (contains)
+- `test_deduplicator` → `test_deduplicator_rationale_1` (rationale_for)
+- `test_deduplicator_testisseenandmarkseen` → `test_deduplicator_testisseenandmarkseen_test_unseen_job_returns_false` (method)
+- `test_deduplicator_testisseenandmarkseen` → `test_deduplicator_testisseenandmarkseen_test_mark_then_is_seen` (method)
+- `test_deduplicator_testisseenandmarkseen` → `test_deduplicator_testisseenandmarkseen_test_unknown_job_not_seen` (method)
+- `test_deduplicator_testisseenandmarkseen` → `test_deduplicator_testisseenandmarkseen_test_mark_seen_batch` (method)
+- `test_deduplicator_testisseenandmarkseen` → `job_deduplicator_jobdeduplicator` (uses)
+- `test_deduplicator_testfilternew` → `test_deduplicator_testfilternew_test_filter_returns_only_new` (method)
+- `test_deduplicator_testfilternew` → `test_deduplicator_testfilternew_test_filter_all_new` (method)
+- `test_deduplicator_testfilternew` → `test_deduplicator_testfilternew_test_filter_all_old` (method)
+- `test_deduplicator_testfilternew` → `job_deduplicator_jobdeduplicator` (uses)
+- `test_deduplicator_testpersistence` → `test_deduplicator_testpersistence_test_save_and_reload` (method)
+- `test_deduplicator_testpersistence` → `job_deduplicator_jobdeduplicator` (uses)
+- `test_deduplicator_testexpiry` → `test_deduplicator_testexpiry_test_expired_entries_are_removed` (method)
+- `test_deduplicator_testexpiry` → `test_deduplicator_testexpiry_test_fresh_entries_are_kept` (method)
+- `test_deduplicator_testexpiry` → `job_deduplicator_jobdeduplicator` (uses)
+- `test_deduplicator_rationale_1` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight` → `scraper_linkedin` (imports_from)
+- `batch_process_overnight` → `job_deduplicator` (imports_from)
+- `batch_process_overnight` → `email_digest` (imports_from)
+- `batch_process_overnight` → `batch_process_overnight_overnightbatchprocessor` (contains)
+- `batch_process_overnight` → `batch_process_overnight_main` (contains)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_init` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_run` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_scrape_linkedin_jobs` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_filter_jobs` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_score_jobs` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_save_to_tracker` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_get_approved_jobs` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_generate_applications` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_generate_daily_report` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_send_email_digest` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_overnightbatchprocessor_print_summary` (method)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_main` (calls)
+- `batch_process_overnight_overnightbatchprocessor` → `batch_process_overnight_rationale_58` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_overnightbatchprocessor` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_overnightbatchprocessor` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_overnightbatchprocessor_init` → `batch_process_overnight_rationale_61` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_scrape_linkedin_jobs` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_print_summary` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_filter_jobs` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_score_jobs` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_save_to_tracker` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_generate_applications` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_get_approved_jobs` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_generate_daily_report` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_overnightbatchprocessor_send_email_digest` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_main` (calls)
+- `batch_process_overnight_overnightbatchprocessor_run` → `batch_process_overnight_rationale_92` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor_scrape_linkedin_jobs` → `batch_process_overnight_rationale_168` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor_save_to_tracker` → `batch_process_overnight_rationale_264` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor_get_approved_jobs` → `batch_process_overnight_rationale_274` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor_generate_applications` → `batch_process_overnight_rationale_288` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor_generate_daily_report` → `batch_process_overnight_rationale_369` (rationale_for)
+- `batch_process_overnight_overnightbatchprocessor_send_email_digest` → `batch_process_overnight_rationale_404` (rationale_for)
+- `batch_process_overnight_rationale_58` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_58` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_58` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_61` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_61` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_61` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_92` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_92` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_92` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_168` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_168` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_168` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_264` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_264` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_264` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_274` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_274` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_274` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_288` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_288` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_288` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_369` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_369` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_369` → `email_digest_emaildigestgenerator` (uses)
+- `batch_process_overnight_rationale_404` → `scraper_linkedin_linkedinscraper` (uses)
+- `batch_process_overnight_rationale_404` → `job_deduplicator_jobdeduplicator` (uses)
+- `batch_process_overnight_rationale_404` → `email_digest_emaildigestgenerator` (uses)
+- `scraper_linkedin` → `scraper_linkedin_linkedinscraper` (contains)
+- `scraper_linkedin` → `scraper_linkedin_main` (contains)
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_linkedinscraper_init` (method)
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_linkedinscraper_scrape_jobs` (method)
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_linkedinscraper_parse_job_data` (method)
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_linkedinscraper_get_job_details` (method)
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_linkedinscraper_format_company_size` (method)
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_linkedinscraper_search_recent_jobs_all_titles` (method)
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_main` (calls)
+- `scraper_linkedin_linkedinscraper_scrape_jobs` → `scraper_linkedin_linkedinscraper_get_job_details` (calls)
+- `scraper_linkedin_linkedinscraper_scrape_jobs` → `scraper_linkedin_linkedinscraper_search_recent_jobs_all_titles` (calls)
+- `scraper_linkedin_linkedinscraper_scrape_jobs` → `scraper_linkedin_main` (calls)
+- `scraper_linkedin_linkedinscraper_parse_job_data` → `scraper_linkedin_linkedinscraper_format_company_size` (calls)
+- `scraper_linkedin_linkedinscraper_get_job_details` → `scraper_linkedin_main` (calls)
+- `job_deduplicator` → `job_deduplicator_jobdeduplicator` (contains)
+- `job_deduplicator` → `job_deduplicator_count` (contains)
+- `job_deduplicator` → `job_deduplicator_rationale_1` (rationale_for)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_init` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_load` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_save` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_is_seen` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_mark_seen` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_mark_seen_batch` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_filter_new` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_jobdeduplicator_stats` (method)
+- `job_deduplicator_jobdeduplicator` → `job_deduplicator_rationale_22` (rationale_for)
+- `job_deduplicator_jobdeduplicator_init` → `job_deduplicator_jobdeduplicator_load` (calls)
+- `job_deduplicator_jobdeduplicator_load` → `job_deduplicator_rationale_32` (rationale_for)
+- `job_deduplicator_jobdeduplicator_save` → `job_deduplicator_jobdeduplicator_mark_seen` (calls)
+- `job_deduplicator_jobdeduplicator_save` → `job_deduplicator_jobdeduplicator_mark_seen_batch` (calls)
+- `job_deduplicator_jobdeduplicator_save` → `job_deduplicator_rationale_54` (rationale_for)
+- `job_deduplicator_jobdeduplicator_is_seen` → `job_deduplicator_rationale_59` (rationale_for)
+- `job_deduplicator_jobdeduplicator_mark_seen` → `job_deduplicator_rationale_63` (rationale_for)
+- `job_deduplicator_jobdeduplicator_mark_seen_batch` → `job_deduplicator_rationale_68` (rationale_for)
+- `job_deduplicator_jobdeduplicator_filter_new` → `job_deduplicator_rationale_76` (rationale_for)
+- `email_digest` → `email_digest_load_jobs` (contains)
+- `email_digest` → `email_digest_safe_float` (contains)
+- `email_digest` → `email_digest_fmt_salary` (contains)
+- `email_digest` → `email_digest_snippet` (contains)
+- `email_digest` → `email_digest_emaildigestgenerator` (contains)
+- `email_digest` → `email_digest_main` (contains)
+- `email_digest_load_jobs` → `email_digest_emaildigestgenerator_init` (calls)
+- `email_digest_safe_float` → `email_digest_emaildigestgenerator_build_context` (calls)
+- `email_digest_fmt_salary` → `email_digest_emaildigestgenerator_build_context` (calls)
+- `email_digest_snippet` → `email_digest_emaildigestgenerator_build_context` (calls)
+- `email_digest_emaildigestgenerator` → `email_digest_emaildigestgenerator_init` (method)
+- `email_digest_emaildigestgenerator` → `email_digest_emaildigestgenerator_build_context` (method)
+- `email_digest_emaildigestgenerator` → `email_digest_emaildigestgenerator_render_html` (method)
+- `email_digest_emaildigestgenerator` → `email_digest_emaildigestgenerator_preview` (method)
+- `email_digest_emaildigestgenerator` → `email_digest_emaildigestgenerator_test` (method)
+- `email_digest_emaildigestgenerator` → `email_digest_emaildigestgenerator_send` (method)
+- `email_digest_emaildigestgenerator` → `email_digest_main` (calls)
+- `email_digest_emaildigestgenerator` → `email_digest_rationale_91` (rationale_for)
+- `email_digest_emaildigestgenerator_build_context` → `email_digest_emaildigestgenerator_render_html` (calls)
+- `email_digest_emaildigestgenerator_build_context` → `email_digest_emaildigestgenerator_test` (calls)
+- `email_digest_emaildigestgenerator_render_html` → `email_digest_emaildigestgenerator_preview` (calls)
+- `email_digest_emaildigestgenerator_render_html` → `email_digest_emaildigestgenerator_test` (calls)
+- `email_digest_emaildigestgenerator_render_html` → `email_digest_emaildigestgenerator_send` (calls)
+- `email_digest_emaildigestgenerator_render_html` → `email_digest_rationale_137` (rationale_for)
+- `email_digest_emaildigestgenerator_preview` → `email_digest_main` (calls)
+- `email_digest_emaildigestgenerator_preview` → `email_digest_rationale_144` (rationale_for)
+- `email_digest_emaildigestgenerator_test` → `email_digest_main` (calls)
+- `email_digest_emaildigestgenerator_test` → `email_digest_rationale_149` (rationale_for)
+- `email_digest_emaildigestgenerator_send` → `email_digest_main` (calls)
+- `email_digest_emaildigestgenerator_send` → `email_digest_rationale_164` (rationale_for)
+
+## External dependencies
+
+- `test_pipeline_integration` → `job_deduplicator` (imports_from) [community 5]
+- `test_pipeline_integration_testcsvoutputformat` → `job_deduplicator_jobdeduplicator` (uses) [community 5]
+- `test_pipeline_integration_testmultirundeduplication` → `job_deduplicator_jobdeduplicator` (uses) [community 5]
+- `test_pipeline_integration_teststatuslifecycle` → `job_deduplicator_jobdeduplicator` (uses) [community 5]
+- `test_pipeline_integration_testskillsgapanalysis` → `job_deduplicator_jobdeduplicator` (uses) [community 5]
+- `test_pipeline_integration_testsalaryintelligence` → `job_deduplicator_jobdeduplicator` (uses) [community 5]
+- `test_pipeline_integration_rationale_1` → `job_deduplicator_jobdeduplicator` (uses) [community 0]
+- `test_pipeline_integration_rationale_166` → `job_deduplicator_jobdeduplicator` (uses) [community 0]
+- `batch_process_overnight` → `job_filter` (imports_from) [community 0]
+- `batch_process_overnight` → `job_tracker` (imports_from) [community 5]
+- `batch_process_overnight` → `fit_scorer` (imports_from) [community 2]
+- `batch_process_overnight` → `jd_parser` (imports_from) [community 2]
+- `batch_process_overnight` → `resume_generator` (imports_from) [community 2]
+- `batch_process_overnight` → `cover_letter_generator` (imports_from) [community 2]
+- `batch_process_overnight` → `latex_utils` (imports_from) [community 2]
+- `batch_process_overnight` → `job_scraper_models` (imports_from) [community 0]
+- `batch_process_overnight_overnightbatchprocessor` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_overnightbatchprocessor` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_overnightbatchprocessor` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_overnightbatchprocessor` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_overnightbatchprocessor` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_overnightbatchprocessor` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_overnightbatchprocessor` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_overnightbatchprocessor` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_58` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_58` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_58` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_58` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_58` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_58` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_58` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_58` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_61` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_61` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_61` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_61` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_61` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_61` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_61` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_61` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_92` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_92` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_92` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_92` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_92` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_92` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_92` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_92` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_168` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_168` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_168` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_168` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_168` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_168` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_168` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_168` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_264` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_264` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_264` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_264` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_264` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_264` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_264` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_264` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_274` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_274` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_274` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_274` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_274` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_274` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_274` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_274` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_288` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_288` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_288` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_288` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_288` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_288` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_288` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_288` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_369` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_369` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_369` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_369` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_369` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_369` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_369` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_369` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `batch_process_overnight_rationale_404` → `job_filter_jobfilter` (uses) [community 0]
+- `batch_process_overnight_rationale_404` → `job_tracker_jobtracker` (uses) [community 5]
+- `batch_process_overnight_rationale_404` → `fit_scorer_fitscorer` (uses) [community 2]
+- `batch_process_overnight_rationale_404` → `jd_parser_jdparser` (uses) [community 2]
+- `batch_process_overnight_rationale_404` → `resume_generator_resumegenerator` (uses) [community 4]
+- `batch_process_overnight_rationale_404` → `cover_letter_generator_coverlettergenerator` (uses) [community 2]
+- `batch_process_overnight_rationale_404` → `job_scraper_models_job` (uses) [community 0]
+- `batch_process_overnight_rationale_404` → `job_scraper_models_jobstatus` (uses) [community 0]
+- `jobscraperbase` → `scraper_linkedin_linkedinscraper` (inherits) [community 0]
+- `job_scraper_models` → `scraper_linkedin` (imports_from) [community 0]
+- `job_scraper_models_jobsource` → `scraper_linkedin_linkedinscraper` (uses) [community 0]
+- `job_scraper_models_jobstatus` → `scraper_linkedin_linkedinscraper` (uses) [community 0]
+- `job_scraper_models_job` → `scraper_linkedin_linkedinscraper` (uses) [community 0]
+- `job_scraper_base` → `scraper_linkedin` (imports_from) [community 0]
+- `job_scraper_base_jobscraperbase` → `scraper_linkedin_linkedinscraper` (uses) [community 0]
+- `scraper_linkedin` → `scraper_linkedin_rationale_1` (rationale_for) [community 0]
+- `scraper_linkedin` → `rescore_jobs` (imports_from) [community 2]
+- `scraper_linkedin_linkedinscraper` → `scraper_linkedin_rationale_31` (rationale_for) [community 0]
+- `scraper_linkedin_linkedinscraper` → `rescore_jobs_rationale_1` (uses) [community 2]
+- `scraper_linkedin_linkedinscraper_init` → `scraper_linkedin_rationale_34` (rationale_for) [community 0]
+- `scraper_linkedin_linkedinscraper_scrape_jobs` → `scraper_linkedin_rationale_81` (rationale_for) [community 0]
+- `scraper_linkedin_linkedinscraper_parse_job_data` → `scraper_linkedin_rationale_200` (rationale_for) [community 0]
+- `scraper_linkedin_linkedinscraper_get_job_details` → `scraper_linkedin_rationale_264` (rationale_for) [community 0]
+- `scraper_linkedin_linkedinscraper_format_company_size` → `scraper_linkedin_rationale_348` (rationale_for) [community 0]
+- `scraper_linkedin_linkedinscraper_search_recent_jobs_all_titles` → `scraper_linkedin_rationale_369` (rationale_for) [community 0]
+- `scraper_linkedin_main` → `scraper_linkedin_rationale_413` (rationale_for) [community 0]

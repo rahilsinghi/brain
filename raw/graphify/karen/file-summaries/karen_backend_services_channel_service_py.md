@@ -2,7 +2,7 @@
 title: "channel_service.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py"
 repo: "karen"
-community: 13
+community: 14
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py`
-**Community:** 13
+**Community:** 14
 
 ## Imports
 - (none)

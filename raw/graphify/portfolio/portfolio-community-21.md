@@ -1,16 +1,18 @@
 ---
-status: pending
+status: failed
 source_type: graphify-community
 repo: portfolio
 community_id: 21
-ingested_at: "2026-04-13T18:25:04.300Z"
-parsed_at: "2026-04-13T18:25:04.300Z"
+ingested_at: 2026-04-13T18:25:04.300Z
+parsed_at: 2026-04-13T18:25:04.300Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: "JSON Parse error: Unrecognized token '`'"
 compile_progress: null
 ---
+
+
 
 # portfolio — Community 21
 

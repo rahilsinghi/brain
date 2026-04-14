@@ -1,16 +1,18 @@
 ---
-status: pending
+status: processed
 source_type: graphify-community
 repo: portfolio
 community_id: 5
-ingested_at: "2026-04-13T18:25:04.301Z"
-parsed_at: "2026-04-13T18:25:04.301Z"
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T18:25:04.301Z
+parsed_at: 2026-04-13T18:25:04.301Z
+compiled_to: "[[Pretext Text Layout and Rendering Engine]]"
+processed_at: 2026-04-13T19:05:43.470Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # portfolio — Community 5
 

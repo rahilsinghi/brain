@@ -2,7 +2,7 @@
 title: "load-graphify.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/graph/load-graphify.ts"
 repo: "brain"
-community: 52
+community: 34
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/graph/load-graphify.ts`
-**Community:** 52
+**Community:** 34
 
 ## Imports
 - (none)

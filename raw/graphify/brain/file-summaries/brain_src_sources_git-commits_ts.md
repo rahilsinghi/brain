@@ -2,7 +2,7 @@
 title: "git-commits.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts"
 repo: "brain"
-community: 3
+community: 2
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/sources/git-commits.ts`
-**Community:** 3
+**Community:** 2
 
 ## Imports
 - (none)

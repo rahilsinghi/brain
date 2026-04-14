@@ -1,16 +1,18 @@
 ---
-status: pending
+status: processed
 source_type: graphify-community
 repo: portfolio
 community_id: 38
-ingested_at: "2026-04-13T18:25:04.299Z"
-parsed_at: "2026-04-13T18:25:04.299Z"
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T18:25:04.299Z
+parsed_at: 2026-04-13T18:25:04.299Z
+compiled_to: "[[Pretext Navigation Reporting Utilities]]"
+processed_at: 2026-04-13T19:01:19.753Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # portfolio — Community 38
 

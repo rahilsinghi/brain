@@ -2,7 +2,7 @@
 title: "synthesis-cache.test.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/tests/api/synthesis-cache.test.ts"
 repo: "brain"
-community: 86
+community: 74
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/tests/api/synthesis-cache.test.ts`
-**Community:** 86
+**Community:** 74
 
 ## Imports
 - (none)

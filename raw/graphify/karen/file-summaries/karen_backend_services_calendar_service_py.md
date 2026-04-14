@@ -2,7 +2,7 @@
 title: "calendar_service.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/calendar_service.py"
 repo: "karen"
-community: 44
+community: 45
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/calendar_service.py`
-**Community:** 44
+**Community:** 45
 
 ## Imports
 - (none)

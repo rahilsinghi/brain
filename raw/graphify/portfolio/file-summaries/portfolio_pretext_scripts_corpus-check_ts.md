@@ -2,7 +2,7 @@
 title: "corpus-check.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts"
 repo: "portfolio"
-community: 24
+community: 23
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/corpus-check.ts`
-**Community:** 24
+**Community:** 23
 
 ## Imports
 - (none)

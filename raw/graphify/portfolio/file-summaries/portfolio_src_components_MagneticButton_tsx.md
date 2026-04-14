@@ -2,7 +2,7 @@
 title: "MagneticButton.tsx"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/components/MagneticButton.tsx"
 repo: "portfolio"
-community: 52
+community: 49
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/components/MagneticButton.tsx`
-**Community:** 52
+**Community:** 49
 
 ## Imports
 - (none)

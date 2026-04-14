@@ -1017,7 +1017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L1",
       "id": "escalation",
-      "community": 21
+      "community": 22
     },
     {
       "label": "trigger()",
@@ -1025,7 +1025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L35",
       "id": "escalation_trigger",
-      "community": 21
+      "community": 22
     },
     {
       "label": "escalation_stream()",
@@ -1033,7 +1033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L46",
       "id": "escalation_escalation_stream",
-      "community": 21
+      "community": 22
     },
     {
       "label": "get_escalation_detail()",
@@ -1041,7 +1041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L92",
       "id": "escalation_get_escalation_detail",
-      "community": 21
+      "community": 22
     },
     {
       "label": "list_active()",
@@ -1049,7 +1049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L100",
       "id": "escalation_list_active",
-      "community": 21
+      "community": 22
     },
     {
       "label": "list_all()",
@@ -1057,7 +1057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L105",
       "id": "escalation_list_all",
-      "community": 21
+      "community": 22
     },
     {
       "label": "response_detected()",
@@ -1065,7 +1065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L113",
       "id": "escalation_response_detected",
-      "community": 21
+      "community": 22
     },
     {
       "label": "payment_detected()",
@@ -1073,7 +1073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L120",
       "id": "escalation_payment_detected",
-      "community": 21
+      "community": 22
     },
     {
       "label": "continue_anyway()",
@@ -1081,7 +1081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L127",
       "id": "escalation_continue_anyway",
-      "community": 21
+      "community": 22
     },
     {
       "label": "get_letter_pdf()",
@@ -1089,7 +1089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L137",
       "id": "escalation_get_letter_pdf",
-      "community": 21
+      "community": 22
     },
     {
       "label": "resolve()",
@@ -1097,7 +1097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py",
       "source_location": "L157",
       "id": "escalation_resolve",
-      "community": 21
+      "community": 22
     },
     {
       "label": "audio.py",
@@ -1369,7 +1369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/scripts/generate_quips.py",
       "source_location": "L1",
       "id": "generate_quips",
-      "community": 54
+      "community": 55
     },
     {
       "label": "main()",
@@ -1377,7 +1377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/scripts/generate_quips.py",
       "source_location": "L97",
       "id": "generate_quips_main",
-      "community": 54
+      "community": 55
     },
     {
       "label": "research_service.py",
@@ -1441,7 +1441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L1",
       "id": "channel_service",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_is_filled()",
@@ -1449,7 +1449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L13",
       "id": "channel_service_is_filled",
-      "community": 13
+      "community": 14
     },
     {
       "label": "get_available_channels()",
@@ -1457,7 +1457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L17",
       "id": "channel_service_get_available_channels",
-      "community": 13
+      "community": 14
     },
     {
       "label": "ChannelResult",
@@ -1465,7 +1465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L51",
       "id": "channel_service_channelresult",
-      "community": 13
+      "community": 14
     },
     {
       "label": ".__init__()",
@@ -1473,7 +1473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L52",
       "id": "channel_service_channelresult_init",
-      "community": 13
+      "community": 14
     },
     {
       "label": "send_channel()",
@@ -1481,7 +1481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L65",
       "id": "channel_service_send_channel",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_email()",
@@ -1489,7 +1489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L96",
       "id": "channel_service_send_email",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_sms()",
@@ -1497,7 +1497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L127",
       "id": "channel_service_send_sms",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_whatsapp()",
@@ -1505,7 +1505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L154",
       "id": "channel_service_send_whatsapp",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_voice_call()",
@@ -1513,7 +1513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L181",
       "id": "channel_service_send_voice_call",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_calendar()",
@@ -1521,7 +1521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L234",
       "id": "channel_service_send_calendar",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_slack()",
@@ -1529,7 +1529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L256",
       "id": "channel_service_send_slack",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_discord()",
@@ -1537,7 +1537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L272",
       "id": "channel_service_send_discord",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_github()",
@@ -1545,7 +1545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L300",
       "id": "channel_service_send_github",
-      "community": 13
+      "community": 14
     },
     {
       "label": "_send_fedex()",
@@ -1553,7 +1553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L361",
       "id": "channel_service_send_fedex",
-      "community": 13
+      "community": 14
     },
     {
       "label": "Return channels Karen can reach this member on.      Skips any contact field tha",
@@ -1561,7 +1561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L18",
       "id": "channel_service_rationale_18",
-      "community": 13
+      "community": 14
     },
     {
       "label": "Dispatch a message to the appropriate channel.",
@@ -1569,7 +1569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/channel_service.py",
       "source_location": "L71",
       "id": "channel_service_rationale_71",
-      "community": 13
+      "community": 14
     },
     {
       "label": "calendar_service.py",
@@ -1577,7 +1577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/calendar_service.py",
       "source_location": "L1",
       "id": "calendar_service",
-      "community": 44
+      "community": 45
     },
     {
       "label": "create_event()",
@@ -1585,7 +1585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/calendar_service.py",
       "source_location": "L10",
       "id": "calendar_service_create_event",
-      "community": 44
+      "community": 45
     },
     {
       "label": "delete_event()",
@@ -1593,7 +1593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/calendar_service.py",
       "source_location": "L77",
       "id": "calendar_service_delete_event",
-      "community": 44
+      "community": 45
     },
     {
       "label": "Create a Google Calendar event inviting the target.      Returns (success, detai",
@@ -1601,7 +1601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/calendar_service.py",
       "source_location": "L15",
       "id": "calendar_service_rationale_15",
-      "community": 44
+      "community": 45
     },
     {
       "label": "Delete a Google Calendar event.",
@@ -1609,7 +1609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/calendar_service.py",
       "source_location": "L78",
       "id": "calendar_service_rationale_78",
-      "community": 44
+      "community": 45
     },
     {
       "label": "pdf_service.py",
@@ -1617,7 +1617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/pdf_service.py",
       "source_location": "L1",
       "id": "pdf_service",
-      "community": 42
+      "community": 43
     },
     {
       "label": "generate_qr_code()",
@@ -1625,7 +1625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/pdf_service.py",
       "source_location": "L13",
       "id": "pdf_service_generate_qr_code",
-      "community": 42
+      "community": 43
     },
     {
       "label": "generate_letter_pdf()",
@@ -1633,7 +1633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/pdf_service.py",
       "source_location": "L27",
       "id": "pdf_service_generate_letter_pdf",
-      "community": 42
+      "community": 43
     },
     {
       "label": "Generate a QR code as a base64-encoded PNG data URI.",
@@ -1641,7 +1641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/pdf_service.py",
       "source_location": "L14",
       "id": "pdf_service_rationale_14",
-      "community": 42
+      "community": 43
     },
     {
       "label": "Render the formal letter template to a print-ready PDF with QR code.",
@@ -1649,7 +1649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/pdf_service.py",
       "source_location": "L42",
       "id": "pdf_service_rationale_42",
-      "community": 42
+      "community": 43
     },
     {
       "label": "karen_service.py",
@@ -2393,7 +2393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/fedex_service.py",
       "source_location": "L1",
       "id": "fedex_service",
-      "community": 47
+      "community": 48
     },
     {
       "label": "get_auth_token()",
@@ -2401,7 +2401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/fedex_service.py",
       "source_location": "L15",
       "id": "fedex_service_get_auth_token",
-      "community": 47
+      "community": 48
     },
     {
       "label": "get_rate_quote()",
@@ -2409,7 +2409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/fedex_service.py",
       "source_location": "L37",
       "id": "fedex_service_get_rate_quote",
-      "community": 47
+      "community": 48
     },
     {
       "label": "Get OAuth token from FedEx sandbox.",
@@ -2417,7 +2417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/fedex_service.py",
       "source_location": "L16",
       "id": "fedex_service_rationale_16",
-      "community": 47
+      "community": 48
     },
     {
       "label": "Get overnight delivery rate from Karen's address to target.      Returns (rate,",
@@ -2425,7 +2425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/fedex_service.py",
       "source_location": "L38",
       "id": "fedex_service_rationale_38",
-      "community": 47
+      "community": 48
     },
     {
       "label": "slack_service.py",
@@ -2433,7 +2433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/slack_service.py",
       "source_location": "L1",
       "id": "slack_service",
-      "community": 41
+      "community": 42
     },
     {
       "label": "post_message()",
@@ -2441,7 +2441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/slack_service.py",
       "source_location": "L13",
       "id": "slack_service_post_message",
-      "community": 41
+      "community": 42
     },
     {
       "label": "delete_message()",
@@ -2449,7 +2449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/slack_service.py",
       "source_location": "L45",
       "id": "slack_service_delete_message",
-      "community": 41
+      "community": 42
     },
     {
       "label": "Post a message to #karen-escalations.      Returns (success, detail, message_ts)",
@@ -2457,7 +2457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/slack_service.py",
       "source_location": "L14",
       "id": "slack_service_rationale_14",
-      "community": 41
+      "community": 42
     },
     {
       "label": "Delete a Slack message by its timestamp.",
@@ -2465,7 +2465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/backend/services/slack_service.py",
       "source_location": "L46",
       "id": "slack_service_rationale_46",
-      "community": 41
+      "community": 42
     },
     {
       "label": "navigation-state.ts",
@@ -2473,7 +2473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/shared/navigation-state.ts",
       "source_location": "L1",
       "id": "navigation_state",
-      "community": 37
+      "community": 38
     },
     {
       "label": "getHashParams()",
@@ -2481,7 +2481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/shared/navigation-state.ts",
       "source_location": "L8",
       "id": "navigation_state_gethashparams",
-      "community": 37
+      "community": 38
     },
     {
       "label": "buildNavigationPhaseHash()",
@@ -2489,7 +2489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/shared/navigation-state.ts",
       "source_location": "L14",
       "id": "navigation_state_buildnavigationphasehash",
-      "community": 37
+      "community": 38
     },
     {
       "label": "buildNavigationReportHash()",
@@ -2497,7 +2497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/shared/navigation-state.ts",
       "source_location": "L23",
       "id": "navigation_state_buildnavigationreporthash",
-      "community": 37
+      "community": 38
     },
     {
       "label": "readNavigationReportText()",
@@ -2505,7 +2505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/shared/navigation-state.ts",
       "source_location": "L29",
       "id": "navigation_state_readnavigationreporttext",
-      "community": 37
+      "community": 38
     },
     {
       "label": "readNavigationPhaseState()",
@@ -2513,7 +2513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/shared/navigation-state.ts",
       "source_location": "L33",
       "id": "navigation_state_readnavigationphasestate",
-      "community": 37
+      "community": 38
     },
     {
       "label": "browser-automation.ts",
@@ -2705,7 +2705,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/benchmark-check.ts",
       "source_location": "L1",
       "id": "benchmark_check",
-      "community": 45
+      "community": 47
     },
     {
       "label": "parseStringFlag()",
@@ -2713,7 +2713,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/benchmark-check.ts",
       "source_location": "L44",
       "id": "benchmark_check_parsestringflag",
-      "community": 45
+      "community": 47
     },
     {
       "label": "parseNumberFlag()",
@@ -2721,7 +2721,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/benchmark-check.ts",
       "source_location": "L50",
       "id": "benchmark_check_parsenumberflag",
-      "community": 45
+      "community": 47
     },
     {
       "label": "parseBrowser()",
@@ -2729,7 +2729,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/benchmark-check.ts",
       "source_location": "L60",
       "id": "benchmark_check_parsebrowser",
-      "community": 45
+      "community": 47
     },
     {
       "label": "printReport()",
@@ -2737,7 +2737,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/benchmark-check.ts",
       "source_location": "L68",
       "id": "benchmark_check_printreport",
-      "community": 45
+      "community": 47
     },
     {
       "label": "package-smoke-test.ts",
@@ -2745,7 +2745,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L1",
       "id": "package_smoke_test",
-      "community": 33
+      "community": 32
     },
     {
       "label": "packPackage()",
@@ -2753,7 +2753,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L25",
       "id": "package_smoke_test_packpackage",
-      "community": 33
+      "community": 32
     },
     {
       "label": "smokeJavaScriptEsm()",
@@ -2761,7 +2761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L43",
       "id": "package_smoke_test_smokejavascriptesm",
-      "community": 33
+      "community": 32
     },
     {
       "label": "smokeTypeScript()",
@@ -2769,7 +2769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L70",
       "id": "package_smoke_test_smoketypescript",
-      "community": 33
+      "community": 32
     },
     {
       "label": "createProject()",
@@ -2777,7 +2777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L147",
       "id": "package_smoke_test_createproject",
-      "community": 33
+      "community": 32
     },
     {
       "label": "installTarball()",
@@ -2785,7 +2785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L152",
       "id": "package_smoke_test_installtarball",
-      "community": 33
+      "community": 32
     },
     {
       "label": "tscBinaryName()",
@@ -2793,7 +2793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L160",
       "id": "package_smoke_test_tscbinaryname",
-      "community": 33
+      "community": 32
     },
     {
       "label": "run()",
@@ -2801,7 +2801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/package-smoke-test.ts",
       "source_location": "L164",
       "id": "package_smoke_test_run",
-      "community": 33
+      "community": 32
     },
     {
       "label": "corpus-status.ts",
@@ -2865,7 +2865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-representative.ts",
       "source_location": "L1",
       "id": "corpus_representative",
-      "community": 48
+      "community": 49
     },
     {
       "label": "parseStringFlag()",
@@ -2873,7 +2873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-representative.ts",
       "source_location": "L98",
       "id": "corpus_representative_parsestringflag",
-      "community": 48
+      "community": 49
     },
     {
       "label": "parseNumberFlag()",
@@ -2881,7 +2881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-representative.ts",
       "source_location": "L104",
       "id": "corpus_representative_parsenumberflag",
-      "community": 48
+      "community": 49
     },
     {
       "label": "parseBrowsers()",
@@ -2889,7 +2889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-representative.ts",
       "source_location": "L114",
       "id": "corpus_representative_parsebrowsers",
-      "community": 48
+      "community": 49
     },
     {
       "label": "toRepresentativeRow()",
@@ -2897,7 +2897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-representative.ts",
       "source_location": "L120",
       "id": "corpus_representative_torepresentativerow",
-      "community": 48
+      "community": 49
     },
     {
       "label": "corpus-sweep.ts",
@@ -3009,7 +3009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L1",
       "id": "corpus_taxonomy",
-      "community": 26
+      "community": 29
     },
     {
       "label": "parseStringFlag()",
@@ -3017,7 +3017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L59",
       "id": "corpus_taxonomy_parsestringflag",
-      "community": 26
+      "community": 29
     },
     {
       "label": "parseNumberFlag()",
@@ -3025,7 +3025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L65",
       "id": "corpus_taxonomy_parsenumberflag",
-      "community": 26
+      "community": 29
     },
     {
       "label": "parseOptionalNumberFlag()",
@@ -3033,7 +3033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L73",
       "id": "corpus_taxonomy_parseoptionalnumberflag",
-      "community": 26
+      "community": 29
     },
     {
       "label": "parseBrowser()",
@@ -3041,7 +3041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L81",
       "id": "corpus_taxonomy_parsebrowser",
-      "community": 26
+      "community": 29
     },
     {
       "label": "loadSources()",
@@ -3049,7 +3049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L89",
       "id": "corpus_taxonomy_loadsources",
-      "community": 26
+      "community": 29
     },
     {
       "label": "getTargetWidths()",
@@ -3057,7 +3057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L93",
       "id": "corpus_taxonomy_gettargetwidths",
-      "community": 26
+      "community": 29
     },
     {
       "label": "appendOverrideParams()",
@@ -3065,7 +3065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L118",
       "id": "corpus_taxonomy_appendoverrideparams",
-      "community": 26
+      "community": 29
     },
     {
       "label": "classifyTaxonomy()",
@@ -3073,7 +3073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L127",
       "id": "corpus_taxonomy_classifytaxonomy",
-      "community": 26
+      "community": 29
     },
     {
       "label": "printEntries()",
@@ -3081,7 +3081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-taxonomy.ts",
       "source_location": "L149",
       "id": "corpus_taxonomy_printentries",
-      "community": 26
+      "community": 29
     },
     {
       "label": "gatsby-check.ts",
@@ -3089,7 +3089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-check.ts",
       "source_location": "L1",
       "id": "gatsby_check",
-      "community": 51
+      "community": 52
     },
     {
       "label": "formatWidth()",
@@ -3097,7 +3097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-check.ts",
       "source_location": "L102",
       "id": "gatsby_check_formatwidth",
-      "community": 51
+      "community": 52
     },
     {
       "label": "formatSegmentMarkers()",
@@ -3105,7 +3105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-check.ts",
       "source_location": "L107",
       "id": "gatsby_check_formatsegmentmarkers",
-      "community": 51
+      "community": 52
     },
     {
       "label": "printReport()",
@@ -3113,7 +3113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-check.ts",
       "source_location": "L118",
       "id": "gatsby_check_printreport",
-      "community": 51
+      "community": 52
     },
     {
       "label": "accuracy-check.ts",
@@ -3233,7 +3233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L1",
       "id": "pre_wrap_check",
-      "community": 32
+      "community": 33
     },
     {
       "label": "parseStringFlag()",
@@ -3241,7 +3241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L36",
       "id": "pre_wrap_check_parsestringflag",
-      "community": 32
+      "community": 33
     },
     {
       "label": "parseNumberFlag()",
@@ -3249,7 +3249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L42",
       "id": "pre_wrap_check_parsenumberflag",
-      "community": 32
+      "community": 33
     },
     {
       "label": "parseBrowsers()",
@@ -3257,7 +3257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L50",
       "id": "pre_wrap_check_parsebrowsers",
-      "community": 32
+      "community": 33
     },
     {
       "label": "buildProbeUrl()",
@@ -3265,7 +3265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L184",
       "id": "pre_wrap_check_buildprobeurl",
-      "community": 32
+      "community": 33
     },
     {
       "label": "printCaseResult()",
@@ -3273,7 +3273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L204",
       "id": "pre_wrap_check_printcaseresult",
-      "community": 32
+      "community": 33
     },
     {
       "label": "reportIsExact()",
@@ -3281,7 +3281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L220",
       "id": "pre_wrap_check_reportisexact",
-      "community": 32
+      "community": 33
     },
     {
       "label": "runBrowser()",
@@ -3289,7 +3289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/pre-wrap-check.ts",
       "source_location": "L229",
       "id": "pre_wrap_check_runbrowser",
-      "community": 32
+      "community": 33
     },
     {
       "label": "build-demo-site.ts",
@@ -3297,7 +3297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/build-demo-site.ts",
       "source_location": "L1",
       "id": "build_demo_site",
-      "community": 49
+      "community": 41
     },
     {
       "label": "resolveBuiltHtmlPath()",
@@ -3305,7 +3305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/build-demo-site.ts",
       "source_location": "L50",
       "id": "build_demo_site_resolvebuilthtmlpath",
-      "community": 49
+      "community": 41
     },
     {
       "label": "moveBuiltHtml()",
@@ -3313,7 +3313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/build-demo-site.ts",
       "source_location": "L62",
       "id": "build_demo_site_movebuilthtml",
-      "community": 49
+      "community": 41
     },
     {
       "label": "rebaseRelativeAssetUrls()",
@@ -3321,7 +3321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/build-demo-site.ts",
       "source_location": "L74",
       "id": "build_demo_site_rebaserelativeasseturls",
-      "community": 49
+      "community": 41
     },
     {
       "label": "rewriteDemoLinksForStaticRoot()",
@@ -3329,7 +3329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/build-demo-site.ts",
       "source_location": "L86",
       "id": "build_demo_site_rewritedemolinksforstaticroot",
-      "community": 49
+      "community": 41
     },
     {
       "label": "corpus-font-matrix.ts",
@@ -3337,7 +3337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L1",
       "id": "corpus_font_matrix",
-      "community": 25
+      "community": 28
     },
     {
       "label": "parseStringFlag()",
@@ -3345,7 +3345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L307",
       "id": "corpus_font_matrix_parsestringflag",
-      "community": 25
+      "community": 28
     },
     {
       "label": "parseNumberFlag()",
@@ -3353,7 +3353,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L313",
       "id": "corpus_font_matrix_parsenumberflag",
-      "community": 25
+      "community": 28
     },
     {
       "label": "parseOptionalNumberFlag()",
@@ -3361,7 +3361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L323",
       "id": "corpus_font_matrix_parseoptionalnumberflag",
-      "community": 25
+      "community": 28
     },
     {
       "label": "parseBrowser()",
@@ -3369,7 +3369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L333",
       "id": "corpus_font_matrix_parsebrowser",
-      "community": 25
+      "community": 28
     },
     {
       "label": "loadSources()",
@@ -3377,7 +3377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L341",
       "id": "corpus_font_matrix_loadsources",
-      "community": 25
+      "community": 28
     },
     {
       "label": "parseOptions()",
@@ -3385,7 +3385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L345",
       "id": "corpus_font_matrix_parseoptions",
-      "community": 25
+      "community": 28
     },
     {
       "label": "getSweepWidths()",
@@ -3393,7 +3393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L371",
       "id": "corpus_font_matrix_getsweepwidths",
-      "community": 25
+      "community": 28
     },
     {
       "label": "bucketMismatches()",
@@ -3401,7 +3401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L393",
       "id": "corpus_font_matrix_bucketmismatches",
-      "community": 25
+      "community": 28
     },
     {
       "label": "printSummary()",
@@ -3409,7 +3409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts",
       "source_location": "L410",
       "id": "corpus_font_matrix_printsummary",
-      "community": 25
+      "community": 28
     },
     {
       "label": "report-server.ts",
@@ -3417,7 +3417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/report-server.ts",
       "source_location": "L1",
       "id": "report_server",
-      "community": 55
+      "community": 54
     },
     {
       "label": "startPostedReportServer()",
@@ -3425,7 +3425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/report-server.ts",
       "source_location": "L4",
       "id": "report_server_startpostedreportserver",
-      "community": 55
+      "community": 54
     },
     {
       "label": "gatsby-sweep.ts",
@@ -3433,7 +3433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L1",
       "id": "gatsby_sweep",
-      "community": 20
+      "community": 19
     },
     {
       "label": "parseNumberFlag()",
@@ -3441,7 +3441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L83",
       "id": "gatsby_sweep_parsenumberflag",
-      "community": 20
+      "community": 19
     },
     {
       "label": "parseStringFlag()",
@@ -3449,7 +3449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L94",
       "id": "gatsby_sweep_parsestringflag",
-      "community": 20
+      "community": 19
     },
     {
       "label": "hasFlag()",
@@ -3457,7 +3457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L100",
       "id": "gatsby_sweep_hasflag",
-      "community": 20
+      "community": 19
     },
     {
       "label": "parseBrowser()",
@@ -3465,7 +3465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L104",
       "id": "gatsby_sweep_parsebrowser",
-      "community": 20
+      "community": 19
     },
     {
       "label": "parseOptions()",
@@ -3473,7 +3473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L112",
       "id": "gatsby_sweep_parseoptions",
-      "community": 20
+      "community": 19
     },
     {
       "label": "getTargetWidths()",
@@ -3481,7 +3481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L137",
       "id": "gatsby_sweep_gettargetwidths",
-      "community": 20
+      "community": 19
     },
     {
       "label": "formatSignedInt()",
@@ -3489,7 +3489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L160",
       "id": "gatsby_sweep_formatsignedint",
-      "community": 20
+      "community": 19
     },
     {
       "label": "formatRanges()",
@@ -3497,7 +3497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L164",
       "id": "gatsby_sweep_formatranges",
-      "community": 20
+      "community": 19
     },
     {
       "label": "printSummary()",
@@ -3505,7 +3505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L186",
       "id": "gatsby_sweep_printsummary",
-      "community": 20
+      "community": 19
     },
     {
       "label": "maybeWriteSummary()",
@@ -3513,7 +3513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L225",
       "id": "gatsby_sweep_maybewritesummary",
-      "community": 20
+      "community": 19
     },
     {
       "label": "runDetailedDiagnose()",
@@ -3521,7 +3521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts",
       "source_location": "L231",
       "id": "gatsby_sweep_rundetaileddiagnose",
-      "community": 20
+      "community": 19
     },
     {
       "label": "probe-check.ts",
@@ -3529,7 +3529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts",
       "source_location": "L1",
       "id": "probe_check",
-      "community": 39
+      "community": 37
     },
     {
       "label": "parseStringFlag()",
@@ -3537,7 +3537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts",
       "source_location": "L49",
       "id": "probe_check_parsestringflag",
-      "community": 39
+      "community": 37
     },
     {
       "label": "parseNumberFlag()",
@@ -3545,7 +3545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts",
       "source_location": "L55",
       "id": "probe_check_parsenumberflag",
-      "community": 39
+      "community": 37
     },
     {
       "label": "parseBrowser()",
@@ -3553,7 +3553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts",
       "source_location": "L63",
       "id": "probe_check_parsebrowser",
-      "community": 39
+      "community": 37
     },
     {
       "label": "requireFlag()",
@@ -3561,7 +3561,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts",
       "source_location": "L71",
       "id": "probe_check_requireflag",
-      "community": 39
+      "community": 37
     },
     {
       "label": "printReport()",
@@ -3569,7 +3569,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts",
       "source_location": "L77",
       "id": "probe_check_printreport",
-      "community": 39
+      "community": 37
     },
     {
       "label": "corpus-check.ts",
@@ -3577,7 +3577,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L1",
       "id": "corpus_check",
-      "community": 27
+      "community": 25
     },
     {
       "label": "parseStringFlag()",
@@ -3585,7 +3585,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L118",
       "id": "corpus_check_parsestringflag",
-      "community": 27
+      "community": 25
     },
     {
       "label": "parseNumberFlag()",
@@ -3593,7 +3593,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L124",
       "id": "corpus_check_parsenumberflag",
-      "community": 27
+      "community": 25
     },
     {
       "label": "parseBrowser()",
@@ -3601,7 +3601,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L134",
       "id": "corpus_check_parsebrowser",
-      "community": 27
+      "community": 25
     },
     {
       "label": "parseOptionalNumberFlag()",
@@ -3609,7 +3609,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L142",
       "id": "corpus_check_parseoptionalnumberflag",
-      "community": 27
+      "community": 25
     },
     {
       "label": "hasFlag()",
@@ -3617,7 +3617,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L152",
       "id": "corpus_check_hasflag",
-      "community": 27
+      "community": 25
     },
     {
       "label": "loadSources()",
@@ -3625,7 +3625,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L156",
       "id": "corpus_check_loadsources",
-      "community": 27
+      "community": 25
     },
     {
       "label": "getTargetWidths()",
@@ -3633,7 +3633,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L160",
       "id": "corpus_check_gettargetwidths",
-      "community": 27
+      "community": 25
     },
     {
       "label": "appendOverrideParams()",
@@ -3641,7 +3641,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L174",
       "id": "corpus_check_appendoverrideparams",
-      "community": 27
+      "community": 25
     },
     {
       "label": "printReport()",
@@ -3649,7 +3649,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-check.ts",
       "source_location": "L194",
       "id": "corpus_check_printreport",
-      "community": 27
+      "community": 25
     },
     {
       "label": "corpus.ts",
@@ -4033,7 +4033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/report-utils.ts",
       "source_location": "L1",
       "id": "report_utils",
-      "community": 46
+      "community": 44
     },
     {
       "label": "replaceNavigationHash()",
@@ -4041,7 +4041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/report-utils.ts",
       "source_location": "L7",
       "id": "report_utils_replacenavigationhash",
-      "community": 46
+      "community": 44
     },
     {
       "label": "clearNavigationReport()",
@@ -4049,7 +4049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/report-utils.ts",
       "source_location": "L11",
       "id": "report_utils_clearnavigationreport",
-      "community": 46
+      "community": 44
     },
     {
       "label": "publishNavigationPhase()",
@@ -4057,7 +4057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/report-utils.ts",
       "source_location": "L15",
       "id": "report_utils_publishnavigationphase",
-      "community": 46
+      "community": 44
     },
     {
       "label": "publishNavigationReport()",
@@ -4065,7 +4065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/report-utils.ts",
       "source_location": "L19",
       "id": "report_utils_publishnavigationreport",
-      "community": 46
+      "community": 44
     },
     {
       "label": "probe.ts",
@@ -4073,7 +4073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L1",
       "id": "probe",
-      "community": 16
+      "community": 15
     },
     {
       "label": "withRequestId()",
@@ -4081,7 +4081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L124",
       "id": "probe_withrequestid",
-      "community": 16
+      "community": 15
     },
     {
       "label": "publishReport()",
@@ -4089,7 +4089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L128",
       "id": "probe_publishreport",
-      "community": 16
+      "community": 15
     },
     {
       "label": "setError()",
@@ -4097,7 +4097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L133",
       "id": "probe_seterror",
-      "community": 16
+      "community": 15
     },
     {
       "label": "getBrowserLinesFromSpans()",
@@ -4105,7 +4105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L138",
       "id": "probe_getbrowserlinesfromspans",
-      "community": 16
+      "community": 15
     },
     {
       "label": "getBrowserLines()",
@@ -4113,7 +4113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L195",
       "id": "probe_getbrowserlines",
-      "community": 16
+      "community": 15
     },
     {
       "label": "getBrowserLinesFromRange()",
@@ -4121,7 +4121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L206",
       "id": "probe_getbrowserlinesfromrange",
-      "community": 16
+      "community": 15
     },
     {
       "label": "measurePreparedSlice()",
@@ -4129,7 +4129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L257",
       "id": "probe_measurepreparedslice",
-      "community": 16
+      "community": 15
     },
     {
       "label": "getPublicLines()",
@@ -4137,7 +4137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L296",
       "id": "probe_getpubliclines",
-      "community": 16
+      "community": 15
     },
     {
       "label": "summarizeLines()",
@@ -4145,7 +4145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L326",
       "id": "probe_summarizelines",
-      "community": 16
+      "community": 15
     },
     {
       "label": "computeOffsetFromCursor()",
@@ -4153,7 +4153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L336",
       "id": "probe_computeoffsetfromcursor",
-      "community": 16
+      "community": 15
     },
     {
       "label": "classifyBreakMismatch()",
@@ -4161,7 +4161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L350",
       "id": "probe_classifybreakmismatch",
-      "community": 16
+      "community": 15
     },
     {
       "label": "getFirstBreakMismatch()",
@@ -4169,7 +4169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L372",
       "id": "probe_getfirstbreakmismatch",
-      "community": 16
+      "community": 15
     },
     {
       "label": "init()",
@@ -4177,7 +4177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/probe.ts",
       "source_location": "L414",
       "id": "probe_init",
-      "community": 16
+      "community": 15
     },
     {
       "label": "gatsby.ts",
@@ -4369,7 +4369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts",
       "source_location": "L1",
       "id": "diagnostic_utils",
-      "community": 38
+      "community": 39
     },
     {
       "label": "getDiagnosticUnits()",
@@ -4377,7 +4377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts",
       "source_location": "L11",
       "id": "diagnostic_utils_getdiagnosticunits",
-      "community": 38
+      "community": 39
     },
     {
       "label": "getLineContent()",
@@ -4385,7 +4385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts",
       "source_location": "L33",
       "id": "diagnostic_utils_getlinecontent",
-      "community": 38
+      "community": 39
     },
     {
       "label": "formatBreakContext()",
@@ -4393,7 +4393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts",
       "source_location": "L41",
       "id": "diagnostic_utils_formatbreakcontext",
-      "community": 38
+      "community": 39
     },
     {
       "label": "measureCanvasTextWidth()",
@@ -4401,7 +4401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts",
       "source_location": "L47",
       "id": "diagnostic_utils_measurecanvastextwidth",
-      "community": 38
+      "community": 39
     },
     {
       "label": "measureDomTextWidth()",
@@ -4409,7 +4409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts",
       "source_location": "L56",
       "id": "diagnostic_utils_measuredomtextwidth",
-      "community": 38
+      "community": 39
     },
     {
       "label": "benchmark.ts",
@@ -4417,7 +4417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L1",
       "id": "benchmark",
-      "community": 23
+      "community": 24
     },
     {
       "label": "median()",
@@ -4425,7 +4425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L209",
       "id": "benchmark_median",
-      "community": 23
+      "community": 24
     },
     {
       "label": "bench()",
@@ -4433,7 +4433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L215",
       "id": "benchmark_bench",
-      "community": 23
+      "community": 24
     },
     {
       "label": "nextFrame()",
@@ -4441,7 +4441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L238",
       "id": "benchmark_nextframe",
-      "community": 23
+      "community": 24
     },
     {
       "label": "withRequestId()",
@@ -4449,7 +4449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L242",
       "id": "benchmark_withrequestid",
-      "community": 23
+      "community": 24
     },
     {
       "label": "publishNavigationReport()",
@@ -4457,7 +4457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L246",
       "id": "benchmark_publishnavigationreport",
-      "community": 23
+      "community": 24
     },
     {
       "label": "setReport()",
@@ -4465,7 +4465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L251",
       "id": "benchmark_setreport",
-      "community": 23
+      "community": 24
     },
     {
       "label": "buildCorpusBenchmarks()",
@@ -4473,7 +4473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L256",
       "id": "benchmark_buildcorpusbenchmarks",
-      "community": 23
+      "community": 24
     },
     {
       "label": "buildRichBenchmarks()",
@@ -4481,7 +4481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L312",
       "id": "benchmark_buildrichbenchmarks",
-      "community": 23
+      "community": 24
     },
     {
       "label": "renderBenchmarkTable()",
@@ -4489,7 +4489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L378",
       "id": "benchmark_renderbenchmarktable",
-      "community": 23
+      "community": 24
     },
     {
       "label": "run()",
@@ -4497,7 +4497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts",
       "source_location": "L400",
       "id": "benchmark_run",
-      "community": 23
+      "community": 24
     },
     {
       "label": "dynamic-layout.ts",
@@ -4761,7 +4761,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L1",
       "id": "rich_note",
-      "community": 19
+      "community": 20
     },
     {
       "label": "getRequiredDiv()",
@@ -4769,7 +4769,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L161",
       "id": "rich_note_getrequireddiv",
-      "community": 19
+      "community": 20
     },
     {
       "label": "getRequiredInput()",
@@ -4777,7 +4777,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L167",
       "id": "rich_note_getrequiredinput",
-      "community": 19
+      "community": 20
     },
     {
       "label": "getRequiredSpan()",
@@ -4785,7 +4785,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L173",
       "id": "rich_note_getrequiredspan",
-      "community": 19
+      "community": 20
     },
     {
       "label": "scheduleRender()",
@@ -4793,7 +4793,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L179",
       "id": "rich_note_schedulerender",
-      "community": 19
+      "community": 20
     },
     {
       "label": "measureSingleLineWidth()",
@@ -4801,7 +4801,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L187",
       "id": "rich_note_measuresinglelinewidth",
-      "community": 19
+      "community": 20
     },
     {
       "label": "measureCollapsedSpaceWidth()",
@@ -4809,7 +4809,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L195",
       "id": "rich_note_measurecollapsedspacewidth",
-      "community": 19
+      "community": 20
     },
     {
       "label": "prepareInlineItems()",
@@ -4817,7 +4817,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L206",
       "id": "rich_note_prepareinlineitems",
-      "community": 19
+      "community": 20
     },
     {
       "label": "cursorsMatch()",
@@ -4825,7 +4825,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L258",
       "id": "rich_note_cursorsmatch",
-      "community": 19
+      "community": 20
     },
     {
       "label": "layoutInlineItems()",
@@ -4833,7 +4833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L262",
       "id": "rich_note_layoutinlineitems",
-      "community": 19
+      "community": 20
     },
     {
       "label": "renderBody()",
@@ -4841,7 +4841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L365",
       "id": "rich_note_renderbody",
-      "community": 19
+      "community": 20
     },
     {
       "label": "render()",
@@ -4849,7 +4849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/rich-note.ts",
       "source_location": "L390",
       "id": "rich_note_render",
-      "community": 19
+      "community": 20
     },
     {
       "label": "bubbles-shared.ts",
@@ -4913,7 +4913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L1",
       "id": "accordion",
-      "community": 22
+      "community": 23
     },
     {
       "label": "getRequiredElement()",
@@ -4921,7 +4921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L81",
       "id": "accordion_getrequiredelement",
-      "community": 22
+      "community": 23
     },
     {
       "label": "getRequiredChild()",
@@ -4929,7 +4929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L87",
       "id": "accordion_getrequiredchild",
-      "community": 22
+      "community": 23
     },
     {
       "label": "getAccordionItemNodes()",
@@ -4937,7 +4937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L97",
       "id": "accordion_getaccordionitemnodes",
-      "community": 22
+      "community": 23
     },
     {
       "label": "initializeStaticContent()",
@@ -4945,7 +4945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L113",
       "id": "accordion_initializestaticcontent",
-      "community": 22
+      "community": 23
     },
     {
       "label": "parsePx()",
@@ -4953,7 +4953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L125",
       "id": "accordion_parsepx",
-      "community": 22
+      "community": 23
     },
     {
       "label": "getFontFromStyles()",
@@ -4961,7 +4961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L130",
       "id": "accordion_getfontfromstyles",
-      "community": 22
+      "community": 23
     },
     {
       "label": "refreshPrepared()",
@@ -4969,7 +4969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L136",
       "id": "accordion_refreshprepared",
-      "community": 22
+      "community": 23
     },
     {
       "label": "scheduleRender()",
@@ -4977,7 +4977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L142",
       "id": "accordion_schedulerender",
-      "community": 22
+      "community": 23
     },
     {
       "label": "boot()",
@@ -4985,7 +4985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L151",
       "id": "accordion_boot",
-      "community": 22
+      "community": 23
     },
     {
       "label": "render()",
@@ -4993,7 +4993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts",
       "source_location": "L184",
       "id": "accordion_render",
-      "community": 22
+      "community": 23
     },
     {
       "label": "svg.d.ts",
@@ -5009,7 +5009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L1",
       "id": "wrap_geometry",
-      "community": 24
+      "community": 21
     },
     {
       "label": "getWrapHull()",
@@ -5017,7 +5017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L28",
       "id": "wrap_geometry_getwraphull",
-      "community": 24
+      "community": 21
     },
     {
       "label": "transformWrapPoints()",
@@ -5025,7 +5025,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L37",
       "id": "wrap_geometry_transformwrappoints",
-      "community": 24
+      "community": 21
     },
     {
       "label": "isPointInPolygon()",
@@ -5033,7 +5033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L60",
       "id": "wrap_geometry_ispointinpolygon",
-      "community": 24
+      "community": 21
     },
     {
       "label": "getPolygonIntervalForBand()",
@@ -5041,7 +5041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L73",
       "id": "wrap_geometry_getpolygonintervalforband",
-      "community": 24
+      "community": 21
     },
     {
       "label": "getRectIntervalsForBand()",
@@ -5049,7 +5049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L102",
       "id": "wrap_geometry_getrectintervalsforband",
-      "community": 24
+      "community": 21
     },
     {
       "label": "carveTextLineSlots()",
@@ -5057,7 +5057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L136",
       "id": "wrap_geometry_carvetextlineslots",
-      "community": 24
+      "community": 21
     },
     {
       "label": "makeWrapHull()",
@@ -5065,7 +5065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L157",
       "id": "wrap_geometry_makewraphull",
-      "community": 24
+      "community": 21
     },
     {
       "label": "getPolygonXsAtY()",
@@ -5073,7 +5073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L285",
       "id": "wrap_geometry_getpolygonxsaty",
-      "community": 24
+      "community": 21
     },
     {
       "label": "cross()",
@@ -5081,7 +5081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L302",
       "id": "wrap_geometry_cross",
-      "community": 24
+      "community": 21
     },
     {
       "label": "makeConvexHull()",
@@ -5089,7 +5089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts",
       "source_location": "L306",
       "id": "wrap_geometry_makeconvexhull",
-      "community": 24
+      "community": 21
     },
     {
       "label": "justification-comparison.data.ts",
@@ -5105,7 +5105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L1",
       "id": "bubbles",
-      "community": 29
+      "community": 26
     },
     {
       "label": "getRequiredDiv()",
@@ -5113,7 +5113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L49",
       "id": "bubbles_getrequireddiv",
-      "community": 29
+      "community": 26
     },
     {
       "label": "getRequiredInput()",
@@ -5121,7 +5121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L55",
       "id": "bubbles_getrequiredinput",
-      "community": 29
+      "community": 26
     },
     {
       "label": "getRequiredSpan()",
@@ -5129,7 +5129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L61",
       "id": "bubbles_getrequiredspan",
-      "community": 29
+      "community": 26
     },
     {
       "label": "getInitialChatWidth()",
@@ -5137,7 +5137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L67",
       "id": "bubbles_getinitialchatwidth",
-      "community": 29
+      "community": 26
     },
     {
       "label": "getChatMessageNodes()",
@@ -5145,7 +5145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L74",
       "id": "bubbles_getchatmessagenodes",
-      "community": 29
+      "community": 26
     },
     {
       "label": "readNodeText()",
@@ -5153,7 +5153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L78",
       "id": "bubbles_readnodetext",
-      "community": 29
+      "community": 26
     },
     {
       "label": "scheduleRender()",
@@ -5161,7 +5161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L82",
       "id": "bubbles_schedulerender",
-      "community": 29
+      "community": 26
     },
     {
       "label": "render()",
@@ -5169,7 +5169,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L90",
       "id": "bubbles_render",
-      "community": 29
+      "community": 26
     },
     {
       "label": "updateBubbles()",
@@ -5177,7 +5177,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/bubbles.ts",
       "source_location": "L106",
       "id": "bubbles_updatebubbles",
-      "community": 29
+      "community": 26
     },
     {
       "label": "justification-comparison.ui.ts",
@@ -5185,7 +5185,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L1",
       "id": "justification_comparison_ui",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createDomCache()",
@@ -5193,7 +5193,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L43",
       "id": "justification_comparison_ui_createdomcache",
-      "community": 11
+      "community": 10
     },
     {
       "label": "renderFrame()",
@@ -5201,7 +5201,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L74",
       "id": "justification_comparison_ui_renderframe",
-      "community": 11
+      "community": 10
     },
     {
       "label": "syncCssRiverOverlay()",
@@ -5209,7 +5209,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L90",
       "id": "justification_comparison_ui_synccssriveroverlay",
-      "community": 11
+      "community": 10
     },
     {
       "label": "getHtmlElement()",
@@ -5217,7 +5217,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L152",
       "id": "justification_comparison_ui_gethtmlelement",
-      "community": 11
+      "community": 10
     },
     {
       "label": "getInputElement()",
@@ -5225,7 +5225,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L158",
       "id": "justification_comparison_ui_getinputelement",
-      "community": 11
+      "community": 10
     },
     {
       "label": "getCanvasElement()",
@@ -5233,7 +5233,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L164",
       "id": "justification_comparison_ui_getcanvaselement",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createCanvasSurface()",
@@ -5241,7 +5241,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L170",
       "id": "justification_comparison_ui_createcanvassurface",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createCssParagraphs()",
@@ -5249,7 +5249,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L177",
       "id": "justification_comparison_ui_createcssparagraphs",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createMetricPanel()",
@@ -5257,7 +5257,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L191",
       "id": "justification_comparison_ui_createmetricpanel",
-      "community": 11
+      "community": 10
     },
     {
       "label": "createMetricRow()",
@@ -5265,7 +5265,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L212",
       "id": "justification_comparison_ui_createmetricrow",
-      "community": 11
+      "community": 10
     },
     {
       "label": "applyControls()",
@@ -5273,7 +5273,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L226",
       "id": "justification_comparison_ui_applycontrols",
-      "community": 11
+      "community": 10
     },
     {
       "label": "applyColumnWidths()",
@@ -5281,7 +5281,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L232",
       "id": "justification_comparison_ui_applycolumnwidths",
-      "community": 11
+      "community": 10
     },
     {
       "label": "updateMetricPanel()",
@@ -5289,7 +5289,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L240",
       "id": "justification_comparison_ui_updatemetricpanel",
-      "community": 11
+      "community": 10
     },
     {
       "label": "qualityClass()",
@@ -5297,7 +5297,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L254",
       "id": "justification_comparison_ui_qualityclass",
-      "community": 11
+      "community": 10
     },
     {
       "label": "paintCanvasColumn()",
@@ -5305,7 +5305,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L260",
       "id": "justification_comparison_ui_paintcanvascolumn",
-      "community": 11
+      "community": 10
     },
     {
       "label": "setupCanvas()",
@@ -5313,7 +5313,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L290",
       "id": "justification_comparison_ui_setupcanvas",
-      "community": 11
+      "community": 10
     },
     {
       "label": "paintLine()",
@@ -5321,7 +5321,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L299",
       "id": "justification_comparison_ui_paintline",
-      "community": 11
+      "community": 10
     },
     {
       "label": "ensureRiverMarkCount()",
@@ -5329,7 +5329,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L343",
       "id": "justification_comparison_ui_ensurerivermarkcount",
-      "community": 11
+      "community": 10
     },
     {
       "label": "hideUnusedRiverMarks()",
@@ -5337,7 +5337,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L358",
       "id": "justification_comparison_ui_hideunusedrivermarks",
-      "community": 11
+      "community": 10
     },
     {
       "label": "toRgba()",
@@ -5345,7 +5345,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ui.ts",
       "source_location": "L364",
       "id": "justification_comparison_ui_torgba",
-      "community": 11
+      "community": 10
     },
     {
       "label": "dynamic-layout-text.ts",
@@ -5361,7 +5361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L1",
       "id": "editorial_engine",
-      "community": 10
+      "community": 11
     },
     {
       "label": "getRequiredDiv()",
@@ -5369,7 +5369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L143",
       "id": "editorial_engine_getrequireddiv",
-      "community": 10
+      "community": 11
     },
     {
       "label": "carveTextLineSlots()",
@@ -5377,7 +5377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L149",
       "id": "editorial_engine_carvetextlineslots",
-      "community": 10
+      "community": 11
     },
     {
       "label": "circleIntervalForBand()",
@@ -5385,7 +5385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L168",
       "id": "editorial_engine_circleintervalforband",
-      "community": 10
+      "community": 11
     },
     {
       "label": "createOrbEl()",
@@ -5393,7 +5393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L261",
       "id": "editorial_engine_createorbel",
-      "community": 10
+      "community": 11
     },
     {
       "label": "syncPool()",
@@ -5401,7 +5401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L338",
       "id": "editorial_engine_syncpool",
-      "community": 10
+      "community": 11
     },
     {
       "label": "fitHeadline()",
@@ -5409,7 +5409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L355",
       "id": "editorial_engine_fitheadline",
-      "community": 10
+      "community": 11
     },
     {
       "label": "layoutColumn()",
@@ -5417,7 +5417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L402",
       "id": "editorial_engine_layoutcolumn",
-      "community": 10
+      "community": 11
     },
     {
       "label": "hitTestOrbs()",
@@ -5425,7 +5425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L483",
       "id": "editorial_engine_hittestorbs",
-      "community": 10
+      "community": 11
     },
     {
       "label": "pointerSampleFromEvent()",
@@ -5433,7 +5433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L494",
       "id": "editorial_engine_pointersamplefromevent",
-      "community": 10
+      "community": 11
     },
     {
       "label": "isSelectableTextTarget()",
@@ -5441,7 +5441,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L498",
       "id": "editorial_engine_isselectabletexttarget",
-      "community": 10
+      "community": 11
     },
     {
       "label": "hasActiveTextSelection()",
@@ -5449,7 +5449,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L502",
       "id": "editorial_engine_hasactivetextselection",
-      "community": 10
+      "community": 11
     },
     {
       "label": "clearQueuedPointerEvents()",
@@ -5457,7 +5457,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L507",
       "id": "editorial_engine_clearqueuedpointerevents",
-      "community": 10
+      "community": 11
     },
     {
       "label": "positionedLinesEqual()",
@@ -5465,7 +5465,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L513",
       "id": "editorial_engine_positionedlinesequal",
-      "community": 10
+      "community": 11
     },
     {
       "label": "textProjectionEqual()",
@@ -5473,7 +5473,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L530",
       "id": "editorial_engine_textprojectionequal",
-      "community": 10
+      "community": 11
     },
     {
       "label": "projectTextProjection()",
@@ -5481,7 +5481,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L545",
       "id": "editorial_engine_projecttextprojection",
-      "community": 10
+      "community": 11
     },
     {
       "label": "enterTextSelectionMode()",
@@ -5489,7 +5489,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L592",
       "id": "editorial_engine_entertextselectionmode",
-      "community": 10
+      "community": 11
     },
     {
       "label": "syncSelectionState()",
@@ -5497,7 +5497,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L601",
       "id": "editorial_engine_syncselectionstate",
-      "community": 10
+      "community": 11
     },
     {
       "label": "isTextSelectionInteractionActive()",
@@ -5505,7 +5505,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L610",
       "id": "editorial_engine_istextselectioninteractionactive",
-      "community": 10
+      "community": 11
     },
     {
       "label": "scheduleRender()",
@@ -5513,7 +5513,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L615",
       "id": "editorial_engine_schedulerender",
-      "community": 10
+      "community": 11
     },
     {
       "label": "render()",
@@ -5521,7 +5521,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts",
       "source_location": "L675",
       "id": "editorial_engine_render",
-      "community": 10
+      "community": 11
     },
     {
       "label": "justification-comparison.ts",
@@ -5529,7 +5529,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L1",
       "id": "justification_comparison",
-      "community": 52
+      "community": 50
     },
     {
       "label": "scheduleRender()",
@@ -5537,7 +5537,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L45",
       "id": "justification_comparison_schedulerender",
-      "community": 52
+      "community": 50
     },
     {
       "label": "render()",
@@ -5545,7 +5545,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L53",
       "id": "justification_comparison_render",
-      "community": 52
+      "community": 50
     },
     {
       "label": "scheduleCssOverlaySync()",
@@ -5553,7 +5553,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.ts",
       "source_location": "L71",
       "id": "justification_comparison_schedulecssoverlaysync",
-      "community": 52
+      "community": 50
     },
     {
       "label": "justification-comparison.model.ts",
@@ -5833,7 +5833,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/masonry/index.ts",
       "source_location": "L1",
       "id": "index",
-      "community": 43
+      "community": 46
     },
     {
       "label": "computeLayout()",
@@ -5841,7 +5841,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/masonry/index.ts",
       "source_location": "L55",
       "id": "index_computelayout",
-      "community": 43
+      "community": 46
     },
     {
       "label": "getOrCreateCardNode()",
@@ -5849,7 +5849,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/masonry/index.ts",
       "source_location": "L101",
       "id": "index_getorcreatecardnode",
-      "community": 43
+      "community": 46
     },
     {
       "label": "scheduleRender()",
@@ -5857,7 +5857,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/masonry/index.ts",
       "source_location": "L118",
       "id": "index_schedulerender",
-      "community": 43
+      "community": 46
     },
     {
       "label": "render()",
@@ -5865,7 +5865,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/masonry/index.ts",
       "source_location": "L126",
       "id": "index_render",
-      "community": 43
+      "community": 46
     },
     {
       "label": "bidi.ts",
@@ -5873,7 +5873,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/bidi.ts",
       "source_location": "L1",
       "id": "bidi",
-      "community": 50
+      "community": 51
     },
     {
       "label": "classifyChar()",
@@ -5881,7 +5881,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/bidi.ts",
       "source_location": "L57",
       "id": "bidi_classifychar",
-      "community": 50
+      "community": 51
     },
     {
       "label": "computeBidiLevels()",
@@ -5889,7 +5889,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/bidi.ts",
       "source_location": "L65",
       "id": "bidi_computebidilevels",
-      "community": 50
+      "community": 51
     },
     {
       "label": "computeSegmentLevels()",
@@ -5897,7 +5897,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/bidi.ts",
       "source_location": "L164",
       "id": "bidi_computesegmentlevels",
-      "community": 50
+      "community": 51
     },
     {
       "label": "text-modules.d.ts",
@@ -5913,7 +5913,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L1",
       "id": "line_break",
-      "community": 15
+      "community": 16
     },
     {
       "label": "canBreakAfter()",
@@ -5921,7 +5921,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L34",
       "id": "line_break_canbreakafter",
-      "community": 15
+      "community": 16
     },
     {
       "label": "isSimpleCollapsibleSpace()",
@@ -5929,7 +5929,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L44",
       "id": "line_break_issimplecollapsiblespace",
-      "community": 15
+      "community": 16
     },
     {
       "label": "getTabAdvance()",
@@ -5937,7 +5937,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L48",
       "id": "line_break_gettabadvance",
-      "community": 15
+      "community": 16
     },
     {
       "label": "getBreakableAdvance()",
@@ -5945,7 +5945,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L56",
       "id": "line_break_getbreakableadvance",
-      "community": 15
+      "community": 16
     },
     {
       "label": "fitSoftHyphenBreak()",
@@ -5953,7 +5953,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L68",
       "id": "line_break_fitsofthyphenbreak",
-      "community": 15
+      "community": 16
     },
     {
       "label": "findChunkIndexForStart()",
@@ -5961,7 +5961,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L94",
       "id": "line_break_findchunkindexforstart",
-      "community": 15
+      "community": 16
     },
     {
       "label": "normalizeLineStart()",
@@ -5969,7 +5969,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L102",
       "id": "line_break_normalizelinestart",
-      "community": 15
+      "community": 16
     },
     {
       "label": "countPreparedLines()",
@@ -5977,7 +5977,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L133",
       "id": "line_break_countpreparedlines",
-      "community": 15
+      "community": 16
     },
     {
       "label": "countPreparedLinesSimple()",
@@ -5985,7 +5985,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L140",
       "id": "line_break_countpreparedlinessimple",
-      "community": 15
+      "community": 16
     },
     {
       "label": "walkPreparedLinesSimple()",
@@ -5993,7 +5993,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L204",
       "id": "line_break_walkpreparedlinessimple",
-      "community": 15
+      "community": 16
     },
     {
       "label": "walkPreparedLines()",
@@ -6001,7 +6001,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L368",
       "id": "line_break_walkpreparedlines",
-      "community": 15
+      "community": 16
     },
     {
       "label": "layoutNextLineRange()",
@@ -6009,7 +6009,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L657",
       "id": "line_break_layoutnextlinerange",
-      "community": 15
+      "community": 16
     },
     {
       "label": "layoutNextLineRangeSimple()",
@@ -6017,7 +6017,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts",
       "source_location": "L915",
       "id": "line_break_layoutnextlinerangesimple",
-      "community": 15
+      "community": 16
     },
     {
       "label": "test-data.ts",
@@ -6033,7 +6033,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L1",
       "id": "measurement",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getMeasureContext()",
@@ -6041,7 +6041,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L27",
       "id": "measurement_getmeasurecontext",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getSegmentMetricCache()",
@@ -6049,7 +6049,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L43",
       "id": "measurement_getsegmentmetriccache",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getSegmentMetrics()",
@@ -6057,7 +6057,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L52",
       "id": "measurement_getsegmentmetrics",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getEngineProfile()",
@@ -6065,7 +6065,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L65",
       "id": "measurement_getengineprofile",
-      "community": 14
+      "community": 13
     },
     {
       "label": "parseFontSize()",
@@ -6073,7 +6073,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L103",
       "id": "measurement_parsefontsize",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getSharedGraphemeSegmenter()",
@@ -6081,7 +6081,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L108",
       "id": "measurement_getsharedgraphemesegmenter",
-      "community": 14
+      "community": 13
     },
     {
       "label": "isEmojiGrapheme()",
@@ -6089,7 +6089,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L115",
       "id": "measurement_isemojigrapheme",
-      "community": 14
+      "community": 13
     },
     {
       "label": "textMayContainEmoji()",
@@ -6097,7 +6097,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L119",
       "id": "measurement_textmaycontainemoji",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getEmojiCorrection()",
@@ -6105,7 +6105,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L123",
       "id": "measurement_getemojicorrection",
-      "community": 14
+      "community": 13
     },
     {
       "label": "countEmojiGraphemes()",
@@ -6113,7 +6113,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L153",
       "id": "measurement_countemojigraphemes",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getEmojiCount()",
@@ -6121,7 +6121,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L162",
       "id": "measurement_getemojicount",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getCorrectedSegmentWidth()",
@@ -6129,7 +6129,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L169",
       "id": "measurement_getcorrectedsegmentwidth",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getSegmentGraphemeWidths()",
@@ -6137,7 +6137,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L174",
       "id": "measurement_getsegmentgraphemewidths",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getSegmentGraphemePrefixWidths()",
@@ -6145,7 +6145,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L193",
       "id": "measurement_getsegmentgraphemeprefixwidths",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getFontMeasurementState()",
@@ -6153,7 +6153,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L214",
       "id": "measurement_getfontmeasurementstate",
-      "community": 14
+      "community": 13
     },
     {
       "label": "clearMeasurementCaches()",
@@ -6161,7 +6161,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts",
       "source_location": "L227",
       "id": "measurement_clearmeasurementcaches",
-      "community": 14
+      "community": 13
     },
     {
       "label": "getSharedGraphemeSegmenter()",
@@ -6361,7 +6361,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L1",
       "id": "layout_test",
-      "community": 28
+      "community": 27
     },
     {
       "label": "parseFontSize()",
@@ -6369,7 +6369,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L28",
       "id": "layout_test_parsefontsize",
-      "community": 28
+      "community": 27
     },
     {
       "label": "isWideCharacter()",
@@ -6377,7 +6377,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L33",
       "id": "layout_test_iswidecharacter",
-      "community": 28
+      "community": 27
     },
     {
       "label": "measureWidth()",
@@ -6385,7 +6385,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L54",
       "id": "layout_test_measurewidth",
-      "community": 28
+      "community": 27
     },
     {
       "label": "nextTabAdvance()",
@@ -6393,7 +6393,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L77",
       "id": "layout_test_nexttabadvance",
-      "community": 28
+      "community": 27
     },
     {
       "label": "TestCanvasRenderingContext2D",
@@ -6401,7 +6401,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L83",
       "id": "layout_test_testcanvasrenderingcontext2d",
-      "community": 28
+      "community": 27
     },
     {
       "label": ".measureText()",
@@ -6409,7 +6409,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L86",
       "id": "layout_test_testcanvasrenderingcontext2d_measuretext",
-      "community": 28
+      "community": 27
     },
     {
       "label": "TestOffscreenCanvas",
@@ -6417,7 +6417,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L91",
       "id": "layout_test_testoffscreencanvas",
-      "community": 28
+      "community": 27
     },
     {
       "label": ".constructor()",
@@ -6425,7 +6425,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L92",
       "id": "layout_test_testoffscreencanvas_constructor",
-      "community": 28
+      "community": 27
     },
     {
       "label": ".getContext()",
@@ -6433,7 +6433,7 @@
       "source_file": "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts",
       "source_location": "L94",
       "id": "layout_test_testoffscreencanvas_getcontext",
-      "community": 28
+      "community": 27
     },
     {
       "label": "analysis.ts",

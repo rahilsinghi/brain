@@ -2,7 +2,7 @@
 title: "graphify_cli.py"
 source_file: "/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py"
 repo: "brain"
-community: 12
+community: 10
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/scripts/graphify/graphify_cli.py`
-**Community:** 12
+**Community:** 10
 
 ## Imports
 - (none)

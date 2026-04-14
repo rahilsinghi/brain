@@ -1,16 +1,18 @@
 ---
-status: pending
+status: processed
 source_type: graphify-community
 repo: portfolio
 community_id: 0
-ingested_at: "2026-04-13T18:25:04.301Z"
-parsed_at: "2026-04-13T18:25:04.301Z"
-compiled_to: null
-processed_at: null
+ingested_at: 2026-04-13T18:25:04.301Z
+parsed_at: 2026-04-13T18:25:04.301Z
+compiled_to: "[[Dynamic Portfolio UI and Data]]"
+processed_at: 2026-04-13T19:03:52.156Z
 retry_count: 0
 last_error: null
 compile_progress: null
 ---
+
+
 
 # portfolio — Community 0
 

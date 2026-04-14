@@ -2,7 +2,7 @@
 title: "queue.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts"
 repo: "brain"
-community: 56
+community: 15
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,12 +12,14 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/compiler/queue.ts`
-**Community:** 56
+**Community:** 15
 
 ## Imports
 - (none)
 
 ## Contains
+- `checkSentinelCompletion()`
+- `triggerGraphRebuild()`
 - `collectRawFiles()`
 - `processQueue()`
 

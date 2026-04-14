@@ -2,7 +2,7 @@
 title: "transcribe.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts"
 repo: "brain"
-community: 4
+community: 6
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/voice/transcribe.ts`
-**Community:** 4
+**Community:** 6
 
 ## Imports
 - (none)

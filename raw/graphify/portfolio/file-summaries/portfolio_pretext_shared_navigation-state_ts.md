@@ -2,7 +2,7 @@
 title: "navigation-state.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts"
 repo: "portfolio"
-community: 35
+community: 36
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/shared/navigation-state.ts`
-**Community:** 35
+**Community:** 36
 
 ## Imports
 - (none)

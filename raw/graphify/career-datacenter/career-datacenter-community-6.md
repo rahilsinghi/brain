@@ -1,0 +1,243 @@
+---
+status: processed
+source_type: graphify-community
+repo: career-datacenter
+community_id: 6
+ingested_at: 2026-04-13T22:29:48.749Z
+parsed_at: 2026-04-13T22:29:48.749Z
+compiled_to: "[[Automated Contact Discovery and Outreach]]"
+processed_at: 2026-04-13T22:32:39.655Z
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+
+
+# career-datacenter — Community 6
+
+## Files in this cluster
+
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 36 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 11 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 10 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/apollo_browser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/contact_finder.py` — 1 connection
+
+## Internal relationships
+
+- `contact_finder` → `contact_finder_contact` (contains)
+- `contact_finder` → `contact_finder_get_company_info` (contains)
+- `contact_finder` → `contact_finder_infer_email_pattern` (contains)
+- `contact_finder` → `contact_finder_generate_linkedin_search_queries` (contains)
+- `contact_finder` → `contact_finder_add_contact_manual` (contains)
+- `contact_finder` → `contact_finder_save_contacts` (contains)
+- `contact_finder` → `contact_finder_get_contacts_for_company` (contains)
+- `contact_finder` → `contact_finder_show_linkedin_search_guide` (contains)
+- `contact_finder` → `contact_finder_main` (contains)
+- `contact_finder_contact` → `contact_finder_contact_to_dict` (method)
+- `contact_finder_contact` → `contact_finder_add_contact_manual` (calls)
+- `contact_finder_contact` → `contact_finder_get_contacts_for_company` (calls)
+- `contact_finder_contact` → `contact_finder_main` (calls)
+- `contact_finder_contact` → `contact_finder_rationale_25` (rationale_for)
+- `contact_finder_contact` → `apollo_browser_apollobrowseragent` (uses)
+- `contact_finder_contact_to_dict` → `contact_finder_save_contacts` (calls)
+- `contact_finder_get_company_info` → `contact_finder_add_contact_manual` (calls)
+- `contact_finder_get_company_info` → `contact_finder_show_linkedin_search_guide` (calls)
+- `contact_finder_get_company_info` → `contact_finder_main` (calls)
+- `contact_finder_get_company_info` → `contact_finder_rationale_45` (rationale_for)
+- `contact_finder_infer_email_pattern` → `contact_finder_add_contact_manual` (calls)
+- `contact_finder_infer_email_pattern` → `contact_finder_rationale_61` (rationale_for)
+- `contact_finder_generate_linkedin_search_queries` → `contact_finder_show_linkedin_search_guide` (calls)
+- `contact_finder_generate_linkedin_search_queries` → `contact_finder_rationale_84` (rationale_for)
+- `contact_finder_add_contact_manual` → `contact_finder_main` (calls)
+- `contact_finder_add_contact_manual` → `contact_finder_rationale_133` (rationale_for)
+- `contact_finder_save_contacts` → `contact_finder_main` (calls)
+- `contact_finder_save_contacts` → `contact_finder_rationale_199` (rationale_for)
+- `contact_finder_get_contacts_for_company` → `contact_finder_main` (calls)
+- `contact_finder_get_contacts_for_company` → `contact_finder_rationale_224` (rationale_for)
+- `contact_finder_show_linkedin_search_guide` → `contact_finder_main` (calls)
+- `contact_finder_show_linkedin_search_guide` → `contact_finder_rationale_256` (rationale_for)
+- `contact_finder_rationale_25` → `apollo_browser_apollobrowseragent` (uses)
+- `contact_finder_rationale_45` → `apollo_browser_apollobrowseragent` (uses)
+- `contact_finder_rationale_61` → `apollo_browser_apollobrowseragent` (uses)
+- `contact_finder_rationale_84` → `apollo_browser_apollobrowseragent` (uses)
+- `contact_finder_rationale_133` → `apollo_browser_apollobrowseragent` (uses)
+- `contact_finder_rationale_224` → `apollo_browser_apollobrowseragent` (uses)
+- `contact_finder_rationale_256` → `apollo_browser_apollobrowseragent` (uses)
+- `apollo_browser` → `apollo_browser_apollocontact` (contains)
+- `apollo_browser` → `apollo_browser_apollobrowseragent` (contains)
+- `apollo_browser` → `apollo_browser_main` (contains)
+- `apollo_browser_apollocontact` → `apollo_browser_apollobrowseragent_reveal_and_extract_email` (calls)
+- `apollo_browser_apollocontact` → `apollo_browser_apollobrowseragent_extract_from_profile_page` (calls)
+- `apollo_browser_apollocontact` → `apollo_browser_apollobrowseragent_reveal_and_extract_contact` (calls)
+- `apollo_browser_apollocontact` → `apollo_browser_rationale_34` (rationale_for)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_init` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_launch_browser` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_check_if_logged_in` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_save_session` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_setup_session` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_search_contacts` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_navigate_to_company` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_click_people_tab` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_scrape_people_list` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_select_best_contacts_with_llm` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_reveal_and_extract_email` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_search_and_extract_from_dropdown` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_apply_company_filter` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_apply_title_filters` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_extract_from_profile_page` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_reveal_email_on_profile` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_extract_contacts` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_reveal_and_extract_contact` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_extract_text_from_element` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_get_credits_remaining` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_update_credits` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_close` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_enter` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_apollobrowseragent_exit` (method)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_main` (calls)
+- `apollo_browser_apollobrowseragent` → `apollo_browser_rationale_45` (rationale_for)
+- `apollo_browser_apollobrowseragent_init` → `apollo_browser_rationale_81` (rationale_for)
+- `apollo_browser_apollobrowseragent_launch_browser` → `apollo_browser_apollobrowseragent_setup_session` (calls)
+- `apollo_browser_apollobrowseragent_launch_browser` → `apollo_browser_apollobrowseragent_search_contacts` (calls)
+- `apollo_browser_apollobrowseragent_launch_browser` → `apollo_browser_main` (calls)
+- `apollo_browser_apollobrowseragent_launch_browser` → `apollo_browser_rationale_98` (rationale_for)
+- `apollo_browser_apollobrowseragent_check_if_logged_in` → `apollo_browser_apollobrowseragent_setup_session` (calls)
+- `apollo_browser_apollobrowseragent_check_if_logged_in` → `apollo_browser_rationale_170` (rationale_for)
+- `apollo_browser_apollobrowseragent_save_session` → `apollo_browser_apollobrowseragent_setup_session` (calls)
+- `apollo_browser_apollobrowseragent_save_session` → `apollo_browser_rationale_228` (rationale_for)
+- `apollo_browser_apollobrowseragent_setup_session` → `apollo_browser_apollobrowseragent_close` (calls)
+- `apollo_browser_apollobrowseragent_setup_session` → `apollo_browser_main` (calls)
+- `apollo_browser_apollobrowseragent_setup_session` → `apollo_browser_rationale_244` (rationale_for)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_apollobrowseragent_navigate_to_company` (calls)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_apollobrowseragent_click_people_tab` (calls)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_apollobrowseragent_scrape_people_list` (calls)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_apollobrowseragent_select_best_contacts_with_llm` (calls)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_apollobrowseragent_reveal_and_extract_email` (calls)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_apollobrowseragent_update_credits` (calls)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_main` (calls)
+- `apollo_browser_apollobrowseragent_search_contacts` → `apollo_browser_rationale_291` (rationale_for)
+- `apollo_browser_apollobrowseragent_navigate_to_company` → `apollo_browser_rationale_371` (rationale_for)
+- `apollo_browser_apollobrowseragent_click_people_tab` → `apollo_browser_rationale_426` (rationale_for)
+- `apollo_browser_apollobrowseragent_scrape_people_list` → `apollo_browser_rationale_463` (rationale_for)
+- `apollo_browser_apollobrowseragent_select_best_contacts_with_llm` → `apollo_browser_rationale_512` (rationale_for)
+- `apollo_browser_apollobrowseragent_reveal_and_extract_email` → `apollo_browser_rationale_580` (rationale_for)
+- `apollo_browser_apollobrowseragent_search_and_extract_from_dropdown` → `apollo_browser_apollobrowseragent_extract_from_profile_page` (calls)
+- `apollo_browser_apollobrowseragent_search_and_extract_from_dropdown` → `apollo_browser_rationale_637` (rationale_for)
+- `apollo_browser_apollobrowseragent_apply_company_filter` → `apollo_browser_rationale_700` (rationale_for)
+- `apollo_browser_apollobrowseragent_apply_title_filters` → `apollo_browser_rationale_793` (rationale_for)
+- `apollo_browser_apollobrowseragent_extract_from_profile_page` → `apollo_browser_apollobrowseragent_reveal_email_on_profile` (calls)
+- `apollo_browser_apollobrowseragent_extract_from_profile_page` → `apollo_browser_rationale_848` (rationale_for)
+- `apollo_browser_apollobrowseragent_reveal_email_on_profile` → `apollo_browser_rationale_915` (rationale_for)
+- `apollo_browser_apollobrowseragent_extract_contacts` → `apollo_browser_apollobrowseragent_reveal_and_extract_contact` (calls)
+- `apollo_browser_apollobrowseragent_extract_contacts` → `apollo_browser_rationale_960` (rationale_for)
+- `apollo_browser_apollobrowseragent_reveal_and_extract_contact` → `apollo_browser_apollobrowseragent_extract_text_from_element` (calls)
+- `apollo_browser_apollobrowseragent_reveal_and_extract_contact` → `apollo_browser_rationale_1015` (rationale_for)
+- `apollo_browser_apollobrowseragent_extract_text_from_element` → `apollo_browser_rationale_1089` (rationale_for)
+- `apollo_browser_apollobrowseragent_get_credits_remaining` → `apollo_browser_main` (calls)
+- `apollo_browser_apollobrowseragent_get_credits_remaining` → `apollo_browser_rationale_1111` (rationale_for)
+- `apollo_browser_apollobrowseragent_update_credits` → `apollo_browser_rationale_1126` (rationale_for)
+- `apollo_browser_apollobrowseragent_close` → `apollo_browser_apollobrowseragent_exit` (calls)
+- `apollo_browser_apollobrowseragent_close` → `apollo_browser_main` (calls)
+- `apollo_browser_apollobrowseragent_close` → `apollo_browser_rationale_1168` (rationale_for)
+- `apollo_browser_apollobrowseragent_enter` → `apollo_browser_rationale_1185` (rationale_for)
+
+## External dependencies
+
+- `contact_finder` → `hospitality_outreach` (imports) [community 7]
+- `contact_finder` → `email_generator` (imports_from) [community 7]
+- `llm_client_llmclient` → `apollo_browser_apollocontact` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_apollobrowseragent` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_34` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_45` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_81` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_98` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_170` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_228` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_244` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_291` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_371` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_426` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_463` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_512` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_580` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_637` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_700` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_793` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_848` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_915` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_960` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_1015` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_1089` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_1111` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_1126` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_1168` (uses) [community 2]
+- `llm_client_llmclient` → `apollo_browser_rationale_1185` (uses) [community 2]

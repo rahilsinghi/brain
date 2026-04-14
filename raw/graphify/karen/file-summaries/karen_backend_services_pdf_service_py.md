@@ -2,7 +2,7 @@
 title: "pdf_service.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/pdf_service.py"
 repo: "karen"
-community: 42
+community: 43
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/pdf_service.py`
-**Community:** 42
+**Community:** 43
 
 ## Imports
 - (none)

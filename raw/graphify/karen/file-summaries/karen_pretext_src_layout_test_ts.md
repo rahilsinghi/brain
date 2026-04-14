@@ -2,7 +2,7 @@
 title: "layout.test.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts"
 repo: "karen"
-community: 28
+community: 27
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/src/layout.test.ts`
-**Community:** 28
+**Community:** 27
 
 ## Imports
 - (none)

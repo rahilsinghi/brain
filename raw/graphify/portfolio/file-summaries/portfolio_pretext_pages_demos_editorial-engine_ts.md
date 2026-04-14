@@ -2,7 +2,7 @@
 title: "editorial-engine.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts"
 repo: "portfolio"
-community: 10
+community: 11
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/editorial-engine.ts`
-**Community:** 10
+**Community:** 11
 
 ## Imports
 - (none)

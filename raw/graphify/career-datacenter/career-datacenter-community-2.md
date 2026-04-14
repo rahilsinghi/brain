@@ -1,0 +1,630 @@
+---
+status: processed
+source_type: graphify-community
+repo: career-datacenter
+community_id: 2
+ingested_at: 2026-04-13T22:29:48.747Z
+parsed_at: 2026-04-13T22:29:48.747Z
+compiled_to: "[[Intelligent Job Application Toolkit]]"
+processed_at: 2026-04-13T22:32:17.610Z
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+
+
+# career-datacenter — Community 2
+
+## Files in this cluster
+
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 96 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 65 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 59 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 39 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 35 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 28 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 14 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 13 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 10 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/generate_application.py` — 10 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/rescore_jobs.py` — 10 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 9 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 9 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_variants.py` — 9 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 8 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/generate_application.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/rescore_jobs.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 7 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/application_runner.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 6 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_variants.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_variants.py` — 5 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/rescore_jobs.py` — 4 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_variants.py` — 4 connections
+- `` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/cover_letter_generator.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/fit_scorer.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/generate_application.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/generate_application.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_variants.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_variants.py` — 3 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/generate_application.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/jd_parser.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/rescore_jobs.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/rescore_jobs.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/rescore_jobs.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_generator.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/resume_variants.py` — 2 connections
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/knowledge_base_loader.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/latex_utils.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+- `/Users/rahilsinghi/Desktop/career-datacenter/cli/llm_client.py` — 1 connection
+
+## Internal relationships
+
+- `fit_scorer` → `llm_client` (imports_from)
+- `fit_scorer` → `knowledge_base_loader` (imports_from)
+- `fit_scorer` → `jd_parser` (imports_from)
+- `fit_scorer` → `fit_scorer_fitanalysis` (contains)
+- `fit_scorer` → `fit_scorer_fitscorer` (contains)
+- `fit_scorer` → `fit_scorer_rationale_1` (rationale_for)
+- `fit_scorer` → `cover_letter_generator` (imports_from)
+- `fit_scorer` → `resume_generator` (imports_from)
+- `fit_scorer` → `resume_variants` (imports_from)
+- `fit_scorer` → `application_runner` (imports_from)
+- `fit_scorer` → `generate_application` (imports_from)
+- `fit_scorer` → `rescore_jobs` (imports_from)
+- `fit_scorer_fitanalysis` → `basemodel` (inherits)
+- `fit_scorer_fitanalysis` → `fit_scorer_fitscorer_score` (calls)
+- `fit_scorer_fitanalysis` → `fit_scorer_rationale_31` (rationale_for)
+- `fit_scorer_fitanalysis` → `llm_client_llmclient` (uses)
+- `fit_scorer_fitanalysis` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_fitanalysis` → `jd_parser_jdparser` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_coverlettergenerator` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_1` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_45` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_54` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_74` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_83` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_94` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_163` (uses)
+- `fit_scorer_fitanalysis` → `cover_letter_generator_rationale_189` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_1` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_27` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_54` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_65` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_73` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_104` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_115` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_203` (uses)
+- `fit_scorer_fitanalysis` → `resume_generator_rationale_233` (uses)
+- `basemodel` → `jd_parser_parsedjobdescription` (inherits)
+- `fit_scorer_fitscorer` → `fit_scorer_fitscorer_init` (method)
+- `fit_scorer_fitscorer` → `fit_scorer_fitscorer_load_prompt_config` (method)
+- `fit_scorer_fitscorer` → `fit_scorer_fitscorer_score` (method)
+- `fit_scorer_fitscorer` → `fit_scorer_fitscorer_get_recommendation_emoji` (method)
+- `fit_scorer_fitscorer` → `fit_scorer_fitscorer_print_analysis` (method)
+- `fit_scorer_fitscorer` → `fit_scorer_rationale_43` (rationale_for)
+- `fit_scorer_fitscorer` → `llm_client_llmclient` (uses)
+- `fit_scorer_fitscorer` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_fitscorer` → `jd_parser_jdparser` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_coverlettergenerator` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_1` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_45` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_54` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_74` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_83` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_94` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_163` (uses)
+- `fit_scorer_fitscorer` → `cover_letter_generator_rationale_189` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_1` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_27` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_54` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_65` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_73` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_104` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_115` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_203` (uses)
+- `fit_scorer_fitscorer` → `resume_generator_rationale_233` (uses)
+- `fit_scorer_fitscorer` → `resume_variants_rationale_86` (uses)
+- `fit_scorer_fitscorer` → `resume_variants_rationale_159` (uses)
+- `fit_scorer_fitscorer` → `application_runner_rationale_49` (uses)
+- `fit_scorer_fitscorer` → `application_runner_rationale_72` (uses)
+- `fit_scorer_fitscorer` → `application_runner_rationale_91` (uses)
+- `fit_scorer_fitscorer` → `application_runner_rationale_100` (uses)
+- `fit_scorer_fitscorer` → `application_runner_rationale_108` (uses)
+- `fit_scorer_fitscorer` → `application_runner_rationale_137` (uses)
+- `fit_scorer_fitscorer` → `application_runner_rationale_197` (uses)
+- `fit_scorer_fitscorer` → `generate_application_rationale_50` (uses)
+- `fit_scorer_fitscorer` → `rescore_jobs_rationale_1` (uses)
+- `fit_scorer_fitscorer_init` → `fit_scorer_fitscorer_load_prompt_config` (calls)
+- `fit_scorer_fitscorer_init` → `fit_scorer_rationale_51` (rationale_for)
+- `fit_scorer_fitscorer_load_prompt_config` → `fit_scorer_rationale_68` (rationale_for)
+- `fit_scorer_fitscorer_score` → `fit_scorer_rationale_77` (rationale_for)
+- `fit_scorer_fitscorer_get_recommendation_emoji` → `fit_scorer_fitscorer_print_analysis` (calls)
+- `fit_scorer_fitscorer_get_recommendation_emoji` → `fit_scorer_rationale_135` (rationale_for)
+- `fit_scorer_fitscorer_print_analysis` → `fit_scorer_rationale_145` (rationale_for)
+- `fit_scorer_rationale_1` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_1` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_1` → `jd_parser_jdparser` (uses)
+- `fit_scorer_rationale_31` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_31` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_31` → `jd_parser_jdparser` (uses)
+- `fit_scorer_rationale_43` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_43` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_43` → `jd_parser_jdparser` (uses)
+- `fit_scorer_rationale_51` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_51` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_51` → `jd_parser_jdparser` (uses)
+- `fit_scorer_rationale_68` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_68` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_68` → `jd_parser_jdparser` (uses)
+- `fit_scorer_rationale_77` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_77` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_77` → `jd_parser_jdparser` (uses)
+- `fit_scorer_rationale_135` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_135` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_135` → `jd_parser_jdparser` (uses)
+- `fit_scorer_rationale_145` → `llm_client_llmclient` (uses)
+- `fit_scorer_rationale_145` → `jd_parser_parsedjobdescription` (uses)
+- `fit_scorer_rationale_145` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator` → `llm_client` (imports_from)
+- `cover_letter_generator` → `knowledge_base_loader` (imports_from)
+- `cover_letter_generator` → `jd_parser` (imports_from)
+- `cover_letter_generator` → `cover_letter_generator_coverlettergenerator` (contains)
+- `cover_letter_generator` → `cover_letter_generator_rationale_1` (rationale_for)
+- `cover_letter_generator` → `application_runner` (imports_from)
+- `cover_letter_generator` → `generate_application` (imports_from)
+- `cover_letter_generator_coverlettergenerator` → `cover_letter_generator_coverlettergenerator_init` (method)
+- `cover_letter_generator_coverlettergenerator` → `cover_letter_generator_coverlettergenerator_load_style_from_config` (method)
+- `cover_letter_generator_coverlettergenerator` → `cover_letter_generator_coverlettergenerator_load_prompt_config` (method)
+- `cover_letter_generator_coverlettergenerator` → `cover_letter_generator_coverlettergenerator_generate` (method)
+- `cover_letter_generator_coverlettergenerator` → `cover_letter_generator_coverlettergenerator_select_relevant_stories` (method)
+- `cover_letter_generator_coverlettergenerator` → `cover_letter_generator_coverlettergenerator_format_star_stories` (method)
+- `cover_letter_generator_coverlettergenerator` → `cover_letter_generator_rationale_45` (rationale_for)
+- `cover_letter_generator_coverlettergenerator` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_coverlettergenerator` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_coverlettergenerator` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_coverlettergenerator` → `application_runner_rationale_49` (uses)
+- `cover_letter_generator_coverlettergenerator` → `application_runner_rationale_72` (uses)
+- `cover_letter_generator_coverlettergenerator` → `application_runner_rationale_91` (uses)
+- `cover_letter_generator_coverlettergenerator` → `application_runner_rationale_100` (uses)
+- `cover_letter_generator_coverlettergenerator` → `application_runner_rationale_108` (uses)
+- `cover_letter_generator_coverlettergenerator` → `application_runner_rationale_137` (uses)
+- `cover_letter_generator_coverlettergenerator` → `application_runner_rationale_197` (uses)
+- `cover_letter_generator_coverlettergenerator` → `generate_application_rationale_50` (uses)
+- `cover_letter_generator_coverlettergenerator_init` → `cover_letter_generator_coverlettergenerator_load_style_from_config` (calls)
+- `cover_letter_generator_coverlettergenerator_init` → `cover_letter_generator_coverlettergenerator_load_prompt_config` (calls)
+- `cover_letter_generator_coverlettergenerator_init` → `cover_letter_generator_rationale_54` (rationale_for)
+- `cover_letter_generator_coverlettergenerator_load_style_from_config` → `cover_letter_generator_rationale_74` (rationale_for)
+- `cover_letter_generator_coverlettergenerator_load_prompt_config` → `cover_letter_generator_rationale_83` (rationale_for)
+- `cover_letter_generator_coverlettergenerator_generate` → `cover_letter_generator_coverlettergenerator_select_relevant_stories` (calls)
+- `cover_letter_generator_coverlettergenerator_generate` → `cover_letter_generator_coverlettergenerator_format_star_stories` (calls)
+- `cover_letter_generator_coverlettergenerator_generate` → `cover_letter_generator_rationale_94` (rationale_for)
+- `cover_letter_generator_coverlettergenerator_select_relevant_stories` → `cover_letter_generator_rationale_163` (rationale_for)
+- `cover_letter_generator_coverlettergenerator_format_star_stories` → `cover_letter_generator_rationale_189` (rationale_for)
+- `cover_letter_generator_rationale_1` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_1` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_1` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_rationale_45` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_45` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_45` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_rationale_54` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_54` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_54` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_rationale_74` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_74` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_74` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_rationale_83` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_83` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_83` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_rationale_94` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_94` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_94` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_rationale_163` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_163` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_163` → `jd_parser_jdparser` (uses)
+- `cover_letter_generator_rationale_189` → `llm_client_llmclient` (uses)
+- `cover_letter_generator_rationale_189` → `jd_parser_parsedjobdescription` (uses)
+- `cover_letter_generator_rationale_189` → `jd_parser_jdparser` (uses)
+- `latex_utils` → `latex_utils_compile_latex_to_pdf` (contains)
+- `latex_utils` → `latex_utils_check_latex_installed` (contains)
+- `latex_utils` → `latex_utils_markdown_to_pdf` (contains)
+- `latex_utils` → `latex_utils_rationale_1` (rationale_for)
+- `latex_utils` → `resume_variants` (imports_from)
+- `latex_utils` → `application_runner` (imports_from)
+- `latex_utils` → `generate_application` (imports_from)
+- `latex_utils_compile_latex_to_pdf` → `latex_utils_rationale_26` (rationale_for)
+- `latex_utils_check_latex_installed` → `latex_utils_rationale_97` (rationale_for)
+- `latex_utils_markdown_to_pdf` → `latex_utils_rationale_118` (rationale_for)
+- `resume_generator` → `llm_client` (imports_from)
+- `resume_generator` → `knowledge_base_loader` (imports_from)
+- `resume_generator` → `jd_parser` (imports_from)
+- `resume_generator` → `resume_generator_escape_latex` (contains)
+- `resume_generator` → `resume_generator_rationale_1` (rationale_for)
+- `resume_generator` → `resume_variants` (imports_from)
+- `resume_generator` → `application_runner` (imports_from)
+- `resume_generator` → `generate_application` (imports_from)
+- `resume_generator_escape_latex` → `resume_generator_rationale_27` (rationale_for)
+- `resume_generator_rationale_1` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_1` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_1` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_27` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_27` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_27` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_54` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_54` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_54` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_65` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_65` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_65` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_73` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_73` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_73` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_104` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_104` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_104` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_115` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_115` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_115` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_203` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_203` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_203` → `jd_parser_jdparser` (uses)
+- `resume_generator_rationale_233` → `llm_client_llmclient` (uses)
+- `resume_generator_rationale_233` → `jd_parser_parsedjobdescription` (uses)
+- `resume_generator_rationale_233` → `jd_parser_jdparser` (uses)
+- `resume_variants` → `jd_parser` (imports_from)
+- `resume_variants` → `resume_variants_build_jd_text` (contains)
+- `resume_variants` → `resume_variants_generate_variants` (contains)
+- `resume_variants` → `resume_variants_update_tracking_notes` (contains)
+- `resume_variants` → `resume_variants_main` (contains)
+- `resume_variants_build_jd_text` → `resume_variants_generate_variants` (calls)
+- `resume_variants_generate_variants` → `resume_variants_main` (calls)
+- `resume_variants_generate_variants` → `resume_variants_rationale_86` (rationale_for)
+- `resume_variants_update_tracking_notes` → `resume_variants_main` (calls)
+- `resume_variants_update_tracking_notes` → `resume_variants_rationale_159` (rationale_for)
+- `resume_variants_rationale_86` → `jd_parser_jdparser` (uses)
+- `resume_variants_rationale_159` → `jd_parser_jdparser` (uses)
+- `application_runner` → `jd_parser` (imports_from)
+- `application_runner_rationale_49` → `jd_parser_jdparser` (uses)
+- `application_runner_rationale_72` → `jd_parser_jdparser` (uses)
+- `application_runner_rationale_91` → `jd_parser_jdparser` (uses)
+- `application_runner_rationale_100` → `jd_parser_jdparser` (uses)
+- `application_runner_rationale_108` → `jd_parser_jdparser` (uses)
+- `application_runner_rationale_137` → `jd_parser_jdparser` (uses)
+- `application_runner_rationale_197` → `jd_parser_jdparser` (uses)
+- `llm_client` → `llm_client_llmclient` (contains)
+- `llm_client` → `llm_client_rationale_1` (rationale_for)
+- `llm_client` → `jd_parser` (imports_from)
+- `llm_client` → `rescore_jobs` (imports_from)
+- `llm_client_llmclient` → `llm_client_llmclient_init` (method)
+- `llm_client_llmclient` → `llm_client_llmclient_generate` (method)
+- `llm_client_llmclient` → `llm_client_llmclient_generate_anthropic` (method)
+- `llm_client_llmclient` → `llm_client_llmclient_generate_openai_compatible` (method)
+- `llm_client_llmclient` → `llm_client_llmclient_count_tokens_estimate` (method)
+- `llm_client_llmclient` → `llm_client_llmclient_repr` (method)
+- `llm_client_llmclient` → `llm_client_rationale_39` (rationale_for)
+- `llm_client_llmclient` → `jd_parser_parsedjobdescription` (uses)
+- `llm_client_llmclient` → `jd_parser_jdparser` (uses)
+- `llm_client_llmclient` → `jd_parser_rationale_1` (uses)
+- `llm_client_llmclient` → `jd_parser_rationale_27` (uses)
+- `llm_client_llmclient` → `jd_parser_rationale_42` (uses)
+- `llm_client_llmclient` → `jd_parser_rationale_45` (uses)
+- `llm_client_llmclient` → `jd_parser_rationale_60` (uses)
+- `llm_client_llmclient` → `jd_parser_rationale_69` (uses)
+- `llm_client_llmclient` → `jd_parser_rationale_113` (uses)
+- `llm_client_llmclient` → `rescore_jobs_rationale_1` (uses)
+- `llm_client_llmclient_init` → `llm_client_rationale_48` (rationale_for)
+- `llm_client_llmclient_generate` → `llm_client_llmclient_generate_anthropic` (calls)
+- `llm_client_llmclient_generate` → `llm_client_llmclient_generate_openai_compatible` (calls)
+- `llm_client_llmclient_generate` → `llm_client_rationale_105` (rationale_for)
+- `llm_client_llmclient_generate_anthropic` → `llm_client_rationale_128` (rationale_for)
+- `llm_client_llmclient_generate_openai_compatible` → `llm_client_rationale_147` (rationale_for)
+- `llm_client_llmclient_count_tokens_estimate` → `llm_client_rationale_162` (rationale_for)
+- `generate_application` → `jd_parser` (imports_from)
+- `generate_application` → `generate_application_print_header` (contains)
+- `generate_application` → `generate_application_get_job_description_input` (contains)
+- `generate_application` → `generate_application_main` (contains)
+- `generate_application_print_header` → `generate_application_main` (calls)
+- `generate_application_get_job_description_input` → `generate_application_main` (calls)
+- `generate_application_get_job_description_input` → `generate_application_rationale_50` (rationale_for)
+- `generate_application_rationale_50` → `jd_parser_jdparser` (uses)
+- `jd_parser` → `jd_parser_parsedjobdescription` (contains)
+- `jd_parser` → `jd_parser_jdparser` (contains)
+- `jd_parser` → `jd_parser_rationale_1` (rationale_for)
+- `jd_parser` → `rescore_jobs` (imports_from)
+- `jd_parser_parsedjobdescription` → `jd_parser_jdparser_parse` (calls)
+- `jd_parser_parsedjobdescription` → `jd_parser_rationale_27` (rationale_for)
+- `jd_parser_jdparser` → `jd_parser_jdparser_init` (method)
+- `jd_parser_jdparser` → `jd_parser_jdparser_load_prompt_config` (method)
+- `jd_parser_jdparser` → `jd_parser_jdparser_parse` (method)
+- `jd_parser_jdparser` → `jd_parser_jdparser_parse_from_file` (method)
+- `jd_parser_jdparser` → `jd_parser_rationale_42` (rationale_for)
+- `jd_parser_jdparser` → `rescore_jobs_rationale_1` (uses)
+- `jd_parser_jdparser_init` → `jd_parser_jdparser_load_prompt_config` (calls)
+- `jd_parser_jdparser_init` → `jd_parser_rationale_45` (rationale_for)
+- `jd_parser_jdparser_load_prompt_config` → `jd_parser_rationale_60` (rationale_for)
+- `jd_parser_jdparser_parse` → `jd_parser_jdparser_parse_from_file` (calls)
+- `jd_parser_jdparser_parse` → `jd_parser_rationale_69` (rationale_for)
+- `jd_parser_jdparser_parse_from_file` → `jd_parser_rationale_113` (rationale_for)
+- `rescore_jobs` → `rescore_jobs_load_rows` (contains)
+- `rescore_jobs` → `rescore_jobs_save_rows` (contains)
+- `rescore_jobs` → `rescore_jobs_main` (contains)
+- `rescore_jobs` → `rescore_jobs_safe_float` (contains)
+- `rescore_jobs` → `rescore_jobs_rationale_1` (rationale_for)
+- `rescore_jobs_load_rows` → `rescore_jobs_main` (calls)
+- `rescore_jobs_save_rows` → `rescore_jobs_main` (calls)
+- `rescore_jobs_main` → `rescore_jobs_safe_float` (calls)
+- `knowledge_base_loader` → `knowledge_base_loader_rationale_1` (rationale_for)
+
+## External dependencies
+
+- `batch_process_overnight` → `fit_scorer` (imports_from) [community 3]
+- `batch_process_overnight` → `jd_parser` (imports_from) [community 3]
+- `batch_process_overnight` → `resume_generator` (imports_from) [community 3]
+- `batch_process_overnight` → `cover_letter_generator` (imports_from) [community 3]
+- `batch_process_overnight` → `latex_utils` (imports_from) [community 3]
+- `batch_process_overnight_overnightbatchprocessor` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_overnightbatchprocessor` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_overnightbatchprocessor` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_58` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_61` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_92` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_168` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_264` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_274` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_288` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_369` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `fit_scorer_fitscorer` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `jd_parser_jdparser` (uses) [community 3]
+- `batch_process_overnight_rationale_404` → `cover_letter_generator_coverlettergenerator` (uses) [community 3]
+- `fit_scorer` → `run_job_scraper` (imports_from) [community 0]
+- `fit_scorer_fitanalysis` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_fitanalysis` → `resume_generator_resumedata` (uses) [community 4]
+- `fit_scorer_fitanalysis` → `resume_generator_resumegenerator` (uses) [community 4]
+- `basemodel` → `resume_generator_resumedata` (inherits) [community 4]
+- `fit_scorer_fitscorer` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_fitscorer` → `resume_generator_resumedata` (uses) [community 4]
+- `fit_scorer_fitscorer` → `resume_generator_resumegenerator` (uses) [community 4]
+- `fit_scorer_fitscorer` → `application_runner_applicationbatchrunner` (uses) [community 10]
+- `fit_scorer_fitscorer` → `run_job_scraper_jobscraperorchestrator` (uses) [community 0]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_48` (uses) [community 0]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_55` (uses) [community 0]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_89` (uses) [community 0]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_187` (uses) [community 0]
+- `fit_scorer_fitscorer` → `run_job_scraper_rationale_263` (uses) [community 0]
+- `fit_scorer_rationale_1` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_rationale_31` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_rationale_43` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_rationale_51` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_rationale_68` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_rationale_77` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_rationale_135` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `fit_scorer_rationale_145` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator` → `run_job_scraper` (imports_from) [community 0]
+- `cover_letter_generator_coverlettergenerator` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_coverlettergenerator` → `application_runner_applicationbatchrunner` (uses) [community 10]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_jobscraperorchestrator` (uses) [community 0]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_48` (uses) [community 0]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_55` (uses) [community 0]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_89` (uses) [community 0]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_187` (uses) [community 0]
+- `cover_letter_generator_coverlettergenerator` → `run_job_scraper_rationale_263` (uses) [community 0]
+- `cover_letter_generator_rationale_1` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_rationale_45` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_rationale_54` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_rationale_74` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_rationale_83` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_rationale_94` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_rationale_163` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `cover_letter_generator_rationale_189` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `job_tracker` → `resume_variants` (imports_from) [community 5]
+- `job_tracker` → `application_runner` (imports_from) [community 5]
+- `job_tracker_jobtracker` → `resume_variants_rationale_86` (uses) [community 5]
+- `job_tracker_jobtracker` → `resume_variants_rationale_159` (uses) [community 5]
+- `job_tracker_jobtracker` → `application_runner_rationale_49` (uses) [community 5]
+- `job_tracker_jobtracker` → `application_runner_rationale_72` (uses) [community 5]
+- `job_tracker_jobtracker` → `application_runner_rationale_91` (uses) [community 5]
+- `job_tracker_jobtracker` → `application_runner_rationale_100` (uses) [community 5]
+- `job_tracker_jobtracker` → `application_runner_rationale_108` (uses) [community 5]
+- `job_tracker_jobtracker` → `application_runner_rationale_137` (uses) [community 5]
+- `job_tracker_jobtracker` → `application_runner_rationale_197` (uses) [community 5]
+- `resume_generator` → `resume_generator_resumedata` (contains) [community 4]
+- `resume_generator` → `resume_generator_resumegenerator` (contains) [community 4]
+- `resume_generator` → `resume_validator` (imports_from) [community 4]
+- `resume_generator` → `run_job_scraper` (imports_from) [community 0]
+- `resume_generator_resumedata` → `resume_generator_rationale_54` (rationale_for) [community 4]
+- `resume_generator_resumedata` → `llm_client_llmclient` (uses) [community 4]
+- `resume_generator_resumedata` → `jd_parser_parsedjobdescription` (uses) [community 4]
+- `resume_generator_resumedata` → `jd_parser_jdparser` (uses) [community 4]
+- `resume_generator_resumegenerator` → `resume_generator_rationale_65` (rationale_for) [community 4]
+- `resume_generator_resumegenerator` → `llm_client_llmclient` (uses) [community 4]
+- `resume_generator_resumegenerator` → `jd_parser_parsedjobdescription` (uses) [community 4]
+- `resume_generator_resumegenerator` → `jd_parser_jdparser` (uses) [community 4]
+- `resume_generator_resumegenerator` → `resume_variants_rationale_86` (uses) [community 4]
+- `resume_generator_resumegenerator` → `resume_variants_rationale_159` (uses) [community 4]
+- `resume_generator_resumegenerator` → `application_runner_rationale_49` (uses) [community 4]
+- `resume_generator_resumegenerator` → `application_runner_rationale_72` (uses) [community 4]
+- `resume_generator_resumegenerator` → `application_runner_rationale_91` (uses) [community 4]
+- `resume_generator_resumegenerator` → `application_runner_rationale_100` (uses) [community 4]
+- `resume_generator_resumegenerator` → `application_runner_rationale_108` (uses) [community 4]
+- `resume_generator_resumegenerator` → `application_runner_rationale_137` (uses) [community 4]
+- `resume_generator_resumegenerator` → `application_runner_rationale_197` (uses) [community 4]
+- `resume_generator_resumegenerator` → `generate_application_rationale_50` (uses) [community 4]
+- `resume_generator_resumegenerator_init` → `resume_generator_rationale_73` (rationale_for) [community 4]
+- `resume_generator_resumegenerator_load_prompt_config` → `resume_generator_rationale_104` (rationale_for) [community 4]
+- `resume_generator_resumegenerator_generate` → `resume_generator_rationale_115` (rationale_for) [community 4]
+- `resume_generator_resumegenerator_render_latex` → `resume_generator_rationale_203` (rationale_for) [community 4]
+- `resume_generator_resumegenerator_smart_latex_escape` → `resume_generator_rationale_233` (rationale_for) [community 4]
+- `resume_generator_rationale_1` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_27` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_54` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_65` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_73` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_104` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_115` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_203` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `resume_generator_rationale_233` → `knowledge_base_loader_knowledgebase` (uses) [community 4]
+- `company_discovery_hospitalitycompany` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_37` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_60` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_69` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_106` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_129` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_151` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_196` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_241` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_281` → `llm_client_llmclient` (uses) [community 7]
+- `company_discovery_rationale_319` → `llm_client_llmclient` (uses) [community 7]
+- `tracker_updater` → `generate_application` (imports_from) [community 16]
+- `tracker_updater_trackerupdater` → `generate_application_rationale_50` (uses) [community 16]
+- `followup_generator` → `llm_client` (imports_from) [community 7]
+- `followup_generator_rationale_32` → `llm_client_llmclient` (uses) [community 7]
+- `followup_generator_rationale_45` → `llm_client_llmclient` (uses) [community 7]
+- `followup_generator_rationale_139` → `llm_client_llmclient` (uses) [community 7]
+- `followup_generator_rationale_218` → `llm_client_llmclient` (uses) [community 7]
+- `apply_workflow` → `application_runner` (imports_from) [community 10]
+- `job_scraper_models` → `rescore_jobs` (imports_from) [community 0]
+- `job_scraper_models_jobsource` → `rescore_jobs_rationale_1` (uses) [community 0]
+- `job_scraper_models_job` → `rescore_jobs_rationale_1` (uses) [community 0]
+- `scraper_linkedin` → `rescore_jobs` (imports_from) [community 3]
+- `scraper_linkedin_linkedinscraper` → `rescore_jobs_rationale_1` (uses) [community 3]
+- `application_runner` → `application_runner_applicationbatchrunner` (contains) [community 10]
+- `application_runner` → `application_runner_main` (contains) [community 10]
+- `application_runner_applicationbatchrunner` → `application_runner_rationale_49` (rationale_for) [community 10]
+- `application_runner_applicationbatchrunner` → `jd_parser_jdparser` (uses) [community 10]
+- `application_runner_applicationbatchrunner_run_for_approved` → `application_runner_rationale_72` (rationale_for) [community 10]
+- `application_runner_applicationbatchrunner_run_for_job_id` → `application_runner_rationale_91` (rationale_for) [community 10]
+- `application_runner_applicationbatchrunner_run_for_min_score` → `application_runner_rationale_100` (rationale_for) [community 10]
+- `application_runner_applicationbatchrunner_run` → `application_runner_rationale_108` (rationale_for) [community 10]
+- `application_runner_applicationbatchrunner_generate_one` → `application_runner_rationale_137` (rationale_for) [community 10]
+- `application_runner_applicationbatchrunner_record_application` → `application_runner_rationale_197` (rationale_for) [community 10]
+- `llm_client` → `email_generator` (imports_from) [community 7]
+- `llm_client_llmclient` → `apollo_browser_apollocontact` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_apollobrowseragent` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_34` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_45` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_81` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_98` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_170` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_228` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_244` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_291` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_371` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_426` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_463` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_512` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_580` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_637` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_700` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_793` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_848` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_915` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_960` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_1015` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_1089` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_1111` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_1126` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_1168` (uses) [community 6]
+- `llm_client_llmclient` → `apollo_browser_rationale_1185` (uses) [community 6]
+- `llm_client_llmclient` → `email_generator_rationale_28` (uses) [community 7]
+- `llm_client_llmclient` → `email_generator_rationale_40` (uses) [community 7]
+- `llm_client_llmclient` → `email_generator_rationale_63` (uses) [community 7]
+- `llm_client_llmclient` → `email_generator_rationale_167` (uses) [community 7]
+- `llm_client_llmclient` → `email_generator_rationale_225` (uses) [community 7]
+- `llm_client_llmclient` → `email_generator_rationale_332` (uses) [community 7]
+- `generate_application` → `resume_validator` (imports_from) [community 4]
+- `generate_application_rationale_50` → `resume_validator_resumevalidator` (uses) [community 4]
+- `resume_validator` → `knowledge_base_loader` (imports_from) [community 4]
+- `jd_parser` → `run_job_scraper` (imports_from) [community 0]
+- `jd_parser_jdparser` → `run_job_scraper_jobscraperorchestrator` (uses) [community 0]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_48` (uses) [community 0]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_55` (uses) [community 0]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_89` (uses) [community 0]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_187` (uses) [community 0]
+- `jd_parser_jdparser` → `run_job_scraper_rationale_263` (uses) [community 0]
+- `knowledge_base_loader` → `knowledge_base_loader_knowledgebase` (contains) [community 4]

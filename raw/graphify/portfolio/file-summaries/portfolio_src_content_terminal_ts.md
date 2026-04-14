@@ -2,7 +2,7 @@
 title: "terminal.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/content/terminal.ts"
 repo: "portfolio"
-community: 16
+community: 17
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/content/terminal.ts`
-**Community:** 16
+**Community:** 17
 
 ## Imports
 - `TerminalChat.tsx`

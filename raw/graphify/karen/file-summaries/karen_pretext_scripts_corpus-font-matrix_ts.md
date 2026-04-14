@@ -2,7 +2,7 @@
 title: "corpus-font-matrix.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts"
 repo: "karen"
-community: 25
+community: 28
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-font-matrix.ts`
-**Community:** 25
+**Community:** 28
 
 ## Imports
 - (none)

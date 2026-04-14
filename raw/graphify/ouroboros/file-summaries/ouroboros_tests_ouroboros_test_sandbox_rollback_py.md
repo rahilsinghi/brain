@@ -2,7 +2,7 @@
 title: "test_sandbox_rollback.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_rollback.py"
 repo: "ouroboros"
-community: 10
+community: 7
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_sandbox_rollback.py`
-**Community:** 10
+**Community:** 7
 
 ## Imports
 - (none)

@@ -2,7 +2,7 @@
 title: "healer.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/lint/healer.ts"
 repo: "brain"
-community: 20
+community: 19
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/lint/healer.ts`
-**Community:** 20
+**Community:** 19
 
 ## Imports
 - (none)

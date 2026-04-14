@@ -2,7 +2,7 @@
 title: "accordion.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts"
 repo: "karen"
-community: 22
+community: 23
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/accordion.ts`
-**Community:** 22
+**Community:** 23
 
 ## Imports
 - (none)
