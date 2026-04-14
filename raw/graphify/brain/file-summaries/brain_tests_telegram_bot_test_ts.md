@@ -2,7 +2,7 @@
 title: "bot.test.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/tests/telegram/bot.test.ts"
 repo: "brain"
-community: 52
+community: 35
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/tests/telegram/bot.test.ts`
-**Community:** 52
+**Community:** 35
 
 ## Imports
 - (none)

@@ -2,9 +2,9 @@
 title: Master Index
 author: ai
 created_at: 2026-04-03T00:00:00Z
-last_ai_edit: 2026-04-13T23:00:24.433Z
+last_ai_edit: 2026-04-14T17:34:15.886Z
 last_human_edit: null
-last_embedded_hash: a6e5d480f92bef95
+last_embedded_hash: 6808f9920a3ee062
 sources: []
 tags:
   - index
@@ -589,6 +589,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/compile-test-ts-brain-project|compile.test.ts (Brain Project)]]
 - [[projects/graphify-cli-py|graphify_cli.py]]
 - [[projects/text-embedding-and-semantic-search-utilities|Text Embedding and Semantic Search Utilities]]
+- [[projects/technical-co-founder-proposal-for-brenton-andersen-s-project|Technical Co-founder Proposal for Brenton Andersen's Project]]
 - [[projects/job-tracker-core-logic-unit-tests|Job Tracker Core Logic Unit Tests]]
 - [[projects/brenton-s-project-wilbo-and-associated-tools|Brenton's Project Wilbo and Associated Tools]]
 - [[projects/travel-tech-startup-landscape-2026-ai-native-hospitality-focused-companies|Travel Tech Startup Landscape 2026 – AI-Native & Hospitality-Focused Companies]]
@@ -690,6 +691,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/test-types-py-in-ouroboros|test_types.py in Ouroboros]]
 - [[projects/travel-industry-outreach-templates-rahil-singhi-week-of-mar-24|Travel Industry Outreach Templates — Rahil Singhi (Week of Mar 24)]]
 - [[projects/pretext-interactive-bubbles-ui-demo|Pretext Interactive Bubbles UI Demo]]
+- [[projects/maison-travel-ai-native-travel-app|Maison.travel AI Native Travel App]]
 - [[projects/rahil-singhi-s-employment-offer-and-terms-with-maison|Rahil Singhi's Employment Offer and Terms with Maison]]
 - [[projects/pretext-package-smoke-test-utility|Pretext Package Smoke Test Utility]]
 - [[projects/pretext-corpus-taxonomy-management|Pretext Corpus Taxonomy Management]]
@@ -699,6 +701,7 @@ Auto-maintained index of all wiki articles.
 - [[projects/markpush-git-activity|MarkPush — Git Activity]]
 - [[projects/proj-marketpulse-ai|MarketPulse AI – Real-Time Financial News Q&A]]
 - [[projects/wilbo-project-initiation-call-with-brenton-andersen-apr-10-2026|Wilbo Project Initiation: Call with Brenton Andersen (Apr 10, 2026)]]
+- [[projects/maison-travel-project|Maison.travel Project]]
 - [[projects/gmail-outreach-follow-up-automation|Gmail Outreach Follow-up Automation]]
 - [[projects/provider-test-ts|provider.test.ts]]
 - [[projects/linkedinposts-tsx|LinkedInPosts.tsx]]
@@ -766,6 +769,7 @@ Auto-maintained index of all wiki articles.
 - [[people/harrison-qian-builder-profile-meeting-prep|Harrison Qian – Builder Profile & Meeting Prep]]
 - [[people/rahil-singhi-recruitment-and-offer-letter-request|Rahil Singhi Recruitment and Offer Letter Request]]
 - [[people/rahil-singhi-s-employment-agreement-with-maison|Rahil Singhi's Employment Agreement with Maison]]
+- [[people/rahil-singhi-s-employment-offer-and-immigration-planning-at-maison|Rahil Singhi's Employment Offer and Immigration Planning at Maison]]
 - [[people/maison-call-interview-preparation-brief-fredrik-sjoberg-march-2026|Maison Call — Interview Preparation Brief (Fredrik Sjoberg, March 2026)]]
 - [[people/maison-fredrik-sjoberg-call-preparation|Maison/Fredrik Sjoberg Call Preparation]]
 - [[people/meeting-prep-maison-ai-engineering-role-fredrik-sjoberg-noel-panicker|Meeting Prep: Maison AI Engineering Role — Fredrik Sjoberg & Noel Panicker]]

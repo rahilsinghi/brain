@@ -2,7 +2,7 @@
 title: "quarantine.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/quarantine.ts"
 repo: "brain"
-community: 44
+community: 49
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/quarantine.ts`
-**Community:** 44
+**Community:** 49
 
 ## Imports
 - (none)

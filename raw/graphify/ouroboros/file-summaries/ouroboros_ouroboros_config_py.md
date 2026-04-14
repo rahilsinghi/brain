@@ -2,7 +2,7 @@
 title: "config.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/config.py"
 repo: "ouroboros"
-community: 0
+community: 25
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/config.py`
-**Community:** 0
+**Community:** 25
 
 ## Imports
 - (none)

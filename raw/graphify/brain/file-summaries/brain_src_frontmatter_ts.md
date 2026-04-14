@@ -2,7 +2,7 @@
 title: "frontmatter.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/frontmatter.ts"
 repo: "brain"
-community: 18
+community: 15
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/frontmatter.ts`
-**Community:** 18
+**Community:** 15
 
 ## Imports
 - (none)

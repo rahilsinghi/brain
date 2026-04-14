@@ -2,7 +2,7 @@
 title: "build-demo-site.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/build-demo-site.ts"
 repo: "portfolio"
-community: 40
+community: 39
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/build-demo-site.ts`
-**Community:** 40
+**Community:** 39
 
 ## Imports
 - (none)

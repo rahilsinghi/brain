@@ -2,7 +2,7 @@
 title: "cli.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py"
 repo: "ouroboros"
-community: 6
+community: 3
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/cli.py`
-**Community:** 6
+**Community:** 3
 
 ## Imports
 - (none)

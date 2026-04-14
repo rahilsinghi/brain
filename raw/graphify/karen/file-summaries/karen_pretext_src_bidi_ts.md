@@ -2,7 +2,7 @@
 title: "bidi.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/src/bidi.ts"
 repo: "karen"
-community: 51
+community: 52
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/src/bidi.ts`
-**Community:** 51
+**Community:** 52
 
 ## Imports
 - (none)

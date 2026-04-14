@@ -2,7 +2,7 @@
 title: "generate_quips.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/scripts/generate_quips.py"
 repo: "karen"
-community: 55
+community: 54
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/scripts/generate_quips.py`
-**Community:** 55
+**Community:** 54
 
 ## Imports
 - (none)

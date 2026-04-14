@@ -2,7 +2,7 @@
 title: "test_telemetry_writer.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py"
 repo: "ouroboros"
-community: 22
+community: 21
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_telemetry_writer.py`
-**Community:** 22
+**Community:** 21
 
 ## Imports
 - (none)

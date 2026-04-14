@@ -2,7 +2,7 @@
 title: "classify.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/voice/classify.ts"
 repo: "brain"
-community: 24
+community: 27
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/voice/classify.ts`
-**Community:** 24
+**Community:** 27
 
 ## Imports
 - (none)

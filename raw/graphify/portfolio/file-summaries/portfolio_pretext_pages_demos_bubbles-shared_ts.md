@@ -2,7 +2,7 @@
 title: "bubbles-shared.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts"
 repo: "portfolio"
-community: 33
+community: 32
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/bubbles-shared.ts`
-**Community:** 33
+**Community:** 32
 
 ## Imports
 - (none)

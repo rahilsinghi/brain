@@ -2,7 +2,7 @@
 title: "justification-comparison.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ts"
 repo: "portfolio"
-community: 44
+community: 43
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/justification-comparison.ts`
-**Community:** 44
+**Community:** 43
 
 ## Imports
 - (none)

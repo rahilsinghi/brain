@@ -2,7 +2,7 @@
 title: "PretextBackground.tsx"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/components/PretextBackground.tsx"
 repo: "portfolio"
-community: 2
+community: 1
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/components/PretextBackground.tsx`
-**Community:** 2
+**Community:** 1
 
 ## Imports
 - `ThemeProvider.tsx`

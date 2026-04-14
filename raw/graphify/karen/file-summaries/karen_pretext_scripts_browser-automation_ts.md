@@ -2,7 +2,7 @@
 title: "browser-automation.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/browser-automation.ts"
 repo: "karen"
-community: 7
+community: 8
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/browser-automation.ts`
-**Community:** 7
+**Community:** 8
 
 ## Imports
 - (none)
