@@ -18,3 +18,4 @@ dist/
 # Git worktrees
 .worktrees/
 .superpowers/
+raw/voice/*.wav
