@@ -129,6 +129,42 @@ export async function handleVoiceMessage(
   }
 }
 
+export async function handleAudioMessage(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+
+  try {
+    const file = await ctx.getFile();
+    if (!file.file_path) throw new Error("Telegram returned no file_path");
+
+    const fetchFile = deps.fetchFileFn ?? defaultFetchFile;
+    const url = `https://api.telegram.org/file/bot${deps.token}/${file.file_path}`;
+    const data = await fetchFile(url);
+
+    const timestamp = Date.now();
+    const ext = file.file_path.split(".").pop() ?? "m4a";
+    const inputPath = join(tmpdir(), `brain-audio-${timestamp}.${ext}`);
+    writeFileSync(inputPath, Buffer.from(data));
+
+    const voiceDir = join(deps.vaultRoot, "raw", "voice");
+    mkdirSync(voiceDir, { recursive: true });
+    const wavPath = join(voiceDir, `${timestamp}.wav`);
+
+    const convert = deps.convertAudioFn ?? defaultConvertAudio;
+    await convert(inputPath, wavPath);
+
+    await ctx.reply("Audio received and queued for transcription.");
+  } catch (err) {
+    console.error(
+      `[telegram] Audio processing error: ${err instanceof Error ? err.message : String(err)}`,
+    );
+    await ctx.reply("Audio processing failed — try again later.");
+  }
+}
+
 export async function handleStartCommand(
   ctx: Context,
   _deps: HandlerDeps,
@@ -274,6 +310,7 @@ export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
   bot.command("slides", (ctx) => handleSlidesCommand(ctx, deps));
   bot.command("plot", (ctx) => handlePlotCommand(ctx, deps));
   bot.on("message:voice", (ctx) => handleVoiceMessage(ctx, deps));
+  bot.on("message:audio", (ctx) => handleAudioMessage(ctx, deps));
   bot.on("message:text", (ctx) => handleTextMessage(ctx, deps));
 
   return bot;

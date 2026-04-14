@@ -11,6 +11,7 @@ import { Bot } from "grammy";
 import {
   handleTextMessage,
   handleVoiceMessage,
+  handleAudioMessage,
   handleStartCommand,
   handleHelpCommand,
   handleStatusCommand,
@@ -81,6 +82,7 @@ bot.command("status", (ctx) => handleStatusCommand(ctx, deps));
 bot.command("slides", (ctx) => handleSlidesCommand(ctx, deps));
 bot.command("plot", (ctx) => handlePlotCommand(ctx, deps));
 bot.on("message:voice", (ctx) => handleVoiceMessage(ctx, deps));
+bot.on("message:audio", (ctx) => handleAudioMessage(ctx, deps));
 bot.on("message:text", (ctx) => handleTextMessage(ctx, deps));
 
 bot.catch((err) => {
