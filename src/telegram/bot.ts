@@ -18,6 +18,9 @@ import {
   getStatusSummary,
   getWeekMatrix,
 } from "../timesheet/status.js";
+import { finalizeWeek } from "../timesheet/finalize.js";
+import { generateInvoice } from "../timesheet/invoice.js";
+import { syncWeekToWiki } from "../timesheet/wiki-sync.js";
 import { truncateAtSentence } from "./truncate.js";
 import { formatForTelegram } from "./format.js";
 
@@ -231,7 +234,9 @@ export async function handleHelpCommand(
       "/ts — Weekly timesheet summary\n" +
       "/ts today — Today's entries\n" +
       "/ts week — Day-by-day matrix\n" +
-      "/eod — End-of-day review (reply to edit)",
+      "/eod — End-of-day review (reply to edit)\n" +
+      "/finalize — Finalize current week + wiki sync\n" +
+      "/invoice <employer> <month> — Generate invoice",
   );
 }
 
@@ -436,6 +441,119 @@ export async function handleTimesheetReply(
   await ctx.reply(reply);
 }
 
+export async function handleFinalizeCommand(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+  if (!deps.timesheetDb || !deps.timesheetConfig) {
+    await ctx.reply("Timesheet not configured.");
+    return;
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const { start: weekStart, end: weekEnd } = getWeekBoundsForDate(today);
+
+  const result = finalizeWeek(deps.timesheetDb, deps.timesheetConfig, weekStart, weekEnd);
+  await ctx.reply(truncateAtSentence(result.message, TELEGRAM_MAX_LENGTH));
+
+  // Sync to wiki
+  if (result.finalized > 0) {
+    const wikiPaths = syncWeekToWiki(
+      deps.timesheetDb, deps.timesheetConfig, deps.vaultRoot, weekStart, weekEnd,
+    );
+    if (wikiPaths.length > 0) {
+      await ctx.reply(`📝 Wiki synced: ${wikiPaths.join(", ")}`);
+    }
+  }
+}
+
+export async function handleInvoiceCommand(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+  if (!deps.timesheetDb || !deps.timesheetConfig) {
+    await ctx.reply("Timesheet not configured.");
+    return;
+  }
+
+  // Parse: /invoice maison april  OR  /invoice maison 2026-04
+  const text = ctx.message?.text?.replace(/^\/invoice\s*/, "").trim() ?? "";
+  const parts = text.split(/\s+/);
+  if (parts.length < 2) {
+    await ctx.reply("Usage: /invoice <employer> <month>\nExample: /invoice maison april");
+    return;
+  }
+
+  const employerId = parts[0].toLowerCase();
+  const monthArg = parts.slice(1).join(" ").toLowerCase();
+
+  // Resolve month to YYYY-MM
+  const month = resolveMonth(monthArg);
+  if (!month) {
+    await ctx.reply(`Could not parse month: "${monthArg}". Use "april", "2026-04", etc.`);
+    return;
+  }
+
+  const periodStart = `${month}-01`;
+  const lastDay = new Date(parseInt(month.slice(0, 4)), parseInt(month.slice(5, 7)), 0).getDate();
+  const periodEnd = `${month}-${String(lastDay).padStart(2, "0")}`;
+
+  const result = generateInvoice(deps.timesheetDb, deps.timesheetConfig, deps.vaultRoot, {
+    employerId,
+    periodStart,
+    periodEnd,
+  });
+
+  if (!result.success) {
+    await ctx.reply(`Invoice failed: ${result.error}`);
+    return;
+  }
+
+  await ctx.reply(
+    `✅ Invoice generated: ${result.invoiceId}\n` +
+    `${result.totalHours}h → $${result.totalAmount?.toFixed(2)}\n` +
+    `MD: ${result.mdPath}\nCSV: ${result.csvPath}`,
+  );
+
+  // Send the markdown file as a document
+  if (result.mdPath) {
+    try {
+      await ctx.replyWithDocument(new InputFile(join(deps.vaultRoot, result.mdPath)));
+    } catch {
+      // File send is best-effort
+    }
+  }
+}
+
+function resolveMonth(input: string): string | null {
+  // Direct YYYY-MM
+  if (/^\d{4}-\d{2}$/.test(input)) return input;
+
+  const year = new Date().getFullYear();
+  const months: Record<string, string> = {
+    january: "01", jan: "01",
+    february: "02", feb: "02",
+    march: "03", mar: "03",
+    april: "04", apr: "04",
+    may: "05",
+    june: "06", jun: "06",
+    july: "07", jul: "07",
+    august: "08", aug: "08",
+    september: "09", sep: "09",
+    october: "10", oct: "10",
+    november: "11", nov: "11",
+    december: "12", dec: "12",
+  };
+
+  const num = months[input];
+  if (num) return `${year}-${num}`;
+  return null;
+}
+
 export interface TelegramBotDeps {
   token: string;
   allowedUserIds: number[];
@@ -483,6 +601,8 @@ export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
   bot.command("plot", (ctx) => handlePlotCommand(ctx, deps));
   bot.command("ts", (ctx) => handleTimesheetStatusCommand(ctx, deps));
   bot.command("eod", (ctx) => handleTimesheetEodCommand(ctx, deps));
+  bot.command("finalize", (ctx) => handleFinalizeCommand(ctx, deps));
+  bot.command("invoice", (ctx) => handleInvoiceCommand(ctx, deps));
   bot.on("message:voice", (ctx) => handleVoiceMessage(ctx, deps));
   bot.on("message:audio", (ctx) => handleAudioMessage(ctx, deps));
   bot.on("message:text", (ctx) => handleTextMessage(ctx, deps));

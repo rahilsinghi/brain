@@ -25,6 +25,8 @@ import { loadTimesheetConfig } from "./timesheet/config.js";
 import { scanRepo, upsertSession } from "./timesheet/scanner.js";
 import { generateDailyReport } from "./timesheet/daily-report.js";
 import { checkCapAlerts } from "./timesheet/alerts.js";
+import { finalizeWeek } from "./timesheet/finalize.js";
+import { syncWeekToWiki } from "./timesheet/wiki-sync.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
@@ -347,6 +349,34 @@ cron.schedule(`0 ${reportHour} * * *`, () => {
     }
   } catch (err) {
     console.error(`[cron] Daily timesheet report failed: ${err instanceof Error ? err.message : String(err)}`);
+  }
+});
+
+// Weekly finalization cron (Sunday at configured hour)
+const finalizeDay = timesheetConfig.review.finalize_day === "sunday" ? 0 : 7;
+const finalizeHour = timesheetConfig.review.finalize_hour;
+cron.schedule(`0 ${finalizeHour} * * ${finalizeDay}`, () => {
+  try {
+    const today = new Date().toISOString().slice(0, 10);
+    const d = new Date(today + "T12:00:00");
+    const day = d.getDay();
+    const mondayOffset = day === 0 ? -6 : 1 - day;
+    const monday = new Date(d);
+    monday.setDate(d.getDate() + mondayOffset);
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    const weekStart = monday.toISOString().slice(0, 10);
+    const weekEnd = sunday.toISOString().slice(0, 10);
+
+    const result = finalizeWeek(timesheetDb, timesheetConfig, weekStart, weekEnd);
+    console.log(`[cron] Timesheet finalized: ${result.finalized} entries (${result.autoFinalized} auto-finalized).`);
+
+    if (result.finalized > 0) {
+      const wikiPaths = syncWeekToWiki(timesheetDb, timesheetConfig, vaultRoot, weekStart, weekEnd);
+      console.log(`[cron] Wiki synced: ${wikiPaths.join(", ")}`);
+    }
+  } catch (err) {
+    console.error(`[cron] Weekly finalization failed: ${err instanceof Error ? err.message : String(err)}`);
   }
 });
 

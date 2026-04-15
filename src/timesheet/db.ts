@@ -351,6 +351,87 @@ export class TimesheetDB {
       .run({ $category: category, $id: id });
   }
 
+  updateEntryInvoice(id: string, invoiceId: string): void {
+    this.db
+      .prepare(
+        "UPDATE entries SET status = 'invoiced', invoice_id = $invoice_id WHERE id = $id"
+      )
+      .run({ $invoice_id: invoiceId, $id: id });
+  }
+
+  getEntriesByStatus(
+    startDate: string,
+    endDate: string,
+    employerId: string,
+    status: EntryStatus,
+  ): TimesheetEntry[] {
+    return this.db
+      .prepare(
+        `SELECT * FROM entries
+         WHERE date >= ? AND date <= ? AND employer_id = ? AND status = ?
+         ORDER BY date, start_time`
+      )
+      .all(startDate, endDate, employerId, status) as TimesheetEntry[];
+  }
+
+  // ── Invoices ──
+
+  insertInvoice(invoice: {
+    id: string;
+    employer_id: string;
+    period_start: string;
+    period_end: string;
+    total_hours: number;
+    total_amount: number;
+    currency: string;
+    generated_at: string;
+    notes?: string | null;
+  }): void {
+    this.db
+      .prepare(
+        `INSERT INTO invoices (id, employer_id, period_start, period_end, total_hours,
+           total_amount, currency, generated_at, sent_at, paid_at, notes)
+         VALUES ($id, $employer_id, $period_start, $period_end, $total_hours,
+           $total_amount, $currency, $generated_at, NULL, NULL, $notes)`
+      )
+      .run({
+        $id: invoice.id,
+        $employer_id: invoice.employer_id,
+        $period_start: invoice.period_start,
+        $period_end: invoice.period_end,
+        $total_hours: invoice.total_hours,
+        $total_amount: invoice.total_amount,
+        $currency: invoice.currency,
+        $generated_at: invoice.generated_at,
+        $notes: invoice.notes ?? null,
+      });
+  }
+
+  getInvoice(id: string): {
+    id: string;
+    employer_id: string;
+    period_start: string;
+    period_end: string;
+    total_hours: number;
+    total_amount: number;
+    currency: string;
+    generated_at: string;
+    sent_at: string | null;
+    paid_at: string | null;
+    notes: string | null;
+  } | null {
+    const row = this.db
+      .prepare("SELECT * FROM invoices WHERE id = ?")
+      .get(id) as Record<string, unknown> | undefined;
+    return (row as ReturnType<TimesheetDB["getInvoice"]>) ?? null;
+  }
+
+  markInvoicePaid(id: string): void {
+    this.db
+      .prepare("UPDATE invoices SET paid_at = $paid_at WHERE id = $id")
+      .run({ $paid_at: new Date().toISOString(), $id: id });
+  }
+
   // ── Proof Artifacts ──
 
   insertProofArtifact(input: InsertProofArtifactInput): string {

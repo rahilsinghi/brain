@@ -19,6 +19,8 @@ import {
   handlePlotCommand,
   handleTimesheetStatusCommand,
   handleTimesheetEodCommand,
+  handleFinalizeCommand,
+  handleInvoiceCommand,
   type HandlerDeps,
 } from "./bot.js";
 import { loadConfig } from "../config.js";
@@ -111,6 +113,8 @@ bot.command("slides", (ctx) => handleSlidesCommand(ctx, deps));
 bot.command("plot", (ctx) => handlePlotCommand(ctx, deps));
 bot.command("ts", (ctx) => handleTimesheetStatusCommand(ctx, deps));
 bot.command("eod", (ctx) => handleTimesheetEodCommand(ctx, deps));
+bot.command("finalize", (ctx) => handleFinalizeCommand(ctx, deps));
+bot.command("invoice", (ctx) => handleInvoiceCommand(ctx, deps));
 bot.on("message:voice", (ctx) => handleVoiceMessage(ctx, deps));
 bot.on("message:audio", (ctx) => handleAudioMessage(ctx, deps));
 bot.on("message:text", (ctx) => handleTextMessage(ctx, deps));
