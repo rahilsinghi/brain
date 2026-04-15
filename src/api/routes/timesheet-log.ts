@@ -16,7 +16,7 @@ interface LogBody {
 const logSchema = {
   body: {
     type: "object" as const,
-    required: ["employer_id", "hours", "description", "category"],
+    required: ["employer_id", "hours", "description"],
     properties: {
       employer_id: { type: "string" },
       hours: { type: "number" },

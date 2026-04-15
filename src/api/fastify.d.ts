@@ -11,6 +11,6 @@ declare module "fastify" {
     store: VectorStore;
     config: BrainConfig;
     synthesizeFn: SynthesizeFn;
-    timesheetDb: TimesheetDB;
+    timesheetDb: TimesheetDB | undefined;
   }
 }

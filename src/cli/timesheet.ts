@@ -127,9 +127,9 @@ async function cmdBackfill(args: string[]) {
   }
 
   const data = (await request("POST", "/timesheet/backfill", { since })) as {
-    sessions_ingested?: number;
+    sessions_found?: number;
   };
-  const count = data.sessions_ingested ?? 0;
+  const count = data.sessions_found ?? 0;
   console.log(`\u2713 Backfilled from ${since}: ${count} sessions ingested as drafts`);
 }
 
