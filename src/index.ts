@@ -117,20 +117,6 @@ if (lastScan) {
   }
 }
 
-// Flush any pending Telegram messages from before shutdown/sleep
-{
-  const chatId = getTelegramChatId();
-  if (chatId && botToken) {
-    flushTelegramQueue(timesheetDb, (cid, msg) => sendViaBotApi(botToken!, cid, msg))
-      .then((sent) => {
-        if (sent > 0) console.log(`[brain] Boot flush: ${sent} queued Telegram messages sent.`);
-      })
-      .catch((err) => {
-        console.error(`[brain] Boot flush failed: ${err instanceof Error ? err.message : String(err)}`);
-      });
-  }
-}
-
 // Step 2: Start HTTP server
 const server = createServer({
   store,
@@ -191,6 +177,20 @@ if (botToken && config.telegram.allowed_user_ids.length > 0) {
   spawnTelegramBot();
 } else {
   console.log("[brain] Telegram bot disabled (no token or no allowed users).");
+}
+
+// Flush any pending Telegram messages from before shutdown/sleep
+{
+  const chatId = getTelegramChatId();
+  if (chatId && botToken) {
+    flushTelegramQueue(timesheetDb, (cid, msg) => sendViaBotApi(botToken, cid, msg))
+      .then((sent) => {
+        if (sent > 0) console.log(`[brain] Boot flush: ${sent} queued Telegram messages sent.`);
+      })
+      .catch((err) => {
+        console.error(`[brain] Boot flush failed: ${err instanceof Error ? err.message : String(err)}`);
+      });
+  }
 }
 
 // Step 3: Start watchers
