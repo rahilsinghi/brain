@@ -1,0 +1,17 @@
+employers:
+  maison:
+    rate_hourly: 50
+    weekly_cap: 20
+    currency: USD
+    repos: ["maison/*"]
+    email_domains: [maison.cx]
+    contacts: [fredrik@maison.cx, sandeep@maison.cx, noel@maison.cx]
+  wilbo:
+    rate_hourly: 0
+    monthly_bonus: 1800
+    currency: USD
+    repos: ["wilbo-*", "screenwriting-*"]
+    contacts: [brentonandersen@hotmail.com]
+scanner:
+  git_user: "Rahil Singhi"
+  exclude_paths: [package-lock.json, pnpm-lock.yaml, yarn.lock, bun.lockb, "*.min.js", "*.min.css", "dist/**", "build/**", "node_modules/**", ".lancedb/**", "*.generated.*"]
