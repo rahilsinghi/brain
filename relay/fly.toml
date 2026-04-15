@@ -1,0 +1,21 @@
+app = "brain-relay"
+primary_region = "ewr"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[mounts]
+  source = "brain_relay_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+
+[env]
+  NODE_ENV = "production"
+  DB_PATH = "/data/relay.db"
+  FILES_PATH = "/data/files"
