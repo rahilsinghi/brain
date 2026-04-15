@@ -1,4 +1,3 @@
-import Database from "better-sqlite3";
 import { randomUUID } from "node:crypto";
 import type {
   EmployerRow,
@@ -8,6 +7,92 @@ import type {
   ProofArtifact,
   TimesheetEntry,
 } from "./types.js";
+
+// ── SQLite driver abstraction ──
+// Bun runtime: use bun:sqlite (native, no npm dep)
+// Node runtime (vitest): fall back to better-sqlite3
+
+const isBun = typeof globalThis.Bun !== "undefined";
+
+interface SqliteStatement {
+  run(...args: unknown[]): unknown;
+  get(...args: unknown[]): unknown;
+  all(...args: unknown[]): unknown[];
+}
+
+interface SqliteDatabase {
+  exec(sql: string): void;
+  prepare(sql: string): SqliteStatement;
+  close(): void;
+}
+
+function openDatabase(dbPath: string): SqliteDatabase {
+  if (isBun) {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { Database } = require("bun:sqlite");
+    const db = new Database(dbPath);
+    // bun:sqlite uses db.exec() for pragmas
+    db.exec("PRAGMA journal_mode = WAL");
+    db.exec("PRAGMA foreign_keys = ON");
+    return db as SqliteDatabase;
+  }
+
+  // Node / vitest path
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const BetterSqlite3 = require("better-sqlite3");
+  const db = new BetterSqlite3(dbPath);
+  db.pragma("journal_mode = WAL");
+  db.pragma("foreign_keys = ON");
+  return db as SqliteDatabase;
+}
+
+// ── Named param conversion ──
+// bun:sqlite: SQL $foo binds to object key "$foo"
+// better-sqlite3: SQL $foo binds to object key "foo" (strips prefix)
+// We author SQL with $name and pass objects with $-prefixed keys.
+// For better-sqlite3, we strip the $ prefix before binding.
+
+function bindParams(params: Record<string, unknown>): Record<string, unknown> {
+  if (isBun) return params;
+  // better-sqlite3 expects keys without the $ prefix
+  const stripped: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(params)) {
+    stripped[k.startsWith("$") ? k.slice(1) : k] = v;
+  }
+  return stripped;
+}
+
+// Wrap a SqliteDatabase so named-param objects are auto-converted
+function wrapDatabase(raw: SqliteDatabase): SqliteDatabase {
+  if (isBun) return raw; // no conversion needed
+  return {
+    exec: (sql: string) => raw.exec(sql),
+    prepare: (sql: string) => {
+      const stmt = raw.prepare(sql);
+      return {
+        run: (...args: unknown[]) => {
+          const a = args.length === 1 && typeof args[0] === "object" && args[0] !== null && !Array.isArray(args[0])
+            ? [bindParams(args[0] as Record<string, unknown>)]
+            : args;
+          return stmt.run(...a);
+        },
+        get: (...args: unknown[]) => {
+          const a = args.length === 1 && typeof args[0] === "object" && args[0] !== null && !Array.isArray(args[0])
+            ? [bindParams(args[0] as Record<string, unknown>)]
+            : args;
+          return stmt.get(...a);
+        },
+        all: (...args: unknown[]) => {
+          const a = args.length === 1 && typeof args[0] === "object" && args[0] !== null && !Array.isArray(args[0])
+            ? [bindParams(args[0] as Record<string, unknown>)]
+            : args;
+          return stmt.all(...a);
+        },
+      };
+    },
+    close: () => raw.close(),
+  };
+}
 
 const SCHEMA_SQL = `
   CREATE TABLE IF NOT EXISTS employers (
@@ -92,12 +177,10 @@ const SCHEMA_SQL = `
 `;
 
 export class TimesheetDB {
-  private db: Database.Database;
+  private db: SqliteDatabase;
 
   constructor(dbPath: string) {
-    this.db = new Database(dbPath);
-    this.db.pragma("journal_mode = WAL");
-    this.db.pragma("foreign_keys = ON");
+    this.db = wrapDatabase(openDatabase(dbPath));
     this.db.exec(SCHEMA_SQL);
   }
 
@@ -116,14 +199,20 @@ export class TimesheetDB {
     this.db
       .prepare(
         `INSERT INTO employers (id, rate_hourly, weekly_cap_hours, monthly_bonus, currency)
-         VALUES (@id, @rate_hourly, @weekly_cap_hours, @monthly_bonus, @currency)
+         VALUES ($id, $rate_hourly, $weekly_cap_hours, $monthly_bonus, $currency)
          ON CONFLICT(id) DO UPDATE SET
            rate_hourly = excluded.rate_hourly,
            weekly_cap_hours = excluded.weekly_cap_hours,
            monthly_bonus = excluded.monthly_bonus,
            currency = excluded.currency`
       )
-      .run(emp);
+      .run({
+        $id: emp.id,
+        $rate_hourly: emp.rate_hourly,
+        $weekly_cap_hours: emp.weekly_cap_hours,
+        $monthly_bonus: emp.monthly_bonus,
+        $currency: emp.currency,
+      });
   }
 
   getEmployer(id: string): EmployerRow | null {
@@ -143,24 +232,24 @@ export class TimesheetDB {
         `INSERT INTO entries (id, date, employer_id, hours, start_time, end_time,
            timezone, confidence, category, description, source, status,
            session_id, invoice_id, created_at, reviewed_at, finalized_at)
-         VALUES (@id, @date, @employer_id, @hours, @start_time, @end_time,
-           @timezone, @confidence, @category, @description, @source, 'draft',
-           @session_id, NULL, @created_at, NULL, NULL)`
+         VALUES ($id, $date, $employer_id, $hours, $start_time, $end_time,
+           $timezone, $confidence, $category, $description, $source, 'draft',
+           $session_id, NULL, $created_at, NULL, NULL)`
       )
       .run({
-        id,
-        date: input.date,
-        employer_id: input.employer_id,
-        hours: input.hours,
-        start_time: input.start_time,
-        end_time: input.end_time,
-        timezone: input.timezone ?? "America/New_York",
-        confidence: input.confidence ?? "medium",
-        category: input.category ?? "coding",
-        description: input.description,
-        source: input.source ?? "manual",
-        session_id: input.session_id ?? null,
-        created_at: now,
+        $id: id,
+        $date: input.date,
+        $employer_id: input.employer_id,
+        $hours: input.hours,
+        $start_time: input.start_time,
+        $end_time: input.end_time,
+        $timezone: input.timezone ?? "America/New_York",
+        $confidence: input.confidence ?? "medium",
+        $category: input.category ?? "coding",
+        $description: input.description,
+        $source: input.source ?? "manual",
+        $session_id: input.session_id ?? null,
+        $created_at: now,
       });
     return id;
   }
@@ -222,34 +311,36 @@ export class TimesheetDB {
     if (status === "reviewed") {
       this.db
         .prepare(
-          "UPDATE entries SET status = @status, reviewed_at = @now WHERE id = @id"
+          "UPDATE entries SET status = $status, reviewed_at = $now WHERE id = $id"
         )
-        .run({ status, now, id });
+        .run({ $status: status, $now: now, $id: id });
     } else if (status === "finalized") {
       this.db
         .prepare(
-          "UPDATE entries SET status = @status, finalized_at = @now WHERE id = @id"
+          "UPDATE entries SET status = $status, finalized_at = $now WHERE id = $id"
         )
-        .run({ status, now, id });
+        .run({ $status: status, $now: now, $id: id });
     } else {
       this.db
-        .prepare("UPDATE entries SET status = @status WHERE id = @id")
-        .run({ status, id });
+        .prepare("UPDATE entries SET status = $status WHERE id = $id")
+        .run({ $status: status, $id: id });
     }
   }
 
   updateEntryHours(id: string, hours: number, endTime: string): void {
     this.db
       .prepare(
-        "UPDATE entries SET hours = @hours, end_time = @end_time WHERE id = @id"
+        "UPDATE entries SET hours = $hours, end_time = $end_time WHERE id = $id"
       )
-      .run({ hours, end_time: endTime, id });
+      .run({ $hours: hours, $end_time: endTime, $id: id });
   }
 
   updateEntryDescription(id: string, description: string): void {
     this.db
-      .prepare("UPDATE entries SET description = @description WHERE id = @id")
-      .run({ description, id });
+      .prepare(
+        "UPDATE entries SET description = $description WHERE id = $id"
+      )
+      .run({ $description: description, $id: id });
   }
 
   // ── Proof Artifacts ──
@@ -259,16 +350,16 @@ export class TimesheetDB {
     this.db
       .prepare(
         `INSERT INTO proof_artifacts (id, entry_id, type, reference, timestamp, url, metadata)
-         VALUES (@id, @entry_id, @type, @reference, @timestamp, @url, @metadata)`
+         VALUES ($id, $entry_id, $type, $reference, $timestamp, $url, $metadata)`
       )
       .run({
-        id,
-        entry_id: input.entry_id,
-        type: input.type,
-        reference: input.reference,
-        timestamp: input.timestamp,
-        url: input.url ?? null,
-        metadata: input.metadata ?? "{}",
+        $id: id,
+        $entry_id: input.entry_id,
+        $type: input.type,
+        $reference: input.reference,
+        $timestamp: input.timestamp,
+        $url: input.url ?? null,
+        $metadata: input.metadata ?? "{}",
       });
     return id;
   }
@@ -291,17 +382,17 @@ export class TimesheetDB {
     this.db
       .prepare(
         `INSERT INTO repo_map (pattern, employer_id, source, added_at)
-         VALUES (@pattern, @employer_id, @source, @added_at)
+         VALUES ($pattern, $employer_id, $source, $added_at)
          ON CONFLICT(pattern) DO UPDATE SET
            employer_id = excluded.employer_id,
            source = excluded.source,
            added_at = excluded.added_at`
       )
       .run({
-        pattern,
-        employer_id: employerId,
-        source,
-        added_at: new Date().toISOString(),
+        $pattern: pattern,
+        $employer_id: employerId,
+        $source: source,
+        $added_at: new Date().toISOString(),
       });
   }
 
@@ -322,10 +413,10 @@ export class TimesheetDB {
   setMeta(key: string, value: string): void {
     this.db
       .prepare(
-        `INSERT INTO meta (key, value) VALUES (@key, @value)
+        `INSERT INTO meta (key, value) VALUES ($key, $value)
          ON CONFLICT(key) DO UPDATE SET value = excluded.value`
       )
-      .run({ key, value });
+      .run({ $key: key, $value: value });
   }
 
   getMeta(key: string): string | null {
