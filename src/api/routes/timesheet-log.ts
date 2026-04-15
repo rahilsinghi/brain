@@ -1,5 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import type { EntryCategory } from "../../timesheet/types.js";
+import { loadTimesheetConfig } from "../../timesheet/config.js";
+import { scanRepo, upsertSession } from "../../timesheet/scanner.js";
 
 interface LogBody {
   employer_id: string;
@@ -27,7 +29,73 @@ const logSchema = {
   },
 };
 
+interface BackfillBody {
+  since: string;
+}
+
+const backfillSchema = {
+  body: {
+    type: "object" as const,
+    required: ["since"],
+    properties: {
+      since: { type: "string" },
+    },
+  },
+};
+
 export async function timesheetLogRoute(app: FastifyInstance): Promise<void> {
+  app.post<{ Body: BackfillBody }>(
+    "/timesheet/backfill",
+    { schema: backfillSchema },
+    async (request, reply) => {
+      const { since } = request.body;
+      const db = app.timesheetDb;
+      const vaultRoot = app.vaultRoot;
+
+      const timesheetConfig = loadTimesheetConfig(vaultRoot);
+      const mappings = db.getRepoMappings();
+
+      // Collect local repo paths from mappings + config
+      const localPaths = new Set<string>();
+      for (const m of mappings) {
+        if (m.pattern.startsWith("/")) localPaths.add(m.pattern);
+      }
+      for (const emp of Object.values(timesheetConfig.employers)) {
+        for (const repo of emp.repos) {
+          const expanded = repo.startsWith("~")
+            ? repo.replace("~", process.env.HOME ?? "")
+            : repo;
+          if (expanded.startsWith("/")) localPaths.add(expanded);
+        }
+      }
+
+      let sessionsFound = 0;
+      for (const repoPath of localPaths) {
+        try {
+          const { sessions } = await scanRepo(
+            repoPath,
+            since,
+            timesheetConfig.scanner,
+            mappings,
+          );
+          for (const session of sessions) {
+            upsertSession(db, session, timesheetConfig.scanner.buffer_minutes);
+            sessionsFound++;
+          }
+        } catch (err) {
+          console.error(
+            `[timesheet/backfill] Scan error for ${repoPath}: ${err instanceof Error ? err.message : String(err)}`,
+          );
+        }
+      }
+
+      return reply.send({
+        sessions_found: sessionsFound,
+        message: `Backfill complete: ${sessionsFound} sessions from ${localPaths.size} repos since ${since}`,
+      });
+    },
+  );
+
   app.post<{ Body: LogBody }>(
     "/timesheet/log",
     { schema: logSchema },

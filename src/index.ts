@@ -20,6 +20,9 @@ import { getHealthStats } from "./api/health-core.js";
 import { appendDailyEntry, writeDailySummary } from "./daily/log.js";
 import { generateSlides } from "./output/slides.js";
 import { generatePlot } from "./output/plots.js";
+import { TimesheetDB } from "./timesheet/db.js";
+import { loadTimesheetConfig } from "./timesheet/config.js";
+import { scanRepo, upsertSession } from "./timesheet/scanner.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
@@ -54,12 +57,43 @@ const store = new VectorStore(join(vaultRoot, ".lancedb"));
 await store.init();
 console.log("[brain] LanceDB ready.");
 
+// Init timesheet DB
+console.log("[brain] Initializing timesheet DB...");
+const timesheetConfig = loadTimesheetConfig(vaultRoot);
+const timesheetDb = new TimesheetDB(join(vaultRoot, ".brain", "timesheet.db"));
+
+// Sync employers from config to DB
+for (const [id, emp] of Object.entries(timesheetConfig.employers)) {
+  timesheetDb.upsertEmployer({
+    id,
+    rate_hourly: emp.rate_hourly,
+    weekly_cap_hours: emp.weekly_cap ?? null,
+    monthly_bonus: emp.monthly_bonus ?? null,
+    currency: emp.currency,
+  });
+  for (const pattern of emp.repos) {
+    timesheetDb.upsertRepoMapping(pattern, id, "config");
+  }
+}
+console.log(`[brain] Timesheet DB ready (${Object.keys(timesheetConfig.employers).length} employers).`);
+
+// Missed cron recovery
+const lastScan = timesheetDb.getMeta("last_scan_time");
+if (lastScan) {
+  const lastScanAge = Date.now() - new Date(lastScan).getTime();
+  const intervalMs = timesheetConfig.scanner.poll_interval_minutes * 60 * 1000;
+  if (lastScanAge > intervalMs * 2) {
+    console.log("[brain] Timesheet: missed scans detected, catch-up on next cron tick.");
+  }
+}
+
 // Step 2: Start HTTP server
 const server = createServer({
   store,
   vaultRoot,
   config,
   synthesizeFn: synthesize,
+  timesheetDb,
 });
 await server.listen({ port: config.api.port, host: config.api.host });
 console.log(`[brain] API server listening on http://${config.api.host}:${config.api.port}`);
@@ -238,6 +272,48 @@ cron.schedule("55 23 * * *", async () => {
     console.error(
       `[cron] Daily summary failed: ${err instanceof Error ? err.message : String(err)}`,
     );
+  }
+});
+
+// Timesheet scanner cron
+const tsInterval = `*/${timesheetConfig.scanner.poll_interval_minutes} * * * *`;
+cron.schedule(tsInterval, async () => {
+  console.log("[cron] Running timesheet scanner...");
+  try {
+    const lastScanTime = timesheetDb.getMeta("last_scan_time") ?? new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+    const mappings = timesheetDb.getRepoMappings();
+
+    // Collect local repo paths
+    const localPaths = new Set<string>();
+    for (const m of mappings) {
+      if (m.pattern.startsWith("/")) localPaths.add(m.pattern);
+    }
+    for (const emp of Object.values(timesheetConfig.employers)) {
+      for (const repo of emp.repos) {
+        const expanded = repo.startsWith("~") ? repo.replace("~", process.env.HOME ?? "") : repo;
+        if (expanded.startsWith("/")) localPaths.add(expanded);
+      }
+    }
+
+    let totalSessions = 0;
+    for (const repoPath of localPaths) {
+      try {
+        const { sessions } = await scanRepo(repoPath, lastScanTime, timesheetConfig.scanner, mappings);
+        for (const session of sessions) {
+          upsertSession(timesheetDb, session, timesheetConfig.scanner.buffer_minutes);
+          totalSessions++;
+        }
+      } catch (err) {
+        console.error(`[cron] Timesheet scan error for ${repoPath}: ${err instanceof Error ? err.message : String(err)}`);
+      }
+    }
+
+    timesheetDb.setMeta("last_scan_time", new Date().toISOString());
+    if (totalSessions > 0) {
+      console.log(`[cron] Timesheet: ${totalSessions} sessions upserted.`);
+    }
+  } catch (err) {
+    console.error(`[cron] Timesheet scan failed: ${err instanceof Error ? err.message : String(err)}`);
   }
 });
 
