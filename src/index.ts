@@ -32,6 +32,8 @@ import {
   flushTelegramQueue,
   sendViaBotApi,
 } from "./telegram/send-queue.js";
+import { RelayClient } from "./relay/client.js";
+import { syncRelayInbound } from "./relay/sync.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
@@ -146,50 +148,103 @@ const plotFn = (description: string) =>
     matplotlibRc: config.visual.matplotlib_rc,
   });
 
-// Step 2.5: Start Telegram bot as isolated subprocess
+// Step 2.5: Start Telegram bot or Relay client
 const botToken = config.telegram.bot_token ?? process.env.TELEGRAM_BOT_TOKEN ?? null;
 let telegramProc: ReturnType<typeof Bun.spawn> | null = null;
+const relayEnabled = config.relay?.enabled === true && !!config.relay.url && !!config.relay.secret;
+let relayClient: RelayClient | null = null;
 
-function spawnTelegramBot(attempt = 0) {
-  const delay = Math.min(5000 * 2 ** attempt, 120_000);
-  const workerPath = join(import.meta.dirname, "telegram", "worker.ts");
+if (relayEnabled) {
+  // Relay mode — daemon polls relay server instead of running Telegram bot
+  const relay = config.relay!;
+  relayClient = new RelayClient(relay.url, relay.secret);
+  console.log(`[brain] Relay mode enabled — polling ${relay.url} every ${relay.poll_interval_seconds}s.`);
 
-  telegramProc = Bun.spawn(["bun", "run", workerPath], {
-    cwd: vaultRoot,
-    stdout: "inherit",
-    stderr: "inherit",
-    env: { ...process.env },
-  });
+  // Immediate boot sync
+  syncRelayInbound({
+    client: relayClient,
+    ingestFn: ingestContent,
+    synthesizeFn: synthesize as unknown as (q: string, s: unknown, k: number) => Promise<{ answer: string }>,
+    store,
+    topK: config.api.default_top_k,
+    vaultRoot,
+    voiceDir: join(vaultRoot, config.watchers.voice_dir),
+  })
+    .then(({ processed, failed }) => {
+      if (processed + failed > 0) {
+        console.log(`[brain] Boot relay sync: ${processed} processed, ${failed} failed.`);
+      }
+    })
+    .catch((err) => {
+      console.error(`[brain] Boot relay sync failed: ${err instanceof Error ? err.message : String(err)}`);
+    });
 
-  telegramProc.exited.then((code) => {
-    if (code !== 0) {
-      console.error(`[brain] Telegram worker exited (code ${code}), restarting in ${delay / 1000}s...`);
-      setTimeout(() => spawnTelegramBot(Math.min(attempt + 1, 5)), delay);
-    } else {
-      console.log("[brain] Telegram worker exited cleanly.");
+  // Relay sync cron
+  const relayInterval = relay.poll_interval_seconds;
+  const relayCronExpr = relayInterval < 60
+    ? `*/${Math.max(1, Math.round(relayInterval / 60))} * * * *`
+    : `*/${Math.round(relayInterval / 60)} * * * *`;
+  cron.schedule(relayCronExpr, async () => {
+    try {
+      const { processed, failed } = await syncRelayInbound({
+        client: relayClient!,
+        ingestFn: ingestContent,
+        synthesizeFn: synthesize as unknown as (q: string, s: unknown, k: number) => Promise<{ answer: string }>,
+        store,
+        topK: config.api.default_top_k,
+        vaultRoot,
+        voiceDir: join(vaultRoot, config.watchers.voice_dir),
+      });
+      if (processed + failed > 0) {
+        console.log(`[cron] Relay sync: ${processed} processed, ${failed} failed.`);
+      }
+    } catch (err) {
+      console.error(`[cron] Relay sync failed: ${err instanceof Error ? err.message : String(err)}`);
     }
   });
-
-  console.log(`[brain] Telegram worker spawned (pid=${telegramProc.pid}).`);
-}
-
-if (botToken && config.telegram.allowed_user_ids.length > 0) {
-  spawnTelegramBot();
 } else {
-  console.log("[brain] Telegram bot disabled (no token or no allowed users).");
-}
+  // Local Telegram bot mode (existing behavior)
+  function spawnTelegramBot(attempt = 0) {
+    const delay = Math.min(5000 * 2 ** attempt, 120_000);
+    const workerPath = join(import.meta.dirname, "telegram", "worker.ts");
 
-// Flush any pending Telegram messages from before shutdown/sleep
-{
-  const chatId = getTelegramChatId();
-  if (chatId && botToken) {
-    flushTelegramQueue(timesheetDb, (cid, msg) => sendViaBotApi(botToken, cid, msg))
-      .then((sent) => {
-        if (sent > 0) console.log(`[brain] Boot flush: ${sent} queued Telegram messages sent.`);
-      })
-      .catch((err) => {
-        console.error(`[brain] Boot flush failed: ${err instanceof Error ? err.message : String(err)}`);
-      });
+    telegramProc = Bun.spawn(["bun", "run", workerPath], {
+      cwd: vaultRoot,
+      stdout: "inherit",
+      stderr: "inherit",
+      env: { ...process.env },
+    });
+
+    telegramProc.exited.then((code) => {
+      if (code !== 0) {
+        console.error(`[brain] Telegram worker exited (code ${code}), restarting in ${delay / 1000}s...`);
+        setTimeout(() => spawnTelegramBot(Math.min(attempt + 1, 5)), delay);
+      } else {
+        console.log("[brain] Telegram worker exited cleanly.");
+      }
+    });
+
+    console.log(`[brain] Telegram worker spawned (pid=${telegramProc.pid}).`);
+  }
+
+  if (botToken && config.telegram.allowed_user_ids.length > 0) {
+    spawnTelegramBot();
+  } else {
+    console.log("[brain] Telegram bot disabled (no token or no allowed users).");
+  }
+
+  // Flush any pending Telegram messages from before shutdown/sleep
+  {
+    const chatId = getTelegramChatId();
+    if (chatId && botToken) {
+      flushTelegramQueue(timesheetDb, (cid, msg) => sendViaBotApi(botToken, cid, msg))
+        .then((sent) => {
+          if (sent > 0) console.log(`[brain] Boot flush: ${sent} queued Telegram messages sent.`);
+        })
+        .catch((err) => {
+          console.error(`[brain] Boot flush failed: ${err instanceof Error ? err.message : String(err)}`);
+        });
+    }
   }
 }
 
@@ -382,31 +437,58 @@ function getTelegramChatId(): number | null {
 }
 
 // Helper: enqueue a Telegram message if chat_id is known
-function enqueueTelegram(message: string, category: string): void {
+// In relay mode, pushes to relay outbound queue instead of local SQLite queue.
+function enqueueTelegram(
+  message: string,
+  category: string,
+  opts?: { deliver_at?: string; entry_ids?: string[]; report_date?: string },
+): void {
   const chatId = getTelegramChatId();
   if (!chatId) {
     console.log(`[telegram-queue] No chat_id stored yet — message queued without recipient. Send /start to the bot first.`);
     return;
   }
-  queueTelegramMessage(timesheetDb, chatId, message, category);
+
+  if (relayEnabled && relayClient) {
+    relayClient
+      .pushOutbound({
+        chat_id: chatId,
+        message,
+        category,
+        deliver_at: opts?.deliver_at,
+        entry_ids: opts?.entry_ids,
+        report_date: opts?.report_date,
+      })
+      .then((id) => {
+        console.log(`[relay] Outbound pushed: ${id} (${category})`);
+      })
+      .catch((err) => {
+        console.error(`[relay] Outbound push failed: ${err instanceof Error ? err.message : String(err)}`);
+      });
+  } else {
+    queueTelegramMessage(timesheetDb, chatId, message, category);
+  }
 }
 
 // Telegram queue flush cron (every 2 min — drains pending messages)
-cron.schedule("*/2 * * * *", async () => {
-  const chatId = getTelegramChatId();
-  if (!chatId || !botToken) return;
+// In relay mode, the relay server handles delivery — skip local flush.
+if (!relayEnabled) {
+  cron.schedule("*/2 * * * *", async () => {
+    const chatId = getTelegramChatId();
+    if (!chatId || !botToken) return;
 
-  try {
-    const sent = await flushTelegramQueue(timesheetDb, (cid, msg) =>
-      sendViaBotApi(botToken!, cid, msg),
-    );
-    if (sent > 0) {
-      console.log(`[cron] Telegram queue flushed: ${sent} messages sent.`);
+    try {
+      const sent = await flushTelegramQueue(timesheetDb, (cid, msg) =>
+        sendViaBotApi(botToken!, cid, msg),
+      );
+      if (sent > 0) {
+        console.log(`[cron] Telegram queue flushed: ${sent} messages sent.`);
+      }
+    } catch (err) {
+      console.error(`[cron] Telegram flush failed: ${err instanceof Error ? err.message : String(err)}`);
     }
-  } catch (err) {
-    console.error(`[cron] Telegram flush failed: ${err instanceof Error ? err.message : String(err)}`);
-  }
-});
+  });
+}
 
 // Daily timesheet report cron (9 AM, reviews yesterday)
 const reportHour = timesheetConfig.review.report_hour;
@@ -417,7 +499,15 @@ cron.schedule(`0 ${reportHour} * * *`, () => {
     if (report.entryIds.length > 0) {
       console.log(`[cron] Daily timesheet report for ${yesterday}: ${report.entryIds.length} entries.`);
       timesheetDb.setMeta("last_report_date", yesterday);
-      enqueueTelegram(report.message, "daily_report");
+      // For relay: include deliver_at (tomorrow 9 AM) and report metadata
+      const tomorrow9am = new Date();
+      tomorrow9am.setDate(tomorrow9am.getDate() + 1);
+      tomorrow9am.setHours(9, 0, 0, 0);
+      enqueueTelegram(report.message, "daily_report", {
+        deliver_at: relayEnabled ? tomorrow9am.toISOString() : undefined,
+        entry_ids: report.entryIds,
+        report_date: yesterday,
+      });
     } else {
       console.log(`[cron] No timesheet entries for ${yesterday}, skipping report.`);
       timesheetDb.setMeta("last_report_date", yesterday);

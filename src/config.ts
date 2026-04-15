@@ -97,6 +97,26 @@ function deepMerge(
   return result;
 }
 
+/**
+ * Recursively resolve `${ENV_VAR}` placeholders in string values.
+ */
+function resolveEnvVars(obj: Record<string, unknown>): Record<string, unknown> {
+  const result: Record<string, unknown> = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === "string") {
+      result[key] = value.replace(
+        /\$\{([^}]+)\}/g,
+        (_, envKey: string) => process.env[envKey] ?? "",
+      );
+    } else if (value && typeof value === "object" && !Array.isArray(value)) {
+      result[key] = resolveEnvVars(value as Record<string, unknown>);
+    } else {
+      result[key] = value;
+    }
+  }
+  return result;
+}
+
 export function loadConfig(vaultRoot: string): BrainConfig {
   loadEnv(vaultRoot);
   const configPath = join(vaultRoot, ".brain", "config.yaml");
@@ -104,8 +124,9 @@ export function loadConfig(vaultRoot: string): BrainConfig {
   const raw = readFileSync(configPath, "utf-8");
   const parsed = parseYaml(raw) as Record<string, unknown> | null;
   if (!parsed) return DEFAULTS;
-  return deepMerge(
+  const merged = deepMerge(
     DEFAULTS as unknown as Record<string, unknown>,
-    parsed
-  ) as unknown as BrainConfig;
+    parsed,
+  );
+  return resolveEnvVars(merged) as unknown as BrainConfig;
 }

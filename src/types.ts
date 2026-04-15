@@ -95,6 +95,13 @@ export interface TelegramConfig {
   poll_timeout_s: number;
 }
 
+export interface RelayConfig {
+  enabled: boolean;
+  url: string;
+  secret: string;
+  poll_interval_seconds: number;
+}
+
 export interface BrainConfig {
   api: ApiConfig;
   telegram: TelegramConfig;
@@ -147,6 +154,7 @@ export interface BrainConfig {
     };
   };
   graphify?: GraphifyConfig;
+  relay?: RelayConfig;
 }
 
 export interface WikiChunk {
