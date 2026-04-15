@@ -75,6 +75,12 @@ export async function handleTextMessage(
   const userId = ctx.from?.id;
   if (!userId || !deps.allowedUserIds.includes(userId)) return;
 
+  // Lazily persist chat_id for daemon-initiated messages
+  const chatId = ctx.chat?.id;
+  if (chatId && deps.timesheetDb && !deps.timesheetDb.getMeta("telegram_chat_id")) {
+    deps.timesheetDb.setMeta("telegram_chat_id", String(chatId));
+  }
+
   const text = ctx.message?.text?.trim() ?? "";
   if (text.length === 0) {
     await ctx.reply("Empty message — nothing to save.");
@@ -203,8 +209,14 @@ export async function handleAudioMessage(
 
 export async function handleStartCommand(
   ctx: Context,
-  _deps: HandlerDeps,
+  deps: HandlerDeps,
 ): Promise<void> {
+  // Persist chat_id so daemon crons can send proactive messages
+  const chatId = ctx.chat?.id;
+  if (chatId && deps.timesheetDb) {
+    deps.timesheetDb.setMeta("telegram_chat_id", String(chatId));
+  }
+
   await ctx.reply(
     "Welcome to Brain — your personal knowledge base.\n\n" +
       "Send text to save it as knowledge.\n" +

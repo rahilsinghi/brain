@@ -27,6 +27,11 @@ import { generateDailyReport } from "./timesheet/daily-report.js";
 import { checkCapAlerts } from "./timesheet/alerts.js";
 import { finalizeWeek } from "./timesheet/finalize.js";
 import { syncWeekToWiki } from "./timesheet/wiki-sync.js";
+import {
+  queueTelegramMessage,
+  flushTelegramQueue,
+  sendViaBotApi,
+} from "./telegram/send-queue.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
@@ -81,13 +86,45 @@ for (const [id, emp] of Object.entries(timesheetConfig.employers)) {
 }
 console.log(`[brain] Timesheet DB ready (${Object.keys(timesheetConfig.employers).length} employers).`);
 
-// Missed cron recovery
+// Missed cron recovery — scanner
 const lastScan = timesheetDb.getMeta("last_scan_time");
 if (lastScan) {
   const lastScanAge = Date.now() - new Date(lastScan).getTime();
   const intervalMs = timesheetConfig.scanner.poll_interval_minutes * 60 * 1000;
   if (lastScanAge > intervalMs * 2) {
     console.log("[brain] Timesheet: missed scans detected, catch-up on next cron tick.");
+  }
+}
+
+// Missed cron recovery — daily report
+// If the daemon was asleep during scheduled report time, generate and queue now
+{
+  const lastReportDate = timesheetDb.getMeta("last_report_date");
+  const yesterday = new Date(Date.now() - 86_400_000).toISOString().slice(0, 10);
+  if (lastReportDate !== yesterday) {
+    const report = generateDailyReport(timesheetDb, timesheetConfig, yesterday);
+    if (report.entryIds.length > 0) {
+      console.log(`[brain] Missed daily report for ${yesterday} — queuing now.`);
+      timesheetDb.setMeta("last_report_date", yesterday);
+      const chatId = timesheetDb.getMeta("telegram_chat_id");
+      if (chatId) {
+        queueTelegramMessage(timesheetDb, parseInt(chatId, 10), report.message, "daily_report");
+      }
+    }
+  }
+}
+
+// Flush any pending Telegram messages from before shutdown/sleep
+{
+  const chatId = timesheetDb.getMeta("telegram_chat_id");
+  if (chatId && botToken) {
+    flushTelegramQueue(timesheetDb, (cid, msg) => sendViaBotApi(botToken!, cid, msg))
+      .then((sent) => {
+        if (sent > 0) console.log(`[brain] Boot flush: ${sent} queued Telegram messages sent.`);
+      })
+      .catch((err) => {
+        console.error(`[brain] Boot flush failed: ${err instanceof Error ? err.message : String(err)}`);
+      });
   }
 }
 
@@ -321,15 +358,48 @@ cron.schedule(tsInterval, async () => {
     try {
       const today = new Date().toISOString().slice(0, 10);
       const alerts = checkCapAlerts(timesheetDb, timesheetConfig, today);
-      if (alerts.length > 0) {
-        console.log(`[cron] Timesheet alerts: ${alerts.map((a) => a.message).join("; ")}`);
-        // Alerts will be sent via Telegram when daily report is generated
+      for (const alert of alerts) {
+        console.log(`[cron] Timesheet alert: ${alert.message}`);
+        enqueueTelegram(alert.message, "cap_alert");
       }
     } catch (alertErr) {
       console.error(`[cron] Timesheet alerts failed: ${alertErr instanceof Error ? alertErr.message : String(alertErr)}`);
     }
   } catch (err) {
     console.error(`[cron] Timesheet scan failed: ${err instanceof Error ? err.message : String(err)}`);
+  }
+});
+
+// Helper: get stored chat_id for proactive Telegram sends
+function getTelegramChatId(): number | null {
+  const raw = timesheetDb.getMeta("telegram_chat_id");
+  return raw ? parseInt(raw, 10) : null;
+}
+
+// Helper: enqueue a Telegram message if chat_id is known
+function enqueueTelegram(message: string, category: string): void {
+  const chatId = getTelegramChatId();
+  if (!chatId) {
+    console.log(`[telegram-queue] No chat_id stored yet — message queued without recipient. Send /start to the bot first.`);
+    return;
+  }
+  queueTelegramMessage(timesheetDb, chatId, message, category);
+}
+
+// Telegram queue flush cron (every 2 min — drains pending messages)
+cron.schedule("*/2 * * * *", async () => {
+  const chatId = getTelegramChatId();
+  if (!chatId || !botToken) return;
+
+  try {
+    const sent = await flushTelegramQueue(timesheetDb, (cid, msg) =>
+      sendViaBotApi(botToken!, cid, msg),
+    );
+    if (sent > 0) {
+      console.log(`[cron] Telegram queue flushed: ${sent} messages sent.`);
+    }
+  } catch (err) {
+    console.error(`[cron] Telegram flush failed: ${err instanceof Error ? err.message : String(err)}`);
   }
 });
 
@@ -342,10 +412,10 @@ cron.schedule(`0 ${reportHour} * * *`, () => {
     if (report.entryIds.length > 0) {
       console.log(`[cron] Daily timesheet report for ${yesterday}: ${report.entryIds.length} entries.`);
       timesheetDb.setMeta("last_report_date", yesterday);
-      // Report is sent via Telegram worker's /eod command or cron-triggered push
-      // For now, log it — Telegram send requires bot API access from worker subprocess
+      enqueueTelegram(report.message, "daily_report");
     } else {
       console.log(`[cron] No timesheet entries for ${yesterday}, skipping report.`);
+      timesheetDb.setMeta("last_report_date", yesterday);
     }
   } catch (err) {
     console.error(`[cron] Daily timesheet report failed: ${err instanceof Error ? err.message : String(err)}`);
@@ -374,6 +444,7 @@ cron.schedule(`0 ${finalizeHour} * * ${finalizeDay}`, () => {
     if (result.finalized > 0) {
       const wikiPaths = syncWeekToWiki(timesheetDb, timesheetConfig, vaultRoot, weekStart, weekEnd);
       console.log(`[cron] Wiki synced: ${wikiPaths.join(", ")}`);
+      enqueueTelegram(result.message, "weekly_finalize");
     }
   } catch (err) {
     console.error(`[cron] Weekly finalization failed: ${err instanceof Error ? err.message : String(err)}`);

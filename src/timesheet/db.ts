@@ -174,6 +174,19 @@ const SCHEMA_SQL = `
   CREATE INDEX IF NOT EXISTS idx_entries_session ON entries(session_id);
   CREATE INDEX IF NOT EXISTS idx_entries_status ON entries(status);
   CREATE INDEX IF NOT EXISTS idx_artifacts_entry ON proof_artifacts(entry_id);
+
+  CREATE TABLE IF NOT EXISTS telegram_queue (
+    id TEXT PRIMARY KEY,
+    chat_id INTEGER NOT NULL,
+    message TEXT NOT NULL,
+    category TEXT NOT NULL DEFAULT 'general',
+    created_at TEXT NOT NULL,
+    sent_at TEXT,
+    retry_count INTEGER NOT NULL DEFAULT 0,
+    failed INTEGER NOT NULL DEFAULT 0
+  );
+
+  CREATE INDEX IF NOT EXISTS idx_telegram_queue_pending ON telegram_queue(sent_at, failed);
 `;
 
 export class TimesheetDB {
