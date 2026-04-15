@@ -1,5 +1,4 @@
 import { randomUUID } from "node:crypto";
-import Database from "better-sqlite3";
 import type {
   InboundQueueEntry,
   InboundStatus,
@@ -9,6 +8,43 @@ import type {
   OutboundQueueEntry,
   ReportMessageMap,
 } from "./types.js";
+
+// ── SQLite driver abstraction ──
+// Bun runtime (production on Fly.io): use bun:sqlite (native, no npm dep)
+// Node runtime (vitest): fall back to better-sqlite3
+
+const isBun = typeof globalThis.Bun !== "undefined";
+
+interface SqliteStatement {
+  run(...args: unknown[]): { changes: number };
+  get(...args: unknown[]): unknown;
+  all(...args: unknown[]): unknown[];
+}
+
+interface SqliteDatabase {
+  exec(sql: string): void;
+  prepare(sql: string): SqliteStatement;
+  close(): void;
+}
+
+function openDatabase(dbPath: string): SqliteDatabase {
+  if (isBun) {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { Database } = require("bun:sqlite");
+    const db = new Database(dbPath);
+    db.exec("PRAGMA journal_mode = WAL");
+    db.exec("PRAGMA foreign_keys = ON");
+    return db as SqliteDatabase;
+  }
+
+  // Node / vitest path
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const BetterSqlite3 = require("better-sqlite3");
+  const db = new BetterSqlite3(dbPath);
+  db.pragma("journal_mode = WAL");
+  db.pragma("foreign_keys = ON");
+  return db as SqliteDatabase;
+}
 
 const SCHEMA_SQL = `
   CREATE TABLE IF NOT EXISTS inbound_queue (
@@ -83,12 +119,10 @@ export interface InsertOutboundInput {
 }
 
 export class RelayDB {
-  private db: Database.Database;
+  private db: SqliteDatabase;
 
   constructor(dbPath: string) {
-    this.db = new Database(dbPath);
-    this.db.pragma("journal_mode = WAL");
-    this.db.pragma("foreign_keys = ON");
+    this.db = openDatabase(dbPath);
     this.db.exec(SCHEMA_SQL);
   }
 
