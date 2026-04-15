@@ -106,9 +106,12 @@ if (lastScan) {
     if (report.entryIds.length > 0) {
       console.log(`[brain] Missed daily report for ${yesterday} — queuing now.`);
       timesheetDb.setMeta("last_report_date", yesterday);
-      const chatId = timesheetDb.getMeta("telegram_chat_id");
-      if (chatId) {
-        queueTelegramMessage(timesheetDb, parseInt(chatId, 10), report.message, "daily_report");
+      const chatIdStr = timesheetDb.getMeta("telegram_chat_id");
+      const chatId = chatIdStr ? parseInt(chatIdStr, 10) : NaN;
+      if (!Number.isNaN(chatId)) {
+        queueTelegramMessage(timesheetDb, chatId, report.message, "daily_report");
+      } else {
+        console.log("[brain] No chat_id stored — missed report generated but not queued. Send /start to bot.");
       }
     }
   }
@@ -116,7 +119,7 @@ if (lastScan) {
 
 // Flush any pending Telegram messages from before shutdown/sleep
 {
-  const chatId = timesheetDb.getMeta("telegram_chat_id");
+  const chatId = getTelegramChatId();
   if (chatId && botToken) {
     flushTelegramQueue(timesheetDb, (cid, msg) => sendViaBotApi(botToken!, cid, msg))
       .then((sent) => {
@@ -373,7 +376,9 @@ cron.schedule(tsInterval, async () => {
 // Helper: get stored chat_id for proactive Telegram sends
 function getTelegramChatId(): number | null {
   const raw = timesheetDb.getMeta("telegram_chat_id");
-  return raw ? parseInt(raw, 10) : null;
+  if (!raw) return null;
+  const parsed = parseInt(raw, 10);
+  return Number.isNaN(parsed) ? null : parsed;
 }
 
 // Helper: enqueue a Telegram message if chat_id is known
