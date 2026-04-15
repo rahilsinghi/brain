@@ -19,3 +19,8 @@ dist/
 .worktrees/
 .superpowers/
 raw/voice/*.wav
+
+# Timesheet DB (never commit)
+.brain/timesheet.db
+.brain/timesheet.db-wal
+.brain/timesheet.db-shm
