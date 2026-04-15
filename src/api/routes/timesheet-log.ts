@@ -1,0 +1,93 @@
+import type { FastifyInstance } from "fastify";
+import type { EntryCategory } from "../../timesheet/types.js";
+
+interface LogBody {
+  employer_id: string;
+  hours: number;
+  description: string;
+  category: EntryCategory;
+  start_time?: string;
+  end_time?: string;
+  timezone?: string;
+}
+
+const logSchema = {
+  body: {
+    type: "object" as const,
+    required: ["employer_id", "hours", "description", "category"],
+    properties: {
+      employer_id: { type: "string" },
+      hours: { type: "number" },
+      description: { type: "string" },
+      category: { type: "string" },
+      start_time: { type: "string" },
+      end_time: { type: "string" },
+      timezone: { type: "string" },
+    },
+  },
+};
+
+export async function timesheetLogRoute(app: FastifyInstance): Promise<void> {
+  app.post<{ Body: LogBody }>(
+    "/timesheet/log",
+    { schema: logSchema },
+    async (request, reply) => {
+      const {
+        employer_id,
+        hours,
+        description,
+        category,
+        start_time,
+        end_time,
+        timezone,
+      } = request.body;
+
+      const db = app.timesheetDb;
+
+      // Validate employer exists
+      const employer = db.getEmployer(employer_id);
+      if (!employer) {
+        return reply
+          .status(400)
+          .send({ error: `Employer '${employer_id}' not found` });
+      }
+
+      let resolvedStart: string;
+      let resolvedEnd: string;
+      let confidence: "high" | "medium";
+
+      if (start_time && end_time) {
+        // Explicit times provided
+        resolvedStart = start_time;
+        resolvedEnd = end_time;
+        confidence = "high";
+      } else {
+        // Backfill from hours
+        const now = new Date();
+        resolvedEnd = now.toISOString();
+        resolvedStart = new Date(
+          now.getTime() - hours * 60 * 60 * 1000
+        ).toISOString();
+        confidence = "medium";
+      }
+
+      const date = resolvedStart.slice(0, 10);
+
+      const entryId = db.insertEntry({
+        date,
+        employer_id,
+        hours,
+        start_time: resolvedStart,
+        end_time: resolvedEnd,
+        timezone: timezone ?? "America/New_York",
+        confidence,
+        category,
+        description,
+        source: "manual",
+      });
+
+      const entry = db.getEntry(entryId);
+      return reply.status(201).send({ entry });
+    }
+  );
+}

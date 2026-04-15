@@ -2,6 +2,7 @@ import Fastify, { type FastifyInstance } from "fastify";
 import type { VectorStore } from "../embedder/vector-store.js";
 import type { BrainConfig } from "../types.js";
 import type { SynthesizeFn } from "../query/synthesize.js";
+import type { TimesheetDB } from "../timesheet/db.js";
 import { healthRoute } from "./routes/health.js";
 import { ingestRoute } from "./routes/ingest.js";
 import { synthesiseRoute } from "./routes/synthesise.js";
@@ -9,12 +10,15 @@ import { saveRoute } from "./routes/save.js";
 import { graphExportRoute } from "./routes/graph-export.js";
 import { graphPushRoute } from "./routes/graph-push.js";
 import { graphifyRoute } from "./routes/graphify.js";
+import { timesheetLogRoute } from "./routes/timesheet-log.js";
+import { timesheetStatusRoute } from "./routes/timesheet-status.js";
 
 interface ServerOptions {
   store: VectorStore;
   vaultRoot: string;
   config: BrainConfig;
   synthesizeFn: SynthesizeFn;
+  timesheetDb?: TimesheetDB;
 }
 
 export function createServer(opts: ServerOptions): FastifyInstance {
@@ -35,6 +39,12 @@ export function createServer(opts: ServerOptions): FastifyInstance {
   app.register(graphExportRoute);
   app.register(graphPushRoute);
   app.register(graphifyRoute);
+
+  if (opts.timesheetDb) {
+    app.decorate("timesheetDb", opts.timesheetDb);
+    app.register(timesheetLogRoute);
+    app.register(timesheetStatusRoute);
+  }
 
   return app;
 }
