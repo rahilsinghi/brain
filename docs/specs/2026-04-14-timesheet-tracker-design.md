@@ -470,6 +470,52 @@ New file: `src/timesheet/invoice.ts`.
 
 **Payment tracking:** `brain timesheet paid --invoice maison-2026-04` or Telegram `paid maison-2026-04` sets `paid_at` and transitions entries to `paid`.
 
+## Operational Guardrails
+
+### 1. Missed Cron Recovery (Daemon Downtime)
+
+The 9 AM daily report and 15-minute scanner both run via `node-cron` inside the daemon. If the laptop is closed or the daemon is dead at trigger time, the cron fires into the void.
+
+**Fix:** On daemon startup, the timesheet module checks `last_report_date` from a metadata row in SQLite. If `current_date > last_report_date` and it's past 9:00 AM local time, generate the missing report(s) immediately. This also applies to the 15-minute scanner — on boot, it runs an immediate scan covering the entire gap since `last_scan_time`. No hours are lost to daemon downtime.
+
+### 2. Git Rebase / Squash Orphan Detection
+
+The `session_id` is anchored to `<repo_slug>_<first_commit_sha>`. If commits are rebased or squashed after ingestion, the original SHAs no longer exist in the git tree. The next scanner run sees new SHAs, can't match the old session, and would double-count.
+
+**Fix:** The 15-minute scanner includes an orphan detection step for `draft` sessions:
+1. For each `draft` git session in SQLite, verify its proof artifact SHAs still exist in the repo (`git cat-file -t <sha>`)
+2. If SHAs are missing (rebased away), check if the new git history has commits overlapping the session's `start_time`–`end_time` window
+3. If overlapping new commits are found: update the session's proof artifacts to reference the new SHAs, recalculate if needed
+4. If no overlapping commits exist: mark the session as `ignored` (the work was likely abandoned or force-pushed away)
+
+This only applies to `draft` entries. Once an entry reaches `reviewed` or beyond, its hours are human-confirmed and immutable — the SHAs become historical references, not active lookups.
+
+### 3. Generated File Exclusion (Giant Diff Guard)
+
+Auto-generated files (lockfiles, build output, vector exports) can produce +15,000 LOC diffs from a 5-second `npm install`. Without filtering, Gemini would hallucinate massive hour estimates.
+
+**Fix:** The `git log --numstat` command in the scanner applies path exclusions before aggregating diff stats. Excluded patterns (configurable in `timesheet-config.yaml`):
+
+```yaml
+scanner:
+  exclude_paths:
+    - "package-lock.json"
+    - "pnpm-lock.yaml"
+    - "yarn.lock"
+    - "bun.lockb"
+    - "*.min.js"
+    - "*.min.css"
+    - "dist/**"
+    - "build/**"
+    - "node_modules/**"
+    - ".lancedb/**"
+    - "*.generated.*"
+    - "*.pb.go"
+    - "*.pb.ts"
+```
+
+Implementation: `git log --numstat` output is post-processed to filter matching paths before summing additions/deletions. The raw unfiltered stats are stored in `proof_artifacts.metadata` for auditability, but only the filtered stats are passed to Gemini.
+
 ## File Structure
 
 ```
