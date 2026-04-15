@@ -110,3 +110,36 @@ export interface SessionCluster {
   start_time: string;
   end_time: string;
 }
+
+// ── Database row types ──
+
+export interface EmployerRow {
+  id: string;
+  rate_hourly: number;
+  weekly_cap_hours: number | null;
+  monthly_bonus: number | null;
+  currency: string;
+}
+
+export interface InsertEntryInput {
+  date: string;
+  employer_id: string;
+  hours: number;
+  start_time: string;
+  end_time: string;
+  timezone?: string;
+  confidence?: EntryConfidence;
+  category?: EntryCategory;
+  description: string;
+  source?: EntrySource;
+  session_id?: string | null;
+}
+
+export interface InsertProofArtifactInput {
+  entry_id: string;
+  type: ProofArtifact["type"];
+  reference: string;
+  timestamp: string;
+  url?: string | null;
+  metadata?: string;
+}
