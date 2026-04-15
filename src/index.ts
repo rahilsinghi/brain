@@ -23,6 +23,8 @@ import { generatePlot } from "./output/plots.js";
 import { TimesheetDB } from "./timesheet/db.js";
 import { loadTimesheetConfig } from "./timesheet/config.js";
 import { scanRepo, upsertSession } from "./timesheet/scanner.js";
+import { generateDailyReport } from "./timesheet/daily-report.js";
+import { checkCapAlerts } from "./timesheet/alerts.js";
 
 const vaultRoot = resolve(import.meta.dirname, "..");
 const startTime = Date.now();
@@ -312,8 +314,39 @@ cron.schedule(tsInterval, async () => {
     if (totalSessions > 0) {
       console.log(`[cron] Timesheet: ${totalSessions} sessions upserted.`);
     }
+
+    // Check cap alerts after scanner run
+    try {
+      const today = new Date().toISOString().slice(0, 10);
+      const alerts = checkCapAlerts(timesheetDb, timesheetConfig, today);
+      if (alerts.length > 0) {
+        console.log(`[cron] Timesheet alerts: ${alerts.map((a) => a.message).join("; ")}`);
+        // Alerts will be sent via Telegram when daily report is generated
+      }
+    } catch (alertErr) {
+      console.error(`[cron] Timesheet alerts failed: ${alertErr instanceof Error ? alertErr.message : String(alertErr)}`);
+    }
   } catch (err) {
     console.error(`[cron] Timesheet scan failed: ${err instanceof Error ? err.message : String(err)}`);
+  }
+});
+
+// Daily timesheet report cron (9 AM, reviews yesterday)
+const reportHour = timesheetConfig.review.report_hour;
+cron.schedule(`0 ${reportHour} * * *`, () => {
+  try {
+    const yesterday = new Date(Date.now() - 86_400_000).toISOString().slice(0, 10);
+    const report = generateDailyReport(timesheetDb, timesheetConfig, yesterday);
+    if (report.entryIds.length > 0) {
+      console.log(`[cron] Daily timesheet report for ${yesterday}: ${report.entryIds.length} entries.`);
+      timesheetDb.setMeta("last_report_date", yesterday);
+      // Report is sent via Telegram worker's /eod command or cron-triggered push
+      // For now, log it — Telegram send requires bot API access from worker subprocess
+    } else {
+      console.log(`[cron] No timesheet entries for ${yesterday}, skipping report.`);
+    }
+  } catch (err) {
+    console.error(`[cron] Daily timesheet report failed: ${err instanceof Error ? err.message : String(err)}`);
   }
 });
 

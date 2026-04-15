@@ -7,6 +7,17 @@ import type { BrainConfig } from "../types.js";
 import type { SynthesizeFn } from "../query/synthesize.js";
 import type { IngestInput, IngestResult } from "../api/ingest-core.js";
 import type { HealthInput, HealthStats } from "../api/health-core.js";
+import type { TimesheetDB } from "../timesheet/db.js";
+import type { TimesheetConfig } from "../timesheet/types.js";
+import { generateDailyReport } from "../timesheet/daily-report.js";
+import {
+  parseReviewCommands,
+  applyReviewCommands,
+} from "../timesheet/telegram-review.js";
+import {
+  getStatusSummary,
+  getWeekMatrix,
+} from "../timesheet/status.js";
 import { truncateAtSentence } from "./truncate.js";
 import { formatForTelegram } from "./format.js";
 
@@ -49,6 +60,9 @@ export interface HandlerDeps {
   fetchFileFn?: FetchFileFn;
   generateSlidesFn?: (topic: string) => Promise<{ mdPath: string; pdfPath: string; htmlPath: string }>;
   generatePlotFn?: (description: string) => Promise<{ pyPath: string; pngPath: string }>;
+  timesheetDb?: TimesheetDB;
+  timesheetConfig?: TimesheetConfig;
+  reportMessageCache?: Map<number, { date: string; entryIds: string[] }>;
 }
 
 export async function handleTextMessage(
@@ -61,6 +75,25 @@ export async function handleTextMessage(
   const text = ctx.message?.text?.trim() ?? "";
   if (text.length === 0) {
     await ctx.reply("Empty message — nothing to save.");
+    return;
+  }
+
+  // Reply to daily report → parse timesheet corrections
+  if (ctx.message?.reply_to_message?.message_id && deps.reportMessageCache) {
+    const cached = deps.reportMessageCache.get(ctx.message.reply_to_message.message_id);
+    if (cached && deps.timesheetDb) {
+      await handleTimesheetReply(ctx, deps);
+      return;
+    }
+  }
+
+  // Quick-entry: +Xh employer ... → timesheet entry (intercept before ingest)
+  if (text.match(/^\+\d+(?:\.\d+)?h\s/) && deps.timesheetDb) {
+    const cmds = parseReviewCommands(text);
+    const today = new Date().toISOString().slice(0, 10);
+    const results = applyReviewCommands(deps.timesheetDb, cmds, [], today);
+    const reply = results.map((r) => (r.success ? `✓ ${r.message}` : `✗ ${r.error}`)).join("\n");
+    await ctx.reply(reply);
     return;
   }
 
@@ -173,8 +206,9 @@ export async function handleStartCommand(
     "Welcome to Brain — your personal knowledge base.\n\n" +
       "Send text to save it as knowledge.\n" +
       "Send a voice note to transcribe and save.\n" +
-      "Start a message with ? to query your wiki.\n\n" +
-      "Commands: /help /status /slides /plot",
+      "Start a message with ? to query your wiki.\n" +
+      "+Xh employer cat desc — quick timesheet entry\n\n" +
+      "Commands: /help /status /slides /plot /ts /eod",
   );
 }
 
@@ -186,13 +220,18 @@ export async function handleHelpCommand(
     "How to use Brain:\n\n" +
       "Send text — ingest as knowledge\n" +
       "Send a voice note — transcribe and save\n" +
-      "?your question — query your wiki\n\n" +
+      "?your question — query your wiki\n" +
+      "+Xh employer cat desc — quick timesheet entry\n\n" +
       "Commands:\n" +
       "/start — Welcome message\n" +
       "/help — This message\n" +
       "/status — Daemon health stats\n" +
       "/slides <topic> — generate presentation slides\n" +
-      "/plot <description> — generate a data visualization",
+      "/plot <description> — generate a data visualization\n" +
+      "/ts — Weekly timesheet summary\n" +
+      "/ts today — Today's entries\n" +
+      "/ts week — Day-by-day matrix\n" +
+      "/eod — End-of-day review (reply to edit)",
   );
 }
 
@@ -271,6 +310,132 @@ export async function handlePlotCommand(
   }
 }
 
+// ── Timesheet Handlers ──
+
+function getWeekBoundsForDate(dateStr: string): { start: string; end: string } {
+  const d = new Date(dateStr + "T12:00:00");
+  const day = d.getDay();
+  const mondayOffset = day === 0 ? -6 : 1 - day;
+  const monday = new Date(d);
+  monday.setDate(d.getDate() + mondayOffset);
+  const sunday = new Date(monday);
+  sunday.setDate(monday.getDate() + 6);
+  return {
+    start: monday.toISOString().slice(0, 10),
+    end: sunday.toISOString().slice(0, 10),
+  };
+}
+
+export async function handleTimesheetStatusCommand(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+  if (!deps.timesheetDb || !deps.timesheetConfig) {
+    await ctx.reply("Timesheet not configured.");
+    return;
+  }
+
+  const text = ctx.message?.text?.replace(/^\/ts\s*/, "").trim() ?? "";
+  const today = new Date().toISOString().slice(0, 10);
+  const { start: weekStart, end: weekEnd } = getWeekBoundsForDate(today);
+
+  if (text === "today") {
+    const report = generateDailyReport(deps.timesheetDb, deps.timesheetConfig, today);
+    await ctx.reply(truncateAtSentence(report.message, TELEGRAM_MAX_LENGTH));
+    return;
+  }
+
+  if (text === "week") {
+    const matrix = getWeekMatrix(deps.timesheetDb, weekStart, weekEnd);
+    if (Object.keys(matrix).length === 0) {
+      await ctx.reply("No entries this week.");
+      return;
+    }
+    const lines: string[] = ["📊 Week Matrix"];
+    for (const [emp, days] of Object.entries(matrix)) {
+      lines.push(`\n${emp.toUpperCase()}`);
+      for (const [date, hours] of Object.entries(days)) {
+        if (hours > 0) {
+          const dayName = new Date(date + "T12:00:00").toLocaleDateString("en-US", { weekday: "short" });
+          lines.push(`  ${dayName} ${date}: ${hours}h`);
+        }
+      }
+    }
+    await ctx.reply(lines.join("\n"));
+    return;
+  }
+
+  // Default: weekly summary
+  const summary = getStatusSummary(deps.timesheetDb, weekStart, weekEnd);
+  if (Object.keys(summary).length === 0) {
+    await ctx.reply("No entries this week.");
+    return;
+  }
+  const lines: string[] = ["📋 Weekly Summary"];
+  for (const [emp, s] of Object.entries(summary)) {
+    const capStr = s.cap_percent != null ? ` (${s.cap_percent}% of cap)` : "";
+    lines.push(`${emp.toUpperCase()}: ${s.hours}h → $${s.revenue}${capStr}`);
+  }
+  await ctx.reply(lines.join("\n"));
+}
+
+export async function handleTimesheetEodCommand(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+  if (!deps.timesheetDb || !deps.timesheetConfig) {
+    await ctx.reply("Timesheet not configured.");
+    return;
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const report = generateDailyReport(deps.timesheetDb, deps.timesheetConfig, today);
+  const sent = await ctx.reply(truncateAtSentence(report.message, TELEGRAM_MAX_LENGTH));
+
+  // Store message_id → date + entryIds for reply parsing
+  if (deps.reportMessageCache && sent.message_id) {
+    deps.reportMessageCache.set(sent.message_id, {
+      date: report.date,
+      entryIds: report.entryIds,
+    });
+  }
+}
+
+export async function handleTimesheetReply(
+  ctx: Context,
+  deps: HandlerDeps,
+): Promise<void> {
+  const userId = ctx.from?.id;
+  if (!userId || !deps.allowedUserIds.includes(userId)) return;
+  if (!deps.timesheetDb || !deps.reportMessageCache) return;
+
+  const replyToId = ctx.message?.reply_to_message?.message_id;
+  if (!replyToId) return;
+
+  const cached = deps.reportMessageCache.get(replyToId);
+  if (!cached) return;
+
+  const text = ctx.message?.text?.trim() ?? "";
+  if (!text) return;
+
+  const commands = parseReviewCommands(text);
+  const results = applyReviewCommands(
+    deps.timesheetDb,
+    commands,
+    cached.entryIds,
+    cached.date,
+  );
+
+  const reply = results
+    .map((r) => (r.success ? `✓ ${r.message}` : `✗ ${r.error ?? r.message}`))
+    .join("\n");
+  await ctx.reply(reply);
+}
+
 export interface TelegramBotDeps {
   token: string;
   allowedUserIds: number[];
@@ -284,10 +449,14 @@ export interface TelegramBotDeps {
   convertAudioFn?: ConvertAudioFn;
   generateSlidesFn?: (topic: string) => Promise<{ mdPath: string; pdfPath: string; htmlPath: string }>;
   generatePlotFn?: (description: string) => Promise<{ pyPath: string; pngPath: string }>;
+  timesheetDb?: TimesheetDB;
+  timesheetConfig?: TimesheetConfig;
 }
 
 export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
   const bot = new Bot(botDeps.token);
+
+  const reportMessageCache = new Map<number, { date: string; entryIds: string[] }>();
 
   const deps: HandlerDeps = {
     allowedUserIds: botDeps.allowedUserIds,
@@ -302,6 +471,9 @@ export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
     convertAudioFn: botDeps.convertAudioFn,
     generateSlidesFn: botDeps.generateSlidesFn,
     generatePlotFn: botDeps.generatePlotFn,
+    timesheetDb: botDeps.timesheetDb,
+    timesheetConfig: botDeps.timesheetConfig,
+    reportMessageCache,
   };
 
   bot.command("start", (ctx) => handleStartCommand(ctx, deps));
@@ -309,6 +481,8 @@ export function createTelegramBot(botDeps: TelegramBotDeps): Bot {
   bot.command("status", (ctx) => handleStatusCommand(ctx, deps));
   bot.command("slides", (ctx) => handleSlidesCommand(ctx, deps));
   bot.command("plot", (ctx) => handlePlotCommand(ctx, deps));
+  bot.command("ts", (ctx) => handleTimesheetStatusCommand(ctx, deps));
+  bot.command("eod", (ctx) => handleTimesheetEodCommand(ctx, deps));
   bot.on("message:voice", (ctx) => handleVoiceMessage(ctx, deps));
   bot.on("message:audio", (ctx) => handleAudioMessage(ctx, deps));
   bot.on("message:text", (ctx) => handleTextMessage(ctx, deps));

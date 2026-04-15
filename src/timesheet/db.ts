@@ -343,6 +343,14 @@ export class TimesheetDB {
       .run({ $description: description, $id: id });
   }
 
+  updateEntryCategory(id: string, category: string): void {
+    this.db
+      .prepare(
+        "UPDATE entries SET category = $category WHERE id = $id"
+      )
+      .run({ $category: category, $id: id });
+  }
+
   // ── Proof Artifacts ──
 
   insertProofArtifact(input: InsertProofArtifactInput): string {
@@ -424,6 +432,40 @@ export class TimesheetDB {
       .prepare("SELECT value FROM meta WHERE key = ?")
       .get(key) as { value: string } | undefined;
     return row?.value ?? null;
+  }
+
+  // ── Alerts ──
+
+  findAlert(employerId: string, week: string, type: string): boolean {
+    const row = this.db
+      .prepare(
+        "SELECT id FROM alerts WHERE employer_id = ? AND week = ? AND type = ? LIMIT 1"
+      )
+      .get(employerId, week, type);
+    return row != null;
+  }
+
+  insertAlert(
+    id: string,
+    employerId: string,
+    week: string,
+    type: string,
+    message: string,
+    sentAt: string,
+  ): void {
+    this.db
+      .prepare(
+        `INSERT INTO alerts (id, employer_id, week, type, message, sent_at)
+         VALUES ($id, $employer_id, $week, $type, $message, $sent_at)`
+      )
+      .run({
+        $id: id,
+        $employer_id: employerId,
+        $week: week,
+        $type: type,
+        $message: message,
+        $sent_at: sentAt,
+      });
   }
 
   // ── Lifecycle ──

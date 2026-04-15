@@ -17,6 +17,8 @@ import {
   handleStatusCommand,
   handleSlidesCommand,
   handlePlotCommand,
+  handleTimesheetStatusCommand,
+  handleTimesheetEodCommand,
   type HandlerDeps,
 } from "./bot.js";
 import { loadConfig } from "../config.js";
@@ -26,6 +28,8 @@ import { ingestContent } from "../api/ingest-core.js";
 import { getHealthStats } from "../api/health-core.js";
 import { generateSlides } from "../output/slides.js";
 import { generatePlot } from "../output/plots.js";
+import { TimesheetDB } from "../timesheet/db.js";
+import { loadTimesheetConfig } from "../timesheet/config.js";
 import { join } from "node:path";
 
 const vaultRoot = resolve(import.meta.dirname, "../..");
@@ -60,6 +64,27 @@ const plotFn = (description: string) =>
     matplotlibRc: config.visual.matplotlib_rc,
   });
 
+// Init timesheet DB (own connection — worker is a separate process)
+const timesheetConfig = loadTimesheetConfig(vaultRoot);
+const timesheetDb = new TimesheetDB(join(vaultRoot, ".brain", "timesheet.db"));
+
+// Sync employers from config
+for (const [id, emp] of Object.entries(timesheetConfig.employers)) {
+  timesheetDb.upsertEmployer({
+    id,
+    rate_hourly: emp.rate_hourly,
+    weekly_cap_hours: emp.weekly_cap ?? null,
+    monthly_bonus: emp.monthly_bonus ?? null,
+    currency: emp.currency,
+  });
+  for (const pattern of emp.repos) {
+    timesheetDb.upsertRepoMapping(pattern, id, "config");
+  }
+}
+console.log(`[telegram-worker] Timesheet DB ready (${Object.keys(timesheetConfig.employers).length} employers).`);
+
+const reportMessageCache = new Map<number, { date: string; entryIds: string[] }>();
+
 const bot = new Bot(botToken);
 
 const deps: HandlerDeps = {
@@ -74,6 +99,9 @@ const deps: HandlerDeps = {
   getHealthStatsFn: getHealthStats,
   generateSlidesFn: slidesFn,
   generatePlotFn: plotFn,
+  timesheetDb,
+  timesheetConfig,
+  reportMessageCache,
 };
 
 bot.command("start", (ctx) => handleStartCommand(ctx, deps));
@@ -81,6 +109,8 @@ bot.command("help", (ctx) => handleHelpCommand(ctx, deps));
 bot.command("status", (ctx) => handleStatusCommand(ctx, deps));
 bot.command("slides", (ctx) => handleSlidesCommand(ctx, deps));
 bot.command("plot", (ctx) => handlePlotCommand(ctx, deps));
+bot.command("ts", (ctx) => handleTimesheetStatusCommand(ctx, deps));
+bot.command("eod", (ctx) => handleTimesheetEodCommand(ctx, deps));
 bot.on("message:voice", (ctx) => handleVoiceMessage(ctx, deps));
 bot.on("message:audio", (ctx) => handleAudioMessage(ctx, deps));
 bot.on("message:text", (ctx) => handleTextMessage(ctx, deps));
