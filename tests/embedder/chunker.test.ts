@@ -40,12 +40,13 @@ describe("chunkMarkdown", () => {
     expect(streaming?.breadcrumb).toBe("Vercel AI SDK → Streaming");
   });
 
-  it("includes child headings in parent chunk content", () => {
+  it("splits ### headings into separate chunks with parent breadcrumb", () => {
     const chunks = chunkMarkdown(SAMPLE_MD, "wiki/concepts/vercel-ai-sdk.md");
-    const streaming = chunks.find((c) => c.heading === "Streaming");
+    const errorHandling = chunks.find((c) => c.heading === "Error Handling");
 
-    expect(streaming?.content).toContain("Error Handling");
-    expect(streaming?.content).toContain("onError callback");
+    expect(errorHandling).toBeDefined();
+    expect(errorHandling?.content).toContain("onError callback");
+    expect(errorHandling?.breadcrumb).toBe("Vercel AI SDK → Streaming → Error Handling");
   });
 
   it("sets filePath on all chunks", () => {
