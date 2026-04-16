@@ -187,6 +187,8 @@ if (relayEnabled) {
     topK: config.api.default_top_k,
     vaultRoot,
     voiceDir: join(vaultRoot, config.watchers.voice_dir),
+    timesheetDb,
+    timesheetConfig,
   })
     .then(({ processed, failed }) => {
       if (processed + failed > 0) {
@@ -197,12 +199,9 @@ if (relayEnabled) {
       console.error(`[brain] Boot relay sync failed: ${err instanceof Error ? err.message : String(err)}`);
     });
 
-  // Relay sync cron
-  const relayInterval = relay.poll_interval_seconds;
-  const relayCronExpr = relayInterval < 60
-    ? `*/${Math.max(1, Math.round(relayInterval / 60))} * * * *`
-    : `*/${Math.round(relayInterval / 60)} * * * *`;
-  cron.schedule(relayCronExpr, async () => {
+  // Relay sync interval — use setInterval for sub-minute polling (15s default)
+  const relayIntervalMs = Math.max(10, relay.poll_interval_seconds) * 1000;
+  setInterval(async () => {
     try {
       const { processed, failed } = await syncRelayInbound({
         client: relayClient!,
@@ -212,14 +211,17 @@ if (relayEnabled) {
         topK: config.api.default_top_k,
         vaultRoot,
         voiceDir: join(vaultRoot, config.watchers.voice_dir),
+        timesheetDb,
+        timesheetConfig,
       });
       if (processed + failed > 0) {
-        console.log(`[cron] Relay sync: ${processed} processed, ${failed} failed.`);
+        console.log(`[relay-sync] ${processed} processed, ${failed} failed.`);
       }
     } catch (err) {
-      console.error(`[cron] Relay sync failed: ${err instanceof Error ? err.message : String(err)}`);
+      console.error(`[relay-sync] Failed: ${err instanceof Error ? err.message : String(err)}`);
     }
-  });
+  }, relayIntervalMs);
+  console.log(`[brain] Relay sync interval: ${relayIntervalMs / 1000}s`);
 } else {
   // Local Telegram bot mode (existing behavior)
   function spawnTelegramBot(attempt = 0) {
