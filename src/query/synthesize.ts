@@ -24,22 +24,31 @@ export interface SynthesisResult {
   novelty_score: number;
 }
 
+export interface SearchableStore {
+  search: (vector: number[], topK: number) => Promise<WikiChunk[]>;
+  hybridSearch?: (vector: number[], queryText: string, topK: number) => Promise<WikiChunk[]>;
+}
+
 export type SynthesizeFn = (
   question: string,
-  store: { search: (vector: number[], topK: number) => Promise<WikiChunk[]> },
+  store: SearchableStore,
   topK: number,
 ) => Promise<SynthesisResult>;
 
 export async function synthesize(
   question: string,
-  store: { search: (vector: number[], topK: number) => Promise<WikiChunk[]> },
+  store: SearchableStore,
   topK: number = 8
 ): Promise<SynthesisResult> {
   // Dynamic import to avoid loading the ONNX model at module import time
   const { embed } = await import("../embedder/embedder.js");
 
   const queryVector = await embed(question);
-  const chunks = await store.search(queryVector, topK);
+
+  // Use hybrid search if available (keyword + vector), fall back to pure vector
+  const chunks = store.hybridSearch
+    ? await store.hybridSearch(queryVector, question, topK)
+    : await store.search(queryVector, topK);
 
   if (chunks.length === 0) {
     return {
