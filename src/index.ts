@@ -160,6 +160,24 @@ if (relayEnabled) {
   relayClient = new RelayClient(relay.url, relay.secret);
   console.log(`[brain] Relay mode enabled — polling ${relay.url} every ${relay.poll_interval_seconds}s.`);
 
+  // Re-register webhook on boot — grammY polling mode calls deleteWebhook on start,
+  // so if the daemon previously ran in local mode, the webhook gets cleared.
+  // This ensures the relay always has the webhook registered.
+  if (botToken) {
+    fetch(`https://api.telegram.org/bot${botToken}/setWebhook?url=${relay.url}/webhook`)
+      .then(async (res) => {
+        const data = await res.json() as { ok: boolean; description?: string };
+        if (data.ok) {
+          console.log("[brain] Telegram webhook re-registered for relay.");
+        } else {
+          console.error(`[brain] Webhook registration failed: ${data.description}`);
+        }
+      })
+      .catch((err) => {
+        console.error(`[brain] Webhook registration error: ${err instanceof Error ? err.message : String(err)}`);
+      });
+  }
+
   // Immediate boot sync
   syncRelayInbound({
     client: relayClient,
