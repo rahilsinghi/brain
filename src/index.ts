@@ -329,6 +329,14 @@ cron.schedule(config.cron.mcp_sources, async () => {
     const gmail = createGmailApiSource(vaultRoot);
     if (gmail) sources.push(gmail);
 
+    const { createCalendarApiSource } = await import("./sources/calendar.js");
+    const calendar = createCalendarApiSource(vaultRoot);
+    if (calendar) sources.push(calendar);
+
+    const { createSlackApiSource } = await import("./sources/slack.js");
+    const slack = createSlackApiSource(vaultRoot);
+    if (slack) sources.push(slack);
+
     if (config.graphify?.repos?.length) {
       const graphifySource = createGraphifySource(vaultRoot, config.graphify);
       sources.push(graphifySource);
@@ -346,11 +354,17 @@ cron.schedule(config.cron.mcp_sources, async () => {
     const gmailIngested =
       (report.results.gmail as { itemsIngested?: number } | undefined)
         ?.itemsIngested ?? 0;
+    const calendarIngested =
+      (report.results.calendar as { itemsIngested?: number } | undefined)
+        ?.itemsIngested ?? 0;
+    const slackIngested =
+      (report.results.slack as { itemsIngested?: number } | undefined)
+        ?.itemsIngested ?? 0;
     const graphifyIngested =
       (report.results.graphify as { itemsIngested?: number } | undefined)
         ?.itemsIngested ?? 0;
     console.log(
-      `[cron] Sync done: ${ghIngested} GitHub items, ${commitIngested} commits, ${gmailIngested} emails, ${graphifyIngested} graphify drops ingested`,
+      `[cron] Sync done: ${ghIngested} GitHub, ${commitIngested} commits, ${gmailIngested} emails, ${calendarIngested} calendar, ${slackIngested} slack, ${graphifyIngested} graphify`,
     );
     if (ghIngested + commitIngested + gmailIngested + graphifyIngested > 0) {
       appendDailyEntry(
