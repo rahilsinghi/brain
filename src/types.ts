@@ -13,6 +13,7 @@ export type SourceType =
   | "github"
   | "gmail"
   | "calendar"
+  | "slack"
   | "voice"
   | "conversation"
   | "auto_research"
