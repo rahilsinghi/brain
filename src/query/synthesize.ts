@@ -57,18 +57,25 @@ export async function synthesize(
   const sourcePaths = [...new Set(chunks.map((c) => c.filePath))];
 
   const response = await generate({
-    prompt: `You are a knowledge assistant answering questions from a personal wiki.
+    prompt: `You are a knowledge assistant answering questions from a personal wiki. Your job is to extract precise answers from the provided excerpts.
 
-Use ONLY the following wiki excerpts to answer. If the excerpts don't contain enough information, say so.
-Do NOT include inline citations, source references, or source numbers in your answer. Sources are tracked separately by the system.
-Write clean prose with no markdown formatting — no bold, no headers, no bullet markers. Use plain dashes (-) for lists.
+RULES:
+- Use ONLY the wiki excerpts below. Never invent information.
+- Extract answers from ANY format: tables, bullet lists, key-value pairs, prose, metadata, structured data.
+- When data appears in a markdown table (e.g., "| Rate | $50/hr |"), extract the specific value.
+- When data appears in frontmatter or structured fields, treat those as authoritative facts.
+- Answer with whatever you CAN find, even if partial. A partial answer is better than "I don't know."
+- Only say you don't have information if the excerpts genuinely contain NOTHING relevant — not if the data is just in an unexpected format.
+- Do NOT include inline citations, source references, or source numbers. Sources are tracked separately.
+- Write clean prose with no markdown formatting — no bold, no headers, no bullet markers. Use plain dashes (-) for lists.
+- Be specific: prefer exact numbers, dates, names over vague descriptions.
 
 Wiki excerpts:
 ${context}
 
 Question: ${question}
 
-Answer concisely and accurately in plain text.`,
+Answer concisely and accurately.`,
     maxTokens: 4096,
   });
 
