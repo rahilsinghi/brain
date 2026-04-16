@@ -2,7 +2,7 @@
 title: "rich-note.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts"
 repo: "portfolio"
-community: 19
+community: 18
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/rich-note.ts`
-**Community:** 19
+**Community:** 18
 
 ## Imports
 - (none)

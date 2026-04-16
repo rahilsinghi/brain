@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-13T19:08:35.515Z
 last_ai_edit: 2026-04-13T19:08:35.515Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 367c89d96a8b540b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-ai-recruitement-1aabc5.md]]"
 tags:
+  - maison
   - employment
   - contract
   - negotiation
@@ -19,6 +20,9 @@ tags:
   - opt
   - meeting
 ---
+
+
+
 
 # Rahil Singhi's Employment Negotiations with Maison
 

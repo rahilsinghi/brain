@@ -8,6 +8,7 @@ last_embedded_hash: c862e2959e4764e6
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/maison-ai-recruitment-thread.md]]"
 tags:
+  - maison
   - recruitment
   - maison
   - ai

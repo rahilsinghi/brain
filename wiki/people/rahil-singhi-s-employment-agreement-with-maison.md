@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-13T22:00:25.236Z
 last_ai_edit: 2026-04-13T22:00:25.236Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e5ead6f1ea6bcfd3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-ai-recruitement-840f64.md]]"
 tags:
+  - maison
   - employment
   - contract
   - offer
@@ -19,6 +20,9 @@ tags:
   - rahil singhi
   - uscis
 ---
+
+
+
 
 # Rahil Singhi's Employment Agreement with Maison
 

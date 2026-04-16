@@ -9,6 +9,7 @@ sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/maison-call-summary-thread.md]]"
 tags:
   - maison
+  - maison
   - hiring
   - onboarding
   - compensation

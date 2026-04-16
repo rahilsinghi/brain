@@ -8,6 +8,7 @@ last_embedded_hash: 0298f8e164b890b1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/career/prep/maison_fredrik_sjoberg_prep.md]]"
 tags:
+  - maison
   - meeting-prep
   - recruitment
   - maison

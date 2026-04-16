@@ -2,7 +2,7 @@
 title: "schemas.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/seed/schemas.ts"
 repo: "brain"
-community: 140
+community: 178
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/seed/schemas.ts`
-**Community:** 140
+**Community:** 178
 
 ## Imports
 - (none)

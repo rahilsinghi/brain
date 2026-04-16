@@ -8,6 +8,7 @@ last_embedded_hash: aaed3c607014ca2d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/career/prep/maison_sandeep_baynes_prep.md]]"
 tags:
+  - maison
   - interview-prep
   - technical-interview
   - maison

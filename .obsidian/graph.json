@@ -6,17 +6,32 @@
   "hideUnresolved": false,
   "showOrphans": false,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "tag:#maison",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "line:(maison)",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0.1,
-  "nodeSizeMultiplier": 0.843932291666667,
-  "lineSizeMultiplier": 1.14125,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.068515625,
+  "lineSizeMultiplier": 0.128498263888889,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
+  "centerStrength": 0.480121527777778,
+  "repelStrength": 11.859375,
+  "linkStrength": 0.733420138888889,
   "linkDistance": 250,
-  "scale": 0.1758344534037335,
+  "scale": 0.014136828137469441,
   "close": true
 }

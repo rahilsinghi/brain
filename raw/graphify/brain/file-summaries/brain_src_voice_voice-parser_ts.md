@@ -2,7 +2,7 @@
 title: "voice-parser.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/voice/voice-parser.ts"
 repo: "brain"
-community: 79
+community: 87
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/voice/voice-parser.ts`
-**Community:** 79
+**Community:** 87
 
 ## Imports
 - (none)

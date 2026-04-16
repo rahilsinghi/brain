@@ -8,6 +8,7 @@ last_embedded_hash: b067a9dca7ce14e2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/career/prep/maison_talking_points.md]]"
 tags:
+  - maison
   - hospitality-tech
   - ai-agents
   - mcp

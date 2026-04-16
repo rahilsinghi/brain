@@ -3,7 +3,7 @@ employers:
     rate_hourly: 50
     weekly_cap: 20
     currency: USD
-    repos: ["maison/*"]
+    repos: ["maison/*", "Maison-Labs/*", "~/Desktop/maison-agent"]
     email_domains: [maison.cx]
     contacts: [fredrik@maison.cx, sandeep@maison.cx, noel@maison.cx]
   wilbo:

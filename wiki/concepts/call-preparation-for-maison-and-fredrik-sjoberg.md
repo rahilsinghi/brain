@@ -8,6 +8,7 @@ last_embedded_hash: c9341b2656d36b8a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-maison-fredrik-sjoberg-call-prep-and-tal-1b5015.md]]"
 tags:
+  - maison
   - recruitment
   - callprep
   - maison

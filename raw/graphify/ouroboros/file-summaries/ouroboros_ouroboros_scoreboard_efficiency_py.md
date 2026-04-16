@@ -2,7 +2,7 @@
 title: "efficiency.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py"
 repo: "ouroboros"
-community: 1
+community: 2
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/efficiency.py`
-**Community:** 1
+**Community:** 2
 
 ## Imports
 - (none)

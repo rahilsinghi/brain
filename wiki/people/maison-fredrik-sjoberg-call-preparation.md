@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-11T00:25:30.595Z
 last_ai_edit: 2026-04-11T00:25:30.595Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 46cc604f2af7967e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-maison-fredrik-sjoberg-call-prep-and-tal-1b5015.md]]"
 tags:
+  - maison
   - career-datacenter
   - recruitment
   - call prep
@@ -17,6 +18,9 @@ tags:
   - agentic commerce
   - claude
 ---
+
+
+
 
 # Maison/Fredrik Sjoberg Call Preparation
 

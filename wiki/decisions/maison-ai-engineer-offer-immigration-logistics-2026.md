@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-13T23:00:24.268Z
 last_ai_edit: 2026-04-13T23:00:24.268Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 566da2b99fac79b3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-ai-recruitement-7fcbca.md]]"
 tags:
+  - maison
   - employment
   - offer
   - ai engineer
@@ -23,6 +24,9 @@ tags:
   - compensation
   - start date
 ---
+
+
+
 
 # Maison AI Engineer Offer & Immigration Logistics (2026)
 

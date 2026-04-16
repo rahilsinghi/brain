@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-13T19:08:25.712Z
 last_ai_edit: 2026-04-13T19:08:25.712Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 86fa6fb097d2ef03
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/updated-invitation-fredrik-x-rahil-tue-apr-14-2026-11-30am-12-15pm-gmt-4-rahilsinghi300-gmailcom-39cfd7.md]]"
 tags:
+  - maison
   - meeting
   - schedule
   - fredrik sjoberg
@@ -17,6 +18,9 @@ tags:
   - stumptown coffee
   - maison
 ---
+
+
+
 
 # Meeting Update: Fredrik Sjoberg and Rahil Singhi (April 2026)
 

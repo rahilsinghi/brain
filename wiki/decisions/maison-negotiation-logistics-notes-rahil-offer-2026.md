@@ -8,6 +8,7 @@ last_embedded_hash: 483d3c3f4a06df51
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/articles/maison-negotiation.md]]"
 tags:
+  - maison
   - negotiation
   - employment
   - immigration

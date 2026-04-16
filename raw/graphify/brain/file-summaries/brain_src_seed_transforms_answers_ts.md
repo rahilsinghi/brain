@@ -2,7 +2,7 @@
 title: "answers.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/answers.ts"
 repo: "brain"
-community: 78
+community: 94
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/seed/transforms/answers.ts`
-**Community:** 78
+**Community:** 94
 
 ## Imports
 - (none)

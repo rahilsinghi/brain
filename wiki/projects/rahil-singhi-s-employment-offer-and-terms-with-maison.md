@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-13T22:00:44.799Z
 last_ai_edit: 2026-04-13T22:00:44.799Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 95116c81ef9d72a7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-ai-recruitement-35d825.md]]"
 tags:
+  - maison
   - employment
   - contract
   - offer letter
@@ -22,6 +23,9 @@ tags:
   - trial period
   - compensation
 ---
+
+
+
 
 # Rahil Singhi's Employment Offer and Terms with Maison
 

@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-11T00:22:28.310Z
 last_ai_edit: 2026-04-11T00:22:28.310Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 06bfda63810529e5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-maison-fredrik-sjoberg-call-prep-and-tal-1b5015.md]]"
 tags:
+  - maison
   - documentation
   - recruitment
   - career-datacenter
@@ -16,6 +17,9 @@ tags:
   - maison
   - noel-panicker
 ---
+
+
+
 
 # Maison/Fredrik Sjoberg Call Preparation and Talking Points (Career-Datacenter)
 

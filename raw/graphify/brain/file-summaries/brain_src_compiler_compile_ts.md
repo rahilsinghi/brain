@@ -2,7 +2,7 @@
 title: "compile.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts"
 repo: "brain"
-community: 12
+community: 22
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/compiler/compile.ts`
-**Community:** 12
+**Community:** 22
 
 ## Imports
 - (none)

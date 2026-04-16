@@ -9,6 +9,7 @@ sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/maison-post-sandeep-call.md]]"
 tags:
   - maison
+  - maison
   - onboarding
   - offer letter
   - rahil

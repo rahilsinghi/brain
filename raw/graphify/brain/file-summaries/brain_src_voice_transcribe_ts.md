@@ -19,6 +19,10 @@ tags: [code-architecture, brain]
 
 ## Contains
 - `defaultExec()`
+- `getAudioDuration()`
+- `splitAudioIntoChunks()`
+- `cleanupChunks()`
+- `deduplicateOverlap()`
 - `LocalWhisperProvider`
 - `OpenAIWhisperProvider`
 - `createTranscriptionProvider()`

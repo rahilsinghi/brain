@@ -2,7 +2,7 @@
 title: "__main__.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/__main__.py"
 repo: "ouroboros"
-community: 27
+community: 23
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/__main__.py`
-**Community:** 27
+**Community:** 23
 
 ## Imports
 - (none)

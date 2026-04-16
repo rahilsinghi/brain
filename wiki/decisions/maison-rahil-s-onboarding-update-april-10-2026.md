@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-10T19:32:24.851Z
 last_ai_edit: 2026-04-10T19:32:24.851Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 28acab174a4d59da
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/maison-fredrik-update-start-monday-april-13-confirmed-1775849532800.md]]"
 tags:
+  - maison
   - maison
   - fredrik sjoberg
   - rahil
@@ -20,6 +21,9 @@ tags:
   - part-time
   - full-time
 ---
+
+
+
 
 # Maison: Rahil's Onboarding Update (April 10, 2026)
 

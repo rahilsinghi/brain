@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-10T18:24:09.788Z
 last_ai_edit: 2026-04-10T18:24:09.788Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6b3fb1f787b54d7c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-ai-recruitement-58f449.md]]"
 tags:
+  - maison
   - recruitment
   - onboarding
   - employment
@@ -21,6 +22,9 @@ tags:
   - startup
   - employment terms
 ---
+
+
+
 
 # Rahil Singhi Onboarding at Maison
 

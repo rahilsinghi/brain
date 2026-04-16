@@ -8,6 +8,7 @@ last_embedded_hash: c5fed0bd05418159
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/career/prep/maison_negotiation_notes.md]]"
 tags:
+  - maison
   - negotiation
   - work-authorization
   - opt

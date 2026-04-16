@@ -2,7 +2,7 @@
 title: "gatsby-check.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-check.ts"
 repo: "karen"
-community: 50
+community: 52
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-check.ts`
-**Community:** 50
+**Community:** 52
 
 ## Imports
 - (none)

@@ -2,7 +2,7 @@
 title: "accuracy.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts"
 repo: "portfolio"
-community: 29
+community: 28
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/accuracy.ts`
-**Community:** 29
+**Community:** 28
 
 ## Imports
 - (none)

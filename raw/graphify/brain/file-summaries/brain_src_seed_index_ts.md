@@ -2,7 +2,7 @@
 title: "index.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/seed/index.ts"
 repo: "brain"
-community: 11
+community: 7
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,15 +12,21 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/seed/index.ts`
-**Community:** 11
+**Community:** 7
 
 ## Imports
 - (none)
 
 ## Contains
+- `sendTelegram()`
+- `sendReply()`
+- `downloadTelegramFile()`
+- `isAllowed()`
 - `slidesFn()`
 - `plotFn()`
 - `spawnTelegramBot()`
+- `getTelegramChatId()`
+- `enqueueTelegram()`
 - `shutdown()`
 - `main()`
 

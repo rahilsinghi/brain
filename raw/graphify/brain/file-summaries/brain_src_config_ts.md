@@ -2,7 +2,7 @@
 title: "config.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/config.ts"
 repo: "brain"
-community: 18
+community: 20
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/config.ts`
-**Community:** 18
+**Community:** 20
 
 ## Imports
 - `vitest.config.ts`

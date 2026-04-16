@@ -2,7 +2,7 @@
 title: "scan-wiki.test.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/tests/graph/scan-wiki.test.ts"
 repo: "brain"
-community: 80
+community: 123
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/tests/graph/scan-wiki.test.ts`
-**Community:** 80
+**Community:** 123
 
 ## Imports
 - (none)

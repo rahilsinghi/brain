@@ -8,6 +8,7 @@ last_embedded_hash: a893c6e5029e971b
 sources:
   - career-datacenter/data/hospitality_companies_tier1.yaml
 tags:
+  - maison
   - company
   - guestcx
   - maison

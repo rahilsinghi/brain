@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-10T21:18:15.993Z
 last_ai_edit: 2026-04-10T21:18:15.993Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 07cd18670fc5175b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-maison-fredrik-sjoberg-call-prep-and-tal-1b5015.md]]"
 tags:
+  - maison
   - fredrik sjoberg
   - maison
   - recruitment
@@ -16,6 +17,9 @@ tags:
   - career
   - noel panicker
 ---
+
+
+
 
 # Fredrik Sjoberg / Maison Recruitment Call Prep
 

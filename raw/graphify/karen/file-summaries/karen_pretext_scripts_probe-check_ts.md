@@ -2,7 +2,7 @@
 title: "probe-check.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts"
 repo: "karen"
-community: 37
+community: 38
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/probe-check.ts`
-**Community:** 37
+**Community:** 38
 
 ## Imports
 - (none)

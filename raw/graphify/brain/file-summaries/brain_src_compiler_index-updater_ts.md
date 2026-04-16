@@ -2,7 +2,7 @@
 title: "index-updater.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/compiler/index-updater.ts"
 repo: "brain"
-community: 72
+community: 104
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/compiler/index-updater.ts`
-**Community:** 72
+**Community:** 104
 
 ## Imports
 - (none)

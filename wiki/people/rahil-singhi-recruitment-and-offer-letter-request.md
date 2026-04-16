@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-10T17:44:12.074Z
 last_ai_edit: 2026-04-10T17:44:12.074Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 33fb999d9079570e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-ai-recruitement-3b6429.md]]"
 tags:
+  - maison
   - recruitment
   - hiring
   - offer letter
@@ -21,6 +22,9 @@ tags:
   - fredrik sjoberg
   - rahil singhi
 ---
+
+
+
 
 # Rahil Singhi Recruitment and Offer Letter Request
 

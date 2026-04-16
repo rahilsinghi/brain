@@ -2,7 +2,7 @@
 title: "editorial-engine.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts"
 repo: "karen"
-community: 10
+community: 11
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/editorial-engine.ts`
-**Community:** 10
+**Community:** 11
 
 ## Imports
 - (none)

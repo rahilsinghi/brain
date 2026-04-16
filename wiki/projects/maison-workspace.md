@@ -1,13 +1,23 @@
 ---
-title: "Maison — Workspace Hub"
+title: Maison — Workspace Hub
 author: ai
 created_at: 2026-04-14T22:00:00-04:00
 last_ai_edit: 2026-04-14T22:00:00-04:00
 last_human_edit: null
-last_embedded_hash: null
-sources: ["brain-synthesis", "stumptown-meeting-2026-04-14", "gmail-threads", "timesheet-tracker"]
-tags: ["maison", "workspace", "hub", "active-engagement"]
+last_embedded_hash: 77153846717b92c1
+sources:
+  - brain-synthesis
+  - stumptown-meeting-2026-04-14
+  - gmail-threads
+  - timesheet-tracker
+tags:
+  - maison
+  - maison
+  - workspace
+  - hub
+  - active-engagement
 ---
+
 
 # Maison — Workspace Hub
 
@@ -98,14 +108,14 @@ tags: ["maison", "workspace", "hub", "active-engagement"]
 
 | Repo | Path | Status | Graphified |
 |------|------|--------|------------|
-| *Maison monorepo* | TBD (clone Apr 16) | Pending | No |
-| *maison.travel app* | TBD (clone Apr 16) | Pending | No |
+| maison-agent (monorepo) | `~/Desktop/maison-agent` | Cloning | No |
+| agent-llm-service (Python) | TBD (Sandeep migrating) | Not in monorepo yet | No |
+| agent-pipeline-task (Python) | TBD (Sandeep migrating) | Not in monorepo yet | No |
 
-### Onboarding Checklist (Apr 16)
+### Onboarding Checklist (Apr 15)
 ```bash
-# 1. Clone repos (get URLs from Fredrik/Sandeep)
-git clone <monorepo-url> ~/Desktop/maison
-git clone <travel-app-url> ~/Desktop/maison-travel
+# 1. Clone monorepo
+git clone git@github.com:Maison-Labs/maison-agent.git ~/Desktop/maison-agent
 
 # 2. Connect each to brain (one command per repo)
 brain-connect ~/Desktop/maison

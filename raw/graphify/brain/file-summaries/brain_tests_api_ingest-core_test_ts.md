@@ -2,7 +2,7 @@
 title: "ingest-core.test.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/tests/api/ingest-core.test.ts"
 repo: "brain"
-community: 132
+community: 166
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/tests/api/ingest-core.test.ts`
-**Community:** 132
+**Community:** 166
 
 ## Imports
 - (none)

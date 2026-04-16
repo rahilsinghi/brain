@@ -2,7 +2,7 @@
 title: "bot.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/telegram/bot.ts"
 repo: "brain"
-community: 1
+community: 3
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/telegram/bot.ts`
-**Community:** 1
+**Community:** 3
 
 ## Imports
 - (none)
@@ -22,11 +22,19 @@ tags: [code-architecture, brain]
 - `defaultFetchFile()`
 - `handleTextMessage()`
 - `handleVoiceMessage()`
+- `handleAudioMessage()`
 - `handleStartCommand()`
 - `handleHelpCommand()`
 - `handleStatusCommand()`
 - `handleSlidesCommand()`
 - `handlePlotCommand()`
+- `getWeekBoundsForDate()`
+- `handleTimesheetStatusCommand()`
+- `handleTimesheetEodCommand()`
+- `handleTimesheetReply()`
+- `handleFinalizeCommand()`
+- `handleInvoiceCommand()`
+- `resolveMonth()`
 - `createTelegramBot()`
 
 ## Calls

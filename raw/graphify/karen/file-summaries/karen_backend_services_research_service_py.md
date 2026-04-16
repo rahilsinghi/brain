@@ -2,7 +2,7 @@
 title: "research_service.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/research_service.py"
 repo: "karen"
-community: 35
+community: 36
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/research_service.py`
-**Community:** 35
+**Community:** 36
 
 ## Imports
 - (none)

@@ -2,7 +2,7 @@
 title: "companies.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/companies.ts"
 repo: "brain"
-community: 60
+community: 69
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/seed/transforms/companies.ts`
-**Community:** 60
+**Community:** 69
 
 ## Imports
 - (none)

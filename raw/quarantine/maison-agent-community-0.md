@@ -1,0 +1,404 @@
+---
+status: quarantined
+source_type: graphify-community
+repo: maison-agent
+community_id: 0
+ingested_at: 2026-04-15T19:59:44.131Z
+parsed_at: 2026-04-15T19:59:44.131Z
+compiled_to: null
+processed_at: null
+retry_count: 2
+last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca6ARcDKzzmHPXEnMpwgZ"}
+compile_progress: null
+quarantined_at: 2026-04-15T20:09:40.663Z
+---
+
+
+
+
+
+
+# maison-agent — Community 0
+
+## Files in this cluster
+
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/auth.ts` — 51 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/api.ts` — 44 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/quality/src/telemetry.ts` — 28 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/session.ts` — 10 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/pages/render/html.ts` — 9 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/auth.test.ts` — 8 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/services/dashboard.ts` — 8 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/a2a/task-store.ts` — 8 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/mcp.ts` — 7 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/lib/permissions.ts` — 7 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/a2a.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/apikey.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/client.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/init.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/internal.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/message.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/tools.ts` — 6 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/test/renderer-client.test.ts` — 5 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/da.ts` — 4 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/llm-client.ts` — 4 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/logger.ts` — 4 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/notify.ts` — 4 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/services/dashboard.test.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/browser-telemetry/src/errors.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/lineage.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/quality/src/db/pool.ts` — 3 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/a2a.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/api.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/apikey.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/test/auth.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/test/auth.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/da.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/pages/render/html.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/pages/render/html.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/mcp.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/plugins/grafana-maison-app/pkg/plugin/resources.go` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/test/session.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/a2a/task-store.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/a2a/task-store.test.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/a2a/task-store.ts` — 2 connections
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/a2a.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/a2a.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/api.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/api.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/api.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/api.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/api.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/api.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/apikey.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/apikey.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/apikey.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/test/auth.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/test/auth.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/auth.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/auth.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/quality-dashboard/src/lib/auth.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/client.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/client.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/client.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/client.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/da.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/dashboard.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/services/dashboard.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/services/dashboard.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/dashboard.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/dashboard.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/services/dashboard.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/browser-telemetry/src/errors.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/browser-telemetry/src/errors.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/browser-telemetry/src/__tests__/errors.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/pages/render/html.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/pages/render/html.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/pages/render/html.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/pages/render/html.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/browser-telemetry/src/init.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/init.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/browser-telemetry/src/init.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/test/init.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/internal.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/internal.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/internal.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/lineage.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/test/lineage.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/llm-client.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/llm-client.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/logger.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/logger.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/mcp.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/mcp.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/mcp.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/test/routes/mcp.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/message.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/message.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/message.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/notify.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/notify.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/auth/src/permissions.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/lib/permissions.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/a2ui-renderer/src/lib/permissions.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/permissions.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/src/permissions.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/quality/src/db/pool.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/quality/src/db/pool.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/test/renderer-client.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/test/renderer-client.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/test/renderer-client.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/apps/console/test/renderer-client.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/session.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/session.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/session.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/session.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/session.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/src/session.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/telemetry/src/session.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/packages/agent-core/test/session.test.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/a2a/task-store.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/a2a/task-store.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/a2a/task-store.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/quality/src/telemetry.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/quality/src/telemetry.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/tools.ts` — 1 connection
+- `/Users/rahilsinghi/Desktop/maison-agent/services/api/src/routes/tools.ts` — 1 connection
+
+## Internal relationships
+
+- `resources` → `init` (imports_from)
+- `resources` → `init_test` (imports_from)
+- `auth_test` → `auth_test_obfuscateuserid` (contains)
+- `auth_test` → `auth_test_buildtestkey` (contains)
+- `auth_test` → `auth` (imports_from)
+- `auth_test` → `auth_test_href` (contains)
+- `auth_test` → `auth_test_makeabortablefetch` (contains)
+- `auth_test` → `telemetry` (imports_from)
+- `auth_test` → `auth_test_makefetchok` (contains)
+- `auth_test` → `auth_test_makefetcherror` (contains)
+- `auth_test_obfuscateuserid` → `auth_test_buildtestkey` (calls)
+- `permissions` → `api` (imports_from)
+- `permissions` → `telemetry` (imports_from)
+- `permissions` → `permissions_buildpermissionset` (contains)
+- `permissions` → `permissions_setpermissions` (contains)
+- `permissions` → `permissions_haspermission` (contains)
+- `permissions` → `permissions_checkpermissions` (contains)
+- `permissions` → `permissions_filtercomponentsbypermission` (contains)
+- `auth` → `api` (imports_from)
+- `auth` → `telemetry` (imports_from)
+- `auth` → `auth_getfirebaseapp` (contains)
+- `auth` → `auth_verifyandgetuser` (contains)
+- `auth` → `auth_refreshfirebasetoken` (contains)
+- `auth` → `auth_frombase64url` (contains)
+- `auth` → `auth_deobfuscateuserid` (contains)
+- `auth` → `auth_obfuscateuserid` (contains)
+- `auth` → `auth_generateapikey` (contains)
+- `auth` → `auth_verifyapikey` (contains)
+- `auth` → `auth_authenticatewithcredentials` (contains)
+- `auth` → `auth_revokesession` (contains)
+- `auth` → `auth_getauthcontext` (contains)
+- `auth` → `auth_hashpassword` (contains)
+- `auth` → `auth_verifypassword` (contains)
+- `auth` → `auth_getjwtsecret` (contains)
+- `auth` → `auth_signtoken` (contains)
+- `auth` → `auth_verifytoken` (contains)
+- `auth` → `auth_setsessioncookie` (contains)
+- `auth` → `auth_clearsessioncookie` (contains)
+- `auth` → `auth_getsessioncookie` (contains)
+- `auth` → `auth_isrootadmin` (contains)
+- `auth` → `auth_generatetoken` (contains)
+- `auth` → `auth_getinviteexpirydate` (contains)
+- `auth` → `auth_getresetexpirydate` (contains)
+- `auth` → `auth` (imports_from)
+- `auth` → `auth_resetauthfortests` (contains)
+- `auth` → `auth_resetauthinstancefortests` (contains)
+- `auth` → `auth_getfirebaseauth` (contains)
+- `auth` → `auth_checkcookiesession` (contains)
+- `auth` → `auth_initauth` (contains)
+- `auth` → `auth_gettoken` (contains)
+- `auth` → `auth_onauthchange` (contains)
+- `auth` → `auth_signout` (contains)
+- `auth` → `html` (imports_from)
+- `auth` → `api_test` (imports_from)
+- `auth` → `apikey` (imports_from)
+- `auth` → `mcp` (imports_from)
+- `auth` → `dashboard` (imports_from)
+- `auth` → `tools` (imports_from)
+- `auth` → `internal` (imports_from)
+- `auth` → `a2a` (imports_from)
+- `auth_getfirebaseapp` → `auth_getfirebaseauth` (calls)
+- `auth_frombase64url` → `auth_deobfuscateuserid` (calls)
+- `auth_obfuscateuserid` → `auth_generateapikey` (calls)
+- `init` → `api` (imports_from)
+- `init` → `init_initbrowsertelemetry` (contains)
+- `init` → `init_resetfortesting` (contains)
+- `init` → `logger` (imports_from)
+- `init` → `init_inittelemetry` (contains)
+- `errors` → `api` (imports_from)
+- `errors` → `errors_initerrorcapture` (contains)
+- `errors` → `errors_initscopederrorcapture` (contains)
+- `errors_test` → `api` (imports_from)
+- `session_test` → `session_test_makemessage` (contains)
+- `session_test` → `session` (imports_from)
+- `message` → `api` (imports_from)
+- `message` → `telemetry` (imports_from)
+- `message` → `message_getmessagesession` (contains)
+- `message` → `message_runquery` (contains)
+- `message` → `message_processquerybackground` (contains)
+- `notify` → `api` (imports_from)
+- `notify` → `telemetry` (imports_from)
+- `notify` → `notify_chatchannel` (contains)
+- `notify` → `notify_notifychat` (contains)
+- `session` → `api` (imports_from)
+- `session` → `telemetry` (imports_from)
+- `session` → `session_createchatsession` (contains)
+- `session` → `session_getchatsession` (contains)
+- `session` → `session_pushmessages` (contains)
+- `session` → `session_generatesessionid` (contains)
+- `session` → `session_attachsessiontospan` (contains)
+- `session` → `session_getsessionid` (contains)
+- `session` → `session_runwithsession` (contains)
+- `client` → `api` (imports_from)
+- `client` → `telemetry` (imports_from)
+- `client` → `client_getclienttranslations` (contains)
+- `client` → `client_gettranslations` (contains)
+- `client` → `client_getclientfields` (contains)
+- `client` → `client_getclientconfig` (contains)
+- `lineage_test` → `lineage` (imports_from)
+- `lineage` → `api` (imports_from)
+- `lineage` → `lineage_setlineageattributes` (contains)
+- `logger` → `api` (imports_from)
+- `logger` → `logger_getlogger` (contains)
+- `logger` → `logger_interceptconsole` (contains)
+- `auth_getjwtsecret` → `auth_signtoken` (calls)
+- `auth_getjwtsecret` → `auth_verifytoken` (calls)
+- `renderer_client_test` → `api` (imports_from)
+- `renderer_client_test` → `renderer_client_test_buildrenderresponse` (contains)
+- `renderer_client_test` → `renderer_client_test_setupdom` (contains)
+- `renderer_client_test` → `renderer_client_test_href` (contains)
+- `renderer_client_test` → `renderer_client_test_handler` (contains)
+- `auth_getfirebaseauth` → `auth_initauth` (calls)
+- `auth_getfirebaseauth` → `auth_gettoken` (calls)
+- `auth_getfirebaseauth` → `auth_onauthchange` (calls)
+- `auth_getfirebaseauth` → `auth_signout` (calls)
+- `auth_checkcookiesession` → `auth_initauth` (calls)
+- `auth_checkcookiesession` → `auth_onauthchange` (calls)
+- `telemetry` → `telemetry` (imports_from)
+- `telemetry` → `telemetry_initqualitytelemetry` (contains)
+- `telemetry` → `telemetry_getqualitylogger` (contains)
+- `telemetry` → `pool` (imports_from)
+- `telemetry` → `html` (imports_from)
+- `telemetry` → `llm_client` (imports_from)
+- `telemetry` → `task_store` (imports_from)
+- `telemetry` → `da` (imports_from)
+- `telemetry` → `apikey` (imports_from)
+- `telemetry` → `mcp` (imports_from)
+- `telemetry` → `api` (imports_from)
+- `telemetry` → `dashboard` (imports_from)
+- `telemetry` → `tools` (imports_from)
+- `telemetry` → `internal` (imports_from)
+- `telemetry` → `a2a` (imports_from)
+- `pool` → `pool_getpool` (contains)
+- `pool` → `pool_closepool` (contains)
+- `api` → `html` (imports_from)
+- `api` → `da_test` (imports_from)
+- `api` → `api_test` (imports_from)
+- `api` → `llm_client` (imports_from)
+- `api` → `task_store` (imports_from)
+- `api` → `da` (imports_from)
+- `api` → `apikey` (imports_from)
+- `api` → `mcp` (imports_from)
+- `api` → `api` (imports_from)
+- `api` → `api_getpmsconfig` (contains)
+- `api` → `api_gettranslationshandler` (contains)
+- `api` → `api_getclientfieldshandler` (contains)
+- `api` → `api_getmessagehandler` (contains)
+- `api` → `api_postmessagehandler` (contains)
+- `api` → `api_getmehandler` (contains)
+- `api` → `dashboard` (imports_from)
+- `api` → `tools` (imports_from)
+- `api` → `internal` (imports_from)
+- `api` → `a2a` (imports_from)
+- `html` → `html_loadschemabyid` (contains)
+- `html` → `html_parsesessioncookie` (contains)
+- `html` → `html_interpolateendpoint` (contains)
+- `html` → `html_resolvedatabindings` (contains)
+- `html` → `html_derivepermissionstrings` (contains)
+- `html` → `html_post` (contains)
+- `html_interpolateendpoint` → `html_resolvedatabindings` (calls)
+- `llm_client_test` → `llm_client` (imports_from)
+- `task_store_test` → `task_store` (imports_from)
+- `da_test` → `da` (imports_from)
+- `mcp_test` → `mcp` (imports_from)
+- `mcp_test` → `mcp_test_createapp` (contains)
+- `apikey_test` → `apikey` (imports_from)
+- `apikey_test` → `apikey_test_createapp` (contains)
+- `a2a_test` → `a2a` (imports_from)
+- `dashboard_test` → `dashboard` (imports_from)
+- `dashboard_test` → `dashboard_test_createapp` (contains)
+- `dashboard_test` → `dashboard_test_makepool` (contains)
+- `internal_test` → `internal` (imports_from)
+- `llm_client` → `llm_client_callllmservice` (contains)
+- `task_store` → `task_store_table` (contains)
+- `task_store` → `task_store_createtask` (contains)
+- `task_store` → `task_store_gettask` (contains)
+- `task_store` → `task_store_updatetaskstate` (contains)
+- `task_store` → `task_store_canceltask` (contains)
+- `task_store_updatetaskstate` → `task_store_canceltask` (calls)
+- `da` → `da_dynamicassethandler` (contains)
+- `apikey` → `apikey_createapikeyhandler` (contains)
+- `apikey` → `apikey_deleteapikeyhandler` (contains)
+- `mcp` → `mcp_mcpposthandler` (contains)
+- `mcp` → `mcp_mcpgethandler` (contains)
+- `mcp` → `mcp_mcpdeletehandler` (contains)
+- `dashboard` → `dashboard_statshandler` (contains)
+- `dashboard` → `dashboard_activityhandler` (contains)
+- `dashboard` → `dashboard_getdashboardstats` (contains)
+- `dashboard` → `dashboard_getdashboardactivity` (contains)
+- `tools` → `tools_checkratelimit` (contains)
+- `tools` → `tools_sitecheckhandler` (contains)
+- `internal` → `internal_notifychathandler` (contains)
+- `internal` → `internal_authverifyhandler` (contains)
+- `a2a` → `a2a_agentcardhandler` (contains)
+- `a2a` → `a2a_a2ahandler` (contains)
+
+## External dependencies
+
+- `app` → `auth` (imports_from) [community 10]
+- `types` → `auth` (imports_from) [community 2]
+- `types` → `task_store_test` (imports_from) [community 2]
+- `types` → `a2a_test` (imports_from) [community 2]
+- `clients` → `api` (imports_from) [community 15]
+- `clients` → `auth` (imports_from) [community 15]
+- `clients` → `telemetry` (imports_from) [community 15]
+- `auth` → `require_auth_test` (imports_from) [community 12]
+- `auth` → `route` (imports_from) [community 12]
+- `auth` → `require_auth` (imports_from) [community 12]
+- `auth` → `tools_test` (imports_from) [community 36]
+- `tracer` → `api` (imports_from) [community 10]
+- `tracer_test` → `api` (imports_from) [community 10]
+- `publisher` → `telemetry` (imports_from) [community 40]
+- `message` → `agent_chat` (imports_from) [community 7]
+- `context_test` → `api` (imports_from) [community 6]
+- `http_test` → `api` (imports_from) [community 10]
+- `context` → `api` (imports_from) [community 6]
+- `health` → `api` (imports_from) [community 10]
+- `http` → `api` (imports_from) [community 10]
+- `openai` → `api` (imports_from) [community 10]
+- `gemini` → `api` (imports_from) [community 10]
+- `agent_chat` → `api` (imports_from) [community 7]
+- `telemetry` → `computed_fields` (imports_from) [community 24]
+- `telemetry` → `server` (imports_from) [community 12]
+- `telemetry` → `methods` (imports_from) [community 25]
+- `tools_test` → `tools` (imports_from) [community 36]

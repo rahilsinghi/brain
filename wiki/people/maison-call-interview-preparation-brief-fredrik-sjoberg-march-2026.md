@@ -8,6 +8,7 @@ last_embedded_hash: 99b7d3c71bd65c50
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/articles/maison-talking-points.md]]"
 tags:
+  - maison
   - hospitality-tech
   - interview-prep
   - ai-agents

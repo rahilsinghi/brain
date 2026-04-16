@@ -2,7 +2,7 @@
 title: "format.test.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/tests/telegram/format.test.ts"
 repo: "brain"
-community: 124
+community: 158
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/tests/telegram/format.test.ts`
-**Community:** 124
+**Community:** 158
 
 ## Imports
 - (none)

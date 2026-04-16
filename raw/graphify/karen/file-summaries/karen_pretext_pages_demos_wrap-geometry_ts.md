@@ -2,7 +2,7 @@
 title: "wrap-geometry.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts"
 repo: "karen"
-community: 23
+community: 21
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/wrap-geometry.ts`
-**Community:** 23
+**Community:** 21
 
 ## Imports
 - (none)

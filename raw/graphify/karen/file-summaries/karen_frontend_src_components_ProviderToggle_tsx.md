@@ -2,7 +2,7 @@
 title: "ProviderToggle.tsx"
 source_file: "/Users/rahilsinghi/Desktop/karen/frontend/src/components/ProviderToggle.tsx"
 repo: "karen"
-community: 5
+community: 0
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/frontend/src/components/ProviderToggle.tsx`
-**Community:** 5
+**Community:** 0
 
 ## Imports
 - `NavBar.tsx`

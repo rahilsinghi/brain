@@ -9,6 +9,7 @@ sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/career/prep/maison_negotiation_notes.md]]"
 tags:
   - maison
+  - maison
   - negotiation
   - immigration
   - f-1 visa

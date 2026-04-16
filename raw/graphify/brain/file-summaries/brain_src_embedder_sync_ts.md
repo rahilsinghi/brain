@@ -2,7 +2,7 @@
 title: "sync.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts"
 repo: "brain"
-community: 2
+community: 8
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/embedder/sync.ts`
-**Community:** 2
+**Community:** 8
 
 ## Imports
 - `yaml-loader.ts`

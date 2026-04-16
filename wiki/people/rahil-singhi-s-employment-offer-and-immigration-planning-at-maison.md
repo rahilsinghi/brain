@@ -4,10 +4,11 @@ author: ai
 created_at: 2026-04-14T02:00:22.215Z
 last_ai_edit: 2026-04-14T02:00:22.215Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 08ab8409af455b40
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-ai-recruitement-6be55b.md]]"
 tags:
+  - maison
   - employment
   - offer
   - maison
@@ -24,6 +25,9 @@ tags:
   - sign-on bonus
   - trial period
 ---
+
+
+
 
 # Rahil Singhi's Employment Offer and Immigration Planning at Maison
 
