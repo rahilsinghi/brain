@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:11:21.830Z
 last_ai_edit: 2026-04-10T18:11:21.830Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b239ddaa59b7118a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-sources-gmail-source-with-plaintext-html-extraction-and-66b6b4.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - development
   - brain project
 ---
+
 
 # Gmail Source Integration with Content Extraction and Signature Stripping
 

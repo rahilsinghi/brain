@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:42:00.394Z
 last_ai_edit: 2026-04-13T15:42:00.394Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 90f866eb0cec97fc
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-quantified-impact-metrics-089f36.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - achievements
   - development
 ---
+
 
 # Quantified Impact Metrics in Career-Datacenter
 

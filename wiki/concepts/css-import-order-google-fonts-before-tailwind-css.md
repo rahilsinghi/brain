@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:16:11.035Z
 last_ai_edit: 2026-04-10T21:16:11.035Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 43143754e7df4393
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-css-import-order-google-fonts-must-precede-import-tai-259fc2.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - fix
   - best-practices
 ---
+
 
 # CSS @import Order: Google Fonts Before Tailwind CSS
 

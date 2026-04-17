@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:36:51.970Z
 last_ai_edit: 2026-04-12T21:36:51.970Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ca3a41653c6af897
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-salaryintelligence-market-rate-analysis-from-ba24e7.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - cli
   - python
 ---
+
 
 # SalaryIntelligence - Job Market Rate Analysis
 

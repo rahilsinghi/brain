@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:05:53.070Z
 last_ai_edit: 2026-04-10T19:05:53.070Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f0f106fff8b148da
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-remark-wikilink-plugin-for-article-panel-render-860849.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - commit
   - ai-assisted-development
 ---
+
 
 # Remark Wikilink Plugin for Brain Explorer Article Panel
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:25:49.133Z
 last_ai_edit: 2026-04-10T21:25:49.133Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 565cf2e121cbb82d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-fix-knowledge-base-loader-to-use-correct-yaml-keys-f93e60.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - career-datacenter
   - co-authored
 ---
+
 
 # Fix Knowledge Base Loader to Use Correct YAML Keys
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:03:04.824Z
 last_ai_edit: 2026-04-13T16:03:04.824Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9269a952608e3bd4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-simulation-create-simulation-in-usememo-instead-9e0552.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - rendering
   - fix
 ---
+
 
 # Fix: Brain-Explorer Simulation Creation with useMemo
 

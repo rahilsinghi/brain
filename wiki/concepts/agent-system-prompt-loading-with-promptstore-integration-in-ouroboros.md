@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:26:07.947Z
 last_ai_edit: 2026-04-11T00:26:07.947Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a44bb2627725cdb8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-agents-load-system-prompts-from-promptstore-with-ha-add52f.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - llm
   - system prompts
 ---
+
 
 # Agent System Prompt Loading with PromptStore Integration in Ouroboros
 

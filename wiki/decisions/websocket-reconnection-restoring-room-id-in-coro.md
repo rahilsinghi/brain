@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:13:12.681Z
 last_ai_edit: 2026-04-13T15:13:12.681Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f959069608a7d71e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-restore-room-id-on-websocket-reconnect-9c8e23.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - broadcast
   - backend
 ---
+
 
 # WebSocket Reconnection: Restoring Room ID in Coro
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:16:54.739Z
 last_ai_edit: 2026-04-12T18:16:54.739Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d88e13807b532082
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-imessage-scheduler-fix-add-db-shm-to-gitignore-70e477.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - fix
   - backend
 ---
+
 
 # Fix: Ignore SQLite WAL Shared Memory Files in Git
 

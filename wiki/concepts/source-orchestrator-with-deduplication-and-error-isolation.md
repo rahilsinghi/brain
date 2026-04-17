@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:25:31.541Z
 last_ai_edit: 2026-04-12T22:25:31.541Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 502b3ee7615acada
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-sources-orchestrator-with-dedup-error-isolation-and-s-071ecb.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - system architecture
   - feature
 ---
+
 
 # Source Orchestrator with Deduplication and Error Isolation
 

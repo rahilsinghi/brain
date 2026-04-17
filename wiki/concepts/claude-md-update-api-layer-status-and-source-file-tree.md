@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:08:59.194Z
 last_ai_edit: 2026-04-12T21:08:59.194Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 16d79f67d0db2122
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-update-claudemd-with-api-layer-status-and-source-file-t-ed4bd4.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - update
   - claudegen
 ---
+
 
 # CLAUDE.md Update: API Layer Status and Source File Tree
 

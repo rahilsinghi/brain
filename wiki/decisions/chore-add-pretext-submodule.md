@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:38:50.267Z
 last_ai_edit: 2026-04-10T21:38:50.267Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6fa27167d9ff97b7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-chore-add-pretext-submodule-7bc031.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - development
   - repository
 ---
+
 
 # chore: add pretext submodule
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:36:17.620Z
 last_ai_edit: 2026-04-13T17:36:17.620Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4f3d08e7c585b30b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-docs-incorporate-user-feedback-into-escalation-ladder-v2-spec-a0f431.md]]"
 tags:
@@ -23,6 +23,7 @@ tags:
   - specification
   - f9335c9
 ---
+
 
 # User Feedback Incorporation into Escalation Ladder v2 Specification (Karen Project)
 

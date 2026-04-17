@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:30:45.748Z
 last_ai_edit: 2026-04-12T17:30:45.748Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b9b5de7e7c15042e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-invariants-add-safetyinvariants-pre-merge-kill-swit-7bfa4b.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - claude
   - software engineering
 ---
+
 
 # SafetyInvariants Pre-Merge Kill Switch (Ouroboros)
 

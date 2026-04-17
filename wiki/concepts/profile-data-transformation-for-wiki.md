@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:23:07.743Z
 last_ai_edit: 2026-04-12T22:23:07.743Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9aea92381710e731
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-profile-transform-profile-education-activitie-780177.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - links
   - ai assistance
 ---
+
 
 # Profile Data Transformation for Wiki
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:25:25.585Z
 last_ai_edit: 2026-04-11T00:25:25.585Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 05f262b339ebe04e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-update-help-and-start-with-voice-slides-an-68d9c0.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - slides
   - plot
 ---
+
 
 # Telegram Bot /help and /start Commands Update (Brain Project)
 

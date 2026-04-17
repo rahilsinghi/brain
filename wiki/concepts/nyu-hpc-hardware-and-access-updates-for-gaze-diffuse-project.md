@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:26:54.805Z
 last_ai_edit: 2026-04-13T17:26:54.805Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3a80df14b0402f35
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-docs-update-hpc-findings-h200-h100-l40s-gpus-projec-48821f.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - infrastructure
   - deployment
 ---
+
 
 # NYU HPC Hardware and Access Updates for Gaze-Diffuse Project
 

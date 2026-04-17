@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:16:55.461Z
 last_ai_edit: 2026-04-10T15:16:55.461Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f6818b2d4ec1e165
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-add-sessions-endpoint-at-root-level-was-only-under-ws-812f60.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - commit
   - asknyc
 ---
+
 
 # Fix: /sessions Endpoint Root Level Accessibility
 

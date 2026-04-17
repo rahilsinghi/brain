@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:42:15.050Z
 last_ai_edit: 2026-04-12T21:42:15.050Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 38add3feb63ec474
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-simulation-create-simulation-in-usememo-instead-9e0552.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - rendering
   - javascript
 ---
+
 
 # Fix: Create Simulation in useMemo Instead of useEffect (Brain-Explorer)
 

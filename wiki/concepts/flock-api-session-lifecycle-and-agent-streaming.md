@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:10:26.368Z
 last_ai_edit: 2026-04-10T17:10:26.368Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 21e1f818b4a28288
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-all-8-api-routes-for-session-lifecycle-and-agent-streami-bee619.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - ai sdk
   - backend
 ---
+
 
 # Flock API: Session Lifecycle and Agent Streaming
 

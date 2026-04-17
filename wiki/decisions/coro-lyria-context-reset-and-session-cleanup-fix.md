@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:10:57.147Z
 last_ai_edit: 2026-04-12T18:10:57.147Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 07864a4867574cb8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-merge-pull-request-3-from-rahilsinghi-backend-191a8f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - error handling
   - bpm
 ---
+
 
 # Coro: Lyria Context Reset and Session Cleanup Fix
 

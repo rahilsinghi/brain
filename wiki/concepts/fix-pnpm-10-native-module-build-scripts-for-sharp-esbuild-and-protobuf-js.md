@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:24:38.331Z
 last_ai_edit: 2026-04-10T17:24:38.331Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 71157b033b6032e7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-approve-sharp-esbuild-protobufjs-build-scripts-for-pnpm-1-143394.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - javascript
   - dependencies
 ---
+
 
 # Fix: pnpm 10 Native Module Build Scripts for Sharp, esbuild, and Protobuf.js
 

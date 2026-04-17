@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:05:37.547Z
 last_ai_edit: 2026-04-12T17:05:37.547Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d671a34b877ddd79
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-three-layer-background-animation-15d5d1.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - accessibility
   - portfolio
 ---
+
 
 # Three-Layer Background Animation (Portfolio)
 

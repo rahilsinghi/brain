@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:44:00.647Z
 last_ai_edit: 2026-04-10T21:44:00.647Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d12abd4a2591212c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-tooltip-redesign-with-category-pills-connecti-87e60a.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - connection badge
   - fade-in
 ---
+
 
 # Tooltip Redesign (brain-explorer commit 6215f6b)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:31:07.999Z
 last_ai_edit: 2026-04-12T21:31:07.999Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d5537d5d378b2fa4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-sources-gmail-source-with-plaintext-html-extraction-and-66b6b4.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - automation
   - content processing
 ---
+
 
 # Gmail Source Integration with Plaintext/HTML Extraction
 

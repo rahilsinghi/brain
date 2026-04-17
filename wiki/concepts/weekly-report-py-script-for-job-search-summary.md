@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:47:04.663Z
 last_ai_edit: 2026-04-12T17:47:04.663Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5047feb1cf443b8e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-weekly-reportpy-auto-generated-job-search-s-8ee74f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - cli
   - career-datacenter
 ---
+
 
 # `weekly_report.py` Script for Job Search Summary
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:13:14.753Z
 last_ai_edit: 2026-04-10T22:13:14.753Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 636fcc990f2133bf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-fix-training-add-mps-support-fix-macos-dataloader-p-bc0630.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - development
   - portability
 ---
+
 
 # Training Fixes: MPS Support, macOS DataLoader, Portable Checkpoints (gaze-diffuse)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:46:52.618Z
 last_ai_edit: 2026-04-13T18:46:52.618Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 11aff58e223ea672
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-cover-letter-style-variants-metric-mission-644714.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - prompt engineering
   - feature
 ---
+
 
 # Cover Letter Style Variants: Metric, Mission, and Story-Focused Hooks
 

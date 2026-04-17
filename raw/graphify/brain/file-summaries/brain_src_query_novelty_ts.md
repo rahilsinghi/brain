@@ -2,7 +2,7 @@
 title: "novelty.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/query/novelty.ts"
 repo: "brain"
-community: 75
+community: 71
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/query/novelty.ts`
-**Community:** 75
+**Community:** 71
 
 ## Imports
 - (none)

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:30:32.663Z
 last_ai_edit: 2026-04-11T01:30:32.663Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f4c971b5c76368fb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-output-add-marp-slide-generation-with-error-handling-an-82cd81.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - presentation
   - markdown
 ---
+
 
 # Marp Slide Generation with Claude and Error Handling
 

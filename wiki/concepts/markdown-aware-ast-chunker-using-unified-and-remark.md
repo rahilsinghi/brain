@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:37:40.507Z
 last_ai_edit: 2026-04-13T17:37:40.507Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1a0b07da37f514f8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-markdown-aware-ast-chunker-using-unified-remark-a838a2.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - brain project
   - natural language processing
 ---
+
 
 # Markdown-Aware AST Chunker using Unified and Remark
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:23:58.768Z
 last_ai_edit: 2026-04-10T17:23:58.768Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e963d33feeb4a06a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-phone-room-page-polls-session-state-every-3s-as-realtime-2c3c18.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - frontend
   - user experience
 ---
+
 
 # Phone Room Realtime Fallback Polling Fix
 

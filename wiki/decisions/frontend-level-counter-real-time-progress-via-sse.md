@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:07:27.342Z
 last_ai_edit: 2026-04-10T19:07:27.342Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 71724a61bff9d216
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-derive-current-level-from-sse-events-not-just-ec024f.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - 310abac
   - commit
 ---
+
 
 # Frontend Level Counter: Real-time Progress via SSE
 

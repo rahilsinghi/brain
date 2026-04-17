@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:05:09.847Z
 last_ai_edit: 2026-04-12T21:05:09.847Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: facbe05dc71fd2a9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-experience-transform-with-metrics-merge-and-cross-fbe395.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - brain project
   - knowledge management
 ---
+
 
 # Experience Data Transformation with Metrics Merge and Cross-Referencing
 

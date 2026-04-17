@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:26:21.533Z
 last_ai_edit: 2026-04-13T18:26:21.533Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 896bd0e6046a3ed9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-chore-ignore-output-directories-and-add-rescore-u-ccd6d0.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - repository_maintenance
   - python
 ---
+
 
 # Career-Datacenter: Gitignore Update and Job Rescoring Utility
 

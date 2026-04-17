@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:45:24.018Z
 last_ai_edit: 2026-04-13T18:45:24.018Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a5e9535928bf6947
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-application-tracking-system-8d168d.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - pipeline management
   - career-datacenter
 ---
+
 
 # Application Tracking System (Career-Datacenter)
 

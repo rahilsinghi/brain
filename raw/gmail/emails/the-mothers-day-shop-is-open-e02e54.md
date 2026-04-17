@@ -4,12 +4,19 @@ source_type: gmail
 source_id: 19d7256293b8e79f
 ingested_at: 2026-04-10T11:49:45.171Z
 parsed_at: 2026-04-10T11:49:45.171Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Tory Burch Mother's Day Shop Announcement]]"
+processed_at: 2026-04-17T05:17:11.688Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3JxbdDzvf1e1o7SgXq"}
+last_error: The operation timed out.
 compile_progress: null
 ---
+
+
+
+
+
+
+
 
 
 

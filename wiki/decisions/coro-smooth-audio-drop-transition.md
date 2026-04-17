@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:11:32.338Z
 last_ai_edit: 2026-04-10T18:11:32.338Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f4fe7166d63546ae
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-smooth-drop-transition-no-bpm-jump-gradual-build-up-ram-1d4561.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - drop
   - build-up
 ---
+
 
 # Coro: Smooth Audio Drop Transition
 

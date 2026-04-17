@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:29:34.812Z
 last_ai_edit: 2026-04-10T17:29:34.812Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: eb7ae64d793ec4b7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-decision-framework-for-choosing-implemen-90e1e4.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - implementation
   - git-efbef62
 ---
+
 
 # Implementation Path Decision Framework for Career Datacenter
 

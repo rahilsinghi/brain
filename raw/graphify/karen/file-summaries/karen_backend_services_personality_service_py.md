@@ -2,7 +2,7 @@
 title: "personality_service.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/personality_service.py"
 repo: "karen"
-community: 1
+community: 16
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/personality_service.py`
-**Community:** 1
+**Community:** 16
 
 ## Imports
 - (none)

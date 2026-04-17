@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:16:37.015Z
 last_ai_edit: 2026-04-10T18:16:37.015Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ab9b569bbd15a965
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-update-claudemd-with-seed-activate-phase-status-and-s-0142ab.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - brain
   - update
 ---
+
 
 # Documentation Update for CLAUDE.md: Seed & Activate Phases
 

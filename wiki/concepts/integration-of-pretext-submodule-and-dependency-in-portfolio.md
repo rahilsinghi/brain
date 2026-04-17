@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:28:18.737Z
 last_ai_edit: 2026-04-11T00:28:18.737Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e237b3617b1a7842
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-chore-add-pretext-submodule-and-chenglou-pretext-depende-edb202.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - portfolio
   - typescript
 ---
+
 
 # Integration of Pretext Submodule and Dependency in Portfolio
 

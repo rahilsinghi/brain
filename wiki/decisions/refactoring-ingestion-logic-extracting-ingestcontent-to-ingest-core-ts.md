@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:32:03.363Z
 last_ai_edit: 2026-04-13T15:32:03.363Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 986e0a06f6abbce7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-refactor-extract-ingestcontent-into-src-api-ingest-corets-5dbf4a.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - backend
   - reusability
 ---
+
 
 # Refactoring Ingestion Logic: Extracting ingestContent() to ingest-core.ts
 

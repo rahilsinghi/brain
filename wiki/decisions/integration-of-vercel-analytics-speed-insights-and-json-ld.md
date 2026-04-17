@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:14:29.106Z
 last_ai_edit: 2026-04-10T18:14:29.106Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b79ffa6500845b2a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-vercel-analytics-speed-insights-and-json-ld-st-75bc92.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - website optimization
   - commit
 ---
+
 
 # Integration of Vercel Analytics, Speed Insights, and JSON-LD
 

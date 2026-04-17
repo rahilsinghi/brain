@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:08:44.408Z
 last_ai_edit: 2026-04-13T16:08:44.408Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 86b223356198e47a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-guard-mapcanvas-against-missing-mapbox-token-226e56.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - javascript
   - react
 ---
+
 
 # Fix: Guard MapCanvas against Missing Mapbox Token in askNYC
 

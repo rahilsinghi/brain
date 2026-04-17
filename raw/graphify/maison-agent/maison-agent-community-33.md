@@ -1,16 +1,21 @@
 ---
-status: failed
+status: processed
 source_type: graphify-community
 repo: maison-agent
 community_id: 33
 ingested_at: 2026-04-15T19:59:44.143Z
 parsed_at: 2026-04-15T19:59:44.143Z
-compiled_to: "[[Console UI Rendering Client]]"
-processed_at: 2026-04-15T20:00:18.826Z
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca6AM43xD2LvJMR6ZZxMy"}
+compiled_to: "[[Console Renderer Client Architecture]]"
+processed_at: 2026-04-17T03:31:19.279Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

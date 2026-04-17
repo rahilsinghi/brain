@@ -1,16 +1,21 @@
 ---
-status: failed
+status: processed
 source_type: graphify-community
 repo: maison-agent
 community_id: 46
 ingested_at: 2026-04-15T19:59:44.131Z
 parsed_at: 2026-04-15T19:59:44.131Z
-compiled_to: "[[Maison Console Core Initialization and Routing]]"
-processed_at: 2026-04-15T20:01:08.963Z
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca6AMFJNSvQ1ST9vWCFop"}
+compiled_to: "[[Console Application Core Architecture]]"
+processed_at: 2026-04-17T03:36:35.547Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

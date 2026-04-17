@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:26:08.926Z
 last_ai_edit: 2026-04-10T19:26:08.926Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3c5cc7ea30bbfb7a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-lib-add-github-repo-fetch-with-override-merging-b6ca71.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - development
   - rahil singhi
 ---
+
 
 # Commit: Add GitHub Repo Fetch with Override Merging
 

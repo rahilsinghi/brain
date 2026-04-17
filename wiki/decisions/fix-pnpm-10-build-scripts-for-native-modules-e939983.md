@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:25:29.781Z
 last_ai_edit: 2026-04-10T21:25:29.781Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0fba13e6aa61f029
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-approve-sharp-esbuild-protobufjs-build-scripts-for-pnpm-1-143394.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - commit
   - monorepo
 ---
+
 
 # Fix: pnpm 10 Build Scripts for Native Modules (e939983)
 

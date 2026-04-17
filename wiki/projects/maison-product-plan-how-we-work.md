@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-15T19:43:38.103Z
 last_ai_edit: 2026-04-15T19:43:38.103Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1260f90d785fc484
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/maison-notion-product-plan-how-we-work-1776280616969.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - linear
   - product development
 ---
+
 
 # Maison Product Plan: How We Work
 

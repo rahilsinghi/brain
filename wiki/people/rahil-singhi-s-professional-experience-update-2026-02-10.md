@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:24:10.906Z
 last_ai_edit: 2026-04-10T21:24:10.906Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b7ba78e2fb9f95e6
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-professional-experience-entries-26f18a.md]]"
 tags:
@@ -23,6 +23,7 @@ tags:
   - commit
   - 2026-02-10
 ---
+
 
 # Rahil Singhi's Professional Experience Update (2026-02-10)
 

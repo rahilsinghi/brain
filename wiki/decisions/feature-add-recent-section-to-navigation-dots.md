@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:18:30.782Z
 last_ai_edit: 2026-04-10T21:18:30.782Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 750e2a07bd404517
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-recent-section-to-nav-dots-16af09.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - frontend
   - website
 ---
+
 
 # Feature: Add Recent Section to Navigation Dots
 

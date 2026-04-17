@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:07:59.934Z
 last_ai_edit: 2026-04-12T22:07:59.934Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d5f50307363dd609
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-camera-controller-with-arc-fly-to-tooltips-es-e93f2d.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - commit
   - interaction
 ---
+
 
 # Camera Controller with Arc Fly-to, Tooltips, and Esc to Clear Focus (Brain-Explorer)
 

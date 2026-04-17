@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:13:08.542Z
 last_ai_edit: 2026-04-10T18:13:08.542Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 869f6d70cfdc5859
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-add-claudemd-for-claude-code-vault-integration-b6ef52.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - git commit
   - brain repository
 ---
+
 
 # Claude Code Vault Integration Documentation
 

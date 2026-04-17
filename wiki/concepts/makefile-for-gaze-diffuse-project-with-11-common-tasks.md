@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:21:36.926Z
 last_ai_edit: 2026-04-12T21:21:36.926Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c532425b1d4a1326
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-chore-add-makefile-with-11-common-task-targets-f11f6c.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - typechecking
   - chore
 ---
+
 
 # Makefile for Gaze-Diffuse Project with 11 Common Tasks
 

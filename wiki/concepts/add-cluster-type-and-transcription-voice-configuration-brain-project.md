@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:18:41.780Z
 last_ai_edit: 2026-04-12T21:18:41.780Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3d6a9eacfe0704de
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-voice-add-cluster-type-and-transcription-voice-config-72dd03.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - claude
   - feature
 ---
+
 
 # Add Cluster Type and Transcription/Voice Configuration (Brain Project)
 

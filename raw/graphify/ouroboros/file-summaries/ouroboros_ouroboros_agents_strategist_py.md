@@ -2,7 +2,7 @@
 title: "strategist.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/strategist.py"
 repo: "ouroboros"
-community: 1
+community: 0
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/strategist.py`
-**Community:** 1
+**Community:** 0
 
 ## Imports
 - (none)

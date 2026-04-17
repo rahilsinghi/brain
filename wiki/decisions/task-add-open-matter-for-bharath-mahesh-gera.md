@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:40:08.298Z
 last_ai_edit: 2026-04-10T21:40:08.298Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a14c0df1085fa9f9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-add-open-matter-for-bharath-mahesh-gera-155d95.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - bharath mahesh gera
   - karen
 ---
+
 
 # Task: Add Open Matter for Bharath Mahesh Gera
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:09:44.691Z
 last_ai_edit: 2026-04-13T18:09:44.691Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 83d52c03e5d16c1a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-integrate-validation-layer-into-application-genera-744377.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - pipeline
   - pdf
 ---
+
 
 # Resume Validation Layer in Career-Datacenter's Application Pipeline
 

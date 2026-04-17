@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:21:22.380Z
 last_ai_edit: 2026-04-10T15:21:22.380Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ca877dd1fa321e36
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-feat-backend-merge-chinmay-backend-hardening-1-0b847c.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - asknyc
   - commit
 ---
+
 
 # askNYC Backend Hardening (ad6b409)
 

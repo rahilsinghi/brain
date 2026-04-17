@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:23:52.966Z
 last_ai_edit: 2026-04-10T17:23:52.966Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b292545bb4916971
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-professional-experience-entries-26f18a.md]]"
 tags:
@@ -26,6 +26,7 @@ tags:
   - bigquery
   - flutter
 ---
+
 
 # Rahil Singhi: Professional Experience Update (2026-02-10)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:03:29.375Z
 last_ai_edit: 2026-04-12T22:03:29.375Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 20d4be08c244e509
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-visual-enhancement-icons-gradient-bars-glows-shimme-4aa46d.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - design
   - frontend
 ---
+
 
 # Visual Enhancements in Flock: Icons, Gradient Bars, Glows, and Shimmer CTA
 

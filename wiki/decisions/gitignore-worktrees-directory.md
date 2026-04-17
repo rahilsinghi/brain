@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:21:34.647Z
 last_ai_edit: 2026-04-10T18:21:34.647Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d3322858ae546224
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-chore-add-worktrees-to-gitignore-0cecbd.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - development
   - chore
 ---
+
 
 # Gitignore `.worktrees/` Directory
 

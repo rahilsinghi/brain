@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:25:04.773Z
 last_ai_edit: 2026-04-10T19:25:04.773Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 78c3fc07e758db60
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-telemetry-add-telemetryreader-with-indexjsonl-base-e9d44f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - component
 ---
+
 
 # Ouroboros TelemetryReader with index.jsonl Querying
 

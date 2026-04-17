@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:38:32.865Z
 last_ai_edit: 2026-04-10T17:38:32.865Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 393ff21b390b109f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-envexample-tests-conftestpy-onboarding-f4ad36.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - claude-sonnet-4.5
   - git
 ---
+
 
 # Onboarding Improvements: .env.example and conftest.py (Career-Datacenter)
 

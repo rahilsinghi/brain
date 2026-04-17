@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:08:27.931Z
 last_ai_edit: 2026-04-12T22:08:27.931Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8fefbf2b891a965d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-types-add-simnode-dragstate-and-extended-d3-e70d93.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - frontend
   - feature
 ---
+
 
 # SimNode, DragState, and d3-force-3d Type Extensions in Brain-Explorer
 

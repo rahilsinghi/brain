@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:36:13.436Z
 last_ai_edit: 2026-04-10T17:36:13.436Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7533090c73ef0817
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-rich-traveleraura-with-personality-auras-speech-bubble-0ec7d2.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - animation
   - glow effects
 ---
+
 
 # TravelerAura Component Enhancements in Flock
 

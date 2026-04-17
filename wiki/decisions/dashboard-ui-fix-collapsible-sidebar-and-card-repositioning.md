@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:21:52.220Z
 last_ai_edit: 2026-04-10T15:21:52.220Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b6b2247eaf0c4212
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-dashboard-collapsible-sidebar-reposition-floating-car-e0f754.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - fix
   - asknyc
 ---
+
 
 # Dashboard UI Fix: Collapsible Sidebar and Card Repositioning
 

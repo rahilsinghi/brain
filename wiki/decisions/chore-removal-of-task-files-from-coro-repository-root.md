@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:19:36.869Z
 last_ai_edit: 2026-04-10T18:19:36.869Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8efacd001d309fc2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-chore-remove-task-files-from-repo-root-5e7264.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - coro
   - file management
 ---
+
 
 # Chore: Removal of Task Files from Coro Repository Root
 

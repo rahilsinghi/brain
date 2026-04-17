@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:11:32.060Z
 last_ai_edit: 2026-04-12T18:11:32.060Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5d981e4e15d2841b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-chore-simplify-frontend-https-drop-explicit-cert-paths-961846.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - development
   - chore
 ---
+
 
 # Simplify Frontend HTTPS Configuration for Next.js (raag)
 

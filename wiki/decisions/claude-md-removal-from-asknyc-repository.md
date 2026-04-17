@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:48:38.532Z
 last_ai_edit: 2026-04-13T17:48:38.532Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9889b6e966c28daf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-chore-remove-claudemd-from-repo-144c47.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - chore
   - project management
 ---
+
 
 # CLAUDE.md Removal from askNYC Repository
 

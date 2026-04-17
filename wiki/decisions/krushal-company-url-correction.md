@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:06:45.896Z
 last_ai_edit: 2026-04-12T22:06:45.896Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 24ddbcf54f1f108d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-fix-correct-krushal-company-url-06b828.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - krushal
   - website
 ---
+
 
 # Krushal Company URL Correction
 

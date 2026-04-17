@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:12:27.263Z
 last_ai_edit: 2026-04-10T22:12:27.263Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 38eb96ef27a9da21
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-escape-single-quotes-in-vector-store-delete-filter-7c531c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - code change
   - rahil singhi
 ---
+
 
 # Fix: Escape Single Quotes in Vector Store Delete Filter (402de4e)
 

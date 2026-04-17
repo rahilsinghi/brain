@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:38:58.636Z
 last_ai_edit: 2026-04-13T17:38:58.636Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 37bf55ec2fbb74ed
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-handle-sessions-api-response-format-on-splash-page-d695eb.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - sessions
   - javascript
 ---
+
 
 # Fix: Handle Sessions API Response Format on askNYC Splash Page
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:06:52.636Z
 last_ai_edit: 2026-04-10T15:06:52.636Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 49eeb916328a4245
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-docs-build-progress-next-steps-and-design-specs-897bcf.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - karen
   - rahil singhi
 ---
+
 
 # Documentation: Build Progress, Next Steps, and Design Specs
 

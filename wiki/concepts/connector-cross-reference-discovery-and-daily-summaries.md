@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:12:05.310Z
 last_ai_edit: 2026-04-10T22:12:05.310Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 18f4eb786b8233d4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-connector-discovers-cross-references-and-writes-daily-su-a34b6c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - brain repo
 ---
+
 
 # Connector: Cross-Reference Discovery and Daily Summaries
 

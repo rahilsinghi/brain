@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:40:45.871Z
 last_ai_edit: 2026-04-10T17:40:45.871Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5ad81754e3c8170e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-mediator-passes-exact-userid-strings-to-tools-not-displa-589b3a.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - bugfix
   - model_instruction
 ---
+
 
 # Fix: Mediator Passes Exact User IDs to Tools
 

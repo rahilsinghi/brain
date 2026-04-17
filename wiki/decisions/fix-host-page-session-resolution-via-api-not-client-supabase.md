@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:20:50.389Z
 last_ai_edit: 2026-04-10T17:20:50.389Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 629a177499e55790
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-host-page-uses-api-for-session-resolution-not-client-sup-7349cd.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - architecture
   - polling
 ---
+
 
 # Fix: Host Page Session Resolution via API (not client Supabase)
 

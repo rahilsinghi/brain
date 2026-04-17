@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:07:10.407Z
 last_ai_edit: 2026-04-10T19:07:10.407Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a86db5ee1a3de880
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-fix-nav-separate-hackathons-and-projects-section-ids-ed3a9c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - commit
   - refactoring
 ---
+
 
 # Navigation ID Separation for Hackathons and Projects Sections
 

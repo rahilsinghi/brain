@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:14:16.447Z
 last_ai_edit: 2026-04-10T22:14:16.447Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d48d20c6d3839af8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-config-loader-with-yaml-parsing-and-env-support-a2ac0d.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - rahil singhi
   - brain
 ---
+
 
 # Configuration Loader (YAML & Dotenv)
 

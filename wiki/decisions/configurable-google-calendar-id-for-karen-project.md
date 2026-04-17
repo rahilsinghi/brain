@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:12:56.151Z
 last_ai_edit: 2026-04-10T19:12:56.151Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cb85dcf96e575874
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-calendar-use-configurable-calendar-id-instead-of-primar-4fe2b7.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - karen
   - backwards compatibility
 ---
+
 
 # Configurable Google Calendar ID for Karen Project
 

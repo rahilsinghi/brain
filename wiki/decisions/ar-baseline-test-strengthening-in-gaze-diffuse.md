@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:05:49.417Z
 last_ai_edit: 2026-04-10T18:05:49.417Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 04d95194c66e07cf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-test-strengthen-ar-baseline-tests-from-3-to-10-5951df.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - validation
   - commit
 ---
+
 
 # AR Baseline Test Strengthening in Gaze-Diffuse
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:22:36.356Z
 last_ai_edit: 2026-04-10T15:22:36.356Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 40420de140dc7903
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-api-report-actual-llm-provider-model-in-synthesis-respon-ead912.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - synthesis
   - hardcoding
 ---
+
 
 # API Enhancement: Report Actual LLM Provider/Model in Synthesis Response
 

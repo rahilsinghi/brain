@@ -2,7 +2,7 @@
 title: "main.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/main.py"
 repo: "karen"
-community: 2
+community: 0
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/main.py`
-**Community:** 2
+**Community:** 0
 
 ## Imports
 - (none)

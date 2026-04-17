@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:00:04.435Z
 last_ai_edit: 2026-04-12T22:00:04.435Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c0ece280a06dbb95
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-add-open-matter-for-bharath-mahesh-gera-ea11ce.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - commit
   - project management
 ---
+
 
 # Open Matter for Bharath Mahesh Gera (Karen Project)
 

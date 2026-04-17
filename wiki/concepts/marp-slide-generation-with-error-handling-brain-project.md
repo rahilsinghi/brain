@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:10:25.746Z
 last_ai_edit: 2026-04-12T22:10:25.746Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3137b4eebbb34ecf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-output-add-marp-slide-generation-with-error-handling-an-82cd81.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - llm integration
   - error handling
 ---
+
 
 # Marp Slide Generation with Error Handling (Brain Project)
 

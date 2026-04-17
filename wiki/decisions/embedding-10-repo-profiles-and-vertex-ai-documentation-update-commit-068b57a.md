@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:13:13.732Z
 last_ai_edit: 2026-04-10T19:13:13.732Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c917ef82b3e0f663
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-chore-embed-10-repo-profiles-102-chunks-update-docs-with-v-90b9a3.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - knowledge-base
   - ai-integration
 ---
+
 
 # Embedding 10 Repo Profiles and Vertex AI Documentation Update (Commit 068b57a)
 

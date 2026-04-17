@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:14:02.256Z
 last_ai_edit: 2026-04-10T18:14:02.256Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4e4f9c10de096453
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-lint-scanner-detects-broken-links-orphans-and-format-i-316fd8.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - claude sonnet
   - feature
 ---
+
 
 # Lint Scanner for Content Quality
 

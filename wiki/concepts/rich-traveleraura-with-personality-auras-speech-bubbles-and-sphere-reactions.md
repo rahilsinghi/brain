@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:12:27.115Z
 last_ai_edit: 2026-04-13T16:12:27.115Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ddc30a7ce5fab70d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-rich-traveleraura-with-personality-auras-speech-bubble-0ec7d2.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - proposal system
   - commit
 ---
+
 
 # Rich TravelerAura with Personality Auras, Speech Bubbles, and Sphere Reactions
 

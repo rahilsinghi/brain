@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:34:46.538Z
 last_ai_edit: 2026-04-10T21:34:46.538Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: be1e4102e12ebbec
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-theme-add-light-dark-mode-system-with-css-variable-444139.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - "2026"
   - commit
 ---
+
 
 # Light/Dark Mode Theme System for Portfolio
 

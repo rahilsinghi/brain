@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:10:37.227Z
 last_ai_edit: 2026-04-12T22:10:37.227Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 267bad03fbdb2ac1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-feat-add-mdlm-llada-model-wrappers-and-bert-gaze-predi-709df3.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - mdlm
   - gaze-diffuse
 ---
+
 
 # MDLM/LLaDA Model Wrappers and BERT Gaze Predictor
 

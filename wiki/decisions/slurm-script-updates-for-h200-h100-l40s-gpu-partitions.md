@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:11:18.006Z
 last_ai_edit: 2026-04-10T21:11:18.006Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2d2a88a33943c0d3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-fix-hpc-update-slurm-scripts-for-h200-h100-l40s-parti-4f0364.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - configuration
   - gaze-diffuse
 ---
+
 
 # SLURM Script Updates for H200/H100/L40S GPU Partitions
 

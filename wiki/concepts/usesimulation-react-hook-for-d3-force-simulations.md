@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:33:21.327Z
 last_ai_edit: 2026-04-12T21:33:21.327Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b39d1f672484c829
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-simulation-add-usesimulation-react-hook-6c286c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - lifecycle
   - brain-explorer
 ---
+
 
 # useSimulation React Hook for D3 Force Simulations
 

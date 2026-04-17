@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:10:31.291Z
 last_ai_edit: 2026-04-12T22:10:31.291Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 14132f161facccb1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-use-html-email-with-clickable-signature-linkedin-a0dad7.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - job search
   - workflow
 ---
+
 
 # HTML Email with Clickable Signature for Career-Datacenter
 

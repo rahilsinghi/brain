@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:30:35.348Z
 last_ai_edit: 2026-04-10T21:30:35.348Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a4c85acb07fa1716
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-comprehensive-resume-validation-layer-f60d60.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - python
   - testing
 ---
+
 
 # Resume Data Validation Layer
 

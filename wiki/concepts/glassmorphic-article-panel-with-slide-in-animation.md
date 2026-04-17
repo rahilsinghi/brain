@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:23:23.616Z
 last_ai_edit: 2026-04-10T19:23:23.616Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: dc2e3aa3fcb658d1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-glassmorphic-article-panel-with-slide-in-animat-13a017.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - brain-explorer
   - ai-assisted-development
 ---
+
 
 # Glassmorphic Article Panel with Slide-in Animation
 

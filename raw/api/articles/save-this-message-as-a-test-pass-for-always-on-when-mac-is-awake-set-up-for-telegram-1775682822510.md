@@ -8,9 +8,12 @@ parsed_at: null
 compiled_to: null
 processed_at: null
 retry_count: 1
-last_error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+last_error: undefined is not an object (evaluating 'title.toLowerCase')
 compile_progress: null
 ---
+
+
+
 
 
 

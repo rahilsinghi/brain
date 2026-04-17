@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:04:55.573Z
 last_ai_edit: 2026-04-10T15:04:55.573Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f43066a1f01643b2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-docs-add-device-deploy-guide-transport-notes-and-macro-t-179fd1.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - commit
   - rahilsinghi
 ---
+
 
 # Documentation Update for MarkPush: iOS Deployment, Transport, and Macro Trust
 

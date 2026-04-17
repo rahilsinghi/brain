@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:38:51.436Z
 last_ai_edit: 2026-04-13T18:38:51.436Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8a2de1a8ac9fcad2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-theme-add-light-dark-mode-system-with-css-variable-444139.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - tailwindcss
   - ui/ux
 ---
+
 
 # Light/Dark Mode System with CSS Variable Architecture (Portfolio)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:21:16.958Z
 last_ai_edit: 2026-04-10T18:21:16.958Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7d801e957276ccb3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-key-drop-votes-on-connection-id-add-server-sourced-count-012452.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - real-time
   - coro
 ---
+
 
 # Vote Keying Fix and Server-Sourced Countdown Implementation (Coro)
 

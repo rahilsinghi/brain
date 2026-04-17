@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:17:54.052Z
 last_ai_edit: 2026-04-10T15:17:54.052Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 72c3f2d01a37432a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-openclaw-agent-configuration-d87984.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - feature
   - commit
 ---
+
 
 # OpenClaw Agent Configuration Feature (karen)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:12:34.516Z
 last_ai_edit: 2026-04-12T18:12:34.516Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 03c8f41f087e8e3a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-llm-default-auto-mode-to-gemini-vertex-ai-over-anthro-a41a19.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - cost management
   - project brain
 ---
+
 
 # Default LLM Auto Mode to Gemini (Vertex AI) Over Anthropic
 

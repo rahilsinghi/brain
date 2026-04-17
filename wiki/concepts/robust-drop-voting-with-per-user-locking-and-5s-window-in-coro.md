@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:31:18.002Z
 last_ai_edit: 2026-04-11T01:31:18.002Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2aaca877d4f82c8a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-feat-robust-drop-voting-with-per-user-locking-and-5s-window-840e94.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - backend
   - feature
 ---
+
 
 # Robust Drop Voting with Per-User Locking and 5s Window in Coro
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:38:49.103Z
 last_ai_edit: 2026-04-13T15:38:49.103Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: dad5aa65ddf41fd9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-liquid-knowledge-sphere-fibonacci-layout-gla-84ad92.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - user interaction
   - knowledge graph
 ---
+
 
 # Liquid Knowledge Sphere: Fibonacci Layout, Glass Nodes, Arc Edges, Spring Drag
 

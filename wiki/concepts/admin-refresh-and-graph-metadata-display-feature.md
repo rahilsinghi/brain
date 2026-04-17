@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:25:48.015Z
 last_ai_edit: 2026-04-10T19:25:48.015Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0cd37bcac04d95a0
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-admin-refresh-cmd-shift-r-and-graph-metadata-302830.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - ai-assisted-development
   - commit
 ---
+
 
 # Admin Refresh and Graph Metadata Display Feature
 

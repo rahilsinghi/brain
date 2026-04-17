@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:43:32.738Z
 last_ai_edit: 2026-04-10T19:43:32.738Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e3e9dee6299902a5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/brenton-also-talked-about-using-tools-like-openrouter-and-ti-1775850203068.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - project
   - development
 ---
+
 
 # Brenton's Project Wilbo and Associated Tools
 

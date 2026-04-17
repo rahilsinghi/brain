@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:38:16.921Z
 last_ai_edit: 2026-04-12T17:38:16.921Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 28c9a28fa862240f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-fix-add-retry-with-backoff-for-claude-api-rate-limits-6e1756.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - api integration
   - reliability
 ---
+
 
 # Claude API Rate Limit Retry with Backoff in raag
 

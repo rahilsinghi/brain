@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:08:02.681Z
 last_ai_edit: 2026-04-10T22:08:02.681Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 08c59501b98a8fc7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-local-embedder-using-nomic-embed-text-via-transformersj-6e0ba5.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - rahil singhi
   - embedding
 ---
+
 
 # Local Embedder Integration (Nomic-Embed-Text via Transformers.js)
 

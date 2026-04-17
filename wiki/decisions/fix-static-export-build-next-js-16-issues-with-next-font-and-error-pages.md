@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:08:20.400Z
 last_ai_edit: 2026-04-10T19:08:20.400Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 49bb81acfe3ecfba
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-static-export-build-remove-next-font-fix-node-ac4dc6.md]]"
 tags:
@@ -23,6 +23,7 @@ tags:
   - github
   - rahil singhi
 ---
+
 
 # Fix: Static Export Build - Next.js 16 Issues with `next/font` and Error Pages
 

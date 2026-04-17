@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:21:25.836Z
 last_ai_edit: 2026-04-10T18:21:25.836Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a47ab4e0167b2bd1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-custom-404-page-with-terminal-theme-and-glitch-a-a42b48.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - error handling
   - ui/ux
 ---
+
 
 # Custom 404 Page (Terminal Theme with Glitch Animation)
 

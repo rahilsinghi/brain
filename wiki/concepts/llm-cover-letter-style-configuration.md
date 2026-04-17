@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:43:32.373Z
 last_ai_edit: 2026-04-10T21:43:32.373Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7a03791fc6faf15a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-cover-letter-style-variants-metric-mission-644714.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - software development
   - feature
 ---
+
 
 # LLM Cover Letter Style Configuration
 

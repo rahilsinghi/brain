@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:11:01.262Z
 last_ai_edit: 2026-04-10T21:11:01.262Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3084fef4b37cf16a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-ui-solid-backgrounds-for-panel-tooltip-softer-78c78b.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - commit
   - compatibility
 ---
+
 
 # UI Fix: Solid Backgrounds and Softer Glows in Brain Explorer
 

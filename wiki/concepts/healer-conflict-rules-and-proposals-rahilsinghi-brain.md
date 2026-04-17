@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:06:39.617Z
 last_ai_edit: 2026-04-10T18:06:39.617Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e8f1a5bb3dce28c7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-healer-with-conflict-rules-contradiction-flags-and-pro-3c673f.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - git commit
   - feature
 ---
+
 
 # Healer Conflict Rules and Proposals (rahilsinghi/brain)
 

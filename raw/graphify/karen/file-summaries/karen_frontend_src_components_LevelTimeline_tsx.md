@@ -2,7 +2,7 @@
 title: "LevelTimeline.tsx"
 source_file: "/Users/rahilsinghi/Desktop/karen/frontend/src/components/LevelTimeline.tsx"
 repo: "karen"
-community: 0
+community: 1
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/frontend/src/components/LevelTimeline.tsx`
-**Community:** 0
+**Community:** 1
 
 ## Imports
 - `page.tsx`

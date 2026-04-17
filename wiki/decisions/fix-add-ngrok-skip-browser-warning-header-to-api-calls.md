@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:07:51.115Z
 last_ai_edit: 2026-04-12T17:07:51.115Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: febd266aed28b9a8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-add-ngrok-skip-browser-warning-header-to-all-ap-5b716b.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - development
   - karen project
 ---
+
 
 # Fix: Add ngrok-Skip-Browser-Warning Header to API Calls
 

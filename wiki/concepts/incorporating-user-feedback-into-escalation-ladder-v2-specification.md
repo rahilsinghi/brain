@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:31:47.435Z
 last_ai_edit: 2026-04-10T21:31:47.435Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f26080b8edfc0bd2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-docs-incorporate-user-feedback-into-escalation-ladder-v2-spec-a0f431.md]]"
 tags:
@@ -24,6 +24,7 @@ tags:
   - satisfaction score
   - qr code
 ---
+
 
 # Incorporating User Feedback into Escalation Ladder V2 Specification
 

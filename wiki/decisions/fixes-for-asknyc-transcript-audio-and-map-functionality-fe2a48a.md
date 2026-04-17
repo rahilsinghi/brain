@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:35:57.439Z
 last_ai_edit: 2026-04-10T21:35:57.439Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ce5f1a0d19ef56ea
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-transcript-text-extraction-audio-queuing-and-map-anima-013508.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - development
   - ux-improvement
 ---
+
 
 # Fixes for askNYC Transcript, Audio, and Map Functionality (fe2a48a)
 

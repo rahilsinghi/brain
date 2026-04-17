@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:06:02.060Z
 last_ai_edit: 2026-04-10T18:06:02.060Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ce51fcf9f6ae279f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-lyria-reset-context-on-bpm-change-5bb18f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - bugfix
   - softwaredevelopment
 ---
+
 
 # Fix: Lyria Context Reset on BPM Change
 

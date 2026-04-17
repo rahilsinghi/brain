@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:23:03.439Z
 last_ai_edit: 2026-04-10T21:23:03.439Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e1edd5a858f23709
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-round-gate-enforcement-and-session-utilities-6bf93f.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - commit
   - nodejs
 ---
+
 
 # Round Gate Enforcement and Session Utilities (Flock Project)
 

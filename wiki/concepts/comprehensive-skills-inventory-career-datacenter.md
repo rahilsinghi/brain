@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:04:45.723Z
 last_ai_edit: 2026-04-12T22:04:45.723Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 98c3b4350aaa3158
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-comprehensive-skills-inventory-0e3c66.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - web scraping
   - feature
 ---
+
 
 # Comprehensive Skills Inventory (Career-Datacenter)
 

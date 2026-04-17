@@ -2,7 +2,7 @@
 title: "profile.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/profile.ts"
 repo: "brain"
-community: 60
+community: 56
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/seed/transforms/profile.ts`
-**Community:** 60
+**Community:** 56
 
 ## Imports
 - (none)

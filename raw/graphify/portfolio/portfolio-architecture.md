@@ -1,4 +1,4 @@
-# Graph Report - /Users/rahilsinghi/Desktop/portfolio  (2026-04-16)
+# Graph Report - /Users/rahilsinghi/Desktop/portfolio  (2026-04-17)
 
 ## Corpus Check
 - Large corpus: 190 files · ~821,893 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
@@ -46,20 +46,20 @@ Cohesion: 0.11
 Nodes (24): buildLayout(), commitFrame(), easeSpin(), evaluateLayout(), fitHeadlineFontSize(), getLogoAnimation(), getLogoProjection(), getObstacleIntervals() (+16 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.08
-Nodes (0): 
-
-### Community 6 - "Community 6"
 Cohesion: 0.14
 Nodes (24): buildLineTextFromRange(), clearCache(), createEmptyPrepared(), createLayoutLine(), getInternalPrepared(), getLineTextCache(), getSegmentGraphemes(), getSharedGraphemeSegmenter() (+16 more)
 
+### Community 6 - "Community 6"
+Cohesion: 0.08
+Nodes (0): 
+
 ### Community 7 - "Community 7"
 Cohesion: 0.17
-Nodes (17): buildReport(), classifyBreakMismatch(), describeBoundary(), getBrowserLines(), getFirstBreakMismatch(), getJoinedTextDiff(), getJoinedTextMismatchOffset(), getOurLines() (+9 more)
+Nodes (20): acquireBrowserAutomationLock(), canReachUrl(), connectFirefoxBidi(), createBrowserSession(), createChromeSession(), createFirefoxSession(), createSafariSession(), ensurePageServer() (+12 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.17
-Nodes (20): acquireBrowserAutomationLock(), canReachUrl(), connectFirefoxBidi(), createBrowserSession(), createChromeSession(), createFirefoxSession(), createSafariSession(), ensurePageServer() (+12 more)
+Nodes (17): buildReport(), classifyBreakMismatch(), describeBoundary(), getBrowserLines(), getFirstBreakMismatch(), getJoinedTextDiff(), getJoinedTextMismatchOffset(), getOurLines() (+9 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.19
@@ -91,23 +91,23 @@ Nodes (8): bucketMismatches(), hasFlag(), parseBrowser(), parseNumberFlag(), par
 
 ### Community 16 - "Community 16"
 Cohesion: 0.21
-Nodes (6): embedText(), embedTexts(), getContentEmbeddings(), semanticSearch(), checkRateLimit(), POST()
+Nodes (6): cross(), getPolygonIntervalForBand(), getPolygonXsAtY(), getWrapHull(), makeConvexHull(), makeWrapHull()
 
 ### Community 17 - "Community 17"
 Cohesion: 0.21
-Nodes (6): cross(), getPolygonIntervalForBand(), getPolygonXsAtY(), getWrapHull(), makeConvexHull(), makeWrapHull()
+Nodes (6): embedText(), embedTexts(), getContentEmbeddings(), semanticSearch(), checkRateLimit(), POST()
 
 ### Community 18 - "Community 18"
-Cohesion: 0.26
-Nodes (8): cursorsMatch(), layoutInlineItems(), measureCollapsedSpaceWidth(), measureSingleLineWidth(), prepareInlineItems(), render(), renderBody(), scheduleRender()
-
-### Community 19 - "Community 19"
 Cohesion: 0.21
 Nodes (5): createFieldStamp(), getSpriteCanvas(), render(), splatFieldStamp(), spriteAlphaAt()
 
-### Community 20 - "Community 20"
+### Community 19 - "Community 19"
 Cohesion: 0.26
 Nodes (8): formatRanges(), formatSignedInt(), hasFlag(), parseBrowser(), parseNumberFlag(), parseOptions(), parseStringFlag(), printSummary()
+
+### Community 20 - "Community 20"
+Cohesion: 0.26
+Nodes (8): cursorsMatch(), layoutInlineItems(), measureCollapsedSpaceWidth(), measureSingleLineWidth(), prepareInlineItems(), render(), renderBody(), scheduleRender()
 
 ### Community 21 - "Community 21"
 Cohesion: 0.33
@@ -118,32 +118,32 @@ Cohesion: 0.4
 Nodes (10): bench(), buildCorpusBenchmarks(), buildRichBenchmarks(), median(), nextFrame(), publishNavigationReport(), renderBenchmarkTable(), run() (+2 more)
 
 ### Community 23 - "Community 23"
-Cohesion: 0.24
-Nodes (3): render(), scheduleRender(), updateBubbles()
-
-### Community 24 - "Community 24"
-Cohesion: 0.24
-Nodes (3): parseNumberFlag(), parseOptionalNumberFlag(), parseStringFlag()
-
-### Community 25 - "Community 25"
-Cohesion: 0.27
-Nodes (5): isWideCharacter(), measureWidth(), parseFontSize(), TestCanvasRenderingContext2D, TestOffscreenCanvas
-
-### Community 26 - "Community 26"
-Cohesion: 0.24
-Nodes (3): parseNumberFlag(), parseOptionalNumberFlag(), parseStringFlag()
-
-### Community 27 - "Community 27"
 Cohesion: 0.36
 Nodes (7): bucketMismatches(), parseBrowser(), parseNumberFlag(), parseOptionalNumberFlag(), parseOptions(), parseStringFlag(), printSummary()
 
+### Community 24 - "Community 24"
+Cohesion: 0.24
+Nodes (3): render(), scheduleRender(), updateBubbles()
+
+### Community 25 - "Community 25"
+Cohesion: 0.24
+Nodes (3): parseNumberFlag(), parseOptionalNumberFlag(), parseStringFlag()
+
+### Community 26 - "Community 26"
+Cohesion: 0.27
+Nodes (5): isWideCharacter(), measureWidth(), parseFontSize(), TestCanvasRenderingContext2D, TestOffscreenCanvas
+
+### Community 27 - "Community 27"
+Cohesion: 0.24
+Nodes (3): parseNumberFlag(), parseOptionalNumberFlag(), parseStringFlag()
+
 ### Community 28 - "Community 28"
 Cohesion: 0.31
-Nodes (6): getBrowserLines(), publishReport(), render(), runSweep(), toNavigationReport(), withRequestId()
+Nodes (5): canReachServer(), formatDiff(), printReport(), sleep(), waitForServer()
 
 ### Community 29 - "Community 29"
 Cohesion: 0.31
-Nodes (5): canReachServer(), formatDiff(), printReport(), sleep(), waitForServer()
+Nodes (6): getBrowserLines(), publishReport(), render(), runSweep(), toNavigationReport(), withRequestId()
 
 ### Community 30 - "Community 30"
 Cohesion: 0.39
@@ -162,12 +162,12 @@ Cohesion: 0.43
 Nodes (3): collectWrapMetrics(), computeBubbleRender(), findTightWrapMetrics()
 
 ### Community 34 - "Community 34"
-Cohesion: 0.47
-Nodes (3): parseNumberFlag(), parseStringFlag(), requireFlag()
-
-### Community 35 - "Community 35"
 Cohesion: 0.33
 Nodes (0): 
+
+### Community 35 - "Community 35"
+Cohesion: 0.47
+Nodes (3): parseNumberFlag(), parseStringFlag(), requireFlag()
 
 ### Community 36 - "Community 36"
 Cohesion: 0.47
@@ -175,7 +175,7 @@ Nodes (3): getHashParams(), readNavigationPhaseState(), readNavigationReportText
 
 ### Community 37 - "Community 37"
 Cohesion: 0.7
-Nodes (4): clearNavigationReport(), publishNavigationPhase(), publishNavigationReport(), replaceNavigationHash()
+Nodes (4): computeLayout(), getOrCreateCardNode(), render(), scheduleRender()
 
 ### Community 38 - "Community 38"
 Cohesion: 0.5
@@ -183,31 +183,31 @@ Nodes (2): parseNumberFlag(), parseStringFlag()
 
 ### Community 39 - "Community 39"
 Cohesion: 0.7
-Nodes (4): computeLayout(), getOrCreateCardNode(), render(), scheduleRender()
+Nodes (4): clearNavigationReport(), publishNavigationPhase(), publishNavigationReport(), replaceNavigationHash()
 
 ### Community 40 - "Community 40"
-Cohesion: 0.5
-Nodes (2): parseNumberFlag(), parseStringFlag()
-
-### Community 41 - "Community 41"
-Cohesion: 0.7
-Nodes (4): moveBuiltHtml(), rebaseRelativeAssetUrls(), resolveBuiltHtmlPath(), rewriteDemoLinksForStaticRoot()
-
-### Community 42 - "Community 42"
 Cohesion: 0.4
 Nodes (0): 
 
-### Community 43 - "Community 43"
-Cohesion: 0.83
-Nodes (3): formatSegmentMarkers(), formatWidth(), printReport()
+### Community 41 - "Community 41"
+Cohesion: 0.5
+Nodes (2): parseNumberFlag(), parseStringFlag()
 
-### Community 44 - "Community 44"
+### Community 42 - "Community 42"
+Cohesion: 0.7
+Nodes (4): moveBuiltHtml(), rebaseRelativeAssetUrls(), resolveBuiltHtmlPath(), rewriteDemoLinksForStaticRoot()
+
+### Community 43 - "Community 43"
 Cohesion: 0.83
 Nodes (3): classifyChar(), computeBidiLevels(), computeSegmentLevels()
 
-### Community 45 - "Community 45"
+### Community 44 - "Community 44"
 Cohesion: 0.83
 Nodes (3): render(), scheduleCssOverlaySync(), scheduleRender()
+
+### Community 45 - "Community 45"
+Cohesion: 0.83
+Nodes (3): formatSegmentMarkers(), formatWidth(), printReport()
 
 ### Community 46 - "Community 46"
 Cohesion: 1.0
@@ -274,19 +274,19 @@ Cohesion: 1.0
 Nodes (0): 
 
 ## Knowledge Gaps
-- **Thin community `Community 46`** (2 nodes): `CursorGlow.tsx`, `CursorGlow()`
+- **Thin community `Community 46`** (2 nodes): `not-found.tsx`, `NotFound()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 47`** (2 nodes): `MagneticButton.tsx`, `MagneticButton()`
+- **Thin community `Community 47`** (2 nodes): `CursorGlow.tsx`, `CursorGlow()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 48`** (2 nodes): `sitemap.ts`, `sitemap()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 49`** (2 nodes): `robots.ts`, `robots()`
+- **Thin community `Community 49`** (2 nodes): `TiltCard.tsx`, `TiltCard()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 50`** (2 nodes): `report-server.ts`, `startPostedReportServer()`
+- **Thin community `Community 50`** (2 nodes): `MagneticButton.tsx`, `MagneticButton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 51`** (2 nodes): `TiltCard.tsx`, `TiltCard()`
+- **Thin community `Community 51`** (2 nodes): `report-server.ts`, `startPostedReportServer()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 52`** (2 nodes): `not-found.tsx`, `NotFound()`
+- **Thin community `Community 52`** (2 nodes): `robots.ts`, `robots()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 53`** (1 nodes): `next-env.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -321,6 +321,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.11 - nodes in this community are weakly interconnected._
 - **Should `Community 5` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
-- **Should `Community 6` be split into smaller, more focused modules?**
   _Cohesion score 0.14 - nodes in this community are weakly interconnected._
+- **Should `Community 6` be split into smaller, more focused modules?**
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._

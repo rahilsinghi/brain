@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:46:40.498Z
 last_ai_edit: 2026-04-12T17:46:40.498Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 14e572c99dab4d11
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-approve-sharp-esbuild-protobufjs-build-scripts-for-pnpm-1-143394.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - technical debt
   - developer experience
 ---
+
 
 # Fix: Approve Build Scripts for pnpm 10 in Brain Project
 

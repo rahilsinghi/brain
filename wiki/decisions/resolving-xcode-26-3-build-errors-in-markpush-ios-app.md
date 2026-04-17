@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:15:45.790Z
 last_ai_edit: 2026-04-10T21:15:45.790Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 154731a9f190f33b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-fix-resolve-xcode-263-build-errors-in-ios-app-cc88fe.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - uikit
   - coderefactor
 ---
+
 
 # Resolving Xcode 26.3 Build Errors in MarkPush iOS App
 

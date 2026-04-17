@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:12:49.863Z
 last_ai_edit: 2026-04-10T21:12:49.863Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ef5ad68baf1c7451
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-original-latex-resume-source-4ebe22.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - template
   - dataextraction
 ---
+
 
 # Add Original LaTeX Resume Source
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:13:03.459Z
 last_ai_edit: 2026-04-12T22:13:03.459Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 157a79923edf7591
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-refactor-nodes-simplify-instancednodes-remove-glow-50e458.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - glow layer
   - optimization
 ---
+
 
 # Refactor: Simplify InstancedNodes and Decouple Glow Layer/Simulation in Brain-Explorer
 

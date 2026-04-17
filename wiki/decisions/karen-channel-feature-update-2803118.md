@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:05:40.216Z
 last_ai_edit: 2026-04-10T15:05:40.216Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2449a700a64f2914
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-channels-add-slack-email-cc-calendar-remove-linkedin-t-fd8337.md]]"
 tags:
@@ -23,6 +23,7 @@ tags:
   - rahil singhi
   - claude opus 4.6
 ---
+
 
 # Karen: Channel Feature Update 2803118
 

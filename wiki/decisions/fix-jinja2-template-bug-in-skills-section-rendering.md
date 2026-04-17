@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:16:33.179Z
 last_ai_edit: 2026-04-12T22:16:33.179Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 56a03c1dea39e5c4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-fix-jinja2-template-bug-in-skills-section-renderin-a8bdf8.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - rendering
   - co-authored
 ---
+
 
 # Fix Jinja2 Template Bug in Skills Section Rendering
 

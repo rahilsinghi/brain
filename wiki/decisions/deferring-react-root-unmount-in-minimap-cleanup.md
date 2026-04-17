@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:21:28.564Z
 last_ai_edit: 2026-04-10T15:21:28.564Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9bccd2fdd31fc941
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-frontend-defer-react-root-unmount-in-minimap-cleanup-f63b76.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - useEffect
   - setTimeout
 ---
+
 
 # Deferring React Root Unmount in MiniMap Cleanup
 

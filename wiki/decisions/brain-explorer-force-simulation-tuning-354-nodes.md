@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:40:42.110Z
 last_ai_edit: 2026-04-13T18:40:42.110Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f10c00eb53190139
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-simulation-tune-force-parameters-for-354-nodes-764a28.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - ui/ux
   - simulation tuning
 ---
+
 
 # Brain-Explorer Force Simulation Tuning (354 Nodes)
 

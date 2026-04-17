@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:25:40.928Z
 last_ai_edit: 2026-04-12T18:25:40.928Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3dfc535db3da9a42
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-chore-remove-dead-header-components-replaced-by-appheader-2c2ce8.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - component
   - cleanup
 ---
+
 
 # Remove Dead Header Components (UniverseHeader, SongDeepDiveHeader)
 

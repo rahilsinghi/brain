@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:22:39.795Z
 last_ai_edit: 2026-04-10T21:22:39.795Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: be224b38305d5bea
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-merge-pull-request-1-from-rahilsinghi-frontend-karen-ui-d2ce9c.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - command center
   - escalation fortress
 ---
+
 
 # Pull Request: Authentic Command Center & Escalation Fortress UI Implementation
 

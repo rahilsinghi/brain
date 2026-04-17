@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:05:36.819Z
 last_ai_edit: 2026-04-10T22:05:36.819Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 148de837244cef45
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-lint-heal-runner-with-3-phase-pipeline-report-generatio-e3ee79.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - automation
   - refactoring
 ---
+
 
 # Lint/Heal Runner: 3-Phase Pipeline with Reporting and Cost Controls
 

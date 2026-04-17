@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:21:37.874Z
 last_ai_edit: 2026-04-13T18:21:37.874Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 364ab8f7ac3ba6eb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-jobdeduplicator-persist-seen-job-ids-across-c9a913.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - cli
   - data management
 ---
+
 
 # JobDeduplicator: Persistent Job ID Tracking in Career-Datacenter
 

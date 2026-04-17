@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:18:47.684Z
 last_ai_edit: 2026-04-10T19:18:47.684Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 57837dac647b8c77
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-scoreboard-use-configured-test-command-in-run-tests-94ff9f.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - token_counting
   - commit
 ---
+
 
 # fix(scoreboard): Use Configured test_command in _run_tests()
 

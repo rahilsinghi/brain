@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:27:36.829Z
 last_ai_edit: 2026-04-10T21:27:36.829Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 365edb71391d24c5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-panel-floating-card-with-collapsible-sections-8c0320.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - panel
   - brain-explorer
 ---
+
 
 # Floating Card Panel Redesign with Collapsible Sections and Staggered Animations
 

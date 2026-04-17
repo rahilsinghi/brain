@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:45:05.552Z
 last_ai_edit: 2026-04-12T21:45:05.552Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 45ce1a4f119614dc
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-unescaped-jsx-in-karen-page-narrow-type-access-on-karene-d6198c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - type safety
   - refactoring
 ---
+
 
 # Fix: Unescaped JSX and Narrowed Type Access in Karen Project
 

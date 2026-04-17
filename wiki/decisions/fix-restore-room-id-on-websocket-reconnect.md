@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:06:59.952Z
 last_ai_edit: 2026-04-10T18:06:59.952Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4147abf6a3dc9eec
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-merge-pull-request-6-from-rahilsinghi-fix-ws-reconnect-385877.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - pr
   - rahilsinghi
 ---
+
 
 # Fix: Restore room_id on WebSocket Reconnect
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:08:37.401Z
 last_ai_edit: 2026-04-10T19:08:37.401Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0b984892713eabf4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-fix-move-glitch-styles-to-globalscss-fix-hydration-mism-c9ca41.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - bugfix
   - stylesheet
 ---
+
 
 # Fix: Glitch Styles & Hydration Mismatches (rahilsinghi/portfolio 92ca7f6)
 

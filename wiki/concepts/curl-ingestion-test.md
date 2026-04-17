@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:47:32.379Z
 last_ai_edit: 2026-04-10T18:47:32.379Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8669828b7e4c2898
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/test-ingest-from-curl-1775846843036.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - http
   - data
 ---
+
 
 # Curl Ingestion Test
 

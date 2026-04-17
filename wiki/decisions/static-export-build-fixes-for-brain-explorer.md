@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:19:08.198Z
 last_ai_edit: 2026-04-12T21:19:08.198Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3a213c63a3445366
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-static-export-build-remove-next-font-fix-node-ac4dc6.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - font
   - environment variables
 ---
+
 
 # Static Export Build Fixes for Brain-Explorer
 

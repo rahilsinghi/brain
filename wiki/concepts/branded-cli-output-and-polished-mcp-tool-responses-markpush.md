@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:24:25.712Z
 last_ai_edit: 2026-04-10T15:24:25.712Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 13af47fddb203f1c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-feat-branded-cli-output-and-polished-mcp-tool-responses-b7a184.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - design
   - development
 ---
+
 
 # Branded CLI Output and Polished MCP Tool Responses (MarkPush)
 

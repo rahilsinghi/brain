@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:15:52.275Z
 last_ai_edit: 2026-04-12T17:15:52.275Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ed6e7a83e208bd70
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-derive-current-level-from-sse-events-not-just-ec024f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - javascript
   - web-development
 ---
+
 
 # Frontend Fix: Real-time Level Derivation from SSE Events in Karen
 

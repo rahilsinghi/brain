@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:14:36.835Z
 last_ai_edit: 2026-04-10T19:14:36.835Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e83d99ae7333795a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-audio-sync-commentary-timing-add-level-aware-ad-libs-d0a8c6.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - feature
   - tts
 ---
+
 
 # Audio Commentary and Ad-Lib System Improvements (Karen Project)
 

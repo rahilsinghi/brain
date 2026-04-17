@@ -2,7 +2,7 @@
 title: "fastify.d.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/api/fastify.d.ts"
 repo: "brain"
-community: 180
+community: 194
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/api/fastify.d.ts`
-**Community:** 180
+**Community:** 194
 
 ## Imports
 - (none)

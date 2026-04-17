@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T01:03:50.127Z
 last_ai_edit: 2026-04-13T01:03:50.127Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 46795ff927d4a986
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-physics-add-damped-spring-step-function-462ab1.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - ui/ux
   - feature
 ---
+
 
 # Damped Spring Step Function (Brain-Explorer)
 

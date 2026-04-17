@@ -4,12 +4,17 @@ source_type: gmail
 source_id: 19d739def4e36bb3
 ingested_at: 2026-04-10T11:49:45.157Z
 parsed_at: 2026-04-10T11:49:45.157Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Optimum Mobile Customer Feedback Survey]]"
+processed_at: 2026-04-17T04:43:05.460Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3JsfDYNXAQm8wD4c6w"}
+last_error: undefined is not an object (evaluating 'title.toLowerCase')
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

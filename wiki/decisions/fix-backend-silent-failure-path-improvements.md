@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:37:11.550Z
 last_ai_edit: 2026-04-10T21:37:11.550Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2d04f06fbb4cdb16
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-backend-add-error-handling-and-logging-to-silent-failur-40b017.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - python
   - commit
 ---
+
 
 # Fix: Backend Silent Failure Path Improvements
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:07:19.624Z
 last_ai_edit: 2026-04-10T18:07:19.624Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 61bc168820856b94
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-structured-logger-with-per-step-formatting-97732a.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - software development
   - collaboration
 ---
+
 
 # Structured Logger with Per-Step Formatting (feat(seed))
 

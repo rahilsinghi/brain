@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T02:40:49.141Z
 last_ai_edit: 2026-04-10T02:40:49.141Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7379b969299654ac
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-derive-current-level-from-sse-events-not-just-ec024f.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - javascript
   - events
 ---
+
 
 # Fix: Derive Current Level from SSE Events in Frontend (Karen)
 

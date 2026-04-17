@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:05:51.926Z
 last_ai_edit: 2026-04-12T22:05:51.926Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ae880e5131f06325
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-resume-variantspy-engineering-focused-vs-ml-a8d355.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - systems engineering
   - machine learning
 ---
+
 
 # Resume Variants for Tailored Job Applications
 

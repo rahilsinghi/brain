@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:08:28.606Z
 last_ai_edit: 2026-04-12T17:08:28.606Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d56a1a24d14e110f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-graph-resolve-bare-wikilink-targets-to-full-node-ids-6a8deb.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - brainproject
   - claude
 ---
+
 
 # Fix: Resolve Bare Wikilink Targets to Full Node IDs in Brain Graph
 

@@ -2,7 +2,7 @@
 title: "provider.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/llm/provider.ts"
 repo: "brain"
-community: 14
+community: 8
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/llm/provider.ts`
-**Community:** 14
+**Community:** 8
 
 ## Imports
 - (none)
@@ -20,8 +20,11 @@ tags: [code-architecture, brain]
 ## Contains
 - `createAnthropicProvider()`
 - `createGeminiProvider()`
+- `pickOllamaModel()`
+- `createOllamaProvider()`
 - `getAnthropicProvider()`
 - `getGeminiProvider()`
+- `getOllamaProvider()`
 - `getProvider()`
 - `generate()`
 - `_resetProviders()`

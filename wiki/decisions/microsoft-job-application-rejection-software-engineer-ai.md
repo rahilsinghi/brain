@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:24:43.712Z
 last_ai_edit: 2026-04-10T15:24:43.712Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0dd701ca79203d61
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/thank-you-for-your-interest-in-microsoft-6958c2.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - candidate experience
   - data privacy
 ---
+
 
 # Microsoft Job Application Rejection (Software Engineer - AI)
 

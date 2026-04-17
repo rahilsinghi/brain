@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:41:14.761Z
 last_ai_edit: 2026-04-10T21:41:14.761Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 022b8a27aacb0431
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-fix-jinja2-template-bug-in-skills-section-renderin-a8bdf8.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - commit
   - career-datacenter
 ---
+
 
 # Fixing Jinja2 Dictionary Access in LaTeX Template
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:22:21.115Z
 last_ai_edit: 2026-04-10T17:22:21.115Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5170fef4baacf6c7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-spiderrock-interview-prep-and-quant-deve-9511cc.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - career development
   - rahil singhi
 ---
+
 
 # SpiderRock Interview Prep and Junior Quant Developer Resume
 

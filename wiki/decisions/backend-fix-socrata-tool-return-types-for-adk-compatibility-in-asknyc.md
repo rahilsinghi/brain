@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:34:43.168Z
 last_ai_edit: 2026-04-13T17:34:43.168Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7967c15fe3e98346
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-backend-change-socrata-tool-return-types-to-dict-for-ad-d7f9fd.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - refactor
   - compatibility
 ---
+
 
 # Backend Fix: Socrata Tool Return Types for ADK Compatibility in askNYC
 

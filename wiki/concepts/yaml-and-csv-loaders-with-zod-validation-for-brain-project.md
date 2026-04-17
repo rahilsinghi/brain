@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:18:32.374Z
 last_ai_edit: 2026-04-13T15:18:32.374Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bfd00e2a67555f8a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-yaml-and-csv-loaders-with-zod-validation-ad79ea.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - type safety
   - commit
 ---
+
 
 # YAML and CSV Loaders with Zod Validation for Brain Project
 

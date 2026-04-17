@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:44:42.618Z
 last_ai_edit: 2026-04-12T21:44:42.618Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2045be71c773831d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-config-loader-with-yaml-parsing-and-env-support-a2ac0d.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - brain-project
   - feature
 ---
+
 
 # Config Loader with YAML Parsing and .env Support (Brain Project)
 

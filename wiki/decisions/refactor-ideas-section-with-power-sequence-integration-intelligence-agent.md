@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:22:02.273Z
 last_ai_edit: 2026-04-10T17:22:02.273Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 20095d4233790f92
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-refactor-restructure-ideas-section-with-power-seq-93c935.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - communication
   - go-to-market
 ---
+
 
 # Refactor: Ideas Section with Power Sequence & Integration Intelligence Agent
 

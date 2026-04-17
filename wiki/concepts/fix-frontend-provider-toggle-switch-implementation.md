@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:11:39.163Z
 last_ai_edit: 2026-04-10T19:11:39.163Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0e623d99c789a941
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-make-provider-toggle-look-like-an-actual-toggle-d1c999.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - commit
   - styling
 ---
+
 
 # Fix: Frontend Provider Toggle Switch Implementation
 

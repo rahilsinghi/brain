@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:45:45.709Z
 last_ai_edit: 2026-04-12T17:45:45.709Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a080eed24310a77f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-3d-tilt-effect-on-featured-project-cards-a9b9f9.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - 3d effect
   - javascript
 ---
+
 
 # Add 3D Tilt Effect on Featured Project Cards
 

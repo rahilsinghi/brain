@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:20:03.246Z
 last_ai_edit: 2026-04-12T18:20:03.246Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 51236b938250a9db
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-wikilink-resolution-graph-density-spec-ca0186.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - knowledge graph
   - linking
 ---
+
 
 # Wikilink Resolution and Graph Density Specification for Brain Project
 

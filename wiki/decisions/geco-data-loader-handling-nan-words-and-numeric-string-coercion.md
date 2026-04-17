@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:34:20.006Z
 last_ai_edit: 2026-04-12T21:34:20.006Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 30a57710f97b5a70
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-fix-data-handle-nan-words-and-numeric-string-coercion-cd1b39.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - gaze-diffuse
   - data cleaning
 ---
+
 
 # GECO Data Loader: Handling NaN Words and Numeric String Coercion
 

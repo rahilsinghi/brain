@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:07:29.346Z
 last_ai_edit: 2026-04-12T17:07:29.346Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0dbd1ecec43a175d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-restore-dropbutton-on-guest-route-after-sariya-ui-rewrite-654bdd.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - state management
   - refactor
 ---
+
 
 # Coro: Restore DropButton on Guest Route After Sariya UI Rewrite
 

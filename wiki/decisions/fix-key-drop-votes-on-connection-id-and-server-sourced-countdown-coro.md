@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:19:29.289Z
 last_ai_edit: 2026-04-10T18:19:29.289Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2e7f6a8431a34f8d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-merge-pull-request-17-from-rahilsinghi-fix-drop-connection-id-d04a01.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - development
   - merge
 ---
+
 
 # Fix: Key Drop Votes on Connection ID and Server-Sourced Countdown (Coro)
 

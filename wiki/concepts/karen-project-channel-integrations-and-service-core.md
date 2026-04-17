@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:41:04.381Z
 last_ai_edit: 2026-04-13T17:41:04.381Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0f90d6f1b2d2c4ab
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-channel-integrations-and-personality-service-dd299d.md]]"
 tags:
@@ -32,6 +32,7 @@ tags:
   - communication
   - automation
 ---
+
 
 # Karen Project: Channel Integrations and Service Core
 

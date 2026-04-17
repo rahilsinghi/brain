@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:10:52.974Z
 last_ai_edit: 2026-04-10T22:10:52.974Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 317392ce98bad6cb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-chore-set-turbopack-root-for-consistent-compilation-7e71a5.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - rahil singhi
   - raag
 ---
+
 
 # Chore: Set Turbopack Root for Consistent Monorepo Compilation
 

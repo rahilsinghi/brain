@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:14:00.085Z
 last_ai_edit: 2026-04-10T19:14:00.085Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ec2bee7929b2eee2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-ouroboros-adding-docstrings-to-the-correctnessscorer-clas-00b4e6.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - documentation
   - coverage
 ---
+
 
 # Ouroboros: Docstring Coverage for CorrectnessScorer
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:20:29.254Z
 last_ai_edit: 2026-04-10T18:20:29.254Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3be842c729fcb48f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-fix-ar-baseline-add-mps-device-support-and-gpt-2-pad-9f0b66.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - machine-learning
   - fix
 ---
+
 
 # MPS Device Support and GPT-2 Pad Token Fix for Gaze-Diffuse
 

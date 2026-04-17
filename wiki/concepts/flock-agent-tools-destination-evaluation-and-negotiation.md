@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:07:49.056Z
 last_ai_edit: 2026-04-10T21:07:49.056Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c64d6d7ae47353dd
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-six-agent-tools-for-destination-evaluation-and-negotiati-a071fe.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - commit
   - backend
 ---
+
 
 # Flock Agent Tools: Destination Evaluation and Negotiation
 

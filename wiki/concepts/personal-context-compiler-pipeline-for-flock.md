@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:13:31.529Z
 last_ai_edit: 2026-04-13T16:13:31.529Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6f8d37c1fe882bcd
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-personal-contextmd-compiler-pipeline-024c07.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - javascript
   - typescript
 ---
+
 
 # Personal Context Compiler Pipeline for Flock
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:23:41.742Z
 last_ai_edit: 2026-04-11T00:23:41.742Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d50b2d374b0cf284
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-add-researchanimation-component-research-cache-pre-che-ffd5b2.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - claude_opus
   - bharath_mahesh_gera
 ---
+
 
 # ResearchAnimation Component and Research Cache Pre-check (Karen Project)
 

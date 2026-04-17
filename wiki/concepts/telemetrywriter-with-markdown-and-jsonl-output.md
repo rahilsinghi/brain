@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:06:43.323Z
 last_ai_edit: 2026-04-10T19:06:43.323Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cf55c938c83a8a35
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-telemetry-add-telemetrywriter-with-markdown-index-463b9b.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - commit
 ---
+
 
 # TelemetryWriter with Markdown and JSONL Output
 

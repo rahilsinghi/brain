@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:41:34.728Z
 last_ai_edit: 2026-04-13T15:41:34.728Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8301382fc31b015d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-skillsgapanalyzer-compare-job-demand-vs-your-c89843.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - automation
   - ai-assisted-development
 ---
+
 
 # SkillsGapAnalyzer for Career-Datacenter
 

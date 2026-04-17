@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:22:13.644Z
 last_ai_edit: 2026-04-12T17:22:13.644Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: fb8aa36fab7a82e4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-feat-add-data-layer-geco-eye-tracking-corpus-loader-291ea1.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - gaze-diffuse
   - experimental setup
 ---
+
 
 # GECO Eye-Tracking Corpus Loader and Prompt Seeds (Gaze-Diffuse)
 

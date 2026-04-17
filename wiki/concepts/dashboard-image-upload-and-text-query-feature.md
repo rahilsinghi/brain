@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:22:28.272Z
 last_ai_edit: 2026-04-10T15:22:28.272Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 22c8ff34d411a37b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-feat-add-image-upload-text-query-to-dashboard-b0478f.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - backend
   - demo
 ---
+
 
 # Dashboard Image Upload and Text Query Feature
 

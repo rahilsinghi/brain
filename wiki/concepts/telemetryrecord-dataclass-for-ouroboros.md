@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:13:41.041Z
 last_ai_edit: 2026-04-11T00:13:41.041Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ff876e8bbdf5683c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-telemetry-add-telemetryrecord-dataclass-with-frontm-aa5332.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - frontmatter
   - markdown
 ---
+
 
 # TelemetryRecord Dataclass for Ouroboros
 

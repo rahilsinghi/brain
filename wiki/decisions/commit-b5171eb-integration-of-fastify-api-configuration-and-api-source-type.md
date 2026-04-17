@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:30:40.489Z
 last_ai_edit: 2026-04-10T17:30:40.489Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e42d28bc7ba41da5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-chore-add-fastify-dep-api-config-and-api-source-type-2d7f10.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - dependency
   - backend
 ---
+
 
 # Commit b5171eb: Integration of Fastify, API Configuration, and 'api' Source Type
 

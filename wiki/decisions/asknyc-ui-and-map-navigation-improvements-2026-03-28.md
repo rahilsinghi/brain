@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:11:56.653Z
 last_ai_edit: 2026-04-10T15:11:56.653Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ef3a6d5515ca43d2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-move-data-cards-to-floating-map-overlay-fix-map-flyto-7d1bdc.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - asknyc
   - commit
 ---
+
 
 # askNYC: UI and Map Navigation Improvements (2026-03-28)
 

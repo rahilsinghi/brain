@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:07:22.318Z
 last_ai_edit: 2026-04-10T21:07:22.318Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 939fd4740cc267a4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-smtp-send-capability-and-update-signature-urls-74f04f.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - feature
   - co-authored
 ---
+
 
 # Add SMTP Email Sending and Update Signature URLs
 

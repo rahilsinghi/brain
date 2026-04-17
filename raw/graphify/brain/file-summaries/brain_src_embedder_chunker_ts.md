@@ -2,7 +2,7 @@
 title: "chunker.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/embedder/chunker.ts"
 repo: "brain"
-community: 29
+community: 33
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/embedder/chunker.ts`
-**Community:** 29
+**Community:** 33
 
 ## Imports
 - (none)

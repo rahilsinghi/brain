@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:23:01.312Z
 last_ai_edit: 2026-04-10T22:23:01.312Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 01664c1190422738
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-seed-address-code-review-findings-b074dc.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - markdown
   - operator precedence
 ---
+
 
 # Git Commit: Fix Seed - Code Review Findings (77d700a)
 

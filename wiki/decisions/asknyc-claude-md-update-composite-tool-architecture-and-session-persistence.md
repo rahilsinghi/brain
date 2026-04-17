@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:20:12.223Z
 last_ai_edit: 2026-04-13T17:20:12.223Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5760c5750c5d7ddf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-docs-update-claudemd-for-composite-tool-architecture-and-se-e3c6fe.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - json
   - persistence
 ---
+
 
 # askNYC CLAUDE.md Update: Composite Tool Architecture and Session Persistence
 

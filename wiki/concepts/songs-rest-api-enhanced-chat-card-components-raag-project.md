@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:38:42.044Z
 last_ai_edit: 2026-04-10T17:38:42.044Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 936181a0363c9968
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-songs-rest-api-enhanced-chat-card-components-eed61c.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - feature
   - raag
 ---
+
 
 # Songs REST API & Enhanced Chat Card Components (raag project)
 

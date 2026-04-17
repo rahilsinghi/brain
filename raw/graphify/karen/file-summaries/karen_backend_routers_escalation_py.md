@@ -2,7 +2,7 @@
 title: "escalation.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py"
 repo: "karen"
-community: 22
+community: 24
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py`
-**Community:** 22
+**Community:** 24
 
 ## Imports
 - (none)

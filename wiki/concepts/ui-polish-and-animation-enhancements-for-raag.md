@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:26:28.107Z
 last_ai_edit: 2026-04-10T17:26:28.107Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4e86e2faac74c79f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-ui-polish-preloader-animations-mouse-glow-mobile-res-bffae8.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - design
   - feature
 ---
+
 
 # UI Polish and Animation Enhancements for raag
 

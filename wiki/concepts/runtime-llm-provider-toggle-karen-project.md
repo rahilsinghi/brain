@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:26:00.890Z
 last_ai_edit: 2026-04-11T01:26:00.890Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 55be0cc7e06adc69
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-frontend-add-runtime-llm-provider-toggle-cloud-local-5b1909.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - deployment
   - user interface
 ---
+
 
 # Runtime LLM Provider Toggle (Karen Project)
 

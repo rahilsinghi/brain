@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:30:45.882Z
 last_ai_edit: 2026-04-13T15:30:45.882Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3f4bc6d11b1d265b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-static-export-build-remove-next-font-fix-node-ac4dc6.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - prerendering
   - tailwindcss
 ---
+
 
 # Brain-Explorer: Static Export Build Fixes (next/font, NODE_ENV, Error Pages)
 

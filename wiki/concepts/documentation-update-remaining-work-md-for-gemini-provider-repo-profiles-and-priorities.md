@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:30:03.470Z
 last_ai_edit: 2026-04-11T01:30:03.470Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 86dfaeef08780025
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-update-remaining-workmd-with-gemini-provider-repo-prof-560b80.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - claude
   - brain
 ---
+
 
 # Documentation Update: REMAINING-WORK.md for Gemini Provider, Repo Profiles, and Priorities
 

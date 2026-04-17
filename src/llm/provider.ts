@@ -146,9 +146,17 @@ function createOllamaProvider(): LLMProvider | null {
     name: "ollama",
     async generate(req: LLMRequest): Promise<LLMResponse> {
       const model = pickOllamaModel(req);
+      // Qwen3 has thinking mode on by default — disable for speed unless explicitly requested.
+      // /no_think directive tells the model to skip internal reasoning.
+      const disableThinking = process.env.OLLAMA_DISABLE_THINKING !== "false";
+      const promptWithDirective =
+        disableThinking && model.startsWith("qwen3")
+          ? `/no_think ${req.prompt}`
+          : req.prompt;
+
       const body: Record<string, unknown> = {
         model,
-        prompt: req.prompt,
+        prompt: promptWithDirective,
         stream: false,
         options: { num_predict: req.maxTokens ?? 4096 },
       };

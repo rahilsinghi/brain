@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:39:54.001Z
 last_ai_edit: 2026-04-12T17:39:54.001Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ffc134a9b7904393
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-update-readme-to-remove-team-member-details-7866d3.md]]"
 tags:
@@ -14,6 +14,7 @@ tags:
   - commit
   - privacy
 ---
+
 
 # Update README to Remove Team Member Details (Karen Project)
 

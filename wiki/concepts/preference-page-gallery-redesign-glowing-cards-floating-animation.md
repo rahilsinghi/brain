@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:42:25.352Z
 last_ai_edit: 2026-04-10T17:42:25.352Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d55f51867766e012
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-preference-page-gallery-redesign-glowing-cards-vibran-492f39.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - preference page
   - gallery
 ---
+
 
 # Preference Page Gallery Redesign: Glowing Cards & Floating Animation
 

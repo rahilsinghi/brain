@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:35:20.291Z
 last_ai_edit: 2026-04-10T17:35:20.291Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a71265254c0639ca
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-proposals-audio-now-work-moved-from-client-supabase-t-357f64.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - commit
   - webdevelopment
 ---
+
 
 # Flock: Proposal and Audio Functionality Fix (API Integration)
 

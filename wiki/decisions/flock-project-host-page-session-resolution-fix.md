@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:40:11.042Z
 last_ai_edit: 2026-04-12T21:40:11.042Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ad173f48945b6ae4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-host-page-uses-api-for-session-resolution-not-client-sup-7349cd.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - polling
   - server-side
 ---
+
 
 # Flock Project: Host Page Session Resolution Fix
 

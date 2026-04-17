@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:07:08.560Z
 last_ai_edit: 2026-04-13T16:07:08.560Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c06a1e689bfd896c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-universe-side-panel-with-song-album-detail-and-navigation-42e3dd.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - song details
   - album details
 ---
+
 
 # Universe Side Panel: Song/Album Detail and Navigation History
 

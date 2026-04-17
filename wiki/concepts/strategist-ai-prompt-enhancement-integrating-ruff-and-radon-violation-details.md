@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:19:41.705Z
 last_ai_edit: 2026-04-10T19:19:41.705Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9155933b175b16d1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-strategist-pass-ruff-radon-violation-details-to-str-c12083.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - feature
   - commit
 ---
+
 
 # Strategist AI Prompt Enhancement: Integrating Ruff and Radon Violation Details
 

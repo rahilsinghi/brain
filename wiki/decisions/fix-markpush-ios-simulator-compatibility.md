@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:08:58.167Z
 last_ai_edit: 2026-04-10T17:08:58.167Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4885c1fe7e197a0c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-fix-ios-app-runs-on-simulator-successfully-2ef9d2.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - markpush
   - freedevteam
 ---
+
 
 # Fix: MarkPush iOS Simulator Compatibility
 

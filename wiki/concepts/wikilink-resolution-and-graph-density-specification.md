@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:46:03.623Z
 last_ai_edit: 2026-04-13T18:46:03.623Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c8151fb673f573f1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-wikilink-resolution-graph-density-spec-ca0186.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - prompt engineering
   - specifications
 ---
+
 
 # Wikilink Resolution and Graph Density Specification
 

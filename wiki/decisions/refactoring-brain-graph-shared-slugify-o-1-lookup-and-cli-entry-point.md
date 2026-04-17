@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:54:37.137Z
 last_ai_edit: 2026-04-12T21:54:37.137Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cae20925aff5f406
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-refactor-graph-use-shared-slugify-fix-o-n-lookup-add-cli-b2a0c1.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - slugify
   - optimization
 ---
+
 
 # Refactoring Brain Graph: Shared Slugify, O(1) Lookup, and CLI Entry Point
 

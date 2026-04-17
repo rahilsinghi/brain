@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:17:18.205Z
 last_ai_edit: 2026-04-10T22:17:18.205Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 321bc02bf8043324
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-drop-never-dips-below-current-energy-floor-clamped-build-e54d79.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - fcb002f
   - rahilsinghi
 ---
+
 
 # Coro: Energy Dip Prevention with Floor-Clamped Brightness
 

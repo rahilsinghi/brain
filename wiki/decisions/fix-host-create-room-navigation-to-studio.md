@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:19:11.797Z
 last_ai_edit: 2026-04-10T18:19:11.797Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 43d9976cf5e1c6c4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-host-create-room-navigates-to-studio-not-host-0820cb.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - development
   - frontend
 ---
+
 
 # Fix: Host 'Create Room' Navigation to /studio
 

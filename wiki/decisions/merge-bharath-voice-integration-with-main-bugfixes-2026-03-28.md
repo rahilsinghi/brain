@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:04:29.876Z
 last_ai_edit: 2026-04-10T15:04:29.876Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6796b56bf541473d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-merge-integrate-bharath-voice-with-main-bugfixes-f5566b.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - gemini
   - asknyc
 ---
+
 
 # Merge: Bharath/Voice Integration with Main Bugfixes (2026-03-28)
 

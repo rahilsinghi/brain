@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:23:34.262Z
 last_ai_edit: 2026-04-12T21:23:34.262Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0af0e20755f98726
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-scoreboard-address-review-issues-in-run-tests-00efcd.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - cli
   - code review
 ---
+
 
 # Fix: Scoreboard _run_tests() Review Issues (Ouroboros)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:24:54.198Z
 last_ai_edit: 2026-04-10T19:24:54.198Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f7c2e59460391b50
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-calendar-remove-attendees-for-service-account-compat-up-de2286.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - integration
   - frontend
 ---
+
 
 # Calendar Service Update: Service Account Compatibility and Documentation Refresh
 

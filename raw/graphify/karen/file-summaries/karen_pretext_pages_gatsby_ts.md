@@ -2,7 +2,7 @@
 title: "gatsby.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/gatsby.ts"
 repo: "karen"
-community: 7
+community: 6
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/gatsby.ts`
-**Community:** 7
+**Community:** 6
 
 ## Imports
 - (none)

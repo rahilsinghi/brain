@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:08:13.112Z
 last_ai_edit: 2026-04-10T22:08:13.112Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f8db4bad29b03c16
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-imessage-scheduler-feat-add-one-command-start-script-and-rewrite-re-4d404f.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - project management
   - imessage-scheduler
 ---
+
 
 # Feature: One-Command Start Script and README Rewrite
 

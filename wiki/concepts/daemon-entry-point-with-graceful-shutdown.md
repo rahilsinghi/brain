@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:11:00.826Z
 last_ai_edit: 2026-04-10T22:11:00.826Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0f9f30c5f5220a63
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-daemon-entry-point-with-graceful-shutdown-234455.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - rahilsinghi/brain
   - software design
 ---
+
 
 # Daemon Entry Point with Graceful Shutdown
 

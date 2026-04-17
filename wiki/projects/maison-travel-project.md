@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-14T17:34:15.743Z
 last_ai_edit: 2026-04-14T17:34:15.743Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a3edee876307941c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/work/voice-2026-04-14T17-33-47-681.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - hospitality
   - tourism
 ---
+
 
 # Maison.travel Project
 

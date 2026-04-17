@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:17:50.679Z
 last_ai_edit: 2026-04-10T17:17:50.679Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 41c24b51e89f3a96
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-image-carousel-to-hackathon-projects-with-two-co-faadbe.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - animation
   - responsive design
 ---
+
 
 # Image Carousel and Two-Column Layout for Portfolio Projects
 

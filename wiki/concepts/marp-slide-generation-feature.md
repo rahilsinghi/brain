@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:22:02.228Z
 last_ai_edit: 2026-04-10T19:22:02.228Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 69685a6239cdbc09
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-output-add-marp-slide-generation-with-error-handling-an-82cd81.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - brain
   - code
 ---
+
 
 # Marp Slide Generation Feature
 

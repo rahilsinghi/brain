@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:22:29.458Z
 last_ai_edit: 2026-04-10T18:22:29.458Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4f14e37f3a61927f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-dead-letter-queue-quarantine-files-after-3-failed-retr-7051c4.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - rahil singhi
   - system robustness
 ---
+
 
 # feat: Dead Letter Queue - Quarantine Files After 3 Failed Retries
 

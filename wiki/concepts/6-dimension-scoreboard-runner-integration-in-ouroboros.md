@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:46:18.850Z
 last_ai_edit: 2026-04-12T21:46:18.850Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d26a61ef1e3877a1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-scoreboard-wire-up-full-6-dimension-scoreboard-runn-5d0c90.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - llm
   - claude opus
 ---
+
 
 # 6-Dimension Scoreboard Runner Integration in Ouroboros
 

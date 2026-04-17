@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:24:44.075Z
 last_ai_edit: 2026-04-10T22:24:44.075Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 007de5db36dce84a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-test-extend-conftest-with-integration-test-fixtures-71925b.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - conftest
   - development
 ---
+
 
 # Integration Test Fixtures in conftest.py for Gaze-Diffuse
 

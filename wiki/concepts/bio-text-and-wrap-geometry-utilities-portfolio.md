@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:48:34.886Z
 last_ai_edit: 2026-04-13T18:48:34.886Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bb3bb1ce093083f2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-content-add-bio-text-and-wrap-geometry-utilities-77b644.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - ui utilities
   - frontend
 ---
+
 
 # Bio Text and Wrap Geometry Utilities (Portfolio)
 

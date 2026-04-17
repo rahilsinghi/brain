@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:25:28.196Z
 last_ai_edit: 2026-04-11T01:25:28.196Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3b31537b11684486
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-resolve-matter-for-rahil-singhi-79b921.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - project management
   - commit
 ---
+
 
 # Karen: Resolve Matter for Rahil Singhi (bd83b4e)
 

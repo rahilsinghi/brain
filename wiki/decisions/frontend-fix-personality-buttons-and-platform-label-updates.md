@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:13:24.093Z
 last_ai_edit: 2026-04-10T19:13:24.093Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cf6d583f691da0f4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-make-personality-buttons-visually-clickable-cl-589d59.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - rahil singhi
   - visual feedback
 ---
+
 
 # Frontend Fix: Personality Buttons and Platform Label Updates
 

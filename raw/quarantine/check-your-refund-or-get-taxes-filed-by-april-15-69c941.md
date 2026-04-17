@@ -1,0 +1,179 @@
+---
+status: quarantined
+source_type: gmail
+source_id: 19d730798af7c401
+ingested_at: 2026-04-10T11:49:45.163Z
+parsed_at: 2026-04-10T11:49:45.163Z
+compiled_to: null
+processed_at: null
+retry_count: 2
+last_error: The operation timed out.
+compile_progress: null
+quarantined_at: 2026-04-17T05:40:18.439Z
+---
+
+
+
+
+
+
+
+
+
+
+# Check your refund or get taxes filed by April 15
+
+**From:** "ID.me Shop" <shop@marketing.id.me>
+**Date:** Thu, 09 Apr 2026 10:16:01 -0600
+
+Prep for tax filing with ID.me&#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; &#847; &zwnj; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImU4YWZkMmM5LTkyOWItNDYxZC04NWQ4LWM5MWQyNWIwN2Q2OCIsImRla1ZlcnNpb24iOjEsIml2IjoiZHZkbkFsTWs1d05kMXVsN0UwOWtJQT09IiwiY2lwaGVyVGV4dCI6IkZGTGVTZ3lIZEJaWXhwU1IrbmVLNSt0SGlDajgwSXNNZkg3U29rZTNNa3JPOEZENUZpdWdkdHI0bE5uaHdaMWltMG16NWZGMys5dWZ6elJhSzdaZ3ZneUhnWHA1TXduUXc0QlBDM2IzWndKVEpPY0RYZGJwZXhOUFpDQT0iLCJhdXRoVGFnIjoiSzdaZ3ZneUhnWHA1TXduUXc0QlBDdz09In0%3D 
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImEzNGM3ZDFjLTgxMmItNDYxYi05YWNjLTE1YWYyZWM4OGMzOSIsImRla1ZlcnNpb24iOjEsIml2IjoiYTVFbS9wRVNCcXRSNGR6UUNYQ2tyQT09IiwiY2lwaGVyVGV4dCI6InJ0UWdNVnZjN0h0QlJ5aVNpNk9NTmhqS0Zha29rUEswT01nNUhzTS9PYlpqTkhuWWJFcFBOVnNoelVoUEdUelRJSWlPcStrY0hMcmVmdW9YU1RYQmljakpGaHBDT3Z2ZnovMm5ZR3VSSnY2UkVnYXJVZUhjMEFsd3BLdz0iLCJhdXRoVGFnIjoiU1RYQmljakpGaHBDT3Z2ZnovMm5ZQT09In0%3D 
+
+&#8202;
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjAwZGU1YWU5LTZkYzYtNGQzNi04YTUzLWRjMDY4MzVkZWNkYiIsImRla1ZlcnNpb24iOjEsIml2IjoiUUVqQlRNYld3TU5FRXZxMlRmbHc2QT09IiwiY2lwaGVyVGV4dCI6InlwaHN1TXZUMmNlcjd2NG0rcTZUaHFOOFI2TmYzNU1HN1huRFdrWllBTGlvT1dlc0h1RHplbmUwVFFXWGpTM2dwTlBHNGdrTWZDL2NmNlBqR25TeUM1dHFWMlFDb21VcHB5TUM2RUJJd1V6RzFzRERSQkw2dGszNWNPZz0iLCJhdXRoVGFnIjoiR25TeUM1dHFWMlFDb21VcHB5TUM2QT09In0%3D 
+Check your refund status
+
+Expecting money back? Your ID&zwnj;.&zwnj;me Wallet is an easy, safe way to sign in and check refund status.
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImNhMTJkZDkzLWU2NjEtNGI4NC1hYzkyLTBhOWFlMWMzOTZiNSIsImRla1ZlcnNpb24iOjEsIml2IjoiQ1hIeUY1TDVsMUF2bmkrTFBQeWU3UT09IiwiY2lwaGVyVGV4dCI6IkltdnB0VnhKbG03YjRRRlA2M2dwKzU3UXBCanc0QXpKdlZoVjd5eFd5clo0Q1ZRNnFFNlR3M2tTUDN4YjdjR0w0SzZGYThMdk55VnNJVjk2dGQ0QlE2dTkzTm5zSTlGMEtJUGtpZ2x4OGhlUytaZFFMNTR2aXp6OG51MD0iLCJhdXRoVGFnIjoidGQ0QlE2dTkzTm5zSTlGMEtJUGtpZz09In0%3D 
+&#8202;
+Last chance to score discounts on tax prep
+
+Students get discounts and cash-back offers on tax prep services. Don&rsquo;t miss the A&zwnj;pr&zwnj;il 1&zwnj;5 deadline to file or get an extension!
+
+&#8202;
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImExMjZmYzU4LWQwMDUtNDg1OC1hMjg5LWZlMGU5MDJjZmFkYyIsImRla1ZlcnNpb24iOjEsIml2IjoiUWtrTTZRR3RjbnR3SWIweWU3YkYzUT09IiwiY2lwaGVyVGV4dCI6Iit6a2ZEaFdZWFVrMmI2b0wxWTdBc2hzeTBic0JBUWJURWJjcUh4MmtBb2dwTUVnR0NzK2VtUHVmWTBXbFVqZWFtZjIwQ0xPNTZZRmI3ZmZLUmZhekRjZ00rWWdPdE12R3hSUDhaa0pKRE9rQnJYSjdjQ0c5TW51MnhkMD0iLCJhdXRoVGFnIjoiUmZhekRjZ00rWWdPdE12R3hSUDhaZz09In0%3D 
+
+20% off
+
+Save 20% on TurboTax. Get your taxes done 100% right and your maximum refund, guaranteed.
+Up to 5.0% cash back
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImQ5NDllOTMzLTg1MWItNDg5NS04OGY2LTBmYjRiMmE0ODg0MyIsImRla1ZlcnNpb24iOjEsIml2Ijoiak80dlh0dG1aYTk2RmV3UzFUeStBQT09IiwiY2lwaGVyVGV4dCI6IjgrQmViaHA4K1A1SGtjVTZObDhLelN6S0JHSFlKVEF5QUhEMzZTdkdlaVhXMUduSTlsS2tMSXVqM3FQRlI0T1FGWm1NOWRzZExoNWRJUlNsZkUxZEt3RTNZakFqV2R0RXY2b1l1NHp1TDE3YlptV3ZlaFhzRXRVOHZnQT0iLCJhdXRoVGFnIjoiZkUxZEt3RTNZakFqV2R0RXY2b1l1dz09In0%3D 
+
+Save 25%
+
+On state and federal filings with TaxAct.
+Up to 5.0% cash back
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjMxYjEwNjVkLTUzZWEtNGY2Mi1iODhjLTI1MjdkZDZiOTFkNyIsImRla1ZlcnNpb24iOjEsIml2IjoiU0dUM2FsYlJGTkw0RnFHaWNTVDd4QT09IiwiY2lwaGVyVGV4dCI6IlFBUXhtN201RE5hRTlpdlpMOVk2TElDbmYraHVvL3VFbDBJRlVrWTJtOWkyb0h5QWxIbzlRRFNzQlM1bU5ZMXcrTnMraXFPcDE1SCs4dWRwSU80d01wV21TSGUwSjR5aEdUdWtrRWhrOTJwVzBSVFMrQmFob25Fays4UT0iLCJhdXRoVGFnIjoiSU80d01wV21TSGUwSjR5aEdUdWtrQT09In0%3D 
+
+25% off
+
+Federal income tax software purchases with code IDME50.
+Up to 5.0% cash back
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjllZjAxNzNkLTM2ZDYtNDZlOS1iY2M3LWYwZGRlNThjZjJmMiIsImRla1ZlcnNpb24iOjEsIml2IjoidHpqMjJtVWtBY1ZSUXBUanIzaUh0Zz09IiwiY2lwaGVyVGV4dCI6ImQ1N1BxOEhtbVBJNDl4aWdDVHlqbW9LL1Rxbm1leis2NURMcDE4dzdJb2ZVaGdlKzYzNHN4ZHIrbHN2UmpvS084UTk2U2ZhbVUzWXJyWHlqcHJHSzdkYTJNSlJVVWMwVnd2Y3VNTGM0OXRwbEpBSEZVVUtVNDY5NGg3WT0iLCJhdXRoVGFnIjoicHJHSzdkYTJNSlJVVWMwVnd2Y3VNQT09In0%3D 
+
+33% off
+
+Federal and/or state filings with code IDME33EZ.
+Up to 5.0% cash back
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjNiNWY1NTA4LTJlMGYtNDFkZC1iOTEzLWMyN2VmYjExNmNmYSIsImRla1ZlcnNpb24iOjEsIml2IjoiMkhnaXBLSXJhalNPWVVzM0lXWnRsUT09IiwiY2lwaGVyVGV4dCI6IkFXRGZNVzc1L2xiN01YRTMzRXBVcytvVnhKWXZTdWxVa2FzTjhlRW5ob05TZi9IQkxhNWNQVXRGL2JTQ08yYlZkcXU4Y3NmTk9EajdYKzgrK3RGam1zblhkZW9jZ09nL1R4dmRVOWg0SXFTaUsybzBqbUZMTnlGbWJaVT0iLCJhdXRoVGFnIjoiK3RGam1zblhkZW9jZ09nL1R4dmRVdz09In0%3D 
+
+30% off
+
+Federal eFiles for new users with code ID30.
+Up to 5.0% cash back
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjA2YWJkMjU5LTdkOGQtNGI4Zi05YjMwLTczZWIzNWY1NWIwZiIsImRla1ZlcnNpb24iOjEsIml2IjoiS1VvOVlGN2dMREMrWjk0aDBsQjFkQT09IiwiY2lwaGVyVGV4dCI6IjdnSnBEMmxCNTNPZXI2UVRNc2tkb1pxVk4zZ2hkR0swNzlDUVpnd25rSmlrWG9ZeVJ3dTNwdXBRVyttbDhlNFFML1NyaThDVGc3NHJ0V2g3UWVHWXNjK01oaWNXdmxORlpPRHdwaWxLUFdCZTRDd3d2bWZlSWRKUWRYUT0iLCJhdXRoVGFnIjoiUWVHWXNjK01oaWNXdmxORlpPRHdwZz09In0%3D 
+
+40% off
+
+40% off do-it-yourself tax software.
+Up to 5.0% cash back
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImRlMmY2NmU3LTlhOGYtNGU5NC1iMGI0LTZlNmUxN2VhYTUwMyIsImRla1ZlcnNpb24iOjEsIml2IjoiTHp4RWpBTzZraXYrNytNVTBIRGpVUT09IiwiY2lwaGVyVGV4dCI6IkNiZzJVN3ozUHM1bnB3Y3piUitLREhPR0lpcktqbGRMaFpTalZVMzV1eFBhQVA0akhtdWFKdjE1VTZPYzhDdkhXNmhweFVtNDlrcnlQd0lFWlYyeXYrTEQ0NXkvQ2FQMk9FODAxeTg4Ukl3RHVwSXIvdS9qRk5CdzQxRT0iLCJhdXRoVGFnIjoiWlYyeXYrTEQ0NXkvQ2FQMk9FODAxdz09In0%3D 
+
+File today
+
+Start your online tax filing at LibertyTax.com.
+Up to 5.0% cash back
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjcxMTc2NWZhLTU5MzItNGE0NS04YTBiLWE5ZmJjOGNiODJmZSIsImRla1ZlcnNpb24iOjEsIml2IjoieWhGOE5vZ1c2Zko5ZVBiMTZHN2wxdz09IiwiY2lwaGVyVGV4dCI6IkJ5OXl0bzdPUkNuK21IQlZhNTlKenRjcm0xRTlaQTJXMWRueWlGWkJBYi9iczlrbGxOSmNPMTQxdHBsOGtmTG0wT05vUU4vYmZ3L2EzY2ZubEw0ZG5qL1dDTWNDd2xicHB0NG5KTW9SZkRhSUZ1bnlmWGoyOWVodTVkYz0iLCJhdXRoVGFnIjoibEw0ZG5qL1dDTWNDd2xicHB0NG5KQT09In0%3D 
+
+&#8202;
+Don&rsquo;t miss the tax filing deadline!
+&#8202;
+
+A&zwnj;pr&zwnj;il 1&zwnj;5
+
+Last day to file federal and state taxes. Deadline to request an extension.
+
+&#8202;
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImU4YTkzOTI4LWI1ODgtNDEwOS04NjYzLThhNTYxNzA1ZDEwNyIsImRla1ZlcnNpb24iOjEsIml2IjoiM3VZRGhqZ1JKQTc1NTRxcExqMDRHdz09IiwiY2lwaGVyVGV4dCI6IkpqTUwwcmNQMDRXTnN1djYxOUlST085SmQxVjZLcUp4TDRzbzVpaytuS2QxQlVVeEhwMmkwZXdUZmZRS3owZFRsNTdDK1pvVXV4UEtzc0NEbnA3eEJKQVJYbnVDQzBIekQrQWIxdDdtQTRZNEVTUU8rZWVLcVM0OU9Ccz0iLCJhdXRoVGFnIjoibnA3eEJKQVJYbnVDQzBIekQrQWIxZz09In0%3D 
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjZkYTEyNmMzLTg5N2ItNGMwNy1hYWViLWEyMTEzOTA1ODZlZSIsImRla1ZlcnNpb24iOjEsIml2IjoiM2gxdk9SS0R3Y3hQSGhidDhNRWQ0QT09IiwiY2lwaGVyVGV4dCI6ImlDbm1LWENYRDNpREEzOXNhWnFUTXJocUxsd0ZUWFBXcHdzREFxUHRSRjYzcHhSNmoyR1FqdUlWOGV0Z2JrL0o3bkp2T1JKbytuQitUTlVNeVhNSVFQVGQ1b2o5SFliTzZOTFVOZDRkYnprU2c4SE1UeDRXN2ZEQkhlQT0iLCJhdXRoVGFnIjoieVhNSVFQVGQ1b2o5SFliTzZOTFVOUT09In0%3D 
+Shop     
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjdjNmZlMDQ1LTljNjgtNDdiYi1iYTFiLTk5YzJjNTk0M2QxYiIsImRla1ZlcnNpb24iOjEsIml2IjoieW54QW9yRU1HVUJ6NlBPUlVuQnlTdz09IiwiY2lwaGVyVGV4dCI6IkxIRGdyZVM4aEtqOVEvVE9RRVRBeUFqVVN3USttT3FsMUhvbk54WmhRTkt0WS9iL2MrdGZRZVNEc0ZQcXJ2ZzVUNnZLWWllUVd3VzAvM3pidkMvWkJSZW93ZFZOcDlVRitZbk1ROHA4UUtLeERCbEFjK2p6a1ZKd2Nrcz0iLCJhdXRoVGFnIjoidkMvWkJSZW93ZFZOcDlVRitZbk1Rdz09In0%3D 
+Wallet     
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjFmOTNlYmZmLWZlZjMtNGRkYy04YmMyLTMyNWNiYmI0Yjk0ZiIsImRla1ZlcnNpb24iOjEsIml2IjoiWXR4M0thMUlLSFhlaExhWjdySHROQT09IiwiY2lwaGVyVGV4dCI6InVQVDdWN3NNd1pUL2V4cjZHaVhINkhRK0xYZGtFWDZhSndBaGNHTjJBZWFkd1VSS2N1b3A4Z3NZR1ZpSWVxekVBaHB4SFNySEZBeXlJZ0hLS053bjF5RnpvR2E3bkFlZVhZc0w2MkxjZHltdFNDaDEzb1MybWU2eDdUUT0iLCJhdXRoVGFnIjoiS053bjF5RnpvR2E3bkFlZVhZc0w2dz09In0%3D 
+Government 
+
+Advertising Disclosure
+Offer details subject to change or cancellation – see partner stores for any offer changes, updates, and restrictions. Offers apply to ID&zwnj;.&zwnj;me Student members only.
+
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImI4MGZjMzkzLWE4NDktNDE0MC1hZTY2LTk2MDFlODY5MGQ0NSIsImRla1ZlcnNpb24iOjEsIml2IjoiQy9zY0hUZGhtQjd2dndudWhyQW16dz09IiwiY2lwaGVyVGV4dCI6InM4citLV0lDSVBHcHNRSmNBTU1lTjJlYm9EdnlyaFhvM1FOZG13ZlVFT3h0REZHa0lFT0Y0SG9Oa1UyM3BWNzg1N0s4dlQwTkNjb0tIdmlTbUZFT2FXblVtd0ZFSzhBTEE4YlZKZ3Y3SEIwM1laZ2U3NzhKN29hd0pzOD0iLCJhdXRoVGFnIjoibUZFT2FXblVtd0ZFSzhBTEE4YlZKZz09In0%3D 
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjUzYzZiNmZhLWY3MjUtNGU4MC1iODI4LTE3NGVmZGZiYzlhNiIsImRla1ZlcnNpb24iOjEsIml2IjoieHdKNDNGKzloOVpOZW1GakppY1BTUT09IiwiY2lwaGVyVGV4dCI6IlBBZXBhTGU4UVh3QlVyZEpQNEhEeE96ajc0UUw0RkRMTnJDeHkwNjYxQ2U4dmkvdTNocHpYeHh0NFNqTmVYcFlLeThqSkZUaVRUOE1iVnFFMVNDeGNKREluNWE1SGY2NGpYMDRWc2NDZU54ZnZZZldUWHBoWXlZbkQwaz0iLCJhdXRoVGFnIjoiMVNDeGNKREluNWE1SGY2NGpYMDRWZz09In0%3D 
+
+Have a question?
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjI2MDcxMDJmLWJjOGItNDhjZC1hZmM2LWMxNDhiZDFiMWE4NSIsImRla1ZlcnNpb24iOjEsIml2Ijoic2JmSFo4ZWJNUTF0ZmFlRXJnWWVIQT09IiwiY2lwaGVyVGV4dCI6InhWUGxnQzUxaWt3anpzU1RCaTQyZU1rZWIydkMwUkZ3cENoalAxZXVLTlp0YllBWHQydlVZcDRONytoYTdMNFZ5aW40RVROTFVtcDYxcVJ4bENUTTg5M3hleHltQlJWKzhMeG1vN0czeDJmSG16RU5iWDJuaEs0R0hodz0iLCJhdXRoVGFnIjoibENUTTg5M3hleHltQlJWKzhMeG1vdz09In0%3D 
+Visit the ID&zwnj;.&zwnj;me Help Center 
+
+Copyright 2026 ID&zwnj;.&zwnj;me
+8280 Gr&zwnj;eensboro D&zwnj;ri&zwnj;ve, Su&zwnj;i&zwnj;te 8&zwnj;00, Mc&zwnj;Lean, V&zwnj;A 22&zwnj;102 
+
+https://click.marketing.id.me/subscription_center.aspx?qs=eyJkZWtJZCI6IjBmODgwYTQ5LThjMjUtNDY3My05Zjk1LTY0MmRmNTQ1NjZlMiIsImRla1ZlcnNpb24iOjEsIml2IjoiVFNnMU9DUytPTmdTSi9XdXBEQ2FoZz09IiwiY2lwaGVyVGV4dCI6InZ5OGNTZkxaSFhLL2xqbGMrSHdZY3VGWmVHYzNOOXJKUWVqRzcrd3FIY0lGZzlxOFNYUGtWV0VFRXBEeEZwUmU5aUZ2c2twdTRia0FzVENtOG5kQkN3Y1YxMTVPaDJnRU0vMXg3Qk5vbTZKNEFxQk5LRFU0Skw0NDJCSW45YTZrTUpxRyIsImF1dGhUYWciOiJYazZIYUFRei9YSHNFMmlib25nQ29BPT0ifQ%3D%3D 
+Unsubscribe       
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6ImJjYWZlODMwLWI4ODEtNDA4Ny1hOTFjLTRmMTE5ZjIzOWYwNSIsImRla1ZlcnNpb24iOjEsIml2IjoiVFpiaFV5ejRpc2ZJTFpvbFFlZ2dEQT09IiwiY2lwaGVyVGV4dCI6IlEzWDlUakd1cDJRd0JiUkRhSWpQaUxkUUN3SHhvMTVKVTRtaldSV3ZrbWJQRFhZam14OEM5VXBiVkFFWE0rU2xQSDhVekhPV3FtUXJaZ2hoZ0FXYlNBVlNzZVhqeTFLUDF3UjlHRTJXNFZNcytJckh5QzJhSlVIb0lBdz0iLCJhdXRoVGFnIjoiZ0FXYlNBVlNzZVhqeTFLUDF3UjlHQT09In0%3D 
+Terms of Service       
+
+https://click.marketing.id.me/?qs=eyJkZWtJZCI6IjM5YWQ2ZWQ5LTQzODgtNDQyMS1iOWU0LWFhYTkzNGNjMzE5NCIsImRla1ZlcnNpb24iOjEsIml2IjoiVlg2NFE2ZjRsTGFaTkUzN1RpVEpmUT09IiwiY2lwaGVyVGV4dCI6IjNMWFNCYWxjUVBhNnMyUHpjdVpnTDZkRDJiSks5U2E3bWVaaTl2T2dLTWU0MkhVN1o1V2xQVlNpV09xaGNjdlBLbUZrd04wQUxGbnRUOWpHa2FqNGNEWEpoRzRBayt1aU5sWHk3RlYrdUVPbitKUzJtVFJOKzA0a3lYMD0iLCJhdXRoVGFnIjoia2FqNGNEWEpoRzRBayt1aU5sWHk3QT09In0%3D 
+Privacy Policy       
+https://click.marketing.id.me/profile_center.aspx?qs=eyJkZWtJZCI6ImFmYTQxYThjLTVlNzUtNGYyZC04NTA3LTNjMWJiYzA1YmI1YyIsImRla1ZlcnNpb24iOjEsIml2IjoiTmRlTTV2S2cvU2JaejVrNUIzMDc5UT09IiwiY2lwaGVyVGV4dCI6IlFvWjdMQStCZWkrcDY1aE51c1BPRXRHYUtxai9wRVFkUkJVUnVvZGk4Zi80MXFZMFpoR2xXTURNSk1iTExVSGxJRGpVTHJ0blFZNE1NZU94eDRhcmYwYU82a003QzlpNWVzTkxlN0t0a0VEUXAvTTExNHptOHFEOUp0blBtVGtIZlR2MSIsImF1dGhUYWciOiJRenNMMkxsNncwdDdzcTJRUU5Dbjh3PT0ifQ%3D%3D 
+Email Settings

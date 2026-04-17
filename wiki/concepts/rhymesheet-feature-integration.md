@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:21:24.692Z
 last_ai_edit: 2026-04-10T22:21:24.692Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b7bee1acf2c88c48
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-integrate-rhymesheet-into-player-cards-and-ingestion-22c957.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - annotation
   - development
 ---
+
 
 # RhymeSheet Feature Integration
 

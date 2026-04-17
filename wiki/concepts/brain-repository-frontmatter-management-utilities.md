@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:18:08.484Z
 last_ai_edit: 2026-04-13T17:18:08.484Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ee0802da675c5b35
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-frontmatter-read-write-update-inject-utilities-4e24ed.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - development
   - knowledge-base
 ---
+
 
 # Brain Repository: Frontmatter Management Utilities
 

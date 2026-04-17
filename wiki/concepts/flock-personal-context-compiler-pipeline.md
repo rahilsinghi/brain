@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:22:30.157Z
 last_ai_edit: 2026-04-12T22:22:30.157Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a5113cd7b937ef20
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-personal-contextmd-compiler-pipeline-024c07.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - versioning
   - llm
 ---
+
 
 # Flock: Personal Context Compiler Pipeline
 

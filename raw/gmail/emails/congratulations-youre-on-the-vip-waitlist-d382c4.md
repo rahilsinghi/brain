@@ -4,12 +4,21 @@ source_type: gmail
 source_id: 19d753a40d28ed3e
 ingested_at: 2026-04-10T11:49:45.152Z
 parsed_at: 2026-04-10T11:49:45.152Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Congratulations! You're on the VIP waitlist]]"
+processed_at: 2026-04-17T05:20:02.788Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3JvjWWATTcWmckW5hF"}
+last_error: The operation timed out.
 compile_progress: null
 ---
+
+
+
+
+
+
+
+
+
 
 
 

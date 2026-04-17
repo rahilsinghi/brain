@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:11:04.692Z
 last_ai_edit: 2026-04-10T15:11:04.692Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ced7dd4e4c81efcf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-add-open-matter-for-rahil-singhi-879f4e.md]]"
 tags:
@@ -14,6 +14,7 @@ tags:
   - portfolio
   - version control
 ---
+
 
 # Rahil Singhi: Portfolio Commit 3ea9925
 

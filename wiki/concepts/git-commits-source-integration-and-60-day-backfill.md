@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:05:59.684Z
 last_ai_edit: 2026-04-13T15:05:59.684Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 568265f92eb3ae12
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-sources-add-git-commits-source-with-60-day-backfill-acr-1c385b.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - github
   - automation
 ---
+
 
 # Git Commits Source Integration and 60-Day Backfill
 

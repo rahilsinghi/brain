@@ -2,7 +2,7 @@
 title: "benchmark-check.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/benchmark-check.ts"
 repo: "karen"
-community: 42
+community: 44
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/benchmark-check.ts`
-**Community:** 42
+**Community:** 44
 
 ## Imports
 - (none)

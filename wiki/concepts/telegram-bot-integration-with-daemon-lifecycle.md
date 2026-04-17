@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:42:49.891Z
 last_ai_edit: 2026-04-10T21:42:49.891Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bd027ca3d19d0811
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-integrate-bot-into-daemon-boot-and-shutdown-c68be7.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - rahil singhi
   - brain
 ---
+
 
 # Telegram Bot Integration with Daemon Lifecycle
 

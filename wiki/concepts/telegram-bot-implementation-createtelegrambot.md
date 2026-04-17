@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:14:00.954Z
 last_ai_edit: 2026-04-10T21:14:00.954Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1751791cd6da3050
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-implement-createtelegrambot-with-message-han-8c0e04.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - commit
   - author
 ---
+
 
 # Telegram Bot Implementation (createTelegramBot())
 

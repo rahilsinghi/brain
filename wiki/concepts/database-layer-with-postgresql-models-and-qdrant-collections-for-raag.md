@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:37:50.453Z
 last_ai_edit: 2026-04-13T17:37:50.453Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d36b95d6071c6ba9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-database-layer-with-postgresql-models-and-qdrant-collecti-3dba28.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - backend
   - async
 ---
+
 
 # Database Layer with PostgreSQL Models and Qdrant Collections for raag
 

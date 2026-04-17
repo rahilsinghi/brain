@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:19:32.606Z
 last_ai_edit: 2026-04-10T21:19:32.606Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 829cbc815864f5fe
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-cookie-based-auth-with-name-room-code-login-2aa1f5.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - demo
   - development
 ---
+
 
 # Cookie-Based Authentication with Name and Room Code Login
 

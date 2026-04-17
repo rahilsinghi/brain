@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:22:06.313Z
 last_ai_edit: 2026-04-10T18:22:06.313Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 39a1f16e51da39d4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-dynamic-drop-threshold-50-of-room-fix-3rd-vote-ui-bugs-dee944.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - dynamic
   - commit
 ---
+
 
 # Coro: Dynamic Drop Threshold and UI Fixes (Commit 8bc7494)
 

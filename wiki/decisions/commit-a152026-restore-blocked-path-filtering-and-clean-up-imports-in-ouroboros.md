@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:17:07.888Z
 last_ai_edit: 2026-04-10T19:17:07.888Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e25ab3a669e703c5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-loop-restore-blocked-path-filtering-and-remove-unuse-fc58b3.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - strategist-context
   - regression
 ---
+
 
 # Commit a152026: Restore Blocked Path Filtering and Clean Up Imports in `ouroboros`
 

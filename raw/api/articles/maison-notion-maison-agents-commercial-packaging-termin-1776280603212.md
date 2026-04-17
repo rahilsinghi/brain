@@ -1,17 +1,19 @@
 ---
-status: failed
+status: processed
 source_type: api
 channel: claude-code
 source_id: api/articles/maison-notion-maison-agents-commercial-packaging-termin-1776280603212.md
 ingested_at: 2026-04-15T19:16:43.212Z
 parsed_at: null
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: |
-  JSON Parse error: Invalid escape character 
+compiled_to: "[[Maison Agents — Commercial Packaging & Terminology]]"
+processed_at: 2026-04-17T02:02:34.430Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
 
 
 

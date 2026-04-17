@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:11:22.647Z
 last_ai_edit: 2026-04-13T16:11:22.647Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 20c2da79fdc07913
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-terminal-boot-sequence-loading-animation-4db9c9.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - accessibility
   - feature
 ---
+
 
 # Terminal Boot Sequence Loading Animation for Portfolio
 

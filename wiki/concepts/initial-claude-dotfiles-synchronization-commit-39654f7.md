@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:06:09.911Z
 last_ai_edit: 2026-04-13T17:06:09.911Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 391dfdf3fa88422f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-dotfiles-chore-initial-claude-dotfiles-6b39e3.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - submodule
   - automation
 ---
+
 
 # Initial CLAUDE Dotfiles Synchronization (Commit 39654f7)
 

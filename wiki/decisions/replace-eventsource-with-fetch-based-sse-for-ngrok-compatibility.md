@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:18:55.120Z
 last_ai_edit: 2026-04-10T19:18:55.120Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5c4e06a2545a5cbf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-replace-eventsource-with-fetch-based-sse-for-ng-ffa4cd.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - http-headers
   - fix
 ---
+
 
 # Replace EventSource with Fetch-based SSE for Ngrok Compatibility
 

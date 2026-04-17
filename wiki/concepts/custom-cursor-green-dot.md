@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:06:27.027Z
 last_ai_edit: 2026-04-10T22:06:27.027Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6bf770160c228170
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-custom-cursor-with-green-dot-ring-expands-on-50b81e.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - frontend
   - hover-effect
 ---
+
 
 # Custom Cursor (Green Dot)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-14T17:00:23.379Z
 last_ai_edit: 2026-04-14T17:00:23.379Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 25a67ed620b56cd3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-following-up-2c644c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - brenton andersen
   - rahil singhi
 ---
+
 
 # Technical Co-founder Proposal for Brenton Andersen's Project
 

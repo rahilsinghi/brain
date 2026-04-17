@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:48:48.355Z
 last_ai_edit: 2026-04-13T17:48:48.355Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 83d311a0ebf30f95
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-add-brutalist-visual-templates-marp-matplotlib-mermai-702384.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - brain
   - feature
 ---
+
 
 # Add Brutalist Visual Templates (Marp, Matplotlib, Mermaid)
 

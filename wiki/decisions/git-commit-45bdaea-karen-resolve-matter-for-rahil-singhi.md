@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:08:44.067Z
 last_ai_edit: 2026-04-10T15:08:44.067Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3e042ff62e934279
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-resolve-matter-for-rahil-singhi-307e7c.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - code change
   - karen
 ---
+
 
 # Git Commit 45bdaea: Karen: resolve matter for Rahil Singhi
 

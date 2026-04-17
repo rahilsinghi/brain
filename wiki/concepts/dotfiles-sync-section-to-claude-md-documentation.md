@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:36:39.452Z
 last_ai_edit: 2026-04-11T01:36:39.452Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 44422b78d1db2e66
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-dotfiles-docs-add-dotfiles-sync-section-to-claudemd-3ce139.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - sync
   - rahilsinghi
 ---
+
 
 # Dotfiles Sync Section to CLAUDE.md Documentation
 

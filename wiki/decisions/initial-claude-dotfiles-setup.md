@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:05:31.771Z
 last_ai_edit: 2026-04-12T17:05:31.771Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4bc398074e5a929d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-dotfiles-chore-initial-claude-dotfiles-6b39e3.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - chor
   - rahil-singhi
 ---
+
 
 # Initial Claude Dotfiles Setup
 

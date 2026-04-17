@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:44:40.327Z
 last_ai_edit: 2026-04-11T01:44:40.327Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e0bb951ab8b5ab58
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-docs-spec-projects-section-revamp-infinite-ticker-with-c323d9.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - css
   - design
 ---
+
 
 # Projects Section Revamp: Infinite Ticker with Auto-Discovery
 

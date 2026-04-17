@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:21:00.936Z
 last_ai_edit: 2026-04-10T22:21:00.936Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1e6d716625d26f70
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-runner-with-step-orchestration-validation-and-f302fe.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - brain
 ---
+
 
 # Seed Project Runner with Orchestration, Validation, and --only Routing
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:47:49.882Z
 last_ai_edit: 2026-04-13T18:47:49.882Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8df0470958d1456d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-responsive-html-email-digest-template-d1eb34.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - responsive
   - automation
 ---
+
 
 # Responsive HTML Email Digest Template (Career-Datacenter)
 

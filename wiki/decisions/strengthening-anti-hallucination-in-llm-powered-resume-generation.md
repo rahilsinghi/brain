@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:05:19.682Z
 last_ai_edit: 2026-04-10T17:05:19.682Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 94ae5a518c74ec72
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-strengthen-anti-hallucination-constraints-in-resum-8eab9b.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - antler
   - kismet
 ---
+
 
 # Strengthening Anti-Hallucination in LLM-Powered Resume Generation
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:07:57.839Z
 last_ai_edit: 2026-04-10T22:07:57.839Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bd533f653e9e4236
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-exclude-h1-from-preamble-content-remove-dead-code-branch-2ce905.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - commit
   - a255177
 ---
+
 
 # Fix: Exclude H1 from Preamble Content and Remove Dead Code Branch (a255177)
 

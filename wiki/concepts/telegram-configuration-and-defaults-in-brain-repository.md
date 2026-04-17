@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:29:38.614Z
 last_ai_edit: 2026-04-11T00:29:38.614Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0d5b03c1c46dfe97
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-add-telegramconfig-type-and-config-defaults-425543.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - defaults
   - environment-variables
 ---
+
 
 # Telegram Configuration and Defaults in Brain Repository
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:38:43.859Z
 last_ai_edit: 2026-04-13T18:38:43.859Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 50f57de245b26440
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-comprehensive-skills-inventory-0e3c66.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - portfolio
   - data management
 ---
+
 
 # Comprehensive Skills Inventory in Career-Datacenter
 

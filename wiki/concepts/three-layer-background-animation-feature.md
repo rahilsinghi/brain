@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:04:40.682Z
 last_ai_edit: 2026-04-10T21:04:40.682Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8e709ceb995e6699
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-three-layer-background-animation-15d5d1.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - webdev
   - feature
 ---
+
 
 # Three-Layer Background Animation Feature
 

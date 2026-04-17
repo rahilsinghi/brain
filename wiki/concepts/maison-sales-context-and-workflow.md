@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-15T19:44:13.756Z
 last_ai_edit: 2026-04-15T19:44:13.756Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d14b3f0ca5808d9e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/maison-slack-sales-agent-sales-workflow-action-items-1776280546426.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - fathom
   - hubspot
 ---
+
 
 # Maison Sales Context and Workflow
 

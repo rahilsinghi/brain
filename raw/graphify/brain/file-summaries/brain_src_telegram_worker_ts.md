@@ -2,7 +2,7 @@
 title: "worker.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/telegram/worker.ts"
 repo: "brain"
-community: 65
+community: 58
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/telegram/worker.ts`
-**Community:** 65
+**Community:** 58
 
 ## Imports
 - (none)

@@ -2,7 +2,7 @@
 title: "diagnostic-utils.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts"
 repo: "portfolio"
-community: 35
+community: 34
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/diagnostic-utils.ts`
-**Community:** 35
+**Community:** 34
 
 ## Imports
 - (none)

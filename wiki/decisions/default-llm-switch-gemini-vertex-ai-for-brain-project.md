@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:12:47.994Z
 last_ai_edit: 2026-04-12T22:12:47.994Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 99683c9c8f007544
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-llm-default-auto-mode-to-gemini-vertex-ai-over-anthro-a41a19.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - configuration
   - ai assistance
 ---
+
 
 # Default LLM Switch: Gemini Vertex AI for Brain Project
 

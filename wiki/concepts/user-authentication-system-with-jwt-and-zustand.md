@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:34:27.553Z
 last_ai_edit: 2026-04-10T17:34:27.553Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8462e274f8e63a5a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-user-auth-system-jwt-login-register-with-frontend-auth-f3506c.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - feature
   - raag
 ---
+
 
 # User Authentication System with JWT and Zustand
 

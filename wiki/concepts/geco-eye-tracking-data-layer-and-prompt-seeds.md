@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:09:41.911Z
 last_ai_edit: 2026-04-10T19:09:41.911Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 24c39ec59e590d7b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-feat-add-data-layer-geco-eye-tracking-corpus-loader-291ea1.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - machine-learning
   - data-preparation
 ---
+
 
 # GECO Eye-Tracking Data Layer and Prompt Seeds
 

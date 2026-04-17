@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:22:20.816Z
 last_ai_edit: 2026-04-10T19:22:20.816Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a804017bf427afb0
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-implementer-add-syntax-validation-before-committing-cca2b3.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - implementer
   - ast-parsing
 ---
+
 
 # Implementer Pre-Commit Syntax Validation
 

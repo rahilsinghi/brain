@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:17:24.610Z
 last_ai_edit: 2026-04-10T18:17:24.610Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8b515847c74879d7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-define-shared-types-for-frontmatter-config-and-compile-d608d9.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - rahilsinghi_brain
   - development
 ---
+
 
 # Defining Shared Types for Frontmatter, Config, and Compile Strategy
 

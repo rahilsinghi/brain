@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:22:27.769Z
 last_ai_edit: 2026-04-10T17:22:27.769Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b4430270e958d3be
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-add-truncateatsentence-helper-014e2e.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - code
   - feature
 ---
+
 
 # Telegram Message Truncation Helper
 

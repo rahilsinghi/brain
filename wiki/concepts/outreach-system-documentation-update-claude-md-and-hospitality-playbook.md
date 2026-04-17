@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:30:53.266Z
 last_ai_edit: 2026-04-10T21:30:53.266Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 10bf6e438fe4c180
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-claudemd-agent-instructions-and-hospita-a4ed08.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - commit
   - methodology
 ---
+
 
 # Outreach System Documentation Update: CLAUDE.md and Hospitality Playbook
 

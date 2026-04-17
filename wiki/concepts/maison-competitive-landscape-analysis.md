@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-15T19:44:05.260Z
 last_ai_edit: 2026-04-15T19:44:05.260Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 27eec31f1b7bc9d8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/maison-slack-competitors-competitive-landscape-intel-1776280655134.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - strategy
   - maison
 ---
+
 
 # Maison Competitive Landscape Analysis
 

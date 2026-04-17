@@ -2,7 +2,7 @@
 title: "fedex_service.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/fedex_service.py"
 repo: "karen"
-community: 49
+community: 43
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/fedex_service.py`
-**Community:** 49
+**Community:** 43
 
 ## Imports
 - (none)

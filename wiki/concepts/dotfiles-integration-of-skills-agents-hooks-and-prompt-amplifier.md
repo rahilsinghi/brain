@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:17:33.715Z
 last_ai_edit: 2026-04-11T00:17:33.715Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 51c72017404974ab
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-dotfiles-feat-add-skills-agents-hooks-and-prompt-amplifier-9b089d.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - claude
   - configuration
 ---
+
 
 # Dotfiles: Integration of Skills, Agents, Hooks, and Prompt Amplifier
 

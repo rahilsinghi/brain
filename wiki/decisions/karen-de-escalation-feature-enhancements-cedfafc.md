@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:22:42.757Z
 last_ai_edit: 2026-04-12T21:22:42.757Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ca36c114dc773720
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-deescalation-add-slack-calendar-delete-remove-linkedin-254629.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - linkedin
   - commit
 ---
+
 
 # Karen: De-escalation Feature Enhancements (cedfafc)
 

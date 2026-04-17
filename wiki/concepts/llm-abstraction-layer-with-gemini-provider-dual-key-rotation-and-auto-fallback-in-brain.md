@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:29:27.378Z
 last_ai_edit: 2026-04-11T00:29:27.378Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c098638a69bead9d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-llm-add-gemini-provider-with-dual-key-rotation-and-auto-95d955.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - brain project
   - development
 ---
+
 
 # LLM Abstraction Layer with Gemini Provider, Dual-Key Rotation, and Auto-Fallback in Brain
 

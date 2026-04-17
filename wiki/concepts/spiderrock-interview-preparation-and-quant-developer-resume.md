@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:22:47.370Z
 last_ai_edit: 2026-04-10T21:22:47.370Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2f90071cfae8af6d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-spiderrock-interview-prep-and-quant-deve-9511cc.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - numerical methods
   - quantitative finance
 ---
+
 
 # SpiderRock Interview Preparation and Quant Developer Resume
 

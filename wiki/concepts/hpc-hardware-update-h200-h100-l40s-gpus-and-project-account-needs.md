@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:49:16.538Z
 last_ai_edit: 2026-04-12T21:49:16.538Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2027b3a353e97523
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-docs-update-hpc-findings-h200-h100-l40s-gpus-projec-48821f.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - conda
   - gaze-diffuse
 ---
+
 
 # HPC Hardware Update: H200/H100/L40S GPUs and Project Account Needs
 

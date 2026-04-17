@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:19:21.767Z
 last_ai_edit: 2026-04-10T19:19:21.767Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c28cb8d86cf6ee52
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-category-colors-not-visible-switch-to-meshbasi-e443c4.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - graphics
   - frontend
 ---
+
 
 # Fix: Category Colors Not Visible in Brain Explorer
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:31:19.081Z
 last_ai_edit: 2026-04-10T17:31:19.081Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e3f9a1cf713e1265
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-chore-add-grammy-dependency-for-telegram-bot-8fa7da.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - commit
   - development
 ---
+
 
 # Chore: Add Grammy Dependency for Telegram Bot
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:06:16.991Z
 last_ai_edit: 2026-04-10T15:06:16.991Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 456993b466286204
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-fix-ios-26-physical-device-compatibility-56666b.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - development
   - commit
 ---
+
 
 # MarkPush: iOS 26 Physical Device Compatibility Fixes
 

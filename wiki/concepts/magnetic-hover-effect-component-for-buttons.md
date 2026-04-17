@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:15:10.016Z
 last_ai_edit: 2026-04-12T21:15:10.016Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9676a9c8ef88789b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-magnetic-hover-effect-component-for-buttons-d5d0de.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - portfolio
   - buttons
 ---
+
 
 # Magnetic Hover Effect Component for Buttons
 

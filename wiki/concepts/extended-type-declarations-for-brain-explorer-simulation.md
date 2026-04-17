@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:40:35.658Z
 last_ai_edit: 2026-04-13T18:40:35.658Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cd1677f3873261e5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-types-add-simnode-dragstate-and-extended-d3-e70d93.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - brain-explorer
   - development
 ---
+
 
 # Extended Type Declarations for Brain-Explorer Simulation
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:10:30.386Z
 last_ai_edit: 2026-04-10T18:10:30.386Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 273d4263088bab1b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-floating-section-nav-dots-on-right-side-eba8cc.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - javascript
   - commit
 ---
+
 
 # Floating Section Navigation Dots
 

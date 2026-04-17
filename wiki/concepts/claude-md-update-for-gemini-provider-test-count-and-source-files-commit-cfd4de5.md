@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:24:26.435Z
 last_ai_edit: 2026-04-11T00:24:26.435Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e3d267ce0a0e2213
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-update-claudemd-with-gemini-provider-test-count-sourc-9ad5ba.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - brain
   - co-authored
 ---
+
 
 # CLAUDE.md Update for Gemini Provider, Test Count, and Source Files (Commit cfd4de5)
 

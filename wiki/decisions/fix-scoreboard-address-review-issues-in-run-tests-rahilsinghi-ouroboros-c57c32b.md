@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:09:59.398Z
 last_ai_edit: 2026-04-10T19:09:59.398Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a62e560bf86421cb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-scoreboard-address-review-issues-in-run-tests-00efcd.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - path_safety
   - imports
 ---
+
 
 # fix(scoreboard): Address review issues in _run_tests() (rahilsinghi/ouroboros c57c32b)
 

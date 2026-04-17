@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:04:56.604Z
 last_ai_edit: 2026-04-10T22:04:56.604Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3730fef8e9b3b191
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-wiki-frontmatter-helpers-and-ref-id-link-resol-a27a3e.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - claude-sonnet
   - brain
 ---
+
 
 # Feature: Wiki Frontmatter Helpers and Link Resolution
 

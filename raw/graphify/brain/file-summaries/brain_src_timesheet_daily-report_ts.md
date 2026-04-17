@@ -2,7 +2,7 @@
 title: "daily-report.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/timesheet/daily-report.ts"
 repo: "brain"
-community: 20
+community: 25
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/timesheet/daily-report.ts`
-**Community:** 20
+**Community:** 25
 
 ## Imports
 - (none)

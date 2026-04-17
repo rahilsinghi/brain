@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:27:58.024Z
 last_ai_edit: 2026-04-12T21:27:58.024Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3215bdebf2389ffe
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-remove-em-dashes-from-all-human-facing-email-copy-564bbd.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - llm-co-authored
   - stylistic-decision
 ---
+
 
 # Remove Em Dashes from Email Copy in Career-Datacenter
 
