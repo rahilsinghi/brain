@@ -2,7 +2,7 @@
 title: "invoice.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/timesheet/invoice.ts"
 repo: "brain"
-community: 36
+community: 40
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/timesheet/invoice.ts`
-**Community:** 36
+**Community:** 40
 
 ## Imports
 - (none)

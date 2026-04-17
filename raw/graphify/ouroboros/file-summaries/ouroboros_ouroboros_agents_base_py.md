@@ -2,7 +2,7 @@
 title: "base.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py"
 repo: "ouroboros"
-community: 4
+community: 9
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/base.py`
-**Community:** 4
+**Community:** 9
 
 ## Imports
 - (none)

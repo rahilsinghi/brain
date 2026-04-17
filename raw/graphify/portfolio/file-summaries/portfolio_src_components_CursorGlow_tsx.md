@@ -2,7 +2,7 @@
 title: "CursorGlow.tsx"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/components/CursorGlow.tsx"
 repo: "portfolio"
-community: 47
+community: 48
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/components/CursorGlow.tsx`
-**Community:** 47
+**Community:** 48
 
 ## Imports
 - (none)

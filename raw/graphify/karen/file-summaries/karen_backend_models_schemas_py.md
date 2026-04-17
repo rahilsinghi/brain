@@ -1,23 +1,8 @@
 ---
-status: processed
-source_type: graphify
-source_id: graphify:karen:karen_backend_models_schemas_py
-ingested_at: 2026-04-17T06:00:10.901Z
-parsed_at: 2026-04-17T06:00:10.901Z
-compiled_to: "[[schemas.py]]"
-processed_at: 2026-04-17T06:07:45.581Z
-retry_count: 0
-last_error: null
-compile_progress: null
----
-
-
-
----
 title: "schemas.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/models/schemas.py"
 repo: "karen"
-community: 0
+community: 2
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -27,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/models/schemas.py`
-**Community:** 0
+**Community:** 2
 
 ## Imports
 - `Enum`

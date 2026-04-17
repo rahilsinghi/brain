@@ -87,7 +87,7 @@ async function processItem(
     }
 
     case "timesheet_command": {
-      return handleTimesheetCommand(item, deps);
+      return await handleTimesheetCommand(item, deps);
     }
 
     case "timesheet_reply": {
@@ -103,6 +103,17 @@ async function processItem(
       const entryIds = entries.map((e) => e.id);
       const results = applyReviewCommands(deps.timesheetDb, cmds, entryIds, date);
       return results.map((r) => (r.success ? `✓ ${r.message}` : `✗ ${r.error}`)).join("\n");
+    }
+
+    case "timesheet_nl": {
+      if (!deps.timesheetDb) return "Timesheet not configured.";
+      const { handleTimesheetNL } = await import("../timesheet/nl-handler.js");
+      return await handleTimesheetNL(item.raw_text ?? "", {
+        now: new Date(),
+        timezone: "America/New_York",
+        db: deps.timesheetDb,
+        source: "telegram_text",
+      });
     }
 
     default:
@@ -161,10 +172,10 @@ function getWeekBounds(dateStr: string): { start: string; end: string } {
   };
 }
 
-function handleTimesheetCommand(
+async function handleTimesheetCommand(
   item: RelayInboundItem,
   deps: SyncDeps,
-): string {
+): Promise<string> {
   const cmd = item.command ?? "";
   const rawText = item.raw_text ?? "";
   const args = rawText.replace(/^\/\w+\s*/, "").trim();
@@ -242,6 +253,28 @@ function handleTimesheetCommand(
 
   if (cmd === "eod") {
     const report = generateDailyReport(deps.timesheetDb, deps.timesheetConfig, today);
+    // If the report has entries, push through the outbound queue with entry_ids
+    // + report_date so the relay can classify follow-up replies (drop #N, ok, etc.)
+    // as timesheet_reply instead of plain ingest.
+    if (report.entryIds.length > 0) {
+      try {
+        await deps.client.pushOutbound({
+          chat_id: item.chat_id,
+          message: report.message,
+          category: "daily_report",
+          entry_ids: report.entryIds,
+          report_date: today,
+        });
+        return "📋 EOD report queued — replies will route back to today's entries.";
+      } catch (err) {
+        // Fall back to sync response if outbound push fails
+        console.error(
+          `[timesheet/eod] outbound push failed, falling back to sync response: ${
+            err instanceof Error ? err.message : String(err)
+          }`,
+        );
+      }
+    }
     return truncateAtSentence(report.message, MAX_RESPONSE_LENGTH);
   }
 

@@ -27,6 +27,7 @@ import { generateDailyReport } from "./timesheet/daily-report.js";
 import { checkCapAlerts } from "./timesheet/alerts.js";
 import { finalizeWeek } from "./timesheet/finalize.js";
 import { syncWeekToWiki } from "./timesheet/wiki-sync.js";
+import { handleTimesheetNL } from "./timesheet/nl-handler.js";
 import {
   queueTelegramMessage,
   flushTelegramQueue,
@@ -269,7 +270,17 @@ if (relayEnabled) {
 }
 
 // Step 3: Start watchers
-const watchers = startWatchers(vaultRoot, config);
+const timesheetNLHandler = async (text: string) => {
+  const result = await handleTimesheetNL(text, {
+    now: new Date(),
+    timezone: "America/New_York",
+    db: timesheetDb,
+    source: "telegram_voice",
+  });
+  console.log(`[voice-nl] Response: ${result}`);
+};
+
+const watchers = startWatchers(vaultRoot, config, timesheetNLHandler);
 console.log("[brain] Watchers started. Daemon ready.");
 
 // Step 4: Schedule crons

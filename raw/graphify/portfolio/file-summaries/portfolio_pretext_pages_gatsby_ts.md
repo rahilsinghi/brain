@@ -2,7 +2,7 @@
 title: "gatsby.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/gatsby.ts"
 repo: "portfolio"
-community: 8
+community: 7
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/gatsby.ts`
-**Community:** 8
+**Community:** 7
 
 ## Imports
 - (none)

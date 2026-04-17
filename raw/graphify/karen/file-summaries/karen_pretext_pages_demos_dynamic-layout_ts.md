@@ -2,7 +2,7 @@
 title: "dynamic-layout.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/dynamic-layout.ts"
 repo: "karen"
-community: 4
+community: 5
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/dynamic-layout.ts`
-**Community:** 4
+**Community:** 5
 
 ## Imports
 - (none)

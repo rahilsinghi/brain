@@ -2,7 +2,7 @@
 title: "evaluator.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/evaluator.py"
 repo: "ouroboros"
-community: 1
+community: 0
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/agents/evaluator.py`
-**Community:** 1
+**Community:** 0
 
 ## Imports
 - `Enum`

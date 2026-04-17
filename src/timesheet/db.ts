@@ -187,6 +187,19 @@ const SCHEMA_SQL = `
   );
 
   CREATE INDEX IF NOT EXISTS idx_telegram_queue_pending ON telegram_queue(sent_at, failed);
+
+  CREATE TABLE IF NOT EXISTS nl_parse_log (
+    id TEXT PRIMARY KEY,
+    timestamp TEXT NOT NULL,
+    source TEXT NOT NULL,
+    input_text TEXT NOT NULL,
+    llm_response TEXT,
+    entries_created INTEGER NOT NULL DEFAULT 0,
+    error TEXT,
+    duration_ms INTEGER,
+    llm_tokens INTEGER
+  );
+  CREATE INDEX IF NOT EXISTS idx_nl_parse_log_timestamp ON nl_parse_log(timestamp);
 `;
 
 export class TimesheetDB {
@@ -560,6 +573,65 @@ export class TimesheetDB {
         $message: message,
         $sent_at: sentAt,
       });
+  }
+
+  // ── NL parse log ──
+
+  logNLParse(input: {
+    timestamp: string;
+    source: string;
+    input_text: string;
+    llm_response: string | null;
+    entries_created: number;
+    error: string | null;
+    duration_ms: number | null;
+    llm_tokens: number | null;
+  }): string {
+    const id = randomUUID();
+    this.db
+      .prepare(
+        `INSERT INTO nl_parse_log
+          (id, timestamp, source, input_text, llm_response, entries_created, error, duration_ms, llm_tokens)
+         VALUES
+          ($id, $timestamp, $source, $input_text, $llm_response, $entries_created, $error, $duration_ms, $llm_tokens)`
+      )
+      .run({
+        $id: id,
+        $timestamp: input.timestamp,
+        $source: input.source,
+        $input_text: input.input_text,
+        $llm_response: input.llm_response,
+        $entries_created: input.entries_created,
+        $error: input.error,
+        $duration_ms: input.duration_ms,
+        $llm_tokens: input.llm_tokens,
+      });
+    return id;
+  }
+
+  getNLParseLog(id: string): {
+    id: string;
+    timestamp: string;
+    source: string;
+    input_text: string;
+    llm_response: string | null;
+    entries_created: number;
+    error: string | null;
+    duration_ms: number | null;
+    llm_tokens: number | null;
+  } | null {
+    const row = this.db
+      .prepare("SELECT * FROM nl_parse_log WHERE id = ?")
+      .get(id) as Record<string, unknown> | undefined;
+    if (!row) return null;
+    return row as never;
+  }
+
+  getEmployerIds(): string[] {
+    const rows = this.db
+      .prepare("SELECT id FROM employers ORDER BY id")
+      .all() as Array<{ id: string }>;
+    return rows.map((r) => r.id);
   }
 
   // ── Lifecycle ──

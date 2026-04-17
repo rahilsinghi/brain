@@ -2,7 +2,7 @@
 title: "variable-typographic-ascii.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/variable-typographic-ascii.ts"
 repo: "portfolio"
-community: 18
+community: 19
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/pages/demos/variable-typographic-ascii.ts`
-**Community:** 18
+**Community:** 19
 
 ## Imports
 - (none)

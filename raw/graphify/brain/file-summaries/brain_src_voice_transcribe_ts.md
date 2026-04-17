@@ -19,7 +19,7 @@ tags: [code-architecture, brain]
 
 ## Contains
 - `defaultExec()`
-- `getAudioDuration()`
+- `defaultGetAudioDuration()`
 - `splitAudioIntoChunks()`
 - `cleanupChunks()`
 - `deduplicateOverlap()`

@@ -2,7 +2,7 @@
 title: "slack-auth.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/scripts/slack-auth.ts"
 repo: "brain"
-community: 190
+community: 196
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/scripts/slack-auth.ts`
-**Community:** 190
+**Community:** 196
 
 ## Imports
 - (none)

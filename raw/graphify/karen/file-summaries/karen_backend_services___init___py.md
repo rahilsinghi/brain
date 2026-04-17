@@ -2,7 +2,7 @@
 title: "__init__.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/__init__.py"
 repo: "karen"
-community: 60
+community: 58
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/__init__.py`
-**Community:** 60
+**Community:** 58
 
 ## Imports
 - (none)

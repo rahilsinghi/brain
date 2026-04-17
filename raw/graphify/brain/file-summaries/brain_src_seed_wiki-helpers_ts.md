@@ -2,7 +2,7 @@
 title: "wiki-helpers.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/seed/wiki-helpers.ts"
 repo: "brain"
-community: 32
+community: 29
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/seed/wiki-helpers.ts`
-**Community:** 32
+**Community:** 29
 
 ## Imports
 - (none)

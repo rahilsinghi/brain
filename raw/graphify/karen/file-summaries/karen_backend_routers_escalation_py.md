@@ -1,8 +1,23 @@
 ---
+status: processed
+source_type: graphify
+source_id: graphify:karen:karen_backend_routers_escalation_py
+ingested_at: 2026-04-17T17:00:08.877Z
+parsed_at: 2026-04-17T17:00:08.877Z
+compiled_to: "[[escalation.py]]"
+processed_at: 2026-04-17T17:00:33.332Z
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+
+
+---
 title: "escalation.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py"
 repo: "karen"
-community: 24
+community: 21
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +27,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/routers/escalation.py`
-**Community:** 24
+**Community:** 21
 
 ## Imports
 - (none)

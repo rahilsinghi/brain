@@ -2,7 +2,7 @@
 title: "status-dashboard.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/status-dashboard.ts"
 repo: "karen"
-community: 50
+community: 49
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/status-dashboard.ts`
-**Community:** 50
+**Community:** 49
 
 ## Imports
 - (none)

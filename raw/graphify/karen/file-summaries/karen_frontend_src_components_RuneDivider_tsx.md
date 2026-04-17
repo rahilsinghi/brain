@@ -2,7 +2,7 @@
 title: "RuneDivider.tsx"
 source_file: "/Users/rahilsinghi/Desktop/karen/frontend/src/components/RuneDivider.tsx"
 repo: "karen"
-community: 1
+community: 0
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/frontend/src/components/RuneDivider.tsx`
-**Community:** 1
+**Community:** 0
 
 ## Imports
 - `FortressLayout.tsx`

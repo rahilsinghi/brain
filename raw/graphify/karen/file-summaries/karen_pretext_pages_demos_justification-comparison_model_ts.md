@@ -2,7 +2,7 @@
 title: "justification-comparison.model.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.model.ts"
 repo: "karen"
-community: 8
+community: 9
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/justification-comparison.model.ts`
-**Community:** 8
+**Community:** 9
 
 ## Imports
 - (none)

@@ -2,7 +2,7 @@
 title: "community-drops.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts"
 repo: "brain"
-community: 17
+community: 18
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/graph/community-drops.ts`
-**Community:** 17
+**Community:** 18
 
 ## Imports
 - (none)

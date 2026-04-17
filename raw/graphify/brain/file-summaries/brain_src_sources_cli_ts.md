@@ -2,7 +2,7 @@
 title: "cli.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/sources/cli.ts"
 repo: "brain"
-community: 52
+community: 43
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/sources/cli.ts`
-**Community:** 52
+**Community:** 43
 
 ## Imports
 - (none)

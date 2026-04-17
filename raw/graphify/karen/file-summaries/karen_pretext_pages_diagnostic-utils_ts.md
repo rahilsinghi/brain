@@ -2,7 +2,7 @@
 title: "diagnostic-utils.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts"
 repo: "karen"
-community: 41
+community: 38
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/diagnostic-utils.ts`
-**Community:** 41
+**Community:** 38
 
 ## Imports
 - (none)

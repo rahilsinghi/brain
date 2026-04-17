@@ -24,7 +24,8 @@
     "backfill-links:dry": "bun run src/graph/backfill-links.ts --dry-run",
     "graphify": "bun run src/cli/graphify.ts",
     "timesheet": "bun run src/cli/timesheet.ts",
-    "brain-connect": "bash scripts/brain-connect.sh"
+    "brain-connect": "bash scripts/brain-connect.sh",
+    "ts:add": "bun run src/cli/timesheet-add.ts"
   },
   "keywords": [],
   "author": "",

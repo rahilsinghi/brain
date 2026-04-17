@@ -2,7 +2,7 @@
 title: "llm_provider.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/services/llm_provider.py"
 repo: "karen"
-community: 11
+community: 12
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/services/llm_provider.py`
-**Community:** 11
+**Community:** 12
 
 ## Imports
 - `ABC`

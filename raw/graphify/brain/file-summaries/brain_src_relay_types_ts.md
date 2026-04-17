@@ -2,7 +2,7 @@
 title: "types.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/relay/types.ts"
 repo: "brain"
-community: 192
+community: 198
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/relay/types.ts`
-**Community:** 192
+**Community:** 198
 
 ## Imports
 - (none)
