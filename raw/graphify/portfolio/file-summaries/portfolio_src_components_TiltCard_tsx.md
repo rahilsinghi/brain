@@ -2,7 +2,7 @@
 title: "TiltCard.tsx"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/components/TiltCard.tsx"
 repo: "portfolio"
-community: 49
+community: 47
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/components/TiltCard.tsx`
-**Community:** 49
+**Community:** 47
 
 ## Imports
 - (none)

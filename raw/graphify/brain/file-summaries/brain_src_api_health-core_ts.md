@@ -2,7 +2,7 @@
 title: "health-core.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/api/health-core.ts"
 repo: "brain"
-community: 42
+community: 44
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/api/health-core.ts`
-**Community:** 42
+**Community:** 44
 
 ## Imports
 - (none)

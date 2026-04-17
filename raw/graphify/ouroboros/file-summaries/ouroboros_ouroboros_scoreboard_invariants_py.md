@@ -2,7 +2,7 @@
 title: "invariants.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py"
 repo: "ouroboros"
-community: 10
+community: 11
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/invariants.py`
-**Community:** 10
+**Community:** 11
 
 ## Imports
 - (none)

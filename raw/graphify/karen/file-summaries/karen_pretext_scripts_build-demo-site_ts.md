@@ -2,7 +2,7 @@
 title: "build-demo-site.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/build-demo-site.ts"
 repo: "karen"
-community: 45
+community: 44
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/build-demo-site.ts`
-**Community:** 45
+**Community:** 44
 
 ## Imports
 - (none)

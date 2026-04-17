@@ -18,9 +18,12 @@ const BINARY_NO_FRONTMATTER = new Set([
 ]);
 const AUDIO_EXTENSIONS = new Set([".m4a", ".mp3", ".wav", ".ogg"]);
 
+export type TimesheetNLHandler = (text: string) => Promise<void>;
+
 export function startWatchers(
   vaultRoot: string,
-  config: BrainConfig
+  config: BrainConfig,
+  timesheetNLHandler?: TimesheetNLHandler,
 ): { close: () => Promise<void> } {
   const rawDir = join(vaultRoot, config.watchers.raw_dir);
   let compileDebounce: ReturnType<typeof setTimeout> | null = null;
@@ -115,6 +118,9 @@ export function startWatchers(
           defaultCluster: config.voice.default_cluster,
           classifyModel: config.voice.classify_model,
         }),
+        {
+          onTimesheetNL: timesheetNLHandler,
+        },
       );
     } catch (err) {
       console.error(

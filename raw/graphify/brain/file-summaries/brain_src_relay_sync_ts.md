@@ -24,6 +24,7 @@ tags: [code-architecture, brain]
 - `syncFile()`
 - `syncAll()`
 - `processItem()`
+- `inferDateForCommands()`
 - `getWeekBounds()`
 - `handleTimesheetCommand()`
 - `DownloadFailedError`

@@ -2,7 +2,7 @@
 title: "finalize.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/timesheet/finalize.ts"
 repo: "brain"
-community: 134
+community: 115
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/timesheet/finalize.ts`
-**Community:** 134
+**Community:** 115
 
 ## Imports
 - (none)

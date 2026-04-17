@@ -2,7 +2,7 @@
 title: "embeddings.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/graph/embeddings.ts"
 repo: "brain"
-community: 140
+community: 139
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/graph/embeddings.ts`
-**Community:** 140
+**Community:** 139
 
 ## Imports
 - (none)

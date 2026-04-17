@@ -2,7 +2,7 @@
 title: "reader.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py"
 repo: "ouroboros"
-community: 3
+community: 2
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/telemetry/reader.py`
-**Community:** 3
+**Community:** 2
 
 ## Imports
 - (none)

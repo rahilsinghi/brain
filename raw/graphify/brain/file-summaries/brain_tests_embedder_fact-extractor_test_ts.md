@@ -2,7 +2,7 @@
 title: "fact-extractor.test.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/tests/embedder/fact-extractor.test.ts"
 repo: "brain"
-community: 166
+community: 170
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/tests/embedder/fact-extractor.test.ts`
-**Community:** 166
+**Community:** 170
 
 ## Imports
 - (none)

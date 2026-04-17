@@ -2,7 +2,7 @@
 title: "placeholder-parser.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/parser/placeholder-parser.ts"
 repo: "brain"
-community: 75
+community: 82
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/parser/placeholder-parser.ts`
-**Community:** 75
+**Community:** 82
 
 ## Imports
 - (none)

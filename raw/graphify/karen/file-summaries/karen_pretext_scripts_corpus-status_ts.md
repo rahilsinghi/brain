@@ -2,7 +2,7 @@
 title: "corpus-status.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-status.ts"
 repo: "karen"
-community: 36
+community: 35
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/corpus-status.ts`
-**Community:** 36
+**Community:** 35
 
 ## Imports
 - (none)

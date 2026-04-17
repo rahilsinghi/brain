@@ -2,7 +2,7 @@
 title: "benchmark.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts"
 repo: "karen"
-community: 21
+community: 22
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/benchmark.ts`
-**Community:** 21
+**Community:** 22
 
 ## Imports
 - (none)

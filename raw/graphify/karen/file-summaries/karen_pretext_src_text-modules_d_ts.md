@@ -2,7 +2,7 @@
 title: "text-modules.d.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/src/text-modules.d.ts"
 repo: "karen"
-community: 64
+community: 62
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/src/text-modules.d.ts`
-**Community:** 64
+**Community:** 62
 
 ## Imports
 - (none)

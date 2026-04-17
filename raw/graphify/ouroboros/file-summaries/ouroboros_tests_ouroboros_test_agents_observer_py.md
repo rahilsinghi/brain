@@ -2,7 +2,7 @@
 title: "test_agents_observer.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_observer.py"
 repo: "ouroboros"
-community: 6
+community: 5
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_agents_observer.py`
-**Community:** 6
+**Community:** 5
 
 ## Imports
 - (none)

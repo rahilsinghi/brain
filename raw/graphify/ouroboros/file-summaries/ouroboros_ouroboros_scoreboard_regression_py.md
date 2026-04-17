@@ -2,7 +2,7 @@
 title: "regression.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py"
 repo: "ouroboros"
-community: 2
+community: 1
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/ouroboros/scoreboard/regression.py`
-**Community:** 2
+**Community:** 1
 
 ## Imports
 - (none)

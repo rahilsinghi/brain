@@ -2,7 +2,7 @@
 title: "gatsby-sweep.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts"
 repo: "karen"
-community: 19
+community: 20
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/scripts/gatsby-sweep.ts`
-**Community:** 19
+**Community:** 20
 
 ## Imports
 - (none)

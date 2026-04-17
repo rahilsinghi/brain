@@ -2,7 +2,7 @@
 title: "members.py"
 source_file: "/Users/rahilsinghi/Desktop/karen/backend/routers/members.py"
 repo: "karen"
-community: 28
+community: 2
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/backend/routers/members.py`
-**Community:** 28
+**Community:** 2
 
 ## Imports
 - (none)
