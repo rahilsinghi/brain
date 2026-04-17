@@ -28,12 +28,14 @@ describe("LocalWhisperProvider", () => {
 });
 
 describe("OpenAIWhisperProvider", () => {
+  const mockReadFile = vi.fn().mockReturnValue(Buffer.from("fake audio bytes"));
+
   it("calls OpenAI API and returns transcription", async () => {
     const mockFetch = vi.fn().mockResolvedValue({
       ok: true,
       json: () => Promise.resolve({ text: "Transcribed text from OpenAI" }),
     });
-    const provider = new OpenAIWhisperProvider("whisper-1", "sk-test-key", mockFetch);
+    const provider = new OpenAIWhisperProvider("whisper-1", "sk-test-key", mockFetch, mockReadFile);
     const result = await provider.transcribe("/tmp/test.wav");
     expect(result.text).toBe("Transcribed text from OpenAI");
     expect(mockFetch).toHaveBeenCalledWith(
@@ -51,7 +53,7 @@ describe("OpenAIWhisperProvider", () => {
       status: 401,
       text: () => Promise.resolve("Unauthorized"),
     });
-    const provider = new OpenAIWhisperProvider("whisper-1", "sk-test-key", mockFetch);
+    const provider = new OpenAIWhisperProvider("whisper-1", "sk-test-key", mockFetch, mockReadFile);
     await expect(provider.transcribe("/tmp/test.wav")).rejects.toThrow(
       "OpenAI Whisper API error (401)",
     );

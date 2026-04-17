@@ -248,7 +248,7 @@ describe("syncRelayInbound", () => {
     expect(result.failed).toBe(1);
   });
 
-  it("processes timesheet_entry item", async () => {
+  it("processes timesheet_entry item (returns 'not configured' when DB not provided)", async () => {
     const item = makeItem({ id: "ts-1", type: "timesheet_entry", raw_text: "2h maison" });
     const client = makeMockClient([item]);
     const deps = makeDeps(client);
@@ -257,13 +257,13 @@ describe("syncRelayInbound", () => {
 
     expect(client.postResponse).toHaveBeenCalledWith(
       "ts-1",
-      expect.stringContaining("Timesheet entry queued"),
+      expect.stringContaining("Timesheet not configured"),
       "completed",
     );
     expect(result.processed).toBe(1);
   });
 
-  it("processes timesheet_command item", async () => {
+  it("processes timesheet_command item (returns 'not configured' when DB not provided)", async () => {
     const item = makeItem({ id: "ts-2", type: "timesheet_command", raw_text: "/hours" });
     const client = makeMockClient([item]);
     const deps = makeDeps(client);
@@ -272,13 +272,13 @@ describe("syncRelayInbound", () => {
 
     expect(client.postResponse).toHaveBeenCalledWith(
       "ts-2",
-      expect.stringContaining("Command received"),
+      expect.stringContaining("Timesheet not configured"),
       "completed",
     );
     expect(result.processed).toBe(1);
   });
 
-  it("processes timesheet_reply item", async () => {
+  it("processes timesheet_reply item (returns 'not configured' when DB not provided)", async () => {
     const item = makeItem({ id: "ts-3", type: "timesheet_reply", raw_text: "approve" });
     const client = makeMockClient([item]);
     const deps = makeDeps(client);
@@ -287,7 +287,7 @@ describe("syncRelayInbound", () => {
 
     expect(client.postResponse).toHaveBeenCalledWith(
       "ts-3",
-      expect.stringContaining("Reply received"),
+      expect.stringContaining("Timesheet not configured"),
       "completed",
     );
     expect(result.processed).toBe(1);

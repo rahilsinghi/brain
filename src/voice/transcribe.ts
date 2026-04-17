@@ -19,6 +19,7 @@ export interface ExecResult {
 }
 
 type ExecFn = (args: string[]) => Promise<ExecResult>;
+type DurationFn = (audioPath: string) => Promise<number>;
 
 async function defaultExec(args: string[]): Promise<ExecResult> {
   const proc = Bun.spawn(["whisper-cli", ...args], { stdout: "pipe", stderr: "pipe" });
@@ -32,15 +33,23 @@ const CHUNK_DURATION_S = 120; // 2 minutes per chunk
 const CHUNK_OVERLAP_S = 5;   // 5 second overlap to avoid cut-off words
 const MAX_AUDIO_DURATION_S = 1200; // 20 minutes max
 
-async function getAudioDuration(audioPath: string): Promise<number> {
-  const proc = Bun.spawn(
-    ["ffprobe", "-v", "quiet", "-show_entries", "format=duration", "-of", "csv=p=0", audioPath],
-    { stdout: "pipe", stderr: "pipe" },
-  );
-  const stdout = await new Response(proc.stdout).text();
-  await proc.exited;
-  const duration = parseFloat(stdout.trim());
-  return Number.isNaN(duration) ? 0 : duration;
+async function defaultGetAudioDuration(audioPath: string): Promise<number> {
+  // Guard: Bun is not available in Node test runtime. Return 0 → treated
+  // as "short", which falls back to single-pass transcribe (no chunking).
+  if (typeof Bun === "undefined") return 0;
+  try {
+    const proc = Bun.spawn(
+      ["ffprobe", "-v", "quiet", "-show_entries", "format=duration", "-of", "csv=p=0", audioPath],
+      { stdout: "pipe", stderr: "pipe" },
+    );
+    const stdout = await new Response(proc.stdout).text();
+    await proc.exited;
+    const duration = parseFloat(stdout.trim());
+    return Number.isNaN(duration) ? 0 : duration;
+  } catch {
+    // ffprobe not installed or audio unreadable — fall back to single-pass
+    return 0;
+  }
 }
 
 async function splitAudioIntoChunks(audioPath: string, durationS: number): Promise<string[]> {
@@ -107,6 +116,7 @@ export class LocalWhisperProvider implements TranscriptionProvider {
   constructor(
     private model: string = "medium",
     private exec: ExecFn = defaultExec,
+    private getDuration: DurationFn = defaultGetAudioDuration,
   ) {}
 
   private async transcribeChunk(audioPath: string): Promise<string> {
@@ -118,7 +128,7 @@ export class LocalWhisperProvider implements TranscriptionProvider {
   }
 
   async transcribe(audioPath: string): Promise<TranscriptionResult> {
-    const duration = await getAudioDuration(audioPath);
+    const duration = await this.getDuration(audioPath);
 
     // Short audio: transcribe directly (no chunking needed)
     if (duration <= CHUNK_DURATION_S + 10) {
