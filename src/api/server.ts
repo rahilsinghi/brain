@@ -12,6 +12,7 @@ import { graphPushRoute } from "./routes/graph-push.js";
 import { graphifyRoute } from "./routes/graphify.js";
 import { timesheetLogRoute } from "./routes/timesheet-log.js";
 import { timesheetStatusRoute } from "./routes/timesheet-status.js";
+import { timesheetNLRoute } from "./routes/timesheet-nl.js";
 import { workspaceInitRoute } from "./routes/workspace-init.js";
 
 interface ServerOptions {
@@ -46,6 +47,7 @@ export function createServer(opts: ServerOptions): FastifyInstance {
     app.decorate("timesheetDb", opts.timesheetDb);
     app.register(timesheetLogRoute);
     app.register(timesheetStatusRoute);
+    app.register(timesheetNLRoute);
   }
 
   return app;
