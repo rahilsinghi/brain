@@ -61,16 +61,21 @@ describe("LLM Provider", () => {
     expect(provider.name).toBe("gemini");
   });
 
-  it("auto mode prefers gemini (Vertex AI) when available", () => {
+  it("auto mode prefers ollama (local, free, private)", () => {
     process.env.ANTHROPIC_API_KEY = "test-key";
     const provider = getProvider("auto");
-    expect(provider.name).toBe("gemini");
+    expect(provider.name).toBe("ollama");
   });
 
-  it("auto mode falls back to gemini when no anthropic key", () => {
+  it("auto mode picks ollama even without other keys (ollama always available locally)", () => {
     delete process.env.ANTHROPIC_API_KEY;
     const provider = getProvider("auto");
-    expect(provider.name).toBe("gemini");
+    expect(provider.name).toBe("ollama");
+  });
+
+  it("returns ollama provider when requested explicitly", () => {
+    const provider = getProvider("ollama");
+    expect(provider.name).toBe("ollama");
   });
 
   it("throws when anthropic explicitly requested but no key", () => {
@@ -98,5 +103,11 @@ describe("LLM Provider", () => {
     process.env.BRAIN_LLM_PROVIDER = "gemini";
     const provider = getProvider();
     expect(provider.name).toBe("gemini");
+  });
+
+  it("BRAIN_LLM_PROVIDER=ollama overrides auto default", () => {
+    process.env.BRAIN_LLM_PROVIDER = "ollama";
+    const provider = getProvider();
+    expect(provider.name).toBe("ollama");
   });
 });

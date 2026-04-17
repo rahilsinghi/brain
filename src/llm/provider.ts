@@ -11,14 +11,14 @@ export interface LLMRequest {
 
 export interface LLMResponse {
   text: string;
-  provider: "anthropic" | "gemini";
+  provider: "anthropic" | "gemini" | "ollama";
   model: string;
   inputTokens?: number;
   outputTokens?: number;
 }
 
 export interface LLMProvider {
-  name: "anthropic" | "gemini";
+  name: "anthropic" | "gemini" | "ollama";
   generate(request: LLMRequest): Promise<LLMResponse>;
 }
 
@@ -123,12 +123,74 @@ function createGeminiProvider(): LLMProvider | null {
   };
 }
 
+// --- Ollama provider (local, via Ollama's OpenAI-compatible API) ---
+
+const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434";
+
+/** Pick the best local model for the request based on task hints. */
+function pickOllamaModel(req: LLMRequest): string {
+  // Explicit model override wins
+  if (req.model && req.model.includes(":")) return req.model;
+
+  // Route by model alias
+  const alias = req.model ?? process.env.OLLAMA_DEFAULT_MODEL ?? "default";
+  if (alias === "coder") return process.env.OLLAMA_MODEL_CODER ?? "qwen3-coder:30b";
+  if (alias === "reasoning") return process.env.OLLAMA_MODEL_REASONING ?? "llama3.3:70b";
+  return process.env.OLLAMA_MODEL_DEFAULT ?? "qwen3:32b";
+}
+
+function createOllamaProvider(): LLMProvider | null {
+  // Always return a provider — Ollama runs on the same machine, no key needed.
+  // If Ollama isn't running, the fetch call will fail at generate() time.
+  return {
+    name: "ollama",
+    async generate(req: LLMRequest): Promise<LLMResponse> {
+      const model = pickOllamaModel(req);
+      const body: Record<string, unknown> = {
+        model,
+        prompt: req.prompt,
+        stream: false,
+        options: { num_predict: req.maxTokens ?? 4096 },
+      };
+
+      // Ollama supports structured JSON output via the "format" field.
+      if (req.json) body.format = "json";
+
+      const res = await fetch(`${OLLAMA_BASE_URL}/api/generate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+
+      if (!res.ok) {
+        const errText = await res.text().catch(() => res.statusText);
+        throw new Error(`Ollama API error (${res.status}): ${errText}`);
+      }
+
+      const data = (await res.json()) as {
+        response: string;
+        prompt_eval_count?: number;
+        eval_count?: number;
+      };
+
+      return {
+        text: data.response,
+        provider: "ollama",
+        model,
+        inputTokens: data.prompt_eval_count,
+        outputTokens: data.eval_count,
+      };
+    },
+  };
+}
+
 // --- Provider manager ---
 
-export type ProviderPreference = "anthropic" | "gemini" | "auto";
+export type ProviderPreference = "anthropic" | "gemini" | "ollama" | "auto";
 
 let _anthropic: LLMProvider | null | undefined;
 let _gemini: LLMProvider | null | undefined;
+let _ollama: LLMProvider | null | undefined;
 
 function getAnthropicProvider(): LLMProvider | null {
   if (_anthropic === undefined) _anthropic = createAnthropicProvider();
@@ -140,17 +202,29 @@ function getGeminiProvider(): LLMProvider | null {
   return _gemini;
 }
 
+function getOllamaProvider(): LLMProvider | null {
+  if (_ollama === undefined) _ollama = createOllamaProvider();
+  return _ollama;
+}
+
 /**
  * Get an LLM provider based on preference.
  *
+ * - "ollama":    Use local Ollama only
  * - "anthropic": Use Anthropic only
- * - "gemini": Use Gemini only
- * - "auto": Try Anthropic first, fall back to Gemini
+ * - "gemini":    Use Gemini only
+ * - "auto":      Prefer local Ollama, fall back to Gemini, then Anthropic
  *
  * Reads BRAIN_LLM_PROVIDER env var as default preference.
  */
 export function getProvider(preference?: ProviderPreference): LLMProvider {
   const pref = preference ?? (process.env.BRAIN_LLM_PROVIDER as ProviderPreference) ?? "auto";
+
+  if (pref === "ollama") {
+    const p = getOllamaProvider();
+    if (!p) throw new Error("Ollama provider not available");
+    return p;
+  }
 
   if (pref === "anthropic") {
     const p = getAnthropicProvider();
@@ -164,14 +238,17 @@ export function getProvider(preference?: ProviderPreference): LLMProvider {
     return p;
   }
 
-  // "auto" — prefer gemini (Vertex AI, $1000 credits), fall back to anthropic
+  // "auto" — prefer local Ollama (free, private, fast), fall back to Gemini, then Anthropic
+  const ollama = getOllamaProvider();
+  if (ollama) return ollama;
+
   const gemini = getGeminiProvider();
   if (gemini) return gemini;
 
   const anthropic = getAnthropicProvider();
   if (anthropic) return anthropic;
 
-  throw new Error("No LLM provider configured (set ANTHROPIC_API_KEY or GEMINI_API_KEY_1)");
+  throw new Error("No LLM provider configured (install Ollama or set ANTHROPIC_API_KEY/GEMINI_API_KEY_1)");
 }
 
 /**
@@ -189,22 +266,40 @@ export async function generate(
     return await primary.generate(request);
   } catch (err) {
     const msg = err instanceof Error ? err.message.toLowerCase() : "";
-    const isQuotaError =
+    const isRetriable =
       msg.includes("credit balance") ||
       msg.includes("quota") ||
       msg.includes("rate limit") ||
       msg.includes("429") ||
-      msg.includes("billing");
+      msg.includes("billing") ||
+      msg.includes("ollama api error") ||
+      msg.includes("fetch failed") ||
+      msg.includes("econnrefused");
 
-    if (!isQuotaError || pref !== "auto") throw err;
+    if (!isRetriable || pref !== "auto") throw err;
 
-    // Try fallback
-    const fallback =
-      primary.name === "anthropic" ? getGeminiProvider() : getAnthropicProvider();
-    if (!fallback) throw err;
+    // Fallback chain: ollama → gemini → anthropic (tries providers not yet attempted)
+    const tried = new Set<string>([primary.name]);
+    const candidates: Array<() => LLMProvider | null> = [
+      getOllamaProvider,
+      getGeminiProvider,
+      getAnthropicProvider,
+    ];
 
-    console.warn(`[llm] ${primary.name} failed (${msg.slice(0, 80)}), trying ${fallback.name}`);
-    return await fallback.generate(request);
+    for (const getFallback of candidates) {
+      const fallback = getFallback();
+      if (!fallback || tried.has(fallback.name)) continue;
+      try {
+        console.warn(`[llm] ${primary.name} failed (${msg.slice(0, 80)}), trying ${fallback.name}`);
+        return await fallback.generate(request);
+      } catch (fallbackErr) {
+        tried.add(fallback.name);
+        const fallbackMsg = fallbackErr instanceof Error ? fallbackErr.message : String(fallbackErr);
+        console.warn(`[llm] ${fallback.name} also failed: ${fallbackMsg.slice(0, 80)}`);
+      }
+    }
+
+    throw err;
   }
 }
 
@@ -212,4 +307,5 @@ export async function generate(
 export function _resetProviders(): void {
   _anthropic = undefined;
   _gemini = undefined;
+  _ollama = undefined;
 }
