@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:07:22.410Z
 last_ai_edit: 2026-04-13T17:07:22.410Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6cc0d53b7bf356a7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-cmdk-command-palette-with-category-source-filte-d97b49.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - filtering
   - navigation
 ---
+
 
 # CMDK Command Palette with Category/Source Filtering in Brain-Explorer
 

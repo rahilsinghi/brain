@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:11:18.214Z
 last_ai_edit: 2026-04-10T15:11:18.214Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a793c88228227b57
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-update-help-and-start-with-voice-slides-an-68d9c0.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - rahil singhi
   - update
 ---
+
 
 # Telegram Bot Command Updates: Voice, Slides, Plot
 

@@ -2,7 +2,7 @@
 title: "slug.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/sources/slug.ts"
 repo: "brain"
-community: 55
+community: 82
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/sources/slug.ts`
-**Community:** 55
+**Community:** 82
 
 ## Imports
 - (none)

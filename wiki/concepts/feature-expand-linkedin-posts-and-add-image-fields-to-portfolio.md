@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:15:31.946Z
 last_ai_edit: 2026-04-10T18:15:31.946Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 52f4be1a029d0811
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-expand-linkedin-posts-to-8-and-add-image-fields-to-c-64657d.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - update
   - commit
 ---
+
 
 # Feature: Expand LinkedIn Posts and Add Image Fields to Portfolio
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:44:34.590Z
 last_ai_edit: 2026-04-11T01:44:34.590Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9bb64f8f1144d746
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-chore-remove-all-non-readme-markdown-files-from-root-4234f7.md]]"
 tags:
@@ -14,6 +14,7 @@ tags:
   - coro
   - documentation
 ---
+
 
 # Removal of Non-README Markdown Files from Coro Repository Root
 

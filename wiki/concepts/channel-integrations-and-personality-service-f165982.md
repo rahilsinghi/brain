@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:20:06.197Z
 last_ai_edit: 2026-04-10T15:20:06.197Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cb9f6e218694082a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-channel-integrations-and-personality-service-dd299d.md]]"
 tags:
@@ -24,6 +24,7 @@ tags:
   - f165982
   - rahil singhi
 ---
+
 
 # Channel Integrations and Personality Service (f165982)
 

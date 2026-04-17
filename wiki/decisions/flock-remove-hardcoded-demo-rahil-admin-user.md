@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:10:08.482Z
 last_ai_edit: 2026-04-10T21:10:08.482Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c1b476ae68d53445
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-remove-hardcoded-demo-rahil-from-admin-use-logged-in-use-7cec7a.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - git-commit
   - bug-fix
 ---
+
 
 # Flock: Remove Hardcoded 'demo_rahil' Admin User
 

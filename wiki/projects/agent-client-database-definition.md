@@ -1,16 +1,17 @@
 ---
 title: Agent Client Database Definition
 author: ai
-created_at: 2026-04-15T20:02:14.705Z
-last_ai_edit: 2026-04-15T20:02:14.705Z
+created_at: 2026-04-17T03:44:39.250Z
+last_ai_edit: 2026-04-17T03:44:39.250Z
 last_human_edit: null
-last_embedded_hash: d61607ac800dd888
+last_embedded_hash: 6ceecd2ffeef8489
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/graphify/maison-agent/maison-agent-community-195.md]]"
 tags:
   - code-community
   - maison-agent
-  - graphify
+  - database-schema
+  - agent-systems
 aliases:
   - Community 195
 ---
@@ -18,20 +19,24 @@ aliases:
 
 # Agent Client Database Definition
 
-This community is solely responsible for defining the database schema for 'agent clients' within the `maison-agent` project. It establishes the foundational structure for storing and managing data pertinent to individual agents interacting with the system.
+This code community defines the database schema and operations for managing agent client relationships within the maison-agent system. It establishes the foundational data model for tracking interactions between agents and their clients.
 
 ## Key Concepts
 
-- Agent Client,- Database Schema,- Data Definition,- Table Definition
+- Database schema design for agent-client relationships
+- Data modeling for client management
+- Core database operations for agent systems
 
 ## Details
 
-The core and only component of this code community is the file located at `/Users/rahilsinghi/Desktop/maison-agent/packages/database/src/tables/agent-client.ts`.
+The cluster centers around the `agent-client.ts` file which defines the database structure for agent-client relationships. This file contains the schema definition that underpins how agent systems track and manage client data. The module provides the essential data model components needed for agent systems to:
 
-This file resides within the `database` package of the `maison-agent` repository, specifically within the `src/tables` directory. This hierarchical organization strongly suggests its primary role is to define a database table or schema for `Agent Client` entities. It serves as a blueprint for how agent-related data should be structured and persisted in the database.
+- Define client relationship parameters
+- Establish data storage patterns for agent-client interactions
+- Provide the base schema for client management operations
 
-As indicated by the static analysis, this file currently shows "0 connections," meaning no other analyzed files directly interact with it within the detected cluster. This could imply that it's a foundational data model, a newly introduced schema awaiting integration, or that its programmatic usage is not yet captured by the current analysis scope. Its clear purpose, however, is to establish the data model for [[Agent Client Database Definition]].
+This database definition serves as the foundation for more complex agent operations that build upon these core relationship structures.
 
 ## Related
 
-[[maison-agent]],[[Agent Client Database Definition]]
+[[maison-agent]], [[Agent Client Database Definition]], [[Database Schema and Common Types Definition]]

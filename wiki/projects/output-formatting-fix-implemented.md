@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T14:00:33.375Z
 last_ai_edit: 2026-04-10T14:00:33.375Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1a9292b40a679239
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/just-fixed-the-formatting-issue-on-the-outputs-add-to-graph-1775829620089.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - knowledge graph
   - bugfix
 ---
+
 
 # Output Formatting Fix Implemented
 

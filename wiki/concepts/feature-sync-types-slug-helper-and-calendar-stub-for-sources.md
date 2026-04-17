@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:17:51.035Z
 last_ai_edit: 2026-04-10T18:17:51.035Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9d142c0cfcee0e51
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-sources-add-sync-types-slug-helper-and-calendar-stub-da3be8.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - brain
   - commit
 ---
+
 
 # Feature: Sync Types, Slug Helper, and Calendar Stub for Sources
 

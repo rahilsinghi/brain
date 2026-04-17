@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:51:46.970Z
 last_ai_edit: 2026-04-12T21:51:46.970Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ae54260582e290e8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-meta-add-tournament-runner-with-ast-based-determini-68bc94.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - commit
 ---
+
 
 # Tournament Runner with AST-based Deterministic Scoring in Ouroboros
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:52:57.114Z
 last_ai_edit: 2026-04-12T21:52:57.114Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ec87072d73231ada
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-graph-aggregate-chunk-embeddings-into-per-article-centr-15496f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - knowledge graph
   - feature
 ---
+
 
 # Aggregate Chunk Embeddings into Per-Article Centroids
 

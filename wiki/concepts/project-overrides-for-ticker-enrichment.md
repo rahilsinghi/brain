@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:22:38.430Z
 last_ai_edit: 2026-04-10T19:22:38.430Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 41b9a201b5cdec7b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-content-add-project-overrides-for-ticker-enrichment-20daaf.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - commit details
   - portfolio project
 ---
+
 
 # Project Overrides for Ticker Enrichment
 

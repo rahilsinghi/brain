@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:40:37.210Z
 last_ai_edit: 2026-04-12T17:40:37.210Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7fe69765cab89828
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-compiler-inject-existing-article-titles-into-compile-pr-545210.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - frontmatter
   - accuracy
 ---
+
 
 # Compiler Feature: Inject Existing Article Titles for Improved Linking
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:45:42.835Z
 last_ai_edit: 2026-04-10T21:45:42.835Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8364b5f07c4ff67e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-resolve-build-issues-from-frontend-new-merge-2c1e7b.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - qrcode.react
   - merge
 ---
+
 
 # Build Fixes for askNYC Frontend Merge
 

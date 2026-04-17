@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:18:16.873Z
 last_ai_edit: 2026-04-10T15:18:16.873Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 65886df150036bb3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-feat-dashboard-add-image-upload-button-thumbnail-to-searc-0c334b.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - commit
   - asknyc
 ---
+
 
 # Image Upload and Thumbnail in SearchInput
 

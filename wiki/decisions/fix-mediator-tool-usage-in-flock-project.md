@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:05:56.845Z
 last_ai_edit: 2026-04-12T22:05:56.845Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 446976e726b99b24
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-mediator-must-call-finalize-trip-tool-not-describe-trip-ed409d.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - gemini
   - debugging
 ---
+
 
 # Fix: Mediator Tool Usage in Flock Project
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:18:09.464Z
 last_ai_edit: 2026-04-10T15:18:09.464Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6c59dadfb5503dc9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-docs-add-sariyas-frontend-ui-task-spec-aa8c36.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - design
   - development
 ---
+
 
 # askNYC Frontend UI Task Specification (Sariya's Task)
 

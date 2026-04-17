@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:43:58.603Z
 last_ai_edit: 2026-04-13T18:43:58.603Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cbee848781778887
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-feat-add-optional-courses-and-activities-01cae1.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - feature
   - data-model
 ---
+
 
 # Add Optional Courses and Activities to Resume Data
 

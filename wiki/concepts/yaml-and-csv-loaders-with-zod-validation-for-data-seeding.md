@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:07:13.508Z
 last_ai_edit: 2026-04-10T18:07:13.508Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cea38210856af18b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-yaml-and-csv-loaders-with-zod-validation-ad79ea.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - rahilsinghi
   - claude sonnet 4.6
 ---
+
 
 # YAML and CSV Loaders with Zod Validation for Data Seeding
 

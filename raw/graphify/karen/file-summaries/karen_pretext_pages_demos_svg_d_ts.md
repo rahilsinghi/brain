@@ -2,7 +2,7 @@
 title: "svg.d.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/svg.d.ts"
 repo: "karen"
-community: 59
+community: 61
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/pages/demos/svg.d.ts`
-**Community:** 59
+**Community:** 61
 
 ## Imports
 - (none)

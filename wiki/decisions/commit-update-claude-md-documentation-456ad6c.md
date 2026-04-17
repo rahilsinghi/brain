@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:15:32.249Z
 last_ai_edit: 2026-04-10T19:15:32.249Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c891cdf7a97cea85
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-docs-update-claudemd-with-current-page-flow-theme-syste-4c7f1a.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - repo-update
   - git
 ---
+
 
 # Commit: Update CLAUDE.md Documentation (456ad6c)
 

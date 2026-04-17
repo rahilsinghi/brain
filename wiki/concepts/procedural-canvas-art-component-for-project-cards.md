@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:18:12.852Z
 last_ai_edit: 2026-04-10T19:18:12.852Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d1eeaaf6f8677abf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-ui-add-procedural-canvas-art-component-for-project-0aa8ef.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - component
   - javascript
 ---
+
 
 # Procedural Canvas Art Component for Project Cards
 

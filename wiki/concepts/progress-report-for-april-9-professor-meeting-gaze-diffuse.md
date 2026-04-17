@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:28:35.909Z
 last_ai_edit: 2026-04-10T21:28:35.909Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 25cd89bdb51d2e9e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-docs-add-progress-report-for-april-9-professor-meeting-efaac9.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - rahil singhi
   - 2026-04-09
 ---
+
 
 # Progress Report for April 9 Professor Meeting (Gaze-Diffuse)
 

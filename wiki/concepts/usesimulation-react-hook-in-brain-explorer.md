@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:50:12.431Z
 last_ai_edit: 2026-04-13T15:50:12.431Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b973727f9a0b3a7b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-simulation-add-usesimulation-react-hook-6c286c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - frontend
   - javascript
 ---
+
 
 # useSimulation React Hook in Brain-Explorer
 

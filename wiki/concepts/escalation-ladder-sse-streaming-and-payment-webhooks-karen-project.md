@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:20:09.305Z
 last_ai_edit: 2026-04-12T17:20:09.305Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 79972dd2c6d6e316
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-escalation-ladder-sse-streaming-and-payment-webhooks-2b581b.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - orchestration
   - api
 ---
+
 
 # Escalation Ladder, SSE Streaming, and Payment Webhooks (Karen Project)
 

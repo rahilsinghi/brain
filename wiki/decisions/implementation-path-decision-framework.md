@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:31:29.009Z
 last_ai_edit: 2026-04-10T21:31:29.009Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9ae71a500a6124d9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-decision-framework-for-choosing-implemen-90e1e4.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - automation
   - nyu
 ---
+
 
 # Implementation Path Decision Framework
 

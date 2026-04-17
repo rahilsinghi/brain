@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:13:19.875Z
 last_ai_edit: 2026-04-10T15:13:19.875Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 714309ecb247f824
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-unescaped-jsx-in-karen-page-narrow-type-access-on-karene-d6198c.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - development
   - commit
 ---
+
 
 # Fix: Unescaped JSX in Karen Page and Type Narrowing for KarenEvent.level
 

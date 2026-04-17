@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:58:14.658Z
 last_ai_edit: 2026-04-12T17:58:14.658Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d876b1cacee828fd
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-decision-framework-for-choosing-implemen-90e1e4.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - project management
   - career
 ---
+
 
 # Job Search Automation Decision Framework (Career-Datacenter)
 

@@ -2,7 +2,7 @@
 title: "analysis.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/src/analysis.ts"
 repo: "karen"
-community: 4
+community: 3
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/src/analysis.ts`
-**Community:** 4
+**Community:** 3
 
 ## Imports
 - (none)

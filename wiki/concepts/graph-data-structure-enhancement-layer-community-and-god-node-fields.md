@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:12:16.414Z
 last_ai_edit: 2026-04-13T18:12:16.414Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 05af10e83feda00c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-graph-extend-graphnode-graphlink-with-optional-layer-c-0443db.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - layer
   - god-node
 ---
+
 
 # Graph Data Structure Enhancement: Layer, Community, and God-Node Fields
 

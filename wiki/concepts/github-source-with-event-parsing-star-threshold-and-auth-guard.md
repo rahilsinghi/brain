@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:11:53.732Z
 last_ai_edit: 2026-04-10T18:11:53.732Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9e648894cc3e554c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-sources-github-source-with-event-parsing-star-threshol-c8f01b.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - brain
   - scm
 ---
+
 
 # GitHub Source with Event Parsing, Star Threshold, and Auth Guard
 

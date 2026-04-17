@@ -2,7 +2,7 @@
 title: "next.config.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/frontend/next.config.ts"
 repo: "karen"
-community: 57
+community: 59
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/frontend/next.config.ts`
-**Community:** 57
+**Community:** 59
 
 ## Imports
 - (none)

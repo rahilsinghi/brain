@@ -1,16 +1,21 @@
 ---
-status: failed
+status: processed
 source_type: graphify-community
 repo: maison-agent
 community_id: 62
 ingested_at: 2026-04-15T19:59:44.148Z
 parsed_at: 2026-04-15T19:59:44.148Z
-compiled_to: "[[A2UI Template Expansion and Data Path Rewriting]]"
-processed_at: 2026-04-15T20:00:28.284Z
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca6AM6neofM2UwCCMmnjA"}
+compiled_to: "[[A2UI Template Expansion Engine]]"
+processed_at: 2026-04-17T03:32:37.868Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

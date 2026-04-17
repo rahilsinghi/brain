@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:21:29.562Z
 last_ai_edit: 2026-04-11T00:21:29.562Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e6f1772e0bcbdc4e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-config-add-apollo-session-storage-and-ignore-chro-0b5d06.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - version control
   - browser automation
 ---
+
 
 # Apollo Session Storage and Chrome User Data Exclusion
 

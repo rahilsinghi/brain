@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:20:06.997Z
 last_ai_edit: 2026-04-12T21:20:06.997Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f45e30467a52b91a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-wikilink-resolution-implementation-plan-847d74.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - brain project
   - knowledge graph
 ---
+
 
 # Wikilink Resolution Implementation Plan (Brain Project)
 

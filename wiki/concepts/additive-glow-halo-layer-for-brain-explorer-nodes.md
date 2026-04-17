@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:31:29.026Z
 last_ai_edit: 2026-04-11T01:31:29.026Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e4cfe55f342a153f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-nodes-add-additive-glow-halo-layer-for-all-cat-ad3143.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - knowledge graph
   - claude opus
 ---
+
 
 # Additive Glow Halo Layer for Brain-Explorer Nodes
 

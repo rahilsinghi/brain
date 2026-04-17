@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:20:21.007Z
 last_ai_edit: 2026-04-12T21:20:21.007Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bb72dc7a58d81fc7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-refactor-extract-ingestcontent-into-src-api-ingest-corets-5dbf4a.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - content ingestion
   - frontmatter
 ---
+
 
 # Refactor: `ingestContent` Function Extraction in Brain Project
 

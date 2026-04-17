@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:16:49.096Z
 last_ai_edit: 2026-04-10T18:16:49.096Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 09b6efe5e3efbdd8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-applause-meter-payload-mismatch-level-vs-volume-89588e.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - level
   - volume
 ---
+
 
 # Fix: Applause Meter Payload Mismatch (Level vs Volume) in Coro
 

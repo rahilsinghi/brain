@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:32:25.211Z
 last_ai_edit: 2026-04-12T21:32:25.211Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1458f3c972c32835
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-docs-add-liquid-knowledge-sphere-design-spec-81d7fd.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - ui
   - 3d rendering
 ---
+
 
 # Liquid Knowledge Sphere Design Specification for Brain-Explorer
 

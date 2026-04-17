@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:44:42.123Z
 last_ai_edit: 2026-04-13T18:44:42.123Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 07e1e362dd5d4eab
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-fix-jinja2-template-bug-in-skills-section-renderin-a8bdf8.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - templating
   - resume generation
 ---
+
 
 # Jinja2 Template Fix for Skill Section Rendering in Career-Datacenter
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:42:13.167Z
 last_ai_edit: 2026-04-10T17:42:13.167Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 70f18ef15ca4b6c2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-chore-remove-dead-header-components-replaced-by-appheader-2c2ce8.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - deprecate
   - raag
 ---
+
 
 # Chore: Remove Dead Header Components
 

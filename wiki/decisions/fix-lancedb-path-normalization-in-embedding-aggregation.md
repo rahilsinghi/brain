@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:18:15.416Z
 last_ai_edit: 2026-04-10T22:18:15.416Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ef0b538d8f28b7e9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-graph-strip-wiki-prefix-from-lancedb-paths-in-embedding-3e0d5a.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - brain-project
   - commit
 ---
+
 
 # Fix: LanceDB Path Normalization in Embedding Aggregation
 

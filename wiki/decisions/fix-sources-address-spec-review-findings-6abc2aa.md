@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:06:12.345Z
 last_ai_edit: 2026-04-10T22:06:12.345Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 86fcb288cdac9453
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-sources-address-spec-review-findings-ecb8d2.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - commit
   - brain project
 ---
+
 
 # fix(sources): Address Spec Review Findings (6abc2aa)
 

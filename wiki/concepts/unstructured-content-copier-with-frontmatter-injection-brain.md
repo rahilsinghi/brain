@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:14:07.537Z
 last_ai_edit: 2026-04-12T17:14:07.537Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0420e0c77bdc36ca
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-unstructured-content-copier-with-frontmatter-injec-084ecf.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - automation
   - data ingestion
 ---
+
 
 # Unstructured Content Copier with Frontmatter Injection (brain)
 

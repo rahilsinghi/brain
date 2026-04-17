@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:37:39.507Z
 last_ai_edit: 2026-04-10T21:37:39.507Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 74f94c3c7f65ef30
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-tracking-csv-files-to-gitignore-0c539f.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - projectmanagement
   - workflow
 ---
+
 
 # Ignoring Tracking CSV Files in Git
 

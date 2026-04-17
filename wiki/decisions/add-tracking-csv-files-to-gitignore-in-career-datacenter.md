@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:41:18.956Z
 last_ai_edit: 2026-04-13T18:41:18.956Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cbcafc46a17c67e0
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-tracking-csv-files-to-gitignore-0c539f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - gitignore
   - data management
 ---
+
 
 # Add tracking CSV files to .gitignore in Career-Datacenter
 

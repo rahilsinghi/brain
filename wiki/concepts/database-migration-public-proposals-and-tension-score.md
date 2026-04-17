@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:46:07.218Z
 last_ai_edit: 2026-04-10T21:46:07.218Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 96d26083d765b58b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-add-public-proposals-table-and-tension-score-column-815a44.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - backend
   - datamodel
 ---
+
 
 # Database Migration: Public Proposals and Tension Score
 

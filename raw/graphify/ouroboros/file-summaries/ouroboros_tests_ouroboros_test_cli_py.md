@@ -2,7 +2,7 @@
 title: "test_cli.py"
 source_file: "/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_cli.py"
 repo: "ouroboros"
-community: 19
+community: 18
 file_type: code
 author: ai
 tags: [code-architecture, ouroboros]
@@ -12,7 +12,7 @@ tags: [code-architecture, ouroboros]
 
 **Repository:** ouroboros
 **File:** `/Users/rahilsinghi/Desktop/ouroboros/tests/ouroboros/test_cli.py`
-**Community:** 19
+**Community:** 18
 
 ## Imports
 - (none)

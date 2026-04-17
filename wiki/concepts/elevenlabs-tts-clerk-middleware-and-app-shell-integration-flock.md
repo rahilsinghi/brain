@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:47:49.660Z
 last_ai_edit: 2026-04-12T17:47:49.660Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3d31c7d2fdf7f00c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-elevenlabs-tts-clerk-middleware-and-app-shell-3eecab.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - flock
   - voice
 ---
+
 
 # ElevenLabs TTS, Clerk Middleware, and App Shell Integration (Flock)
 

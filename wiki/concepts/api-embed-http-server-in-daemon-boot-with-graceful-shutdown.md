@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:17:13.317Z
 last_ai_edit: 2026-04-10T21:17:13.317Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5a47452e1df7cf8f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-api-embed-http-server-in-daemon-boot-with-graceful-shut-f42f6c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - rahil singhi
 ---
+
 
 # API: Embed HTTP Server in Daemon Boot with Graceful Shutdown
 

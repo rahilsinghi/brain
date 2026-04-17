@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:18:52.528Z
 last_ai_edit: 2026-04-10T17:18:52.528Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1259663792ed71dc
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-update-claudemd-with-telegram-bot-documentation-9dc38e.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - rahilsinghi
   - brain repository
 ---
+
 
 # Commit: Update CLAUDE.md with Telegram Bot Documentation
 

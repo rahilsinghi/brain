@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:44:34.829Z
 last_ai_edit: 2026-04-12T21:44:34.829Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bc0b1be2b9821341
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-chore-client-and-feed-cleanup-b78c19.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - xcode
   - development
 ---
+
 
 # Client and Feed Cleanup (MarkPush)
 

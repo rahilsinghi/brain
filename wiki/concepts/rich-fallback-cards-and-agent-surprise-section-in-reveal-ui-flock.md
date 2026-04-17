@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:24:11.806Z
 last_ai_edit: 2026-04-10T17:24:11.806Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 12651e911c6a1fef
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-rich-fallback-cards-separate-agent-surprise-section-in-662621.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - ux
   - commit
 ---
+
 
 # Rich Fallback Cards and Agent Surprise Section in Reveal UI (Flock)
 

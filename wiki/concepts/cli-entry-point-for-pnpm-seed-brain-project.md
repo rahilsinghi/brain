@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:30:27.669Z
 last_ai_edit: 2026-04-12T17:30:27.669Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c3c963f9ab51c8e9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-cli-entry-point-for-pnpm-seed-1dd795.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - feature
   - workflow
 ---
+
 
 # CLI Entry Point for PNPM Seed (Brain Project)
 

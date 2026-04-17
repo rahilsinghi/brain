@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:30:59.900Z
 last_ai_edit: 2026-04-13T15:30:59.900Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1c18214b6ba4e79f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-llm-switch-gemini-to-vertex-ai-1000-gcp-credits-com-c157df.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - wiki_generation
   - brain_project
 ---
+
 
 # Gemini LLM Migration to Vertex AI and Project Profile Compilation
 

@@ -1,15 +1,20 @@
 ---
-status: failed
+status: processed
 source_type: gmail
 source_id: 19d72e438ceda4bc
 ingested_at: 2026-04-10T11:49:45.166Z
 parsed_at: 2026-04-10T11:49:45.166Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3Jjzqg5Qc61dTr1Xkh"}
+compiled_to: "[[CUNY Sustainability and Green Tech Virtual Graduate Fair]]"
+processed_at: 2026-04-17T04:24:16.265Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

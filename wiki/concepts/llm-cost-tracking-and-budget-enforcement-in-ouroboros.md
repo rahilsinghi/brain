@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:14:27.220Z
 last_ai_edit: 2026-04-11T00:14:27.220Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b7ae92d1ef5551ab
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-budget-add-cost-tracking-with-per-model-pricing-and-d3ecb1.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - agent
   - pricing
 ---
+
 
 # LLM Cost Tracking and Budget Enforcement in Ouroboros
 

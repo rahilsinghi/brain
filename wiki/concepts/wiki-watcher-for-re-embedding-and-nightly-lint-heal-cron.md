@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:37:13.170Z
 last_ai_edit: 2026-04-12T21:37:13.170Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e71a40b3cbceafb8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-wire-wiki-watcher-for-re-embedding-and-nightly-lint-heal-48fac4.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - brain project
   - file system monitoring
 ---
+
 
 # Wiki Watcher for Re-embedding and Nightly Lint/Heal Cron
 

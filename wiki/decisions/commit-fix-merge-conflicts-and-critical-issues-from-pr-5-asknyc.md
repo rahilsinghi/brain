@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:10:33.072Z
 last_ai_edit: 2026-04-10T21:10:33.072Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b25f054998a50214
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-resolve-merge-conflicts-and-fix-critical-issues-from-pr-c37d62.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - cleanup
   - bugfix
 ---
+
 
 # Commit: Fix Merge Conflicts and Critical Issues from PR #5 (askNYC)
 

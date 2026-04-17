@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T14:15:50.535Z
 last_ai_edit: 2026-04-10T14:15:50.535Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6ffa389b3278bf15
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/writing-post-idea-write-about-the-current-war-on-lost-in-pages-1775830537961.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - information overload
   - data literacy
 ---
+
 
 # The War on Lost in Pages
 

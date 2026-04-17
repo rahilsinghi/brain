@@ -2,7 +2,7 @@
 title: "next-env.d.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/frontend/next-env.d.ts"
 repo: "karen"
-community: 56
+community: 58
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/frontend/next-env.d.ts`
-**Community:** 56
+**Community:** 58
 
 ## Imports
 - (none)

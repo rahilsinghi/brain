@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:12:49.313Z
 last_ai_edit: 2026-04-10T19:12:49.313Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1c7985d9d5907796
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-ouroboros-adding-docstrings-to-the-undocumented-public-fu-4eb2c4.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - refactoring
   - metric
 ---
+
 
 # Ouroboros: Docstring Coverage for History Files
 

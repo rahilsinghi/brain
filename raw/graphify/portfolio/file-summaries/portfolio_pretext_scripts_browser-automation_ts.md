@@ -2,7 +2,7 @@
 title: "browser-automation.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/browser-automation.ts"
 repo: "portfolio"
-community: 8
+community: 7
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/scripts/browser-automation.ts`
-**Community:** 8
+**Community:** 7
 
 ## Imports
 - (none)

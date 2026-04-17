@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:15:08.558Z
 last_ai_edit: 2026-04-12T17:15:08.558Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c136a2360af0d65c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-personal-agent-and-mediator-with-10-step-negotiation-alg-4b16e7.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - multi-agent system
   - trip planning
 ---
+
 
 # Personal Agent and Mediator with 10-Step Negotiation Algorithm (Flock Project)
 

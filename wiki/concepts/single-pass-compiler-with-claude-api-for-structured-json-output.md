@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:17:11.924Z
 last_ai_edit: 2026-04-13T17:17:11.924Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 21dcd8d6c377de6c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-single-pass-compiler-using-claude-api-with-structured-js-8ea1d7.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - brain project
   - feature
 ---
+
 
 # Single-Pass Compiler with Claude API for Structured JSON Output
 

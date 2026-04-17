@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:26:16.815Z
 last_ai_edit: 2026-04-10T19:26:16.815Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3319d2a8b2b41db9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/brenton-andersen-wilbo-call-outcome-april-10-2026-1775849012410.md]]"
 tags:
@@ -22,6 +22,7 @@ tags:
   - lovable
   - toolhouse
 ---
+
 
 # Wilbo Project Initiation: Call with Brenton Andersen (Apr 10, 2026)
 

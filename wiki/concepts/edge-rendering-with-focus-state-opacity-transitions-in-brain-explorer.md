@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:31:45.930Z
 last_ai_edit: 2026-04-12T17:31:45.930Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 958115b59c056938
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-edge-rendering-with-focus-state-opacity-transit-15304d.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - edge rendering
   - opacity transitions
 ---
+
 
 # Edge Rendering with Focus-State Opacity Transitions in Brain-Explorer
 

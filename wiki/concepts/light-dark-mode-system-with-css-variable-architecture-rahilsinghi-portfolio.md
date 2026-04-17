@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:05:29.402Z
 last_ai_edit: 2026-04-12T22:05:29.402Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b7ae4c502ccfed11
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-theme-add-light-dark-mode-system-with-css-variable-444139.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - css-variables
   - usability
 ---
+
 
 # Light/Dark Mode System with CSS Variable Architecture (rahilsinghi/portfolio)
 

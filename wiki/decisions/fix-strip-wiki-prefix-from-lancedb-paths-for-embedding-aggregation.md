@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:34:07.935Z
 last_ai_edit: 2026-04-13T18:34:07.935Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4d6af73e94af16d3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-graph-strip-wiki-prefix-from-lancedb-paths-in-embedding-3e0d5a.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - pathing
   - commit
 ---
+
 
 # Fix: Strip 'wiki/' Prefix from LanceDB Paths for Embedding Aggregation
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:05:49.611Z
 last_ai_edit: 2026-04-13T16:05:49.611Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 40d63993e63fa1c1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-chore-remove-brain-configyaml-from-tracking-gitignored-2af088.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - project management
   - repository
 ---
+
 
 # Remove .brain/config.yaml from Git Tracking
 

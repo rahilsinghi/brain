@@ -1,16 +1,19 @@
 ---
-status: failed
+status: processed
 source_type: graphify-community
 repo: maison-agent
 community_id: 7
 ingested_at: 2026-04-15T19:59:44.137Z
 parsed_at: 2026-04-15T19:59:44.137Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: "JSON Parse error: Expected '}'"
+compiled_to: "[[Chat Window Interaction and Analytics Framework]]"
+processed_at: 2026-04-17T02:07:48.677Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
 
 
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:27:38.070Z
 last_ai_edit: 2026-04-13T18:27:38.070Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 63b514ad4c5ae5c5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-refactor-restructure-ideas-section-with-power-seq-93c935.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - career-datacenter
   - claude sonnet
 ---
+
 
 # Refactor: Restructure Ideas Section with Power Sequence + Integration Intelligence Agent
 

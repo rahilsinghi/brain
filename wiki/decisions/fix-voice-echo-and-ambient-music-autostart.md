@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:28:54.584Z
 last_ai_edit: 2026-04-10T21:28:54.584Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bc69414cd06c57af
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-eliminate-voice-echo-auto-start-ambient-music-852079.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - music
   - commit
 ---
+
 
 # Fix: Voice Echo and Ambient Music Autostart
 

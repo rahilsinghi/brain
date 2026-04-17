@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:09:59.261Z
 last_ai_edit: 2026-04-10T21:09:59.261Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f826f1063c61d39d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-dashboard-launch-script-scripts-start-dashboa-40ca83.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - career-datacenter
   - scripting
 ---
+
 
 # start_dashboard.sh Script
 

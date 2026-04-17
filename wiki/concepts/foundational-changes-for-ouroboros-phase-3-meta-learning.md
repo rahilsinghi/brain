@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:07:38.008Z
 last_ai_edit: 2026-04-10T19:07:38.008Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e4f4d426f0aca0a7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-types-add-iterationoutcomekilled-baseagentlast-r-e0bcef.md]]"
 tags:
@@ -23,6 +23,7 @@ tags:
   - safety-violations
   - token-accumulation
 ---
+
 
 # Foundational Changes for Ouroboros Phase 3 Meta-Learning
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:20:55.186Z
 last_ai_edit: 2026-04-10T19:20:55.186Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 25165a3962e29898
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-camera-controller-with-arc-fly-to-tooltips-es-e93f2d.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - user-interface
   - navigation
 ---
+
 
 # Camera Controller Enhancements (brain-explorer)
 

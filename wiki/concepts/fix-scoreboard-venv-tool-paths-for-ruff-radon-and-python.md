@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:24:08.808Z
 last_ai_edit: 2026-04-10T19:24:08.808Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3bda04959d3e2ef2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-scoreboard-resolve-venv-tool-paths-for-ruff-radon-d7c4cd.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - ouroboros
   - scoreboard
 ---
+
 
 # Fix: Scoreboard Venv Tool Paths for Ruff, Radon, and Python
 

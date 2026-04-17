@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:02:18.028Z
 last_ai_edit: 2026-04-12T22:02:18.028Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9b656b888471d594
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-camera-add-ambient-auto-rotation-with-idle-res-2f9058.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - ux
   - feature
 ---
+
 
 # Ambient Auto-Rotation with Idle Resume in Brain-Explorer
 

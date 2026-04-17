@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:48:23.723Z
 last_ai_edit: 2026-04-13T17:48:23.723Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2cf310e1790c255b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-fix-scope-data-gitignore-to-root-only-not-src-data-20f8ee.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - file management
   - version control
 ---
+
 
 # Gitignore Scope Correction for `data/` Directory in Gaze-Diffuse
 

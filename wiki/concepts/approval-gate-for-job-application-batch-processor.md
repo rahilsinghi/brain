@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:49:37.862Z
 last_ai_edit: 2026-04-13T18:49:37.862Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: aaf437682e497a57
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-wire-approval-gate-into-batch-processor-8cbda2.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - automation
   - approvals
 ---
+
 
 # Approval Gate for Job Application Batch Processor
 

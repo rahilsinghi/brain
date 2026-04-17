@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:17:39.545Z
 last_ai_edit: 2026-04-10T19:17:39.545Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 92049c2791d55d25
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-backend-add-vercel-production-url-to-default-cors-origin-b67ffb.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - api
   - security
 ---
+
 
 # Fix: Add Vercel Production URL to Default CORS Origins
 

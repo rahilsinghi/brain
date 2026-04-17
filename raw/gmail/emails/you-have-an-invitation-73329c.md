@@ -1,15 +1,22 @@
 ---
-status: failed
+status: processed
 source_type: gmail
 source_id: 19d72ee24e240e1a
 ingested_at: 2026-04-10T11:49:45.166Z
 parsed_at: 2026-04-10T11:49:45.166Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Manivannan Senthil Kumar's LinkedIn Invitation to Rahil Singhi]]"
+processed_at: 2026-04-17T05:32:53.821Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3JxA5uvS21zHQY2tX6"}
+last_error: undefined is not an object (evaluating 'title.toLowerCase')
 compile_progress: null
 ---
+
+
+
+
+
+
+
 
 
 

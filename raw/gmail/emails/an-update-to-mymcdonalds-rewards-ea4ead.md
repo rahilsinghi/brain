@@ -1,15 +1,20 @@
 ---
-status: failed
+status: processed
 source_type: gmail
 source_id: 19d72b2c322d3c09
 ingested_at: 2026-04-10T11:49:45.167Z
 parsed_at: 2026-04-10T11:49:45.167Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[MyMcDonald’s Rewards Update for May 4, 2026]]"
+processed_at: 2026-04-17T05:59:38.542Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3K7jnxVpPW7kWvu5QW"}
+last_error: The operation timed out.
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

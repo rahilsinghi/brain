@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:41:34.216Z
 last_ai_edit: 2026-04-10T21:41:34.216Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 373a5d66acaa8283
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-chore-mcp-server-v020-remove-ws-dependency-transport-4e4cab.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - dependency-removal
   - chore
 ---
+
 
 # MarkPush Server v0.2.0: WebSocket Deprecation and Transport Refinement
 

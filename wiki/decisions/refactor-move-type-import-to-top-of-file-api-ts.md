@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:24:11.779Z
 last_ai_edit: 2026-04-10T22:24:11.779Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ab89c2b6bd9ed407
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-refactor-move-type-import-to-top-of-file-in-apits-d7b14f.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - raag
   - commit
 ---
+
 
 # Refactor: Move Type Import to Top of File (api.ts)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:25:13.854Z
 last_ai_edit: 2026-04-10T21:25:13.854Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 42c20656fe156f5d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-circle-members-pre-seeded-data-and-crud-endpoints-c6f53a.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - data initialization
   - endpoint
 ---
+
 
 # Circle Members Feature: Pre-seeded Data and CRUD Endpoints
 

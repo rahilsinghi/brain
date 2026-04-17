@@ -4,13 +4,14 @@ author: ai
 created_at: 2026-04-13T16:15:10.996Z
 last_ai_edit: 2026-04-13T16:15:10.996Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 262f06f463c20ed7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/graphify/karen/file-summaries/karen_pretext_pages_demos_dynamic-layout-text_ts.md]]"
 tags:
   - code-architecture
   - karen
 ---
+
 
 # dynamic-layout-text.ts
 

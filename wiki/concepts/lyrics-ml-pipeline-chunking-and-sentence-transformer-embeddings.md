@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:40:24.649Z
 last_ai_edit: 2026-04-13T17:40:24.649Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0420c816b341d605
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-lyrics-ml-pipeline-with-chunking-and-sentence-transformer-78fa99.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - data processing
   - sentence-transformers
 ---
+
 
 # Lyrics ML Pipeline: Chunking and Sentence-Transformer Embeddings
 

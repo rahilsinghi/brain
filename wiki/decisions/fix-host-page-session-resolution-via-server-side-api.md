@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:20:42.855Z
 last_ai_edit: 2026-04-10T21:20:42.855Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d417403e5163d878
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-host-page-uses-api-for-session-resolution-not-client-sup-7349cd.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - realtime
   - bugfix
 ---
+
 
 # Fix: Host Page Session Resolution via Server-Side API
 

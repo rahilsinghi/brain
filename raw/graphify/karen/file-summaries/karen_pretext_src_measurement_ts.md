@@ -2,7 +2,7 @@
 title: "measurement.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts"
 repo: "karen"
-community: 13
+community: 12
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/src/measurement.ts`
-**Community:** 13
+**Community:** 12
 
 ## Imports
 - (none)

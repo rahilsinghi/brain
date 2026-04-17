@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:12:45.152Z
 last_ai_edit: 2026-04-10T21:12:45.152Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4a90c33e7ab9fa7e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-feat-splash-image-upload-in-searchinput-glowing-dashboard-855607.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - rahil singhi
   - asknyc
 ---
+
 
 # SearchInput Image Upload and Dashboard Launch Button
 

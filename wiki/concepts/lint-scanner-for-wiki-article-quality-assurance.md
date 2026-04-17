@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:04:38.436Z
 last_ai_edit: 2026-04-13T16:04:38.436Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5797d408bb404885
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-lint-scanner-detects-broken-links-orphans-and-format-i-316fd8.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - knowledge management
   - tooling
 ---
+
 
 # Lint Scanner for Wiki Article Quality Assurance
 

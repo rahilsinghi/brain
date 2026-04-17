@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:42:27.138Z
 last_ai_edit: 2026-04-12T21:42:27.138Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 87d1e18c3c095adb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-preference-room-with-profile-card-text-input-and-room-5f4362.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - ui
   - feature
 ---
+
 
 # Flock Preference Room Feature
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-15T19:45:17.446Z
 last_ai_edit: 2026-04-15T19:45:17.446Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4232ffa2a40ff51b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/maison-slack-sales-sales-pipeline-key-deals-april-202-1776280671692.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - enterprise
   - maison
 ---
+
 
 # Maison Sales Strategy and Pipeline Update
 

@@ -2,7 +2,7 @@
 title: "server.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/api/server.ts"
 repo: "brain"
-community: 52
+community: 70
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/api/server.ts`
-**Community:** 52
+**Community:** 70
 
 ## Imports
 - (none)

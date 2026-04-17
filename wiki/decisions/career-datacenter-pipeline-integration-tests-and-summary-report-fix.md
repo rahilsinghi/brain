@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:17:23.580Z
 last_ai_edit: 2026-04-10T21:17:23.580Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e9bee781e49a89eb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-pipeline-integration-tests-fix-zerodivisione-f6cc3e.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - pipeline
   - report
 ---
+
 
 # Career-Datacenter: Pipeline Integration Tests and Summary Report Fix
 

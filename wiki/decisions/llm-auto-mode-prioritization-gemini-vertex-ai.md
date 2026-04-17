@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:21:11.600Z
 last_ai_edit: 2026-04-10T15:21:11.600Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f802d1c9eb6d24a1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-llm-default-auto-mode-to-gemini-vertex-ai-over-anthro-a41a19.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - configuration
   - commit
 ---
+
 
 # LLM Auto Mode Prioritization: Gemini (Vertex AI)
 

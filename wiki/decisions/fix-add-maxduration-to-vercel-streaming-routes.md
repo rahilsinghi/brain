@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:21:02.512Z
 last_ai_edit: 2026-04-10T21:21:02.512Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1ce0d472bc693902
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-add-maxduration-to-streaming-routes-for-vercel-timeout-a25702.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - flock
   - elevenlabs
 ---
+
 
 # Fix: Add maxDuration to Vercel Streaming Routes
 

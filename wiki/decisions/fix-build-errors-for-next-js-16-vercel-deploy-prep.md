@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:22:49.900Z
 last_ai_edit: 2026-04-10T19:22:49.900Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d1a3bd92a6304daf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-vercel-deploy-prep-fix-build-errors-for-next-34f4ad.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - strictmode
   - favicon
 ---
+
 
 # Fix Build Errors for Next.js 16 (Vercel Deploy Prep)
 

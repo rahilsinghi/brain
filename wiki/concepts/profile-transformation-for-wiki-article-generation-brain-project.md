@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:47:57.920Z
 last_ai_edit: 2026-04-13T18:47:57.920Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 15c3b454b608f4c6
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-profile-transform-profile-education-activitie-780177.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - automation
   - career-datacenter
 ---
+
 
 # Profile Transformation for Wiki Article Generation (Brain Project)
 

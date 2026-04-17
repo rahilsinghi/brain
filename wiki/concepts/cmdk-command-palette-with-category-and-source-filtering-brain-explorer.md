@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:06:49.764Z
 last_ai_edit: 2026-04-13T15:06:49.764Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b05cd16156856592
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-cmdk-command-palette-with-category-source-filte-d97b49.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - claude-opus-4.6
   - ai-assisted development
 ---
+
 
 # CMDK Command Palette with Category and Source Filtering (Brain-Explorer)
 

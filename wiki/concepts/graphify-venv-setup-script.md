@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:49:28.826Z
 last_ai_edit: 2026-04-12T21:49:28.826Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8e285f93a833a028
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-add-graphify-venv-setup-script-scripts-graphify-setups-d112eb.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - setup
   - automation
 ---
+
 
 # Graphify venv Setup Script
 

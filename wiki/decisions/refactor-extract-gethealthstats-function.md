@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:07:03.781Z
 last_ai_edit: 2026-04-10T21:07:03.781Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3f283de3811274a3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-refactor-extract-gethealthstats-into-src-api-health-corets-34a0e4.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - javascript
   - typescript
 ---
+
 
 # Refactor: Extract getHealthStats Function
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:16:13.734Z
 last_ai_edit: 2026-04-10T18:16:13.734Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 58fdc60b4b353f32
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-initial-commit-from-create-next-app-a277ec.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - create next app
   - commit
 ---
+
 
 # Initial commit from Create Next App
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:41:15.386Z
 last_ai_edit: 2026-04-12T17:41:15.386Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: abe7c239bb94ed9a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-scoreboard-replace-real-world-placeholder-with-docs-347fb6.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - scoreboard
   - software development
 ---
+
 
 # Docstring Coverage Scorer in Ouroboros
 

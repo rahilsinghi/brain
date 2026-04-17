@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:22:50.521Z
 last_ai_edit: 2026-04-12T18:22:50.521Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ec7b8d10557b9908
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-fix-scope-data-gitignore-to-root-only-not-src-data-20f8ee.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - filemanagement
   - gazediffuse
 ---
+
 
 # Gitignore Scope Fix for Root Data Directory in Gaze-Diffuse
 

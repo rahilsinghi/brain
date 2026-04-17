@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:05:10.109Z
 last_ai_edit: 2026-04-12T18:05:10.109Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d6dcd93901a6ddc1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-mediator-must-call-finalize-trip-tool-not-describe-trip-ed409d.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - gemini
   - debug
 ---
+
 
 # Fix: Mediator Must Call finalize_trip Tool Instead of Generating Prose
 

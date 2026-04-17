@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:10:49.274Z
 last_ai_edit: 2026-04-10T18:10:49.274Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 581e73a90195873f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-zod-schemas-for-all-career-datacenter-yaml-csv-fil-f8e3a8.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - feature
   - typesafety
 ---
+
 
 # Zod Schemas for Career-Datacenter YAML/CSV
 

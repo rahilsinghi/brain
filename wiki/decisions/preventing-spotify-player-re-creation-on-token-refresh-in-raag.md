@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:40:40.288Z
 last_ai_edit: 2026-04-10T17:40:40.288Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c4777e0e77df083a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-fix-prevent-spotify-player-re-creation-on-token-refresh-6e4e7a.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - sdk
   - performance
 ---
+
 
 # Preventing Spotify Player Re-creation on Token Refresh in Raag
 

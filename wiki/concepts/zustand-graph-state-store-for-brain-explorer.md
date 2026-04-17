@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:31:57.574Z
 last_ai_edit: 2026-04-12T17:31:57.574Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bc0b7e6bcdcdda4a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-zustand-graph-state-store-focus-hover-filter-d9b604.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - front-end
 ---
+
 
 # Zustand Graph State Store for Brain-Explorer
 

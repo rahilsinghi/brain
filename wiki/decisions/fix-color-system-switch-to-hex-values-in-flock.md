@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:13:18.129Z
 last_ai_edit: 2026-04-13T16:13:18.129Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b5409db7f2684141
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-switch-all-colors-from-broken-hsl-vars-to-solid-hex-value-b33df2.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - hexadecimal
   - hsl
 ---
+
 
 # Fix: Color System Switch to Hex Values in Flock
 

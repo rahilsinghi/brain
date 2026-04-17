@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:29:51.630Z
 last_ai_edit: 2026-04-11T01:29:51.630Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1c1394ea5a287e70
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-agents-add-call-with-json-retry-for-robust-json-p-79e437.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - development
   - feature
 ---
+
 
 # call_with_json_retry() for Robust LLM JSON Parsing in Ouroboros
 

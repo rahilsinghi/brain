@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:20:48.536Z
 last_ai_edit: 2026-04-10T21:20:48.536Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 411210edf1270e32
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-camera-reduce-idle-resume-delay-from-3s-to-800m-975799.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - auto-rotation
   - delay
 ---
+
 
 # fix(camera): Reduce Idle Resume Delay to 800ms
 

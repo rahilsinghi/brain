@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:26:39.166Z
 last_ai_edit: 2026-04-11T00:26:39.166Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 047babd85b473b06
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-refactor-restructure-ideas-section-with-power-seq-93c935.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - strategy
   - claude
 ---
+
 
 # Refactor: Integration Intelligence Agent and Idea Power Sequence
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:47:10.504Z
 last_ai_edit: 2026-04-13T18:47:10.504Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 712a0b423aeae1de
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-refactor-layout-replace-force-simulation-with-fibon-5e0f73.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - graph visualization
   - performance
 ---
+
 
 # Brain-Explorer: Fibonacci Sphere Layout for Graph Visualization
 

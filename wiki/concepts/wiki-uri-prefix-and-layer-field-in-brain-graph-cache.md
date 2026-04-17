@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:20:38.852Z
 last_ai_edit: 2026-04-13T18:20:38.852Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7dfb3f67de4a49d7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-graph-apply-wiki-uri-prefix-and-layer-field-at-cache-a9f3f3.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - rebuildgraphcache
   - deep-linking
 ---
+
 
 # Wiki URI Prefix and Layer Field in Brain Graph Cache
 

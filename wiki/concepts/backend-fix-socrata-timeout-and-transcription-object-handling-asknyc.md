@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:09:57.581Z
 last_ai_edit: 2026-04-10T15:09:57.581Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 121e56624f02abca
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-fix-backend-increase-socrata-timeout-and-fix-transcription-7e331a.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - api
   - asknyc
 ---
+
 
 # Backend Fix: Socrata Timeout and Transcription Object Handling (askNYC)
 

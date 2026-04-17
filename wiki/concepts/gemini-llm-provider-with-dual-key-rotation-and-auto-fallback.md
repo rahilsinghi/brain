@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:48:23.866Z
 last_ai_edit: 2026-04-12T21:48:23.866Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 50ee692f03efbbe7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-llm-add-gemini-provider-with-dual-key-rotation-and-auto-95d955.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - infrastructure
   - reliability
 ---
+
 
 # Gemini LLM Provider with Dual-Key Rotation and Auto-Fallback
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:12:11.632Z
 last_ai_edit: 2026-04-10T19:12:11.632Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 24ef8327bfb6d414
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-graph-data-types-position-normalization-neigh-4e2d78.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - brain-explorer
   - ai-assisted
 ---
+
 
 # Feature: Graph Data Types, Position Normalization, and Neighbor Map
 

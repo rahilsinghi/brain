@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:22:08.862Z
 last_ai_edit: 2026-04-12T22:22:08.862Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 91e7af16c839a79b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-chore-remove-featuredprojects-and-githubstats-replaced-b-8fb402.md]]"
 tags:
@@ -14,6 +14,7 @@ tags:
   - web_development
   - commit
 ---
+
 
 # Removal of FeaturedProjects and GitHubStats from Portfolio
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:07:19.071Z
 last_ai_edit: 2026-04-10T17:07:19.071Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 432b1a3887fc1073
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-force-reveal-fallback-admin-emergency-button-e68d77.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - trip-decision
   - emergency-button
 ---
+
 
 # Force Reveal Fallback and Admin Emergency Button (Flock)
 

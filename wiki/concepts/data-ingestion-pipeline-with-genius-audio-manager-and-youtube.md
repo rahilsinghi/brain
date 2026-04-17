@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:47:21.337Z
 last_ai_edit: 2026-04-12T21:47:21.337Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e5d833e9655b5367
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-data-ingestion-pipeline-with-genius-audio-manager-and-y-f2e0bb.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - rest api
   - ml processing
 ---
+
 
 # Data Ingestion Pipeline with Genius, Audio Manager, and YouTube
 

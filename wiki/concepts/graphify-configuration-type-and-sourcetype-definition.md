@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:43:52.591Z
 last_ai_edit: 2026-04-13T18:43:52.591Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8cdbea6b95299cc0
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-graphify-add-graphifyconfig-type-and-graphify-sourcetyp-286304.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - data processing
   - schema
 ---
+
 
 # Graphify Configuration Type and SourceType Definition
 

@@ -1,16 +1,21 @@
 ---
-status: failed
+status: processed
 source_type: graphify-community
 repo: maison-agent
 community_id: 72
 ingested_at: 2026-04-15T19:59:44.140Z
 parsed_at: 2026-04-15T19:59:44.140Z
-compiled_to: "[[Chat Window Form Generation Utilities]]"
-processed_at: 2026-04-15T20:01:32.646Z
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca6AMLmHDvhzCC42RQunJ"}
+compiled_to: "[[Chat Window Form Element Grouping Utilities]]"
+processed_at: 2026-04-17T03:39:31.955Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

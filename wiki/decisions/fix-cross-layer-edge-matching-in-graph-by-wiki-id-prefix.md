@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:05:45.208Z
 last_ai_edit: 2026-04-13T16:05:45.208Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e7daa3b11d1c5e4f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-graph-match-cross-layer-edges-using-repo-name-prefix-in-6f63fd.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - graphify
   - cross-layer-edges
 ---
+
 
 # Fix: Cross-Layer Edge Matching in Graph by Wiki ID Prefix
 

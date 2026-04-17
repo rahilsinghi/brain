@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:17:48.433Z
 last_ai_edit: 2026-04-12T21:17:48.433Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 282f2a1b15f6d972
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-voice-add-transcriptionprovider-with-local-whispercpp-94a3d3.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - testing
   - feature
 ---
+
 
 # TranscriptionProvider with Local whisper.cpp and OpenAI Implementations in Brain Project
 

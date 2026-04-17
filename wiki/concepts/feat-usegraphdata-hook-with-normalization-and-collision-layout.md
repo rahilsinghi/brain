@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:19:01.740Z
 last_ai_edit: 2026-04-10T19:19:01.740Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 82cf39e5103579e9
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-usegraphdata-hook-with-normalization-and-collis-4038ea.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - code commit
   - ai assistance
 ---
+
 
 # feat: useGraphData Hook with Normalization and Collision Layout
 

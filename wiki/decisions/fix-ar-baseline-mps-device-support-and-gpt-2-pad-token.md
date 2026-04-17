@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:14:29.325Z
 last_ai_edit: 2026-04-12T18:14:29.325Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f6a64ae946ff7a5d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-fix-ar-baseline-add-mps-device-support-and-gpt-2-pad-9f0b66.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - gaze-diffuse
   - apple silicon
 ---
+
 
 # Fix: AR Baseline - MPS Device Support and GPT-2 Pad Token
 

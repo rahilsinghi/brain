@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:09:31.159Z
 last_ai_edit: 2026-04-10T19:09:31.159Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 779e06619e0d20ab
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-deescalation-add-slack-calendar-delete-remove-linkedin-254629.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - software development
   - api integration
 ---
+
 
 # karen Project: De-escalation Feature Update (Slack/Calendar Deletion, LinkedIn Removal)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:23:17.768Z
 last_ai_edit: 2026-04-10T18:23:17.768Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 76e2ed0969842668
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-merge-pull-request-10-from-rahilsinghi-room-full-0e26f3.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - bug fix
   - development
 ---
+
 
 # Fix: Handle Room Capacity in WebSocket Join Logic (PR #10)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:16:06.043Z
 last_ai_edit: 2026-04-13T18:16:06.043Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e40ade022cc96cc5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-refactor-move-synthesizefn-type-to-src-query-synthesizets-f0dcd9.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - type-definitions
   - commit
 ---
+
 
 # Refactor: Move SynthesizeFn Type in Brain Project
 

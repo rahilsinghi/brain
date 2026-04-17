@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:42:18.831Z
 last_ai_edit: 2026-04-10T17:42:18.831Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6cb61684aab8a783
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-add-public-proposals-table-and-tension-score-column-815a44.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - why_wall
   - tensionmeter
 ---
+
 
 # Database Schema Update: Public Proposals & Tension Score
 

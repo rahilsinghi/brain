@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:57:46.440Z
 last_ai_edit: 2026-04-12T21:57:46.440Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d69be05f09364c78
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-scoreboard-use-configured-test-command-in-run-tests-94ff9f.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - code quality
   - bugfix
 ---
+
 
 # Scoreboard Fix: Configured Test Command Usage in Ouroboros
 

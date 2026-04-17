@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:04:46.892Z
 last_ai_edit: 2026-04-12T17:04:46.892Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8fd12cba0253b2df
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-experience-transform-with-metrics-merge-and-cross-fbe395.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - automation
   - content generation
 ---
+
 
 # Experience Entry to Wiki Transformation with Metrics and Cross-referencing
 

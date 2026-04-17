@@ -1,8 +1,23 @@
 ---
+status: processed
+source_type: graphify
+source_id: graphify:karen:karen_frontend_src_contexts_EscalationContext_tsx
+ingested_at: 2026-04-17T06:00:10.901Z
+parsed_at: 2026-04-17T06:00:10.901Z
+compiled_to: "[[EscalationContext.tsx]]"
+processed_at: 2026-04-17T06:06:36.433Z
+retry_count: 0
+last_error: null
+compile_progress: null
+---
+
+
+
+---
 title: "EscalationContext.tsx"
 source_file: "/Users/rahilsinghi/Desktop/karen/frontend/src/contexts/EscalationContext.tsx"
 repo: "karen"
-community: 0
+community: 1
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +27,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/frontend/src/contexts/EscalationContext.tsx`
-**Community:** 0
+**Community:** 1
 
 ## Imports
 - `useEscalation.ts`

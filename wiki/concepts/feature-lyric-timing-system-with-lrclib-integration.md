@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:19:04.096Z
 last_ai_edit: 2026-04-10T17:19:04.096Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 06d2310c28042075
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-lyric-timing-system-lrclib-synced-timing-api-03eff3.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - backend
   - synchronization
 ---
+
 
 # Feature: Lyric Timing System with LRCLIB Integration
 

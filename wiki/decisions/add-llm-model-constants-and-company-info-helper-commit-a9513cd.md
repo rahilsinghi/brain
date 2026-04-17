@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:46:25.393Z
 last_ai_edit: 2026-04-10T21:46:25.393Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: df058cc38b38b897
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-fix-add-llm-model-constants-and-company-info-help-791527.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - commit
   - career-datacenter
 ---
+
 
 # Add LLM Model Constants and Company Info Helper (Commit a9513cd)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-15T19:02:37.193Z
 last_ai_edit: 2026-04-15T19:02:37.193Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: faad4ca0663e4ee8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/gmail/emails/re-following-up-15575c.md]]"
 tags:
@@ -24,6 +24,7 @@ tags:
   - pipeline
   - agreement
 ---
+
 
 # Wilbo Project: Technical Co-founder Agreement and Next Steps
 

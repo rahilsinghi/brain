@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:03:17.307Z
 last_ai_edit: 2026-04-13T16:03:17.307Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 26f22bb637d71887
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-refactor-restructure-ideas-section-with-power-seq-93c935.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - datachat
   - nl actions
 ---
+
 
 # Refactor: Ideas Section Restructuring for Integration Intelligence Agent
 

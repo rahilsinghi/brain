@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:16:47.226Z
 last_ai_edit: 2026-04-10T21:16:47.226Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 17841cef8976306a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-live-room-overhaul-polling-participant-list-admin-st-6f8692.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - backend
   - commit
 ---
+
 
 # Flock Live Room Overhaul: Admin Control, Polling, and Participant Lists
 

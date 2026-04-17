@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:18:08.726Z
 last_ai_edit: 2026-04-12T17:18:08.726Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 78237c1f9abc48a4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-static-export-build-remove-next-font-fix-node-ac4dc6.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - frontend
   - brain-explorer
 ---
+
 
 # Fix: Static Export Build for Brain-Explorer (Next.js 16)
 

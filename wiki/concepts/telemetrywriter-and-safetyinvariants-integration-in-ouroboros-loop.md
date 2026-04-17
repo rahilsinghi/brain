@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:11:15.330Z
 last_ai_edit: 2026-04-10T19:11:15.330Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 502dba13be5b1c9e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-loop-wire-telemetrywriter-and-safetyinvariants-into-3242eb.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - cognitive traces
   - commit
 ---
+
 
 # TelemetryWriter and SafetyInvariants Integration in Ouroboros Loop
 

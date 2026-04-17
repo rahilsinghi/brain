@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:05:56.818Z
 last_ai_edit: 2026-04-10T17:05:56.818Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: db09620a41ebd51a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-chore-add-qr-code-for-judges-to-scan-flock-ruddyvercelapp-b605f5.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - commit
   - ai-assisted-development
 ---
+
 
 # QR Code Addition for Judging (Flock Project)
 

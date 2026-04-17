@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:11:34.365Z
 last_ai_edit: 2026-04-13T16:11:34.365Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 01e8f9ce9f18a323
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-resume-variantspy-engineering-focused-vs-ml-a8d355.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - script
   - ai-assisted
 ---
+
 
 # Resume Variants Generation (Career-Datacenter)
 

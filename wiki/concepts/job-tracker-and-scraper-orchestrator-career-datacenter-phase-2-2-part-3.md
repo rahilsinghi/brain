@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:12:43.102Z
 last_ai_edit: 2026-04-13T18:12:43.102Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d7f9dee23f410dcb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-add-job-tracker-and-scraper-orchestrator-phase-2-910e2d.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - automation
   - application-generation
 ---
+
 
 # Job Tracker and Scraper Orchestrator (Career-Datacenter Phase 2.2 - Part 3)
 

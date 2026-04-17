@@ -2,7 +2,7 @@
 title: "projects.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/seed/transforms/projects.ts"
 repo: "brain"
-community: 72
+community: 81
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/seed/transforms/projects.ts`
-**Community:** 72
+**Community:** 81
 
 ## Imports
 - (none)

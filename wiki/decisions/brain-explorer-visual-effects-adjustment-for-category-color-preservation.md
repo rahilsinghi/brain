@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:06:41.084Z
 last_ai_edit: 2026-04-12T22:06:41.084Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 034f362da18d2998
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-fix-effects-reduce-bloom-intensity-and-edge-opacity-d707f8.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - frontend
   - three.js
 ---
+
 
 # Brain-Explorer: Visual Effects Adjustment for Category Color Preservation
 

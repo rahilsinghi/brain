@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:41:07.076Z
 last_ai_edit: 2026-04-10T21:41:07.076Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 74f09adee4bda509
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-feat-non-blocking-mcp-pairing-return-qr-code-immediately-c49b24.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - qr-code
   - asynchronous
 ---
+
 
 # Non-blocking MCP Pairing for MarkPush
 

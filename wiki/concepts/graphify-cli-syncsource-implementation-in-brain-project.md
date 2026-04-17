@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:35:54.437Z
 last_ai_edit: 2026-04-13T18:35:54.437Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2fab37baa4500314
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-graphify-implement-syncsource-that-shells-out-to-graphi-2af73c.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - child_process
   - esm
 ---
+
 
 # Graphify CLI SyncSource Implementation in Brain Project
 

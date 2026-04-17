@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:05:06.866Z
 last_ai_edit: 2026-04-11T00:05:06.866Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 448b995b61b04cd3
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-address-graphify-compatibility-in-wikilink-spec-f4fbba.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - compile prompt
   - architecture
 ---
+
 
 # Graphify Compatibility in Wikilink Specifications
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:13:51.341Z
 last_ai_edit: 2026-04-13T18:13:51.341Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 20cba4446623647e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-docs-wikilink-resolution-implementation-plan-847d74.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - documentation
   - backfill
 ---
+
 
 # Wikilink Resolution Implementation Plan in Brain Project
 

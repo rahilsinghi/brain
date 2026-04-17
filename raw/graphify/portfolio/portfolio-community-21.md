@@ -1,16 +1,19 @@
 ---
-status: failed
+status: processed
 source_type: graphify-community
 repo: portfolio
 community_id: 21
 ingested_at: 2026-04-13T18:25:04.300Z
 parsed_at: 2026-04-13T18:25:04.300Z
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: "JSON Parse error: Unrecognized token '`'"
+compiled_to: "[[Dynamic UI Accordion Component Framework]]"
+processed_at: 2026-04-17T02:05:14.145Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
 
 
 

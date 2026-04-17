@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:34:25.706Z
 last_ai_edit: 2026-04-11T01:34:25.706Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ac2b64310b26685b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-docs-add-phase-3-meta-learning-loop-design-spec-2961c9.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - phase3
   - claude
 ---
+
 
 # Ouroboros Phase 3 Meta-Learning Loop Design
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:40:52.848Z
 last_ai_edit: 2026-04-10T17:40:52.848Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9fd42910c38f48d2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-docs-add-project-claudemd-and-next-session-briefing-document-be96b0.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - claude
   - raag
 ---
+
 
 # Documentation for Project CLAUDE and Next-Session Briefing
 

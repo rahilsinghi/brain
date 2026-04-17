@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:03:41.295Z
 last_ai_edit: 2026-04-12T22:03:41.295Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7665ffd3a482f754
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-phase-3-meta-learning-loop-ec71d8.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - claude
   - artificial intelligence
 ---
+
 
 # Phase 3 Meta-Learning Loop (Ouroboros)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:48:21.669Z
 last_ai_edit: 2026-04-12T17:48:21.669Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: eaff286ae163c4a5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-query-synthesis-with-vector-search-and-claude-api-77e8ff.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - information retrieval
   - nlp
 ---
+
 
 # Query Synthesis with Vector Search and Claude API (Brain Project)
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:18:42.016Z
 last_ai_edit: 2026-04-10T15:18:42.016Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4811153c0c288444
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-feat-cinematic-map-overhaul-with-fixes-5-fe643b.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - pr5
   - bugfix
 ---
+
 
 # Cinematic Map Overhaul and Fixes (PR #5)
 

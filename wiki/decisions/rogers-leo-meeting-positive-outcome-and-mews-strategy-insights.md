@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:27:56.061Z
 last_ai_edit: 2026-04-12T18:27:56.061Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5c59284f543b664e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-track-rogers-leo-meeting-completed-positive-out-685754.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - datacenter
   - follow-up
 ---
+
 
 # Rogers Leo Meeting: Positive Outcome and Mews' Strategy Insights
 

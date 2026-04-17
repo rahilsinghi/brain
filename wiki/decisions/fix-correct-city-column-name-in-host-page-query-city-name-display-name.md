@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T02:45:09.643Z
 last_ai_edit: 2026-04-10T02:45:09.643Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 1c4dbd7081a8f9ea
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-correct-city-column-name-in-host-page-query-city-name-83bd81.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - schema
   - query
 ---
+
 
 # Fix: Correct City Column Name in Host Page Query (city_name → display_name)
 

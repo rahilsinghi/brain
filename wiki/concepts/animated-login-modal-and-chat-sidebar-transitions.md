@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:26:57.048Z
 last_ai_edit: 2026-04-10T22:26:57.048Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0a28d15c35f13da8
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-feat-animated-login-modal-and-chat-sidebar-transitions-6bd412.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - raag
   - frontend
 ---
+
 
 # Animated Login Modal and Chat Sidebar Transitions
 

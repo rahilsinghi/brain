@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:11:54.657Z
 last_ai_edit: 2026-04-11T00:11:54.657Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c0a3250f706a91bf
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-ouroboros-the-real-world-score-is-measured-by-a-docstring-a74672.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - metrics
   - python
 ---
+
 
 # Ouroboros: Real_World Score Docstring Coverage Analysis
 

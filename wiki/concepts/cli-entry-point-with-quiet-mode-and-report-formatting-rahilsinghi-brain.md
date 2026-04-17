@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:13:44.483Z
 last_ai_edit: 2026-04-10T22:13:44.483Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: cdbc9ec85b007b0e
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-sources-cli-entry-point-with-quiet-mode-and-report-form-503fb1.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - commit
   - development
 ---
+
 
 # CLI Entry Point with Quiet Mode and Report Formatting (rahilsinghi/brain)
 

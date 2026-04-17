@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:13:55.240Z
 last_ai_edit: 2026-04-10T15:13:55.240Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3f6f59f1e2335c39
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-audio-integration-elevenlabs-tts-quips-and-backgroun-02656a.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - karen
   - project
 ---
+
 
 # Karen Project: Audio Integration
 

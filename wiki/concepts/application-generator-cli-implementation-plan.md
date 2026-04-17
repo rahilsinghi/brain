@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:29:16.836Z
 last_ai_edit: 2026-04-12T17:29:16.836Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3a5570e07aa5bbe4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-comprehensive-application-generator-cli-e0f1ec.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - roadmap
   - career-datacenter
 ---
+
 
 # Application Generator CLI Implementation Plan
 

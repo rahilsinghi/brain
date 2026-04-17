@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:19:33.568Z
 last_ai_edit: 2026-04-10T15:19:33.568Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8c38cd39ad3d47e6
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-markpush-docs-update-claudemd-with-e2e-findings-transport-decisio-f5d8e5.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - claude.md
   - rahil singhi
 ---
+
 
 # Documentation Update: CLAUDE.md in MarkPush
 

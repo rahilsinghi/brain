@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:13:25.395Z
 last_ai_edit: 2026-04-10T21:13:25.395Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b48b68027ce27dcc
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-feat-backend-composite-investigate-location-tool-for-reliab-a62c73.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - debugging
   - asknyc
 ---
+
 
 # Composite `investigate_location` Tool for Gemini Live
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:21:49.472Z
 last_ai_edit: 2026-04-11T00:21:49.472Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 664b80db77667f46
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-loop-filter-blocked-paths-from-source-context-sent-t-5ac175.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - source context
   - commit
 ---
+
 
 # Filtering Blocked Paths from Source Context in Ouroboros
 

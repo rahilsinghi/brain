@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:09:16.011Z
 last_ai_edit: 2026-04-12T21:09:16.011Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c808d28f2a04429c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-graph-resolve-bare-wikilink-targets-to-full-node-ids-6a8deb.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - link resolution
   - data deduplication
 ---
+
 
 # Graph Fix: Resolving Bare Wikilink Targets to Full Node IDs
 

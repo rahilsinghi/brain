@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T15:50:33.627Z
 last_ai_edit: 2026-04-13T15:50:33.627Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f63dae1beee2158f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-loop-filter-blocked-paths-from-source-context-sent-t-5ac175.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - efficiency
   - claude opus
 ---
+
 
 # Ouroboros: Strategist Context Filtering for Blocked Paths
 

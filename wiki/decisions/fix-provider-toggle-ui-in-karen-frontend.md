@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:23:35.496Z
 last_ai_edit: 2026-04-11T00:23:35.496Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: d7e9062c4699724b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-make-provider-toggle-look-like-an-actual-toggle-d1c999.md]]"
 tags:
@@ -14,6 +14,7 @@ tags:
   - bugfix
   - karen
 ---
+
 
 # Fix: Provider Toggle UI in Karen Frontend
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:25:53.791Z
 last_ai_edit: 2026-04-10T21:25:53.791Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: af42e1e7af2912ea
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-resolve-matter-for-bharath-mahesh-gera-416c67.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - bharath mahesh gera
   - 2026-04-04
 ---
+
 
 # Karen: Resolve Matter for Bharath Mahesh Gera (Commit 118aab0)
 

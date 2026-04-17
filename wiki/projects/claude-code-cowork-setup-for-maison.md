@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-15T19:44:23.264Z
 last_ai_edit: 2026-04-15T19:44:23.264Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: dad988b2ad6c9d28
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/maison-notion-claude-code-cowork-setup-account-structur-1776280632892.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - commercial
   - github
 ---
+
 
 # Claude Code & Cowork Setup for Maison
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:17:08.406Z
 last_ai_edit: 2026-04-12T22:17:08.406Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 110945452337ca64
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-ui-add-projectsticker-component-with-infinite-css-s-21d185.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - feature
   - frontend
 ---
+
 
 # ProjectsTicker Component with Infinite CSS Scroll
 

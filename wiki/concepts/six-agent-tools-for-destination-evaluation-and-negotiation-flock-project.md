@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:12:36.389Z
 last_ai_edit: 2026-04-12T17:12:36.389Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 88c9e10122ef13e5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-feat-six-agent-tools-for-destination-evaluation-and-negotiati-a071fe.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - travel tech
   - multi-agent systems
 ---
+
 
 # Six Agent Tools for Destination Evaluation and Negotiation (Flock Project)
 

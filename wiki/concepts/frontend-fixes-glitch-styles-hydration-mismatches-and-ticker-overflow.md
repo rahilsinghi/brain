@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:19:59.810Z
 last_ai_edit: 2026-04-12T21:19:59.810Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0ea4ed56cab4ae52
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-fix-move-glitch-styles-to-globalscss-fix-hydration-mism-c9ca41.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - userexperience
   - projects
 ---
+
 
 # Frontend Fixes: Glitch Styles, Hydration Mismatches, and Ticker Overflow
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:06:10.294Z
 last_ai_edit: 2026-04-13T16:06:10.294Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: fa4929d3ca9103ee
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-seed-wiki-frontmatter-helpers-and-ref-id-link-resol-a27a3e.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - brain project
   - development
 ---
+
 
 # Wiki Frontmatter Helpers and Reference Link Resolution
 

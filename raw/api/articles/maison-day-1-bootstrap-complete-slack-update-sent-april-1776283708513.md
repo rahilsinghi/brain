@@ -1,16 +1,19 @@
 ---
-status: failed
+status: processed
 source_type: api
 channel: claude-code
 source_id: api/articles/maison-day-1-bootstrap-complete-slack-update-sent-april-1776283708513.md
 ingested_at: 2026-04-15T20:08:28.514Z
 parsed_at: null
-compiled_to: null
-processed_at: null
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Ca6ALnGg129dx5wF7BBYp"}
+compiled_to: "[[Maison Day 1 — Bootstrap Complete]]"
+processed_at: 2026-04-17T02:02:07.678Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
 
 
 

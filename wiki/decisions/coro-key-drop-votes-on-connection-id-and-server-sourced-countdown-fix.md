@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T22:09:12.435Z
 last_ai_edit: 2026-04-12T22:09:12.435Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 10a62355034cc698
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-merge-pull-request-17-from-rahilsinghi-fix-drop-connection-id-d04a01.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - connection id
   - game mechanics
 ---
+
 
 # Coro: Key Drop Votes on Connection ID and Server-Sourced Countdown Fix
 

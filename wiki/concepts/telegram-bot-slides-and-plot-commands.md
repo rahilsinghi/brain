@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:29:55.941Z
 last_ai_edit: 2026-04-11T00:29:55.941Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a43012ebb2bb73fb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-add-slides-and-plot-commands-with-two-messag-0cee36.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - testing
   - claude
 ---
+
 
 # Telegram Bot: /slides and /plot Commands
 

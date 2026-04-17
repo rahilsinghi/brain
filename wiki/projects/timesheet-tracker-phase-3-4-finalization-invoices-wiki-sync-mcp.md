@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-15T21:18:22.891Z
 last_ai_edit: 2026-04-15T21:18:22.891Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 950816eec5f6e0a7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/timesheet-tracker-phase-3-4-complete-invoices-wiki-sync-1776287877496.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - cron
   - testing
 ---
+
 
 # Timesheet Tracker Phase 3+4 — Finalization, Invoices, Wiki Sync, MCP
 

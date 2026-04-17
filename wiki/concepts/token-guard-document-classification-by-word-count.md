@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:15:00.218Z
 last_ai_edit: 2026-04-10T18:15:00.218Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 03ba45f2c0dcb20d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-token-guard-classifies-documents-by-word-count-5e430b.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - brain project
   - feature
 ---
+
 
 # Token Guard Document Classification by Word Count
 

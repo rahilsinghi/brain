@@ -1,15 +1,20 @@
 ---
-status: failed
+status: processed
 source_type: gmail
 source_id: 19d726aab19a469d
 ingested_at: 2026-04-10T11:49:45.171Z
 parsed_at: 2026-04-10T11:49:45.171Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Functional Essentials: Easy-care Linen]]"
+processed_at: 2026-04-17T05:13:25.189Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3Jutf2aybybYVcvDr8"}
+last_error: The operation timed out.
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:05:59.865Z
 last_ai_edit: 2026-04-10T19:05:59.865Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9c00a68f77d64223
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-scoreboard-fix-complexity-scoring-wire-cost-trackin-513d57.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - code_quality
   - llm_agent
 ---
+
 
 # Scoreboard Fixes and Improvements (Ouroboros)
 

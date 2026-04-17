@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:25:46.873Z
 last_ai_edit: 2026-04-10T17:25:46.873Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 4466651fd82b700f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-cover-letter-networking-and-interview-80887b.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - documentation
   - rahil singhi
 ---
+
 
 # Career Datacenter: Job Search Preparation Guides
 

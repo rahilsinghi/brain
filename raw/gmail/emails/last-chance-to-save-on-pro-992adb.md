@@ -4,12 +4,17 @@ source_type: gmail
 source_id: 19d7279ce0fa4345
 ingested_at: 2026-04-10T11:49:45.170Z
 parsed_at: 2026-04-10T11:49:45.170Z
-compiled_to: null
-processed_at: null
+compiled_to: "[[Codecademy Pro Discount Offer (50% Off, April 2026)]]"
+processed_at: 2026-04-17T04:01:23.415Z
 retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZv3Jihi23zzroHkXhgFx"}
+last_error: The operation timed out.
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

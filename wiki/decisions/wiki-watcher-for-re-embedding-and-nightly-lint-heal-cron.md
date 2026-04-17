@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:13:18.240Z
 last_ai_edit: 2026-04-10T18:13:18.240Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 22754fffa88781c5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-wire-wiki-watcher-for-re-embedding-and-nightly-lint-heal-48fac4.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - vectorstore
   - git
 ---
+
 
 # Wiki Watcher for Re-embedding and Nightly Lint/Heal Cron
 

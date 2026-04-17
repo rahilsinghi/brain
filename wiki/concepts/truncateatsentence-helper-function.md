@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:22:54.349Z
 last_ai_edit: 2026-04-10T21:22:54.349Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c4c223794881e2d1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-add-truncateatsentence-helper-014e2e.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - ai-assisted
   - javascript
 ---
+
 
 # truncateAtSentence() Helper Function
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:24:20.294Z
 last_ai_edit: 2026-04-12T17:24:20.294Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f6c53c5f625b643f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-theme-add-first-visit-theme-chooser-overlay-199797.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - accessibility
   - animation
 ---
+
 
 # First-Visit Theme Chooser Overlay (Portfolio)
 

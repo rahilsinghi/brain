@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:32:16.432Z
 last_ai_edit: 2026-04-12T17:32:16.432Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ff0de188db024c96
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-chore-remove-claudemd-and-everything-claude-code-from-977b66.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - claude.md
   - submodule
 ---
+
 
 # Removal of CLAUDE.md and everything-claude-code Submodule from Gaze-Diffuse
 

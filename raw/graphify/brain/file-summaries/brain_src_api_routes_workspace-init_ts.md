@@ -2,7 +2,7 @@
 title: "workspace-init.ts"
 source_file: "/Users/rahilsinghi/Desktop/brain/src/api/routes/workspace-init.ts"
 repo: "brain"
-community: 25
+community: 19
 file_type: code
 author: ai
 tags: [code-architecture, brain]
@@ -12,7 +12,7 @@ tags: [code-architecture, brain]
 
 **Repository:** brain
 **File:** `/Users/rahilsinghi/Desktop/brain/src/api/routes/workspace-init.ts`
-**Community:** 25
+**Community:** 19
 
 ## Imports
 - (none)

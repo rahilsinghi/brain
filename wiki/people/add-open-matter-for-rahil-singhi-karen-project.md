@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:54:12.742Z
 last_ai_edit: 2026-04-12T17:54:12.742Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8cf34048a274faf6
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-add-open-matter-for-rahil-singhi-737518.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - commit
   - project management
 ---
+
 
 # Add Open Matter for Rahil Singhi (Karen Project)
 

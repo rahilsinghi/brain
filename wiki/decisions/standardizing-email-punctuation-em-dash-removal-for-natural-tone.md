@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:15:22.137Z
 last_ai_edit: 2026-04-10T21:15:22.137Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 351a9622a542ae5d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-remove-em-dashes-from-all-human-facing-email-copy-564bbd.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - code cleanup
   - project:career-datacenter
 ---
+
 
 # Standardizing Email Punctuation: Em Dash Removal for Natural Tone
 

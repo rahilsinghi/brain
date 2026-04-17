@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:07:05.889Z
 last_ai_edit: 2026-04-10T18:07:05.889Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 20a5b2632c564215
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-feat-add-custom-cursor-with-green-dot-ring-expands-on-50b81e.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - lerp
   - hover
 ---
+
 
 # Custom Cursor with Interactive Expanding Ring
 

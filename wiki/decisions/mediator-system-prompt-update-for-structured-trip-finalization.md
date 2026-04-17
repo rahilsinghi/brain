@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:35:12.955Z
 last_ai_edit: 2026-04-10T21:35:12.955Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 60b510b2c7673ca4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-flock-fix-mediator-must-call-finalize-trip-tool-not-describe-trip-ed409d.md]]"
 tags:
@@ -20,6 +20,7 @@ tags:
   - post_mediator_proposal
   - development
 ---
+
 
 # Mediator System Prompt Update for Structured Trip Finalization
 

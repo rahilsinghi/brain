@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:42:54.878Z
 last_ai_edit: 2026-04-13T17:42:54.878Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a48962bba4594440
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-llm-default-auto-mode-to-gemini-vertex-ai-over-anthro-a41a19.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - model selection
   - optimization
 ---
+
 
 # LLM Defaulting to Gemini (Vertex AI) Over Anthropic Due to Credit Exhaustion
 

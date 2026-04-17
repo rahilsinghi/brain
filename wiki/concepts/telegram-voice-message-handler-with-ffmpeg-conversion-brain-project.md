@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:23:25.666Z
 last_ai_edit: 2026-04-11T00:23:25.666Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 21babdd26e945af7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-implement-voice-message-handler-with-ffmpeg-co-059a6e.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - rahilsinghi/brain
   - feature
 ---
+
 
 # Telegram Voice Message Handler with FFmpeg Conversion (Brain Project)
 

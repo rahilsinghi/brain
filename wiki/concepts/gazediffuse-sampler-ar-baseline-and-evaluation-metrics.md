@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:24:45.311Z
 last_ai_edit: 2026-04-11T00:24:45.311Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2a7e4a5904945a29
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-gaze-diffuse-feat-add-gazediffuse-sampler-ar-baseline-and-evaluat-3611db.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - machine learning
   - research
 ---
+
 
 # GazeDiffuse Sampler, AR Baseline, and Evaluation Metrics
 

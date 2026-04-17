@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:34:00.677Z
 last_ai_edit: 2026-04-12T17:34:00.677Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: dc27705ffb5bef90
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-feat-coordinated-drop-button-3-presses-in-2s-triggers-bass-aa068a.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - lyria
   - gemini
 ---
+
 
 # Coordinated Drop Button: Bass Drop Trigger in Coro
 

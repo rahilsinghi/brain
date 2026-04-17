@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:12:31.366Z
 last_ai_edit: 2026-04-10T15:12:31.366Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7ffb4882d0df9f26
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-resolve-4-critical-issues-in-escalation-ui-b8730c.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - typescript
   - css
 ---
+
 
 # Fix: Resolve Critical Issues in Escalation UI (Commit 4baf291)
 

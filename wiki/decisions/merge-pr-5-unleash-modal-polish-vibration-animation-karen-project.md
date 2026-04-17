@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:05:11.112Z
 last_ai_edit: 2026-04-12T17:05:11.112Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 26e8b08389bbeab4
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-merge-pr-5-unleash-modal-polish-vibration-animation-30d338.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - frontend
   - development
 ---
+
 
 # Merge: PR #5 — Unleash Modal Polish + Vibration Animation (Karen Project)
 

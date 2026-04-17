@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T17:35:11.434Z
 last_ai_edit: 2026-04-10T17:35:11.434Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: ef24eac18dbf3a6d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-chore-simplify-frontend-https-drop-explicit-cert-paths-961846.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - raag
   - mkcert
 ---
+
 
 # Frontend HTTPS Simplification in raag: Dropping Explicit Cert Paths
 

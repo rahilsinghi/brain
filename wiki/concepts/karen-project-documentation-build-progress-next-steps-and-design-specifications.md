@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:08:38.831Z
 last_ai_edit: 2026-04-10T21:08:38.831Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0e0c1fb3581ab924
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-docs-build-progress-next-steps-and-design-specs-897bcf.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - project-management
   - development
 ---
+
 
 # Karen Project Documentation: Build Progress, Next Steps, and Design Specifications
 

@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:30:27.085Z
 last_ai_edit: 2026-04-11T01:30:27.085Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3b16e7ba3260d6c0
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-voice-use-whisper-cli-binary-m-f-flags-resolve-model-73afb3.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - fix
   - brain-project
 ---
+
 
 # Voice Transcription Fix: `whisper-cli` Migration and `large-v3-turbo` Upgrade
 

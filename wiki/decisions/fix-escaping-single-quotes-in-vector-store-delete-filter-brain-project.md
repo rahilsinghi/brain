@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:34:54.420Z
 last_ai_edit: 2026-04-12T21:34:54.420Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 071d9be9f72a0a4d
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-fix-escape-single-quotes-in-vector-store-delete-filter-7c531c.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - input sanitization
   - brain project
 ---
+
 
 # Fix: Escaping Single Quotes in Vector Store Delete Filter (Brain Project)
 

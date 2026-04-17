@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T00:29:50.454Z
 last_ai_edit: 2026-04-11T00:29:50.454Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 69333e51ee217aa5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-spiderrock-interview-prep-and-quant-deve-9511cc.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - spiderrock
   - career-datacenter
 ---
+
 
 # SpiderRock Interview Prep and Quantitative Developer Resume
 

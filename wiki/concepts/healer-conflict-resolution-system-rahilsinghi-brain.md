@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:06:06.341Z
 last_ai_edit: 2026-04-10T22:06:06.341Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b9048e63df7f3137
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-healer-with-conflict-rules-contradiction-flags-and-pro-3c673f.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - claude_sonnet
   - brain_project
 ---
+
 
 # Healer Conflict Resolution System (rahilsinghi/brain)
 

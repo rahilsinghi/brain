@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T17:35:46.968Z
 last_ai_edit: 2026-04-13T17:35:46.968Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: b6aede37e358fb8c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-chore-gitignore-next-envdts-and-tsbuildinfo-55f43a.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - asknyc
   - development
 ---
+
 
 # Gitignore Update for TypeScript Build Artifacts in askNYC
 

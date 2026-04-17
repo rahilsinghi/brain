@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:21:10.648Z
 last_ai_edit: 2026-04-10T19:21:10.648Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6f7107dde555715b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-fix-frontend-restore-missing-features-build-fixes-for-pr-r-103fe1.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - rahil singhi
   - claude opus 4.6
 ---
+
 
 # Karen Frontend Restoration and Build Fixes (d557255)
 

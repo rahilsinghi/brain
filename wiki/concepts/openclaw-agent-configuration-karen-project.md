@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:29:14.200Z
 last_ai_edit: 2026-04-11T01:29:14.200Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 6e55278d5314aae2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-karen-feat-openclaw-agent-configuration-d87984.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - identity docs
   - fedex template
 ---
+
 
 # OpenClaw Agent Configuration (Karen Project)
 

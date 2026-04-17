@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T21:32:46.540Z
 last_ai_edit: 2026-04-10T21:32:46.540Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0f9322c6ffa93d02
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-docs-update-model-to-gemini-live-25-flash-native-audio-add-68745e.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - asknyc
   - google cloud
 ---
+
 
 # Update Model to Gemini-Live-2.5-Flash-Native-Audio and Add Vertex AI Env Vars
 

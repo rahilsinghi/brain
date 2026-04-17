@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:15:48.299Z
 last_ai_edit: 2026-04-13T18:15:48.299Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 9669313d69942539
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-telegram-implement-createtelegrambot-with-message-han-8c0e04.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - commands
   - voice processing
 ---
+
 
 # Telegram Bot Implementation: `createTelegramBot()` with Message Handlers
 

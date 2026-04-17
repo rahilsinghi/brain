@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:15:14.698Z
 last_ai_edit: 2026-04-13T18:15:14.698Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 55e12022e1b36507
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-gmail-replace-mcp-dependency-with-direct-googleapis-oau-d677ff.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - brain
   - cli
 ---
+
 
 # Gmail Source: Replacing MCP Dependency with Googleapis OAuth2 API in Brain
 

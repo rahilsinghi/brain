@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:03:13.661Z
 last_ai_edit: 2026-04-12T18:03:13.661Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 54610c8712e31dd0
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-raag-chore-add-everything-claude-code-as-submodule-141048.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - development
   - workflow
 ---
+
 
 # Add everything-claude-code as Git Submodule to raag
 

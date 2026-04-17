@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T18:00:57.782Z
 last_ai_edit: 2026-04-12T18:00:57.782Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c256bdfb45ededbc
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-chokidar-file-watcher-with-parse-then-compile-pipeline-91a7b8.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - knowledge graph
   - development
 ---
+
 
 # Chokidar File Watcher with Parse-Then-Compile Pipeline (Brain Project)
 

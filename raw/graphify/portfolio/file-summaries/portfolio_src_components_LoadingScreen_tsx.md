@@ -2,7 +2,7 @@
 title: "LoadingScreen.tsx"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/src/components/LoadingScreen.tsx"
 repo: "portfolio"
-community: 5
+community: 6
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/src/components/LoadingScreen.tsx`
-**Community:** 5
+**Community:** 6
 
 ## Imports
 - `ClientSections.tsx`

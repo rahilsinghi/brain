@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-11T01:27:22.989Z
 last_ai_edit: 2026-04-11T01:27:22.989Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 3135c3d4116d3758
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-asknyc-chore-gitignore-next-envdts-and-tsbuildinfo-55f43a.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - asknyc
   - version control
 ---
+
 
 # Ignoring next-env.d.ts and .tsbuildinfo Files in askNYC
 

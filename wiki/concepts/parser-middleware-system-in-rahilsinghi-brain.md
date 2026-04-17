@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T22:25:25.337Z
 last_ai_edit: 2026-04-10T22:25:25.337Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7591e1388024d9ff
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-parser-middleware-with-router-passthrough-html-and-pl-ad6206.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - development
   - feature
 ---
+
 
 # Parser Middleware System in rahilsinghi/brain
 

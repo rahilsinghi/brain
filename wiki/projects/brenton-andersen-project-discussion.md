@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T18:53:39.868Z
 last_ai_edit: 2026-04-10T18:53:39.868Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a1fd1d89f59c6184
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/the-call-with-brenton-went-great-we-spoke-about-how-he-woul-1775847203233.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - job offer
   - startup
 ---
+
 
 # Brenton Andersen Project Discussion
 

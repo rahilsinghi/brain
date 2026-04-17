@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:16:50.701Z
 last_ai_edit: 2026-04-12T21:16:50.701Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7e2d1b8f567939ea
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-explorer-feat-simulation-add-createforcesimulation-and-syncp-7ee393.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - testing
   - commit
 ---
+
 
 # Force Simulation for Brain-Explorer Graph Visualization
 

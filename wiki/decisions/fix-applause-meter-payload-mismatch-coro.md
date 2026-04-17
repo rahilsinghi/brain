@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:56:29.302Z
 last_ai_edit: 2026-04-12T17:56:29.302Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e6c65005eb7c3fe5
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-coro-fix-applause-meter-payload-mismatch-level-vs-volume-89588e.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - software development
   - commit
 ---
+
 
 # Fix: Applause Meter Payload Mismatch (Coro)
 

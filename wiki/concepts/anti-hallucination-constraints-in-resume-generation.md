@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:07:46.030Z
 last_ai_edit: 2026-04-13T18:07:46.030Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 84628c9a7740d182
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-strengthen-anti-hallucination-constraints-in-resum-8eab9b.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - career-datacenter
   - data integrity
 ---
+
 
 # Anti-Hallucination Constraints in Resume Generation
 

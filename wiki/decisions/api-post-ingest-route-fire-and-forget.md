@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T21:09:34.955Z
 last_ai_edit: 2026-04-12T21:09:34.955Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: f8704295c509008f
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-brain-feat-api-post-ingest-route-with-fire-and-forget-raw-drops-375cc4.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - data processing
   - commit
 ---
+
 
 # API: POST /ingest Route (Fire-and-Forget)
 

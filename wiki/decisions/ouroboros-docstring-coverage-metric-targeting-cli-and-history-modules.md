@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T02:47:32.289Z
 last_ai_edit: 2026-04-10T02:47:32.289Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e0cf421ab36e4bb2
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-ouroboros-the-real-world-score-is-measured-by-a-docstring-a74672.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - metrics
   - rahil-singhi
 ---
+
 
 # Ouroboros: Docstring Coverage Metric Targeting CLI and History Modules
 

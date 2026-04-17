@@ -2,7 +2,7 @@
 title: "bidi.ts"
 source_file: "/Users/rahilsinghi/Desktop/portfolio/pretext/src/bidi.ts"
 repo: "portfolio"
-community: 44
+community: 43
 file_type: code
 author: ai
 tags: [code-architecture, portfolio]
@@ -12,7 +12,7 @@ tags: [code-architecture, portfolio]
 
 **Repository:** portfolio
 **File:** `/Users/rahilsinghi/Desktop/portfolio/pretext/src/bidi.ts`
-**Community:** 44
+**Community:** 43
 
 ## Imports
 - (none)

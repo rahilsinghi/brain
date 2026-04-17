@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T18:11:40.368Z
 last_ai_edit: 2026-04-13T18:11:40.368Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 8d69e3eb1daa441b
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-graphify-fix-import-extract-function-directly-from-graphifyextract-548c3f.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - callable
   - lazy-import
 ---
+
 
 # Fix: Direct Import of `extract` Function in Graphify
 

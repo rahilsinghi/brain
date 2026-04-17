@@ -1,14 +1,19 @@
 ---
-status: failed
+status: processed
 source_type: gmail
 ingested_at: 2026-04-09T21:50:00.000Z
 parsed_at: 2026-04-09T21:50:00.000Z
-compiled_to: "[[Maison AI Recruitment Thread — Rahil (2026)]]"
-processed_at: 2026-04-10T02:07:30.130Z
-retry_count: 1
-last_error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZuM6YrPASgtthYJibqBT"}
+compiled_to: "[[Maison — AI Recruitment Thread]]"
+processed_at: 2026-04-17T04:18:04.367Z
+retry_count: 0
+last_error: null
 compile_progress: null
 ---
+
+
+
+
+
 
 
 

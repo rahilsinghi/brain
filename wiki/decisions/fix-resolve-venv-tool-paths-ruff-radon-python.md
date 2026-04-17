@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:24:34.210Z
 last_ai_edit: 2026-04-10T19:24:34.210Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: da4c964658519065
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-fix-scoreboard-resolve-venv-tool-paths-for-ruff-radon-d7c4cd.md]]"
 tags:
@@ -18,6 +18,7 @@ tags:
   - bugfix
   - ouroboros
 ---
+
 
 # Fix: Resolve Venv Tool Paths (Ruff, Radon, Python)
 

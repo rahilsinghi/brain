@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-13T16:10:28.029Z
 last_ai_edit: 2026-04-13T16:10:28.029Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 5ba1e162c12400f7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-career-datacenter-docs-add-claudemd-agent-instructions-and-hospita-a4ed08.md]]"
 tags:
@@ -17,6 +17,7 @@ tags:
   - ai-context
   - career-management
 ---
+
 
 # CLAUDE.md Agent Instructions and Hospitality Outreach Playbook in Career-Datacenter
 

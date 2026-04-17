@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:23:17.184Z
 last_ai_edit: 2026-04-10T19:23:17.184Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: bb4ca425c7a64d77
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-ouroboros-feat-agents-enrich-observer-prompt-and-expand-ledger-sum-797208.md]]"
 tags:
@@ -19,6 +19,7 @@ tags:
   - ai-assisted
   - system-enhancement
 ---
+
 
 # Agent Observer and Ledger Summary Enhancements
 

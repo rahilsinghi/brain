@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T15:22:53.738Z
 last_ai_edit: 2026-04-10T15:22:53.738Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: e0db67853ffb4ae7
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-dotfiles-docs-add-dotfiles-sync-section-to-claudemd-3ce139.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - github
   - ai-assisted-development
 ---
+
 
 # Documentation: Dotfiles Sync Section Added to CLAUDE.md
 

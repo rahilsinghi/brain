@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-12T17:30:50.620Z
 last_ai_edit: 2026-04-12T17:30:50.620Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0cf277859bdc086a
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-add-open-matter-for-rahil-singhi-dd8062.md]]"
 tags:
@@ -15,6 +15,7 @@ tags:
   - portfolio
   - task management
 ---
+
 
 # Karen: Add Open Matter for Rahil Singhi (Commit aae073a)
 

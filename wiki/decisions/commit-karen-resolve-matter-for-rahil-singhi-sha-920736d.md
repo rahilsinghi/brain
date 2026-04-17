@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-10T19:24:49.975Z
 last_ai_edit: 2026-04-10T19:24:49.975Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: eb73d6994844924c
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/github/commits/rahilsinghi-portfolio-karen-resolve-matter-for-rahil-singhi-92f4f1.md]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - code change
   - rahil singhi
 ---
+
 
 # Commit: Karen - Resolve Matter for Rahil Singhi (SHA 920736d)
 

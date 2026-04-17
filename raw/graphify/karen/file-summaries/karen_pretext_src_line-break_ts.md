@@ -2,7 +2,7 @@
 title: "line-break.ts"
 source_file: "/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts"
 repo: "karen"
-community: 15
+community: 14
 file_type: code
 author: ai
 tags: [code-architecture, karen]
@@ -12,7 +12,7 @@ tags: [code-architecture, karen]
 
 **Repository:** karen
 **File:** `/Users/rahilsinghi/Desktop/karen/pretext/src/line-break.ts`
-**Community:** 15
+**Community:** 14
 
 ## Imports
 - (none)
