@@ -3,6 +3,7 @@ import { readdirSync, existsSync } from "node:fs";
 import { join, relative } from "node:path";
 import { readFrontmatter, updateFrontmatter } from "../frontmatter.js";
 import { chunkMarkdown } from "./chunker.js";
+import { extractFacts } from "./fact-extractor.js";
 import { VectorStore } from "./vector-store.js";
 import type { WikiChunk } from "../types.js";
 
@@ -50,6 +51,22 @@ export async function syncFile(
 
   const chunks = chunkMarkdown(content, relPath);
   if (chunks.length === 0) return 0;
+
+  // Extract structured facts (tables, bold-key patterns, frontmatter)
+  // and add as a companion chunk for better factual retrieval
+  const { data } = readFrontmatter(filePath);
+  const articleTitle = (data.title as string) || relPath;
+  const factsText = extractFacts(content, articleTitle);
+  if (factsText) {
+    chunks.push({
+      id: `${relPath}::FACTS`,
+      filePath: relPath,
+      breadcrumb: `${articleTitle} → Extracted Facts`,
+      heading: "Extracted Facts",
+      content: factsText,
+      sectionHash: createHash("sha256").update(factsText).digest("hex").slice(0, 12),
+    });
+  }
 
   const { embed } = await import("./embedder.js");
   const chunksWithVectors: WikiChunk[] = [];
