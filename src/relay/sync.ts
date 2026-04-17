@@ -105,6 +105,17 @@ async function processItem(
       return results.map((r) => (r.success ? `✓ ${r.message}` : `✗ ${r.error}`)).join("\n");
     }
 
+    case "timesheet_nl": {
+      if (!deps.timesheetDb) return "Timesheet not configured.";
+      const { handleTimesheetNL } = await import("../timesheet/nl-handler.js");
+      return await handleTimesheetNL(item.raw_text ?? "", {
+        now: new Date(),
+        timezone: "America/New_York",
+        db: deps.timesheetDb,
+        source: "telegram_text",
+      });
+    }
+
     default:
       return `Unknown type: ${item.type}`;
   }

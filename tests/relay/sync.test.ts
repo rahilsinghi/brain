@@ -292,4 +292,59 @@ describe("syncRelayInbound", () => {
     );
     expect(result.processed).toBe(1);
   });
+
+  it("processes timesheet_nl item when timesheetDb is provided", async () => {
+    const { mkdtempSync, rmSync } = await import("node:fs");
+    const { tmpdir } = await import("node:os");
+    const { TimesheetDB } = await import("../../src/timesheet/db.js");
+
+    const dir = mkdtempSync(join(tmpdir(), "brain-relay-nl-"));
+    const tdb = new TimesheetDB(join(dir, "ts.db"));
+    tdb.upsertEmployer({ id: "maison", rate_hourly: 50, weekly_cap_hours: 20, monthly_bonus: null, currency: "USD" });
+
+    // Mock generate() so no real LLM call fires
+    vi.resetModules();
+    vi.doMock("../../src/llm/provider.js", () => ({
+      generate: vi.fn().mockResolvedValue({
+        text: JSON.stringify({ entries: [{ hours: 1, employer: "maison", category: "coding", description: "x" }] }),
+        provider: "ollama",
+        model: "qwen3:32b",
+        inputTokens: 10,
+        outputTokens: 10,
+      }),
+    }));
+    const { syncRelayInbound: sync } = await import("../../src/relay/sync.js");
+
+    const item = makeItem({ id: "nl-1", type: "timesheet_nl", raw_text: "1h maison coding" });
+    const client = makeMockClient([item]);
+    const deps: SyncDeps = { ...makeDeps(client), timesheetDb: tdb };
+
+    const result = await sync(deps);
+
+    expect(client.postResponse).toHaveBeenCalledWith(
+      "nl-1",
+      expect.stringContaining("✓"),
+      "completed",
+    );
+    expect(result.processed).toBe(1);
+
+    tdb.close();
+    rmSync(dir, { recursive: true, force: true });
+    vi.doUnmock("../../src/llm/provider.js");
+  });
+
+  it("returns 'not configured' when timesheetDb missing for timesheet_nl", async () => {
+    const item = makeItem({ id: "nl-2", type: "timesheet_nl", raw_text: "1h maison coding" });
+    const client = makeMockClient([item]);
+    const deps = makeDeps(client); // no timesheetDb
+
+    const result = await syncRelayInbound(deps);
+
+    expect(client.postResponse).toHaveBeenCalledWith(
+      "nl-2",
+      expect.stringContaining("Timesheet not configured"),
+      "completed",
+    );
+    expect(result.processed).toBe(1);
+  });
 });
