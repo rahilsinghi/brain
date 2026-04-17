@@ -26,28 +26,46 @@ export interface SynthesisResult {
 
 export interface SearchableStore {
   search: (vector: number[], topK: number) => Promise<WikiChunk[]>;
-  hybridSearch?: (vector: number[], queryText: string, topK: number) => Promise<WikiChunk[]>;
+  hybridSearch?: (
+    vector: number[],
+    queryText: string,
+    topK: number,
+    opts?: { excludeFolders?: string[]; includeFolders?: string[] },
+  ) => Promise<WikiChunk[]>;
+}
+
+export interface SynthesizeOptions {
+  /** When true, include code-derived articles (wiki/codebase/) in search. Default false. */
+  includeCode?: boolean;
 }
 
 export type SynthesizeFn = (
   question: string,
   store: SearchableStore,
   topK: number,
+  opts?: SynthesizeOptions,
 ) => Promise<SynthesisResult>;
 
 export async function synthesize(
   question: string,
   store: SearchableStore,
-  topK: number = 8
+  topK: number = 8,
+  opts: SynthesizeOptions = {},
 ): Promise<SynthesisResult> {
   // Dynamic import to avoid loading the ONNX model at module import time
   const { embed } = await import("../embedder/embedder.js");
 
   const queryVector = await embed(question);
 
+  // Auto-detect code queries — boost when explicit code intent detected
+  const codeIntent = /\b(code|function|class|impl|refactor|bug|api endpoint|module|import|test file)\b/i.test(question);
+  const searchOpts = opts.includeCode || codeIntent
+    ? { excludeFolders: [] }
+    : { excludeFolders: ["wiki/codebase/"] };
+
   // Use hybrid search if available (keyword + vector), fall back to pure vector
   const chunks = store.hybridSearch
-    ? await store.hybridSearch(queryVector, question, topK)
+    ? await store.hybridSearch(queryVector, question, topK, searchOpts)
     : await store.search(queryVector, topK);
 
   if (chunks.length === 0) {

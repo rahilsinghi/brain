@@ -84,16 +84,34 @@ export class VectorStore {
     queryVector: number[],
     queryText: string,
     topK: number,
+    opts?: { excludeFolders?: string[]; includeFolders?: string[] },
   ): Promise<WikiChunk[]> {
     const table = await this.getTable();
     if (!table) return [];
 
-    // Fetch 3x candidates from vector search for re-ranking
-    const candidateLimit = Math.min(topK * 3, 50);
-    const results = await table
+    // Default: exclude wiki/codebase/ (graphify code summaries) from general search.
+    // These dominate results when many code articles exist (e.g., 273 maison-agent files).
+    // If the caller sets includeFolders, respect that; otherwise apply default exclusion.
+    const excludeFolders = opts?.excludeFolders ?? (
+      opts?.includeFolders ? [] : ["wiki/codebase/"]
+    );
+
+    // Fetch extra candidates since we may filter some out by folder
+    const fetchMultiplier = excludeFolders.length > 0 ? 5 : 3;
+    const candidateLimit = Math.min(topK * fetchMultiplier, 100);
+    const rawResults = await table
       .vectorSearch(queryVector)
       .limit(candidateLimit)
       .toArray();
+
+    // Apply folder filter
+    const results = rawResults.filter((r) => {
+      const fp = r.filePath as string;
+      if (opts?.includeFolders && opts.includeFolders.length > 0) {
+        return opts.includeFolders.some((f) => fp.startsWith(f));
+      }
+      return !excludeFolders.some((f) => fp.startsWith(f));
+    });
 
     // Extract keywords from query (lowercase, 3+ chars, no stop words)
     const stopWords = new Set([
