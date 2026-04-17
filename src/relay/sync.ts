@@ -81,8 +81,8 @@ async function processItem(
     case "timesheet_entry": {
       if (!deps.timesheetDb) return "Timesheet not configured.";
       const cmds = parseReviewCommands(item.raw_text ?? "");
-      const today = new Date().toISOString().slice(0, 10);
-      const results = applyReviewCommands(deps.timesheetDb, cmds, [], today);
+      const date = inferDateForCommands(cmds);
+      const results = applyReviewCommands(deps.timesheetDb, cmds, [], date);
       return results.map((r) => (r.success ? `✓ ${r.message}` : `✗ ${r.error}`)).join("\n");
     }
 
@@ -92,19 +92,59 @@ async function processItem(
 
     case "timesheet_reply": {
       if (!deps.timesheetDb) return "Timesheet not configured.";
-      // For now, parse the reply text as review commands against today's entries
-      // Full reply-to-report context requires the relay to pass entry_ids
+      // Parse the reply text as review commands. Date inference:
+      // - If relay passed report_date, use that (user was replying to a specific report)
+      // - Else if command has a time that's in the future today, use yesterday
+      // - Else use today
       const cmds = parseReviewCommands(item.raw_text ?? "");
-      const today = new Date().toISOString().slice(0, 10);
-      const entries = deps.timesheetDb.getEntriesByDateRange(today, today);
+      const reportDate = (item as { report_date?: string }).report_date;
+      const date = reportDate ?? inferDateForCommands(cmds);
+      const entries = deps.timesheetDb.getEntriesByDateRange(date, date);
       const entryIds = entries.map((e) => e.id);
-      const results = applyReviewCommands(deps.timesheetDb, cmds, entryIds, today);
+      const results = applyReviewCommands(deps.timesheetDb, cmds, entryIds, date);
       return results.map((r) => (r.success ? `✓ ${r.message}` : `✗ ${r.error}`)).join("\n");
     }
 
     default:
       return `Unknown type: ${item.type}`;
   }
+}
+
+/**
+ * Infer the date for a batch of review commands.
+ *
+ * Default is today, but if any add-command has a startTime that would be
+ * in the future when applied to today (e.g. user types 9:15p at 8am), the
+ * user is logging something that already happened — use yesterday.
+ *
+ * Parses 12-hour format like "9:15p" / "10:45a". Returns YYYY-MM-DD.
+ */
+function inferDateForCommands(
+  cmds: Array<{ type: string; startTime?: string }>,
+): string {
+  const now = new Date();
+  const today = now.toISOString().slice(0, 10);
+
+  for (const cmd of cmds) {
+    if (cmd.type !== "add" || !cmd.startTime) continue;
+    const m = cmd.startTime.match(/^(\d{1,2}):(\d{2})([ap])$/i);
+    if (!m) continue;
+    let hour = parseInt(m[1], 10);
+    const minute = parseInt(m[2], 10);
+    const isPM = m[3].toLowerCase() === "p";
+    if (isPM && hour !== 12) hour += 12;
+    if (!isPM && hour === 12) hour = 0;
+    // Time today in same timezone as `now`
+    const candidateToday = new Date(now);
+    candidateToday.setHours(hour, minute, 0, 0);
+    // Give a 30-minute grace window — something that "just ended" is still today
+    if (candidateToday.getTime() > now.getTime() + 30 * 60 * 1000) {
+      const y = new Date(now);
+      y.setDate(y.getDate() - 1);
+      return y.toISOString().slice(0, 10);
+    }
+  }
+  return today;
 }
 
 function getWeekBounds(dateStr: string): { start: string; end: string } {
