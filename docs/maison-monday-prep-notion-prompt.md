@@ -11,7 +11,25 @@ I'm prepping for a Phase-1 architecture lock-in meeting on **Monday April 20** w
 1. Done deep code research on the `maison-agent` monorepo (`/Users/rahilsinghi/Desktop/maison-agent`) — mapped screenshots → code, found all the PRDs in `docs/prd-maison-agent-os/`, identified which services are TypeScript vs Python, mapped the data model.
 2. Ingested the April 17 POC architecture meeting (Fredrik/Kim/Noel three-layer debate, East End, Memorial Day deadline, dockerized-client pattern).
 3. Ingested the April 18 product demo (Business Console, Admin Flyout, KB pipeline stages, Golden FAQs, AI Visibility report).
-4. **Drafted the meeting-prep document** at `~/Desktop/brain/raw/api/articles/maison-monday-meeting-prep-april-20-2026.md` (also on Mac Studio under the same path since `raw/` is synced).
+4. **Drafted the meeting-prep document.**
+
+## Where to pull my work from
+
+Everything lives on the branch **`docs/maison-monday-prep`** in the brain repo (pushed to `origin`). On Mac Studio:
+
+```bash
+cd ~/Desktop/brain
+git fetch origin
+git checkout docs/maison-monday-prep
+git pull origin docs/maison-monday-prep
+```
+
+Files on this branch:
+- `raw/api/articles/maison-monday-meeting-prep-april-20-2026.md` — **the draft you'll extend**
+- `docs/maison-monday-prep-notion-prompt.md` — this prompt (for reference)
+- `raw/api/articles/maison-poc-architecture-meeting-april-17-2026.md` — Apr 17 meeting summary
+- `raw/api/articles/maison-poc-architecture-meeting-april-17-2026-transcript.md` — Apr 17 full transcript
+- `raw/api/articles/maison-poc-action-items-april-17-2026.md` — Apr 17 action items per person
 
 **What I don't have in that draft:** context from the Notion docs we created about maison.travel — the PRD analyses, architecture proposals, any product/strategy docs already living in Notion. I couldn't reach them from the MacBook session.
 
@@ -129,8 +147,15 @@ In your final message to Rahil, list:
 
 ## Deliverables
 
-1. Updated `~/Desktop/brain/raw/api/articles/maison-monday-meeting-prep-april-20-2026.md`
-2. `brain_ingest` confirmation
-3. Summary message to Rahil per Step 7
+1. Updated `~/Desktop/brain/raw/api/articles/maison-monday-meeting-prep-april-20-2026.md` on branch `docs/maison-monday-prep`
+2. Commit + push the branch (don't merge to master yet — Rahil will do that Monday morning after review):
+   ```bash
+   cd ~/Desktop/brain
+   git add raw/api/articles/maison-monday-meeting-prep-april-20-2026.md
+   git commit -m "docs(maison): enrich Monday meeting prep with Notion context"
+   git push origin docs/maison-monday-prep
+   ```
+3. `brain_ingest` confirmation (so brain has the final version queryable)
+4. Summary message to Rahil per Step 7
 
 Go.
