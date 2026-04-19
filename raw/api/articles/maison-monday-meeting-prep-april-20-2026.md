@@ -110,11 +110,11 @@ My three-layer plan maps directly onto the four-layer architecture already spec'
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
-│  LAYER 2: BOOKING (Direct PMS — not Nuitee)                │
-│  CloudBeds | Muse | StayNTouch | Opera Cloud adapters      │
-│  MCP tools: searchHotels, getHotelRates, bookHotelOffer    │
-│  ARI cache: AWS ElastiCache (Redis, 15-min TTL)            │
-│  PMS coverage: East End audit needed to finalize adapters  │
+│  LAYER 2: BOOKING                                           │
+│  V0 default: third-party booking API (channel manager)    │
+│  Direct PMS adapters where they already exist             │
+│  MCP tools: searchHotels, getHotelRates, bookHotelOffer   │
+│  ARI cache: AWS ElastiCache (Redis, 15-min TTL)           │
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
@@ -180,12 +180,9 @@ The **normalizer is the critical path item** — if it slips, the integration mi
 
 **D8. Deployment: AWS CDK pipeline — resolved April 17.**
 
-**D9. Who owns what in Phase 1?**
-- **Rahil:** schemas (`content-schemas`), normalizer service, `hotel-tools` (MCP tools), image pipeline
-- **Sandeep:** SQS emit from scraper (`agent-pipeline-tasks` repo PR), infra CDK stacks for new services
-- **Noel (Noah?):** agent orchestration, prompt engineering, `llm-svc` wiring for new tools
-- **Kim:** architecture review, schema review, dockerized client folder conventions
-- **Fredrik:** EXA account, OpenAI co-branding, "Preferred" enterprise client coordination
+**D9. Team structure — DM Fredrik before Monday.**
+- I don't have a clear picture of who owns what across the team yet. DM Fredrik directly to confirm: who is my counterpart for agent/LLM work, who reviews infra PRs, and who I should loop in on schema decisions.
+- Don't raise this in the group meeting — handle 1:1 so it doesn't slow the session down.
 
 **D10. Meeting cadence for Phase 1.**
 - Proposed: Mon (lock), Wed (mid-sprint check), Fri (demo-ready review). 30-min each.
@@ -203,17 +200,23 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 
 ### 🔴 Critical (can't start without)
 
-1. **"Preferred" enterprise client status.** April 17 wrapup: "All work will be dropped to support their go-live, targeting pre-Memorial Day." Is this Preferred Hotels (headless CMS contract), or a separate enterprise named "Preferred"? What does their go-live require from Rahil, and does it conflict with maison.travel work?
+1. **Ingestion/scraper codebase access.** The scraper and pipeline-tasks code is not in the monorepo I have access to — it doesn't appear to be in the GitHub org repos available to me. Is it a separate private repo (`agent-pipeline-tasks`)? Or is it being built fresh in the monorepo under a new path? I need access before I can wire up the SQS emit that feeds the normalizer.
 
-3. **Scraper repo access.** The SQS emit PR (Stage 3.5) goes to `agent-pipeline-tasks`, not the monorepo. This is Rahil's first critical contribution. Who owns that repo and reviews the PR?
+2. **Dev credentials / API access:** AWS account for CDK deploy, EXA invite (if Fredrik has set it up). (Neon and Firebase creds are already in `.env` — sorted.)
 
-4. **Credentials / API access:** (a) `agent-pipeline-tasks` repo, (b) Neon Postgres instance, (c) AWS account (CDK deploy), (d) EXA (if set up), (e) pilot hotel PMS (if booking in scope for V0)?
+3. **PRD-006 vs Phase 1 scope — confirm the boundary.**
 
-5. **PRD-006 vs Phase 1 scope.** Phase 1 = per-property substrate (content layer + tools). maison.travel consumer layer (per-user cycle-aware agent) = Phase 2+. Confirmed?
+   In plain English: right now Maison sells a chatbot per hotel. A guest goes to Baron's Cove's website, chats with the concierge, gets their questions answered, and books a room. One AI per property. That's what Phase 1 builds the infrastructure for.
+
+   PRD-006 is a completely different product vision — a **travel companion app for the guest** (not the hotel). In this world, *you* (the traveler) have one personal AI that knows your preferences across all your trips. It's "cycle-aware": silent between trips, proactive when you're planning, completes the booking, acts as your on-property concierge while you're there. It would require per-user agents, a preference database tracking individuals, and eventually an iOS app.
+
+   The question: **are we building any part of PRD-006 in Phase 1, or is Phase 1 purely the per-property infrastructure (content, booking tools, travel app as a thin frontend)?**
+
+   My assumption: PRD-006 is Phase 2+. I just need it confirmed so I don't accidentally scope-creep into user preference tracking or cycle detection when I should be focused on the content layer. If someone says "the travel app needs to remember the user" mid-sprint, I need to have this settled.
 
 ### 🟡 Important (needed within 1 week)
 
-6. **PMS coverage audit.** Which PMSs do the 100 East End properties use? Flagged 🔴 in Open Questions doc — need before Week 1 ends. Determines whether Layer 2 is realistic by May 25. [See Notion: Open Questions](https://www.notion.so/3458b6104b1d81289d07fb8c72b48938)
+4. **PMS strategy for V0.** Assumption: most or all of the 100 Long Island properties won't have direct API integrations built yet, so V0 Layer 2 will default to a third-party booking API (channel manager, e.g. Nuitee) for the ones we can't connect to directly. For any properties where a direct PMS adapter already exists (or can be built quickly), we'll integrate directly. Question for Monday: which direct PMS integrations do we currently have, or are in progress? This determines the V0 booking coverage realistically. Full direct PMS rollout = V1. [See Notion: Open Questions](https://www.notion.so/3458b6104b1d81289d07fb8c72b48938)
 
 7. **"Noah" vs Noel Panicker.** April 18 demo says "Direct Maison travel questions to Noah; Sandeep is focused on the monorepo." Is Noah = Noel, or a different person? Who is my primary technical counterpart for agent orchestration?
 
@@ -238,15 +241,14 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 ## Part 5 — What I'll Ask For (in meeting order)
 
 1. **Confirm all-4-layers scope.** "Technical Spec has all 4 layers by May 25 — confirm sequencing: content Week 1–3, booking Week 3–4, payments/distribution Week 5–6. Any cuts?"
-2. **"Preferred" client status.** Is this blocking anything I need to start Week 1?
-3. **Confirm schema list** — 10 schemas as spec'd, any cuts?
-4. **Baron's Cove + Island Outpost as Week 1 seeds** — confirm.
-5. **Scraper repo access + pipeline-tasks PR ownership.** Who reviews?
-6. **Confirm D9 ownership matrix.**
-7. **PMS coverage audit** — can we do this together before Friday?
-8. **Who is Noah / is it Noel?**
-9. **Lock Mon/Wed/Fri cadence.**
-10. **Exit with Week 1 milestone:** schemas in `packages/content-schemas`, normalizer skeleton, Baron's Cove manual seed, travel app scaffolded.
+2. **Confirm schema list** — 10 schemas as spec'd, any cuts?
+3. **Baron's Cove + Island Outpost as Week 1 seeds** — confirm. (100 Long Island properties by Memorial Day.)
+4. **Scraper/ingestion repo access.** Is `agent-pipeline-tasks` a separate repo I need access to, or is it being built in the monorepo? I need this resolved Week 1.
+5. **PMS strategy for V0.** "Assume most will go through third-party channel manager V0 — which direct integrations do we already have?"
+6. **PRD-006 boundary.** "Phase 1 = per-property only, no per-user consumer layer. Confirmed?"
+7. **Who is Noah / is it Noel?**
+8. **Lock Mon/Wed/Fri cadence.**
+9. **Exit with Week 1 milestone:** schemas in `packages/content-schemas`, normalizer skeleton, Baron's Cove manual seed, travel app scaffolded.
 
 ---
 
@@ -288,9 +290,8 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 - **PreferenceSlice** — PRD-006 consumer term; flag when I'm bleeding scope into Phase 2
 - **D10 neutrality** — any LLM can call our ToolContracts
 - **Cycle-aware** — PRD-006 term; flag when bleeding scope into Phase 2
-- **"Preferred"** = specific enterprise client Fredrik will drop everything for
 - **Baron's Cove** = seed hotel for Week 1 (Sag Harbor, 67 rooms, waterfront boutique)
-- **agent-pipeline-tasks** = Python scraper/ingestion repo (separate from monorepo)
+- **agent-pipeline-tasks** = Python scraper/ingestion repo (separate from monorepo — need access)
 
 ---
 
@@ -306,11 +307,11 @@ Every Notion document consulted in preparing this document.
 | ❓ Open Questions & Decisions | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d81289d07fb8c72b48938) | 12 resolved decisions + 7 V0 spec open questions; PMS audit flagged 🔴 |
 | 📂 Dockerized Client Folder Model | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d81d29844e52b23808755) | Full per-hotel folder layout, CLAUDE.md template, provenance format |
 | 🔗 IBE & CRS Deeplink Setup | [notion.so/…33a8b610](https://www.notion.so/33a8b6104b1d81c38aa3f17d64a37907) | Operational rule: booking links in system prompt NOT KB; templates per engine |
-| Product Demo (internal) - April 18 | [notion.so/…3468b610](https://www.notion.so/3468b6104b1d80e9b34ef82ec7d25344) | Golden FAQ bar = 70-80%; Business Console legacy; I Preferred test; iHotelier difficulty |
+| Product Demo (internal) - April 18 | [notion.so/…3468b610](https://www.notion.so/3468b6104b1d80e9b34ef82ec7d25344) | Golden FAQ bar = 70-80%; Business Console legacy; iHotelier difficulty; SynXis = clean |
 | 📋 Product Overview & PRD | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d810eb370c0feaed5811d) | V0 vs full PRD-006 scope table; 7 irreducibles; 6 anti-principles |
 | ⚙️ Maison.Travel Technical Spec — Infrastructure PoC | [notion.so/…3448b610](https://www.notion.so/3448b6104b1d81d6a1dced978281c89d) | **Scope authority.** All 4 layers in scope by May 25. Fredrik confirmed High priority. |
 | ✈️ Maison.Travel POC — Rahil's Technical Proposal | [notion.so/…3448b610](https://www.notion.so/3448b6104b1d81fa8cb0e88a686b1e3d) | Business case, MindTrip comparison, implementation priority table |
-| 🗓️ Maison Weekly Wrapup - April 17 | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d80898451f4a305caca05) | Rahil's Week 1 action item (JSON schema draft); "Preferred" = make-or-break priority |
+| 🗓️ Maison Weekly Wrapup - April 17 | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d80898451f4a305caca05) | Rahil's Week 1 action item (JSON schema draft); enterprise client context |
 | 🔌 Integration Partners | [notion.so/…3468b610](https://www.notion.so/3468b6104b1d810a9b70d130a9ffd27e) | PMS partner outreach process; mutual-hotel-customer approach |
 | 🗓️ Maison.Travel — V0 PRD & PoC Execution | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d815e98d5dee24d6dc01d) | Corrected monorepo architecture, 5-week delivery plan, consolidated decisions |
 
