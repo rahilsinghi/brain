@@ -85,7 +85,7 @@ JSON is the source of truth. Postgres rows, embeddings, and markdown are all der
 
 **What this means for my POC:**
 
-My three-layer plan maps directly onto the four-layer architecture already spec'd. **[Updated post-Notion research]** However, there is a genuine scope conflict between two Notion documents (see D11 in Part 3 below). This is the most important thing to lock Monday.
+My three-layer plan maps directly onto the four-layer architecture already spec'd. All 4 layers are in scope by Memorial Day per the Technical Spec — content first, then booking, then payments, then distribution surface.
 
 ---
 
@@ -93,7 +93,7 @@ My three-layer plan maps directly onto the four-layer architecture already spec'
 
 ### Thesis
 
-> By Memorial Day, we have the **content layer (Layer 1) completely built for ~100 East End properties**, the **three MCP tools callable** (searchHotels, getHotelRates, bookHotelOffer), and a **live travel app surface** at maison.travel. The booking completion (PMS adapters) and Stripe integration are either confirmed in scope or confirmed as stretch goals depending on what we lock Monday.
+> By Memorial Day, we have **all 4 layers live:** content layer (Layer 1) built for ~100 East End properties, the **three MCP tools callable** (searchHotels, getHotelRates, bookHotelOffer), **direct PMS booking** (Layer 2), **Stripe Connect payments** (Layer 3), and a **live travel app surface** at maison.travel (Layer 4). Delivery is sequenced — content first, then booking, then payments, then distribution — but all 4 ship by May 25 per the Technical Spec.
 
 ### The proposed architecture (layered onto what exists)
 
@@ -105,8 +105,8 @@ My three-layer plan maps directly onto the four-layer architecture already spec'
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │  LAYER 3: PAYMENTS (Stripe Connect)                         │
-│  [Delivery Timeline defers to V1. Technical Spec includes. │
-│   RESOLVE MONDAY — see D11]                                 │
+│  Stripe Connect per-property — in scope by Memorial Day    │
+│  Completes the full booking funnel (search → book → pay)   │
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
@@ -114,7 +114,7 @@ My three-layer plan maps directly onto the four-layer architecture already spec'
 │  CloudBeds | Muse | StayNTouch | Opera Cloud adapters      │
 │  MCP tools: searchHotels, getHotelRates, bookHotelOffer    │
 │  ARI cache: AWS ElastiCache (Redis, 15-min TTL)            │
-│  [Coverage depends on East End PMS audit — RESOLVE MON]    │
+│  PMS coverage: East End audit needed to finalize adapters  │
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
@@ -190,11 +190,10 @@ The **normalizer is the critical path item** — if it slips, the integration mi
 **D10. Meeting cadence for Phase 1.**
 - Proposed: Mon (lock), Wed (mid-sprint check), Fri (demo-ready review). 30-min each.
 
-**D11. 🔴 SCOPE CONFLICT — must resolve Monday: What exactly ships by Memorial Day?**
-- **[Updated post-Notion research]** Two Notion documents contradict each other:
-  - **Delivery Timeline (Apr 17, written post-architecture session):** PMS adapters, Stripe Connect, and full booking flow are explicitly listed as **"Out of Scope (Deferred to V1)."** V0 = content layer + travel app + MCP tool stubs.
-  - **Technical Spec (Apr 16, Rahil's proposal):** All 4 layers in scope over 6-8 weeks. Phase 3 (Stripe) is in scope. Fredrik confirmed High priority.
-- My read: the Delivery Timeline is the more recent document and reflects the April 17 architecture session. V0 = Layer 1 + MCP stubs + travel app. Full booking is stretch or V1. But this needs explicit confirmation Monday.
+**D11. Phase 1 scope — all 4 layers by Memorial Day. ✅ Resolved per Technical Spec.**
+- All 4 layers are in scope: content (Layer 1), booking (Layer 2), payments (Layer 3), distribution (Layer 4).
+- Delivery is sequenced across 6–8 weeks, with Layer 1 shipping first (Week 1–2 seed, Week 3 full 100 properties) and Layers 2–4 layering on through Week 6.
+- The Technical Spec is the authority. Monday meeting confirms sequencing and any per-layer definition of "done".
 
 ---
 
@@ -204,9 +203,7 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 
 ### 🔴 Critical (can't start without)
 
-1. **D11 resolution:** What exactly ships by May 25 — Layer 1 + app shell, or all 4 layers? This determines every other decision.
-
-2. **"Preferred" enterprise client status.** April 17 wrapup: "All work will be dropped to support their go-live, targeting pre-Memorial Day." Is this Preferred Hotels (headless CMS contract), or a separate enterprise named "Preferred"? What does their go-live require from Rahil, and does it conflict with maison.travel work?
+1. **"Preferred" enterprise client status.** April 17 wrapup: "All work will be dropped to support their go-live, targeting pre-Memorial Day." Is this Preferred Hotels (headless CMS contract), or a separate enterprise named "Preferred"? What does their go-live require from Rahil, and does it conflict with maison.travel work?
 
 3. **Scraper repo access.** The SQS emit PR (Stage 3.5) goes to `agent-pipeline-tasks`, not the monorepo. This is Rahil's first critical contribution. Who owns that repo and reviews the PR?
 
@@ -240,7 +237,7 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 
 ## Part 5 — What I'll Ask For (in meeting order)
 
-1. **Lock D11 first.** "Does the Delivery Timeline (written post-Apr-17) represent the agreed scope — Layer 1 + travel app shell + MCP stubs by May 25, with full booking deferred? Or are we doing all 4 layers?" Everything else depends on this.
+1. **Confirm all-4-layers scope.** "Technical Spec has all 4 layers by May 25 — confirm sequencing: content Week 1–3, booking Week 3–4, payments/distribution Week 5–6. Any cuts?"
 2. **"Preferred" client status.** Is this blocking anything I need to start Week 1?
 3. **Confirm schema list** — 10 schemas as spec'd, any cuts?
 4. **Baron's Cove + Island Outpost as Week 1 seeds** — confirm.
@@ -305,13 +302,13 @@ Every Notion document consulted in preparing this document.
 |----------|-----|-----------|
 | 🗺️ Maison.Travel PoC (main hub) | [notion.so/…3158b610](https://www.notion.so/3158b6104b1d80b99a20f357dc7227ec) | Product vision, 5 functional areas, success criteria, risks — the "why" |
 | 📐 V0 Content Layer — Master Architecture | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d81f9b792e40dd3d5d57f) | 10 schemas, Option G storage, dockerized client — Layer 1 spec Rahil owns |
-| 📅 Delivery Timeline — Memorial Day May 25 | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d81b39737ec9e2992aafc) | Week-by-week plan; **defers Stripe/PMS to V1** — conflicts with Technical Spec |
+| 📅 Delivery Timeline — Memorial Day May 25 | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d81b39737ec9e2992aafc) | Week-by-week plan; use for sequencing reference; Technical Spec is the scope authority |
 | ❓ Open Questions & Decisions | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d81289d07fb8c72b48938) | 12 resolved decisions + 7 V0 spec open questions; PMS audit flagged 🔴 |
 | 📂 Dockerized Client Folder Model | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d81d29844e52b23808755) | Full per-hotel folder layout, CLAUDE.md template, provenance format |
 | 🔗 IBE & CRS Deeplink Setup | [notion.so/…33a8b610](https://www.notion.so/33a8b6104b1d81c38aa3f17d64a37907) | Operational rule: booking links in system prompt NOT KB; templates per engine |
 | Product Demo (internal) - April 18 | [notion.so/…3468b610](https://www.notion.so/3468b6104b1d80e9b34ef82ec7d25344) | Golden FAQ bar = 70-80%; Business Console legacy; I Preferred test; iHotelier difficulty |
 | 📋 Product Overview & PRD | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d810eb370c0feaed5811d) | V0 vs full PRD-006 scope table; 7 irreducibles; 6 anti-principles |
-| ⚙️ Maison.Travel Technical Spec — Infrastructure PoC | [notion.so/…3448b610](https://www.notion.so/3448b6104b1d81d6a1dced978281c89d) | 4-layer architecture, monorepo structure (conflicts with Delivery Timeline on scope) |
+| ⚙️ Maison.Travel Technical Spec — Infrastructure PoC | [notion.so/…3448b610](https://www.notion.so/3448b6104b1d81d6a1dced978281c89d) | **Scope authority.** All 4 layers in scope by May 25. Fredrik confirmed High priority. |
 | ✈️ Maison.Travel POC — Rahil's Technical Proposal | [notion.so/…3448b610](https://www.notion.so/3448b6104b1d81fa8cb0e88a686b1e3d) | Business case, MindTrip comparison, implementation priority table |
 | 🗓️ Maison Weekly Wrapup - April 17 | [notion.so/…3458b610](https://www.notion.so/3458b6104b1d80898451f4a305caca05) | Rahil's Week 1 action item (JSON schema draft); "Preferred" = make-or-break priority |
 | 🔌 Integration Partners | [notion.so/…3468b610](https://www.notion.so/3468b6104b1d810a9b70d130a9ffd27e) | PMS partner outreach process; mutual-hotel-customer approach |
