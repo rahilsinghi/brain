@@ -161,8 +161,14 @@ The **normalizer is the critical path item** — if it slips, the integration mi
 
 ### Architecture decisions
 
-**D4. Storage: Neon Postgres + pgvector (Option G) — resolved April 17.**
-- No Pinecone for TS layer. pgvector lives in Neon. Python services keep their own vector store.
+**D4. Storage — needs reconciling Monday.**
+- V0 Content Layer spec (Option G) says: **Neon Postgres + pgvector** for the 10 structured schemas.
+- **⚠️ Sandeep clarified Apr 19:** the existing KB pipeline writes knowledge records to **Pinecone**, not Postgres. DynamoDB holds only a snapshot for version history and logs (not the primary data layer).
+- **Three possible reconciliations to pick from Monday:**
+  1. **Parallel stores:** Pinecone for scraped-content embeddings (existing pipeline, QA-pair-style), Postgres + pgvector for the 10 structured schemas (new pipeline). Two different data shapes, two different systems.
+  2. **Replace:** Migrate existing Pinecone workload to Postgres + pgvector, kill Pinecone. Higher risk, blocks everything else.
+  3. **Split by layer:** Pinecone stays for the existing chatbot KB (scraped content → QA pairs). Postgres + pgvector is greenfield for the V0 content layer. No migration; they coexist cleanly.
+- **My recommendation:** option 3. No migration risk, new content layer is isolated, existing chatbot keeps working.
 
 **D5. EXA: gap-fill fallback only.**
 - V0 strategy: scraper + Google Places as primary. EXA fills gaps in offer freshness and event data.
@@ -200,7 +206,14 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 
 ### 🔴 Critical (can't start without)
 
-1. **Ingestion/scraper codebase access.** The scraper and pipeline-tasks code is not in the monorepo I have access to — it doesn't appear to be in the GitHub org repos available to me. Is it a separate private repo (`agent-pipeline-tasks`)? Or is it being built fresh in the monorepo under a new path? I need access before I can wire up the SQS emit that feeds the normalizer.
+1. **Dockerized client model — sell it to Noel (new question, Apr 19).** Noel pushed back on Slack asking *"why do we need this per hotel, how does it fit into the architecture of maison.travel? Are you thinking of creating client-specific agents to be used by A2A?"* Prep answer:
+   - **Not hand-crafted per hotel.** Folders are **auto-generated from the 10 JSON schemas** (the normalizer produces the folder as a build artifact).
+   - **Maps directly to PRD-001.** Each hotel is a `PropertyAgent` — a composition of typed slices (persona, knowledge, skills, tools, policies). The folder is just a filesystem projection of that composition, inspectable like a Claude Code project.
+   - **Template skills + base `AGENTS.md` already handle the standard case** (per Noel's own agreement earlier). Per-hotel content = auto-appended to the base template.
+   - **Alternative Noel may propose:** single runtime agent that queries the DB per request (no folder at all). Tradeoff: folder gives us offline inspection, git-diffable history, provenance, and simpler debugging. Runtime-only loses all of that but is simpler.
+   - **Ask Noel directly:** *"Is your concern the per-hotel filesystem artifact, or the per-hotel agent concept from PRD-001? If it's the filesystem, we can keep it as a debug artifact and the runtime agent still reads from DB."*
+
+2. **Ingestion/scraper plan — confirm Sandeep's import timeline.** Sandeep clarified Apr 19 that he's importing the legacy Python services (including `pipeline-tasks`) into the monorepo **as-is** until new services are properly sorted. Three follow-ups for Monday: (a) ETA for the import to land? (b) when I need to emit SQS events to feed the normalizer, do I PR against the imported legacy code or create a parallel new service? (c) what's the migration path from legacy-as-imported to the properly-sorted new services?
 
 2. **Dev credentials / API access:** AWS account for CDK deploy, EXA invite (if Fredrik has set it up). (Neon and Firebase creds are already in `.env` — sorted.)
 
@@ -240,15 +253,17 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 
 ## Part 5 — What I'll Ask For (in meeting order)
 
-1. **Confirm all-4-layers scope.** "Technical Spec has all 4 layers by May 25 — confirm sequencing: content Week 1–3, booking Week 3–4, payments/distribution Week 5–6. Any cuts?"
-2. **Confirm schema list** — 10 schemas as spec'd, any cuts?
-3. **Baron's Cove + Island Outpost as Week 1 seeds** — confirm. (100 Long Island properties by Memorial Day.)
-4. **Scraper/ingestion repo access.** Is `agent-pipeline-tasks` a separate repo I need access to, or is it being built in the monorepo? I need this resolved Week 1.
-5. **PMS strategy for V0.** "Assume most will go through third-party channel manager V0 — which direct integrations do we already have?"
-6. **PRD-006 boundary.** "Phase 1 = per-property only, no per-user consumer layer. Confirmed?"
-7. **Who is Noah / is it Noel?**
-8. **Lock Mon/Wed/Fri cadence.**
-9. **Exit with Week 1 milestone:** schemas in `packages/content-schemas`, normalizer skeleton, Baron's Cove manual seed, travel app scaffolded.
+1. **Storage reconciliation (Pinecone vs Postgres+pgvector).** "Sandeep confirmed KB currently goes to Pinecone. V0 content layer spec says Option G = Postgres + pgvector. Proposal: **split by layer** — Pinecone keeps the existing chatbot KB, Postgres + pgvector is greenfield for the 10 structured schemas. No migration. OK?"
+2. **Dockerized client model — land it with Noel.** Walk through: auto-generated from schemas, maps to PRD-001 PropertyAgent, template skills + base AGENTS.md cover standard case. Ask: is the concern the filesystem artifact or the per-hotel agent concept?
+3. **Confirm all-4-layers scope.** "Technical Spec has all 4 layers by May 25 — confirm sequencing: content Week 1–3, booking Week 3–4, payments/distribution Week 5–6. Any cuts?"
+4. **Confirm schema list** — 10 schemas as spec'd, any cuts? Add `extras` catch-all per Noel's info-loss point.
+5. **Baron's Cove + Island Outpost as Week 1 seeds** — confirm. (100 Long Island properties by Memorial Day.)
+6. **Scraper/ingestion.** "Sandeep is importing legacy services into the monorepo — ETA? Where do I PR the SQS emit? Migration path to new services?"
+7. **PMS strategy for V0.** "Assume most will go through third-party channel manager V0 — which direct integrations do we already have?"
+8. **PRD-006 boundary.** "Phase 1 = per-property only, no per-user consumer layer. Confirmed?"
+9. **Who is Noah / is it Noel?**
+10. **Lock Mon/Wed/Fri cadence.**
+11. **Exit with Week 1 milestone:** schemas in `packages/content-schemas`, normalizer skeleton, Baron's Cove manual seed, travel app scaffolded.
 
 ---
 
@@ -291,7 +306,9 @@ Grouped by blocker severity. 🔴 = can't start without, 🟡 = needed within 1 
 - **D10 neutrality** — any LLM can call our ToolContracts
 - **Cycle-aware** — PRD-006 term; flag when bleeding scope into Phase 2
 - **Baron's Cove** = seed hotel for Week 1 (Sag Harbor, 67 rooms, waterfront boutique)
-- **agent-pipeline-tasks** = Python scraper/ingestion repo (separate from monorepo — need access)
+- **agent-pipeline-tasks** = legacy Python scraper/ingestion service; Sandeep importing into monorepo as-is Apr 19
+- **Pinecone** = existing KB vector store (scraped content → QA pairs) per Sandeep
+- **Option G** = Postgres + pgvector for V0 content layer (10 structured schemas); parallel to Pinecone, not a replacement
 
 ---
 
