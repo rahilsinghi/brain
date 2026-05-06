@@ -4,7 +4,7 @@ author: ai
 created_at: 2026-04-17T02:53:34.382Z
 last_ai_edit: 2026-04-17T02:53:34.382Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 7a23afcae1270d10
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/api/articles/maisontravel-poc-action-items-sprint-plan-april-17-20-1776393868155.md]]"
 tags:
@@ -21,6 +21,7 @@ tags:
   - fredrik-tasks
   - sandeep-tasks
 ---
+
 
 # Maison.Travel POC — Action Items & Sprint Plan (April 17, 2026)
 

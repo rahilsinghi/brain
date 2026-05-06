@@ -4,13 +4,14 @@ author: ai
 created_at: 2026-04-17T03:05:44.759Z
 last_ai_edit: 2026-04-17T03:05:44.759Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 2e5cb03c11d0bbca
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/graphify/karen/file-summaries/karen_frontend_src_components_StonePanel_tsx.md]]"
 tags:
   - code-architecture
   - karen
 ---
+
 
 # StonePanel.tsx
 

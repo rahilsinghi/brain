@@ -1,14 +1,16 @@
 ---
-status: pending
+status: failed
 source_type: conversation
 ingested_at: 2026-04-17T17:35:00Z
 parsed_at: 2026-04-17T17:35:00Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 401 {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CakUYr4CtGA9u2AuTr5qR"}
 compile_progress: null
 ---
+
+
 
 # Timesheet Natural-Language Entry + /eod Metadata Fix (2026-04-17)
 

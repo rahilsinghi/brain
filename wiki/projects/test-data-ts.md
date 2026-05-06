@@ -4,13 +4,14 @@ author: ai
 created_at: 2026-04-17T04:43:21.556Z
 last_ai_edit: 2026-04-17T04:43:21.556Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: a7c1130dca741a11
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/graphify/karen/file-summaries/karen_pretext_src_test-data_ts.md]]"
 tags:
   - code-architecture
   - karen
 ---
+
 
 # test-data.ts
 

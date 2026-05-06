@@ -4,13 +4,14 @@ author: ai
 created_at: 2026-04-17T16:52:01.023Z
 last_ai_edit: 2026-04-17T16:52:01.023Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: c2395c89b4ee2ab1
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/graphify/karen/file-summaries/karen_backend_routers_webhook_py.md]]"
 tags:
   - code-architecture
   - karen
 ---
+
 
 # webhook.py
 

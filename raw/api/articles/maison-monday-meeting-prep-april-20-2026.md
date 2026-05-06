@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: api
 source_id: maison-monday-meeting-prep-2026-04-20
 ingested_at: 2026-04-19T00:00:00Z
 parsed_at: 2026-04-19T00:00:00Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 401 {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CakUakozhyXUc9VCM4Gej"}
 compile_progress: null
 ---
+
+
 
 # Maison POC — Monday Meeting Prep (April 20, 2026)
 

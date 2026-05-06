@@ -1,15 +1,17 @@
 ---
-status: pending
+status: failed
 source_type: api
 source_id: maison-poc-architecture-meeting-transcript-2026-04-17
 ingested_at: 2026-04-17T00:00:00Z
 parsed_at: 2026-04-17T00:00:00Z
 compiled_to: null
 processed_at: null
-retry_count: 0
-last_error: null
+retry_count: 1
+last_error: 401 {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CakUajXMVvuvtJE5Bc3SW"}
 compile_progress: null
 ---
+
+
 
 # Maison.Travel POC Architecture Meeting — Full Transcript (April 17, 2026)
 

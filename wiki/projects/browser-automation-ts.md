@@ -4,13 +4,14 @@ author: ai
 created_at: 2026-04-17T04:37:32.307Z
 last_ai_edit: 2026-04-17T04:37:32.307Z
 last_human_edit: null
-last_embedded_hash: null
+last_embedded_hash: 0014533a71bac9fb
 sources:
   - "[[/Users/rahilsinghi/Desktop/brain/raw/graphify/karen/file-summaries/karen_pretext_scripts_browser-automation_ts.md]]"
 tags:
   - code-architecture
   - karen
 ---
+
 
 # browser-automation.ts
 
